@@ -55,7 +55,7 @@ table {
 }
 
 .navBar {
-    height: 100vh;
+    height: 100%;
     background: grey;
     display: flex;
     flex-direction: column;

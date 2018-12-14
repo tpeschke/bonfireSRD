@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { ChapterviewDirective } from './chapterview.directive';
+import { SafeHtmlPipe } from './safe-html.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChapterviewDirective } from './chapterview.directive';
     NavbarComponent,
     HomeComponent,
     ChapterComponent,
-    ChapterviewDirective
+    ChapterviewDirective,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,

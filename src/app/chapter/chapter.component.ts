@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ChapterService } from '../chapter.service';
 
 @Component({
@@ -8,17 +8,17 @@ import { ChapterService } from '../chapter.service';
   styleUrls: ['./chapter.component.css']
 })
 
-export class ChapterComponent implements OnInit{
+export class ChapterComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private chapterService: ChapterService,
-    private router: Router
+    private chapterService: ChapterService
     ) { } 
     
   ngOnInit() {
     this.getChapter();
     this.route.params.subscribe(p => {
+      this.view = '<div></div>';
       this.getChapter()
     })
   }
@@ -30,6 +30,7 @@ export class ChapterComponent implements OnInit{
     this.chapterService.getChapter(id)
       .subscribe(chapter => {
         this.view = chapter[0].chapter;
+        console.log(this.view)
       })
   }
 
