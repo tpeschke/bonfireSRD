@@ -1,7 +1,20 @@
-.chapterShell {
-    margin: 15px;
+.outerShell {
+    margin: 15px 15px 15px 195px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.chapterShell div {
-    background: lightblue
+.chapterShell {
+    background: whitesmoke;
+    padding: 15px;
+}
+
+.imageShell {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    max-width: 375px;
+    min-width: 300px;
+    height: 100%;
+    background: whitesmoke;
 }

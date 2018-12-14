@@ -19,18 +19,20 @@ export class ChapterComponent implements OnInit {
     this.getChapter();
     this.route.params.subscribe(p => {
       this.view = '<div></div>';
+      this.images = '<div></div>';
       this.getChapter()
     })
   }
 
   view = '<div></div>';
+  images = '<div></div>';
 
   getChapter(): void {
     const id = this.route.snapshot.paramMap.get('id')
     this.chapterService.getChapter(id)
       .subscribe(chapter => {
         this.view = chapter[0].chapter;
-        console.log(this.view)
+        this.images = chapter[0].images;
       })
   }
 

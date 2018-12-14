@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ChapterComponent } from './chapter/chapter.component';
-import { ChapterviewDirective } from './chapterview.directive';
 import { SafeHtmlPipe } from './safe-html.pipe';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { SafeHtmlPipe } from './safe-html.pipe';
     NavbarComponent,
     HomeComponent,
     ChapterComponent,
-    ChapterviewDirective,
     SafeHtmlPipe
   ],
   imports: [

@@ -1,2 +1,4 @@
-
-<div [innerHTML]="view | safeHtml" class="chapterShell"></div>
+<div class="outerShell">
+    <div [innerHTML]="view | safeHtml" class="chapterShell"></div>
+    <div [innerHTML]="images | safeHtml" class="imageShell"></div>
+</div>

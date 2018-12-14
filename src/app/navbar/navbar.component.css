@@ -6,4 +6,11 @@ a {
     text-decoration: none;
     margin: 0 10px;
     padding: 10px 0;
+    color: white;
+}
+
+h1 {
+    size: 10px;
+    margin-left: 5px;
+    padding: 0;
 }

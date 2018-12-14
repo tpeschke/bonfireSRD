@@ -5,6 +5,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 class Chapter {
   chapter: string
+  images: string
 }
 
 @Injectable({
