@@ -16,7 +16,7 @@ export class ChapterService {
 
   constructor(
     private http: HttpClient,
-    ) { }
+  ) { }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
@@ -29,8 +29,9 @@ export class ChapterService {
   getChapter(id): Observable<Chapter[]> {
     return this.http.get<Chapter[]>('http://localhost:3333/chapter/' + id)
       .pipe(
-        tap(_=> console.log('')),
-        catchError(this.handleError('getChapter', []))
+        tap(_ => console.log(),
+          catchError(this.handleError('getChapter', []))
+        )
       )
   }
 }

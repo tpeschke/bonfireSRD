@@ -4,13 +4,41 @@ div {
 
 a {
     text-decoration: none;
-    margin: 0 10px;
-    padding: 10px 0;
+    padding: 10px;
     color: white;
+    min-width: 6%;
+}
+
+a:hover {
+    background: #b45f0675;
+}
+
+a:active {
+    color: #b45f06
 }
 
 h1 {
     size: 10px;
     margin-left: 5px;
     padding: 0;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black
+}
+
+.bottomNav {
+    height: 35px;
+    margin: 0 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center
 }

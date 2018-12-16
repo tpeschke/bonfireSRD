@@ -9,6 +9,8 @@ import { ChapterComponent } from './chapter/chapter.component';
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
+  {path: 'chapter/c0', component: HomeComponent},
+  {path: 'chapter/c16', component: HomeComponent},
   {path: 'chapter/:id', component: ChapterComponent}
 ]
 

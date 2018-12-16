@@ -1,18 +1,27 @@
-<a routerLink="home">Home</a>
-<h1>Chapters</h1>
-<a routerLink="chapter/c1">Chapter 1: <br> Character Creation</a>
-<a routerLink="chapter/c2">Chapter 2: <br> Ability Scores</a>
-<a routerLink="chapter/c3">Chapter 3: <br> Races</a>
-<a routerLink="chapter/c4">Chapter 4: <br> Archetypes</a>
-<a routerLink="chapter/c5">Chapter 5: <br> Flaws</a>
-<a routerLink="chapter/c6">Chapter 6: <br> Character Vitals</a>
-<a routerLink="chapter/c7">Chapter 7: <br> Masteries</a>
-<a routerLink="chapter/c8">Chapter 8: <br> Skills</a>
-<a routerLink="chapter/c9">Chapter 9: <br> Social</a>
-<a routerLink="chapter/c10">Chapter 10: <br> Combat</a>
-<a routerLink="chapter/c11">Chapter 11: <br> Equipment</a>
-<a routerLink="chapter/c12">Chapter 12: <br> Magic</a>
-<a routerLink="chapter/c13">Chapter 13: <br> Divine</a>
-<a routerLink="chapter/c14">Chapter 14: <br> Character Progression</a>
-<a routerLink="chapter/c15">Chapter 15: <br> Misc Rules</a>
-<a href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
+<div class="topNav">
+    <a routerLink="home">Home</a>
+    <a href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
+</div>
+<div class="middleNav">
+    <a routerLink="chapter/c1" (mouseover)="viewChapter('Character Creation')" (mouseout)="resetChapter()" (click)="setChapter(1)">1</a>
+    <a routerLink="chapter/c2" (mouseover)="viewChapter('Ability Scores')" (mouseout)="resetChapter()" (click)="setChapter(2)">2</a>
+    <a routerLink="chapter/c3" (mouseover)="viewChapter('Races')" (mouseout)="resetChapter()" (click)="setChapter(3)">3</a>
+    <a routerLink="chapter/c4" (mouseover)="viewChapter('Archetypes')" (mouseout)="resetChapter()" (click)="setChapter(4)">4</a>
+    <a routerLink="chapter/c5" (mouseover)="viewChapter('Flaws')" (mouseout)="resetChapter()" (click)="setChapter(5)">5</a>
+    <a routerLink="chapter/c6" (mouseover)="viewChapter('Character Vitals')" (mouseout)="resetChapter()" (click)="setChapter(6)">6</a>
+    <a routerLink="chapter/c7" (mouseover)="viewChapter('Masteries')" (mouseout)="resetChapter()" (click)="setChapter(7)">7</a>
+    <a routerLink="chapter/c8" (mouseover)="viewChapter('Skills')" (mouseout)="resetChapter()" (click)="setChapter(8)">8</a>
+    <a routerLink="chapter/c9" (mouseover)="viewChapter('Social')" (mouseout)="resetChapter()" (click)="setChapter(9)">9</a>
+    <a routerLink="chapter/c10" (mouseover)="viewChapter('Combat')" (mouseout)="resetChapter()" (click)="setChapter(10)">10</a>
+    <a routerLink="chapter/c11" (mouseover)="viewChapter('Equipment')" (mouseout)="resetChapter()" (click)="setChapter(11)">11</a>
+    <a routerLink="chapter/c12" (mouseover)="viewChapter('Magic')" (mouseout)="resetChapter()" (click)="setChapter(12)">12</a>
+    <a routerLink="chapter/c13" (mouseover)="viewChapter('Divine')" (mouseout)="resetChapter()" (click)="setChapter(13)">13</a>
+    <a routerLink="chapter/c14" (mouseover)="viewChapter('Character Progression')" (mouseout)="resetChapter()" (click)="setChapter(14)">14</a>
+    <a routerLink="chapter/c15" (mouseover)="viewChapter('Misc Rules')" (mouseout)="resetChapter()" (click)="setChapter(15)">15</a>
+</div>
+<div class="bottomNav" *ngIf="notRedux.showChapter">
+    <a routerLink="chapter/c{{perviousRoute}}" (click)="setChapter('p')">{{pervious}}</a>
+    <p>{{chapter}}</p>
+    <a routerLink="chapter/c{{nextRoute}}" (click)="setChapter('n')">{{next}}</a>
+</div>
+<div class="bottomNav" *ngIf="!notRedux.showChapter"></div>

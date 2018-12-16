@@ -1,8 +1,17 @@
 .outerShell {
-    margin: 15px 15px 15px 195px;
+    margin: 140px 15px 15px 195px;
     display: flex;
     justify-content: space-around;
     background: whitesmoke;
-    width: 750px;
+    min-width: 74.5%;
     height: 750px;
+}
+
+a {
+    text-decoration: none;
+    color: #222
+}
+
+a:hover {
+    color: #b45f06
 }

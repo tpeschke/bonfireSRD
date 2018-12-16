@@ -1,5 +1,5 @@
 .outerShell {
-    margin: 15px 15px 15px 195px;
+    margin: 140px 15px 15px 195px;
     display: flex;
     justify-content: space-around;
 }
@@ -7,6 +7,7 @@
 .chapterShell {
     background: whitesmoke;
     padding: 15px;
+    max-width: 750px;
 }
 
 .imageShell {
@@ -14,7 +15,6 @@
     flex-direction: column;
     margin-left: 15px;
     max-width: 375px;
-    min-width: 300px;
     height: 100%;
     background: whitesmoke;
 }

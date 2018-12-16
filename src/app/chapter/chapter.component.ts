@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ChapterService } from '../chapter.service';
+import { NotReduxService } from '../not-redux.service';
 
 @Component({
   selector: 'app-chapter',
@@ -8,15 +9,17 @@ import { ChapterService } from '../chapter.service';
   styleUrls: ['./chapter.component.css']
 })
 
-export class ChapterComponent implements OnInit {
+export class ChapterComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
-    private chapterService: ChapterService
+    private chapterService: ChapterService,
+    private notRedux: NotReduxService;
     ) { } 
     
   ngOnInit() {
     this.getChapter();
+    this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {
       this.view = '<div></div>';
       this.images = '<div></div>';
@@ -24,8 +27,12 @@ export class ChapterComponent implements OnInit {
     })
   }
 
-  view = '<div></div>';
-  images = '<div></div>';
+  ngOnDestroy() {
+    this.notRedux.toggleShow(false);
+  }
+
+  public view = '<div></div>';
+  public images = '<div></div>';
 
   getChapter(): void {
     const id = this.route.snapshot.paramMap.get('id')
