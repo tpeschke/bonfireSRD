@@ -14,15 +14,15 @@ export class ChapterComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private chapterService: ChapterService,
-    private notRedux: NotReduxService;
+    private notRedux: NotReduxService
     ) { } 
     
   ngOnInit() {
     this.getChapter();
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {
-      this.view = '<div></div>';
-      this.images = '<div></div>';
+      this.view = null;
+      this.images = null;
       this.getChapter()
     })
   }
@@ -31,8 +31,8 @@ export class ChapterComponent implements OnInit, OnDestroy {
     this.notRedux.toggleShow(false);
   }
 
-  public view = '<div></div>';
-  public images = '<div></div>';
+  view = null;
+  images = null;
 
   getChapter(): void {
     const id = this.route.snapshot.paramMap.get('id')

@@ -1,4 +1,12 @@
 <div class="outerShell">
-    <div [innerHTML]="view | safeHtml" class="chapterShell"></div>
-    <div [innerHTML]="images | safeHtml" class="imageShell"></div>
+    <div *ngIf='view' class="innerShell">
+        <div [innerHTML]="view | safeHtml" class="chapterShell"></div>
+
+        <div *ngIf='images' [innerHTML]="images | safeHtml" class="imageShell"></div>
+        <img *ngIf='!images' src="../../assets/images/S.png" alt="banner of the Empire" class="image">
+    </div>
+
+    <div *ngIf='!view'>
+        <div class="loading"></div>
+    </div>
 </div>

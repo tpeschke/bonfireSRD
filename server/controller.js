@@ -4,15 +4,7 @@ const { c1URL, c2URL, c3URL, c4URL, c5URL, c6URL, c7URL, c8URL, c9URL, c10URL, c
 module.exports = {
     c1: (req, res) => {
         rp(c1URL).then(html => {
-           let images = '<div>';
-            let sort = html.split('<span style="overflow: hidden;')
-            for (let i = 1; i <= sort.length - 1; i++) {
-                let n = sort[i].indexOf('</span>')
-                let img = sort[i].slice(0, n)
-                sort[i] = sort[i].split(img + '</span>').join('')
-                images = images + '<span style="overflow:hidden;' + img + '</span>'
-            }
-            res.send([{chapter: sort.join(''), images: images + '</div>'}])
+            res.send([{chapter: html, images: null}])
         }).catch(err => console.log(err))
     },
     c2: (req, res) => {
@@ -43,7 +35,7 @@ module.exports = {
     },
     c4: (req, res) => {
         rp(c4URL).then(html => {
-            res.send([{chapter: html, images: '<div></div>'}])
+            res.send([{chapter: html, images: null}])
         }).catch(err => console.log(err))
     },
     c5: (req, res) => {
@@ -74,7 +66,7 @@ module.exports = {
     },
     c7: (req, res) => {
         rp(c7URL).then(html => {
-            res.send([{chapter: html, images: '<div></div>'}])
+            res.send([{chapter: html, images: null}])
         }).catch(err => console.log(err))
     },
     c8: (req, res) => {
@@ -92,7 +84,7 @@ module.exports = {
     },
     c9: (req, res) => {
         rp(c9URL).then(html => {
-            res.send([{chapter: html, images: '<div></div>'}])
+            res.send([{chapter: html, images: null}])
         }).catch(err => console.log(err))
     },
     c10: (req, res) => {

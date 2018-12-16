@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bonfireSRD';
+
+  public source = 'http://localhost:4200/assets/bg-2.mp4';
 }
