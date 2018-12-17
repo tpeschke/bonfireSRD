@@ -3,8 +3,8 @@
     <!-- <img src="../../assets/images/stone.jpg" alt="stonework" class="navBackground"> -->
 
     <div class="topNav">
-        <a routerLink="home">Home</a>
-        <a href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
+        <a class="selectChapter" routerLink="home">Home</a>
+        <a class="selectChapter" href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
     </div>
     <div class="middleNav">
         <a routerLink="chapter/c1" (mouseover)="viewChapter('Character Creation')" (mouseout)="resetChapter()" (click)="setChapter(1)">1</a>
@@ -28,7 +28,9 @@
         <p class="selectChapter">{{chapter}}</p>
         <a routerLink="chapter/c{{nextRoute}}" (click)="setChapter('n')" class="selectChapter">{{next}}</a>
     </div>
-    <div class="bottomNav" *ngIf="!notRedux.showChapter"></div>
+    <div class="bottomNav home" *ngIf="!notRedux.showChapter">
+        <p class="selectChapter">{{chapter}}</p>
+    </div>
 
     <img src="../../assets/images/dragon.svg" alt="dragon" class="heraldRight">
     <img src="../../assets/images/griffin.png" alt="griffin" class="heraldLeft">

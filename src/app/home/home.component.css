@@ -1,17 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
 .outerShell {
-    margin: 140px 15px 15px 195px;
     display: flex;
     justify-content: space-around;
-    background: whitesmoke;
-    min-width: 74.5%;
-    height: 750px;
+    height: 950px;
 }
 
 a {
     text-decoration: none;
-    color: #222
+    color: #222;
+    font-family: 'Vollkorn SC', serif;
+    margin-bottom: 5px;
 }
 
 a:hover {
     color: #b45f06
+}
+
+h1 { 
+    font-family: 'Vollkorn SC', serif;
+    border-bottom: 2px solid #222;
+    margin-bottom: 10px;
+}
+
+p { 
+    font-family: 'Vollkorn SC', serif;
+    color: #222;
+}
+
+.innerLeft {
+    background: white;
+    height: 195px;
+    width: 475px;
+}
+
+.innerRight {
+    margin-left: 15px;
+    background: white;
+    height: 500px;
+    width: 475px;
+    padding: 35px;
+}
+
+.titleShell {
+    position: relative;
+    margin: 35px 45px;
+}
+
+.title {
+    position: absolute;
+    height: 125px;
+}
+
+.subtitle {
+    position: absolute;
+    top: 110px;
+    left: 45px;
+}
+
+.image {
+    height: 150px;
+    position: absolute;
+    right: 55px;
+    top: -5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
 }

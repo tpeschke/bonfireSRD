@@ -17,9 +17,8 @@ export class NavbarComponent implements OnInit {
   public nextRoute = 1;
   public reset = '';
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+  
   viewChapter(name): void {
     this.chapter = name;
   }
