@@ -5,7 +5,7 @@
 </div>
 
 <div *ngIf="notRedux.background">
-    <video autoplay muted id="video-background" plays-inline loop>
+    <video autoplay muted oncanplay="this.muted=true" id="video-background" plays-inline loop>
         <source src="../assets/images/bg-2.mp4" type="video/mp4">
     </video>
 </div>
