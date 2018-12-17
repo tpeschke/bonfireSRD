@@ -8,7 +8,7 @@ const app = new express()
 app.use(bodyParser.json())
 app.use(cors())
 
-app.use( express.static( __dirname + `/../e2e` ) );
+app.use( express.static( __dirname + `/../dist/bonfireSRD` ) );
 
 // ================================== \\
 
