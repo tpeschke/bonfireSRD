@@ -27,7 +27,7 @@ export class ChapterService {
   }
 
   getChapter(id): Observable<Chapter[]> {
-    return this.http.get<Chapter[]>('http://localhost:3333/chapter/' + id)
+    return this.http.get<Chapter[]>('../c/' + id)
       .pipe(
         tap(_ => console.log(),
           catchError(this.handleError('getChapter', []))

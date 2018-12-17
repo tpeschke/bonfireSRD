@@ -12,8 +12,8 @@ app.use( express.static( __dirname + `/../dist/bonfireSRD` ) );
 
 // ================================== \\
 
-app.get('/chapter/c1', ctrl.c1);
-app.get('/chapter/c2', ctrl.c2);
+app.get('/c/c1', ctrl.c1);
+app.get('/c/c2', ctrl.c2);
 app.get('/c/c3', ctrl.c3);
 app.get('/c/c4', ctrl.c4);
 app.get('/c/c5', ctrl.c5);
