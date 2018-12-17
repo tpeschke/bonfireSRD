@@ -37,7 +37,7 @@ p {
 .innerRight {
     margin-left: 15px;
     background: white;
-    height: 500px;
+    height: 590px;
     width: 475px;
     padding: 35px;
 }
@@ -69,4 +69,18 @@ p {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+}
+
+.settingsTray {
+    display: flex;
+    align-items: center;
+}
+
+.settingsTray p:hover{
+    color: #b45f06
+}
+
+.buttonImage {
+    height: 30px;
+    margin-right: 15px;
 }

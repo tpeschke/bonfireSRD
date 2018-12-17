@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotReduxService } from './not-redux.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  public source = 'http://localhost:4200/assets/bg-2.mp4';
+  constructor(
+    private notRedux: NotReduxService
+  ){}
+  
 }

@@ -25,11 +25,19 @@
             <a routerLink="/chapter/c14">14 Character Progression</a>
             <a routerLink="/chapter/c15">15 Misc Rules</a>
         </div>
+
         <h1>Other Tools & Resources</h1>
         <div class="list">
             <a href="http://combatcounter.highadventuregames.net/">Combat Counter</a>
             <a href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Bonfire
                 Character Sheet</a>
+        </div>
+
+        <h1>Settings</h1>
+        <div class="settingsTray">
+            <img (click)="notRedux.toggleBackground()" *ngIf="notRedux.background" class="buttonImage" src="../../assets/images/on.png" alt="on">
+            <img (click)="notRedux.toggleBackground()" *ngIf="!notRedux.background" class="buttonImage" src="../../assets/images/off.png" alt="on">
+            <p (click)="notRedux.toggleBackground()">Toggle Background</p>
         </div>
     </div>
 </div>
