@@ -1,5 +1,7 @@
 <div class="outerShell">
     <div *ngIf='view' class="innerShell">
+        <div class="backTexture"></div>
+        <div class="backColor"></div>
         <div [innerHTML]="view | safeHtml" class="chapterShell"></div>
 
         <div *ngIf='images' [innerHTML]="images | safeHtml" class="imageShell"></div>
