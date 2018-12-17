@@ -1,4 +1,7 @@
 <div class="navBar">
+    <div class="navOverlay"></div>
+    <!-- <img src="../../assets/images/stone.jpg" alt="stonework" class="navBackground"> -->
+
     <div class="topNav">
         <a routerLink="home">Home</a>
         <a href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
@@ -21,9 +24,12 @@
         <a routerLink="chapter/c15" (mouseover)="viewChapter('Misc Rules')" (mouseout)="resetChapter()" (click)="setChapter(15)">15</a>
     </div>
     <div class="bottomNav" *ngIf="notRedux.showChapter">
-        <a routerLink="chapter/c{{perviousRoute}}" (click)="setChapter('p')">{{pervious}}</a>
-        <p>{{chapter}}</p>
-        <a routerLink="chapter/c{{nextRoute}}" (click)="setChapter('n')">{{next}}</a>
+        <a routerLink="chapter/c{{perviousRoute}}" (click)="setChapter('p')" class="selectChapter">{{pervious}}</a>
+        <p class="selectChapter">{{chapter}}</p>
+        <a routerLink="chapter/c{{nextRoute}}" (click)="setChapter('n')" class="selectChapter">{{next}}</a>
     </div>
     <div class="bottomNav" *ngIf="!notRedux.showChapter"></div>
+
+    <img src="../../assets/images/dragon.svg" alt="dragon" class="heraldRight">
+    <img src="../../assets/images/griffin.png" alt="griffin" class="heraldLeft">
 </div>

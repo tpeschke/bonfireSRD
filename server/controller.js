@@ -115,15 +115,7 @@ module.exports = {
     },
     c12: (req, res) => {
         rp(c12URL).then(html => {
-           let images = '<div>';
-            let sort = html.split('<span style="overflow: hidden;')
-            for (let i = 1; i <= sort.length - 1; i++) {
-                let n = sort[i].indexOf('</span>')
-                let img = sort[i].slice(0, n)
-                sort[i] = sort[i].split(img + '</span>').join('')
-                images = images + '<span style="overflow:hidden;' + img + '</span>'
-            }
-            res.send([{chapter: sort.join(''), images: images + '</div>'}])
+            res.send([{chapter: html, images: null}])
         }).catch(err => console.log(err))
     },
     c13: (req, res) => {

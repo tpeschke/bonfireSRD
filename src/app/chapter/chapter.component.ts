@@ -29,6 +29,8 @@ export class ChapterComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.notRedux.toggleShow(false);
+    this.view = null;
+    this.images = null;
   }
 
   view = null;
@@ -39,7 +41,11 @@ export class ChapterComponent implements OnInit, OnDestroy {
     this.chapterService.getChapter(id)
       .subscribe(chapter => {
         this.view = chapter[0].chapter;
-        this.images = chapter[0].images;
+        if (chapter[0].images === "<div></div>" || !chapter[0].images) {
+          this.images = null
+        } else {
+          this.images = chapter[0].images;
+        }
       })
   }
 

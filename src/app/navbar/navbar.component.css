@@ -1,6 +1,4 @@
-div {
-    background: grey;
-}
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
 
 a {
     text-decoration: none;
@@ -11,6 +9,7 @@ a {
 
 a:hover {
     background: #b45f0675;
+    border-radius: 20px;
 }
 
 a:active {
@@ -26,24 +25,62 @@ h1 {
 .navBar {
     width: 100%;
     margin: 15px auto;
-    background: grey;
     display: flex;
+    padding: 0 40px;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
+    position: relative;
     z-index: 1;
+    font-family: 'Vollkorn SC', serif;
 }
+
+.navOverlay {
+    background: linear-gradient(rgba(34, 34, 34, 0.25), #222);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navBackground {
+    position: absolute;
+    background-position: center;
+    background-size: auto;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.heraldRight {
+    height: 115px;
+    position: absolute;
+    top: -3px;
+    right: -45px;
+}
+
+.heraldLeft {
+    height: 120px;
+    position: absolute;
+    top: -7px;
+    left: -38px;
+ }
 
 .topNav {
     display: flex;
     justify-content: space-between;
+    margin: 0 25px;
 }
 
 .middleNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black
+    text-align: center;
 }
 
 .bottomNav {
@@ -51,5 +88,12 @@ h1 {
     margin: 0 25px 0 25px;
     display: flex;
     justify-content: space-between;
-    align-content: center
+    align-items: center;
+}
+
+.selectChapter {
+    color: whitesmoke;
+    width: 250px;
+    text-align: center;
+    font-family: 'Vollkorn SC', serif;
 }
