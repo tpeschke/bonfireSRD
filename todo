@@ -1,0 +1,11 @@
+- Add database
+    - add Cron to run the updates for the pages
+    - add a search function
+- Resize tables
+    - Especially Equipment
+- Add login
+    - login automatically logs in for combat counter
+    - Add Stripe subscriptions
+        - Add advanced section
+            - Add skip to advanced section
+            - Add advanced search functionality
