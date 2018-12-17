@@ -9,6 +9,8 @@ const app = new express()
 app.use(bodyParser.json())
 app.use(cors())
 
+app.use( express.static( __dirname + `/../src/index.html` ) );
+
 // ================================== \\
 
 app.get('/chapter/c1', ctrl.c1);
