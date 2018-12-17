@@ -1,7 +1,6 @@
 const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
-    , massive = require('massive')
     , { server } = require('./serv-config')
     , ctrl = require('./controller')
 
@@ -9,7 +8,7 @@ const app = new express()
 app.use(bodyParser.json())
 app.use(cors())
 
-app.use( express.static( __dirname + `/../src/index.html` ) );
+app.use( express.static( __dirname + `/../e2e` ) );
 
 // ================================== \\
 
