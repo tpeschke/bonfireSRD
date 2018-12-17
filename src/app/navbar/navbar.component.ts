@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
+import { Router, NavigationEnd } from '@angular/router'
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,10 @@ import { NotReduxService } from '../not-redux.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private notRedux: NotReduxService) { }
+  constructor(
+    private notRedux: NotReduxService,
+    private router: Router
+  ) { }
 
   public chapter = '';
   public pervious = '';
@@ -17,8 +21,23 @@ export class NavbarComponent implements OnInit {
   public nextRoute = 1;
   public reset = '';
 
-  ngOnInit() {}
-  
+  ngOnInit() {
+    this.router.events.subscribe(p => {
+      if (p instanceof NavigationEnd) {
+        if (p.url.substring(0, 8) === '/chapter') {
+          this.setChapter(+p.url.substring(10))
+        } else {
+          this.chapter = '';
+          this.pervious = '';
+          this.perviousRoute = 1;
+          this.next = '';
+          this.nextRoute = 1;
+          this.reset = '';
+        }
+      }
+    })
+  }
+
   viewChapter(name): void {
     this.chapter = name;
   }
@@ -56,7 +75,7 @@ export class NavbarComponent implements OnInit {
       case 15:
         return 'Misc Rules';
       default:
-        return '';
+        return 'Home';
     }
   }
 

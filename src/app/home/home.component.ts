@@ -15,8 +15,4 @@ export class HomeComponent implements OnInit {
     this.notRedux.toggleShow(false)
   }
 
-  setChapter(id) {
-    this.notRedux.setChapter(id)
-  }
-
 }
