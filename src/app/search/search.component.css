@@ -45,11 +45,16 @@ input {
     transform: rotate(45deg)
 }
 
+.searchTitle {
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: 'Vollkorn SC', serif;
+}
+
 .searchShell {
     font-family: 'Vollkorn SC', serif;
     border: 1px solid #222;
-    margin-top: 15px;
-    height: 275px;
+    height: 262px;
     overflow-y: scroll;
 }
 
