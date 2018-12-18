@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChapterService } from '../chapter.service'; 
+import _ from 'lodash';
 
 @Component({
   selector: 'app-search',
@@ -17,10 +18,14 @@ export class SearchComponent implements OnInit {
   public searches = [];
 
   getSearch(search: any): void {
-    this.cs.getSearch(search.target.value)
-      .subscribe(result => {
-        this.searches = result;
-      })
+    if (search === '') {
+      this.searches = [];
+    } else {
+      this.cs.getSearch(search.target.value)
+        .subscribe(result => {
+          this.searches = _.sortBy(result, 'chapnum');
+        })
+    }
   }
 
 }

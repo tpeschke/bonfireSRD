@@ -4,7 +4,7 @@
 
     <div class="topNav">
         <a class="selectChapter" routerLink="">Home</a>
-        <a class="selectChapter" href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
+        <a class="selectChapter" target="_blank" href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view?usp=sharing">Character Sheet</a>
     </div>
     <div class="middleNav">
         <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/c1" (mouseover)="viewChapter('Character Creation')" (mouseout)="resetChapter()" (click)="setChapter(1)">1</a>
