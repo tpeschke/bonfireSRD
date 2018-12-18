@@ -1,7 +1,9 @@
 const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
-    , { server } = require('./serv-config')
+    , massive = require('massive')
+    , CronJob = require('cron').CronJob
+    , { server, connection, auth } = require('./serv-config')
     , ctrl = require('./controller')
 
 const app = new express()
@@ -9,6 +11,12 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.use( express.static( __dirname + `/../dist/bonfireSRD` ) );
+
+new CronJob('0 0 0 * * *', _ => {
+    let d = new Date()
+    console.log('I ran!', d.getDay())
+    ctrl.forceRun({body: {auth}}, null)
+})
 
 // ================================== \\
 
@@ -28,8 +36,13 @@ app.get('/c/c13', ctrl.c13);
 app.get('/c/c14', ctrl.c14);
 app.get('/c/c15', ctrl.c15);
 
+app.patch('/auth', ctrl.forceRun)
+
 // ================================== \\
 
-app.listen(server, _ => {
-    console.log(`The night lays like a lullaby on the earth ${server}`)
+massive(connection).then(dbI => {
+    app.set('db', dbI)
+    app.listen(server, _ => {
+        console.log(`The night lays like a lullaby on the earth ${server}`)
+    })
 })
