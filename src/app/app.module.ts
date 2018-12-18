@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SafeHtmlPipe } from './safe-html.pipe';
     HomeComponent,
     ChapterComponent,
     SafeHtmlPipe,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

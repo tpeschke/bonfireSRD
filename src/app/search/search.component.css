@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
+input {
+    width: 100%;
+    font-family: 'Vollkorn SC', serif;
+    padding-left: 10px;
+}
+
+.inputShell {
+    display: flex;
+}
+
+.searchIcon {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.iconOuter {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #222
+}
+
+.iconInner {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    top: 3px;
+    left: 3px;
+}
+
+.iconHandle {
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    background: #222;
+    bottom: 4px;
+    right: 0px;
+    transform: rotate(45deg)
+}
+
+.searchShell {
+    font-family: 'Vollkorn SC', serif;
+    border: 1px solid #222;
+    margin-top: 15px;
+    height: 275px;
+    overflow-y: scroll;
+}
+
+.searchResult {
+    display: flex;
+    padding: 10px;
+}
+
+.searchResult:hover {
+    background: #b45f06;
+}
+
+.searchName {
+    margin-left: 15px;
+}

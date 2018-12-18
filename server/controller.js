@@ -62,6 +62,10 @@ module.exports = {
         const db = req.app.get('db')
         db.get.chapter(15).then(result => res.send(result))
     },
+    search: (req, res) => {
+        const db = req.app.get('db')
+        db.get.search(req.body.search).then(result => res.send(result))
+    },
     forceRun: (req, res) => {
         if (req.body.auth === auth) {
             const db = req.app.get('db')

@@ -8,6 +8,11 @@ class Chapter {
   images: string
 }
 
+class Search {
+  chapname: string
+  chapnum: number
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -31,6 +36,15 @@ export class ChapterService {
       .pipe(
         tap(_ => console.log(),
           catchError(this.handleError('getChapter', []))
+        )
+      )
+  }
+
+  getSearch(search): Observable<Search[]> {
+    return this.http.post<Search[]>('../search', {search})
+      .pipe(
+        tap(_=> console.log(),
+        catchError(this.handleError('search', []))
         )
       )
   }

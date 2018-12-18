@@ -36,6 +36,8 @@ app.get('/c/c13', ctrl.c13);
 app.get('/c/c14', ctrl.c14);
 app.get('/c/c15', ctrl.c15);
 
+app.post('/search', ctrl.search)
+
 app.patch('/auth', ctrl.forceRun)
 
 // ================================== \\

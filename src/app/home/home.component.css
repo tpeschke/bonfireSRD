@@ -29,9 +29,9 @@ p {
 }
 
 .innerLeft {
-    background: white;
-    height: 195px;
     width: 475px;
+    display: flex;
+    flex-direction: column;
 }
 
 .innerRight {
@@ -40,6 +40,20 @@ p {
     height: 590px;
     width: 475px;
     padding: 35px;
+}
+
+.innerSearch {
+    background: white;
+    width: 475px;
+    height: 380px;
+    padding: 35px;
+    margin-top: 15px;
+}
+
+.leftShell {
+    background: white;
+    height: 195px;
+    width: 475px;
 }
 
 .titleShell {

@@ -1,0 +1,17 @@
+<div class="inputShell">
+  <input type="text" (keyup)="getSearch($event)">
+  <div class='searchIcon'>
+    <div class="iconOuter"></div>
+    <div class="iconInner"></div>
+    <div class="iconHandle"></div>
+  </div>
+</div>
+
+<div class='searchShell'>
+  <div *ngFor="let search of searches">
+    <div class="searchResult"  routerLink="chapter/c{{search.chapnum}}">
+      <div>Chapter {{search.chapnum}}:</div>
+      <div class="searchName">{{search.chapname}}</div>
+    </div>
+  </div>
+</div>
