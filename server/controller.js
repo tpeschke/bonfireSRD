@@ -141,16 +141,7 @@ module.exports = {
             }).catch(err => console.log(err))
 
             rp(c7URL).then(html => {
-                let images = '<div>';
-                let sort = html.split('<span style="overflow: hidden;')
-                for (let i = 1; i <= sort.length - 1; i++) {
-                    let n = sort[i].indexOf('</span>')
-                    let img = sort[i].slice(0, n)
-                    sort[i] = sort[i].split(img + '</span>').join('')
-                    images = images + '<span style="overflow:hidden;' + img + '</span>'
-                }
-                images = images === '<div>' ? null : images;
-                array.push(db.update.chapters(7, sort.join(''), images).then())
+                array.push(db.update.chapters(7, html, null).then())
             }).catch(err => console.log(err))
 
             rp(c8URL).then(html => {
