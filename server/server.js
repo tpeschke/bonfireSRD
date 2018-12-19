@@ -13,7 +13,8 @@ app.use(cors())
 app.use( express.static( __dirname + `/../dist/bonfireSRD` ) );
 
 new CronJob('0 0 0 * * *', _ => {
-    ctrl.forceRun({body: {auth}}, null)
+    const a = app.get('db')
+    ctrl.forceRun({body: {auth, a}}, null)
 }, null, true, 'America/Los_Angeles');
 
 ///////////////////////////////////

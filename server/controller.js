@@ -68,7 +68,7 @@ module.exports = {
     },
     forceRun: (req, res) => {
         if (req.body.auth === auth) {
-            const db = req.app.get('db')
+            const db = req.app ? req.app.get('db') : req.body.a
             let array = []
 
             rp(c1URL).then(html => {
