@@ -2,65 +2,9 @@ const { c1URL, c2URL, c3URL, c4URL, c5URL, c6URL, c7URL, c8URL, c9URL, c10URL, c
     , rp = require('request-promise')
 
 module.exports = {
-    c1: ({app}, {send}) => {
-        const db = app.get('db')
-        db.get.chapter(1).then(result => send(result))
-    },
-    c2: (req, res) => {
+    c: (req, res) => {
         const db = req.app.get('db')
-        db.get.chapter(2).then(result => res.send(result))
-    },
-    c3: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(3).then(result => res.send(result))
-    },
-    c4: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(4).then(result => res.send(result))
-    },
-    c5: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(5).then(result => res.send(result))
-    },
-    c6: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(6).then(result => res.send(result))
-    },
-    c7: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(7).then(result => res.send(result))
-    },
-    c8: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(8).then(result => res.send(result))
-    },
-    c9: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(9).then(result => res.send(result))
-    },
-    c10: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(10).then(result => res.send(result))
-    },
-    c11: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(11).then(result => res.send(result))
-    },
-    c12: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(12).then(result => res.send(result))
-    },
-    c13: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(13).then(result => res.send(result))
-    },
-    c14: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(14).then(result => res.send(result))
-    },
-    c15: (req, res) => {
-        const db = req.app.get('db')
-        db.get.chapter(15).then(result => res.send(result))
+        db.get.chapter(+req.params.id).then(result => res.send(result))
     },
     search: (req, res) => {
         const db = req.app.get('db')

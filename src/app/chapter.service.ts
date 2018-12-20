@@ -32,7 +32,7 @@ export class ChapterService {
   }
 
   getChapter(id): Observable<Chapter[]> {
-    return this.http.get<Chapter[]>('../c/' + id)
+    return this.http.get<Chapter[]>('../c/' + id.substring(1))
       .pipe(
         tap(_ => console.log(),
           catchError(this.handleError('getChapter', []))
