@@ -3,7 +3,8 @@ create table SRDchapters (
     chapNum int,
     chapName varchar(30),
     html text,
-    images text
+    images text,
+    updated varchar(10)
 );
 
 insert into srdchapters (chapname, chapnum) values

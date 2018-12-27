@@ -59,10 +59,10 @@ h1 {
 }
 
 .heraldRight {
-    height: 115px;
+    height: 114px;
     position: absolute;
     top: -3px;
-    right: -45px;
+    right: -40px;
 }
 
 .heraldLeft {
@@ -83,6 +83,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 0 15px;
 }
 
 .bottomNav {

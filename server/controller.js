@@ -25,6 +25,7 @@ module.exports = {
                     images = images + '<span style="overflow:hidden;' + img + '</span>'
                 }
                 images = images === '<div>' ? null : images;
+
                 array.push(db.update.chapters(1, sort.join(''), images).then())
             }).catch(err => console.log(err))
 
