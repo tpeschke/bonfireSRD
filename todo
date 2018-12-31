@@ -1,5 +1,10 @@
 - Resize tables
-- Crop heraldic dragon down a bit
+- if table sidebar is smaller than rule section of chapter but banner's size, add banner at bottom
+- Make nav bar fixed
+- Zebra stripe search results
+- Add text snippet to search
+- Add support email
+- Add discord channel
 - Add login
     - login automatically logs in for combat counter
     - Add Stripe subscriptions

@@ -5,6 +5,7 @@ const express = require('express')
     , CronJob = require('cron').CronJob
     , { server, connection, auth } = require('./serv-config')
     , ctrl = require('./controller')
+    , path = require('path')
 
 const app = new express()
 app.use(bodyParser.json())
@@ -39,10 +40,13 @@ new CronJob('0 0 0 * * *', _ => {
 
 app.get('/c/:id', ctrl.c);
 
-app.post('/search', ctrl.search)
+app.post('/search', ctrl.search);
 
-app.patch('/auth', ctrl.forceRun)
+app.patch('/auth', ctrl.forceRun);
 
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/../dist/BonfireSRD/index.html'))
+})
 // ================================== \\
 
 massive(connection).then(dbI => {
