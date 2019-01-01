@@ -1,3 +1,7 @@
+.outerShell {
+  margin: 137px 0 25px;
+}
+
 .innerShell {
   display: flex;
   justify-content: space-around;
@@ -8,7 +12,7 @@
 .chapterShell {
   padding: 15px;
   width: 635px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .backColor {

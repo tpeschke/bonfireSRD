@@ -6,6 +6,12 @@
     margin: 0 auto;
 }
 
+.navHolder {
+    position: fixed;
+    width: 950px;
+    z-index: 1;
+}
+
 #video-background {
     position: fixed;
     right: 0; 

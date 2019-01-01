@@ -45,7 +45,7 @@ app.post('/search', ctrl.search);
 app.patch('/auth', ctrl.forceRun);
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../dist/BonfireSRD/index.html'))
+    res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))
 })
 // ================================== \\
 

@@ -3,7 +3,8 @@
 .outerShell {
     display: flex;
     justify-content: space-around;
-    height: 950px;
+    width: 950px;
+    margin: 137px 0 25px;
 }
 
 a {
