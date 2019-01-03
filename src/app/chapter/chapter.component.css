@@ -51,6 +51,11 @@
   height: 100%;
 }
 
+.imageBanner {
+  display: flex;
+  flex-direction: column;
+}
+
 /* =================== */
 
 .loading, .loading::before, .loading::after {
