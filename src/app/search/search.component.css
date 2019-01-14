@@ -63,6 +63,10 @@ input {
     padding: 10px;
 }
 
+.searchResult:nth-child(even) {
+    background: lightgrey;
+}
+
 .searchResult:hover {
     background: #b45f06;
 }
