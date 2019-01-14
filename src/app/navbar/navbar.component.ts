@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
 import { Router, NavigationEnd } from '@angular/router'
 
@@ -7,6 +7,7 @@ import { Router, NavigationEnd } from '@angular/router'
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
 export class NavbarComponent implements OnInit {
 
   constructor(
@@ -20,6 +21,7 @@ export class NavbarComponent implements OnInit {
   public next = '';
   public nextRoute = 1;
   public reset = '';
+  public marginBack = 'true';
 
   ngOnInit() {
     this.router.events.subscribe(p => {
@@ -38,11 +40,22 @@ export class NavbarComponent implements OnInit {
     })
   }
 
-  viewChapter(name): void {
+  @HostListener('document:scroll', ['$event'])
+
+  handleScroll(e: any): void {
+    if (e.target.documentElement.scrollTop > 15) {
+      this.marginBack = 'false';
+    } else {
+      this.marginBack = 'true';
+    }
+  }
+
+
+  viewChapter(name: string): void {
     this.chapter = name;
   }
 
-  getChapter(id): string {
+  getChapter(id: number): string {
     switch (id) {
       case 1:
         return 'Character Creation';
@@ -79,7 +92,7 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  setChapter(chapter): void {
+  setChapter(chapter: any): void {
     if (chapter === 'p') {
       this.chapter = this.getChapter(this.perviousRoute);
       this.reset = this.getChapter(this.perviousRoute);

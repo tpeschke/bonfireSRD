@@ -1,6 +1,5 @@
-<div class="navBar">
-    <div class="navOverlay"></div>
-    <!-- <img src="../../assets/images/stone.jpg" alt="stonework" class="navBackground"> -->
+<div class="navBar" [ngClass]="{'noMargin' : marginBack === 'false' }">
+    <div class="navOverlay" [ngClass]="{'fullBackground' : marginBack === 'false' }"></div>
 
     <div class="topNav">
         <a class="selectChapter" routerLink="">Home</a>

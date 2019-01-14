@@ -35,6 +35,11 @@ h1 {
     position: relative;
     z-index: 1;
     font-family: 'Vollkorn SC', serif;
+    transition: .6s;
+}
+
+.noMargin {
+    margin-top: 0;
 }
 
 .navOverlay {
@@ -45,6 +50,11 @@ h1 {
     height: 100%;
     width: 100%;
     z-index: -1;
+    transition: .6s;
+}
+
+.fullBackground {
+    background: #222;
 }
 
 .navBackground {
