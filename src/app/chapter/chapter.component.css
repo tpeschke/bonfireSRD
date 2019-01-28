@@ -59,7 +59,7 @@
 }
 
 .tableShell {
-  z-index: 1;
+  z-index: 0;
   align-items: center;
   margin: 15px;
   display: none;

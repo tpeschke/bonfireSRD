@@ -53,6 +53,18 @@
 
 <!-- MOBILE NAV -->
 
-<div *ngIf="mobile">
+<div *ngIf="mobile" class="mobileShell">
+    <div class="hamShell">
+        <div class="hamBar"></div>
+        <div class="hamBar"></div>
+        <div class="hamBar"></div>
+    </div>
+
+    <div class="navTitleShell">
+        <img src="../../assets/images/white.png" alt="bonfire white title" class="navTitleWords">
+        <img src="../../assets/images/bonfire.png" alt="bonefire flame" class="navTitleFire">
+        <p class="navSubtitle">Basic SRD</p>
+    </div>
+
     <i class="fa fa-home homeIcon"></i>
 </div>

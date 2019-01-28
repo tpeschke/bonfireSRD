@@ -116,10 +116,63 @@ h1 {
     font-family: 'Vollkorn SC', serif;
 }
 
+.mobileShell {
+    background: #222;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    position: fixed;
+    z-index: 1;
+}
+
 .homeIcon {
     font-size: 35px;
     color: whitesmoke;
+}
+
+.hamShell {
+    height: 25px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamBar {
+    background: whitesmoke;
+    width: 35px;
+    height: 5px;
+}
+
+.navTitleShell {
+    position: relative;
+    width: 175px;
+    height: 60px;
+}
+
+.navTitleWords {
+    height: 45px;
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 7px;
+    left: 18px;
+}
+
+.navTitleFire {
+    height: 65px;
+    position: absolute;
+    top: -5px;
+    right: 49px;
+}
+
+.navSubtitle {
+    font-family: 'Vollkorn SC', serif;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 3px;
+    left: 25px;
+    font-size: 12px;
 }
