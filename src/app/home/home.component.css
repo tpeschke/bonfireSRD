@@ -141,3 +141,9 @@ p {
         margin-bottom: 10px;
     }
 }
+
+@media (max-width: 320px) {
+    .innerRight {
+        height: 1000px;
+    }
+}

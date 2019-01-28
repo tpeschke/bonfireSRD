@@ -23,6 +23,7 @@ export class NavbarComponent implements OnInit {
   public reset = '';
   public marginBack = true;
   public mobile = false;
+  public ham = false;
 
   ngOnInit() {
     this.router.events.subscribe(p => {
@@ -117,9 +118,16 @@ export class NavbarComponent implements OnInit {
       this.pervious = '< ' + this.getChapter(chapter - 1);
       this.next = this.getChapter(chapter + 1) + ' >';
     }
+    if (this.ham) {
+      this.ham = false;
+    }
   }
 
   resetChapter(): void {
     this.chapter = this.reset
+  }
+
+  openHam(): void {
+    this.ham = !this.ham
   }
 }
