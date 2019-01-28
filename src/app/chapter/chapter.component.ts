@@ -19,7 +19,7 @@ export class ChapterComponent implements OnInit, OnDestroy {
 
   view = null;
   images = null;
-  navDisplay = true;
+  navDisplay = false;
   chapterName = '';
 
   ngOnInit() {

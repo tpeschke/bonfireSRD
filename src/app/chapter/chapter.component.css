@@ -81,6 +81,7 @@ p {
   margin: 0 auto;
   font-family: 'Vollkorn SC', serif;
   border-bottom: 1px solid #222;
+  display: none;
 }
 
 /* =================== */
@@ -196,5 +197,9 @@ p {
     margin: 0;
     padding-left: 15px;
     background: transparent;
+  }
+
+  .chapterTitle {
+    display: inherit;
   }
 }

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     width: 950px;
-    margin: 100px 0 25px;
+    margin: 137px 0 25px;
 }
 
 a {
@@ -139,6 +139,10 @@ p {
     a {
         font-size: 20px;
         margin-bottom: 10px;
+    }
+
+    .outerShell {
+        margin: 90px 0 25px;
     }
 }
 
