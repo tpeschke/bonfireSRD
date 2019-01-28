@@ -1,5 +1,5 @@
-<div class="navBar" [ngClass]="{'noMargin' : marginBack === 'false' }">
-    <div class="navOverlay" [ngClass]="{'fullBackground' : marginBack === 'false' }"></div>
+<div *ngIf="!mobile" class="navBar" [ngClass]="{'noMargin' : !marginBack }">
+    <div class="navOverlay" [ngClass]="{'fullBackground' : !marginBack }"></div>
 
     <div class="topNav">
         <a class="selectChapter" routerLink="">Home</a>
@@ -49,4 +49,10 @@
 
     <img src="../../assets/images/dragon.png" alt="dragon" class="heraldRight">
     <img src="../../assets/images/griffin.png" alt="griffin" class="heraldLeft">
+</div>
+
+<!-- MOBILE NAV -->
+
+<div *ngIf="mobile">
+    <i class="fa fa-home homeIcon"></i>
 </div>

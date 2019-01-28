@@ -3,9 +3,15 @@
         <div class="backTexture"></div>
         <div class="backColor"></div>
         <div [innerHTML]="view | safeHtml" class="chapterShell"></div>
-
-        <div *ngIf='images' [innerHTML]="images | safeHtml" class="imageShell"></div>
+        
+        
+        <div *ngIf='images && navDisplay' [innerHTML]="images | safeHtml" class="imageShell"></div>
         <img *ngIf='!images' src="../../assets/images/S.png" alt="banner of the Empire" class="image">
+        
+        <div *ngIf='images' class="tableShell" (click)="displayTables()">
+            <img src="../../assets/images/table.png" alt="table icon" class='tableImage'>
+            <p>Tables</p>
+        </div>
     </div>
 
     <div *ngIf='!view'>

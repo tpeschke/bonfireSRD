@@ -21,7 +21,8 @@ export class NavbarComponent implements OnInit {
   public next = '';
   public nextRoute = 1;
   public reset = '';
-  public marginBack = 'true';
+  public marginBack = true;
+  public mobile = false;
 
   ngOnInit() {
     this.router.events.subscribe(p => {
@@ -38,15 +39,16 @@ export class NavbarComponent implements OnInit {
         }
       }
     })
+    this.mobile = window.innerWidth <= 500 ? true : false
   }
 
   @HostListener('document:scroll', ['$event'])
 
   handleScroll(e: any): void {
     if (e.target.documentElement.scrollTop > 15) {
-      this.marginBack = 'false';
+      this.marginBack = false;
     } else {
-      this.marginBack = 'true';
+      this.marginBack = true;
     }
   }
 

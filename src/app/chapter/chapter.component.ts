@@ -17,12 +17,17 @@ export class ChapterComponent implements OnInit, OnDestroy {
     private notRedux: NotReduxService
     ) { } 
     
+    view = null;
+    images = null;
+    navDisplay = true;
+
   ngOnInit() {
     this.getChapter();
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {
       this.view = null;
       this.images = null;
+      this.navDisplay = window.document.body.clientWidth > 501 ? true : false 
       this.getChapter()
     })
   }
@@ -31,10 +36,12 @@ export class ChapterComponent implements OnInit, OnDestroy {
     this.notRedux.toggleShow(false);
     this.view = null;
     this.images = null;
+    this.navDisplay = true;
   }
 
-  view = null;
-  images = null;
+  displayTables() {
+    this.navDisplay = !this.navDisplay
+  }
 
   getChapter(): void {
     const id = this.route.snapshot.paramMap.get('id')

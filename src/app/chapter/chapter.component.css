@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
 .outerShell {
   margin: 137px 0 25px;
 }
@@ -54,6 +56,24 @@
 .imageBanner {
   display: flex;
   flex-direction: column;
+}
+
+.tableShell {
+  z-index: 1;
+  align-items: center;
+  margin: 15px;
+  display: none;
+}
+
+.tableImage {
+  width: 30px;
+  height: 30px;
+}
+
+p {
+  font-size: 20px;
+  margin-left: 15px;
+  font-family: 'Vollkorn SC', serif;
 }
 
 /* =================== */
@@ -123,5 +143,51 @@
 @keyframes animation-rotate {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/*  */
+
+@media (max-width: 500px) {
+  .outerShell {
+    margin-top: 85px;
+  }
+
+  .innerShell {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .chapterShell {
+    width: 100%;
+  }
+  
+  .backTexture {
+    width: 100%;
+  }
+
+  .backColor {
+    width: 100%;
+  }
+
+  .imageShell {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .tableShell {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .imageShell {
+    width: 100%;
+    margin: 0;
+    padding-left: 15px;
+    background: transparent;
   }
 }

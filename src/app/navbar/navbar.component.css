@@ -26,6 +26,7 @@ h1 {
 
 .navBar {
     width: 100%;
+    max-width: 950px;
     margin: 15px auto;
     display: flex;
     padding: 0 40px;
@@ -113,4 +114,12 @@ h1 {
     width: 250px;
     text-align: center;
     font-family: 'Vollkorn SC', serif;
+}
+
+.homeIcon {
+    font-size: 35px;
+    color: whitesmoke;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }

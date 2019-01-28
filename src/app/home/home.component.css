@@ -103,3 +103,41 @@ p {
 .itemSub {
     font-size: 13px;
 }
+
+
+
+
+@media (max-width: 500px) {
+
+    .leftShell {
+        display: none
+    }
+
+    .innerLeft {
+        width: 100%;
+    }
+
+    .innerRight {
+        margin: 0;
+        height: 910px;
+        width: 100%;
+    }
+
+    .outerShell {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .innerSearch {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px
+    }
+
+    a {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
