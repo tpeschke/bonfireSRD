@@ -76,6 +76,13 @@ p {
   font-family: 'Vollkorn SC', serif;
 }
 
+.chapterTitle {
+  z-index: 0;
+  margin: 0 auto;
+  font-family: 'Vollkorn SC', serif;
+  border-bottom: 1px solid #222;
+}
+
 /* =================== */
 
 .loading, .loading::before, .loading::after {
