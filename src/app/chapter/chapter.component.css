@@ -61,8 +61,16 @@
 .tableShell {
   z-index: 0;
   align-items: center;
+  justify-content: space-around;
   margin: 15px;
+  padding: 5px;
   display: none;
+  background: rgb(151, 23, 21);
+  border: 3px outset rgb(151, 23, 21);
+}
+
+.tableShell > p {
+  color: whitesmoke;
 }
 
 .tableImage {
