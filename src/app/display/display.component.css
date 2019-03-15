@@ -1,3 +1,19 @@
+h1 {
+    color: #990000;
+    font-weight: 700;
+    font-size: 14pt;
+    padding: 15px 15px 5px 15px;
+}
+
 p {
     text-indent: 35px;
+    margin-bottom: 5px;
+}
+
+.underline {
+    width: 90%;
+    height: 2px;
+    background: #222;
+    margin-bottom: 10px;
+    border: 1px groove grey;
 }
