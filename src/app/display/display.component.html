@@ -1,3 +1,8 @@
-<p>
-  display works!
-</p>
+<div *ngIf="type === 'h'">
+  <h1>{{piece.body}}</h1>
+  <div class="underline"></div>
+</div>
+
+<div *ngIf="type === 'p'" class="innerShell">
+  <p>{{piece.body}}</p>
+</div>

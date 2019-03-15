@@ -4,7 +4,7 @@
       <div class="backColor"></div>
       <div *ngIf="view" class="chapterShell">
         <div *ngFor="let piece of view">
-          <app-display></app-display>
+          <app-display [piece]="piece"></app-display>
         </div>
       </div>
 
