@@ -34,3 +34,11 @@ create table SRDchart (
     rightbody text,
     nextid varchar(6)
 )
+
+create table SRDsidebar (
+    id serial primary key,
+    linkid varchar(6),
+    body text,
+    endid varchar(6),
+    nextid varchar(6)
+)

@@ -11,3 +11,10 @@
     <p>{{piece.leftbody}}</p>
     <p>{{piece.rightbody}}</p>
 </div>
+
+<div *ngIf="type === 'sb'" [ngClass]="nextType !== 'c' ? 'sidebarShell marginBottom' : 'sidebarShell'">
+  <h2>{{piece.body}}</h2>
+  <div *ngFor="let sidepiece of piece.inner">
+    <p>{{sidepiece.body}}</p>
+  </div>
+</div>
