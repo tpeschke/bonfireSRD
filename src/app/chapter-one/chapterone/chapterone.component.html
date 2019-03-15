@@ -1,3 +1,13 @@
-<p>
-  chapterone works!
-</p>
+<div class="outerShell">
+  <div class="innerShell">
+      <div class="backTexture"></div>
+      <div class="backColor"></div>
+      <div *ngIf="view" class="chapterShell">
+        <div *ngFor="let piece of view">
+          <app-display></app-display>
+        </div>
+      </div>
+
+      <img *ngIf='!images' src="../../../assets/images/S.png" alt="banner of the Empire" class="image">
+  </div>
+</div>

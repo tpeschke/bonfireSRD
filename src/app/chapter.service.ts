@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { catchError, map, tap } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { catchError, tap } from 'rxjs/operators';
 
 class Chapter {
   chapter: string
@@ -40,6 +40,17 @@ export class ChapterService {
         )
       )
   }
+
+  getChapterArray(id): Observable<[]> {
+    return this.http.get<[]>('http://localhost:3333/c/' + id)
+    // return this.http.get<Chapter[]>('../c/' + id.substring(1))
+      .pipe(
+        tap(_ => console.log(),
+          catchError(this.handleError('getChapter', []))
+        )
+      )
+  }
+
 
   getSearch(search): Observable<Search[]> {
     return this.http.post<Search[]>('http://localhost:3333/search', {search})

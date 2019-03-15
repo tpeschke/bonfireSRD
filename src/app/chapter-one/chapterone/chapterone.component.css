@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
+
+.outerShell {
+  margin: 137px 0 25px;
+}
+
+.innerShell {
+  display: flex;
+  justify-content: space-around;
+  width: 950px;
+  position: relative;
+}
+
+.chapterShell {
+  padding: 15px;
+  width: 635px;
+  z-index: 0;
+}
+
+.backColor {
+  background: whitesmoke;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 635px;
+  z-index: -1;
+}
+
+.backTexture {
+  background-image: url("../../../assets/images/1.jpg");
+  background-size: fill;
+  height: 900px;
+  width: 635px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.imageShell {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 300px;
+  height: 100%;
+  background: rgba(245, 245, 245, 0.75);
+}
+
+.image {
+  margin-left: 15px;
+  margin-top: -26px;
+  width: 300px;
+  height: 100%;
+}

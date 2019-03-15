@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChapterService } from '../../chapter.service';
 
 @Component({
   selector: 'app-chapterone',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChapteroneComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private chapterService: ChapterService,
+  ) { }
+
+  view = [{body:""}]
 
   ngOnInit() {
+    this.chapterService.getChapterArray(1)
+      .subscribe(chapterArray => {
+        this.view = chapterArray
+      })
   }
 
 }

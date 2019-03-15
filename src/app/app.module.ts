@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SearchComponent } from './search/search.component';
     ChapterComponent,
     SafeHtmlPipe,
     SearchComponent,
+    DisplayComponent,
   ],
   imports: [
     BrowserModule,
