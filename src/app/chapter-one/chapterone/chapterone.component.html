@@ -1,13 +1,17 @@
 <div class="outerShell">
-  <div class="innerShell">
+  <div *ngIf="view" class="innerShell">
       <div class="backTexture"></div>
       <div class="backColor"></div>
-      <div *ngIf="view" class="chapterShell">
+      <div class="chapterShell">
         <div *ngFor="let piece of view">
           <app-display [piece]="piece"></app-display>
         </div>
       </div>
 
       <img *ngIf='!images' src="../../../assets/images/S.png" alt="banner of the Empire" class="image">
+  </div>
+
+  <div *ngIf='!view'>
+      <div class="loading"></div>
   </div>
 </div>

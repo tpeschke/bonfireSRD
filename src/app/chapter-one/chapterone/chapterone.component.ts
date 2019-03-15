@@ -12,7 +12,7 @@ export class ChapteroneComponent implements OnInit {
     private chapterService: ChapterService,
   ) { }
 
-  view = [{body:""}]
+  view = null
 
   ngOnInit() {
     this.chapterService.getChapterArray(1)

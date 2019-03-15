@@ -16,12 +16,11 @@ export class DisplayComponent implements OnInit {
 
   ngOnInit() {
     if (this.piece.linkid) {
-      if (this.nextType) {
+      if (this.piece.nextid) {
         this.nextType = this.piece.nextid.split('.')[1]
       }
       this.type = this.piece.linkid.split('.')[1]
     }
-    console.log(this.piece)
   }
 
 }
