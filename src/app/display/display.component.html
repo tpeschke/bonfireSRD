@@ -3,6 +3,11 @@
   <div class="underline"></div>
 </div>
 
-<div *ngIf="type === 'p'" class="innerShell">
+<div *ngIf="type === 'p'" [ngClass]="nextType !== 'p' ? 'marginBottom' : ''">
   <p>{{piece.body}}</p>
+</div>
+
+<div *ngIf="type === 'c'" [ngClass]="nextType !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
+    <p>{{piece.leftbody}}</p>
+    <p>{{piece.rightbody}}</p>
 </div>

@@ -20,9 +20,17 @@ create table SRDheader (
     nextid varchar(6)
 )
 
-create tabl SRDparagraph (
+create table SRDparagraph (
     id serial primary key,
     linkid varchar(6),
     body text,
+    nextid varchar(6)
+)
+
+create table SRDchart (
+    id serial primary key,
+    linkid varchar(6),
+    leftbody text,
+    rightbody text,
     nextid varchar(6)
 )

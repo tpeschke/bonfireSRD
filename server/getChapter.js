@@ -1,18 +1,27 @@
 function collectChapter(db, array, next, send) {
     if (next.split('.')[1] === 'h') {
-        db.get.header(next).then(piece => {
-            array.push(piece[0])
-            if (piece[0].nextid) {
-                collectChapter(db, array, piece[0].nextid, send)
+        db.srdheader.findOne({linkid: next}).then( piece => {
+            array.push(piece)
+            if (piece.nextid) {
+                collectChapter(db, array, piece.nextid, send)
             } else {
                 send.send(array)
             }
         })
     } else if (next.split('.')[1] === 'p') {
-        db.get.paragraph(next).then(piece => {
-            array.push(piece[0])
-            if (piece[0].nextid) {
-                collectChapter(db, array, piece[0].nextid, send)
+        db.srdparagraph.findOne({linkid: next}).then(piece => {
+            array.push(piece)
+            if (piece.nextid) {
+                collectChapter(db, array, piece.nextid, send)
+            } else {
+                send.send(array)
+            }
+        })
+    } else if (next.split('.')[1] === 'c') {
+        db.srdchart.findOne({linkid: next}).then(piece => {
+            array.push(piece)
+            if (piece.nextid) {
+                collectChapter(db, array, piece.nextid, send)
             } else {
                 send.send(array)
             }
