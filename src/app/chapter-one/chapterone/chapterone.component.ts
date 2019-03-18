@@ -15,7 +15,7 @@ export class ChapteroneComponent implements OnInit {
   view = null
 
   ngOnInit() {
-    this.chapterService.getChapterArray(1)
+    this.chapterService.getChapterArray('1.h.1')
       .subscribe(chapterArray => {
         this.view = chapterArray
       })

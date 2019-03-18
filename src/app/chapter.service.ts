@@ -42,7 +42,7 @@ export class ChapterService {
   }
 
   getChapterArray(id): Observable<[]> {
-    return this.http.get<[]>('http://localhost:3333/c/' + id)
+    return this.http.get<[]>('http://localhost:3333/nc/' + id)
     // return this.http.get<Chapter[]>('../c/' + id.substring(1))
       .pipe(
         tap(_ => console.log(),

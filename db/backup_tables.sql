@@ -43,8 +43,15 @@ create table SRDsidebar (
     nextid varchar(6)
 )
 
-create table SRDsectionspace (
+create table SRDsectionSpace (
     id serial primary key,
     linkid varchar(6),
+    nextid varchar(6)
+)
+
+create table SRDbulletedList (
+    id serial primary key,
+    linkid varchar(6),
+    body text,
     nextid varchar(6)
 )

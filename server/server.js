@@ -39,7 +39,7 @@ new CronJob('0 0 0 * * *', _ => {
 
 // ================================== \\
 
-app.get('/c/1', chapter.c1)
+app.get('/nc/:id', chapter.c1)
 app.get('/c/:id', ctrl.c);
 
 app.post('/search', ctrl.search);

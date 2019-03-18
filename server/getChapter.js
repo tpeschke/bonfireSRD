@@ -1,6 +1,7 @@
 let sidebarIndex = null;
 
 function collectChapter(db, array, next, send) {
+    // GET HEADER
     if (next.split('.')[1] === 'h') {
         db.srdheader.findOne({ linkid: next }).then(piece => {
             if (sidebarIndex) {
@@ -17,6 +18,7 @@ function collectChapter(db, array, next, send) {
                 send.send(array)
             }
         })
+        // GET PARAGRAPH
     } else if (next.split('.')[1] === 'p') {
         db.srdparagraph.findOne({ linkid: next }).then(piece => {
             if (sidebarIndex) {
@@ -53,6 +55,7 @@ function collectChapter(db, array, next, send) {
                 send.send(array)
             }
         })
+        // GET CHART
     } else if (next.split('.')[1] === 'c') {
         db.srdchart.findOne({ linkid: next }).then(piece => {
             if (sidebarIndex) {
@@ -69,6 +72,7 @@ function collectChapter(db, array, next, send) {
                 send.send(array)
             }
         })
+        // GET SIDEBAR
     } else if (next.split('.')[1] === 'sb') {
         db.srdsidebar.findOne({ linkid: next }).then(piece => {
             array.push({ ...piece, inner: [] })
@@ -79,8 +83,9 @@ function collectChapter(db, array, next, send) {
                 send.send(array)
             }
         })
-    } else if (next.split('.')[1] === 'l') {
-        db.srdlink.findOne({ linkid: next }).then(piece => {
+        // GET SPACE
+    } else if (next.split('.')[1] === 's') {
+        db.srdsectionspace.findOne({ linkid: next }).then(piece => {
             if (sidebarIndex) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
@@ -95,8 +100,10 @@ function collectChapter(db, array, next, send) {
                 send.send(array)
             }
         })
-    } else if (next.split('.')[1] === 's') {
-        db.srdsectionspace.findOne({ linkid: next }).then(piece => {
+    }
+    // GET BULLETED LIST
+    if (next.split('.')[1] === 'bl') {
+        db.srdbulletedlist.findOne({ linkid: next }).then(piece => {
             if (sidebarIndex) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
@@ -119,6 +126,6 @@ module.exports = {
         let chapterArray = []
         const db = req.app.get('db')
 
-        collectChapter(db, chapterArray, '1.h.1', res)
+        collectChapter(db, chapterArray, req.params.id, res)
     }
 }

@@ -1,7 +1,7 @@
 h1 {
     color: #990000;
     font-weight: 700;
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 5px 15px 5px 15px;
 }
 
@@ -61,4 +61,34 @@ p {
 .indent {
     width: 50px;
     height: 5px;
+}
+
+.bulletListShell {
+    display: flex;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 15px solid #b45f06;
+    margin-left: 50px;
+    position: relative;
+}
+
+.triangle:after{
+    content:'';
+    position:absolute;
+    top: 2px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 11px solid whitesmoke;
+}
+
+.triangle + div p {
+    text-indent: 10px;
 }
