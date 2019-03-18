@@ -11,7 +11,8 @@
   </div>
 </div>
 
-<div *ngIf="type === 'c'" [ngClass]="nextType !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
+<div *ngIf="type === 'c'" 
+  [ngClass]="nextType !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
   <p>{{piece.leftbody}}</p>
   <p>{{piece.rightbody}}</p>
 </div>
@@ -31,7 +32,8 @@
   <div class="space"></div>
 </div>
 
-<div *ngIf="type === 'bl'" class="bulletListShell">
+<div *ngIf="type === 'bl'" 
+  [ngClass]="nextType !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
   <div class="triangle"></div>
   <div>
     <p>{{piece.body}}</p>
