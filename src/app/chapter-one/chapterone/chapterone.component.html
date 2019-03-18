@@ -3,9 +3,7 @@
       <div class="backTexture"></div>
       <div class="backColor"></div>
       <div class="chapterShell">
-        <div *ngFor="let piece of view">
-          <app-display [piece]="piece"></app-display>
-        </div>
+        <app-outer-display [view]="view"></app-outer-display>
       </div>
 
       <img *ngIf='!images' src="../../../assets/images/S.png" alt="banner of the Empire" class="image">

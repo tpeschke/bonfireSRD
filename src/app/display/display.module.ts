@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DisplayComponent } from './display.component'
+import { DisplayComponent } from './component/display.component';
+import { OuterDisplayComponent } from './outer-display/outer-display.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { LinkSearchComponent } from './link-search/link-search.component';
  
 @NgModule({
   declarations: [
-    DisplayComponent
+    DisplayComponent,
+    OuterDisplayComponent,
+    LinkSearchComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports: [
-    DisplayComponent
+    OuterDisplayComponent
   ]
 })
 export class DisplayModule { }

@@ -1,0 +1,15 @@
+a {
+    margin-right: 5px;
+    text-align: center;
+    font-family: "Vollkorn SC";
+    color: #434343;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #b45f06;
+}
+
+p {
+    margin-right: 5px;
+}
