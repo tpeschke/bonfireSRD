@@ -1,2 +1,2 @@
 <p *ngIf="!chapter">{{body}}</p>
-<a *ngIf="chapter">{{body}}</a>
+<a *ngIf="chapter" routerLink="../../chapter/c{{chapter}}">{{body}}</a>

@@ -15,8 +15,7 @@ export class LinkSearchComponent implements OnInit {
 
   ngOnInit() {
     if (this.body.substring(0,7)==="Chapter"){
-      this.chapter = this.body.substring(0,7).split(":")[0]
-      console.log(this.chapter)
+      this.chapter = this.body.substring(8).split(":")[0]
     }
   }
 
