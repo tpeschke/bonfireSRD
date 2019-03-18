@@ -24,9 +24,9 @@ export class DisplayComponent implements OnInit {
         this.nextType = this.piece.nextid.split('.')[1]
       }
       this.type = this.piece.linkid.split('.')[1]
-    }
-    if (this.type === 'l') {
-      this.linkEnd = this.piece.body.split('Chapter ')[1].split(':')[0]
+      if (this.type === 'sb') {
+        console.log(this.piece.inner)
+      }
     }
   }
 

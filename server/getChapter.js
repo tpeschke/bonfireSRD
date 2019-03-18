@@ -20,6 +20,16 @@ function collectChapter(db, array, next, send) {
     } else if (next.split('.')[1] === 'p') {
         db.srdparagraph.findOne({ linkid: next }).then(piece => {
             if (sidebarIndex) {
+                piece.body = piece.body.split('|')
+                let splitArray = []
+                for (let i = 0; i < piece.body.length; i++) {
+                    if (piece.body[i].substring(0, 7) !== "Chapter") {
+                        splitArray.push(...piece.body[i].split(' '))
+                    } else {
+                        splitArray.push(piece.body[i])
+                    }
+                }
+                piece.body = splitArray
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
                     sidebarIndex = null

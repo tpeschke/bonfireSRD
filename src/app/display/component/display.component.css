@@ -13,6 +13,10 @@ h2 {
     font-family: "Vollkorn SC";
 }
 
+p {
+    text-indent: 50px;
+}
+
 .underline {
     width: 100%;
     height: 2px;
@@ -22,7 +26,7 @@ h2 {
 }
 
 .marginBottom {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important; 
 }
 
 .chartShell {
@@ -47,4 +51,9 @@ h2 {
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: flex-start;
+}
+
+.indent {
+    width: 50px;
+    height: 5px;
 }
