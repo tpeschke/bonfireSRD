@@ -95,6 +95,22 @@ function collectChapter(db, array, next, send) {
                 send.send(array)
             }
         })
+    } else if (next.split('.')[1] === 's') {
+        db.srdsectionspace.findOne({ linkid: next }).then(piece => {
+            if (sidebarIndex) {
+                array[sidebarIndex].inner.push(piece)
+                if (piece.linkid === array[sidebarIndex].endid) {
+                    sidebarIndex = null
+                }
+            } else {
+                array.push(piece)
+            }
+            if (piece.nextid) {
+                collectChapter(db, array, piece.nextid, send)
+            } else if (!piece.nextid) {
+                send.send(array)
+            }
+        })
     }
 }
 
