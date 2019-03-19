@@ -12,10 +12,13 @@ export class LinkSearchComponent implements OnInit {
   constructor() { }
 
   public chapter = null
+  public sheet = null
 
   ngOnInit() {
     if (this.body.substring(0,7)==="Chapter"){
       this.chapter = this.body.substring(8).split(":")[0]
+    } else if (this.body === 'character sheet here.') {
+      this.sheet = true
     }
   }
 

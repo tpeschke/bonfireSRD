@@ -40,7 +40,7 @@ function collectChapter(db, array, next, send) {
                 piece.body = piece.body.split('|')
                 let splitArray = []
                 for (let i = 0; i < piece.body.length; i++) {
-                    if (piece.body[i].substring(0, 7) !== "Chapter") {
+                    if (piece.body[i].substring(0, 7) !== "Chapter" && piece.body[i] !== "character sheet here.") {
                         splitArray.push(...piece.body[i].split(' '))
                     } else {
                         splitArray.push(piece.body[i])
