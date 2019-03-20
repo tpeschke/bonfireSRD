@@ -1,6 +1,6 @@
-let sidebarIndex = null;
 
 function collectChapter (db, array, next) {
+    let sidebarIndex = null;
     // GET HEADER
     if (next.split('.')[1] === 'h') {
         db.srdheader.findOne({ linkid: next }).then(piece => {
@@ -129,12 +129,22 @@ function collectChapter (db, array, next) {
 
 chapterObject = {
     chapterOne: [],
+    chapterTwo: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
+        chapterObject.chapterTwo = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
+        collectChapter(db, chapterObject.chapterTwo, '2.p.1')
     },
     get: (req, res) => {
-        res.send(chapterObject.chapterOne)
+        switch(+req.params.id) {
+            case 1:
+                res.send(chapterObject.chapterOne)
+            case 2:
+                res.send(chapterObject.chapterTwo)
+            default:
+                res.send('Something went wrong')
+        }
     }
 }
 
