@@ -20,7 +20,7 @@ export class ChapterTwoComponent implements OnInit, OnDestroy {
   chapterName = '';
 
   ngOnInit() {
-    this.chapterService.getChapterArray('2.p.1')
+    this.chapterService.getChapterArray(2)
       .subscribe(chapterArray => {
         this.view = chapterArray
       })

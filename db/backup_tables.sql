@@ -55,3 +55,10 @@ create table SRDbulletedList (
     body text,
     nextid varchar(6)
 )
+
+create table srdHeadingGrey (
+    id serial primary key,
+    linkid varchar(6),
+    body text,
+    nextid varchar(6)
+)
