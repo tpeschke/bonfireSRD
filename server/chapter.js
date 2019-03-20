@@ -15,6 +15,7 @@ function collectChapter (db, array, next) {
             if (piece.nextid) {
                 collectChapter(db, array, piece.nextid)
             } else {
+                console.log('done', piece.linkid.split('.')[0])
                 return 'done'
             }
         })
@@ -52,6 +53,7 @@ function collectChapter (db, array, next) {
             if (piece.nextid) {
                 collectChapter(db, array, piece.nextid)
             } else {
+                console.log('done', piece.linkid.split('.')[0])
                 return 'done'
             }
         })
@@ -69,6 +71,7 @@ function collectChapter (db, array, next) {
             if (piece.nextid) {
                 collectChapter(db, array, piece.nextid)
             } else {
+                console.log('done', piece.linkid.split('.')[0])
                 return 'done'
             }
         })
@@ -80,6 +83,7 @@ function collectChapter (db, array, next) {
             if (piece.nextid) {
                 collectChapter(db, array, piece.nextid)
             } else {
+                console.log('done', piece.linkid.split('.')[0])
                 return 'done'
             }
         })
@@ -97,6 +101,7 @@ function collectChapter (db, array, next) {
             if (piece.nextid) {
                 collectChapter(db, array, piece.nextid)
             } else {
+                console.log('done', piece.linkid.split('.')[0])
                 return 'done'
             }
         })
@@ -115,6 +120,7 @@ function collectChapter (db, array, next) {
             if (piece.nextid) {
                 collectChapter(db, array, piece.nextid)
             } else {
+                console.log('done', piece.linkid.split('.')[0])
                 return 'done'
             }
         })
