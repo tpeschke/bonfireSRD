@@ -130,6 +130,7 @@ function collectChapter (db, array, next) {
 chapterObject = {
     chapterOne: [],
     storeChapters: (db) => {
+        chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
     },
     get: (req, res) => {
