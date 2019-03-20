@@ -57,44 +57,7 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
 
   getChapter(): void {
     const id = this.route.snapshot.url[1].path
-    this.chapterName = this.getName(+id.substring(1))
-  }
-
-  getName(id: number): string {
-    switch (id) {
-      case 1:
-        return 'Character Creation';
-      case 2:
-        return 'Ability Scores';
-      case 3:
-        return 'Races';
-      case 4:
-        return 'Archetypes';
-      case 5:
-        return 'Flaws';
-      case 6:
-        return 'Character Vitals';
-      case 7:
-        return 'Masteries';
-      case 8:
-        return 'Skills';
-      case 9:
-        return 'Social';
-      case 10:
-        return 'Combat';
-      case 11:
-        return 'Equipment';
-      case 12:
-        return 'Magic';
-      case 13:
-        return 'Divine';
-      case 14:
-        return 'Character Progression';
-      case 15:
-        return 'Misc Rules';
-      default:
-        return 'Home';
-    }
+    this.chapterName = this.chapterService.getName(+id.substring(1))
   }
 
 }
