@@ -17,16 +17,12 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
   ) { }
 
   view = null
-  loading = true
   chapterName = '';
 
   ngOnInit() {
     this.chapterService.getChapterArray('1.h.1')
       .subscribe(chapterArray => {
         this.view = chapterArray
-        if (this.view[this.view.length - 1].nextid) {
-          this.getChapterChunk(this.view[this.view.length - 1].nextid)
-        }
       })
     this.getChapter();
     this.notRedux.toggleShow(true);
@@ -49,9 +45,7 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
           this.getChapterChunk(finalInArray.nextid)
         } else if (finalInArray.inner[finalInArray.inner.length - 1].nextid) {
           this.getChapterChunk(finalInArray.nextid)
-        } else (
-          this.loading = false
-        )
+        }
       })
   }
 
