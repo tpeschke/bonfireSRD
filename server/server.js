@@ -5,7 +5,7 @@ const express = require('express')
     , CronJob = require('cron').CronJob
     , { server, connection, auth } = require('./serv-config')
     , ctrl = require('./controller')
-    , chapter = require('./getChapter')
+    , chapter = require('./chapter')
     , path = require('path')
 
 const app = new express()
@@ -18,8 +18,6 @@ new CronJob('0 0 0 * * *', _ => {
     const a = app.get('db')
     ctrl.forceRun({body: {auth, a}}, null)
 }, null, true, 'America/Los_Angeles');
-
-
 
 ///////////////////////////////////
 ////TESTING TOPLEVEL MIDDLEWARE////
@@ -45,7 +43,6 @@ app.get('/nc/:id', chapter.get)
 app.get('/c/:id', ctrl.c);
 
 app.post('/search', ctrl.search);
-app.post('/addNew', chapter.post)
 
 app.patch('/auth', ctrl.forceRun);
 
@@ -58,5 +55,6 @@ massive(connection).then(dbI => {
     app.set('db', dbI)
     app.listen(server, _ => {
         console.log(`The night lays like a lullaby on the earth ${server}`)
+        chapter.storeChapters(app.get('db'))
     })
 })
