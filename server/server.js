@@ -17,6 +17,7 @@ app.use( express.static( __dirname + `/../dist/bonfireSRD` ) );
 new CronJob('0 0 0 * * *', _ => {
     const a = app.get('db')
     ctrl.forceRun({body: {auth, a}}, null)
+    chapter.storeChapters(a)
 }, null, true, 'America/Los_Angeles');
 
 ///////////////////////////////////
