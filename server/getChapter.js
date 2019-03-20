@@ -12,9 +12,9 @@ function collectChapter(db, array, next, send) {
             } else {
                 array.push(piece)
             }
-            if (piece.nextid) {
+            if (piece.nextid && piece.nextid.split('.')[1] !== 'h') {
                 collectChapter(db, array, piece.nextid, send)
-            } else if (!piece.nextid) {
+            } else {
                 send.send(array)
             }
         })
@@ -49,9 +49,9 @@ function collectChapter(db, array, next, send) {
                 piece.body = splitArray
                 array.push(piece)
             }
-            if (piece.nextid) {
+            if (piece.nextid && piece.nextid.split('.')[1] !== 'h') {
                 collectChapter(db, array, piece.nextid, send)
-            } else if (!piece.nextid) {
+            } else {
                 send.send(array)
             }
         })
@@ -66,9 +66,9 @@ function collectChapter(db, array, next, send) {
             } else {
                 array.push(piece)
             }
-            if (piece.nextid) {
+            if (piece.nextid && piece.nextid.split('.')[1] !== 'h') {
                 collectChapter(db, array, piece.nextid, send)
-            } else if (!piece.nextid) {
+            } else {
                 send.send(array)
             }
         })
@@ -77,9 +77,9 @@ function collectChapter(db, array, next, send) {
         db.srdsidebar.findOne({ linkid: next }).then(piece => {
             array.push({ ...piece, inner: [] })
             sidebarIndex = array.length - 1
-            if (piece.nextid) {
+            if (piece.nextid && piece.nextid.split('.')[1] !== 'h') {
                 collectChapter(db, array, piece.nextid, send)
-            } else if (!piece.nextid) {
+            } else {
                 send.send(array)
             }
         })
@@ -94,9 +94,9 @@ function collectChapter(db, array, next, send) {
             } else {
                 array.push(piece)
             }
-            if (piece.nextid) {
+            if (piece.nextid && piece.nextid.split('.')[1] !== 'h') {
                 collectChapter(db, array, piece.nextid, send)
-            } else if (!piece.nextid) {
+            } else {
                 send.send(array)
             }
         })
@@ -112,9 +112,9 @@ function collectChapter(db, array, next, send) {
             } else {
                 array.push(piece)
             }
-            if (piece.nextid) {
+            if (piece.nextid && piece.nextid.split('.')[1] !== 'h') {
                 collectChapter(db, array, piece.nextid, send)
-            } else if (!piece.nextid) {
+            } else {
                 send.send(array)
             }
         })

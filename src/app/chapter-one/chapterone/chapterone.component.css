@@ -55,7 +55,11 @@
 
 /* =========================================================================== */
 
-/* =================== */
+.loadingShell {
+  position: relative;
+  height: 75px;
+  width: 100%;
+}
 
 .loading, .loading::before, .loading::after {
   height: 50px;
@@ -122,5 +126,55 @@
 @keyframes animation-rotate {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* ======================================================= */
+
+@media (max-width: 500px) {
+  .outerShell {
+    margin-top: 85px;
+  }
+
+  .innerShell {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .chapterShell {
+    width: 100%;
+  }
+  
+  .backTexture {
+    width: 100%;
+  }
+
+  .backColor {
+    width: 100%;
+  }
+
+  .imageShell {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .tableShell {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .imageShell {
+    width: 100%;
+    margin: 0;
+    padding-left: 15px;
+    background: transparent;
+  }
+
+  .chapterTitle {
+    display: inherit;
   }
 }
