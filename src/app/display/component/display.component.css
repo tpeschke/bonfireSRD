@@ -1,0 +1,105 @@
+h1 {
+    color: #990000;
+    font-weight: 700;
+    font-size: 12pt;
+    padding: 5px 15px 5px 15px;
+}
+
+h2 {
+    color: #b45f06;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 12pt;
+    font-family: "Vollkorn SC";
+}
+
+p {
+    text-indent: 50px;
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    background: #222;
+    margin-bottom: 10px;
+    border: 1px groove grey;
+}
+
+.space {
+    width: 100%;
+    height: 1px;
+}
+
+.marginBottom {
+    margin-bottom: 15px !important; 
+}
+
+.chartShell {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    font-family: "Vollkorn SC";
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.sidebarShell {
+    border: 3px solid #b45f06;
+    padding: 10px;
+    background: #b45f0602;
+}
+
+.paragraphShell {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.indent {
+    width: 50px;
+    height: 5px;
+}
+
+.bulletListShell {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 15px solid #b45f06;
+    margin-left: 17px;
+    position: relative;
+}
+
+.triangle:after{
+    content:'';
+    position:absolute;
+    top: 2px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 11px solid whitesmoke;
+}
+
+.triangle + div p {
+    text-indent: 10px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        text-align: center;
+    }
+
+    .triangle {
+        margin-left: 0;
+    }
+  }

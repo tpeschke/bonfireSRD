@@ -1,0 +1,41 @@
+<div *ngIf="type === 'h'">
+  <h1>{{piece.body}}</h1>
+  <div class="underline"></div>
+</div>
+
+<div *ngIf="type === 'p'"
+  [ngClass]="nextType !== 'p' && nextType !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
+  <div class="indent"></div>
+  <div *ngFor="let paragraph of piece.body">
+    <app-link-search [body]="paragraph"></app-link-search>
+  </div>
+</div>
+
+<div *ngIf="type === 'c'" 
+  [ngClass]="nextType !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
+  <p>{{piece.leftbody}}</p>
+  <p>{{piece.rightbody}}</p>
+</div>
+
+<div *ngIf="type === 'sb'" [ngClass]="nextType !== 'c' ? 'sidebarShell marginBottom' : 'sidebarShell'">
+  <h2>{{piece.body}}</h2>
+  <div *ngFor="let sidepiece of piece.inner"
+    [ngClass]="nextType !== 'p' && nextType !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
+    <div class="indent"></div>
+    <div *ngFor="let paragraph of sidepiece.body">
+      <app-link-search [body]="paragraph"></app-link-search>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="type === 's'">
+  <div class="space"></div>
+</div>
+
+<div *ngIf="type === 'bl'" 
+  [ngClass]="nextType !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
+  <div class="triangle"></div>
+  <div>
+    <p>{{piece.body}}</p>
+  </div>
+</div>

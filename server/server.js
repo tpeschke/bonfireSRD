@@ -5,6 +5,7 @@ const express = require('express')
     , CronJob = require('cron').CronJob
     , { server, connection, auth } = require('./serv-config')
     , ctrl = require('./controller')
+    , chapter = require('./getChapter')
     , path = require('path')
 
 const app = new express()
@@ -40,9 +41,11 @@ new CronJob('0 0 0 * * *', _ => {
 
 // ================================== \\
 
+app.get('/nc/:id', chapter.get)
 app.get('/c/:id', ctrl.c);
 
 app.post('/search', ctrl.search);
+app.post('/addNew', chapter.post)
 
 app.patch('/auth', ctrl.forceRun);
 
