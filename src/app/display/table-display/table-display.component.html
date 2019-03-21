@@ -3,8 +3,8 @@
   <div class="tableHeaders">
     <div *ngFor="let item of table.body" [ngStyle]="count" class="tableRow">
       <div *ngFor="let value of item" class="tableValue">
-        <p *ngIf="value !== 'N/A'">{{value | titlecase}}</p>
-        <p *ngIf="value === 'N/A'">{{value | uppercase}}</p>
+        <p *ngIf="value !== 'N/A' && value !== 'n/a'">{{value | titlecase}}</p>
+        <p *ngIf="value === 'N/A' || value === 'n/a'">{{value | uppercase}}</p>
       </div>
     </div>
   </div>
