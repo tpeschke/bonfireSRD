@@ -171,8 +171,9 @@ function collectTable(db, array, tableName) {
             }
             array.push({...table, body: ordered})
 
-            if (table.nextTable) {
-                collectTable(db, array, table.nextTable)
+            console.log(table.nexttable)
+            if (table.nexttable) {
+                collectTable(db, array, table.nexttable)
             } else {
                 console.log('done', tableName)
                 return 'done'

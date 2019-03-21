@@ -1,0 +1,8 @@
+.tableOuter {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableInner {
+  margin-bottom: 15px;
+}

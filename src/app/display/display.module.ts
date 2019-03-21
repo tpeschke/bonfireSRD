@@ -5,13 +5,15 @@ import { OuterDisplayComponent } from './outer-display/outer-display.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { LinkSearchComponent } from './link-search/link-search.component';
 import { TableDisplayComponent } from './table-display/table-display.component';
+import { OuterTableComponent } from './outer-table/outer-table.component';
  
 @NgModule({
   declarations: [
     DisplayComponent,
     OuterDisplayComponent,
     LinkSearchComponent,
-    TableDisplayComponent
+    TableDisplayComponent,
+    OuterTableComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,7 @@ import { TableDisplayComponent } from './table-display/table-display.component';
   exports: [
     OuterDisplayComponent,
     DisplayComponent,
-    TableDisplayComponent
+    OuterTableComponent
   ]
 })
 export class DisplayModule { }

@@ -6,9 +6,7 @@
       <app-outer-display [view]="view"></app-outer-display>
     </div>
 
-    <div *ngFor="let table of tables">
-      <app-table-display [table]="table"></app-table-display>
-    </div>
+    <app-outer-table [tables]='tables'></app-outer-table>
 
     <h1 class="chapterTitle">{{chapterName}}</h1>
   </div>

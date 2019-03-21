@@ -14,7 +14,6 @@ import { ChapterComponent } from './chapter/chapter.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
