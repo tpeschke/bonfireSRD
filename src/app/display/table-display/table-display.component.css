@@ -3,8 +3,7 @@
 .outerShell {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
-    width: 300px;
+    flex-wrap: wrap;
     font-family: "Vollkorn SC", serif;
     background: rgba(245, 245, 245, 0.75);
 }
@@ -17,7 +16,6 @@
 }
 
 .tableHeaders {
-    background: lawngreen;
     display: flex;
     text-align: center;
 }
@@ -29,7 +27,7 @@
 }
 
 .tableValue {
-    padding: 5px 0;
+    padding: 3px 0;
     font-size: 16px;
 }
 
@@ -40,6 +38,7 @@
 .tableValue:first-child {
     background: #222;
     color: whitesmoke;
+    padding: 7px 3px;
     font-size: 12px;
 }
 
