@@ -1,5 +1,3 @@
-const _ = require('lodash')
-
 function collectChapter (db, array, next, index) {
     let sidebarIndex = index;
     
@@ -152,6 +150,7 @@ function collectTable(db, array, tableName) {
     db.srdtable.findOne({name : tableName}).then(table => {
         db[table.name].find().then(body => {
             let newBody = {}
+            let ordered = []
             body.forEach(val => {
                 for (let key in val) {
                     if (key !== 'id' && !newBody[key]) {
@@ -162,7 +161,15 @@ function collectTable(db, array, tableName) {
                     }
                 }
             })
-            array.push({...table, body: newBody})
+            for (let key in newBody) {
+                newBody[key].unshift(key)
+                if (key === 'score') {
+                    ordered.unshift(newBody[key])
+                } else {
+                    ordered.push(newBody[key])
+                }
+            }
+            array.push({...table, body: ordered})
 
             if (table.nextTable) {
                 collectTable(db, array, table.nextTable)
@@ -198,7 +205,7 @@ chapterObject = {
                 res.send(chapterObject.chapterOne)
                 break
             case 2:
-                res.send(chapterObject.chapterTwo)
+                res.send({main: chapterObject.chapterTwo, side: chapterObject.chapterTwoSide})
                 break
             default:
                 res.send('Something went wrong')

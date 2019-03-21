@@ -6,7 +6,9 @@
       <app-outer-display [view]="view"></app-outer-display>
     </div>
 
-    <img src="../../../assets/images/S.png" alt="banner of the Empire" class="image">
+    <div *ngFor="let table of tables">
+      <app-table-display [table]="table"></app-table-display>
+    </div>
 
     <h1 class="chapterTitle">{{chapterName}}</h1>
   </div>

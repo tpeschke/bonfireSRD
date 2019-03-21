@@ -17,13 +17,14 @@ export class ChapterTwoComponent implements OnInit, OnDestroy {
   ) { }
 
   view = null;
-  tables = null;
+  tables = [];
   chapterName = '';
 
   ngOnInit() {
     this.chapterService.getChapterArray(2)
       .subscribe(chapterArray => {
-        this.view = chapterArray
+        this.view = chapterArray.main
+        this.tables = chapterArray.side
       })
     this.getChapter();
     this.notRedux.toggleShow(true);

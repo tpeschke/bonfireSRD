@@ -1,0 +1,11 @@
+<div class="outerShell">
+  <h1 class="tableTitle">{{table.name | uppercase}}</h1>
+  <div class="tableHeaders">
+    <div *ngFor="let item of table.body" [ngStyle]="count" class="tableRow">
+      <div *ngFor="let value of item" class="tableValue">
+        <p *ngIf="value !== 'N/A'">{{value | titlecase}}</p>
+        <p *ngIf="value === 'N/A'">{{value | uppercase}}</p>
+      </div>
+    </div>
+  </div>
+</div>
