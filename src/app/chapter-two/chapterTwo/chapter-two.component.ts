@@ -16,7 +16,8 @@ export class ChapterTwoComponent implements OnInit, OnDestroy {
     private notRedux: NotReduxService
   ) { }
 
-  view = null
+  view = null;
+  tables = null;
   chapterName = '';
 
   ngOnInit() {

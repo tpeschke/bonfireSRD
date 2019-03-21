@@ -62,3 +62,17 @@ create table srdHeadingGrey (
     body text,
     nextid varchar(6)
 )
+
+create table srdTable (
+    id serial primary key,
+    name text, -- name of table in db
+    nextTable text
+)
+
+create table "2.1 Strength" (
+    id serial primary key,
+    score varchar(10),
+    damage varchar(10),
+    carry varchar(10),
+    social varchar(10)
+)

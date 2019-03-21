@@ -1,3 +1,4 @@
+const _ = require('lodash')
 
 function collectChapter (db, array, next, index) {
     let sidebarIndex = index;
@@ -147,14 +148,49 @@ function collectChapter (db, array, next, index) {
     }
 }
 
+function collectTable(db, array, tableName) {
+    db.srdtable.findOne({name : tableName}).then(table => {
+        db[table.name].find().then(body => {
+            let newBody = {}
+            body.forEach(val => {
+                for (let key in val) {
+                    if (key !== 'id' && !newBody[key]) {
+                        newBody[key] = []
+                        newBody[key].push(val[key])
+                    } else if (key !== 'id' && newBody[key]) {
+                        newBody[key].push(val[key])
+                    }
+                }
+            })
+            array.push({...table, body: newBody})
+
+            if (table.nextTable) {
+                collectTable(db, array, table.nextTable)
+            } else {
+                console.log('done', tableName)
+                return 'done'
+            }
+        })
+    })
+}
+
+// [{
+//     name: String,
+//     header: [String],
+//     body: [[String | Number]],
+//     nextTable: String
+// }]
+
 chapterObject = {
     chapterOne: [],
     chapterTwo: [],
+    chapterTwoSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         chapterObject.chapterTwo = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
         collectChapter(db, chapterObject.chapterTwo, '2.p.1')
+        collectTable(db, chapterObject.chapterTwoSide, 'strength')
     },
     get: (req, res) => {
         switch(+req.params.id) {
