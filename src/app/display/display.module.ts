@@ -6,6 +6,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { LinkSearchComponent } from './link-search/link-search.component';
 import { TableDisplayComponent } from './table-display/table-display.component';
 import { OuterTableComponent } from './outer-table/outer-table.component';
+import { AddSpacePipe } from './add-space.pipe';
  
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { OuterTableComponent } from './outer-table/outer-table.component';
     OuterDisplayComponent,
     LinkSearchComponent,
     TableDisplayComponent,
-    OuterTableComponent
+    OuterTableComponent,
+    AddSpacePipe
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,6 @@
-function collectChapter (db, array, next, index) {
+function collectChapter(db, array, next, index) {
     let sidebarIndex = index;
-    
+
     // GET HEADER
     if (next.split('.')[1] === 'h') {
         db.srdheader.findOne({ linkid: next }).then(piece => {
@@ -147,31 +147,29 @@ function collectChapter (db, array, next, index) {
 }
 
 function collectTable(db, array, tableName) {
-    db.srdtable.findOne({name : tableName}).then(table => {
+    db.srdtable.findOne({ name: tableName }).then(table => {
         db[table.name].find().then(body => {
-            let newBody = {}
-            let ordered = []
-            body.forEach(val => {
+            let newBody = []
+            body.forEach((val, i) => {
+                let newArray = []
+                if (i === 0) {
+                    for (let key in val) {
+                        if (key !== 'id') {
+                            newArray.push(key)
+                        }
+                    }
+                    newBody.push(newArray)
+                    newArray = []
+                }
                 for (let key in val) {
-                    if (key !== 'id' && !newBody[key]) {
-                        newBody[key] = []
-                        newBody[key].push(val[key])
-                    } else if (key !== 'id' && newBody[key]) {
-                        newBody[key].push(val[key])
+                    if (key !== 'id') {
+                        newArray.push(val[key])
                     }
                 }
+                newBody.push(newArray)
             })
-            for (let key in newBody) {
-                newBody[key].unshift(key)
-                if (key === 'score') {
-                    ordered.unshift(newBody[key])
-                } else {
-                    ordered.push(newBody[key])
-                }
-            }
-            array.push({...table, body: ordered})
+            array.push({ ...table, body: newBody })
 
-            console.log(table.nexttable)
             if (table.nexttable) {
                 collectTable(db, array, table.nexttable)
             } else {
@@ -201,12 +199,12 @@ chapterObject = {
         collectTable(db, chapterObject.chapterTwoSide, 'strength')
     },
     get: (req, res) => {
-        switch(+req.params.id) {
+        switch (+req.params.id) {
             case 1:
                 res.send(chapterObject.chapterOne)
                 break
             case 2:
-                res.send({main: chapterObject.chapterTwo, side: chapterObject.chapterTwoSide})
+                res.send({ main: chapterObject.chapterTwo, side: chapterObject.chapterTwoSide })
                 break
             default:
                 res.send('Something went wrong')
