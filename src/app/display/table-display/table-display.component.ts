@@ -14,9 +14,8 @@ export class TableDisplayComponent implements OnInit {
   count = {};
 
   ngOnInit() {
-    console.log(this.table)
     if (this.table.body) {
-      this.count = {width: `${300 / Object.keys(this.table.body).length}px`}
+      this.count = {width: `${300 / this.table.body[0].length}px`}
     }
   }
 

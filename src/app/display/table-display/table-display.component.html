@@ -2,9 +2,9 @@
   <h1 class="tableTitle">{{table.name | uppercase}}</h1>
   <div class="tableHeaders">
     <div *ngFor="let item of table.body"  class="tableRow">
-      <div *ngFor="let value of item" class="tableValue" [ngStyle]="count">
-        <p *ngIf="value !== 'N/A' && value !== 'n/a'">{{value | addSpace | titlecase}}</p>
-        <p *ngIf="value === 'N/A' || value === 'n/a'">{{value | lowercase}}</p>
+      <div *ngFor="let value of item" class="tableValue">
+        <p *ngIf="value !== 'N/A' && value !== 'n/a'" [ngStyle]="count">{{value | addSpace | titlecase}}</p>
+        <p *ngIf="value === 'N/A' || value === 'n/a'" [ngStyle]="count">{{value | lowercase}}</p>
       </div>
     </div>
   </div>
