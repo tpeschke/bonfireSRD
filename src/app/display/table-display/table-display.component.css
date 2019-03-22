@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
+
+.outerShell {
+    font-family: "Vollkorn SC", serif;
+    background: whitesmoke;
+}
+
+.tableTitle {
+    background: #990000;
+    padding: 5px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.tableHeaders {
+    text-align: center;
+}
+
+.tableRow {
+    display: flex;
+}
+
+.tableValue {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.tableRow:nth-child(odd){
+    background: lightgrey;
+}
+
+.tableRow:first-child {
+    background: #222;
+    color: whitesmoke;
+    padding: 7px 0;
+}

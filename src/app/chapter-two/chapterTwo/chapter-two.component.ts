@@ -4,11 +4,11 @@ import { ChapterService } from '../../chapter.service';
 import { NotReduxService } from '../../not-redux.service';
 
 @Component({
-  selector: 'app-chapterone',
-  templateUrl: './chapterone.component.html',
-  styleUrls: ['./chapterone.component.css']
+  selector: 'app-chapter-two',
+  templateUrl: './chapter-two.component.html',
+  styleUrls: ['./chapter-two.component.css']
 })
-export class ChapteroneComponent implements OnInit, OnDestroy {
+export class ChapterTwoComponent implements OnInit, OnDestroy {
 
   constructor(
     private route: ActivatedRoute,
@@ -16,13 +16,15 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
     private notRedux: NotReduxService
   ) { }
 
-  view = null
+  view = null;
+  tables = [];
   chapterName = '';
 
   ngOnInit() {
-    this.chapterService.getChapterArray(1)
+    this.chapterService.getChapterArray(2)
       .subscribe(chapterArray => {
-        this.view = chapterArray
+        this.view = chapterArray.main
+        this.tables = chapterArray.side
       })
     this.getChapter();
     this.notRedux.toggleShow(true);

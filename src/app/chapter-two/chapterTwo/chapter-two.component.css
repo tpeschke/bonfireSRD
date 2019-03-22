@@ -21,8 +21,8 @@
   background: whitesmoke;
   position: absolute;
   left: 0;
-  height: 100%;
   width: 635px;
+  height: 100%;
   z-index: -1;
 }
 
