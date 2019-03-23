@@ -9,6 +9,7 @@ import { Router } from '@angular/router'
 export class DisplayComponent implements OnInit {
 
   @Input() piece: any;
+  @Input() sidebar: boolean;
   
   constructor(
     private router: Router

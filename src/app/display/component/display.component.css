@@ -24,6 +24,7 @@ p {
     text-indent: 50px;
 }
 
+
 .underline {
     width: 100%;
     height: 2px;
@@ -99,6 +100,39 @@ p {
 
 .triangle + div p {
     text-indent: 10px;
+}
+
+#yes {
+    color: #38761d
+}
+
+#no {
+    color: #990000
+}
+
+.sidebar {
+    text-indent: 10px;
+} 
+
+.sidebarChart {
+    width: 80%
+}
+
+.sidebarbl {
+    font-size: 14px;
+}
+
+.sidebartriangle {
+    margin-left: 10px;
+}
+
+.sidebarparagraph {
+    font-size: 14px
+}
+
+.sidebarindent {
+    width: 10px;
+    height: 4px;
 }
 
 @media (max-width: 500px) {

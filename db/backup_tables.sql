@@ -76,3 +76,44 @@ create table "2.1 Strength" (
     carry varchar(10),
     social varchar(10)
 )
+
+-- NEW TABLE QUERIES
+
+insert into srdtable (name, nexttable) values ('charisma', null);
+
+update srdtable
+set nexttable = 'charisma'
+where id = 6;
+
+create table charisma (
+    id serial primary key,
+    score text,
+    favor text,
+    start_honor text,
+    trait text,
+    social text
+);
+
+insert into charisma (score, favor, start_honor, trait, social) values 
+('1','-3','Dishonor','0','n/a'),
+('2','-2','Low','0','n/a'),
+('3','-2','Low','0','n/a'),
+('4','-2','Low','0','n/a'),
+('5','-1','Average','0','n/a'),
+('6','-1','Average','1','n/a'),
+('7','0','Average','1','n/a'),
+('8','0','Average','2','n/a'),
+('9','0','Average','2','n/a'),
+('10','0','Average','4','n/a'),
+('11','0','Average','5','n/a'),
+('12','0','Average','6','d4'),
+('13','1','Average','7','d4'),
+('14','1','Average','8','d6'),
+('15','1','Average','9','d6'),
+('16','2','Average','10','d8'),
+('17','2','High','11','d8'),
+('18','3','High','12','d10'),
+('19','3','High','14','d12'),
+('20','4','Great','16','d20');
+
+select * from srdtable;

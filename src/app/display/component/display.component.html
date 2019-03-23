@@ -11,29 +11,16 @@
   </div>
 </div>
 
-<div *ngIf="type === 'c'" 
-  [ngClass]="nextType !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
+<div *ngIf="type === 'c'" [ngClass]="nextType !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
   <p>{{piece.leftbody}}</p>
   <p>{{piece.rightbody}}</p>
-</div>
-
-<div *ngIf="type === 'sb'" [ngClass]="nextType !== 'c' ? 'sidebarShell marginBottom' : 'sidebarShell'">
-  <h2>{{piece.body}}</h2>
-  <div *ngFor="let sidepiece of piece.inner"
-    [ngClass]="nextType !== 'p' && nextType !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
-    <div class="indent"></div>
-    <div *ngFor="let paragraph of sidepiece.body">
-      <app-link-search [body]="paragraph"></app-link-search>
-    </div>
-  </div>
 </div>
 
 <div *ngIf="type === 's'">
   <div class="space"></div>
 </div>
 
-<div *ngIf="type === 'bl'" 
-  [ngClass]="nextType !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
+<div *ngIf="type === 'bl'" [ngClass]="nextType !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
   <div class="triangle"></div>
   <div>
     <p>{{piece.body}}</p>
@@ -43,3 +30,109 @@
 <div *ngIf="type === 'hg'">
   <h3>{{piece.body}}</h3>
 </div>
+
+<div *ngIf="type === 'hy'">
+  <h3 id="yes">{{piece.body}}</h3>
+</div>
+
+<div *ngIf="type === 'hn'">
+  <h3 id="no">{{piece.body}}</h3>
+</div>
+
+<!-- SIDEBAR in main -->
+<div *ngIf="type === 'sb' && !sidebar" [ngClass]="nextType !== 'sb' ? 'sidebarShell marginBottom' : 'sidebarShell'">
+  <h2>{{piece.body}}</h2>
+  <div *ngFor="let sidepiece of piece.inner">
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'h'">
+      <h1>{{sidepiece.body}}</h1>
+      <div class="underline"></div>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'p'"
+      [ngClass]="sidepiece.nextid.split('.')[1] !== 'p' && sidepiece.nextid.split('.')[1] !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
+      <div class="indent"></div>
+      <div *ngFor="let paragraph of sidepiece.body">
+        <app-link-search [body]="paragraph"></app-link-search>
+      </div>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'c'" [ngClass]="sidepiece.nextid && sidepiece.nextid.split('.')[1] !== 'c' ? 'chartShell marginBottom' : 'chartShell'">
+      <p>{{sidepiece.leftbody}}</p>
+      <p>{{sidepiece.rightbody}}</p>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 's'">
+      <div class="space"></div>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'bl'" [ngClass]="sidepiece.nextid.split('.')[1] !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
+      <div class="triangle"></div>
+      <div>
+        <p>{{sidepiece.body}}</p>
+      </div>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'hg'">
+      <h3>{{sidepiece.body}}</h3>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'hy'">
+      <h3 id="yes">{{sidepiece.body}}</h3>
+    </div>
+
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'hn'">
+      <h3 id="no">{{sidepiece.body}}</h3>
+    </div>
+
+  </div>
+</div>
+
+<!-- SIDEBAR on side -->
+<div *ngIf="type === 'sb' && sidebar" [ngClass]="nextType !== 'sb' ? 'sidebarShell marginBottom' : 'sidebarShell'">
+    <h2>{{piece.body}}</h2>
+    <div *ngFor="let sidepiece of piece.inner">
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'h'">
+        <h1>{{sidepiece.body}}</h1>
+        <div class="underline"></div>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'p'"
+        [ngClass]="sidepiece.nextid.split('.')[1] !== 'p' && sidepiece.nextid.split('.')[1] !== 'l' ? 'marginBottom paragraphShell sidebarparagraph' : 'paragraphShell sidebarparagraph'">
+        <div class="sidebarindent"></div>
+        <div *ngFor="let paragraph of sidepiece.body">
+          <app-link-search [body]="paragraph"></app-link-search>
+        </div>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'c'" [ngClass]="sidepiece.nextid && sidepiece.nextid.split('.')[1] !== 'c' ? 'chartShell marginBottom sidebarChart' : 'chartShell sidebarChart'">
+        <p class="sidebar">{{sidepiece.leftbody}}</p>
+        <p class="sidebar">{{sidepiece.rightbody}}</p>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 's'">
+        <div class="space"></div>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'bl'" [ngClass]="sidepiece.nextid.split('.')[1] !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
+        <div class="triangle sidebartriangle"></div>
+        <div>
+          <p class="sidebarbl">{{sidepiece.body}}</p>
+        </div>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'hg'">
+        <h3>{{sidepiece.body}}</h3>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'hy'">
+        <h3 id="yes">{{sidepiece.body}}</h3>
+      </div>
+  
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'hn'">
+        <h3 id="no">{{sidepiece.body}}</h3>
+      </div>
+  
+    </div>
+  </div>

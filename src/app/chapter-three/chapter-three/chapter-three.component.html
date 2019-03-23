@@ -10,7 +10,9 @@
       <p>Hide Racial Summaries</p>
     </div>
 
-    <app-outer-display *ngIf="navDisplay" [view]='tables'></app-outer-display>
+    <div class="sidebarShell">
+      <app-outer-display *ngIf="navDisplay" [view]='side' [sidebar]='true'></app-outer-display>
+    </div>
 
     <div class="tableShell" (click)="displayTables()">
       <p>Show Racial Summaries</p>

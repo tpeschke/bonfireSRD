@@ -11,6 +11,11 @@
   position: relative;
 }
 
+.sidebarShell {
+  background: whitesmoke;
+  width: 300px
+}
+
 .chapterShell {
   padding: 35px 15px;
   width: 635px;

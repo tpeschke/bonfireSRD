@@ -27,6 +27,8 @@ export class ChapterThreeComponent implements OnInit {
       .subscribe(chapterArray => {
         this.view = chapterArray.main
         this.side = chapterArray.side
+        console.log(this.view)
+        console.log(this.side)
       })
     this.getChapter();
     this.notRedux.toggleShow(true);
