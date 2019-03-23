@@ -6,6 +6,7 @@ import { EmbedVideo } from 'ngx-embed-video';
 
 import { ChapterOneModule } from './chapter-one/chapter-one.module';
 import { ChapterTwoModule } from './chapter-two/chapter-two.module';
+import { ChapterThreeModule } from './chapter-three/chapter-three.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -29,6 +30,7 @@ import { SearchComponent } from './search/search.component';
     HttpClientModule,
     ChapterOneModule,
     ChapterTwoModule,
+    ChapterThreeModule,
     EmbedVideo.forRoot()
   ],
   providers: [],

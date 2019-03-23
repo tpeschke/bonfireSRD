@@ -6,15 +6,7 @@
       <app-outer-display [view]="view"></app-outer-display>
     </div>
 
-    <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">
-      <p>Hide Chapter Tables</p>
-    </div>
-
-    <app-outer-table *ngIf="navDisplay" [tables]='tables'></app-outer-table>
-
-    <div class="tableShell" (click)="displayTables()">
-      <p>Show Chapter Tables</p>
-    </div>
+    <app-outer-table [tables]='tables'></app-outer-table>
 
     <h1 class="chapterTitle">{{chapterName}}</h1>
   </div>
