@@ -7,3 +7,13 @@
   margin-bottom: 15px;
   width: 300px;
 }
+
+@media (max-width: 500px) {
+  .tableOuter {
+    margin-top: 25px
+  }
+
+  .tableInner {
+    margin: 0px auto 15px auto;
+  }
+}

@@ -180,17 +180,12 @@ function collectTable(db, array, tableName) {
     })
 }
 
-// [{
-//     name: String,
-//     header: [String],
-//     body: [[String | Number]],
-//     nextTable: String
-// }]
-
 chapterObject = {
     chapterOne: [],
     chapterTwo: [],
     chapterTwoSide: [],
+    chapterThree: [],
+    chapterThreeSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         chapterObject.chapterTwo = []
