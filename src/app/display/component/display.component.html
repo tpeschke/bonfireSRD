@@ -89,7 +89,7 @@
 </div>
 
 <!-- SIDEBAR on side -->
-<div *ngIf="type === 'sb' && sidebar" [ngClass]="nextType !== 'sb' ? 'sidebarShell marginBottom' : 'sidebarShell'">
+<div *ngIf="type === 'sb' && sidebar" [ngClass]="nextType !== 'sb' ? 'sidebarShell marginBottom sidebarSide' : 'sidebarShell sidebarSide'">
     <h2>{{piece.body}}</h2>
     <div *ngFor="let sidepiece of piece.inner">
   

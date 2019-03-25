@@ -135,6 +135,10 @@ p {
     height: 4px;
 }
 
+.sidebarSide {
+    background: rgba(245, 245, 245, 0.9)
+}
+
 @media (max-width: 500px) {
     h1 {
         text-align: center;
