@@ -20,6 +20,10 @@
   <div class="space"></div>
 </div>
 
+<div *ngIf="type === 'i'">
+  <img [src]="piece.source" [alt]="piece.alt">
+</div>
+
 <div *ngIf="type === 'bl'" [ngClass]="nextType !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
   <div class="triangle"></div>
   <div>

@@ -63,19 +63,35 @@ create table srdHeadingGrey (
     nextid varchar(6)
 )
 
+create table srdImages (
+    id serial primary key,
+    linkid varchar(50),
+    source text,
+    alt text,
+    nextid varchar(50)
+)
+
 create table srdTable (
     id serial primary key,
+    tableid text,
     name text, -- name of table in db
+    headers text,
     nextTable text
 )
 
-create table "2.1 Strength" (
+create table strength (
     id serial primary key,
     score varchar(10),
     damage varchar(10),
     carry varchar(10),
     social varchar(10)
 )
+
+create table racial_preferences (
+  elf text,
+  human text,
+  orc text
+);
 
 -- NEW TABLE QUERIES
 

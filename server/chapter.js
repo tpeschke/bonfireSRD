@@ -1,6 +1,5 @@
 function collectChapter(db, array, next, index) {
     let sidebarIndex = index;
-
     // GET HEADER
     if (next.split('.')[1] === 'h') {
         db.srdheader.findOne({ linkid: next }).then(piece => {
@@ -144,40 +143,40 @@ function collectChapter(db, array, next, index) {
             }
         })
     }
-}
-
-function collectTable(db, array, tableName) {
-    db.srdtable.findOne({ name: tableName }).then(table => {
-        db[table.name].find().then(body => {
-            let newBody = []
-            body.forEach((val, i) => {
-                let newArray = []
-                if (i === 0) {
+    // GET TABLE
+    if (next.split('.')[1] === 't') {
+        db.srdtable.findOne({ linkid: next }).then(table => {
+            db[table.name].find().then(body => {
+                let newBody = []
+                body.forEach((val, i) => {
+                    let newArray = []
+                    if (i === 0) {
+                        for (let key in val) {
+                            if (key !== 'id') {
+                                newArray.push(key)
+                            }
+                        }
+                        newBody.push(newArray)
+                        newArray = []
+                    }
                     for (let key in val) {
                         if (key !== 'id') {
-                            newArray.push(key)
+                            newArray.push(val[key])
                         }
                     }
                     newBody.push(newArray)
-                    newArray = []
+                })
+                array.push({ ...table, body: newBody })
+    
+                if (table.nextid) {
+                    collectChapter(db, array, table.nextid, index)
+                } else {
+                    console.log('done', table.linkid)
+                    return 'done'
                 }
-                for (let key in val) {
-                    if (key !== 'id') {
-                        newArray.push(val[key])
-                    }
-                }
-                newBody.push(newArray)
             })
-            array.push({ ...table, body: newBody })
-
-            if (table.nexttable) {
-                collectTable(db, array, table.nexttable)
-            } else {
-                console.log('done', tableName)
-                return 'done'
-            }
         })
-    })
+    }
 }
 
 chapterObject = {
@@ -192,7 +191,7 @@ chapterObject = {
         chapterObject.chapterTwo = []
         chapterObject.chapterTwoSide = []
         collectChapter(db, chapterObject.chapterTwo, '2.p.1')
-        collectTable(db, chapterObject.chapterTwoSide, 'strength')
+        collectChapter(db, chapterObject.chapterTwoSide, '3.t.1')
         chapterObject.chapterThree = []
         chapterObject.chapterThreeSide = []
         collectChapter(db, chapterObject.chapterThree, '3.hg.1')
