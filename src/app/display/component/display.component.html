@@ -43,6 +43,10 @@
   <h3 id="no">{{piece.body}}</h3>
 </div>
 
+<div *ngIf="type === 't'">
+  <app-table-display [table]="piece"></app-table-display>
+</div>
+
 <!-- SIDEBAR in main -->
 <div *ngIf="type === 'sb' && !sidebar" [ngClass]="nextType !== 'sb' ? 'sidebarShell marginBottom' : 'sidebarShell'">
   <h2>{{piece.body}}</h2>

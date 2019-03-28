@@ -151,6 +151,10 @@ function collectChapter(db, array, next, index) {
                 body.forEach((val, i) => {
                     let newArray = []
                     if (i === 0) {
+                        if (table.headers) {
+                            newArray.push(' ')
+                            newArray.push(' ')
+                        }
                         for (let key in val) {
                             if (key !== 'id') {
                                 newArray.push(key)
@@ -158,6 +162,10 @@ function collectChapter(db, array, next, index) {
                         }
                         newBody.push(newArray)
                         newArray = []
+                    }
+                    if (table.headers) {
+                        newArray.push(' ')
+                        newArray.push(newBody[0][i+2])
                     }
                     for (let key in val) {
                         if (key !== 'id') {
@@ -167,7 +175,7 @@ function collectChapter(db, array, next, index) {
                     newBody.push(newArray)
                 })
                 array.push({ ...table, body: newBody })
-    
+
                 if (table.nextid) {
                     collectChapter(db, array, table.nextid, index)
                 } else {
