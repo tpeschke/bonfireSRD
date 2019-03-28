@@ -1,10 +1,9 @@
 function collectChapter(db, array, next, index) {
     let sidebarIndex = index;
-
     // GET HEADER
     if (next.split('.')[1] === 'h') {
         db.srdheader.findOne({ linkid: next }).then(piece => {
-            if (sidebarIndex) {
+            if (sidebarIndex || sidebarIndex === 0) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
                     sidebarIndex = null
@@ -22,7 +21,7 @@ function collectChapter(db, array, next, index) {
         // GET PARAGRAPH
     } else if (next.split('.')[1] === 'p') {
         db.srdparagraph.findOne({ linkid: next }).then(piece => {
-            if (sidebarIndex) {
+            if (sidebarIndex || sidebarIndex === 0) {
                 piece.body = piece.body.split('|')
                 let splitArray = []
                 for (let i = 0; i < piece.body.length; i++) {
@@ -60,7 +59,7 @@ function collectChapter(db, array, next, index) {
         // GET CHART
     } else if (next.split('.')[1] === 'c') {
         db.srdchart.findOne({ linkid: next }).then(piece => {
-            if (sidebarIndex) {
+            if (sidebarIndex || sidebarIndex === 0) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
                     sidebarIndex = null
@@ -90,7 +89,7 @@ function collectChapter(db, array, next, index) {
         // GET SPACE
     } else if (next.split('.')[1] === 's') {
         db.srdsectionspace.findOne({ linkid: next }).then(piece => {
-            if (sidebarIndex) {
+            if (sidebarIndex || sidebarIndex === 0) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
                     sidebarIndex = null
@@ -109,7 +108,7 @@ function collectChapter(db, array, next, index) {
     // GET BULLETED LIST
     if (next.split('.')[1] === 'bl') {
         db.srdbulletedlist.findOne({ linkid: next }).then(piece => {
-            if (sidebarIndex) {
+            if (sidebarIndex || sidebarIndex === 0) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
                     sidebarIndex = null
@@ -126,9 +125,9 @@ function collectChapter(db, array, next, index) {
         })
     }
     // GET SUBHEADING (GREY)
-    if (next.split('.')[1] === 'hg') {
+    if (next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn') {
         db.srdheadinggrey.findOne({ linkid: next }).then(piece => {
-            if (sidebarIndex) {
+            if (sidebarIndex || sidebarIndex === 0) {
                 array[sidebarIndex].inner.push(piece)
                 if (piece.linkid === array[sidebarIndex].endid) {
                     sidebarIndex = null
@@ -144,40 +143,48 @@ function collectChapter(db, array, next, index) {
             }
         })
     }
-}
-
-function collectTable(db, array, tableName) {
-    db.srdtable.findOne({ name: tableName }).then(table => {
-        db[table.name].find().then(body => {
-            let newBody = []
-            body.forEach((val, i) => {
-                let newArray = []
-                if (i === 0) {
+    // GET TABLE
+    if (next.split('.')[1] === 't') {
+        db.srdtable.findOne({ linkid: next }).then(table => {
+            db[table.name].find().then(body => {
+                let newBody = []
+                body.forEach((val, i) => {
+                    let newArray = []
+                    if (i === 0) {
+                        if (table.headers) {
+                            newArray.push(' ')
+                            newArray.push(' ')
+                        }
+                        for (let key in val) {
+                            if (key !== 'id') {
+                                newArray.push(key)
+                            }
+                        }
+                        newBody.push(newArray)
+                        newArray = []
+                    }
+                    if (table.headers) {
+                        newArray.push(' ')
+                        newArray.push(newBody[0][i+2])
+                    }
                     for (let key in val) {
                         if (key !== 'id') {
-                            newArray.push(key)
+                            newArray.push(val[key])
                         }
                     }
                     newBody.push(newArray)
-                    newArray = []
-                }
-                for (let key in val) {
-                    if (key !== 'id') {
-                        newArray.push(val[key])
-                    }
-                }
-                newBody.push(newArray)
-            })
-            array.push({ ...table, body: newBody })
+                })
+                array.push({ ...table, body: newBody })
 
-            if (table.nexttable) {
-                collectTable(db, array, table.nexttable)
-            } else {
-                console.log('done', tableName)
-                return 'done'
-            }
+                if (table.nextid) {
+                    collectChapter(db, array, table.nextid, index)
+                } else {
+                    console.log('done', table.linkid)
+                    return 'done'
+                }
+            })
         })
-    })
+    }
 }
 
 chapterObject = {
@@ -188,10 +195,15 @@ chapterObject = {
     chapterThreeSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
-        chapterObject.chapterTwo = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
+        chapterObject.chapterTwo = []
+        chapterObject.chapterTwoSide = []
         collectChapter(db, chapterObject.chapterTwo, '2.p.1')
-        collectTable(db, chapterObject.chapterTwoSide, 'strength')
+        collectChapter(db, chapterObject.chapterTwoSide, '3.t.1')
+        chapterObject.chapterThree = []
+        chapterObject.chapterThreeSide = []
+        collectChapter(db, chapterObject.chapterThree, '3.hg.1')
+        collectChapter(db, chapterObject.chapterThreeSide, '3.sb.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -200,6 +212,9 @@ chapterObject = {
                 break
             case 2:
                 res.send({ main: chapterObject.chapterTwo, side: chapterObject.chapterTwoSide })
+                break
+            case 3:
+                res.send({ main: chapterObject.chapterThree, side: chapterObject.chapterThreeSide })
                 break
             default:
                 res.send('Something went wrong')

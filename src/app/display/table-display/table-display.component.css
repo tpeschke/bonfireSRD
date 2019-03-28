@@ -3,6 +3,9 @@
 .outerShell {
     font-family: "Vollkorn SC", serif;
     background: whitesmoke;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tableTitle {
@@ -35,4 +38,60 @@
     background: #222;
     color: whitesmoke;
     padding: 7px 0;
+}
+
+h2 {
+    position: absolute;
+    color: whitesmoke;
+}
+
+.headerSpace {
+    height: 25px;
+    width: 100%;
+    background: #222;
+}
+
+.headerHeaders {
+    text-align: center;
+}
+
+.headerValue:first-child {
+    background: #222;
+    padding: 7px 0;
+}
+
+.headerValue:nth-child(2) {
+    background: grey;
+    padding: 7px 0;
+}
+
+.headerRow:nth-child(odd){
+    background: lightgrey;
+}
+
+
+.headerRow {
+    display: flex;
+}
+
+.headerRow:nth-child(4) {
+    background: grey;
+}
+
+.headerValue {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.headerSide {
+    transform: rotate(270deg);
+    top: 81px;
+    width: 85px;
+}
+
+.headerTop {
+    left: 85px;
+    top: 29px;
 }

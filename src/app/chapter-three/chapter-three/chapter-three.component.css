@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.sidebarShell {
+  width: 300px
+}
+
 .chapterShell {
   padding: 35px 15px;
   width: 635px;
@@ -23,7 +27,7 @@
   left: 0;
   width: 635px;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .backTexture {
@@ -35,6 +39,7 @@
   background-repeat: no-repeat;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .imageShell {
@@ -61,6 +66,23 @@
   display: none;
   padding: 25px 0 10px 0;
   font-size: 20pt;
+}
+
+.tableShell {
+  display: none;
+  z-index: 0;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 5px;
+  display: none;
+  background: rgb(151, 23, 21);
+  border: 3px outset rgb(151, 23, 21);
+}
+
+.tableShell > p {
+  color: whitesmoke;
+  font-family: "Vollkorn SC", serif;
 }
 
 /* =========================================================================== */
@@ -177,6 +199,7 @@
   .tableShell {
     display: flex;
     margin-bottom: 0;
+    display: inherit;
   }
 
   .imageShell {
@@ -188,5 +211,9 @@
 
   .chapterTitle {
     display: inherit;
+  }
+
+  .sidebarShell {
+    margin: 15px auto;
   }
 }

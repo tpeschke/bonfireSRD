@@ -17,14 +17,18 @@ export class ChapterThreeComponent implements OnInit {
   ) { }
 
   view = null;
-  tables = [];
+  side = [];
   chapterName = '';
+  navDisplay = false;
 
   ngOnInit() {
+    this.navDisplay = window.document.body.clientWidth > 501 ? true : false
     this.chapterService.getChapterArray(3)
       .subscribe(chapterArray => {
         this.view = chapterArray.main
-        this.tables = chapterArray.side
+        this.side = chapterArray.side
+        console.log(this.view)
+        console.log(this.side)
       })
     this.getChapter();
     this.notRedux.toggleShow(true);
@@ -34,6 +38,7 @@ export class ChapterThreeComponent implements OnInit {
   }
 
   ngOnDestroy() {
+    this.navDisplay = false;
     this.notRedux.toggleShow(false);
     this.chapterName = ''
   }
@@ -54,6 +59,10 @@ export class ChapterThreeComponent implements OnInit {
   getChapter(): void {
     const id = this.route.snapshot.url[1].path
     this.chapterName = this.chapterService.getName(+id.substring(1))
+  }
+
+  displayTables() {
+    this.navDisplay = !this.navDisplay
   }
 
 }

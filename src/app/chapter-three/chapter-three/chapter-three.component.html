@@ -6,7 +6,17 @@
       <app-outer-display [view]="view"></app-outer-display>
     </div>
 
-    <app-outer-table [tables]='tables'></app-outer-table>
+    <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">
+      <p>Hide Racial Summaries</p>
+    </div>
+
+    <div class="sidebarShell">
+      <app-outer-display *ngIf="navDisplay" [view]='side' [sidebar]='true'></app-outer-display>
+    </div>
+
+    <div class="tableShell" (click)="displayTables()">
+      <p>Show Racial Summaries</p>
+    </div>
 
     <h1 class="chapterTitle">{{chapterName}}</h1>
   </div>
