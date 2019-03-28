@@ -4,7 +4,8 @@
     font-family: "Vollkorn SC", serif;
     background: whitesmoke;
     position: relative;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tableTitle {

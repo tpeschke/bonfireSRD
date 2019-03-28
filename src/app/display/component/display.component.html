@@ -43,7 +43,7 @@
   <h3 id="no">{{piece.body}}</h3>
 </div>
 
-<div *ngIf="type === 't'">
+<div *ngIf="type === 't'" [ngClass]="nextType !== 't' ? 'marginBottom' : ''">
   <app-table-display [table]="piece"></app-table-display>
 </div>
 

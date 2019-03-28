@@ -45,10 +45,16 @@ p {
 .chartShell {
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 80%;
     font-family: "Vollkorn SC";
     font-size: 13px;
     margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chartShell p {
+    text-indent: 0;
 }
 
 .sidebarShell {
