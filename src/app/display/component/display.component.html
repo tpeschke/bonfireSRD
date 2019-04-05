@@ -20,10 +20,6 @@
   <div class="space"></div>
 </div>
 
-<div *ngIf="type === 'i'">
-  <img [src]="piece.source" [alt]="piece.alt">
-</div>
-
 <div *ngIf="type === 'bl'" [ngClass]="nextType !== 'bl' ? 'bulletListShell marginBottom' : 'bulletListShell'">
   <div class="triangle"></div>
   <div>
@@ -45,6 +41,10 @@
 
 <div *ngIf="type === 't'" [ngClass]="nextType !== 't' ? 'marginBottom' : ''">
   <app-table-display [table]="piece"></app-table-display>
+</div>
+
+<div *ngIf="type === 'i'" [ngClass]="nextType !== 'i' ? 'marginBottom' : ''">
+  <img src="../../../assets/images/{{piece.source}}" alt="{{piece.alt}}">
 </div>
 
 <!-- SIDEBAR in main -->
