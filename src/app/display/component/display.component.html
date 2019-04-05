@@ -57,8 +57,8 @@
       <div class="underline"></div>
     </div>
 
-    <div *ngIf="sidepiece.linkid.split('.')[1] === 'p'"
-      [ngClass]="sidepiece.nextid.split('.')[1] !== 'p' && sidepiece.nextid.split('.')[1] !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'p' && sidepiece.linkid"
+      [ngClass]="sidepiece.nextid && sidepiece.nextid.split('.')[1] !== 'p' && sidepiece.nextid.split('.')[1] !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
       <div class="indent"></div>
       <div *ngFor="let paragraph of sidepiece.body">
         <app-link-search [body]="paragraph"></app-link-search>
