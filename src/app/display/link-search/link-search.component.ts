@@ -19,8 +19,8 @@ export class LinkSearchComponent implements OnInit {
       this.chapter = this.body.substring(8).split(":")[0]
     } else if (this.body === 'character sheet here.') {
       this.sheet = 'link'
-    } else if (this.body.substring(0,1) === '|') {
-      this.sheet = this.body.substring(1)
+    } else if (this.body.substring(0,2) === '+)') {
+      this.sheet = this.body.substring(2)
     }
   }
 

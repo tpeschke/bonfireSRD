@@ -25,7 +25,7 @@ function collectChapter(db, array, next, index) {
                 piece.body = piece.body.split('|')
                 let splitArray = []
                 for (let i = 0; i < piece.body.length; i++) {
-                    if (piece.body[i].substring(0, 7) !== "Chapter") {
+                    if (piece.body[i].substring(0, 7) !== "Chapter" || piece.body[i].substring(0,2) !== "+)") {
                         splitArray.push(...piece.body[i].split(' '))
                     } else {
                         splitArray.push(piece.body[i])
@@ -40,7 +40,7 @@ function collectChapter(db, array, next, index) {
                 piece.body = piece.body.split('|')
                 let splitArray = []
                 for (let i = 0; i < piece.body.length; i++) {
-                    if (piece.body[i].substring(0, 7) !== "Chapter" && piece.body[i] !== "character sheet here.") {
+                    if (piece.body[i].substring(0, 7) !== "Chapter" && piece.body[i].substring(0,2) !== "+)") {
                         splitArray.push(...piece.body[i].split(' '))
                     } else {
                         splitArray.push(piece.body[i])
