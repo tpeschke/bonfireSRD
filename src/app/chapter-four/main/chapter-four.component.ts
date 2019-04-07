@@ -21,8 +21,6 @@ export class ChapterFourComponent implements OnInit {
   chapterName = '';
   navDisplay = false;
 
-  src = 'expert.png'
-
   ngOnInit() {
     this.navDisplay = window.document.body.clientWidth > 501 ? true : false
     this.chapterService.getChapterArray(4)
