@@ -15,60 +15,68 @@ insert into srdchapters (chapname, chapnum) values
 
 create table SRDheader (
     id serial primary key,
-    linkid varchar(6),
+    linkid text,
     body text,
-    nextid varchar(6)
+    nextid text
 )
 
 create table SRDparagraph (
     id serial primary key,
-    linkid varchar(6),
+    linkid text,
     body text,
-    nextid varchar(6)
+    nextid text
 )
 
 create table SRDchart (
     id serial primary key,
-    linkid varchar(6),
+    linkid text,
     leftbody text,
     rightbody text,
-    nextid varchar(6)
+    nextid text
 )
 
 create table SRDsidebar (
     id serial primary key,
-    linkid varchar(6),
+    linkid text,
     body text,
-    endid varchar(6),
-    nextid varchar(6)
+    endid text,
+    nextid text
+)
+
+create table SRDadvanced (
+    id serial primary key,
+    linkid text,
+    body text,
+    endid text,
+    nextid text
 )
 
 create table SRDsectionSpace (
     id serial primary key,
-    linkid varchar(6),
-    nextid varchar(6)
+    linkid text,
+    nextid text
 )
 
 create table SRDbulletedList (
     id serial primary key,
-    linkid varchar(6),
+    linkid text,
     body text,
-    nextid varchar(6)
+    nextid text
 )
 
 create table srdHeadingGrey (
     id serial primary key,
-    linkid varchar(6),
+    linkid text,
     body text,
-    nextid varchar(6)
+    nextid text
 )
 
 create table srdImages (
     id serial primary key,
-    linkid varchar(50),
+    linkid text,
     source text,
     alt text,
-    nextid varchar(50)
+    nextid text
 )
 
 create table srdTable (

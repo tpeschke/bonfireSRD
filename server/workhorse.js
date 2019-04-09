@@ -1,5 +1,5 @@
 let chapterWorkhorse = {
-    collectChapter: function (db, array, next, index) {
+    collectChapter: function (db, array, next, index, advanced) {
         let sidebarIndex = index;
         // GET HEADER
         if (next.split('.')[1] === 'h') {
@@ -10,7 +10,7 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -48,7 +48,7 @@ let chapterWorkhorse = {
                         }
                     }
                     piece.body = splitArray
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -66,7 +66,7 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -96,7 +96,7 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -115,7 +115,7 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -124,9 +124,8 @@ let chapterWorkhorse = {
                     return 'done'
                 }
             })
-        }
-        // GET IMAGE SRC
-        if (next.split('.')[1] === 'i') {
+            // GET IMAGE SRC
+        } else if (next.split('.')[1] === 'i') {
             db.srdimages.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     array[sidebarIndex].inner.push(piece)
@@ -134,7 +133,7 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -143,9 +142,8 @@ let chapterWorkhorse = {
                     return 'done'
                 }
             })
-        }
-        // GET SUBHEADING (GREY)
-        if (next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn') {
+            // GET SUBHEADING (GREY)
+        } else if (next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn') {
             db.srdheadinggrey.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     array[sidebarIndex].inner.push(piece)
@@ -153,7 +151,7 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
-                    array.push(piece)
+                    array.push({...piece, advanced})
                 }
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
@@ -162,9 +160,36 @@ let chapterWorkhorse = {
                     return 'done'
                 }
             })
-        }
-        // GET TABLE
-        if (next.split('.')[1] === 't') {
+            // GET ADVANCED RULE
+        }  else if (next.split('.')[1] === 'a' || next.split('.')[1] === 'ab') {
+ 
+            db.srdadvanced.findOne({ linkid: next }).then(piece => {
+                if (false || piece.linkid.split('.')[1] === 'ab') {
+                    if (sidebarIndex || sidebarIndex === 0) {
+                        array[sidebarIndex].inner.push(piece)
+                        if (piece.linkid === array[sidebarIndex].endid) {
+                            sidebarIndex = null
+                        }
+                    } else {
+                        array.push({...piece, advanced})
+                    }
+                    if (piece.nextid) {
+                        chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex, true)
+                    } else {
+                        console.log('done', piece.linkid.split('.')[0])
+                        return 'done'
+                    }
+                } else {
+                    if (piece.endid) {
+                        chapterWorkhorse.collectChapter(db, array, piece.endid, sidebarIndex)
+                    } else {
+                        console.log('done', piece.linkid.split('.')[0])
+                        return 'done'
+                    }
+                }
+            })
+            // GET TABLE
+        } else if (next.split('.')[1] === 't') {
             db.srdtable.findOne({ linkid: next }).then(table => {
                 db[table.name].find().then(body => {
                     let newBody = []
@@ -206,75 +231,40 @@ let chapterWorkhorse = {
             })
         }
     },
-    addLinkToChapter: function (db, res, newItem, oldItem) {
-
-        // GET HEADER
-        if (newItem.linkid.split('.')[1] === 'h') {
-            db.srdheader.insert(newItem).then(result => {
-                console.log(result)
-            })
-            // GET CHART
-        } else if (newItem.linkid.split('.')[1] === 'p') {
-
-            // GET SIDEBAR
-        } else if (newItem.linkid.split('.')[1] === 'c') {
-
-            // GET SIDEBAR
-        } else if (newItem.linkid.split('.')[1] === 'sb') {
-
-            // GET SPACE
-        } else if (newItem.linkid.split('.')[1] === 's') {
-            db.srdsectionspace.insert(newItem).then(result => {
-                db.srdsectionspace.save({ id: result.id, linkid: result.linkid + result.id }).then(finalItem => {
-                    console.log(finalItem)
-                    chapterWorkhorse.updateChapter(db, res, oldItem.linkid, { nextid: finalItem.linkid })
-                })
-            })
-            // GET BULLETED LIST
-        } else if (newItem.linkid.split('.')[1] === 'bl') {
-
-            // GET IMAGE SRC
-        } else if (newItem.linkid.split('.')[1] === 'i') {
-
-            // GET SUBHEADING (GREY)
-        } else if (newItem.linkid.split('.')[1] === 'hg' || newItem.linkid.split('.')[1] === 'hy' || newItem.linkid.split('.')[1] === 'hn') {
-
-            // GET TABLE
-        } else if (newItem.linkid.split('.')[1] === 't') {
-
+    updateChapter: function (db, item) {
+        if (isNaN(item.id)) {
+            delete item.id
         }
-    },
-    updateChapter: function (db, res, linkid, updateObj) {
-
-            // GET HEADER
-        if (linkid.split('.')[1] === 'h') {
-
+        // GET HEADER
+        if (item.linkid.split('.')[1] === 'h') {
+            db.srdheader.save(item)
             // GET CHART
-        } else if (linkid.split('.')[1] === 'p') {
-            db.srdparagraph.update({linkid}, updateObj).then( result => {
-                res.send('done')
-            })
+        } else if (item.linkid.split('.')[1] === 'p') {
+            db.srdparagraph.save(item)
             // GET SIDEBAR
-        } else if (linkid.split('.')[1] === 'c') {
-
+        } else if (item.linkid.split('.')[1] === 'c') {
+            db.srdchart.save(item)
             // GET SIDEBAR
-        } else if (linkid.split('.')[1] === 'sb') {
-
+        } else if (item.linkid.split('.')[1] === 'sb') {
+            db.srdsidebar.save(item)
             // GET SPACE
-        } else if (linkid.split('.')[1] === 's') {
-
+        } else if (item.linkid.split('.')[1] === 's') {
+            db.srdsectionspace.save(item)
             // GET BULLETED LIST
-        } else if (linkid.split('.')[1] === 'bl') {
-
+        } else if (item.linkid.split('.')[1] === 'bl') {
+            db.srdbulletedlist.save(item)
             // GET IMAGE SRC
-        } else if (linkid.split('.')[1] === 'i') {
-
+        } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
+            db.srdadvanced.save(item)
+            // GET IMAGE SRC
+        } else if (item.linkid.split('.')[1] === 'i') {
+            db.srdimages.save(item)
             // GET SUBHEADING (GREY)
-        } else if (linkid.split('.')[1] === 'hg' || linkid.split('.')[1] === 'hy' || linkid.split('.')[1] === 'hn') {
-
+        } else if (item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+            db.srdheadinggrey.save(item)
             // GET TABLE
-        } else if (linkid.split('.')[1] === 't') {
-
+        } else if (item.linkid.split('.')[1] === 't') {
+            console.log('yep')
         }
     }
 }

@@ -1,5 +1,5 @@
 const { editorAuth } = require('./serv-config')
-const { collectChapter, addLinkToChapter } = require('./workhorse')
+const { collectChapter, updateChapter } = require('./workhorse')
 
 chapterObject = {
     chapterOne: [],
@@ -44,14 +44,15 @@ chapterObject = {
                 break
         }
     },
-    newLink: (req, res) => {
-        let {auth, newItem, oldItem} = req.body
-        if (auth !== editorAuth) {
-            res.send('not auth')
+    saveChapter: (req, res) => {
+        if (req.body.auth !== editorAuth) {
+            res.send('not authorized')
         } else {
-            addLinkToChapter(req.app.get('db'), res, newItem, oldItem)
+            req.body.chapter.forEach(val => {
+                updateChapter(req.app.get('db'), val)
+            })
+            res.send('done')
         }
-
     }
 }
 

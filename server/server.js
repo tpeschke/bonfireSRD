@@ -44,9 +44,9 @@ app.get('/nc/:id', chapter.get)
 app.get('/c/:id', ctrl.c);
 
 app.post('/search', ctrl.search);
-app.post('/newLink', chapter.newLink);
 
 app.patch('/auth', ctrl.forceRun);
+app.patch('/saveChapter', chapter.saveChapter);
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))
