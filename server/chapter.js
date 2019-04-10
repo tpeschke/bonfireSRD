@@ -21,9 +21,9 @@ chapterObject = {
         collectChapter(db, chapterObject.chapterThree, '3.hg.1')
         collectChapter(db, chapterObject.chapterThreeSide, '3.sb.1')
         chapterObject.chapterFour = []
-        chapterObject.chapterFourSide = []
+        chapterObject.chapterFourSide = [{linkid: 'h', body: 'Expert Archetypes'}, {linkid: 'hg', body: 'Adventurer'},{linkid: 'hg', body: 'Assassin'}, {linkid: 'hg', body: 'Diplomat'}]
         collectChapter(db, chapterObject.chapterFour, '4.p.1')
-        collectChapter(db, chapterObject.chapterFourSide, '')
+        // collectChapter(db, chapterObject.chapterFourSide, '')
     },
     get: (req, res) => {
         switch (+req.params.id) {

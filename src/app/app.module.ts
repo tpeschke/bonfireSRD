@@ -23,7 +23,7 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     ChapterComponent,
     SafeHtmlPipe,
-    SearchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

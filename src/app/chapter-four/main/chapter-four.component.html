@@ -11,7 +11,7 @@
     </div>
 
     <div class="sidebarShell">
-      <app-outer-display *ngIf="navDisplay" [view]='side' [sidebar]='true'></app-outer-display>
+      <app-quick-nav [side]='side'></app-quick-nav>
     </div>
 
     <div class="tableShell" (click)="displayTables()">
