@@ -21,7 +21,7 @@ chapterObject = {
         collectChapter(db, chapterObject.chapterThree, '3.hg.1')
         collectChapter(db, chapterObject.chapterThreeSide, '3.sb.1')
         chapterObject.chapterFour = []
-        chapterObject.chapterFourSide = [{linkid: 'h', body: 'Expert Archetypes'}, {linkid: 'hg', body: 'Adventurer'},{linkid: 'hg', body: 'Assassin'}, {linkid: 'hg', body: 'Diplomat'}]
+        chapterObject.chapterFourSide = [{linkid: 'h', body: 'Expert Archetypes'}, {linkid: 'hg', body: 'Adventurer'},{linkid: 'hg', body: 'Assassin'}, {linkid: 'hg', body: 'Diplomat'}, {linkid: 'hg', body: 'Foil'}, {linkid: 'hg', body: 'Noble'}, {linkid: 'hg', body: 'Philosopher'}, {linkid: 'hg', body: 'Ranger'}, {linkid: 'hg', body: 'Rascal'}, {linkid: 'hg', body: 'Sage'}, {linkid: 'hg', body: 'Thief'}, {linkid: 'h', body: 'Magical Archetypes'}]
         collectChapter(db, chapterObject.chapterFour, '4.p.1')
         // collectChapter(db, chapterObject.chapterFourSide, '')
     },
