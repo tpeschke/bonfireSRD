@@ -15,8 +15,7 @@ export class QuickNavComponent implements OnInit {
   }
 
   scrollToElement(element): void {
-    console.log(element.toUpperCase().split(' ')[0])
-    let el = document.querySelector('#' + element.toUpperCase().split(' ')[0])
+    let el = document.querySelector('#' + element.toUpperCase())
     el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
   }
 
