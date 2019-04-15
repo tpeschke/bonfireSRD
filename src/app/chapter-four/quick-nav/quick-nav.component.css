@@ -1,6 +1,8 @@
 .outerShell {
-    background: lightgrey;
+    background: rgba(245, 245, 245, 0.9);
     padding: 10px 5px;
+    border-top: 5px solid #b45f06;
+    border-bottom: 5px solid #b45f06;
 }
 
 h1 {
@@ -13,8 +15,8 @@ h1 {
 }
 
 p {
-    font-size: 14px;
     font-family: "Vollkorn SC";
+    font-size: 14px;
     color: #434343;
     font-weight: 800;
     padding: 5px 0;
