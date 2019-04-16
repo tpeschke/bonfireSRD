@@ -17,3 +17,11 @@ p {
     margin-right: 5px;
     margin-bottom: 2px;
 }
+
+.orangeHeader {
+    color: #b45f06;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}

@@ -20,6 +20,13 @@ h3 {
     font-weight: 800;
 }
 
+h4 {
+    color: #b45f06;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 10pt;
+}
+
 p {
     text-indent: 50px;
 }
@@ -77,34 +84,20 @@ p {
     height: 5px;
 }
 
+.advancedHeader {
+    margin-left: 15px;
+}
+
 .bulletListShell {
     display: flex;
     margin-bottom: 5px;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 11px solid transparent;
-    border-right: 11px solid transparent;
-    border-bottom: 15px solid #b45f06;
-    margin-left: 17px;
-    position: relative;
+.bulletTriangle {
+    margin-left: 25px;
 }
 
-.triangle:after{
-    content:'';
-    position:absolute;
-    top: 2px;
-    left: -7px;
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 11px solid whitesmoke;
-}
-
-.triangle + div p {
+.bulletTriangle + div p {
     text-indent: 10px;
 }
 
@@ -152,5 +145,9 @@ p {
 
     .triangle {
         margin-left: 0;
+    }
+
+    #advancedHead {
+        text-align: center
     }
   }
