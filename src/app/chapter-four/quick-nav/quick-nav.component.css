@@ -25,3 +25,13 @@ p {
 p:hover {
     color: #b45f06;
 }
+
+/* ======================================================= */
+
+@media (max-width: 500px) {
+    .outerShell {
+        background: transparent;
+        border-top: none;
+        border-bottom: none
+    }
+  }

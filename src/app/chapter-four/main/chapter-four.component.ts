@@ -63,5 +63,7 @@ export class ChapterFourComponent implements OnInit {
     this.navDisplay = !this.navDisplay
   }
 
-
+  scrollToTop() {
+    window.scrollTo(0,0)
+  }
 }

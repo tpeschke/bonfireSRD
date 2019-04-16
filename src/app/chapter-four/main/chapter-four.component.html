@@ -7,15 +7,16 @@
     </div>
 
     <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">
-      <p>Hide Racial Summaries</p>
+      <p>Hide Quick Nav</p>
     </div>
 
     <div class="sidebarShell">
-      <app-quick-nav [side]='side'></app-quick-nav>
+      <app-quick-nav *ngIf=navDisplay [side]='side'></app-quick-nav>
+      <button (click)="scrollToTop()">🜂 To Top</button>
     </div>
 
     <div class="tableShell" (click)="displayTables()">
-      <p>Show Racial Summaries</p>
+      <p>Show Quick Nav</p>
     </div>
 
     <h1 class="chapterTitle">{{chapterName}}</h1>

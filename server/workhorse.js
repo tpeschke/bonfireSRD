@@ -235,7 +235,6 @@ let chapterWorkhorse = {
         if (isNaN(item.id)) {
             delete item.id
         }
-        console.log(item)
             // GET HEADER
         if (item.linkid.split('.')[1] === 'h') {
             db.srdheader.save(item)

@@ -146,4 +146,8 @@ p {
     .triangle {
         margin-left: 0;
     }
+
+    #advancedHead {
+        text-align: center
+    }
   }
