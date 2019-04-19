@@ -10,7 +10,7 @@
 <p class="searchTitle">Refences to your search are in the following chapter(s):</p>
 
 <div class='searchShell'>
-    <div *ngFor="let search of searches" class="searchResult"  routerLink="chapter/c{{search.chapnum}}">
+    <div *ngFor="let search of searches" class="searchResult"  routerLink="chapter/{{search.chapnum}}">
       <div>Chapter {{search.chapnum}}:</div>
       <div class="searchName">{{search.chapname}}</div>
     </div>

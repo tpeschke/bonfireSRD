@@ -46,8 +46,8 @@ export class ChapterComponent implements OnInit, OnDestroy {
   }
 
   getChapter(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.chapterName = this.chapterService.getName(+id.substring(1))
+    const id = +this.route.snapshot.paramMap.get('id')
+    this.chapterName = this.chapterService.getName(id)
     this.chapterService.getChapter(id)
       .subscribe(chapter => {
         this.view = chapter[0].chapter;

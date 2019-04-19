@@ -266,6 +266,39 @@ let chapterWorkhorse = {
         } else if (item.linkid.split('.')[1] === 't') {
             console.log('yep')
         }
+    },
+    deleteLink: function (db, item) {
+            // GET HEADER
+            if (item.linkid.split('.')[1] === 'h') {
+                
+                // GET CHART
+            } else if (item.linkid.split('.')[1] === 'p') {
+                
+                // GET SIDEBAR
+            } else if (item.linkid.split('.')[1] === 'c') {
+                
+                // GET SIDEBAR
+            } else if (item.linkid.split('.')[1] === 'sb') {
+                
+                // GET SPACE
+            } else if (item.linkid.split('.')[1] === 's') {
+                
+                // GET BULLETED LIST
+            } else if (item.linkid.split('.')[1] === 'bl') {
+                
+                // GET IMAGE SRC
+            } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
+                
+                // GET IMAGE SRC
+            } else if (item.linkid.split('.')[1] === 'i') {
+                
+                // GET SUBHEADING (GREY)
+            } else if (item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+                
+                // GET TABLE
+            } else if (item.linkid.split('.')[1] === 't') {
+                console.log('yep')
+            }
     }
 }
 

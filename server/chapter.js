@@ -51,6 +51,9 @@ chapterObject = {
             req.body.chapter.forEach(val => {
                 updateChapter(req.app.get('db'), val)
             })
+            req.body.deleteList.forEach(val => {
+                deleteLink(req.app.get('db'), val)
+            })
             res.send('done')
         }
     }

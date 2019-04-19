@@ -10,12 +10,12 @@ import { ChapterFourComponent } from './chapter-four/main/chapter-four.component
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'chapter/c0', component: HomeComponent},
-  {path: 'chapter/c1', component: ChapteroneComponent},
-  {path: 'chapter/c2', component: ChapterTwoComponent},
-  {path: 'chapter/c3', component: ChapterThreeComponent},
-  {path: 'chapter/c4', component: ChapterFourComponent},
-  {path: 'chapter/c16', component: HomeComponent},
+  {path: 'chapter/0', component: HomeComponent},
+  {path: 'chapter/1', component: ChapteroneComponent},
+  {path: 'chapter/2', component: ChapterTwoComponent},
+  {path: 'chapter/3', component: ChapterThreeComponent},
+  {path: 'chapter/4', component: ChapterFourComponent},
+  {path: 'chapter/16', component: HomeComponent},
   {path: 'chapter/:id', component: ChapterComponent}
 ]
 
