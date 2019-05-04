@@ -4,11 +4,11 @@ import { ChapterService } from '../../chapter.service';
 import { NotReduxService } from '../../not-redux.service';
 
 @Component({
-  selector: 'app-chapter-four',
-  templateUrl: './chapter-four.component.html',
-  styleUrls: ['./chapter-four.component.css']
+  selector: 'app-chapter-five',
+  templateUrl: './chapter-five.component.html',
+  styleUrls: ['./chapter-five.component.css']
 })
-export class ChapterFourComponent implements OnInit {
+export class ChapterFiveComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
@@ -63,7 +63,4 @@ export class ChapterFourComponent implements OnInit {
     this.navDisplay = !this.navDisplay
   }
 
-  scrollToTop() {
-    window.scrollTo(0,0)
-  }
 }

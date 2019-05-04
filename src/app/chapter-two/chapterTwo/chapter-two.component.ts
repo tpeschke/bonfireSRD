@@ -23,7 +23,7 @@ export class ChapterTwoComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.navDisplay = window.document.body.clientWidth > 501 ? true : false
-    this.chapterService.getChapterArray(2)
+    this.chapterService.getChapterArray(this.route.snapshot.url[1].path)
       .subscribe(chapterArray => {
         this.view = chapterArray.main
         this.tables = chapterArray.side

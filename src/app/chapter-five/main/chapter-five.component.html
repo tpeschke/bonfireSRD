@@ -1,0 +1,27 @@
+<div class="outerShell">
+  <div *ngIf="view" class="innerShell">
+    <div class="backTexture"></div>
+    <div class="backColor"></div>
+    <div class="chapterShell">
+      <app-outer-display [view]="view"></app-outer-display>
+    </div>
+
+    <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">
+      <p>Hide Racial Summaries</p>
+    </div>
+
+    <div class="sidebarShell">
+      <app-outer-display *ngIf="navDisplay" [view]='side' [sidebar]='true'></app-outer-display>
+    </div>
+
+    <div class="tableShell" (click)="displayTables()">
+      <p>Show Racial Summaries</p>
+    </div>
+
+    <h1 class="chapterTitle">{{chapterName}}</h1>
+  </div>
+
+  <div *ngIf='!view'>
+    <div class="loading"></div>
+  </div>
+</div>
