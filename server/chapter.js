@@ -9,6 +9,8 @@ chapterObject = {
     chapterThreeSide: [],
     chapterFour: [],
     chapterFourSide: [],
+    chapterFive: [],
+    chapterFiveSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
@@ -23,7 +25,10 @@ chapterObject = {
         chapterObject.chapterFour = []
         chapterObject.chapterFourSide = [{linkid: 'h', body: 'Expert Archetypes'}, {linkid: 'hg', body: 'Adventurer'},{linkid: 'hg', body: 'Assassin'}, {linkid: 'hg', body: 'Diplomat'}, {linkid: 'hg', body: 'Foil'}, {linkid: 'hg', body: 'Noble'}, {linkid: 'hg', body: 'Philosopher'}, {linkid: 'hg', body: 'Ranger'}, {linkid: 'hg', body: 'Rascal'}, {linkid: 'hg', body: 'Sage'}, {linkid: 'hg', body: 'Thief'}, {linkid: 'h', body: 'Magical Archetypes'}, {linkid: 'hg', body: 'Mage'}, {linkid: 'hg', body: 'Wizard'}, {linkid: 'h', body: 'Servant Archetypes'}, {linkid: 'hg', body: 'Ashcaller'}, {linkid: 'hg', body: 'Priest'}, {linkid: 'h', body: 'Warrior Archetypes'}, {linkid: 'hg', body: 'Fighter'}, {linkid: 'hg', body: 'Knight'}, {linkid: 'hg', body: 'Soldier'}, {linkid: 'hg', body: 'Tactician'}, {linkid: 'hg', body: 'Thug'}]
         collectChapter(db, chapterObject.chapterFour, '4.p.1')
-        // collectChapter(db, chapterObject.chapterFourSide, '')
+        chapterObject.chapterFive = []
+        chapterObject.chapterFiveSide = []
+        collectChapter(db, chapterObject.chapterFive, '5.p.1')
+        // collectChapter(db, chapterObject.chapterFiveSide, '3.sb.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -38,6 +43,9 @@ chapterObject = {
                 break
             case 4:
                 res.send({ main: chapterObject.chapterFour, side: chapterObject.chapterFourSide })
+                break
+            case 5:
+                res.send({ main: chapterObject.chapterFive, side: chapterObject.chapterFiveSide })
                 break
             default:
                 res.send('Something went wrong')

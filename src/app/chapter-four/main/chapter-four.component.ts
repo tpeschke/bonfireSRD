@@ -62,8 +62,4 @@ export class ChapterFourComponent implements OnInit {
   displayTables() {
     this.navDisplay = !this.navDisplay
   }
-
-  scrollToTop() {
-    window.scrollTo(0,0)
-  }
 }

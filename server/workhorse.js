@@ -58,7 +58,7 @@ let chapterWorkhorse = {
                 }
             })
             // GET CHART
-        } else if (next.split('.')[1] === 'c') {
+        } else if (next.split('.')[1] === 'c' || next.split('.')[1] === 'pc') {
             db.srdchart.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     array[sidebarIndex].inner.push(piece)
@@ -202,7 +202,7 @@ let chapterWorkhorse = {
         if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
             db.srdbasic.save(item)
             // SAVE CHART
-        } else if (item.linkid.split('.')[1] === 'c') {
+        } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
             db.srdchart.save(item)
             // SAVE SIDEBAR
         } else if (item.linkid.split('.')[1] === 'sb') {
@@ -225,11 +225,11 @@ let chapterWorkhorse = {
             // GET HEADER
             if (item.linkid.split('.')[1] === 'h') {
                 
-                // GET CHART
+                // GET PARAGRAPH
             } else if (item.linkid.split('.')[1] === 'p') {
                 
-                // GET SIDEBAR
-            } else if (item.linkid.split('.')[1] === 'c') {
+                // GET CHART
+            } else if (item.linkid.split('.')[1] === 'c' || next.split('.')[1] === 'pc') {
                 
                 // GET SIDEBAR
             } else if (item.linkid.split('.')[1] === 'sb') {

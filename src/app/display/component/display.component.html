@@ -18,6 +18,14 @@
   <p>{{piece.rightbody}}</p>
 </div>
 
+<div *ngIf="type === 'pc'" class="chartShell pairedShell">
+  <h3>{{piece.leftbody}}</h3>
+  <div>
+    <h3>CrP:</h3>
+    <p>{{piece.rightbody}}</p>
+  </div>
+</div>
+
 <div *ngIf="type === 's'">
   <div class="space"></div>
 </div>
@@ -72,6 +80,14 @@
       <p>{{sidepiece.leftbody}}</p>
       <p>{{sidepiece.rightbody}}</p>
     </div>
+
+    <div *ngIf="type === 'pc'" class="chartShell pairedShell">
+        <h3>{{piece.leftbody}}</h3>
+        <div>
+          <h3>CrP:</h3>
+          <p>{{piece.rightbody}}</p>
+        </div>
+      </div>
 
     <div *ngIf="sidepiece.linkid.split('.')[1] === 's'">
       <div class="space"></div>

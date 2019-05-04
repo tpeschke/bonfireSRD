@@ -23,7 +23,7 @@ export class ChapterFiveComponent implements OnInit {
 
   ngOnInit() {
     this.navDisplay = window.document.body.clientWidth > 501 ? true : false
-    this.chapterService.getChapterArray(this.route.snapshot.url[1].path)
+    this.chapterService.getChapterArray(+this.route.snapshot.url[1].path)
       .subscribe(chapterArray => {
         this.view = chapterArray.main
         this.side = chapterArray.side
