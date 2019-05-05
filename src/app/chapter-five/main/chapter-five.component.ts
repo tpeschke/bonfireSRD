@@ -4,11 +4,11 @@ import { ChapterService } from '../../chapter.service';
 import { NotReduxService } from '../../not-redux.service';
 
 @Component({
-  selector: 'app-chapter-four',
-  templateUrl: './chapter-four.component.html',
-  styleUrls: ['./chapter-four.component.css']
+  selector: 'app-chapter-five',
+  templateUrl: './chapter-five.component.html',
+  styleUrls: ['./chapter-five.component.css']
 })
-export class ChapterFourComponent implements OnInit {
+export class ChapterFiveComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +23,7 @@ export class ChapterFourComponent implements OnInit {
 
   ngOnInit() {
     this.navDisplay = window.document.body.clientWidth > 501 ? true : false
-    this.chapterService.getChapterArray(this.route.snapshot.url[1].path)
+    this.chapterService.getChapterArray(+this.route.snapshot.url[1].path)
       .subscribe(chapterArray => {
         this.view = chapterArray.main
         this.side = chapterArray.side
@@ -62,4 +62,5 @@ export class ChapterFourComponent implements OnInit {
   displayTables() {
     this.navDisplay = !this.navDisplay
   }
+
 }

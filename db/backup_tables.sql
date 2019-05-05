@@ -13,14 +13,7 @@ insert into srdchapters (chapname, chapnum) values
 ('Social', 9), ('Combat', 10), ('Equipment', 11), ('Magic', 12), ('Divine', 13), 
 ('Character Progresssion', 14), ('Misc Rules', 15);
 
-create table SRDheader (
-    id serial primary key,
-    linkid text,
-    body text,
-    nextid text
-)
-
-create table SRDparagraph (
+create table SRDbasic (
     id serial primary key,
     linkid text,
     body text,
@@ -57,20 +50,6 @@ create table SRDsectionSpace (
     nextid text
 )
 
-create table SRDbulletedList (
-    id serial primary key,
-    linkid text,
-    body text,
-    nextid text
-)
-
-create table srdHeadingGrey (
-    id serial primary key,
-    linkid text,
-    body text,
-    nextid text
-)
-
 create table srdImages (
     id serial primary key,
     linkid text,
@@ -104,10 +83,6 @@ create table racial_preferences (
 -- NEW TABLE QUERIES
 
 insert into srdtable (name, nexttable) values ('charisma', null);
-
-update srdtable
-set nexttable = 'charisma'
-where id = 6;
 
 create table charisma (
     id serial primary key,

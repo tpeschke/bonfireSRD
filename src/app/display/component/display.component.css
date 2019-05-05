@@ -60,6 +60,17 @@ p {
     margin-right: auto;
 }
 
+.pairedShell {
+    margin: 0;
+    width: 45%;
+}
+
+.pairedShell div {
+    display: flex;
+    justify-content: space-between;
+    width: 50px
+}
+
 .chartShell p {
     text-indent: 0;
 }
@@ -148,6 +159,7 @@ p {
     }
 
     #advancedHead {
-        text-align: center
+        text-align: center;
+        margin-left: 0;
     }
   }

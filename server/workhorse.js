@@ -1,9 +1,9 @@
 let chapterWorkhorse = {
     collectChapter: function (db, array, next, index, advanced) {
         let sidebarIndex = index;
-        // GET HEADER
-        if (next.split('.')[1] === 'h') {
-            db.srdheader.findOne({ linkid: next }).then(piece => {
+        // GET HEADER / BULLECTED LIST / MINOR HEADINGS
+        if (next.split('.')[1] === 'h' || next.split('.')[1] === 'bl' || next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn') {
+            db.srdbasic.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     array[sidebarIndex].inner.push(piece)
                     if (piece.linkid === array[sidebarIndex].endid) {
@@ -21,7 +21,7 @@ let chapterWorkhorse = {
             })
             // GET PARAGRAPH
         } else if (next.split('.')[1] === 'p') {
-            db.srdparagraph.findOne({ linkid: next }).then(piece => {
+            db.srdbasic.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     piece.body = piece.body.split('|')
                     let splitArray = []
@@ -58,7 +58,7 @@ let chapterWorkhorse = {
                 }
             })
             // GET CHART
-        } else if (next.split('.')[1] === 'c') {
+        } else if (next.split('.')[1] === 'c' || next.split('.')[1] === 'pc') {
             db.srdchart.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     array[sidebarIndex].inner.push(piece)
@@ -105,26 +105,6 @@ let chapterWorkhorse = {
                     return 'done'
                 }
             })
-        }
-        // GET BULLETED LIST
-        if (next.split('.')[1] === 'bl') {
-            db.srdbulletedlist.findOne({ linkid: next }).then(piece => {
-                if (sidebarIndex || sidebarIndex === 0) {
-                    array[sidebarIndex].inner.push(piece)
-                    if (piece.linkid === array[sidebarIndex].endid) {
-                        sidebarIndex = null
-                    }
-                } else {
-                    array.push({...piece, advanced})
-                }
-                if (piece.nextid) {
-                    chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
-                } else {
-                    console.log('done', piece.linkid.split('.')[0])
-                    return 'done'
-                }
-            })
-            // GET IMAGE SRC
         } else if (next.split('.')[1] === 'i') {
             db.srdimages.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
@@ -142,26 +122,8 @@ let chapterWorkhorse = {
                     return 'done'
                 }
             })
-            // GET SUBHEADING (GREY)
-        } else if (next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn') {
-            db.srdheadinggrey.findOne({ linkid: next }).then(piece => {
-                if (sidebarIndex || sidebarIndex === 0) {
-                    array[sidebarIndex].inner.push(piece)
-                    if (piece.linkid === array[sidebarIndex].endid) {
-                        sidebarIndex = null
-                    }
-                } else {
-                    array.push({...piece, advanced})
-                }
-                if (piece.nextid) {
-                    chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
-                } else {
-                    console.log('done', piece.linkid.split('.')[0])
-                    return 'done'
-                }
-            })
-            // GET ADVANCED RULE
-        }  else if (next.split('.')[1] === 'a' || next.split('.')[1] === 'ab') {
+            // GET ADVANCED
+        } else if (next.split('.')[1] === 'a' || next.split('.')[1] === 'ab') {
  
             db.srdadvanced.findOne({ linkid: next }).then(piece => {
                 if (false || piece.linkid.split('.')[1] === 'ab') {
@@ -235,37 +197,62 @@ let chapterWorkhorse = {
         if (isNaN(item.id)) {
             delete item.id
         }
-            // GET HEADER
-        if (item.linkid.split('.')[1] === 'h') {
-            db.srdheader.save(item)
-            // GET CHART
-        } else if (item.linkid.split('.')[1] === 'p') {
-            db.srdparagraph.save(item)
-            // GET SIDEBAR
-        } else if (item.linkid.split('.')[1] === 'c') {
+        console.log(item)
+            // SAVE HEADER
+        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+            db.srdbasic.save(item)
+            // SAVE CHART
+        } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
             db.srdchart.save(item)
-            // GET SIDEBAR
+            // SAVE SIDEBAR
         } else if (item.linkid.split('.')[1] === 'sb') {
             db.srdsidebar.save(item)
-            // GET SPACE
+            // SAVE SPACE
         } else if (item.linkid.split('.')[1] === 's') {
             db.srdsectionspace.save(item)
-            // GET BULLETED LIST
-        } else if (item.linkid.split('.')[1] === 'bl') {
-            db.srdbulletedlist.save(item)
-            // GET IMAGE SRC
+            // SAVE ADVANCED RULES
         } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
             db.srdadvanced.save(item)
-            // GET IMAGE SRC
+            // SAVE IMAGE SRC
         } else if (item.linkid.split('.')[1] === 'i') {
             db.srdimages.save(item)
-            // GET SUBHEADING (GREY)
-        } else if (item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
-            db.srdheadinggrey.save(item)
-            // GET TABLE
+            // SAVE TABLE
         } else if (item.linkid.split('.')[1] === 't') {
             console.log('yep')
         }
+    },
+    deleteLink: function (db, item) {
+            // GET HEADER
+            if (item.linkid.split('.')[1] === 'h') {
+                
+                // GET PARAGRAPH
+            } else if (item.linkid.split('.')[1] === 'p') {
+                
+                // GET CHART
+            } else if (item.linkid.split('.')[1] === 'c' || next.split('.')[1] === 'pc') {
+                
+                // GET SIDEBAR
+            } else if (item.linkid.split('.')[1] === 'sb') {
+                
+                // GET SPACE
+            } else if (item.linkid.split('.')[1] === 's') {
+                
+                // GET BULLETED LIST
+            } else if (item.linkid.split('.')[1] === 'bl') {
+                
+                // GET IMAGE SRC
+            } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
+                
+                // GET IMAGE SRC
+            } else if (item.linkid.split('.')[1] === 'i') {
+                
+                // GET SUBHEADING (GREY)
+            } else if (item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+                
+                // GET TABLE
+            } else if (item.linkid.split('.')[1] === 't') {
+                console.log('yep')
+            }
     }
 }
 

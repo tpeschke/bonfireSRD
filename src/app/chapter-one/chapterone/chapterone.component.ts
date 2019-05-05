@@ -20,7 +20,7 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
   chapterName = '';
 
   ngOnInit() {
-    this.chapterService.getChapterArray(1)
+    this.chapterService.getChapterArray(this.route.snapshot.url[1].path)
       .subscribe(chapterArray => {
         this.view = chapterArray
       })
