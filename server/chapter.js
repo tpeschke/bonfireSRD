@@ -28,7 +28,7 @@ chapterObject = {
         chapterObject.chapterFive = []
         chapterObject.chapterFiveSide = []
         collectChapter(db, chapterObject.chapterFive, '5.p.1')
-        // collectChapter(db, chapterObject.chapterFiveSide, '3.sb.1')
+        collectChapter(db, chapterObject.chapterFiveSide, '5.t.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {

@@ -84,10 +84,6 @@ create table racial_preferences (
 
 insert into srdtable (name, nexttable) values ('charisma', null);
 
-update srdtable
-set nexttable = 'charisma'
-where id = 6;
-
 create table charisma (
     id serial primary key,
     score text,

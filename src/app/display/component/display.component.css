@@ -159,6 +159,7 @@ p {
     }
 
     #advancedHead {
-        text-align: center
+        text-align: center;
+        margin-left: 0;
     }
   }
