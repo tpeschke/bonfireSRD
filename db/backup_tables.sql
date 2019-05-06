@@ -82,7 +82,7 @@ create table racial_preferences (
 
 -- NEW TABLE QUERIES
 
-insert into srdtable (name, nexttable) values ('charisma', null);
+insert into srdtable (name, nextid) values ('charisma', null);
 
 create table charisma (
     id serial primary key,
