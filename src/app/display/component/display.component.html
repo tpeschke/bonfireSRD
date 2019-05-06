@@ -1,5 +1,5 @@
-<div *ngIf="type === 'h'" style="position: relative">
-  <div id="{{piece.body}}" style="position: absolute; top: -110px; left: 0"></div>
+<div *ngIf="type === 'h'" class="anchor">
+  <div id="{{piece.body}}" class="anchorTag"></div>
   <h1>{{piece.body}}</h1>
   <h4 *ngIf="piece.advanced" class="advancedHeader" id="advancedHead">🜂 Advanced Rule</h4>
   <div class="underline"></div>
@@ -19,6 +19,7 @@
 </div>
 
 <div *ngIf="type === 'pc'" class="chartShell pairedShell">
+  <div id="{{piece.leftbody}}" class="anchorTag"></div>
   <h3>{{piece.leftbody}}</h3>
   <div>
     <h3>CrP:</h3>
@@ -37,7 +38,7 @@
   </div>
 </div>
 
-<div *ngIf="type === 'hg'">
+<div *ngIf="type === 'hg'" class="anchor">
   <h3>{{piece.body}}</h3>
   <h4 *ngIf="piece.advanced">🜂 Advanced Rule</h4>
 </div>

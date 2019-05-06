@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class OuterTableComponent implements OnInit {
 
   @Input() tables: any;
+  @Input() linked?: boolean;
 
   constructor() { }
 

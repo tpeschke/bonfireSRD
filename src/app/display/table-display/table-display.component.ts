@@ -9,6 +9,7 @@ import { headersToString } from 'selenium-webdriver/http';
 export class TableDisplayComponent implements OnInit {
 
   @Input() table: any;
+  @Input() linked?: boolean;
 
   constructor() { }
 
