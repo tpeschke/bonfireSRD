@@ -8,6 +8,7 @@ import { TableDisplayComponent } from './table-display/table-display.component';
 import { OuterTableComponent } from './outer-table/outer-table.component';
 import { AddSpacePipe } from './add-space.pipe';
 import { QuickNavComponent } from './quick-nav/quick-nav.component';
+import { RemoveSpacePipe } from './remove-space.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { QuickNavComponent } from './quick-nav/quick-nav.component';
     TableDisplayComponent,
     OuterTableComponent,
     QuickNavComponent,
-    AddSpacePipe
+    AddSpacePipe,
+    RemoveSpacePipe
   ],
   imports: [
     CommonModule,

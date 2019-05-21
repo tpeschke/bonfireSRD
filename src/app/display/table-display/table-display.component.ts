@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { headersToString } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-table-display',

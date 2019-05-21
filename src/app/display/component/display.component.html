@@ -18,8 +18,8 @@
   <p>{{piece.rightbody}}</p>
 </div>
 
-<div *ngIf="type === 'pc'" class="chartShell pairedShell">
-  <div id="{{piece.leftbody}}" class="anchorTag"></div>
+<div *ngIf="type === 'pc'" class="chartShell pairedShell anchor">
+  <div id="{{piece.leftbody | removeSpace}}" class="anchorTag"></div>
   <h3>{{piece.leftbody}}</h3>
   <div>
     <h3>CrP:</h3>
@@ -39,6 +39,7 @@
 </div>
 
 <div *ngIf="type === 'hg'" class="anchor">
+  <div id="{{piece.body}}" class="anchorTag"></div>
   <h3>{{piece.body}}</h3>
   <h4 *ngIf="piece.advanced">🜂 Advanced Rule</h4>
 </div>
@@ -113,6 +114,10 @@
       <h3 id="no">{{sidepiece.body}}</h3>
     </div>
 
+    <div *ngIf="sidepiece.linkid.split('.')[1] === 'i'">
+      <img src="../../../assets/images/{{sidepiece.source}}" alt="{{sidepiece.alt}}">
+    </div>
+
   </div>
 </div>
 
@@ -160,6 +165,10 @@
   
       <div *ngIf="sidepiece.linkid.split('.')[1] === 'hn'">
         <h3 id="no">{{sidepiece.body}}</h3>
+      </div>
+
+      <div *ngIf="sidepiece.linkid.split('.')[1] === 'i'">
+        <img src="../../../assets/images/{{sidepiece.source}}" alt="{{sidepiece.alt}}">
       </div>
   
     </div>

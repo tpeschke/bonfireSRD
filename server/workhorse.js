@@ -197,7 +197,6 @@ let chapterWorkhorse = {
         if (isNaN(item.id)) {
             delete item.id
         }
-        console.log(item)
             // SAVE HEADER
         if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
             db.srdbasic.save(item)
@@ -215,6 +214,7 @@ let chapterWorkhorse = {
             db.srdadvanced.save(item)
             // SAVE IMAGE SRC
         } else if (item.linkid.split('.')[1] === 'i') {
+            console.log(item)
             db.srdimages.save(item)
             // SAVE TABLE
         } else if (item.linkid.split('.')[1] === 't') {

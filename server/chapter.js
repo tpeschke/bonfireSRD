@@ -36,7 +36,7 @@ chapterObject = {
         collectChapter(db, chapterObject.chapterSix, '6.p.1')
         // collectChapter(db, chapterObject.chapterSixSide, '5.t.1')
         chapterObject.chapterSeven = []
-        chapterObject.chapterSevenSide = [{ linkid: 'hg', body: 'Acute Alertness' }, { linkid: 'hg', body: 'Anti-Magicial Blank' }, { linkid: 'hg', body: 'Ancestor Spirit' }, { linkid: 'hg', body: 'Arcane Grip' }, { linkid: 'hg', body: 'Armor Training' }, { linkid: 'hg', body: 'Blind Fighting' }]
+        chapterObject.chapterSevenSide = [{ linkid: 'hg', body: 'Acute Alertness' }, { linkid: 'hg', body: 'Anti-Magical Blank' }, { linkid: 'hg', body: 'Ancestor Spirit' }, { linkid: 'hg', body: 'Arcane Grip' }, { linkid: 'hg', body: 'Armor Training' }, { linkid: 'hg', body: 'Blind Fighting' }]
         collectChapter(db, chapterObject.chapterSeven, '7.sb.1')
     },
     get: (req, res) => {
