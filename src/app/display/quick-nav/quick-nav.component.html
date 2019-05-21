@@ -1,0 +1,6 @@
+<div class="outerShell">
+  <div *ngFor="let piece of side">
+    <h1 *ngIf='piece.linkid === "h"'>{{piece.body}}</h1>
+    <p *ngIf='piece.linkid === "hg"' (click)="scrollToElement(piece.body)">{{piece.body}}</p>
+  </div>
+</div>
