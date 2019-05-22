@@ -15,7 +15,7 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log('done', piece.linkid.split('.')[0])
+                    console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
             })
@@ -53,7 +53,7 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log('done', piece.linkid.split('.')[0])
+                    console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
             })
@@ -71,7 +71,7 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log('done', piece.linkid.split('.')[0])
+                    console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
             })
@@ -83,7 +83,7 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log('done', piece.linkid.split('.')[0])
+                    console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
             })
@@ -101,7 +101,7 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log('done', piece.linkid.split('.')[0])
+                    console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
             })
@@ -118,7 +118,7 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log('done', piece.linkid.split('.')[0])
+                    console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
             })
@@ -138,14 +138,14 @@ let chapterWorkhorse = {
                     if (piece.nextid) {
                         chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex, true)
                     } else {
-                        console.log('done', piece.linkid.split('.')[0])
+                        console.log(piece.linkid.split('.')[0])
                         return 'done'
                     }
                 } else {
                     if (piece.endid) {
                         chapterWorkhorse.collectChapter(db, array, piece.endid, sidebarIndex)
                     } else {
-                        console.log('done', piece.linkid.split('.')[0])
+                        console.log(piece.linkid.split('.')[0])
                         return 'done'
                     }
                 }
@@ -186,7 +186,7 @@ let chapterWorkhorse = {
                     if (table.nextid) {
                         chapterWorkhorse.collectChapter(db, array, table.nextid, index)
                     } else {
-                        console.log('done', table.linkid)
+                        console.log(table.linkid)
                         return 'done'
                     }
                 })
@@ -202,6 +202,7 @@ let chapterWorkhorse = {
             db.srdbasic.save(item)
             // SAVE CHART
         } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
+            console.log(item)
             db.srdchart.save(item)
             // SAVE SIDEBAR
         } else if (item.linkid.split('.')[1] === 'sb') {

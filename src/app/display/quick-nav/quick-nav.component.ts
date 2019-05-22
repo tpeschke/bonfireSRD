@@ -15,11 +15,7 @@ export class QuickNavComponent implements OnInit {
   }
 
   scrollToElement(element): void {
-    console.log('#' + element.replace(/ |-/g, '').toUpperCase().toString())
-                '#ANTIMAGICIALBLANK'
-    console.log('#ANTIMAGICALBLANK' === '#' + element.replace(/ |-/g, '').toUpperCase())
     let el = document.querySelector('#' + element.replace(/ |-/g, '').toUpperCase())
-    console.log(el)
     el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
   }
 
