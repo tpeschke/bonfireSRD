@@ -7,6 +7,8 @@ import { LinkSearchComponent } from './link-search/link-search.component';
 import { TableDisplayComponent } from './table-display/table-display.component';
 import { OuterTableComponent } from './outer-table/outer-table.component';
 import { AddSpacePipe } from './add-space.pipe';
+import { QuickNavComponent } from './quick-nav/quick-nav.component';
+import { RemoveSpacePipe } from './remove-space.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AddSpacePipe } from './add-space.pipe';
     LinkSearchComponent,
     TableDisplayComponent,
     OuterTableComponent,
-    AddSpacePipe
+    QuickNavComponent,
+    AddSpacePipe,
+    RemoveSpacePipe
   ],
   imports: [
     CommonModule,
@@ -24,6 +28,7 @@ import { AddSpacePipe } from './add-space.pipe';
   exports: [
     OuterDisplayComponent,
     DisplayComponent,
+    QuickNavComponent,
     OuterTableComponent
   ]
 })

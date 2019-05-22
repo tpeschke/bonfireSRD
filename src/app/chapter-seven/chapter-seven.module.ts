@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChapterFourComponent } from './main/chapter-four.component';
+import { ChapterSevenComponent } from './main/chapter-seven.component';
 import { DisplayModule } from '../display/display.module';
 
 @NgModule({
-  declarations: [
-    ChapterFourComponent
-  ],
+  declarations: [ChapterSevenComponent],
   imports: [
     CommonModule,
     DisplayModule
   ],
   exports: [
-    ChapterFourComponent
+    ChapterSevenComponent
   ]
 })
-export class ChapterFourModule { }
+export class ChapterSevenModule { }
