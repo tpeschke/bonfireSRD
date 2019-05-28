@@ -162,9 +162,15 @@ let chapterWorkhorse = {
                                 newArray.push(' ')
                                 newArray.push(' ')
                             }
+                            let keyCount = 2;
                             for (let key in val) {
                                 if (key !== 'id') {
-                                    newArray.push(key)
+                                    if (table.name === 'skill_matrix') {
+                                        newArray.push(`${keyCount}`)
+                                        keyCount = keyCount + 2;
+                                    } else {
+                                        newArray.push(key)
+                                    }
                                 }
                             }
                             newBody.push(newArray)
@@ -172,7 +178,11 @@ let chapterWorkhorse = {
                         }
                         if (table.headers) {
                             newArray.push(' ')
-                            newArray.push(newBody[0][i + 2])
+                            if (table.name === 'skill_matrix') {
+                                newArray.push(`${(i + 1) * 2}`)
+                            } else {
+                                newArray.push(newBody[0][i + 2])
+                            }
                         }
                         for (let key in val) {
                             if (key !== 'id') {
@@ -223,37 +233,27 @@ let chapterWorkhorse = {
         }
     },
     deleteLink: function (db, item) {
-            // GET HEADER
-            if (item.linkid.split('.')[1] === 'h') {
-                
-                // GET PARAGRAPH
-            } else if (item.linkid.split('.')[1] === 'p') {
-                
-                // GET CHART
-            } else if (item.linkid.split('.')[1] === 'c' || next.split('.')[1] === 'pc') {
-                
-                // GET SIDEBAR
-            } else if (item.linkid.split('.')[1] === 'sb') {
-                
-                // GET SPACE
-            } else if (item.linkid.split('.')[1] === 's') {
-                
-                // GET BULLETED LIST
-            } else if (item.linkid.split('.')[1] === 'bl') {
-                
-                // GET IMAGE SRC
-            } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
-                
-                // GET IMAGE SRC
-            } else if (item.linkid.split('.')[1] === 'i') {
-                
-                // GET SUBHEADING (GREY)
-            } else if (item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
-                
-                // GET TABLE
-            } else if (item.linkid.split('.')[1] === 't') {
-                console.log('yep')
-            }
+        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+
+            // SAVE CHART
+        } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
+
+            // SAVE SIDEBAR
+        } else if (item.linkid.split('.')[1] === 'sb') {
+       
+            // SAVE SPACE
+        } else if (item.linkid.split('.')[1] === 's') {
+  
+            // SAVE ADVANCED RULES
+        } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
+
+            // SAVE IMAGE SRC
+        } else if (item.linkid.split('.')[1] === 'i') {
+
+            // SAVE TABLE
+        } else if (item.linkid.split('.')[1] === 't') {
+            console.log('yep')
+        }
     }
 }
 

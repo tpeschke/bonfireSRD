@@ -13,6 +13,8 @@ chapterObject = {
     chapterFiveSide: [],
     chapterSeven: [],
     chapterSevenSide: [],
+    chapterEight: [],
+    chapterEightSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
@@ -38,6 +40,10 @@ chapterObject = {
         chapterObject.chapterSeven = []
         chapterObject.chapterSevenSide = [{ linkid: 'hg', body: 'Acute Alertness' }, { linkid: 'hg', body: 'Anti-Magical Blank' }, { linkid: 'hg', body: 'Ancestor Spirit' }, { linkid: 'hg', body: 'Arcane Grip' }, { linkid: 'hg', body: 'Armor Training' }, { linkid: 'hg', body: 'Blind Fighting' }, { linkid: 'hg', body: 'Born Gunner' }, { linkid: 'hg', body: 'Charlatan' }, { linkid: 'hg', body: 'Dasher' }, { linkid: 'hg', body: 'Deadly Flanker' }, { linkid: 'hg', body: 'Eardstapa' }, { linkid: 'hg', body: 'Effective Ranger' }, { linkid: 'hg', body: 'Eldritch Adept' }, { linkid: 'hg', body: 'Endurance' }, { linkid: 'hg', body: 'Fleet Footed' }, { linkid: 'hg', body: 'Grounded Mind' }, { linkid: 'hg', body: 'Healthy' }, { linkid: 'hg', body: 'Improved Defense' }, { linkid: 'hg', body: 'Iron Sides' }, { linkid: 'hg', body: 'Knack' }, { linkid: 'hg', body: 'Polyglot' }, { linkid: 'hg', body: 'Quick Healing' }, { linkid: 'hg', body: 'Shield Breaker' }, { linkid: 'hg', body: 'Shield Training' }, { linkid: 'hg', body: 'Special Bond' }, { linkid: 'hg', body: 'Thieves Cant' }, { linkid: 'hg', body: 'Weapon Training' }]
         collectChapter(db, chapterObject.chapterSeven, '7.sb.1')
+        chapterObject.chapterEight = []
+        chapterObject.chapterEightSide = [{linkid: 'h', body: 'Athletics Skill Suite'}, {linkid: 'hg', body: 'Acrobatics'}, {linkid: 'hg', body: 'Climbing'}, {linkid: 'hg', body: 'Disarm Trap'}, {linkid: 'hg', body: 'Escape Artist'}, {linkid: 'hg', body: 'Jumping'}, {linkid: 'hg', body: 'Sports (specific)'}, {linkid: 'hg', body: 'Stealth'}, {linkid: 'hg', body: 'Swimming'}, {linkid: 'h', body: 'Lore Skill Suite'}]
+        collectChapter(db, chapterObject.chapterEight, '8.p.1')
+        // collectChapter(db, chapterObject.chapterEightSide, '5.t.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -61,6 +67,9 @@ chapterObject = {
                 break
             case 7:
                 res.send({ main: chapterObject.chapterSeven, side: chapterObject.chapterSevenSide })
+                break
+            case 8:
+                res.send({ main: chapterObject.chapterEight, side: chapterObject.chapterEightSide })
                 break
             default:
                 res.send('Something went wrong')

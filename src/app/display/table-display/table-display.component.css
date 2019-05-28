@@ -4,8 +4,6 @@
     font-family: "Vollkorn SC", serif;
     background: whitesmoke;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tableTitle {
@@ -89,6 +87,12 @@ h2 {
     transform: rotate(270deg);
     top: 81px;
     width: 85px;
+}
+
+.exception {
+    top: 144px;
+    left: -50px;
+    width: 150px;
 }
 
 .headerTop {
