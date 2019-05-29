@@ -7,7 +7,7 @@ export class RemoveSpacePipe implements PipeTransform {
 
   transform(value): any {
     if (value) {
-      return value.replace(/ |-/g, '').toUpperCase()
+      return value.replace(/ |-|([()])|\//ig, '').toUpperCase()
     }
   }
 

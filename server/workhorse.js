@@ -18,7 +18,7 @@ let chapterWorkhorse = {
                     console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
-            })
+            }).catch(e=>console.log(e))
             // GET PARAGRAPH
         } else if (next.split('.')[1] === 'p') {
             db.srdbasic.findOne({ linkid: next }).then(piece => {
@@ -38,6 +38,9 @@ let chapterWorkhorse = {
                         sidebarIndex = null
                     }
                 } else {
+                    if (!piece.body) {
+                        console.log(piece)
+                    }
                     piece.body = piece.body.split('|')
                     let splitArray = []
                     for (let i = 0; i < piece.body.length; i++) {
@@ -56,7 +59,7 @@ let chapterWorkhorse = {
                     console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
-            })
+            }).catch(e=>console.log(e))
             // GET CHART
         } else if (next.split('.')[1] === 'c' || next.split('.')[1] === 'pc') {
             db.srdchart.findOne({ linkid: next }).then(piece => {
@@ -74,7 +77,7 @@ let chapterWorkhorse = {
                     console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
-            })
+            }).catch(e=>console.log(e))
             // GET SIDEBAR
         } else if (next.split('.')[1] === 'sb') {
             db.srdsidebar.findOne({ linkid: next }).then(piece => {
@@ -86,7 +89,7 @@ let chapterWorkhorse = {
                     console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
-            })
+            }).catch(e=>console.log(e))
             // GET SPACE
         } else if (next.split('.')[1] === 's') {
             db.srdsectionspace.findOne({ linkid: next }).then(piece => {
@@ -104,7 +107,7 @@ let chapterWorkhorse = {
                     console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
-            })
+            }).catch(e=>console.log(e))
         } else if (next.split('.')[1] === 'i') {
             db.srdimages.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
@@ -121,7 +124,7 @@ let chapterWorkhorse = {
                     console.log(piece.linkid.split('.')[0])
                     return 'done'
                 }
-            })
+            }).catch(e=>console.log(e))
             // GET ADVANCED
         } else if (next.split('.')[1] === 'a' || next.split('.')[1] === 'ab') {
  
@@ -149,7 +152,7 @@ let chapterWorkhorse = {
                         return 'done'
                     }
                 }
-            })
+            }).catch(e=>console.log(e))
             // GET TABLE
         } else if (next.split('.')[1] === 't') {
             db.srdtable.findOne({ linkid: next }).then(table => {
@@ -200,7 +203,7 @@ let chapterWorkhorse = {
                         return 'done'
                     }
                 })
-            })
+            }).catch(e=>console.log(e))
         }
     },
     updateChapter: function (db, item) {
