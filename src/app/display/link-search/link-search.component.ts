@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class LinkSearchComponent implements OnInit {
 
   @Input() body: any;
+  @Input() index: any;
 
   constructor() { }
 

@@ -14,7 +14,7 @@
   <h1 class="tableTitle">{{table.name | addSpace |uppercase}}</h1>
   <div class="headerHeaders">
     <h2 class="headerTop">{{headerTop}}</h2>
-    <h2 class="headerSide">{{headerSide}}</h2>
+    <h2 [ngClass]="headerSide === 'Number of Rolls' ? 'headerSide exception' : 'headerSide'">{{headerSide}}</h2>
     <div class="headerSpace"></div>
     <div *ngFor="let item of table.body" class="headerRow">
       <div *ngFor="let value of item" class="headerValue">

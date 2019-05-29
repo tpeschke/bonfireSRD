@@ -8,8 +8,8 @@
 <div *ngIf="type === 'p'"
   [ngClass]="nextType !== 'p' && nextType !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
   <div class="indent"></div>
-  <div *ngFor="let paragraph of piece.body">
-    <app-link-search [body]="paragraph"></app-link-search>
+  <div *ngFor="let paragraph of piece.body; let index = index">
+    <app-link-search [body]="paragraph" [index]="index"></app-link-search>
   </div>
 </div>
 
@@ -39,7 +39,7 @@
 </div>
 
 <div *ngIf="type === 'hg'" class="anchor">
-  <div id="{{piece.body}}" class="anchorTag"></div>
+  <div id="{{piece.body | removeSpace}}" class="anchorTag"></div>
   <h3>{{piece.body}}</h3>
   <h4 *ngIf="piece.advanced">🜂 Advanced Rule</h4>
 </div>
