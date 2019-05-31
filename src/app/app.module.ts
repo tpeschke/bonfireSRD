@@ -13,6 +13,7 @@ import { ChapterSixModule } from './chapter-six/chapter-six.module';
 import { ChapterSevenModule } from './chapter-seven/chapter-seven.module';
 import { ChapterEightModule } from './chapter-eight/chapter-eight.module';
 import { ChapterNineModule } from './chapter-nine/chapter-nine.module';
+import { ChapterTenModule } from './chapter-ten/chapter-ten.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -43,6 +44,7 @@ import { SearchComponent } from './search/search.component';
     ChapterSevenModule,
     ChapterEightModule,
     ChapterNineModule,
+    ChapterTenModule,
     EmbedVideo.forRoot()
   ],
   providers: [],

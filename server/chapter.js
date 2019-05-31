@@ -17,6 +17,8 @@ chapterObject = {
     chapterEightSide: [],
     chapterNine: [],
     chapterNineSide: [],
+    chapterTen: [],
+    chapterTenSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
@@ -50,6 +52,10 @@ chapterObject = {
         chapterObject.chapterNineSide = []
         collectChapter(db, chapterObject.chapterNine, '9.p.mBFesQQlZV')
         // collectChapter(db, chapterObject.chapterNineSide, '5.t.1')
+        chapterObject.chapterTen = []
+        chapterObject.chapterTenSide = []
+        collectChapter(db, chapterObject.chapterTen, '9.p.mBFesQQlZV')
+        // collectChapter(db, chapterObject.chapterTenSide, '5.t.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -78,6 +84,9 @@ chapterObject = {
                 res.send({ main: chapterObject.chapterEight, side: chapterObject.chapterEightSide })
                 break
             case 9:
+                res.send({ main: chapterObject.chapterNine, side: chapterObject.chapterNineSide })
+                break
+            case 10:
                 res.send({ main: chapterObject.chapterNine, side: chapterObject.chapterNineSide })
                 break
             default:
