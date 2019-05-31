@@ -12,6 +12,7 @@ import { ChapterSixComponent } from './chapter-six/main/chapter-six.component'
 import { ChapterSevenComponent } from './chapter-seven/main/chapter-seven.component'
 import { ChapterEightComponent } from './chapter-eight/main/chapter-eight.component'
 import { ChapterNineComponent } from './chapter-nine/main/chapter-nine.component'
+import { ChapterTenComponent } from './chapter-ten/main/chapter-ten.component'
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'chapter/7', component: ChapterSevenComponent},
   {path: 'chapter/8', component: ChapterEightComponent},
   {path: 'chapter/9', component: ChapterNineComponent},
+  {path: 'chapter/10', component: ChapterTenComponent},
   {path: 'chapter/16', component: HomeComponent},
   {path: 'chapter/:id', component: ChapterComponent}
 ]

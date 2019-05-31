@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
-        if (p.url.substring(10) !== '0') {
+        if (p.url.substring(9) !== '0') {
           this.setChapter(+p.url.substring(9))
         } else {
           this.chapter = '';
