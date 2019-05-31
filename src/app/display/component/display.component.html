@@ -1,5 +1,5 @@
 <div *ngIf="type === 'h'" class="anchor">
-  <div id="{{piece.body}}" class="anchorTag"></div>
+  <div id="{{piece.body | removeSpace}}" class="anchorTag"></div>
   <h1>{{piece.body}}</h1>
   <h4 *ngIf="piece.advanced" class="advancedHeader" id="advancedHead">🜂 Advanced Rule</h4>
   <div class="underline"></div>
