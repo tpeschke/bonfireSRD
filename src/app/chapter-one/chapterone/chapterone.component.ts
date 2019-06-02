@@ -24,10 +24,10 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
       .subscribe(chapterArray => {
         this.view = chapterArray
       })
-    this.getChapter();
+      this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path);
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {
-      this.getChapter()
+      this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path)
     })
   }
 
@@ -48,10 +48,4 @@ export class ChapteroneComponent implements OnInit, OnDestroy {
         }
       })
   }
-
-  getChapter(): void {
-    const id = this.route.snapshot.url[1].path
-    this.chapterName = this.chapterService.getName(+id.substring(1))
-  }
-
 }

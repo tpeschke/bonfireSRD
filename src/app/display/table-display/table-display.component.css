@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
 
+.overflowWindow {
+    max-width: 950px;
+    width: 100%;
+    overflow-x: auto;
+}
+
 .outerShell {
     font-family: "Vollkorn SC", serif;
     background: whitesmoke;
