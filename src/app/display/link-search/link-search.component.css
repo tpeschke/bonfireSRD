@@ -26,6 +26,14 @@ p {
     margin-top: 2px;
 }
 
+.greyHeader {
+    color: #222222;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
 .anchor {
     position: relative;
 }

@@ -19,6 +19,8 @@ chapterObject = {
     chapterNineSide: [],
     chapterTen: [],
     chapterTenSide: [],
+    chapterEleven: [],
+    chapterElevenSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
@@ -56,6 +58,10 @@ chapterObject = {
         chapterObject.chapterTenSide = []
         collectChapter(db, chapterObject.chapterTen, '10.h.akRpaRqrND')
         // collectChapter(db, chapterObject.chapterTenSide, '5.t.1')
+        chapterObject.chapterEleven = []
+        chapterObject.chapterElevenSide = [{linkid: 'h', body: 'Athletics Skill Suite'}, {linkid: 'hg', body: 'Acrobatics'}, {linkid: 'hg', body: 'Climbing'}, {linkid: 'hg', body: 'Disarm Trap'}, {linkid: 'hg', body: 'Escape Artist'}, {linkid: 'hg', body: 'Jumping'}, {linkid: 'hg', body: 'Sport (specific)'}, {linkid: 'hg', body: 'Stealth'}, {linkid: 'hg', body: 'Swimming'}, {linkid: 'h', body: 'Lore Skill Suite'}, {linkid: 'hg', body: 'Administration'}, {linkid: 'hg', body: 'Arcana'}, {linkid: 'hg', body: 'History'}, {linkid: 'hg', body: 'Language (specific)'}, {linkid: 'hg', body: 'Law (culture)'}, {linkid: 'hg', body: 'Literacy (language'}, {linkid: 'hg', body: 'Mathematics'}, {linkid: 'hg', body: 'Medicine'}, {linkid: 'hg', body: 'Monster Craft'}, {linkid: 'hg', body: 'Nature'}, {linkid: 'hg', body: 'Religion (cult)'}, {linkid: 'h', body: 'Streetwise Skill Suite'}, {linkid: 'hg', body: 'Current Affairs'}, {linkid: 'hg', body: 'Deception'}, {linkid: 'hg', body: 'Forgery'}, {linkid: 'hg', body: 'Gambling/Gaming'}, {linkid: 'hg', body: 'Intuition'}, {linkid: 'hg', body: 'Listening'}, {linkid: 'hg', body: 'Lock Picking'}, {linkid: 'hg', body: 'Perception'}, {linkid: 'hg', body: 'Sleight of Hand'}, {linkid: 'hg', body: 'Trap Finding'}, {linkid: 'h', body: 'Survival Skill Suite'}, {linkid: 'hg', body: 'Botany'}, {linkid: 'hg', body: 'Camouflage'}, {linkid: 'hg', body: 'Fire Building'}, {linkid: 'hg', body: 'First Aid'}, {linkid: 'hg', body: 'Handle Animal (specific)'}, {linkid: 'hg', body: 'Hiding'}, {linkid: 'hg', body: 'Monster Craft'}, {linkid: 'hg', body: 'Navigation'}, {linkid: 'hg', body: 'Scavenging'}, {linkid: 'hg', body: 'Snaring'}, {linkid: 'hg', body: 'Tracking'}, {linkid: 'hg', body: 'Use Rope'}, {linkid: 'h', body: 'Tactics Skill Suite'}, {linkid: 'hg', body: 'Combat Style (style)'}, {linkid: 'hg', body: 'Distraction'}, {linkid: 'hg', body: 'Leadership'}, {linkid: 'hg', body: 'Quarter Mastering'}, {linkid: 'hg', body: 'Rally'}, {linkid: 'hg', body: 'Recruiting'}, {linkid: 'hg', body: 'Riding'}, {linkid: 'hg', body: 'Signalling'}, {linkid: 'hg', body: 'Warfare'}, {linkid: 'h', body: 'Trades Skill Suite'}, {linkid: 'hg', body: 'Appraisal (specific)'}, {linkid: 'hg', body: 'Artistry (specific)'}, {linkid: 'hg', body: 'Cooking/Baking'}, {linkid: 'hg', body: 'Craft (specific)'}, {linkid: 'hg', body: 'Leatherworking'}, {linkid: 'hg', body: 'Metalworking'}, {linkid: 'hg', body: 'Musician (specific)'}, {linkid: 'hg', body: 'Performance'}, {linkid: 'hg', body: 'Persuasion'}]
+        collectChapter(db, chapterObject.chapterEleven, '11.p.bltDcQdmTa')
+        // collectChapter(db, chapterObject.chapterElevenSide, '5.t.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -88,6 +94,9 @@ chapterObject = {
                 break
             case 10:
                 res.send({ main: chapterObject.chapterTen, side: chapterObject.chapterTenSide })
+                break
+            case 11:
+                res.send({ main: chapterObject.chapterEleven, side: chapterObject.chapterElevenSide })
                 break
             default:
                 res.send('Something went wrong')

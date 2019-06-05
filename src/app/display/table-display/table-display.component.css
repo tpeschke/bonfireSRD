@@ -12,6 +12,10 @@
     position: relative;
 }
 
+.equipShell {
+    margin-bottom: 10px;
+}
+
 .tableTitle {
     background: #990000;
     padding: 5px;
@@ -31,7 +35,7 @@
     display: flex;
     align-items: center;
     padding: 5px 0;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tableRow:nth-child(odd){
@@ -105,3 +109,32 @@ h2 {
     left: 85px;
     top: 29px;
 }
+
+.farLeft {
+    width: 225px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.normalCell {
+    min-width: 75px;
+    padding: 0 5px;
+}
+
+.anchor {
+    position: relative;
+}
+
+.anchorTag {
+    position: absolute; 
+    top: -110px; 
+    left: 0
+}
+
+@media (max-width: 500px) {
+    .anchorTag {
+        position: absolute; 
+        top: -75px; 
+        left: 0
+    }
+  }

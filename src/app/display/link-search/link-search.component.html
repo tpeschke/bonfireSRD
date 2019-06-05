@@ -1,7 +1,8 @@
 <p *ngIf="!chapter && !sheet">{{body}}</p>
 <a *ngIf="chapter && !sheet" routerLink="../../chapter/{{chapter}}">{{body}}</a>
 <a *ngIf="!chapter && sheet === 'link'" target="_blank" href="https://drive.google.com/file/d/1L8hQ38ZjLbn9E_CDqVb6_rKG-uG_5yGX/view">{{body}}</a>
-<div *ngIf="!chapter && sheet !== 'link'" class="anchor">
+<div *ngIf="!chapter && sheet !== 'link' && type === 'o'" class="anchor">
     <div id="{{sheet | removeSpace}}" class="anchorTag"></div>
     <p class="orangeHeader">{{sheet}}</p>
 </div>
+<p class="greyHeader" *ngIf="!chapter && sheet !== 'link' && type === 'g'">{{sheet}}</p>
