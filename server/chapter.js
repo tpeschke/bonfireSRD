@@ -19,6 +19,8 @@ chapterObject = {
     chapterNineSide: [],
     chapterTen: [],
     chapterTenSide: [],
+    chapterEleven: [],
+    chapterElevenSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
@@ -56,6 +58,10 @@ chapterObject = {
         chapterObject.chapterTenSide = []
         collectChapter(db, chapterObject.chapterTen, '10.h.akRpaRqrND')
         // collectChapter(db, chapterObject.chapterTenSide, '5.t.1')
+        chapterObject.chapterEleven = []
+        chapterObject.chapterElevenSide = [{linkid: 'hg', body: 'Animals and Livestock'}, {linkid: 'hg', body: 'Clothing'}, {linkid: 'hg', body: 'Clothing Accessories'}, {linkid: 'hg', body: 'Containers Personal'}, {linkid: 'hg', body: 'Containers Heavy'}, {linkid: 'hg', body: 'Services'}, {linkid: 'hg', body: 'Fruits Vegetables and Nuts'}, {linkid: 'hg', body: 'Beverages'}, {linkid: 'hg', body: 'Spices'}, {linkid: 'hg', body: 'Livestock Feed'}, {linkid: 'hg', body: 'Meat'}, {linkid: 'hg', body: 'Rations and Ingredients'}, {linkid: 'hg', body: 'Substances Alchemical'}, {linkid: 'hg', body: 'Poisons and Toxins'}, {linkid: 'hg', body: 'Substances Animal Products'}, {linkid: 'hg', body: 'Substances Metal Ore'}, {linkid: 'hg', body: 'Substances Rope and Fabrics'}, {linkid: 'hg', body: 'Tools'}, {linkid: 'hg', body: 'Ranged Munitions'}, {linkid: 'hg', body: 'Armor'}, {linkid: 'hg', body: 'Shields'}, {linkid: 'hg', body: 'Swords'}, {linkid: 'hg', body: 'Daggers'}, {linkid: 'hg', body: 'Axes'}, {linkid: 'hg', body: 'Trauma'}, {linkid: 'hg', body: 'Polearms'}, {linkid: 'hg', body: 'Thrown Weapons'}, {linkid: 'hg', body: 'Ranged Weapons'}, {linkid: 'hg', body: 'Melee Weapon Stats'}, {linkid: 'hg', body: 'Ranged Weapon Stats'}, {linkid: 'hg', body: 'Armor Stats'}, {linkid: 'hg', body: 'Shield Stats'}]
+        collectChapter(db, chapterObject.chapterEleven, '11.p.bltDcQdmTa')
+        // collectChapter(db, chapterObject.chapterElevenSide, '5.t.1')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -88,6 +94,9 @@ chapterObject = {
                 break
             case 10:
                 res.send({ main: chapterObject.chapterTen, side: chapterObject.chapterTenSide })
+                break
+            case 11:
+                res.send({ main: chapterObject.chapterEleven, side: chapterObject.chapterElevenSide })
                 break
             default:
                 res.send('Something went wrong')

@@ -14,6 +14,7 @@ export class LinkSearchComponent implements OnInit {
 
   public chapter = null
   public sheet = null
+  public type = null
 
   ngOnInit() {
     if (this.body.substring(0,7)==="Chapter"){
@@ -22,6 +23,10 @@ export class LinkSearchComponent implements OnInit {
       this.sheet = 'link'
     } else if (this.body.substring(0,2) === '+)') {
       this.sheet = this.body.substring(2)
+      this.type = 'o'
+    } else if (this.body.substring(0,2) === '-)') {
+      this.sheet = this.body.substring(2)
+      this.type = 'g'
     }
   }
 

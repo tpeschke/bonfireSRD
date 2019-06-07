@@ -171,6 +171,16 @@ let chapterWorkhorse = {
                                     if (table.name === 'skill_matrix') {
                                         newArray.push(`${keyCount}`)
                                         keyCount = keyCount + 2;
+                                    } else if (table.name === 'shield_and_weapon_breakage') {
+                                        if (key === 'diceone') {
+                                            newArray.push('d20!+10')
+                                        } else if (key === 'dicetwo') {
+                                            newArray.push('d20!')
+                                        } else if (key === 'dicethree') {
+                                            newArray.push('d20!-10')
+                                        } else {
+                                            newArray.push(key)
+                                        }
                                     } else {
                                         newArray.push(key)
                                     }
@@ -188,7 +198,7 @@ let chapterWorkhorse = {
                             }
                         }
                         for (let key in val) {
-                            if (key !== 'id') {
+                            if (key !== 'id' && val[key]) {
                                 newArray.push(val[key])
                             }
                         }
@@ -208,28 +218,54 @@ let chapterWorkhorse = {
     },
     updateChapter: function (db, item) {
         if (isNaN(item.id)) {
-            delete item.id
+            chapterWorkhorse.saveChapter(db, item)
         }
             // SAVE HEADER
         if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
-            db.srdbasic.save(item)
+            db.srdbasic.update(item)
             // SAVE CHART
         } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
             console.log(item)
-            db.srdchart.save(item)
+            db.srdchart.update(item)
             // SAVE SIDEBAR
         } else if (item.linkid.split('.')[1] === 'sb') {
-            db.srdsidebar.save(item)
+            db.srdsidebar.update(item)
             // SAVE SPACE
         } else if (item.linkid.split('.')[1] === 's') {
-            db.srdsectionspace.save(item)
+            db.srdsectionspace.update(item)
             // SAVE ADVANCED RULES
         } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
-            db.srdadvanced.save(item)
+            db.srdadvanced.update(item)
             // SAVE IMAGE SRC
         } else if (item.linkid.split('.')[1] === 'i') {
             console.log(item)
-            db.srdimages.save(item)
+            db.srdimages.update(item)
+            // SAVE TABLE
+        } else if (item.linkid.split('.')[1] === 't') {
+            console.log('yep')
+        }
+    },
+    saveChapter: function (db, item) {
+            // SAVE HEADER
+        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+            db.srdbasic.insert(item)
+            // SAVE CHART
+        } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
+            console.log(item)
+            db.srdchart.insert(item)
+            // SAVE SIDEBAR
+        } else if (item.linkid.split('.')[1] === 'sb') {
+            db.srdsidebar.insert(item)
+            // SAVE SPACE
+        } else if (item.linkid.split('.')[1] === 's') {
+            db.srdsectionspace.insert(item)
+            // SAVE ADVANCED RULES
+        } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
+            db.srdadvanced.insert(item)
+            // SAVE IMAGE SRC
+        } else if (item.linkid.split('.')[1] === 'i') {
+            console.log(item)
+            db.srdimages.insert(item)
             // SAVE TABLE
         } else if (item.linkid.split('.')[1] === 't') {
             console.log('yep')

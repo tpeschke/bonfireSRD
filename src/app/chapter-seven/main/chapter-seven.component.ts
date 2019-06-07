@@ -28,10 +28,10 @@ export class ChapterSevenComponent implements OnInit {
         this.view = chapterArray.main
         this.side = chapterArray.side
       })
-    this.getChapter();
+    this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path);
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {
-      this.getChapter()
+      this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path)
     })
   }
 
@@ -52,11 +52,6 @@ export class ChapterSevenComponent implements OnInit {
           this.getChapterChunk(finalInArray.nextid)
         }
       })
-  }
-
-  getChapter(): void {
-    const id = this.route.snapshot.url[1].path
-    this.chapterName = this.chapterService.getName(+id.substring(1))
   }
 
   displayTables() {

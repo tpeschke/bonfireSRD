@@ -14,6 +14,7 @@ import { ChapterSevenModule } from './chapter-seven/chapter-seven.module';
 import { ChapterEightModule } from './chapter-eight/chapter-eight.module';
 import { ChapterNineModule } from './chapter-nine/chapter-nine.module';
 import { ChapterTenModule } from './chapter-ten/chapter-ten.module';
+import { ChapterElevenModule } from './chapter-eleven/chapter-eleven.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -45,6 +46,7 @@ import { SearchComponent } from './search/search.component';
     ChapterEightModule,
     ChapterNineModule,
     ChapterTenModule,
+    ChapterElevenModule,
     EmbedVideo.forRoot()
   ],
   providers: [],
