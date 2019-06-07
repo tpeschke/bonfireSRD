@@ -18,7 +18,6 @@ export class TableDisplayComponent implements OnInit {
   headerSide = '';
 
   ngOnInit() {
-    console.log(this.table)
     if (this.table.body) {
       this.size = {width: `${this.table.size}px`}
       this.count = {width: `${this.table.size / this.table.body[0].length}px`}

@@ -1,5 +1,5 @@
 <div class="overflowWindow">
-  <div *ngIf="!table.headers && !table.equipment" class="outerShell" [ngStyle]="size">
+  <div *ngIf="!table.headers && !table.equipment && !table.explaination" class="outerShell" [ngStyle]="size">
     <h1 class="tableTitle">{{table.name | addSpace |uppercase}}</h1>
     <div class="tableHeaders">
       <div *ngFor="let item of table.body" class="tableRow">
@@ -10,8 +10,8 @@
       </div>
     </div>
   </div>
-  
-  <div *ngIf="table.headers && !table.equipment" class="outerShell" [ngStyle]="size">
+
+  <div *ngIf="table.headers && !table.equipment && !table.explaination" class="outerShell" [ngStyle]="size">
     <h1 class="tableTitle">{{table.name | addSpace |uppercase}}</h1>
     <div class="headerHeaders">
       <h2 class="headerTop">{{headerTop}}</h2>
@@ -36,4 +36,20 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
+
+  <div *ngIf="table.explaination" class="outerShell anchor equipShell" [ngStyle]="size">
+    <div id="{{table.name | removeSpace}}" class="anchorTag"></div>
+    <h1 class="tableTitle">{{table.name | addSpace |uppercase}}</h1>
+    <div class="tableHeaders">
+      <div *ngFor="let item of table.body" class="tableRow">
+        <div *ngIf="item.length === 1">
+          <p class="subheader" [ngStyle]="size">{{item[0] | addSpace | titlecase}}</p>
+        </div>
+        <div *ngIf="item.length > 1" class="tableValue">
+          <div *ngFor="let value of item; let i = index">
+            <p [ngClass]="i === 0 ? 'farLeftExplaination' : i === 2 ? 'damageCell': 'normalCellExplaination'">{{value | addSpace | titlecase}}</p>
+          </div>
+        </div>
+      </div>
+    </div>

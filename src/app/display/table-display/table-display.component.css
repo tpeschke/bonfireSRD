@@ -116,8 +116,32 @@ h2 {
     padding: 0 10px;
 }
 
+.farLeftExplaination {
+    text-align: left;
+    padding: 0 10px;
+    width: 110px;
+}
+
 .normalCell {
     min-width: 75px;
+    padding: 0 5px;
+}
+
+.normalCellExplaination {
+    min-width: 65px;
+    padding: 0 5px;
+}
+
+.subheader {
+    background: rgb(58, 58, 58);
+    color: whitesmoke;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.damageCell {
+    min-width: 100px;
     padding: 0 5px;
 }
 
