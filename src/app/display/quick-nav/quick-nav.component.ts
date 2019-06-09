@@ -37,7 +37,7 @@ export class QuickNavComponent implements OnInit, AfterViewChecked {
   @HostListener('document:scroll', ['$event'])
 
   handleScroll(e: any): void {
-    let height = this.fixedHeight + 150 - e.target.documentElement.scrollTop < 100 ? 100 : this.fixedHeight + 150 - e.target.documentElement.scrollTop
+    let height = this.fixedHeight < e.target.documentElement.scrollTop ? 100 : this.fixedHeight + 150 - e.target.documentElement.scrollTop
     this.bannerStyle = { top: height + 'px', display: 'inherit', position: 'fixed' }
     this.secondBanner = { display: 'none' }
   }
