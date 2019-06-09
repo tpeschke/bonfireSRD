@@ -1,8 +1,19 @@
 .outerShell {
+    position: relative;
+}
+
+.quickNavShell {
     background: rgba(245, 245, 245, 0.9);
     padding: 10px 5px;
     border-top: 5px solid #b45f06;
     border-bottom: 5px solid #b45f06;
+}
+
+.imageBanner {
+    height: 640px;
+    width: 300px;
+    top: 0;
+    display: none;
 }
 
 h1 {

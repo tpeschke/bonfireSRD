@@ -24,6 +24,7 @@ export class NavbarComponent implements OnInit {
   public marginBack = true;
   public mobile = false;
   public ham = false;
+  public height = 0
 
   ngOnInit() {
     this.router.events.subscribe(p => {
@@ -52,7 +53,6 @@ export class NavbarComponent implements OnInit {
       this.marginBack = true;
     }
   }
-
 
   viewChapter(name: string): void {
     this.chapter = name;
