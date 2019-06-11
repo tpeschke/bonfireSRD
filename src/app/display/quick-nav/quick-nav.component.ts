@@ -11,8 +11,7 @@ export class QuickNavComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   scrollToElement(element): void {
     let el = document.querySelector('#' + element.replace(/ |-|'|([()])|\//ig, '').toUpperCase())
