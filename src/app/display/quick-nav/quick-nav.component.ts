@@ -8,15 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class QuickNavComponent implements OnInit {
 
   @Input() side: any;
-  
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   scrollToElement(element): void {
-    let el = document.querySelector('#' + element.replace(/ |-|([()])|\//ig, '').toUpperCase())
-    el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    let el = document.querySelector('#' + element.replace(/ |-|'|([()])|\//ig, '').toUpperCase())
+    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
 }

@@ -1,6 +1,14 @@
 <div class="outerShell">
-  <div *ngFor="let piece of side">
-    <h1 *ngIf='piece.linkid === "h"' (click)="scrollToElement(piece.body)">{{piece.body}}</h1>
-    <p *ngIf='piece.linkid === "hg"' (click)="scrollToElement(piece.body)">{{piece.body}}</p>
+  <div class="quickNavShell">
+    <div *ngFor="let piece of side">
+      <h1 *ngIf='piece.linkid === "h"' (click)="scrollToElement(piece.body)">{{piece.body}}</h1>
+      <p *ngIf='piece.linkid === "hg"' (click)="scrollToElement(piece.body)">{{piece.body}}</p>
+    </div>
+    <div id="bottom"></div>
   </div>
+  <div class="imageShell">
+    <img src="../../assets/images/S.png" alt="banner of the Empire" class="imageBanner" [ngStyle]="bannerStyle">
+  </div>
+
+  <!-- <img src="../../assets/images/S.png" alt="banner of the Empire" class="imageBanner" [ngStyle]='secondBanner'> -->
 </div>

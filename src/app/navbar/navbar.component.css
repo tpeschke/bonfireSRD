@@ -114,6 +114,8 @@ h1 {
     width: 250px;
     text-align: center;
     font-family: 'Vollkorn SC', serif;
+    display: flex;
+    justify-content: space-around;
 }
 
 .mobileShell {
@@ -196,4 +198,13 @@ h1 {
 .navX {
     color: #b45f06;
     margin-top: 15px;
+}
+
+.buttonImage {
+    height: 15px;
+    margin: 0 5px;
+}
+
+.selectChapter div {
+    display: flex;
 }
