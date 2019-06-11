@@ -1,52 +1,57 @@
 .outerShell {
-    position: relative;
+  height: 100%;
+}
+
+.imageShell {
+    height: 100%;
 }
 
 .quickNavShell {
-    background: rgba(245, 245, 245, 0.9);
-    padding: 10px 5px;
-    border-top: 5px solid #b45f06;
-    border-bottom: 5px solid #b45f06;
+  background: rgba(245, 245, 245, 0.9);
+  padding: 10px 5px;
+  border-top: 5px solid #b45f06;
+  border-bottom: 5px solid #b45f06;
 }
 
 .imageBanner {
-    height: 640px;
-    width: 300px;
-    top: 0;
-    display: none;
+  height: 640px;
+  width: 300px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
 }
 
 h1 {
-    color: #990000;
-    font-weight: 700;
-    font-size: 14pt;
-    border-bottom: 2px #222 solid;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
+  color: #990000;
+  font-weight: 700;
+  font-size: 14pt;
+  border-bottom: 2px #222 solid;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 h1:hover {
-    color: #b45f06;
+  color: #b45f06;
 }
 
 p {
-    font-family: "Vollkorn SC";
-    font-size: 14px;
-    color: #434343;
-    font-weight: 800;
-    padding: 5px 0;
+  font-family: "Vollkorn SC";
+  font-size: 14px;
+  color: #434343;
+  font-weight: 800;
+  padding: 5px 0;
 }
 
 p:hover {
-    color: #b45f06;
+  color: #b45f06;
 }
 
 /* ======================================================= */
 
 @media (max-width: 500px) {
-    .outerShell {
-        background: transparent;
-        border-top: none;
-        border-bottom: none
-    }
+  .outerShell {
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
   }
+}

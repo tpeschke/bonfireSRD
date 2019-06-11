@@ -220,32 +220,33 @@ let chapterWorkhorse = {
         console.log(item)
         if (isNaN(item.id)) {
             chapterWorkhorse.saveChapter(db, item)
+        } else {
+            delete item.edited
+                // SAVE HEADER
+            if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+                db.srdbasic.save(item)
+                // SAVE CHART
+            } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
+                db.srdchart.save(item)
+                // SAVE SIDEBAR
+            } else if (item.linkid.split('.')[1] === 'sb') {
+                db.srdsidebar.save(item)
+                // SAVE SPACE
+            } else if (item.linkid.split('.')[1] === 's') {
+                db.srdsectionspace.save(item)
+                // SAVE ADVANCED RULES
+            } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
+                db.srdadvanced.save(item)
+                // SAVE IMAGE SRC
+            } else if (item.linkid.split('.')[1] === 'i') {
+                console.log(item)
+                db.srdimages.save(item)
+                // SAVE TABLE
+            } else if (item.linkid.split('.')[1] === 't') {
+                console.log('yep')
+            }
         }
 
-        delete item.edited
-            // SAVE HEADER
-        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
-            db.srdbasic.save(item)
-            // SAVE CHART
-        } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
-            db.srdchart.save(item)
-            // SAVE SIDEBAR
-        } else if (item.linkid.split('.')[1] === 'sb') {
-            db.srdsidebar.save(item)
-            // SAVE SPACE
-        } else if (item.linkid.split('.')[1] === 's') {
-            db.srdsectionspace.save(item)
-            // SAVE ADVANCED RULES
-        } else if (item.linkid.split('.')[1] === 'ab' || item.linkid.split('.')[1] === 'a') {
-            db.srdadvanced.save(item)
-            // SAVE IMAGE SRC
-        } else if (item.linkid.split('.')[1] === 'i') {
-            console.log(item)
-            db.srdimages.save(item)
-            // SAVE TABLE
-        } else if (item.linkid.split('.')[1] === 't') {
-            console.log('yep')
-        }
     },
     saveChapter: function (db, item) {
             // SAVE HEADER
