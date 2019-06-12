@@ -162,6 +162,13 @@ p {
     background: rgba(245, 245, 245, 0.9)
 }
 
+.covenant {
+    color: #b45f06;
+    font-weight: 700;
+    font-size: 13pt;
+    font-family: "Vollkorn SC";
+}
+
 @media (max-width: 500px) {
     h1 {
         text-align: center;

@@ -52,6 +52,8 @@
   <h3 id="no">{{piece.body}}</h3>
 </div>
 
+<p *ngIf="type === 'hm'" class="covenant">{{piece.body}}</p>
+
 <div *ngIf="type === 't'" [ngClass]="nextType !== 't' ? 'marginBottom' : ''">
   <app-table-display [table]="piece"></app-table-display>
 </div>
