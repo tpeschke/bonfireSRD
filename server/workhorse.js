@@ -2,7 +2,7 @@ let chapterWorkhorse = {
     collectChapter: function (db, array, next, index, advanced) {
         let sidebarIndex = index;
         // GET HEADER / BULLECTED LIST / MINOR HEADINGS
-        if (next.split('.')[1] === 'h' || next.split('.')[1] === 'bl' || next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn') {
+        if (next.split('.')[1] === 'h' || next.split('.')[1] === 'bl' || next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn' || next.split('.')[1] === 'hm') {
             db.srdbasic.findOne({ linkid: next }).then(piece => {
                 if (sidebarIndex || sidebarIndex === 0) {
                     array[sidebarIndex].inner.push(piece)
@@ -223,7 +223,7 @@ let chapterWorkhorse = {
         } else {
             delete item.edited
                 // SAVE HEADER
-            if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+            if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn'|| item.linkid.split('.')[1] === 'hm') {
                 db.srdbasic.save(item)
                 // SAVE CHART
             } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
@@ -250,7 +250,7 @@ let chapterWorkhorse = {
     },
     saveChapter: function (db, item) {
             // SAVE HEADER
-        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn' || item.linkid.split('.')[1] === 'hm') {
             db.srdbasic.insert(item)
             // SAVE CHART
         } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
@@ -275,7 +275,7 @@ let chapterWorkhorse = {
         }
     },
     deleteLink: function (db, item) {
-        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn') {
+        if (item.linkid.split('.')[1] === 'h' || item.linkid.split('.')[1] === 'p' || item.linkid.split('.')[1] === 'bl' || item.linkid.split('.')[1] === 'hg' || item.linkid.split('.')[1] === 'hy' || item.linkid.split('.')[1] === 'hn' || item.linkid.split('.')[1] === 'hm') {
 
             // SAVE CHART
         } else if (item.linkid.split('.')[1] === 'c' || item.linkid.split('.')[1] === 'pc') {
