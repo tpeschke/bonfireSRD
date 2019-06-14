@@ -3,7 +3,7 @@
 }
 
 .imageShell {
-    height: 100%;
+    height: 95%;
 }
 
 .quickNavShell {
@@ -53,5 +53,9 @@ p:hover {
     background: transparent;
     border-top: none;
     border-bottom: none;
+  }
+
+  .imageShell {
+    display: none;
   }
 }
