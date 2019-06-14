@@ -33,6 +33,7 @@ const routes: Routes = [
   {path: 'chapter/11', component: ChapterElevenComponent},
   {path: 'chapter/12', component: ChapterTwelveComponent},
   {path: 'chapter/13', component: ChapterThirteenComponent},
+  {path: 'chapter/14', component: ChapterThirteenComponent},
   {path: 'chapter/16', component: HomeComponent},
   {path: 'chapter/:id', component: ChapterComponent}
 ]

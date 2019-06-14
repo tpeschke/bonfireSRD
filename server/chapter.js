@@ -25,6 +25,8 @@ chapterObject = {
     chapterTwelveSide: [],
     chapterThirteen: [],
     chapterThirteenSide: [],
+    chapterFourteen: [],
+    chapterFourteenSide: [],
     storeChapters: (db) => {
         chapterObject.chapterOne = []
         collectChapter(db, chapterObject.chapterOne, '1.h.1')
@@ -67,6 +69,9 @@ chapterObject = {
         chapterObject.chapterThirteen = []
         chapterObject.chapterThirteenSide = [{linkid: 'hg', body: 'Alter Weather'}, {linkid: 'hg', body: 'Anoint'}, {linkid: 'hg', body: 'Bless'}, {linkid: 'hg', body: 'Blessing of Protection'}, {linkid: 'hg', body: 'Charm Animal'}, {linkid: 'hg', body: 'Command'}, {linkid: 'hg', body: 'Confound'}, {linkid: 'hg', body: 'Curse'}, {linkid: 'hg', body: 'Disguise'}, {linkid: 'hg', body: 'Divine Call'}, {linkid: 'hg', body: 'Divine Charisma'}, {linkid: 'hg', body: 'Drain Energy'}, {linkid: 'hg', body: 'Earth Grip'}, {linkid: 'hg', body: 'Earthquake'}, {linkid: 'hg', body: 'Exalt Champion'}, {linkid: 'hg', body: 'Exorcism'}, {linkid: 'hg', body: 'Godspeed'}, {linkid: 'hg', body: 'Guidance'}, {linkid: 'hg', body: 'Hamper Magic'}, {linkid: 'hg', body: 'Heal'}, {linkid: 'hg', body: 'Holy Grace'}, {linkid: 'hg', body: 'Holy of Holies'}, {linkid: 'hg', body: 'Imbue With Fate'}, {linkid: 'hg', body: 'Inflict Stress'}, {linkid: 'hg', body: 'Invest Object'}, {linkid: 'hg', body: 'Invoke Emotion'}, {linkid: 'hg', body: 'Mana'}, {linkid: 'hg', body: 'Martyr'}, {linkid: 'hg', body: 'Might of Deity'}, {linkid: 'hg', body: 'Mortal Invigoration'}, {linkid: 'hg', body: 'Obscure Sense'}, {linkid: 'hg', body: 'Part Substance'}, {linkid: 'hg', body: 'Pillar of Fire'}, {linkid: 'hg', body: 'Predict Weather'}, {linkid: 'hg', body: 'Relax'}, {linkid: 'hg', body: 'Scry'}, {linkid: 'hg', body: 'Soothing Aura'}, {linkid: 'hg', body: 'Summon Object'}, {linkid: 'hg', body: 'Talk to Animals'}, {linkid: 'hg', body: 'Talk to Plants'}, {linkid: 'hg', body: 'Transform'}, {linkid: 'hg', body: 'Traumatize'}, {linkid: 'hg', body: 'Veil of Light/Dark'}, {linkid: 'hg', body: 'Water From Rock'}, {linkid: 'hg', body: 'Zone of Truth'}]
         collectChapter(db, chapterObject.chapterThirteen, '13.h.mMbVNdHvSm')
+        chapterObject.chapterFourteen = []
+        chapterObject.chapterFourteenSide = [{linkid: 'h', body: 'Gaining Experiance'}, {linkid: 'h', body: 'Leveling Up'}, {linkid: 'hg', body: 'Day 1: Recieve CrP'}, {linkid: 'hg', body: 'Day 2: Increase Ability Scores'}, {linkid: 'hg', body: 'Day 3: Assess Personality'}, {linkid: 'hg', body: 'Day 4: Increase Class Abilities'}, {linkid: 'hg', body: 'Day 5: Train and Retrain Skills & Masteries'}, {linkid: 'hg', body: 'Day 6: Increase Health'}, {linkid: 'hg', body: 'Day 7: Recieve Honor'}]
+        collectChapter(db, chapterObject.chapterFourteen, '14.p.abKWYOKQDr')
     },
     get: (req, res) => {
         switch (+req.params.id) {
@@ -108,6 +113,9 @@ chapterObject = {
                 break
             case 13:
                 res.send({ main: chapterObject.chapterThirteen, side: chapterObject.chapterThirteenSide })
+                break
+            case 14:
+                res.send({ main: chapterObject.chapterFourteen, side: chapterObject.chapterFourteenSide })
                 break
             default:
                 res.send('Something went wrong')
