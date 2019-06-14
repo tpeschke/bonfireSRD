@@ -1,5 +1,7 @@
+const chapter = require('./chapter')
+
 let chapterWorkhorse = {
-    collectChapter: function (db, array, next, index, advanced) {
+    collectChapter: function (db, array, next, index, advanced, sidebar) {
         let sidebarIndex = index;
         // GET HEADER / BULLECTED LIST / MINOR HEADINGS
         if (next.split('.')[1] === 'h' || next.split('.')[1] === 'bl' || next.split('.')[1] === 'hg' || next.split('.')[1] === 'hy' || next.split('.')[1] === 'hn' || next.split('.')[1] === 'hm') {
@@ -16,6 +18,9 @@ let chapterWorkhorse = {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
                     console.log(piece.linkid.split('.')[0])
+                    if (!sidebar) {
+                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                    }
                     return 'done'
                 }
             }).catch(e=>console.log(e))
@@ -57,6 +62,9 @@ let chapterWorkhorse = {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
                     console.log(piece.linkid.split('.')[0])
+                    if (!sidebar) {
+                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                    }
                     return 'done'
                 }
             }).catch(e=>console.log(e))
@@ -75,6 +83,9 @@ let chapterWorkhorse = {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
                     console.log(piece.linkid.split('.')[0])
+                    if (!sidebar) {
+                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                    }
                     return 'done'
                 }
             }).catch(e=>console.log(e))
@@ -87,6 +98,9 @@ let chapterWorkhorse = {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
                     console.log(piece.linkid.split('.')[0])
+                    if (!sidebar) {
+                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                    }
                     return 'done'
                 }
             }).catch(e=>console.log(e))
@@ -105,6 +119,9 @@ let chapterWorkhorse = {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
                     console.log(piece.linkid.split('.')[0])
+                    if (!sidebar) {
+                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                    }
                     return 'done'
                 }
             }).catch(e=>console.log(e))
@@ -122,6 +139,9 @@ let chapterWorkhorse = {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
                     console.log(piece.linkid.split('.')[0])
+                    if (!sidebar) {
+                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                    }
                     return 'done'
                 }
             }).catch(e=>console.log(e))
@@ -142,6 +162,9 @@ let chapterWorkhorse = {
                         chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex, true)
                     } else {
                         console.log(piece.linkid.split('.')[0])
+                        if (!sidebar) {
+                            chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        }
                         return 'done'
                     }
                 } else {
@@ -149,6 +172,9 @@ let chapterWorkhorse = {
                         chapterWorkhorse.collectChapter(db, array, piece.endid, sidebarIndex)
                     } else {
                         console.log(piece.linkid.split('.')[0])
+                        if (!sidebar) {
+                            chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        }
                         return 'done'
                     }
                 }
@@ -210,6 +236,9 @@ let chapterWorkhorse = {
                         chapterWorkhorse.collectChapter(db, array, table.nextid, index)
                     } else {
                         console.log(table.linkid)
+                        if (!sidebar) {
+                            chapterObject.storeChapters(db, +table.linkid.split('.')[0]+1)
+                        }
                         return 'done'
                     }
                 })
