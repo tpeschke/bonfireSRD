@@ -31,7 +31,7 @@ let chapterWorkhorse = {
                     piece.body = piece.body.split('|')
                     let splitArray = []
                     for (let i = 0; i < piece.body.length; i++) {
-                        if (piece.body[i].substring(0, 7) !== "Chapter" || piece.body[i].substring(0, 2) !== "+)") {
+                        if (piece.body[i].substring(0, 7) !== "Chapter" || piece.body[i].substring(0, 2) !== "+)" || piece.body[i].substring(0, 2) !== "-)") {
                             splitArray.push(...piece.body[i].split(' '))
                         } else {
                             splitArray.push(piece.body[i])
@@ -49,7 +49,7 @@ let chapterWorkhorse = {
                     piece.body = piece.body.split('|')
                     let splitArray = []
                     for (let i = 0; i < piece.body.length; i++) {
-                        if (piece.body[i].substring(0, 7) !== "Chapter" && piece.body[i].substring(0, 2) !== "+)") {
+                        if (piece.body[i].substring(0, 7) !== "Chapter" && piece.body[i].substring(0, 2) !== "+)"  && piece.body[i].substring(0, 2) !== "-)") {
                             splitArray.push(...piece.body[i].split(' '))
                         } else {
                             splitArray.push(piece.body[i])
