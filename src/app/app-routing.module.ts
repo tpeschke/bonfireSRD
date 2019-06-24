@@ -17,6 +17,9 @@ import { ChapterElevenComponent } from './chapter-eleven/main/chapter-eleven.com
 import { ChapterTwelveComponent } from './chapter-twelve/main/chapter-twelve.component'
 import { ChapterThirteenComponent } from './chapter-thirteen/main/chapter-thirteen.component'
 
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component'
+import { LogonComponent } from './logon/logon.component'
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'chapter/0', component: HomeComponent},
@@ -36,6 +39,8 @@ const routes: Routes = [
   {path: 'chapter/14', component: ChapterThirteenComponent},
   {path: 'chapter/15', component: ChapterThirteenComponent},
   {path: 'chapter/16', component: HomeComponent},
+  {path: 'privacypolicy', component: PrivacyPolicyComponent},
+  {path: 'login', component: LogonComponent},
   {path: 'chapter/:id', component: ChapterComponent}
 ]
 

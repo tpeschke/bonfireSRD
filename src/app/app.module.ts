@@ -24,6 +24,8 @@ import { HomeComponent } from './home/home.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { LogonComponent } from './logon/logon.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     ChapterComponent,
     SafeHtmlPipe,
-    SearchComponent
+    SearchComponent,
+    PrivacyPolicyComponent,
+    LogonComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
+import { ChapterService } from '../chapter.service';
 import { Router, NavigationEnd } from '@angular/router'
+import local from '../local'
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +14,8 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     private notRedux: NotReduxService,
-    private router: Router
+    private router: Router,
+    private chapterService: ChapterService
   ) { }
 
   public chapter = '';
@@ -25,6 +28,7 @@ export class NavbarComponent implements OnInit {
   public mobile = false;
   public ham = false;
   public height = 0
+  public login = ''
 
   ngOnInit() {
     this.router.events.subscribe(p => {
@@ -41,6 +45,7 @@ export class NavbarComponent implements OnInit {
         }
       }
     })
+    this.login = `https://www.patreon.com/oauth2/authorize?response_type=code&redirect_uri=${local.redirect}&client_id=${local.id}`
     this.mobile = window.innerWidth <= 500 ? true : false
   }
 
@@ -130,4 +135,5 @@ export class NavbarComponent implements OnInit {
   openHam(): void {
     this.ham = !this.ham
   }
+
 }

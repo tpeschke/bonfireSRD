@@ -1,5 +1,6 @@
-const { c1URL, c2URL, c3URL, c4URL, c5URL, c6URL, c7URL, c8URL, c9URL, c10URL, c11URL, c12URL, c13URL, c14URL, c15URL, auth } = require('./serv-config')
+const { c1URL, c2URL, c3URL, c4URL, c5URL, c6URL, c7URL, c8URL, c9URL, c10URL, c11URL, c12URL, c13URL, c14URL, c15URL, auth, redirect, id } = require('./serv-config')
     , rp = require('request-promise')
+    , axios = require('axios')
 
 module.exports = {
     c: (req, res) => {
@@ -9,6 +10,13 @@ module.exports = {
     search: (req, res) => {
         const db = req.app.get('db')
         db.get.search(req.body.search).then(result => res.send(result))
+    },
+    login: (req, res) => {
+        // console.log('hit')
+        // axios.get().then(requested => {
+        //     console.log(requested)
+        //     res.send(requested)
+        // })
     },
     forceRun: (req, res) => {
         if (req.body.auth === auth) {
