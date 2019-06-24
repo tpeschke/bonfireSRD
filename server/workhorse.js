@@ -17,9 +17,9 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log(piece.linkid.split('.')[0])
                     if (!sidebar) {
-                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        chapterObject.chapterCount++
+                        chapterObject.storeChapters(db, chapterObject.chapterCount)
                     }
                     return 'done'
                 }
@@ -61,9 +61,9 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log(piece.linkid.split('.')[0])
                     if (!sidebar) {
-                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        chapterObject.chapterCount++
+                        chapterObject.storeChapters(db, chapterObject.chapterCount)
                     }
                     return 'done'
                 }
@@ -82,9 +82,9 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log(piece.linkid.split('.')[0])
                     if (!sidebar) {
-                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        chapterObject.chapterCount++
+                        chapterObject.storeChapters(db, chapterObject.chapterCount)
                     }
                     return 'done'
                 }
@@ -97,9 +97,9 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log(piece.linkid.split('.')[0])
                     if (!sidebar) {
-                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        chapterObject.chapterCount++
+                        chapterObject.storeChapters(db, chapterObject.chapterCount)
                     }
                     return 'done'
                 }
@@ -118,9 +118,9 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log(piece.linkid.split('.')[0])
                     if (!sidebar) {
-                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        chapterObject.chapterCount++
+                        chapterObject.storeChapters(db, chapterObject.chapterCount)
                     }
                     return 'done'
                 }
@@ -138,9 +138,9 @@ let chapterWorkhorse = {
                 if (piece.nextid) {
                     chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex)
                 } else {
-                    console.log(piece.linkid.split('.')[0])
                     if (!sidebar) {
-                        chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                        chapterObject.chapterCount++
+                        chapterObject.storeChapters(db, chapterObject.chapterCount)
                     }
                     return 'done'
                 }
@@ -161,9 +161,9 @@ let chapterWorkhorse = {
                     if (piece.nextid) {
                         chapterWorkhorse.collectChapter(db, array, piece.nextid, sidebarIndex, true)
                     } else {
-                        console.log(piece.linkid.split('.')[0])
                         if (!sidebar) {
-                            chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                            chapterObject.chapterCount++ 
+                            chapterObject.storeChapters(db, chapterObject.chapterCount)
                         }
                         return 'done'
                     }
@@ -171,9 +171,9 @@ let chapterWorkhorse = {
                     if (piece.endid) {
                         chapterWorkhorse.collectChapter(db, array, piece.endid, sidebarIndex)
                     } else {
-                        console.log(piece.linkid.split('.')[0])
                         if (!sidebar) {
-                            chapterObject.storeChapters(db, +piece.linkid.split('.')[0]+1)
+                            chapterObject.chapterCount++
+                            chapterObject.storeChapters(db, chapterObject.chapterCount)
                         }
                         return 'done'
                     }

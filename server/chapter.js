@@ -2,6 +2,7 @@ const { editorAuth } = require('./serv-config')
 const { collectChapter, updateChapter } = require('./workhorse')
 
 chapterObject = {
+    chapterCount: 1,
     chapterOne: [],
     chapterTwo: [],
     chapterTwoSide: [],
@@ -30,6 +31,7 @@ chapterObject = {
     chapterFifteen: [],
     chapterFifteenSide: [],
     storeChapters: (db, num) => {
+        console.log(num)
         switch (num) {
             case 1:
                 chapterObject.chapterOne = []

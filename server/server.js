@@ -56,6 +56,7 @@ massive(connection).then(dbI => {
     app.set('db', dbI)
     app.listen(server, _ => {
         console.log(`The night lays like a lullaby on the earth ${server}`)
-        chapter.storeChapters(app.get('db'), 1)
+        chapter.chapterCount = 1;
+        chapter.storeChapters(app.get('db'), chapter.chapterCount)
     })
 })
