@@ -17,6 +17,7 @@ import { ChapterTenModule } from './chapter-ten/chapter-ten.module';
 import { ChapterElevenModule } from './chapter-eleven/chapter-eleven.module';
 import { ChapterTwelveModule } from './chapter-twelve/chapter-twelve.module';
 import { ChapterThirteenModule } from './chapter-thirteen/chapter-thirteen.module';
+import { DisplayModule } from './display/display.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -24,6 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { ChapterComponent } from './chapter/chapter.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
+import { FormatSearchPipe } from './format-search.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     ChapterComponent,
     SafeHtmlPipe,
-    SearchComponent
+    SearchComponent,
+    FormatSearchPipe
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { SearchComponent } from './search/search.component';
     ChapterElevenModule,
     ChapterTwelveModule,
     ChapterThirteenModule,
+    DisplayModule,
     EmbedVideo.forRoot()
   ],
   providers: [],

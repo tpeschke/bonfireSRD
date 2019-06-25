@@ -35,12 +35,6 @@ export class ChapterTwelveComponent implements OnInit {
     })
   }
 
-  ngOnDestroy() {
-    this.navDisplay = false;
-    this.notRedux.toggleShow(false);
-    this.chapterName = ''
-  }
-
   getChapterChunk(next) {
     this.chapterService.getChapterArray(next)
       .subscribe(newArray => {

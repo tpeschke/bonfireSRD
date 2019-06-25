@@ -1,76 +1,93 @@
-@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+@import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
+
+.outerShell {
+  margin: 137px 0 25px;
+  height: 100%;
+}
 
 input {
-    width: 100%;
-    font-family: 'Vollkorn SC', serif;
-    padding-left: 10px;
+  width: 100%;
+  font-family: "Vollkorn SC", serif;
+  padding-left: 10px;
 }
 
 .inputShell {
-    display: flex;
+  display: flex;
+  background: white;
+  padding: 50px;
 }
 
 .searchIcon {
-    width: 21px;
-    height: 21px;
-    position: relative;
-    margin-left: 5px;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  margin: 5px;
 }
 
 .iconOuter {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 16px;
-    background: #222
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #222;
 }
 
 .iconInner {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background: white;
-    top: 3px;
-    left: 3px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: white;
+  top: 3px;
+  left: 3px;
 }
 
 .iconHandle {
-    position: absolute;
-    width: 9px;
-    height: 4px;
-    background: #222;
-    bottom: 4px;
-    right: 0px;
-    transform: rotate(45deg)
+  position: absolute;
+  width: 9px;
+  height: 4px;
+  background: #222;
+  bottom: 4px;
+  right: 0px;
+  transform: rotate(45deg);
 }
 
 .searchTitle {
-    margin-top: 15px;
-    font-size: 13px;
-    font-family: 'Vollkorn SC', serif;
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: "Vollkorn SC", serif;
 }
 
 .searchShell {
-    font-family: 'Vollkorn SC', serif;
-    border: 1px solid #222;
-    height: 332px;
-    overflow-y: scroll;
+  background: white;
+  margin-top: 15px;
 }
 
 .searchResult {
-    display: flex;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
 }
 
 .searchResult:nth-child(even) {
-    background: lightgrey;
+  background: lightgrey;
 }
 
 .searchResult:hover {
-    background: #b45f06;
+  background: #b45f06;
+}
+
+.searchTitle {
+  font-weight: 700
 }
 
 .searchName {
-    margin-left: 15px;
+  margin-top: 10px;
+  text-indent: 5%;
+}
+
+@media (max-width: 500px) {
+  .outerShell {
+    margin-top: 85px;
+  }
 }

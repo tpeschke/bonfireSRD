@@ -6,7 +6,8 @@
 </div>
 
 <div *ngIf="type === 'p'"
-  [ngClass]="nextType !== 'p' && nextType !== 'l' ? 'marginBottom paragraphShell' : 'paragraphShell'">
+  [ngClass]="nextType !== 'p' && nextType !== 'l' ? 'marginBottom paragraphShell anchor' : 'paragraphShell anchor'">
+  <div id="{{piece.linkid | removeSpace : true}}" class="anchorTag"></div>
   <div class="indent"></div>
   <div *ngFor="let paragraph of piece.body; let index = index">
     <app-link-search [body]="paragraph" [index]="index"></app-link-search>

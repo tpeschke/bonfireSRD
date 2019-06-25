@@ -1,2 +1,3 @@
-select chapname, chapnum from srdchapters 
-where (UPPER(html) like UPPER('%'|| $1 ||'%'))
+select id, linkid, body from srdbasic
+where (UPPER(body) like UPPER('%'|| $1 ||'%'))
+limit 50

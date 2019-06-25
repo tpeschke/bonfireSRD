@@ -17,8 +17,11 @@ import { ChapterElevenComponent } from './chapter-eleven/main/chapter-eleven.com
 import { ChapterTwelveComponent } from './chapter-twelve/main/chapter-twelve.component'
 import { ChapterThirteenComponent } from './chapter-thirteen/main/chapter-thirteen.component'
 
+import { SearchComponent } from './search/search.component'
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'search', component: SearchComponent},
   {path: 'chapter/0', component: HomeComponent},
   {path: 'chapter/1', component: ChapteroneComponent},
   {path: 'chapter/2', component: ChapterTwoComponent},
