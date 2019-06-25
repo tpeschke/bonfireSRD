@@ -5,9 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class RemoveSpacePipe implements PipeTransform {
 
-  transform(value): any {
+  transform(value, search): any {
     if (value) {
-      return value.replace(/ |-|_|:|&|'|&|([()])|\//ig, '').toUpperCase()
+      if (search) {
+        return value.replace(/ |-|_|:|\.|&|'|&|([()])|\//ig, '')
+      }
+      return value.replace(/ |-|_|:|\.|&|'|&|([()])|\//ig, '').toUpperCase()
     }
   }
 

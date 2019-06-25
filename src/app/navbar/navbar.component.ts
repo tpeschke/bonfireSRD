@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
-import { Router, NavigationEnd } from '@angular/router'
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +12,8 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     private notRedux: NotReduxService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   public chapter = '';
@@ -29,15 +30,18 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
-        if (p.url.substring(9) !== '0') {
-          this.setChapter(+p.url.substring(9))
-        } else {
-          this.chapter = '';
-          this.pervious = '';
-          this.perviousRoute = 1;
-          this.next = '';
-          this.nextRoute = 1;
-          this.reset = '';
+        if (p.url !== '/search') {
+          let route = +p.url.split('/')[2].split('?')[0]
+          if (route !== 0) {
+            this.setChapter(route)
+          } else {
+            this.chapter = '';
+            this.pervious = '';
+            this.perviousRoute = 1;
+            this.next = '';
+            this.nextRoute = 1;
+            this.reset = '';
+          }
         }
       }
     })
@@ -91,7 +95,7 @@ export class NavbarComponent implements OnInit {
       case 15:
         return 'Misc Rules';
       default:
-        return 'Home';
+        return '';
     }
   }
 

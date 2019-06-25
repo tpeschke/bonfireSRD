@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-display',
@@ -12,7 +11,6 @@ export class DisplayComponent implements OnInit {
   @Input() sidebar: boolean;
   
   constructor(
-    private router: Router
   ) { }
 
   type = null
@@ -27,5 +25,4 @@ export class DisplayComponent implements OnInit {
       this.type = this.piece.linkid.split('.')[1]
     }
   }
-
 }

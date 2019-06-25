@@ -1,17 +1,17 @@
-<div class="inputShell">
-  <input type="text" (keyup)="getSearch($event)">
-  <div class='searchIcon'>
-    <div class="iconOuter"></div>
-    <div class="iconInner"></div>
-    <div class="iconHandle"></div>
-  </div>
-</div>
-
-<p class="searchTitle">Refences to your search are in the following chapter(s):</p>
-
-<div class='searchShell'>
-    <div *ngFor="let search of searches" class="searchResult"  routerLink="chapter/{{search.chapnum}}">
-      <div>Chapter {{search.chapnum}}:</div>
-      <div class="searchName">{{search.chapname}}</div>
+<div class="outerShell">
+  <div class="inputShell">
+    <input type="text" (keyup)="getSearch($event)">
+    <div class='searchIcon'>
+      <div class="iconOuter"></div>
+      <div class="iconInner"></div>
+      <div class="iconHandle"></div>
     </div>
+  </div>
+
+  <div class='searchShell'>
+    <div *ngFor="let search of searches" class="searchResult" (click)="goToSearch(search.linkid)">
+      <div class="searchTitle">Chapter {{search.chap}}</div>
+      <div class="searchName" innerHTML="{{search.body | formatSearch}}"></div>
+    </div>
+  </div>
 </div>
