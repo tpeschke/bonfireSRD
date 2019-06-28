@@ -21,7 +21,7 @@ export class OuterDisplayComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     let param = this.route.snapshot.queryParams.search
-    if (param) {
+    if (param && document.readyState === 'complete') {
       let el = document.getElementById(`${param.replace(/ |-|:|\.|&|'|([()])|\//ig, '')}`)
       if (param && el) {
         el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })

@@ -30,18 +30,19 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
-        if (p.url !== '/search') {
+        console.log(p.url)
+        if (p.url !== '/search' && p.url !== '/') {
           let route = +p.url.split('/')[2].split('?')[0]
           if (route !== 0) {
             this.setChapter(route)
-          } else {
-            this.chapter = '';
-            this.pervious = '';
-            this.perviousRoute = 1;
-            this.next = '';
-            this.nextRoute = 1;
-            this.reset = '';
-          }
+          } 
+        } else {
+          this.chapter = '';
+          this.pervious = '';
+          this.perviousRoute = 1;
+          this.next = '';
+          this.nextRoute = 1;
+          this.reset = '';
         }
       }
     })
@@ -95,7 +96,7 @@ export class NavbarComponent implements OnInit {
       case 15:
         return 'Misc Rules';
       default:
-        return '';
+        return 'Home';
     }
   }
 

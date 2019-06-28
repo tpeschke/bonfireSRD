@@ -1,1 +1,0 @@
-select html as chapter, images from srdchapters where chapnum = $1

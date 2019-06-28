@@ -40,11 +40,9 @@ new CronJob('0 0 0 * * *', _ => {
 // ================================== \\
 
 app.get('/nc/:id', chapter.get)
-app.get('/c/:id', ctrl.c);
 
 app.post('/search', ctrl.search);
 
-app.patch('/auth', ctrl.forceRun);
 app.patch('/saveChapter', chapter.saveChapter);
 
 app.get('/*', (req, res) => {

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { ChapterComponent } from './chapter/chapter.component';
 import { ChapteroneComponent } from './chapter-one/chapterone/chapterone.component'
 import { ChapterTwoComponent } from './chapter-two/chapterTwo/chapter-two.component'
 import { ChapterThreeComponent } from './chapter-three/chapter-three/chapter-three.component'
@@ -38,8 +37,7 @@ const routes: Routes = [
   {path: 'chapter/13', component: ChapterThirteenComponent},
   {path: 'chapter/14', component: ChapterThirteenComponent},
   {path: 'chapter/15', component: ChapterThirteenComponent},
-  {path: 'chapter/16', component: HomeComponent},
-  {path: 'chapter/:id', component: ChapterComponent}
+  {path: 'chapter/16', component: HomeComponent}
 ]
 
 @NgModule({

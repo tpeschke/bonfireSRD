@@ -22,7 +22,6 @@ import { DisplayModule } from './display/display.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { ChapterComponent } from './chapter/chapter.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
 import { FormatSearchPipe } from './format-search.pipe';
@@ -32,7 +31,6 @@ import { FormatSearchPipe } from './format-search.pipe';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ChapterComponent,
     SafeHtmlPipe,
     SearchComponent,
     FormatSearchPipe
