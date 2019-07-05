@@ -38,7 +38,7 @@ p {
 .innerRight {
     margin-left: 15px;
     background: white;
-    height: 660px;
+    height: 600px;
     width: 475px;
     padding: 35px;
 }
@@ -46,7 +46,7 @@ p {
 .innerSearch {
     background: white;
     width: 475px;
-    height: 450px;
+    height: 390px;
     padding: 35px;
     margin-top: 15px;
     display: flex;
@@ -82,10 +82,10 @@ p {
 }
 
 .image {
-    height: 190px;
+    height: 150px;
     position: absolute;
-    right: 82px;
-    top: -35px;
+    right: 90px;
+    top: -20px;
 }
 
 .list {
