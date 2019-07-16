@@ -4,19 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
 
-import { ChapterOneModule } from './chapter-one/chapter-one.module';
-import { ChapterTwoModule } from './chapter-two/chapter-two.module';
-import { ChapterThreeModule } from './chapter-three/chapter-three.module';
-import { ChapterFourModule } from './chapter-four/chapter-four.module';
-import { ChapterFiveModule } from './chapter-five/chapter-five.module';
-import { ChapterSixModule } from './chapter-six/chapter-six.module';
-import { ChapterSevenModule } from './chapter-seven/chapter-seven.module';
-import { ChapterEightModule } from './chapter-eight/chapter-eight.module';
-import { ChapterNineModule } from './chapter-nine/chapter-nine.module';
-import { ChapterTenModule } from './chapter-ten/chapter-ten.module';
-import { ChapterElevenModule } from './chapter-eleven/chapter-eleven.module';
-import { ChapterTwelveModule } from './chapter-twelve/chapter-twelve.module';
-import { ChapterThirteenModule } from './chapter-thirteen/chapter-thirteen.module';
 import { DisplayModule } from './display/display.module';
 
 import { AppComponent } from './app.component';
@@ -26,6 +13,8 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
+import { ChapterOneComponent } from './chapter-one/chapter-one.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,25 +22,13 @@ import { FormatSearchPipe } from './format-search.pipe';
     HomeComponent,
     SafeHtmlPipe,
     SearchComponent,
-    FormatSearchPipe
+    FormatSearchPipe,
+    ChapterOneComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ChapterOneModule,
-    ChapterTwoModule,
-    ChapterThreeModule,
-    ChapterFourModule,
-    ChapterFiveModule,
-    ChapterSixModule,
-    ChapterSevenModule,
-    ChapterEightModule,
-    ChapterNineModule,
-    ChapterTenModule,
-    ChapterElevenModule,
-    ChapterTwelveModule,
-    ChapterThirteenModule,
     DisplayModule,
     EmbedVideo.forRoot()
   ],
