@@ -174,8 +174,8 @@ h1 {
   font-family: "Vollkorn SC", serif;
   color: whitesmoke;
   position: absolute;
-  bottom: 3px;
-  left: 25px;
+  bottom: 0px;
+  left: -30px;
   font-size: 12px;
 }
 
