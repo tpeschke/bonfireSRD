@@ -4,32 +4,31 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
 
-import { DisplayModule } from './display/display.module';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
 import { FormatSearchPipe } from './format-search.pipe';
+import { QuickNavComponent } from './quick-nav/quick-nav.component';
 
 import { ChapterOneComponent } from './chapter-one/chapter-one.component';
+import { ChapterTwoComponent } from './chapter-two/chapter-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    SafeHtmlPipe,
+    QuickNavComponent,
     SearchComponent,
     FormatSearchPipe,
-    ChapterOneComponent
+    ChapterOneComponent,
+    ChapterTwoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    DisplayModule,
     EmbedVideo.forRoot()
   ],
   providers: [],

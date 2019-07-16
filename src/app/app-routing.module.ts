@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ChapterOneComponent } from './chapter-one/chapter-one.component';
+import { ChapterTwoComponent } from './chapter-two/chapter-two.component'
 
-// import { ChapterTwoComponent } from './chapter-two/chapterTwo/chapter-two.component'
 // import { ChapterThreeComponent } from './chapter-three/chapter-three/chapter-three.component'
 // import { ChapterFourComponent } from './chapter-four/main/chapter-four.component'
 // import { ChapterFiveComponent } from './chapter-five/main/chapter-five.component'
@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: 'search', component: SearchComponent},
   {path: 'chapter/0', component: HomeComponent},
   {path: 'chapter/1', component: ChapterOneComponent},
-  // {path: 'chapter/2', component: ChapterTwoComponent},
+  {path: 'chapter/2', component: ChapterTwoComponent},
   // {path: 'chapter/3', component: ChapterThreeComponent},
   // {path: 'chapter/4', component: ChapterFourComponent},
   // {path: 'chapter/5', component: ChapterFiveComponent},

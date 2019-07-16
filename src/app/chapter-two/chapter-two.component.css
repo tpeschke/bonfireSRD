@@ -1,0 +1,40 @@
+.Strengthvalue {
+    width: 60px;
+}
+
+.Dexterityvalue {
+    width: 60px;
+}
+
+.Constitutionvalue {
+    width: 65px;
+}
+
+.Intellectvalue {
+    width: 65px;
+}
+
+.Wisdomvalue {
+    width: 65px;
+}
+
+.Charismavalue {
+    width: 60px;
+}
+
+.tableOverflowWindow {
+    float: left;
+    margin-right: 15px;
+}
+
+.dexMargin {
+    margin-top: 115px;
+}
+
+.fatiMargin {
+    margin-top: 80px;
+}
+
+.traitMargin {
+    margin-top: 65px;
+}
