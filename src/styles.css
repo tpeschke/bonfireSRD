@@ -235,7 +235,11 @@ button:hover {
 
 /* ======================================================= */
 
-@media (max-width: 640px) {
+@media (max-width: 770px) {
+  .backTexture { 
+    background-image: none;
+  }
+
   .outerShell {
     margin-top: 85px;
   }
@@ -285,6 +289,12 @@ button:hover {
 
   .sidebarShell {
     margin: 15px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .backTexture {
+    background-image: url("./assets/images/1.jpg");
   }
 }
 
@@ -467,7 +477,7 @@ align-content: flex-start;
   font-family: "Vollkorn SC";
 }
 
-@media (max-width: 640px) {
+@media (max-width: 770px) {
   h1 {
       text-align: center;
   }

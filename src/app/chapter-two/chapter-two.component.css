@@ -43,7 +43,7 @@
     margin-top: 65px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 770px) {
     .tableOverflowWindow {
         float: none;
         margin: 15px auto 25px auto;
