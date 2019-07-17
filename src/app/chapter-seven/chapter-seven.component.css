@@ -1,0 +1,7 @@
+.thievesCant {
+    width: 100%;
+}
+
+.thievesCant:last-child {
+    text-align: right;
+}
