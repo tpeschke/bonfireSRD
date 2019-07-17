@@ -14,6 +14,7 @@ import { QuickNavComponent } from './quick-nav/quick-nav.component';
 import { ChapterOneComponent } from './chapter-one/chapter-one.component';
 import { ChapterTwoComponent } from './chapter-two/chapter-two.component';
 import { ChapterThreeComponent } from './chapter-three/chapter-three.component';
+import { ChapterFourComponent } from './chapter-four/chapter-four.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ChapterThreeComponent } from './chapter-three/chapter-three.component';
     FormatSearchPipe,
     ChapterOneComponent,
     ChapterTwoComponent,
-    ChapterThreeComponent
+    ChapterThreeComponent,
+    ChapterFourComponent
   ],
   imports: [
     BrowserModule,
