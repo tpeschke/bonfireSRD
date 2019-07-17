@@ -1,0 +1,13 @@
+.tableValue .BonusHonorvalue:first-child{
+    width: 135px;
+}
+
+.tableValue .BonusHonorvalue:nth-child(2){
+    width: 65px;
+}
+
+.BonusHonorTable {
+    margin: 5px 15px 0 0;
+    width: 200px;
+    float: left;
+}
