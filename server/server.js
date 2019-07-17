@@ -43,8 +43,6 @@ app.get('/nc/:id', chapter.get)
 
 app.post('/search', ctrl.search);
 
-app.patch('/saveChapter', chapter.saveChapter);
-
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))
 })
