@@ -11,7 +11,7 @@ import { ChapterSixComponent } from './chapter-six/chapter-six.component'
 import { ChapterSevenComponent } from './chapter-seven/chapter-seven.component'
 import { ChapterEightComponent } from './chapter-eight/chapter-eight.component'
 import { ChapterNineComponent } from './chapter-nine/chapter-nine.component'
-// import { ChapterTenComponent } from './chapter-ten/main/chapter-ten.component'
+import { ChapterTenComponent } from './chapter-ten/chapter-ten.component'
 // import { ChapterElevenComponent } from './chapter-eleven/main/chapter-eleven.component'
 // import { ChapterTwelveComponent } from './chapter-twelve/main/chapter-twelve.component'
 // import { ChapterThirteenComponent } from './chapter-thirteen/main/chapter-thirteen.component'
@@ -31,7 +31,7 @@ const routes: Routes = [
   {path: 'chapter/7', component: ChapterSevenComponent},
   {path: 'chapter/8', component: ChapterEightComponent},
   {path: 'chapter/9', component: ChapterNineComponent},
-  // {path: 'chapter/10', component: ChapterTenComponent},
+  {path: 'chapter/10', component: ChapterTenComponent},
   // {path: 'chapter/11', component: ChapterElevenComponent},
   // {path: 'chapter/12', component: ChapterTwelveComponent},
   // {path: 'chapter/13', component: ChapterThirteenComponent},

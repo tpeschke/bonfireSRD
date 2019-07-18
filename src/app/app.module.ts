@@ -20,6 +20,7 @@ import { ChapterSixComponent } from './chapter-six/chapter-six.component';
 import { ChapterSevenComponent } from './chapter-seven/chapter-seven.component';
 import { ChapterEightComponent } from './chapter-eight/chapter-eight.component';
 import { ChapterNineComponent } from './chapter-nine/chapter-nine.component';
+import { ChapterTenComponent } from './chapter-ten/chapter-ten.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ChapterNineComponent } from './chapter-nine/chapter-nine.component';
     ChapterSixComponent,
     ChapterSevenComponent,
     ChapterEightComponent,
-    ChapterNineComponent
+    ChapterNineComponent,
+    ChapterTenComponent
   ],
   imports: [
     BrowserModule,
