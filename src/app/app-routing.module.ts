@@ -14,7 +14,7 @@ import { ChapterNineComponent } from './chapter-nine/chapter-nine.component'
 import { ChapterTenComponent } from './chapter-ten/chapter-ten.component'
 import { ChapterElevenComponent } from './chapter-eleven/chapter-eleven.component'
 import { ChapterTwelveComponent } from './chapter-twelve/chapter-twelve.component'
-// import { ChapterThirteenComponent } from './chapter-thirteen/chapter-thirteen.component'
+import { ChapterThirteenComponent } from './chapter-thirteen/chapter-thirteen.component'
 
 import { SearchComponent } from './search/search.component'
 
@@ -34,7 +34,7 @@ const routes: Routes = [
   {path: 'chapter/10', component: ChapterTenComponent},
   {path: 'chapter/11', component: ChapterElevenComponent},
   {path: 'chapter/12', component: ChapterTwelveComponent},
-  // {path: 'chapter/13', component: ChapterThirteenComponent},
+  {path: 'chapter/13', component: ChapterThirteenComponent},
   // {path: 'chapter/14', component: ChapterThirteenComponent},
   // {path: 'chapter/15', component: ChapterThirteenComponent},
   {path: 'chapter/16', component: HomeComponent}
