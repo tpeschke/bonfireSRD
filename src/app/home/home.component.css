@@ -41,7 +41,7 @@ p {
 .homeInnerRight {
     margin-left: 15px;
     background: white;
-    height: 650px;
+    height: 100%;
     width: 475px;
     padding: 35px;
 }
@@ -127,7 +127,6 @@ p {
 
     .homeInnerRight {
         margin: 0;
-        height: 910px;
         width: 100%;
     }
 
@@ -151,11 +150,5 @@ p {
 
     .homeOuterShell {
         margin: 90px 0 25px;
-    }
-}
-
-@media (max-width: 320px) {
-    .homeInnerRight {
-        height: 1000px;
     }
 }

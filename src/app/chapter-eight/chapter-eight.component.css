@@ -235,7 +235,8 @@
   .CamouflagingObjectsTable,
   .TrackingCheckTable,
   .DistractionCheckTable,
-  .RecruitingCheckTable {
+  .RecruitingCheckTable,
+  .DeceptionCheckTable {
     float: none;
     margin: 0 auto;
   }

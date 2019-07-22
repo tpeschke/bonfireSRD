@@ -25,6 +25,7 @@ import { ChapterElevenComponent } from './chapter-eleven/chapter-eleven.componen
 import { ChapterTwelveComponent } from './chapter-twelve/chapter-twelve.component';
 import { ChapterThirteenComponent } from './chapter-thirteen/chapter-thirteen.component';
 import { ChapterFourteenComponent } from './chapter-fourteen/chapter-fourteen.component';
+import { ChapterFifteenComponent } from './chapter-fifteen/chapter-fifteen.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ChapterFourteenComponent } from './chapter-fourteen/chapter-fourteen.co
     ChapterElevenComponent,
     ChapterTwelveComponent,
     ChapterThirteenComponent,
-    ChapterFourteenComponent
+    ChapterFourteenComponent,
+    ChapterFifteenComponent
   ],
   imports: [
     BrowserModule,
