@@ -4,55 +4,57 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
 
-import { ChapterOneModule } from './chapter-one/chapter-one.module';
-import { ChapterTwoModule } from './chapter-two/chapter-two.module';
-import { ChapterThreeModule } from './chapter-three/chapter-three.module';
-import { ChapterFourModule } from './chapter-four/chapter-four.module';
-import { ChapterFiveModule } from './chapter-five/chapter-five.module';
-import { ChapterSixModule } from './chapter-six/chapter-six.module';
-import { ChapterSevenModule } from './chapter-seven/chapter-seven.module';
-import { ChapterEightModule } from './chapter-eight/chapter-eight.module';
-import { ChapterNineModule } from './chapter-nine/chapter-nine.module';
-import { ChapterTenModule } from './chapter-ten/chapter-ten.module';
-import { ChapterElevenModule } from './chapter-eleven/chapter-eleven.module';
-import { ChapterTwelveModule } from './chapter-twelve/chapter-twelve.module';
-import { ChapterThirteenModule } from './chapter-thirteen/chapter-thirteen.module';
-import { DisplayModule } from './display/display.module';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { SafeHtmlPipe } from './safe-html.pipe';
 import { SearchComponent } from './search/search.component';
 import { FormatSearchPipe } from './format-search.pipe';
+import { QuickNavComponent } from './quick-nav/quick-nav.component';
+
+import { ChapterOneComponent } from './chapter-one/chapter-one.component';
+import { ChapterTwoComponent } from './chapter-two/chapter-two.component';
+import { ChapterThreeComponent } from './chapter-three/chapter-three.component';
+import { ChapterFourComponent } from './chapter-four/chapter-four.component';
+import { ChapterFiveComponent } from './chapter-five/chapter-five.component';
+import { ChapterSixComponent } from './chapter-six/chapter-six.component';
+import { ChapterSevenComponent } from './chapter-seven/chapter-seven.component';
+import { ChapterEightComponent } from './chapter-eight/chapter-eight.component';
+import { ChapterNineComponent } from './chapter-nine/chapter-nine.component';
+import { ChapterTenComponent } from './chapter-ten/chapter-ten.component';
+import { ChapterElevenComponent } from './chapter-eleven/chapter-eleven.component';
+import { ChapterTwelveComponent } from './chapter-twelve/chapter-twelve.component';
+import { ChapterThirteenComponent } from './chapter-thirteen/chapter-thirteen.component';
+import { ChapterFourteenComponent } from './chapter-fourteen/chapter-fourteen.component';
+import { ChapterFifteenComponent } from './chapter-fifteen/chapter-fifteen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    SafeHtmlPipe,
+    QuickNavComponent,
     SearchComponent,
-    FormatSearchPipe
+    FormatSearchPipe,
+    ChapterOneComponent,
+    ChapterTwoComponent,
+    ChapterThreeComponent,
+    ChapterFourComponent,
+    ChapterFiveComponent,
+    ChapterSixComponent,
+    ChapterSevenComponent,
+    ChapterEightComponent,
+    ChapterNineComponent,
+    ChapterTenComponent,
+    ChapterElevenComponent,
+    ChapterTwelveComponent,
+    ChapterThirteenComponent,
+    ChapterFourteenComponent,
+    ChapterFifteenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ChapterOneModule,
-    ChapterTwoModule,
-    ChapterThreeModule,
-    ChapterFourModule,
-    ChapterFiveModule,
-    ChapterSixModule,
-    ChapterSevenModule,
-    ChapterEightModule,
-    ChapterNineModule,
-    ChapterTenModule,
-    ChapterElevenModule,
-    ChapterTwelveModule,
-    ChapterThirteenModule,
-    DisplayModule,
     EmbedVideo.forRoot()
   ],
   providers: [],

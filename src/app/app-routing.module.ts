@@ -2,19 +2,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { ChapteroneComponent } from './chapter-one/chapterone/chapterone.component'
-import { ChapterTwoComponent } from './chapter-two/chapterTwo/chapter-two.component'
-import { ChapterThreeComponent } from './chapter-three/chapter-three/chapter-three.component'
-import { ChapterFourComponent } from './chapter-four/main/chapter-four.component'
-import { ChapterFiveComponent } from './chapter-five/main/chapter-five.component'
-import { ChapterSixComponent } from './chapter-six/main/chapter-six.component'
-import { ChapterSevenComponent } from './chapter-seven/main/chapter-seven.component'
-import { ChapterEightComponent } from './chapter-eight/main/chapter-eight.component'
-import { ChapterNineComponent } from './chapter-nine/main/chapter-nine.component'
-import { ChapterTenComponent } from './chapter-ten/main/chapter-ten.component'
-import { ChapterElevenComponent } from './chapter-eleven/main/chapter-eleven.component'
-import { ChapterTwelveComponent } from './chapter-twelve/main/chapter-twelve.component'
-import { ChapterThirteenComponent } from './chapter-thirteen/main/chapter-thirteen.component'
+import { ChapterOneComponent } from './chapter-one/chapter-one.component';
+import { ChapterTwoComponent } from './chapter-two/chapter-two.component'
+import { ChapterThreeComponent } from './chapter-three/chapter-three.component'
+import { ChapterFourComponent } from './chapter-four/chapter-four.component'
+import { ChapterFiveComponent } from './chapter-five/chapter-five.component'
+import { ChapterSixComponent } from './chapter-six/chapter-six.component'
+import { ChapterSevenComponent } from './chapter-seven/chapter-seven.component'
+import { ChapterEightComponent } from './chapter-eight/chapter-eight.component'
+import { ChapterNineComponent } from './chapter-nine/chapter-nine.component'
+import { ChapterTenComponent } from './chapter-ten/chapter-ten.component'
+import { ChapterElevenComponent } from './chapter-eleven/chapter-eleven.component'
+import { ChapterTwelveComponent } from './chapter-twelve/chapter-twelve.component'
+import { ChapterThirteenComponent } from './chapter-thirteen/chapter-thirteen.component'
+import { ChapterFourteenComponent } from './chapter-fourteen/chapter-fourteen.component'
+import { ChapterFifteenComponent } from './chapter-fifteen/chapter-fifteen.component'
 
 import { SearchComponent } from './search/search.component'
 
@@ -22,7 +24,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'search', component: SearchComponent},
   {path: 'chapter/0', component: HomeComponent},
-  {path: 'chapter/1', component: ChapteroneComponent},
+  {path: 'chapter/1', component: ChapterOneComponent},
   {path: 'chapter/2', component: ChapterTwoComponent},
   {path: 'chapter/3', component: ChapterThreeComponent},
   {path: 'chapter/4', component: ChapterFourComponent},
@@ -35,8 +37,8 @@ const routes: Routes = [
   {path: 'chapter/11', component: ChapterElevenComponent},
   {path: 'chapter/12', component: ChapterTwelveComponent},
   {path: 'chapter/13', component: ChapterThirteenComponent},
-  {path: 'chapter/14', component: ChapterThirteenComponent},
-  {path: 'chapter/15', component: ChapterThirteenComponent},
+  {path: 'chapter/14', component: ChapterFourteenComponent},
+  {path: 'chapter/15', component: ChapterFifteenComponent},
   {path: 'chapter/16', component: HomeComponent}
 ]
 

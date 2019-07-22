@@ -1,0 +1,89 @@
+.outerShellSide {
+  height: 100%;
+  position: relative;
+}
+
+.quickNavShellSide {
+  background: rgba(245, 245, 245, 0.9);
+  padding: 10px 5px;
+  border-top: 5px solid #b45f06;
+  border-bottom: 5px solid #b45f06;
+}
+
+.imageBannerSide {
+  height: 640px;
+  width: 300px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+}
+
+h1 {
+  color: #990000;
+  font-weight: 700;
+  font-size: 14pt;
+  border-bottom: 2px #222 solid;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+h1:hover {
+  color: #b45f06;
+}
+
+p {
+  font-family: "Vollkorn SC";
+  font-size: 14px;
+  color: #434343;
+  font-weight: 800;
+  padding: 5px 0;
+  text-indent: 25px;
+}
+
+p:hover {
+  color: #b45f06;
+}
+
+.toTopButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.quickNavShellSide div:last-child h1{
+  border: none;
+}
+
+/* ======================================================= */
+
+@media (max-width: 770px) {
+  .outerShellSide {
+    background: transparent;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .imageShellSide {
+    display: none;
+  }
+
+  .toTopButton {
+    display: none;
+  }
+
+  .quickNavShellSide {
+    background: none;
+    border: none;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

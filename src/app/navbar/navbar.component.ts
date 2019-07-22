@@ -23,18 +23,19 @@ export class NavbarComponent implements OnInit {
   public nextRoute = 1;
   public reset = '';
   public marginBack = true;
-  public mobile = false;
   public ham = false;
   public height = 0
 
   ngOnInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
-        console.log(p.url)
         if (p.url !== '/search' && p.url !== '/') {
           let route = +p.url.split('/')[2].split('?')[0]
           if (route !== 0) {
             this.setChapter(route)
+            if (p.url.split('=')[1]) {
+              this.scrollToElement(p.url.split('=')[1])
+            }
           } 
         } else {
           this.chapter = '';
@@ -46,7 +47,6 @@ export class NavbarComponent implements OnInit {
         }
       }
     })
-    this.mobile = window.innerWidth <= 500 ? true : false
   }
 
   @HostListener('document:scroll', ['$event'])
@@ -57,6 +57,11 @@ export class NavbarComponent implements OnInit {
     } else {
       this.marginBack = true;
     }
+  }
+
+  scrollToElement(element): void {
+    let el = document.getElementById(element.replace(/ |-|:|&|'|([()])|\//ig, ''))
+    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
   viewChapter(name: string): void {
