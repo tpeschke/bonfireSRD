@@ -1,3 +1,14 @@
+.rangesShell {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.rangevalue {
+  width: 50%;
+}
+
 .equipmentvalue {
   width: 75px;
 }
@@ -19,8 +30,8 @@
 }
 
 .tableValue .armorvalue:nth-child(3) {
-    width: 70px;
-  }
+  width: 70px;
+}
 
 .subtitle {
   color: whitesmoke;
