@@ -21,7 +21,7 @@ export class ChapterSixComponent implements OnInit {
   side = { height: {'height': '4983px'}, side: [{linkid: 'h', body: 'HONOR', jump: '6hPwGysmEcvV'}, {linkid: 'hg', body: 'BONUS CrP', jump: '6hgNCVSVWFXeu'}, {linkid: 'hg', body: 'STARTING HONOR', jump: '6hgbvTTNJDlHZ'}, {linkid: 'hg', body: 'CHANGING HONOR CATEGORY', jump: '6hgeBtcDTzFiL'}, {linkid: 'hg', body: 'HONOR CATEGORIES & BONUSES', jump: '6hgDyUyoZBWAw'}, {linkid: 'hg', body: 'REDEEMING YOUR BONUSES', jump: '6hgmskMjEXzPU'}, {linkid: 'hg', body: 'GAINING & LOSING FAME', jump: '6hgoGqxwxcBtQ'}, {linkid: 'hg', body: 'FAME & HONOR', jump: '6hgkLmpnpLtOJ'}, {linkid: 'h', body: 'FATIGUE', jump: '6hVaMVlhABdG'}, {linkid: 'hg', body: 'CALCULATING FATIGUE', jump: '6hgkSZjeqqlKc'}, {linkid: 'hg', body: 'EFFECTS of FATIGUE', jump: '6hgKLFDcitTVx'}, {linkid: 'hg', body: 'RECOVERING FATIGUE', jump: '6hgOSwjEeMsCm'}, {linkid: 'h', body: 'HEALTH', jump: '6hscFsXKKFIO'}, {linkid: 'hg', body: 'HEALING', jump: '6hgsDsSgINrBx'}, {linkid: 'h', body: 'STRESS', jump: '6heEYhImWZRu'}]   };
 
   ngOnInit() {
-    this.navDisplay = window.document.body.clientWidth > 500 ? true : false
+    this.navDisplay = window.document.body.clientWidth > 650 ? true : false
     this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path);
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {

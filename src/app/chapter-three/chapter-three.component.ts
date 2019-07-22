@@ -21,7 +21,7 @@ export class ChapterThreeComponent implements OnInit {
   side = { height: {'height': '3673px'}, side: [{linkid: 'hg', body: 'A BRIEF OVERVIEW OF THE HISTORY OF THE MIDDLE REALM', jump: '3hg1'}, {linkid: 'h', body: 'ELVES', jump: '3h1'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg15'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg16'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg17'}, {linkid: 'h', body: 'HUMANS', jump: '3h2'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg18'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg19'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg20'}, {linkid: 'h', body: 'ORCS', jump: '3h3'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg21'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg22'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg23'}, {linkid: 'h', body: 'RACIAL PREFERENCES', jump: '3h4'}] };
 
   ngOnInit() {
-    this.navDisplay = window.document.body.clientWidth > 500 ? true : false
+    this.navDisplay = window.document.body.clientWidth > 650 ? true : false
     this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path);
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {

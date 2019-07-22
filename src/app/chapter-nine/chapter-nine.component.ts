@@ -21,7 +21,7 @@ export class ChapterNineComponent implements OnInit {
   side = { height: {'height': '5700px'}, side: [{linkid: 'h', body: 'GOALS', jump: '9hXrEuwuawsw'}, {linkid: 'h', body: 'TRAITS', jump: '9hABmHwzkjiK'}, {linkid: 'h', body: 'PASSIONS', jump: '9hsjmKniFwet'}, {linkid: 'h', body: 'DEVOTIONS', jump: '9hNSnSqzNZCw'}, {linkid: 'h', body: 'WHEN TO USE THESE RULES', jump: '9hMasFAjKGNj'}, {linkid: 'h', body: 'STARTING the CONFLICT', jump: '9houGdbEWDtK'}, {linkid: 'hg', body: 'SITUATIONAL MODIFIERS ', jump: '9hgaknurtyPbT'}, {linkid: 'h', body: 'PLAYING OUT the CONFLICT', jump: '9hxovYMMmdHK'}, {linkid: 'hg', body: 'ESCALATING A CONFLICT', jump: '9hgchWyCteYlT'}, {linkid: 'hg', body: 'ASSISTING IN A CONFLICT', jump: '9hgFaQSwEnthA'}, {linkid: 'hg', body: 'ENDING A CONFLICT', jump: '9hgxxKUCnUPps'}, {linkid: 'h', body: 'REPERCUSSIONS of a CONFLICT', jump: '9hGHmLfzEumM'}, {linkid: 'h', body: 'CONFLICT as a PLOT POINT', jump: '9hbRrbHTADmP'}]  };
 
   ngOnInit() {
-    this.navDisplay = window.document.body.clientWidth > 500 ? true : false
+    this.navDisplay = window.document.body.clientWidth > 650 ? true : false
     this.chapterName = this.chapterService.getName(+this.route.snapshot.url[1].path);
     this.notRedux.toggleShow(true);
     this.route.params.subscribe(p => {
