@@ -1,3 +1,33 @@
+.traitpassionshell {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .sidebarMargin {
     margin-bottom: 15px;
+}
+
+.TraitDicevalue:first-child {
+    width: 30%;
+}
+
+.TraitDicevalue:nth-child(2) {
+    width: 70%;
+}
+
+.TraitDiceTable {
+    width: 250px;
+}
+
+.PassionDiceTable {
+    width: 200px;
+}
+
+.PassionDicevalue:first-child {
+    width: 40%;
+}
+
+.PassionDicevalue:nth-child(2) {
+    width: 60%;
 }
