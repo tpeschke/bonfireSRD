@@ -18,7 +18,7 @@ export class ChapterTwoComponent implements OnInit {
 
   navDisplay = false;
   chapterName = '';
-  side = { height: {'height': '4451px'}, side: [{ linkid: 'hg', body: 'Strength', jump: '2h1' }, { linkid: 'hg', body: 'Dexterity', jump: '2h2' }, { linkid: 'hg', body: 'Constitution', jump: '2h3' }, { linkid: 'hg', body: 'Intellect', jump: '2h4' }, { linkid: 'hg', body: 'Wisdom', jump: '2h5' }, { linkid: 'hg', body: 'Charisma', jump: '2h6' }, { linkid: 'hg', body: 'Ability Checks', jump: '2h7' }]};
+  side = { height: {'height': '4431px'}, side: [{ linkid: 'hnu', body: 'Strength', jump: '2h1' }, { linkid: 'hnu', body: 'Dexterity', jump: '2h2' }, { linkid: 'hnu', body: 'Constitution', jump: '2h3' }, { linkid: 'hnu', body: 'Intellect', jump: '2h4' }, { linkid: 'hnu', body: 'Wisdom', jump: '2h5' }, { linkid: 'hnu', body: 'Charisma', jump: '2h6' }, { linkid: 'hnu', body: 'Ability Checks', jump: '2h7' }]};
 
   ngOnInit() {
     this.navDisplay = window.document.body.clientWidth > 650 ? true : false
