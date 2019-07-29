@@ -482,6 +482,14 @@ align-content: flex-start;
       text-align: center;
   }
 
+  .tableTitle {
+    text-align: left;
+  }
+
+  .pairedShell {
+    width: 100%;
+  }
+
   .triangle {
       margin-left: 0;
   }
