@@ -1,9 +1,9 @@
-<div *ngIf="!mobile" class="navBar" [ngClass]="{'noMargin' : !marginBack }">
+<div class="navBar browser" [ngClass]="{'noMargin' : !marginBack }">
     <div class="navOverlay" [ngClass]="{'fullBackground' : !marginBack }"></div>
 
     <div class="topNav">
-        <a class="selectChapter" routerLink="">Home</a>
-        <a class="selectChapter">Search</a>
+        <a class="selectChapter" (click)="setChapter()" routerLink="">Home</a>
+        <a class="selectChapter" (click)="setChapter()" routerLink="search">Search</a>
     </div>
     <div class="middleNav">
         <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/1" (mouseover)="viewChapter('Character Creation')"
@@ -52,7 +52,7 @@
 
 <!-- MOBILE NAV -->
 
-<div *ngIf="mobile">
+<div class="mobile">
     <div class="mobileShell">
         <div class="hamShell" (click)="openHam()">
             <div class="hamBar"></div>
@@ -60,17 +60,19 @@
             <div class="hamBar"></div>
         </div>
 
-        <div class="navTitleShell">
+        <div class="navTitleShell" routerLink="/" (click)="setChapter()">
             <img src="../../assets/images/white.png" alt="bonfire white title" class="navTitleWords">
             <img src="../../assets/images/bonfire.png" alt="bonefire flame" class="navTitleFire">
             <p class="navSubtitle">Basic SRD</p>
         </div>
 
-        <i class="fa fa-home homeIcon" routerLink="/"></i>
+        <i class="fa fa-search homeIcon" routerLink="/search" (click)="setChapter()"></i>
     </div>
 
     <div *ngIf="ham" class="navSelectShell">
         <h1 class="navX" (click)="openHam()">X</h1>
+        <a [ngClass]="{'active': reset === ''}" routerLink="../"
+            (mouseout)="resetChapter()" (click)="setChapter()">Home</a>
         <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/1"
             (mouseout)="resetChapter()" (click)="setChapter(1)">1 Character Creation</a>
         <a [ngClass]="{'active': reset === 'Ability Scores'}" routerLink="chapter/2"

@@ -1,0 +1,40 @@
+.levelShell {
+    width: 320px;
+    display: flex;
+    float: left;
+    margin-right: 15px;
+}
+
+.tableValue .LevelingHonorvalue:first-child, .tableValue .xpvalue:nth-child(2) {
+    width: 25%;
+}
+
+.tableValue .LevelingHonorvalue:nth-child(2), .tableValue .xpvalue:first-child {
+    width: 75%;
+}
+
+.LevelingHonorTable {
+    width: 200px;
+    float: left;
+    margin-right:15px;
+}
+
+.secondTitle {
+    height: 40px
+}
+
+.sideBorder {
+    border-left: 1px solid #222;
+}
+
+@media (max-width: 650px) {
+    .LevelingHonorTable {
+        float: none;
+        margin: 15px auto;
+    }
+
+    .levelShell {
+        float: none;
+        margin: 0 auto;
+    }
+}

@@ -1,16 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChapterEightComponent } from './main/chapter-eight.component';
-import { DisplayModule } from '../display/display.module';
+
+import { ChapterEightComponent } from './chapter-eight.component';
+import { QuickNavModule } from '../quick-nav/quick-nav.module';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ChapterEightComponent
+  }
+];
 
 @NgModule({
-  declarations: [ChapterEightComponent],
+  declarations: [
+    ChapterEightComponent
+  ],
   imports: [
     CommonModule,
-    DisplayModule
-  ],
-  exports: [
-    ChapterEightComponent
+    RouterModule.forChild(routes),
+    QuickNavModule
   ]
 })
 export class ChapterEightModule { }

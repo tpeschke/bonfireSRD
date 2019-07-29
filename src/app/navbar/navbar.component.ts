@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
 import { ChapterService } from '../chapter.service';
-import { Router, NavigationEnd } from '@angular/router'
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router'
 import local from '../local'
 
 @Component({
@@ -15,7 +15,8 @@ export class NavbarComponent implements OnInit {
   constructor(
     private notRedux: NotReduxService,
     private router: Router,
-    private chapterService: ChapterService
+    private chapterService: ChapterService,
+    private route: ActivatedRoute
   ) { }
 
   public chapter = '';
@@ -25,7 +26,6 @@ export class NavbarComponent implements OnInit {
   public nextRoute = 1;
   public reset = '';
   public marginBack = true;
-  public mobile = false;
   public ham = false;
   public height = 0
   public login = ''
@@ -33,8 +33,14 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
-        if (p.url.substring(9) !== '0') {
-          this.setChapter(+p.url.substring(9))
+        if (p.url !== '/search' && p.url !== '/') {
+          let route = +p.url.split('/')[2].split('?')[0]
+          if (route !== 0) {
+            this.setChapter(route)
+            if (p.url.split('=')[1]) {
+              this.scrollToElement(p.url.split('=')[1])
+            }
+          } 
         } else {
           this.chapter = '';
           this.pervious = '';
@@ -46,7 +52,6 @@ export class NavbarComponent implements OnInit {
       }
     })
     this.login = `https://www.patreon.com/oauth2/authorize?response_type=code&redirect_uri=${local.redirect}&client_id=${local.id}`
-    this.mobile = window.innerWidth <= 500 ? true : false
   }
 
   @HostListener('document:scroll', ['$event'])
@@ -57,6 +62,11 @@ export class NavbarComponent implements OnInit {
     } else {
       this.marginBack = true;
     }
+  }
+
+  scrollToElement(element): void {
+    let el = document.getElementById(element.replace(/ |-|:|&|'|([()])|\//ig, ''))
+    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 
   viewChapter(name: string): void {

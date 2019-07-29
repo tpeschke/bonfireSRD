@@ -107,9 +107,6 @@ app.get('/linkPatreon', handleOAuthRedirectRequest)
 
 app.post('/search', ctrl.search);
 
-app.patch('/auth', ctrl.forceRun);
-app.patch('/saveChapter', chapter.saveChapter);
-
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))
 })
@@ -119,6 +116,7 @@ massive(connection).then(dbI => {
     app.set('db', dbI)
     app.listen(server, _ => {
         console.log(`The night lays like a lullaby on the earth ${server}`)
-        chapter.storeChapters(app.get('db'), 1)
+        chapter.chapterCount = 1;
+        chapter.storeChapters(app.get('db'), chapter.chapterCount)
     })
 })

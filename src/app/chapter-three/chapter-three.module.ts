@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChapterThreeComponent } from './chapter-three/chapter-three.component';
-import { DisplayModule } from '../display/display.module' 
+
+import { ChapterThreeComponent } from './chapter-three.component';
+import { QuickNavModule } from '../quick-nav/quick-nav.module';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ChapterThreeComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -9,10 +18,8 @@ import { DisplayModule } from '../display/display.module'
   ],
   imports: [
     CommonModule,
-    DisplayModule
-  ],
-  exports: [
-    ChapterThreeComponent
+    RouterModule.forChild(routes),
+    QuickNavModule
   ]
 })
 export class ChapterThreeModule { }

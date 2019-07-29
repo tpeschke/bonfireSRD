@@ -1,0 +1,41 @@
+.miscImage {
+    float: left;
+    margin-right: 15px;
+}
+
+.imageMargin {
+    margin-top: 110px;
+}
+
+.tableValue .FallingDamagevalue {
+    width: 50%;
+}
+
+.FallingDamageTable {
+    width: 175px;
+    float: left;
+    margin-right: 15px;
+}
+
+.FallingModifiersTable {
+    width: 300px;
+}
+
+.fallingMargin {
+    margin-top: 205px;
+}
+
+@media (max-width: 650px) {
+    .imageMargin {
+        margin-top: 0;
+    }
+
+    .fallingMargin {
+        margin-top: 0;
+    }
+
+    .FallingDamageTable, .FallingModifiersTable, .miscImage {
+        float: none;
+        margin: 5px auto;
+    }
+}

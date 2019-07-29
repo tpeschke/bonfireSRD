@@ -1,0 +1,16 @@
+.MovementTable {
+  width: 200px;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.Movementvalue {
+  width: 100px;
+}
+
+@media (max-width: 450px) {
+    .MovementTable {
+        float: none;
+        margin: 0 auto;
+      }
+}
