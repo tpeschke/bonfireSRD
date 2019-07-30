@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChapterService } from '../chapter.service'
+import { ChapterService } from '../chapter.service';
+import { ActivatedRoute } from '@angular/router';
 import local from '../local'
 
 @Component({
@@ -10,7 +11,8 @@ import local from '../local'
 export class LogonComponent implements OnInit {
 
   constructor(
-    private chapterService: ChapterService
+    private chapterService: ChapterService,
+    private route: ActivatedRoute
   ) { }
 
   public loggedIn = false
@@ -27,6 +29,14 @@ export class LogonComponent implements OnInit {
             .subscribe(pResult => {
               this.patreon = pResult
             })
+          this.route.queryParams.subscribe(params => {
+            if (params.code) {
+              this.chapterService.updatePatreon(params.code)
+                .subscribe(tier => {
+                  console.log(tier)
+                })
+            }
+          })
         }
       })
   }

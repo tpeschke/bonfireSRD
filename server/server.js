@@ -3,14 +3,13 @@ const express = require('express')
     , cors = require('cors')
     , massive = require('massive')
     , CronJob = require('cron').CronJob
-    , { server, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect, patreonSecret, patreonId, patreonRefresh, patreonAuth, patreonAccess } = require('./serv-config')
+    , { server, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect } = require('./serv-config')
     , ctrl = require('./controller')
     , chapter = require('./chapter')
     , path = require('path')
     , session = require('express-session')
     , passport = require('passport')
     , Auth0Strategy = require('passport-auth0')
-    , axios = require('axios')
 
 const app = new express()
 app.use(bodyParser.json())
@@ -24,10 +23,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-new CronJob('0 0 0 * * *', _ => {
-    const a = app.get('db')
-    chapter.storeChapters(a)
-}, null, true, 'America/Los_Angeles');
+// new CronJob('0 0 0 * * *', _ => {
+//     const a = app.get('db')
+//     chapter.storeChapters(a)
+// }, null, true, 'America/Los_Angeles');
 
 passport.use(new Auth0Strategy({
     domain: logDomain,
@@ -73,11 +72,9 @@ app.get('/auth/callback', passport.authenticate('auth0', {
 }));
 
 passport.serializeUser((id, done) => {
-    console.log('serialize', id)
     done(null, id)
 })
 passport.deserializeUser((id, done) => {
-    console.log('deserialize', id)
     app.get('db').get.findUserSession([id]).then((user) => {
         return done(null, user[0]);
     })
@@ -88,24 +85,15 @@ app.get('/auth/logout', function (req, res) {
     res.redirect(`/`)
 })
 
-// ================================== \\
-function handleOAuthRedirectRequest (req, res) {
-    let {code} = req.query
-    axios.post(`https://www.patreon.com/api/oauth2/token?code=${code}&grant_type=code&client_id=${patreonId}&client_secret=${patreonSecret}&redirect_uri=${redirect}`, {}, {headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
-        .then(result => console.log(result))
-            .catch(e=>console.log(e))
-}
-
 
 // ================================== \\
 
 app.get('/nc/:id', chapter.get)
-app.get('/c/:id', ctrl.c);
 app.get('/checkLogin', (req, res) => req.user ? res.send(true) : res.send(false))
-app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(true) : res.send(false))
-app.get('/linkPatreon', handleOAuthRedirectRequest)
+app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(req.user.patreon) : res.send(false))
 
 app.post('/search', ctrl.search);
+app.post('/linkPatreon', ctrl.handleOAuthRedirectRequest)
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))
@@ -116,7 +104,5 @@ massive(connection).then(dbI => {
     app.set('db', dbI)
     app.listen(server, _ => {
         console.log(`The night lays like a lullaby on the earth ${server}`)
-        chapter.chapterCount = 1;
-        chapter.storeChapters(app.get('db'), chapter.chapterCount)
     })
 })

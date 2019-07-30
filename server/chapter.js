@@ -31,7 +31,6 @@ chapterObject = {
     chapterFifteen: [],
     chapterFifteenSide: [],
     storeChapters: (db, num) => {
-        console.log(num)
         switch (num) {
             case 1:
                 chapterObject.chapterOne = []

@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
 import { ChapterService } from '../chapter.service';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router'
+import { Router, NavigationEnd } from '@angular/router'
 import local from '../local'
 
 @Component({
@@ -15,8 +15,6 @@ export class NavbarComponent implements OnInit {
   constructor(
     private notRedux: NotReduxService,
     private router: Router,
-    private chapterService: ChapterService,
-    private route: ActivatedRoute
   ) { }
 
   public chapter = '';

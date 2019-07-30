@@ -77,6 +77,15 @@ export class ChapterService {
       )
   }
 
+  updatePatreon(code):any {
+    return this.http.post(local.endpointBase + '/linkPatreon', {code})
+      .pipe(
+        tap(_=> console.log(),
+        catchError(this.handleError('patreon update', []))
+        )
+      )
+  }
+
   getName(id: number): string {
     switch (id) {
       case 1:

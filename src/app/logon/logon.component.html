@@ -1,6 +1,6 @@
 <div *ngIf="loggedIn">
   <a *ngIf="!patreon" href={{patreonEndpoint}}>
-    <button>Link to Patreon</button>
+    <div>Link to Patreon</div>
   </a>
 
   <div *ngIf="patreon">
@@ -10,7 +10,7 @@
 
 <div *ngIf="!loggedIn" class="loginShell">
   <a href={{loginEndpoint}}>
-    <div class="logindiv">Log In</button>
+    <div class="logindiv">Log In</div>
   </a>
 
   <div>
