@@ -56,15 +56,16 @@ passport.use(new Auth0Strategy({
 //TESTING TOPLEVEL MIDDLEWARE////
 ///COMMENT OUT WHEN AUTH0 READY///
 /////////////////////////////////
-app.use((req, res, next) => {
-    if (!req.user) {
-        req.user = {
-            id: 1,
-            email: "mr.peschke@gmail.com"
-        }
-    }
-    next();
-})
+// app.use((req, res, next) => {
+//     if (!req.user) {
+//         req.user = {
+//             id: 1,
+//             email: "mr.peschke@gmail.com",
+//             // patreon: 1
+//         }
+//     }
+//     next();
+// })
 
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
@@ -90,7 +91,7 @@ app.get('/auth/logout', function (req, res) {
 
 app.get('/nc/:id', chapter.get)
 app.get('/checkLogin', (req, res) => req.user ? res.send(true) : res.send(false))
-app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(req.user.patreon) : res.send(false))
+app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(`${req.user.patreon}`) : res.send(false))
 
 app.post('/search', ctrl.search);
 app.post('/linkPatreon', ctrl.handleOAuthRedirectRequest)

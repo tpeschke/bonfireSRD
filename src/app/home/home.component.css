@@ -1,154 +1,206 @@
-@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+@import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
+
+.discordBanner {
+  width: 950px;
+  height: 150px;
+  margin: 132px 0 15px;
+  background: black;
+  background-image: url("../../assets/images/discordbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.discordLink {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 0;
+}
+
+.discordBanner div {
+  width: 270px;
+  height: 50px;
+  text-align: right;
+  background: rgba(34, 34, 34, 0.5);
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+.discordBanner div h2:first-child {
+  top: 7px;
+}
+
+.discordBanner div h2:nth-child(2) {
+  bottom: 2px;
+  right: 10px;
+}
 
 .homeOuterShell {
-    display: flex;
-    justify-content: space-around;
-    width: 950px;
-    margin: 137px 0 25px;
+  display: flex;
+  justify-content: space-around;
+  width: 950px;
+  margin-bottom: 15px;
 }
 
 .homeList a {
-    text-decoration: none;
-    color: #222;
-    font-family: 'Vollkorn SC', serif;
-    margin-bottom: 5px;
-    font-weight: normal;
-    text-align: left;
-    font-size: 17px;
+  text-decoration: none;
+  color: #222;
+  font-family: "Vollkorn SC", serif;
+  margin-bottom: 5px;
+  font-weight: normal;
+  text-align: left;
+  font-size: 17px;
 }
 
 .homeList a:hover {
-    color: #b45f06
+  color: #b45f06;
 }
 
-.homeInnerRight h1 { 
-    font-family: 'Vollkorn SC', serif;
-    border-bottom: 2px solid #222;
-    margin-bottom: 10px;
+.homeInnerRight h1 {
+  font-family: "Vollkorn SC", serif;
+  border-bottom: 2px solid #222;
+  margin-bottom: 10px;
 }
 
-p { 
-    font-family: 'Vollkorn SC', serif;
-    color: #222;
+p {
+  font-family: "Vollkorn SC", serif;
+  color: #222;
+  text-indent: 0;
 }
 
 .homeInnerLeft {
-    width: 475px;
-    display: flex;
-    flex-direction: column;
+  width: 475px;
+  display: flex;
+  flex-direction: column;
 }
 
 .homeInnerRight {
-    margin-left: 15px;
-    background: white;
-    height: 100%;
-    width: 475px;
-    padding: 35px;
+  margin-left: 15px;
+  background: white;
+  height: 100%;
+  width: 475px;
+  padding: 35px;
 }
 
 .homeInnerSearch {
-    background: white;
-    width: 475px;
-    height: 440px;
-    padding: 35px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: white;
+  width: 475px;
+  height: 441px;
+  padding: 35px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .homeInnerSearch a {
-    margin-top: 15px;
-    font-weight: 700;
+  margin-top: 15px;
+  font-weight: 700;
 }
 
 .homeLeftShell {
-    background: white;
-    height: 195px;
-    width: 475px;
+  background: white;
+  height: 195px;
+  width: 475px;
 }
 
 .homeTitleShell {
-    position: relative;
-    margin: 35px 45px;
+  position: relative;
+  margin: 35px 45px;
 }
 
 .homeTitle {
-    position: absolute;
-    height: 125px;
+  position: absolute;
+  height: 125px;
 }
 
 .homeSubtitle {
-    position: absolute;
-    top: 110px;
-    left: 45px;
+  position: absolute;
+  top: 110px;
+  left: 45px;
 }
 
 .homeImage {
-    height: 150px;
-    position: absolute;
-    right: 90px;
-    top: -20px;
+  height: 150px;
+  position: absolute;
+  right: 90px;
+  top: -20px;
 }
 
 .homeList {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .homeSettingsTray {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.homeSettingsTray p:hover{
-    color: #b45f06
+.homeSettingsTray p:hover {
+  color: #b45f06;
 }
 
 .homeButtonImage {
-    height: 30px;
-    margin-right: 15px;
+  height: 30px;
+  margin-right: 15px;
 }
 
 .homeItemSub {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 @media (max-width: 770px) {
+  .homeLeftShell {
+    display: none;
+  }
 
-    .homeLeftShell {
-        display: none
-    }
+  .homeInnerLeft {
+    width: 100%;
+  }
 
-    .homeInnerLeft {
-        width: 100%;
-    }
+  .homeInnerRight {
+    margin: 0;
+    width: 100%;
+  }
 
-    .homeInnerRight {
-        margin: 0;
-        width: 100%;
-    }
+  .homeOuterShell {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 
-    .homeOuterShell {
-        width: 100%;
-        flex-direction: column-reverse;
-    }
+  .homeInnerSearch {
+    width: 100%;
+  }
 
-    .homeInnerSearch {
-        width: 100%;
-    }
+  .discordBanner div {
+    position: inherit;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    background: rgba(34, 34, 34, 0.9);
+  }
 
-    h1 {
-        font-size: 25px
-    }
+  h1 {
+    font-size: 25px;
+  }
 
-    a {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+  a {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 
-    .homeOuterShell {
-        margin: 90px 0 25px;
-    }
+  .discordBanner {
+    margin: 90px 0 10px;
+    margin-left: 50%;
+  }
 }

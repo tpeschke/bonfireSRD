@@ -1,0 +1,1 @@
+update usersauth set patreon = $1 where id = $2

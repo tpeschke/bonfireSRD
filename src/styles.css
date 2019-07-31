@@ -6,50 +6,131 @@
 
 @import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-    line-height: 1;
-	background: black;
+  line-height: 1;
+  background: black;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* CHAPTER BACKGROUND ======================================================== */
@@ -58,7 +139,7 @@ button {
   border: none;
   margin-top: 10px;
   padding: 10px;
-  background: rgba(245, 245, 245, 0.90);
+  background: rgba(245, 245, 245, 0.9);
   border-radius: 5px;
   position: fixed;
   bottom: 10px;
@@ -71,7 +152,7 @@ button:hover {
 }
 
 .outerShell {
-  margin: 137px 0 25px;
+  margin: 137px 0 15px;
 }
 
 .innerShell {
@@ -82,7 +163,7 @@ button:hover {
 }
 
 .sideShell {
-  width: 300px
+  width: 300px;
 }
 
 .chapterShell {
@@ -236,7 +317,7 @@ button:hover {
 /* ======================================================= */
 
 @media (max-width: 770px) {
-  .backTexture { 
+  .backTexture {
     background-image: none;
   }
 
@@ -289,6 +370,37 @@ button:hover {
 
   .sidebarShell {
     margin: 15px auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .tableTitle {
+    text-align: left;
+  }
+
+  .pairedShell {
+    width: 100%;
+  }
+
+  .triangle {
+    margin-left: 0;
+  }
+
+  .anchorTag {
+    position: absolute;
+    top: -75px;
+    left: 0;
+  }
+
+  #advancedHead {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .sideShell {
+    width: inherit;
   }
 }
 
@@ -348,9 +460,9 @@ p {
 }
 
 .anchorTag {
-  position: absolute; 
-  top: -110px; 
-  left: 0
+  position: absolute;
+  top: -110px;
+  left: 0;
 }
 
 .underline {
@@ -367,7 +479,7 @@ p {
 }
 
 .marginBottom {
-  margin-bottom: 15px !important; 
+  margin-bottom: 15px !important;
 }
 
 .chartShell {
@@ -389,7 +501,7 @@ p {
 .pairedShell div {
   display: flex;
   justify-content: space-between;
-  width: 50px
+  width: 50px;
 }
 
 .chartShell p {
@@ -404,11 +516,11 @@ p {
 
 .paragraphShell {
   display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: flex-start;
-align-items: flex-start;
-align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .indent {
@@ -434,19 +546,19 @@ align-content: flex-start;
 }
 
 #yes {
-  color: #38761d
+  color: #38761d;
 }
 
 #no {
-  color: #990000
+  color: #990000;
 }
 
 .sidebar {
   text-indent: 10px;
-} 
+}
 
 .sidebarChart {
-  width: 80%
+  width: 80%;
 }
 
 .sidebarbl {
@@ -458,7 +570,7 @@ align-content: flex-start;
 }
 
 .sidebarparagraph {
-  font-size: 14px
+  font-size: 14px;
 }
 
 .sidebarindent {
@@ -467,7 +579,7 @@ align-content: flex-start;
 }
 
 .sidebarSide {
-  background: rgba(245, 245, 245, 0.9)
+  background: rgba(245, 245, 245, 0.9);
 }
 
 .covenant {
@@ -475,39 +587,6 @@ align-content: flex-start;
   font-weight: 700;
   font-size: 13pt;
   font-family: "Vollkorn SC";
-}
-
-@media (max-width: 770px) {
-  h1 {
-      text-align: center;
-  }
-
-  .tableTitle {
-    text-align: left;
-  }
-
-  .pairedShell {
-    width: 100%;
-  }
-
-  .triangle {
-      margin-left: 0;
-  }
-
-  .anchorTag {
-      position: absolute; 
-      top: -75px; 
-      left: 0
-  }
-
-  #advancedHead {
-      text-align: center;
-      margin-left: 0;
-  }
-
-  .sideShell {
-    width: inherit;
-  }
 }
 
 a {
@@ -551,9 +630,9 @@ p {
 }
 
 .anchorTag {
-  position: absolute; 
-  top: -110px; 
-  left: 0
+  position: absolute;
+  top: -110px;
+  left: 0;
 }
 
 /* TABLE STYLINGS ========================================================= */
@@ -605,11 +684,11 @@ p {
   font-size: 12px;
 }
 
-.tableRow .tableValue:nth-child(odd){
+.tableRow .tableValue:nth-child(odd) {
   background: lightgrey;
 }
 
-.tableRow .tableValue:nth-child(even){
+.tableRow .tableValue:nth-child(even) {
   background: whitesmoke;
 }
 
@@ -644,7 +723,7 @@ h2 {
   padding: 7px 0;
 }
 
-.headerRow:nth-child(odd){
+.headerRow:nth-child(odd) {
   background: lightgrey;
 }
 

@@ -28,6 +28,7 @@ h4, h2 {
     font-family: "Vollkorn SC", serif;
     margin: 10px auto;
     font-size: 13pt;
+    position: inherit;
 }
 
 p {
