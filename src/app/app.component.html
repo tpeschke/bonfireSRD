@@ -1,9 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="shellOuter">
     <div class="navHolder">
         <app-navbar></app-navbar>
     </div>
     <router-outlet></router-outlet>
+    <div class="footHolder">
+        <a routerLink="privacypolicy">Legal</a>
+        <a href="https://dragon-slayer.net/">Dragon Slayer RPGs</a>
+        <a href="https://discord.gg/G8GVTME">Discord</a>
+    </div>
 </div>
 
 <div *ngIf="notRedux.background">

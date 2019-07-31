@@ -8,15 +8,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { LogonComponent } from './logon/logon.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
 import { QuickNavModule } from './quick-nav/quick-nav.module';
-
-import { ChapterOneComponent } from './chapter-one/chapter-one.component';
-import { ChapterSixComponent } from './chapter-six/chapter-six.component';
-import { ChapterNineComponent } from './chapter-nine/chapter-nine.component';
-import { ChapterFourteenComponent } from './chapter-fourteen/chapter-fourteen.component';
-import { ChapterFifteenComponent } from './chapter-fifteen/chapter-fifteen.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +20,10 @@ import { ChapterFifteenComponent } from './chapter-fifteen/chapter-fifteen.compo
     NavbarComponent,
     HomeComponent,
     SearchComponent,
-    FormatSearchPipe,
-    ChapterOneComponent,
-    ChapterSixComponent,
-    ChapterNineComponent,
-    ChapterFourteenComponent,
-    ChapterFifteenComponent
+    PrivacyPolicyComponent,
+    LogonComponent,
+    SearchComponent,
+    FormatSearchPipe
   ],
   imports: [
     AppRoutingModule,

@@ -50,12 +50,38 @@ export class ChapterService {
       )
   }
 
-
   getSearch(search: string): Observable<Search[]> {
     return this.http.post<Search[]>(local.endpointBase + '/search', {search})
       .pipe(
         tap(_=> console.log(),
         catchError(this.handleError('search', []))
+        )
+      )
+  }
+
+  checkLogin():any {
+    return this.http.get(local.endpointBase + '/checkLogin')
+      .pipe(
+        tap(_=> console.log(),
+        catchError(this.handleError('logon', []))
+        )
+      )
+  }
+
+  checkPatreon():any {
+    return this.http.get(local.endpointBase + '/checkPatreon')
+      .pipe(
+        tap(_=> console.log(),
+        catchError(this.handleError('patreon', []))
+        )
+      )
+  }
+
+  updatePatreon(code):any {
+    return this.http.post(local.endpointBase + '/linkPatreon', {code})
+      .pipe(
+        tap(_=> console.log(),
+        catchError(this.handleError('patreon update', []))
         )
       )
   }

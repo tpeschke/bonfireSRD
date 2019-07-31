@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NotReduxService } from './not-redux.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import { NotReduxService } from './not-redux.service';
 })
 export class AppComponent {
   constructor(
-    private notRedux: NotReduxService
+    private notRedux: NotReduxService,
+    private router: Router
   ){}
   
 }

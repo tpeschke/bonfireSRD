@@ -1,0 +1,21 @@
+<div *ngIf="loggedIn" class="loginShell">
+  <a *ngIf="!patreon" href={{patreonEndpoint}}>
+    <div class="logindiv">Link to Patreon</div>
+  </a>
+
+  <div *ngIf="patreon">
+    <h1>Bookmarking</h1>
+  </div>
+</div>
+
+<div *ngIf="!loggedIn" class="loginShell">
+  <a href={{loginEndpoint}}>
+    <div class="logindiv">Log In</div>
+  </a>
+
+  <div>
+    <p>Bonfire uses a third party login to varify your identity.</p>
+    <p>Once logged in, you can link your account to <a>Bonfire's Patreon</a> to gain additional bonuses</p>
+    <a routerLink="/privacypolicy">Privacy Policy</a>
+  </div>
+</div>

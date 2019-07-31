@@ -2,12 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { ChapterOneComponent } from './chapter-one/chapter-one.component';
-import { ChapterSixComponent } from './chapter-six/chapter-six.component'
-import { ChapterNineComponent } from './chapter-nine/chapter-nine.component'
-import { ChapterTenComponent } from './chapter-ten/chapter-ten.component'
-import { ChapterFourteenComponent } from './chapter-fourteen/chapter-fourteen.component'
-import { ChapterFifteenComponent } from './chapter-fifteen/chapter-fifteen.component'
 
 import { ChapterFourModule } from './chapter-four/chapter-four.module'
 import { ChapterTwelveModule } from './chapter-twelve/chapter-twelve.module'
@@ -19,10 +13,16 @@ import { ChapterSevenModule } from './chapter-seven/chapter-seven.module'
 import { ChapterThreeModule } from './chapter-three/chapter-three.module'
 import { ChapterTwoModule } from './chapter-two/chapter-two.module'
 import { ChapterTenModule } from './chapter-ten/chapter-ten.module'
+import { ChapterOneModule } from './chapter-one/chapter-one.module'
+import { ChapterSixModule } from './chapter-six/chapter-six.module'
+import { ChapterNineModule } from './chapter-nine/chapter-nine.module'
+import { ChapterFourteenModule } from './chapter-fourteen/chapter-fourteen.module'
+import { ChapterFifteenModule } from './chapter-fifteen/chapter-fifteen.module'
 
 import { SelectivePreloadingStrategyService } from './selective-preloading.service'
 
 import { SearchComponent } from './search/search.component'
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component'
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -38,12 +38,13 @@ const routes: Routes = [
   {path: 'chapter/3', loadChildren: () => ChapterThreeModule, data: { preload: true } },
   {path: 'chapter/2', loadChildren: () => ChapterTwoModule, data: { preload: true } },
   {path: 'chapter/10', loadChildren: () => ChapterTenModule, data: { preload: true } },
-  {path: 'chapter/1', component: ChapterOneComponent},
-  {path: 'chapter/6', component: ChapterSixComponent},
-  {path: 'chapter/9', component: ChapterNineComponent},
-  {path: 'chapter/14', component: ChapterFourteenComponent},
-  {path: 'chapter/15', component: ChapterFifteenComponent},
+  {path: 'chapter/1', loadChildren: () => ChapterOneModule, data: { preload: true } },
+  {path: 'chapter/6', loadChildren: () => ChapterSixModule, data: { preload: true } },
+  {path: 'chapter/9', loadChildren: () => ChapterNineModule, data: { preload: true } },
+  {path: 'chapter/14', loadChildren: () => ChapterFourteenModule, data: { preload: true } },
+  {path: 'chapter/15', loadChildren: () => ChapterFifteenModule, data: { preload: true } },
   {path: 'search', component: SearchComponent},
+  {path: 'privacypolicy', component: PrivacyPolicyComponent},
 ]
 
 @NgModule({
