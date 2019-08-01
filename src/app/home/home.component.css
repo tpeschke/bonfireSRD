@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
 
+.discordOverflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+
 .discordBanner {
   width: 950px;
   height: 150px;
@@ -36,6 +42,7 @@
 
 .discordBanner div h2:first-child {
   top: 7px;
+  right: 10px;
 }
 
 .discordBanner div h2:nth-child(2) {
@@ -93,7 +100,7 @@ p {
 .homeInnerSearch {
   background: white;
   width: 475px;
-  height: 441px;
+  height: 403px;
   padding: 35px;
   margin-top: 15px;
   display: flex;
@@ -131,7 +138,7 @@ p {
 .homeImage {
   height: 150px;
   position: absolute;
-  right: 90px;
+  right: 92px;
   top: -20px;
 }
 
