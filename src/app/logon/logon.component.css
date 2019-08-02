@@ -1,49 +1,63 @@
 p {
-    text-indent: 0;
+  text-indent: 0;
 }
 
 .logindiv {
-    border: none;
-    padding: 10px;
-    width: 200px;
-    color: whitesmoke;
-    background: #b45f06;
-    border-radius: 25px;
-    font-family: "Vollkorn SC";
-    transition: .6s;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  color: whitesmoke;
+  background: #b45f06;
+  border-radius: 25px;
+  font-family: "Vollkorn SC";
+  transition: 0.6s;
 }
 
 .logindiv:hover {
-    background: #222;
+  background: #222;
 }
 
 .logindiv:focus {
-    outline:0;
+  outline: 0;
 }
 
 a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #222;
-    transition: .6s;
+  text-decoration: none;
+  font-weight: 700;
+  color: #222;
+  transition: 0.6s;
 }
 
 a:hover {
-    color:#b45f06
+  color: #b45f06;
 }
 
 .loginShell {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 125%;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 125%;
+  margin-top: 20px;
 }
 
 .loginShell div {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.patreonButton {
+  background-image: url("../../assets/images/patreon.png");
+  height: 50px;
+  width: 215px;
+  border-radius: 25px;
+  margin: 20px auto 0;
+}
+
+.patreonLink {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
