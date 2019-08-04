@@ -211,3 +211,10 @@ p {
     margin-left: 50%;
   }
 }
+
+
+@media (max-width: 300px) {
+  .homeInnerSearch {
+    height: 445px;
+  }
+}
