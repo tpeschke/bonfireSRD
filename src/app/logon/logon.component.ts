@@ -16,7 +16,7 @@ export class LogonComponent implements OnInit {
   ) { }
 
   public loggedIn = false
-  public patreon = false
+  public patreon: boolean | string = false;
   public loginEndpoint = local.login
   public patreonEndpoint = local.patreon
 
@@ -28,15 +28,18 @@ export class LogonComponent implements OnInit {
           this.chapterService.checkPatreon()
             .subscribe(pResult => {
               this.patreon = pResult
-            })
-          this.route.queryParams.subscribe(params => {
-            if (params.code) {
-              this.chapterService.updatePatreon(params.code)
-                .subscribe(tier => {
-                  console.log(tier)
+              if (!pResult) {
+                this.route.queryParams.subscribe(params => {
+                  if (params.code) {
+                    this.patreon = 'loading';
+                    this.chapterService.updatePatreon(params.code)
+                      .subscribe(tier => {
+                        this.patreon = tier
+                      })
+                  }
                 })
-            }
-          })
+              }
+            })
         }
       })
   }

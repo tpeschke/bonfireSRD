@@ -22,7 +22,7 @@ module.exports = {
                         db.update.patreon(account.data.included[0].attributes.amount_cents / 100, req.user.id)
                         req.user.patreon = account.data.included[0].attributes.amount_cents / 100
                         res.send(`${req.user.patreon}`)
-                    }).catch(e => console.log(e.response.data.errors))
-            }).catch(e => console.log(e))
+                    })
+            })
     }
 }

@@ -4,7 +4,12 @@
   </a>
 
   <div *ngIf="patreon">
-    <h1>Bookmarking</h1>
+    <div *ngIf="patreon === 'loading'">
+        <div class="triangle"></div>
+    </div>
+    <div *ngIf="patreon !== 'loading'">
+      <h1>Bookmarking</h1>
+    </div>
   </div>
 </div>
 

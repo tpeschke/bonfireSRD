@@ -2,10 +2,8 @@ const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
     , massive = require('massive')
-    , CronJob = require('cron').CronJob
     , { server, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect } = require('./serv-config')
     , ctrl = require('./controller')
-    , chapter = require('./chapter')
     , path = require('path')
     , session = require('express-session')
     , passport = require('passport')
@@ -22,11 +20,6 @@ app.use(session({
 }))
 app.use(passport.initialize());
 app.use(passport.session());
-
-// new CronJob('0 0 0 * * *', _ => {
-//     const a = app.get('db')
-//     chapter.storeChapters(a)
-// }, null, true, 'America/Los_Angeles');
 
 passport.use(new Auth0Strategy({
     domain: logDomain,
@@ -56,16 +49,16 @@ passport.use(new Auth0Strategy({
 //TESTING TOPLEVEL MIDDLEWARE////
 ///COMMENT OUT WHEN AUTH0 READY///
 /////////////////////////////////
-// app.use((req, res, next) => {
-//     if (!req.user) {
-//         req.user = {
-//             id: 1,
-//             email: "mr.peschke@gmail.com",
-//             // patreon: 1
-//         }
-//     }
-//     next();
-// })
+app.use((req, res, next) => {
+    if (!req.user) {
+        req.user = {
+            id: 1,
+            email: "mr.peschke@gmail.com",
+            // patreon: 1
+        }
+    }
+    next();
+})
 
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
@@ -89,7 +82,6 @@ app.get('/auth/logout', function (req, res) {
 
 // ================================== \\
 
-app.get('/nc/:id', chapter.get)
 app.get('/checkLogin', (req, res) => req.user ? res.send(true) : res.send(false))
 app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(`${req.user.patreon}`) : res.send(false))
 
