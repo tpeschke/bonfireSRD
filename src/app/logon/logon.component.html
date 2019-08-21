@@ -5,17 +5,18 @@
 
   <div *ngIf="patreon">
     <div *ngIf="patreon === 'loading'">
-        <div class="triangle"></div>
+      <div class="triangle"></div>
     </div>
     <div *ngIf="patreon !== 'loading'">
-      <ng-container loadModule="BmQuickNav"></ng-container>
+      <app-bm-quick-nav></app-bm-quick-nav>
     </div>
   </div>
 </div>
 
 <div *ngIf="!loggedIn" class="loginShell">
   <div>
-    <p>If you like us and have even an extra dollar per month that you can spare, please consider becoming a Patreon.</p>
+    <p>If you like us and have even an extra dollar per month that you can spare, please consider becoming a Patreon.
+    </p>
     <div class="patreonButton">
       <a href="https://www.patreon.com/bePatron?u=21326823" class="patreonLink"></a>
     </div>

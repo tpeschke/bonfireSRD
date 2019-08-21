@@ -2,12 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
-import local from './local.js';
-
-class Chapter {
-  chapter: string
-  images: string
-}
+import local from './local';
 
 class Search {
   chapname: string
@@ -30,24 +25,6 @@ export class ChapterService {
       console.log(`${operation} failed: ${error}`)
       return of(result as T)
     }
-  }
-
-  getChapter(id): Observable<Chapter[]> {
-    return this.http.get<Chapter[]>(local.endpointBase + '/c/' + id)
-      .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('getChapter', []))
-        )
-      )
-  }
-
-  getChapterArray(id): Observable<any> {
-    return this.http.get<Chapter[]>(local.endpointBase + '/nc/' + id)
-      .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('getChapter', []))
-        )
-      )
   }
 
   getSearch(search: string): Observable<Search[]> {
@@ -82,6 +59,15 @@ export class ChapterService {
       .pipe(
         tap(_=> console.log(),
         catchError(this.handleError('patreon update', []))
+        )
+      )
+  }
+
+  getBookmarks(): Observable<any> {
+    return this.http.get<any[]>(local.endpointBase + '/bm')
+      .pipe(
+        tap(_ => console.log(),
+          catchError(this.handleError('getBookmarks', []))
         )
       )
   }

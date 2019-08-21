@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChapterService } from '../chapter.service';
 import { ActivatedRoute } from '@angular/router';
-import local from '../local'
+import local from '../local.js'
 
 @Component({
   selector: 'app-logon',

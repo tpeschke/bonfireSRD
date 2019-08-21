@@ -1,0 +1,96 @@
+h1 { 
+  border-bottom: 2px solid #222;
+  text-align: left;
+}
+
+i {
+  font-size: 15px;
+}
+
+i:hover {
+  color: whitesmoke;
+}
+
+.bookmarkingShell {
+  width: 400px;
+  height: 332px;
+}
+
+.bookmarksShell {
+  height: 304px;
+  overflow: auto;
+}
+
+.loadingArray {
+  height: 286px;
+  display: flex;
+  align-items: center;
+}
+
+.bookmarkShelfHeading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25px;
+  background: grey;
+}
+
+.bookmarkShelfHeading div {
+  min-width: 15px
+}
+
+.bookmarkShelfHeading h3:first-child {
+  min-width: 39px;
+  color: whitesmoke;
+}
+
+.bookmarkShelfHeading h3:nth-child(2) {
+  min-width: 306px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.bookmarkShelf {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25px
+}
+
+.bookmarkShelf h3:first-child {
+  min-width: 39px;
+}
+
+.bookmarkShelf h3:nth-child(2) {
+  min-width: 306px;
+  text-align: left;
+}
+
+.bookmarkShelf:nth-child(odd) {
+  background: lightgray
+}
+
+.bookmarkShelf:hover {
+  background: #b45f06;
+}
+
+.bookmarkShelf:hover h3 {
+  color: whitesmoke;
+}
+
+@keyframes fade {
+  100% {
+    border-color: transparent transparent #b45f0600 transparent;
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 0 50px 86.6px 50px;
+  border-color: transparent transparent #b45f06 transparent;
+  animation: fade 1.5s ease-out infinite;
+  animation-direction: alternate;
+}

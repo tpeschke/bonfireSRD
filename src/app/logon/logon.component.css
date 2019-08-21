@@ -37,8 +37,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 125%;
-  margin-top: 20px;
+  width: 100%;
 }
 
 .loginShell div {

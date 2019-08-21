@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, SystemJsNgModuleLoader, NgModuleFactoryLoader } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -12,7 +12,7 @@ import { LogonComponent } from './logon/logon.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
 import { QuickNavModule } from './quick-nav/quick-nav.module';
-import { BookmarkingModule } from './bookmarking/bookmarking.module';
+import { BookmarkingModule } from './bookmarking/Bookmarking.module';
 
 @NgModule({
   declarations: [

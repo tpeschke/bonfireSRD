@@ -24,5 +24,14 @@ module.exports = {
                         res.send(`${req.user.patreon}`)
                     })
             })
+    },
+    getBookmarks: (req, res) => {
+        const db = req.app.get('db')
+        db.get.findBookmarks(req.user.id).then(result => {
+            let newResult = result.map(val => {
+                return { chapter: val.bookmarkcode.split('.')[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
+            })
+            res.send(newResult)
+        })
     }
 }

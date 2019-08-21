@@ -13,6 +13,15 @@ insert into srdchapters (chapname, chapnum) values
 ('Social', 9), ('Combat', 10), ('Equipment', 11), ('Magic', 12), ('Divine', 13), 
 ('Character Progresssion', 14), ('Misc Rules', 15);
 
+create table SRDbookmarks (
+    id serial primary key,
+    userId int,
+    bookmarkcode varchar(50)
+);
+
+insert into srdbookmarks (userId, bookmarkcode) values
+(1, '15.p.iXLscZEzyh'), (1, '15.p.gpbHtarvZa'), (1, '6.h.geBtcDTzFiL');
+
 create table SRDbasic (
     id serial primary key,
     linkid text,
