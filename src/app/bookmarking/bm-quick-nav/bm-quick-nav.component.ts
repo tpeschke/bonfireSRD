@@ -11,10 +11,10 @@ export class BmQuickNavComponent implements OnInit {
 
   constructor(
     private chapterService: ChapterService,
-    public router: Router
+    public router: Router,
+    private bookmarkArray: boolean | any[]
     ) { }
     
-    private bookmarkArray: boolean | any[]
     
   ngOnInit() {
     this.bookmarkArray = false
