@@ -11,7 +11,6 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { LogonComponent } from './logon/logon.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
-import { QuickNavModule } from './quick-nav/quick-nav.module';
 import { BookmarkingModule } from './bookmarking/Bookmarking.module';
 
 @NgModule({
@@ -29,7 +28,6 @@ import { BookmarkingModule } from './bookmarking/Bookmarking.module';
     AppRoutingModule,
     HttpClientModule,
     BrowserModule,
-    QuickNavModule,
     BookmarkingModule
   ],
   providers: [  ],

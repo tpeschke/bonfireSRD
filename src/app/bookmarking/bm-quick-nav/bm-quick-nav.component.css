@@ -66,7 +66,7 @@ i:hover {
   text-align: left;
 }
 
-.bookmarkShelf:nth-child(odd) {
+.bookmarkShelf:nth-child(even) {
   background: lightgray
 }
 
