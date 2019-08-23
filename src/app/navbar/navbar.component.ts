@@ -31,6 +31,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0
+
         if (p.url !== '/search' && p.url !== '/') {
           let route = +p.url.split('/')[2].split('?')[0]
           if (route !== 0) {

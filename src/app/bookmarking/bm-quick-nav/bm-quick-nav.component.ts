@@ -22,7 +22,7 @@ export class BmQuickNavComponent implements OnInit {
   }
 
   goToLink(route, chapter) {
-    this.router.navigate([`/chapter/${chapter}`], { queryParams: { search: route.split('.').join('') } })
+    this.router.navigate([`/chapter/${chapter}`], { queryParams: { search: route } })
   }
 
 }

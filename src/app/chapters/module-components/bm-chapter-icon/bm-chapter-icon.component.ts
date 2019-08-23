@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-bm-chapter-icon',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bm-chapter-icon.component.css']
 })
 export class BmChapterIconComponent implements OnInit {
+
+  @Input() id: any
 
   constructor() { }
 
