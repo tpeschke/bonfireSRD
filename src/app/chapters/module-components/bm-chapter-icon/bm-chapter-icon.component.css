@@ -1,0 +1,13 @@
+i {
+    color: rgba(34, 34, 34, 0);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    transform: rotate(-90deg);
+    animation: .6s
+}
+
+i:hover {
+    color: #b45f06;
+}

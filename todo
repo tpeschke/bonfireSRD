@@ -1,7 +1,6 @@
-- Add discord channel
-- Add login
-    - login automatically logs in for combat counter
-    - Add Stripe subscriptions
-        - Add advanced section
-            - Add skip to advanced section
-            - Add advanced search functionality
+- login automatically logs in for combat counter/great library
+- Make sure Patreon renews
+- Add advanced section
+    - Add advanced search functionality
+- Make toggle background linked to account
+- Patreon benefits banner

@@ -6,7 +6,7 @@ module.exports = {
         const db = req.app.get('db')
         db.get.search(req.body.search).then(result => {
             let formattedResult = result.map(val => {
-                let newVal = { chap: +val.linkid.split('.')[0], body: val.body, linkid: val.linkid }
+                let newVal = { chap: +val.linkid.match(/^\d+/g)[0], body: val.body, linkid: val.linkid }
                 return newVal
             })
             res.send(formattedResult)
@@ -24,5 +24,42 @@ module.exports = {
                         res.send(`${req.user.patreon}`)
                     })
             })
+    },
+    getBookmarks: (req, res) => {
+        const db = req.app.get('db')
+        db.get.findBookmarks(req.user.id).then(result => {
+            let newResult = result.map(val => {
+                return { id: val.id, chapter: val.bookmarkcode.match(/^\d+/g)[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
+            })
+            res.send(newResult)
+        })
+    },
+    addBookmark: (req, res) => {
+        const db = req.app.get('db')
+        // check to make sure they're logged in and have a patreon
+        if (req.user && req.user.patreon) {
+            // check to make sure their bookmarks aren't maxed out already
+            db.countbookmarks(req.user.id).then(count => {
+                if (+count[0].count < req.user.patreon * 5) {
+                    // add bookmark
+                    db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('bookmark added.'))
+                } else {
+                    res.status(403).send('You need to upgrade your Patreon tier to add more bookmarks.')
+                }
+            })
+        } else {
+            res.status(401).send('You need to be a Patreon to use bookmarks.')
+        }
+    },
+    deleteBookmark: (req, res) => {
+        const db = req.app.get('db')
+        db.delete.bookmarks(req.params.id).then(result => {
+            db.get.findBookmarks(req.user.id).then(result => {
+                let newResult = result.map(val => {
+                    return { id: val.id, chapter: val.bookmarkcode.match(/^\d+/g)[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
+                })
+                res.send(newResult)
+            })
+        })
     }
 }

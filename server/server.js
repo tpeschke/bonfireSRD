@@ -84,9 +84,13 @@ app.get('/auth/logout', function (req, res) {
 
 app.get('/checkLogin', (req, res) => req.user ? res.send(true) : res.send(false))
 app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(`${req.user.patreon}`) : res.send(false))
+app.get('/bm', ctrl.getBookmarks)
 
 app.post('/search', ctrl.search);
-app.post('/linkPatreon', ctrl.handleOAuthRedirectRequest)
+app.post('/linkPatreon', ctrl.handleOAuthRedirectRequest);
+app.post('/abm', ctrl.addBookmark);
+
+app.delete('/dbm/:id', ctrl.deleteBookmark);
 
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))

@@ -1,0 +1,1 @@
+delete from srdbookmarks where id = $1
