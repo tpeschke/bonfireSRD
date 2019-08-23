@@ -9,7 +9,7 @@
   </div>
 
   <div class='searchShell'>
-    <div *ngFor="let search of searches" class="searchResult" (click)="goToSearch(search.linkid)">
+    <div *ngFor="let search of searches" class="searchResult" (click)="goToSearch(search.linkid, search.chap)">
       <div class="searchTitle">Chapter {{search.chap}}</div>
       <div class="searchName" innerHTML="{{search.body | formatSearch}}"></div>
     </div>

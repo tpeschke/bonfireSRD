@@ -34,8 +34,8 @@ export class SearchComponent implements OnInit {
     }
   }
 
-  goToSearch(route) {
-    this.router.navigate([`/chapter/${route.split('.')[0]}`], { queryParams: { search: route.split('.').join('') } })
+  goToSearch(route, chapter) {
+    this.router.navigate([`/chapter/${chapter}`], { queryParams: { search: route } })
   }
 
 }
