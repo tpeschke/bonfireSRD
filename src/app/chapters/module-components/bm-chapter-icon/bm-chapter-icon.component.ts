@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ChapterService } from '../../../chapter.service';
 
 @Component({
   selector: 'app-bm-chapter-icon',
@@ -9,9 +10,17 @@ export class BmChapterIconComponent implements OnInit {
 
   @Input() id: any
 
-  constructor() { }
+  constructor(
+    private chapterService: ChapterService
+  ) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  addBookmark(id) {
+    this.chapterService.addBookmark(id)
+      .subscribe(res => {
+        console.log(res)
+      })
   }
 
 }

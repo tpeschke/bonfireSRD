@@ -15,7 +15,7 @@
       <div *ngFor="let mark of bookmarkArray" class="bookmarkShelf" (click)="goToLink(mark.link, mark.chapter)">
         <h3>{{mark.chapter}}</h3>
         <h3>{{mark.body}}</h3>
-        <i class="fa fa-unlink"></i>
+        <i stopPropagation (click)="deleteBookmark($event, mark.id)" class="fa fa-unlink"></i>
       </div>
     </div>
   </div>

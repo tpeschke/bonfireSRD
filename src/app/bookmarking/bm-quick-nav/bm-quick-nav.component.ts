@@ -25,4 +25,9 @@ export class BmQuickNavComponent implements OnInit {
     this.router.navigate([`/chapter/${chapter}`], { queryParams: { search: route } })
   }
 
+  deleteBookmark(event, id) {
+    event.stopPropagation();
+    this.chapterService.deleteBookmark(id).subscribe(result => this.bookmarkArray = result)
+  }
+
 }

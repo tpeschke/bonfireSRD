@@ -29,9 +29,28 @@ module.exports = {
         const db = req.app.get('db')
         db.get.findBookmarks(req.user.id).then(result => {
             let newResult = result.map(val => {
-                return { chapter: val.bookmarkcode.match(/^\d+/g)[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
+                return { id: val.id, chapter: val.bookmarkcode.match(/^\d+/g)[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
             })
             res.send(newResult)
+        })
+    },
+    addBookmark: (req, res) => {
+        const db = req.app.get('db')
+        if (req.user && req.user.patreon) {
+            db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('bookmark added.'))
+        } else {
+            res.status(401).send('You need to be a Patreon to use bookmarks.')
+        }
+    },
+    deleteBookmark: (req, res) => {
+        const db = req.app.get('db')
+        db.delete.bookmarks(req.params.id).then(result => {
+            db.get.findBookmarks(req.user.id).then(result => {
+                let newResult = result.map(val => {
+                    return { id: val.id, chapter: val.bookmarkcode.match(/^\d+/g)[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
+                })
+                res.send(newResult)
+            })
         })
     }
 }

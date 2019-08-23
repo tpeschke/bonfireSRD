@@ -28,37 +28,37 @@ export class ChapterService {
   }
 
   getSearch(search: string): Observable<Search[]> {
-    return this.http.post<Search[]>(local.endpointBase + '/search', {search})
+    return this.http.post<Search[]>(local.endpointBase + '/search', { search })
       .pipe(
-        tap(_=> console.log(),
-        catchError(this.handleError('search', []))
+        tap(_ => console.log(),
+          catchError(this.handleError('search', []))
         )
       )
   }
 
-  checkLogin():any {
+  checkLogin(): any {
     return this.http.get(local.endpointBase + '/checkLogin')
       .pipe(
-        tap(_=> console.log(),
-        catchError(this.handleError('logon', []))
+        tap(_ => console.log(),
+          catchError(this.handleError('logon', []))
         )
       )
   }
 
-  checkPatreon():any {
+  checkPatreon(): any {
     return this.http.get(local.endpointBase + '/checkPatreon')
       .pipe(
-        tap(_=> console.log(),
-        catchError(this.handleError('patreon', []))
+        tap(_ => console.log(),
+          catchError(this.handleError('patreon', []))
         )
       )
   }
 
-  updatePatreon(code):any {
-    return this.http.post(local.endpointBase + '/linkPatreon', {code})
+  updatePatreon(code): any {
+    return this.http.post(local.endpointBase + '/linkPatreon', { code })
       .pipe(
-        tap(_=> console.log(),
-        catchError(this.handleError('patreon update', []))
+        tap(_ => console.log(),
+          catchError(this.handleError('patreon update', []))
         )
       )
   }
@@ -68,6 +68,24 @@ export class ChapterService {
       .pipe(
         tap(_ => console.log(),
           catchError(this.handleError('getBookmarks', []))
+        )
+      )
+  }
+
+  addBookmark(code): any {
+    return this.http.post(local.endpointBase + '/abm', { code })
+      .pipe(
+        tap(_ => console.log(),
+          catchError(this.handleError('add bookmark', []))
+        )
+      )
+  }
+
+  deleteBookmark(code): any {
+    return this.http.delete(local.endpointBase + '/dbm/' + code)
+      .pipe(
+        tap(_ => console.log(),
+          catchError(this.handleError('delete bookmark', []))
         )
       )
   }

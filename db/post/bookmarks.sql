@@ -1,0 +1,1 @@
+insert into srdbookmarks (userid, bookmarkcode) values ($1, $2)
