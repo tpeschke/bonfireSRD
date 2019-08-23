@@ -36,8 +36,17 @@ module.exports = {
     },
     addBookmark: (req, res) => {
         const db = req.app.get('db')
+        // check to make sure they're logged in and have a patreon
         if (req.user && req.user.patreon) {
-            db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('bookmark added.'))
+            // check to make sure their bookmarks aren't maxed out already
+            db.countbookmarks(req.user.id).then(count => {
+                if (+count[0].count < req.user.patreon * 5) {
+                    // add bookmark
+                    db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('bookmark added.'))
+                } else {
+                    res.status(403).send('You need to upgrade your Patreon tier to add more bookmarks.')
+                }
+            })
         } else {
             res.status(401).send('You need to be a Patreon to use bookmarks.')
         }
