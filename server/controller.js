@@ -42,7 +42,7 @@ module.exports = {
             db.countbookmarks(req.user.id).then(count => {
                 if (+count[0].count < req.user.patreon * 5) {
                     // add bookmark
-                    db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('bookmark added.'))
+                    db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('Bookmark added.'))
                 } else {
                     res.status(403).send('You need to upgrade your Patreon tier to add more bookmarks.')
                 }
