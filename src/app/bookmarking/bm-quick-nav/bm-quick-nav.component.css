@@ -11,9 +11,20 @@ i:hover {
   color: whitesmoke;
 }
 
+.positioning {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+.positioning:hover {
+  color: #b45f06;
+}
+
 .bookmarkingShell {
   width: 400px;
   height: 332px;
+  position: relative;
 }
 
 .bookmarksShell {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ChapterService } from '../../chapter.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-bm-quick-nav',
@@ -12,6 +13,7 @@ export class BmQuickNavComponent implements OnInit {
   constructor(
     private chapterService: ChapterService,
     public router: Router,
+    private toastr: ToastrService
     ) { }
     
     private bookmarkArray: boolean | any[]
@@ -28,6 +30,10 @@ export class BmQuickNavComponent implements OnInit {
   deleteBookmark(event, id) {
     event.stopPropagation();
     this.chapterService.deleteBookmark(id).subscribe(result => this.bookmarkArray = result)
+  }
+
+  openHelp() {
+    this.toastr.info('', ' ', {enableHtml: true, disableTimeOut: true, closeButton: true})
   }
 
 }

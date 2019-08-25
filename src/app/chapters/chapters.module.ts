@@ -11,7 +11,7 @@ import { BmChapterIconComponent } from './module-components/bm-chapter-icon/bm-c
     QuickNavComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
    exports: [
     BmChapterIconComponent,

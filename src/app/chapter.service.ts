@@ -4,6 +4,8 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
 import local from './local';
 
+import { ToastrService } from 'ngx-toastr';
+
 class Search {
   chapname: string
   chapnum: number
@@ -17,12 +19,18 @@ export class ChapterService {
 
   constructor(
     private http: HttpClient,
+    private toastr: ToastrService
   ) { }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-      console.error(error)
-      console.log(`${operation} failed: ${error}`)
+      if (error.status === 200) {
+        this.toastr.success('', `${error.error.text}`);
+      } else if (error.status === 403) {
+        this.toastr.warning('', `${error.error}`)
+      } else if (error.status === 401) {
+        this.toastr.error('', `${error.error}`);
+      }
       return of(result as T)
     }
   }
@@ -30,63 +38,56 @@ export class ChapterService {
   getSearch(search: string): Observable<Search[]> {
     return this.http.post<Search[]>(local.endpointBase + '/search', { search })
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('search', []))
-        )
+        tap(),
+        catchError(this.handleError('search', []))
       )
   }
 
   checkLogin(): any {
     return this.http.get(local.endpointBase + '/checkLogin')
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('logon', []))
-        )
+        tap(),
+        catchError(this.handleError('logon', []))
       )
   }
 
   checkPatreon(): any {
     return this.http.get(local.endpointBase + '/checkPatreon')
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('patreon', []))
-        )
+        tap(),
+        catchError(this.handleError('patreon', []))
       )
   }
 
   updatePatreon(code): any {
     return this.http.post(local.endpointBase + '/linkPatreon', { code })
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('patreon update', []))
-        )
+        tap(),
+        catchError(this.handleError('patreon update', []))
       )
   }
 
   getBookmarks(): Observable<any> {
     return this.http.get<any[]>(local.endpointBase + '/bm')
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('getBookmarks', []))
-        )
+        tap(),
+        catchError(this.handleError('getBookmarks', []))
       )
   }
 
   addBookmark(code): any {
     return this.http.post(local.endpointBase + '/abm', { code })
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('add bookmark', []))
-        )
+        tap(e => console.log(e)),
+        catchError(this.handleError('add bookmark', []))
       )
   }
 
   deleteBookmark(code): any {
     return this.http.delete(local.endpointBase + '/dbm/' + code)
       .pipe(
-        tap(_ => console.log(),
-          catchError(this.handleError('delete bookmark', []))
-        )
+        tap(),
+        catchError(this.handleError('delete bookmark', []))
       )
   }
 

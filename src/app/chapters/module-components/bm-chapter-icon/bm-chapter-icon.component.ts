@@ -18,9 +18,7 @@ export class BmChapterIconComponent implements OnInit {
 
   addBookmark(id) {
     this.chapterService.addBookmark(id)
-      .subscribe(res => {
-        console.log(res)
-      })
+      .subscribe(res => {})
   }
 
 }
