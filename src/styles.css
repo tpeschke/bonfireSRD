@@ -380,10 +380,6 @@ button:hover {
     text-align: left;
   }
 
-  .pairedShell {
-    width: 100%;
-  }
-
   .triangle {
     margin-left: 0;
   }
@@ -407,6 +403,10 @@ button:hover {
 @media (max-width: 600px) {
   .backTexture {
     background-image: url("./assets/images/1.jpg");
+  }
+  
+  .pairedShell {
+    width: 80% !important
   }
 }
 

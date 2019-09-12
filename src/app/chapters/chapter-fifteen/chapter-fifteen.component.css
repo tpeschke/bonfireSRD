@@ -25,6 +25,15 @@
     margin-top: 205px;
 }
 
+.FallingModifiersvalue:first-child {
+    width: 100px
+}
+
+.FallingModifiersvalue:nth-child(2) {
+    text-align: left;
+    width: 200px
+}
+
 @media (max-width: 650px) {
     .imageMargin {
         margin-top: 0;
