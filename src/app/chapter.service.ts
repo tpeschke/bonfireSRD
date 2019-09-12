@@ -91,6 +91,14 @@ export class ChapterService {
       )
   }
 
+  getTrait(): any {
+    return this.http.get(local.endpointBase + '/trait')
+      .pipe(
+        tap(),
+        catchError(this.handleError('get trait', []))
+      )
+  }
+
   getName(id: number): string {
     switch (id) {
       case 1:

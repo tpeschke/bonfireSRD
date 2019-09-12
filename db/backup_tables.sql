@@ -125,3 +125,8 @@ insert into charisma (score, favor, start_honor, trait, social) values
 ('20','4','Great','16','d20');
 
 select * from srdtable;
+
+create table SRDtraits (
+    id serial primary key,
+    trait text
+)

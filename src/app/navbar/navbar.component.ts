@@ -1,6 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
-import { ChapterService } from '../chapter.service';
 import { Router, NavigationEnd } from '@angular/router'
 import local from '../local'
 

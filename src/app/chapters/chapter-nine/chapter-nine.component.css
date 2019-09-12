@@ -31,3 +31,22 @@
 .PassionDicevalue:nth-child(2) {
     width: 60%;
 }
+
+.resultHolder {
+    margin: 10px auto;
+    width: 85%;
+    text-align: center;
+}
+
+.generateButton {
+    background: #b45f06;
+    color: whitesmoke;
+    width: 100px;
+    position: inherit;
+    border-radius: 25px; 
+    transition: .6s;  
+}
+
+.generateButton:hover {
+    background: #222;
+}

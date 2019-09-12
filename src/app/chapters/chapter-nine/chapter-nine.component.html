@@ -137,17 +137,6 @@
                         strongest Trait filled out relating to your character’s personal arch. </p>
                 </div>
             </div>
-            <div class='sidebarShell marginBottom'>
-                <h2 class='sidebarTitle'>Handy Advice</h2>
-                <div class='marginBottom paragraphShell anchor'>
-                    <div id='9pfpzyMPkXSv' class='anchorTag'></div>
-                    <app-bm-chapter-icon [id]="'9pfpzyMPkXSv'"></app-bm-chapter-icon>
-                    <p> If this is your first character, it may be a bit overwhelming having to fill out your Traits,
-                        Passions, and Devotions, but it becomes much easier once you have a vision of who your character
-                        is and what drives them so I suggest you take a few minutes to think about that before
-                        continuing.</p>
-                </div>
-            </div>
             <div class="anchor">
                 <div id="9hABmHwzkjiK" class="anchorTag"></div>
                 <h1>TRAITS</h1>
@@ -303,6 +292,19 @@
                 <app-bm-chapter-icon [id]="'9pnrYvxMbmTc'"></app-bm-chapter-icon>
                 <p> While naturally Charismatic characters come out of the gate with strong personalities, as you
                     adventure, your character will also grow and change, gaining and strengthening their Traits.</p>
+            </div>
+            <div class='sidebarShell marginBottom'>
+                <h2 class='sidebarTitle'>Thinking of Traits</h2>
+                <div class='paragraphShell'>
+                    <p> Thinking of Traits on the fly is hard. For new players, there's two ways of handling this: either picture a character from fiction you like or find interesting, and try to describe them. These are their Traits and you can crib off them to start with.</p>
+                </div>
+                <div class='paragraphShell'>
+                    <p> Or if you have no idea where to start or are just a risk taker, you can use the Trait Generator, which will give you a random Trait. These Traits may not always make sense but they can often serve as a jumping off point for your imagination.</p>
+                </div>
+                <div class="resultHolder">
+                    <h1>{{trait}}</h1>
+                    <button class="generateButton" (click)="getTrait()">Generate!</button>
+                </div>
             </div>
             <div class="anchor">
                 <div id="9hsjmKniFwet" class="anchorTag"></div>

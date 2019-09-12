@@ -85,6 +85,7 @@ app.get('/auth/logout', function (req, res) {
 app.get('/checkLogin', (req, res) => req.user ? res.send(true) : res.send(false))
 app.get('/checkPatreon', (req, res) => req.user.patreon ? res.send(`${req.user.patreon}`) : res.send(false))
 app.get('/bm', ctrl.getBookmarks)
+app.get('/trait', ctrl.getRandomTrait)
 
 app.post('/search', ctrl.search);
 app.post('/linkPatreon', ctrl.handleOAuthRedirectRequest);
