@@ -1,3 +1,14 @@
+.flawTableShell{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.flawTableOverflow {
+    width: 300px
+}
+
 .Vicevalue {
     width: 75px;
 }
@@ -6,6 +17,16 @@
     width: 150px;
     float: left;
     margin: 10px 15px 15px 0;
+}
+
+.flawTableTableTable {
+    width: 200px;
+    float: left;
+    margin: 10px 15px 15px 0;
+}
+
+.flawTableTableSpacing {
+    margin-bottom: 30px;
 }
 
 .Phobiasvalue {
