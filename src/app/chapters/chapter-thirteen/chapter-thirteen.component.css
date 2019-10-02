@@ -1,5 +1,11 @@
-.MaximumFavorTable, .SpendingFavorTable, .MiracleAreaOfEffectTable,.MiracleDistancetable,
+.SpendingFavorTable, .MiracleAreaOfEffectTable,.MiracleDistancetable,
 .MiracleDelieveryTable, .MiracleLongevityTable {
+    width: 180px;
+    float: left;
+    margin: 15px 15px 0 0;
+}
+
+.MaximumFavorTable {
     width: 200px;
     float: left;
     margin: 15px 15px 0 0;
@@ -8,6 +14,11 @@
 .MaximumFavorvalue, .SpendingFavorvalue, .MiracleAreaOfEffectvalue, .MiracleDistancevalue,
 .MiracleDelieveryvalue, .MiracleLongevityvalue {
     width: 50%;
+}
+
+.SingleIndividual {
+    width: 100%;
+    text-indent: 0;
 }
 
 .favorMargin {
@@ -20,6 +31,16 @@
     width: 100%;
     justify-content: space-evenly;
     margin-bottom: 15px;
+}
+
+.mainpoint {
+    text-indent: 0;
+    margin-left: 50px
+}
+
+.subpoint {
+    text-indent: 0;
+    margin-left: 75px;
 }
 
 @media (max-width: 650px) {
