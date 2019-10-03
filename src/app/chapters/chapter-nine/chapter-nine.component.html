@@ -39,6 +39,11 @@
                 <p><strong class='orangeHeader'>DEVOTIONS</strong> represent their relationships, either with people,
                     organizations, or otherworldly powers.</p>
             </div>
+            <div class='marginBottom paragraphShell anchor'>
+                    <div id='flawsarealsoconsidered' class='anchorTag'></div>
+                    <app-bm-chapter-icon [id]="'flawsarealsoconsidered'"></app-bm-chapter-icon>
+                    <p><strong class='orangeHeader'>FLAWS</strong> are also considered social characteristics so they're back!</p>
+                </div>
             <div class="space"></div>
             <div class='marginBottom paragraphShell anchor'>
                 <div id='9pcKGXQsZEIx' class='anchorTag'></div>
@@ -142,7 +147,7 @@
                 <h1>TRAITS</h1>
                 <div class="underline"></div>
             </div>
-            <div class="traitpassionshell">
+            <div class="traitpassionshell marginBottom">
                 <div class='tableOverflowWindow TraitDiceTable'>
                     <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
                         <h1 class='tableTitle'>Trait Dice</h1>
@@ -227,31 +232,31 @@
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>14</p>
-                                    <p class='PassionDicevalue TableIndividual'>2 d4s</p>
+                                    <p class='PassionDicevalue TableIndividual'>2 1d4s</p>
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>15</p>
-                                    <p class='PassionDicevalue TableIndividual'>d4, d6</p>
+                                    <p class='PassionDicevalue TableIndividual'>3 1d4s</p>
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>16</p>
-                                    <p class='PassionDicevalue TableIndividual'>3 d4s</p>
+                                    <p class='PassionDicevalue TableIndividual'>2 1d4s, 1d6</p>
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>17</p>
-                                    <p class='PassionDicevalue TableIndividual'>2 d4s, d6</p>
+                                    <p class='PassionDicevalue TableIndividual'>1d4, 2 1d6s</p>
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>18</p>
-                                    <p class='PassionDicevalue TableIndividual'>d4, 2 d6s</p>
+                                    <p class='PassionDicevalue TableIndividual'>3 1d6s</p>
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>19</p>
-                                    <p class='PassionDicevalue TableIndividual'>3 d6s</p>
+                                    <p class='PassionDicevalue TableIndividual'>2 1d6s, 1d8</p>
                                 </div>
                                 <div class='tableValue'>
                                     <p class='PassionDicevalue TableIndividual'>20</p>
-                                    <p class='PassionDicevalue TableIndividual'>2 d4s, 2 d6s</p>
+                                    <p class='PassionDicevalue TableIndividual'>1 1d6, 2 1d8s</p>
                                 </div>
                             </div>
                         </div>
@@ -296,10 +301,14 @@
             <div class='sidebarShell marginBottom'>
                 <h2 class='sidebarTitle'>Thinking of Traits</h2>
                 <div class='paragraphShell'>
-                    <p> Thinking of Traits on the fly is hard. For new players, there's two ways of handling this: either picture a character from fiction you like or find interesting, and try to describe them. These are their Traits and you can crib off them to start with.</p>
+                    <p> Thinking of Traits on the fly is hard. For new players, there's two ways of handling this:
+                        either picture a character from fiction you like or find interesting, and try to describe them.
+                        These are their Traits and you can crib off them to start with.</p>
                 </div>
                 <div class='paragraphShell'>
-                    <p> Or if you have no idea where to start or are just a risk taker, you can use the Trait Generator, which will give you a random Trait. These Traits may not always make sense but they can often serve as a jumping off point for your imagination.</p>
+                    <p> Or if you have no idea where to start or are just a risk taker, you can use the Trait Generator,
+                        which will give you a random Trait. These Traits may not always make sense but they can often
+                        serve as a jumping off point for your imagination.</p>
                 </div>
                 <div class="resultHolder">
                     <h1>{{trait}}</h1>
@@ -320,14 +329,15 @@
             <div class='marginBottom paragraphShell anchor'>
                 <div id='9pJHSSLraoqB' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pJHSSLraoqB'"></app-bm-chapter-icon>
-                <p> Your number of Passions and their strength is based on your character's Intellect.</p>
+                <p> Your number of Passions and their strength is based on your character's Intellect. See the above table.</p>
             </div>
-            <div class="space"></div>
             <div class='paragraphShell marginBottom anchor'>
                 <div id='9poiLiggbjwd' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9poiLiggbjwd'"></app-bm-chapter-icon>
-                <p> If your character selects a Passion related to one of their Adv Skills, bump up the dice size by 1
-                    for ever 4 Ranks you have in that Skill (rounded up).</p>
+                <p> If your character needs to select Passions related to their Skills and/or Masteries. They don't need to be one for one, 
+                    though that's the easiest way, but they should be at least tangentially related. Increase the Passion's dice size for every Rank 
+                    you have in that Skill or +1 you have in that Mastery.
+                </p>
             </div>
             <div class="anchor">
                 <div id="9hNSnSqzNZCw" class="anchorTag"></div>
@@ -383,11 +393,26 @@
                         can add your Devotion die to their social dice pool when in conflict with them.</p>
                 </div>
                 <div class='marginBottom paragraphShell anchor'>
-                        <div id='9pbfStBsYtAy' class='anchorTag'></div>
-                        <app-bm-chapter-icon [id]="'9pbfStBsYtAy'"></app-bm-chapter-icon>
-                        <p> In fact, all Characteristic dice can be used against a person if you or they know your strengths and weaknesses but to a greater or less extent. If using a person's Trait against them, you can bring them into your pool but reduced by 1 dice size.</p>
+                    <div id='9pbfStBsYtAy' class='anchorTag'></div>
+                    <app-bm-chapter-icon [id]="'9pbfStBsYtAy'"></app-bm-chapter-icon>
+                    <p> In fact, all Characteristic dice can be used against a person if you or they know your strengths
+                        and weaknesses but to a greater or less extent. If using a person's Trait against them, you can
+                        bring them into your pool but reduced by 1 dice size.</p>
                 </div>
             </div>
+            <div class="anchor">
+                    <div id="flaws" class="anchorTag"></div>
+                    <h1>FLAWS</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class='marginBottom paragraphShell anchor'>
+                    <div id='letscirclebacktoflaws' class='anchorTag'></div>
+                    <app-bm-chapter-icon [id]="'letscirclebacktoflaws'"></app-bm-chapter-icon>
+                    <p> Let's circle back to Flaws because they are considered part of your Social Characteristics,
+                        after all, they make up who your character is as well. You start with your Flaws giving you 
+                        a 2d4 in Social Conflicts should you bring them in.
+                    </p>
+                </div>
             <div class="anchor">
                 <div id="9hMasFAjKGNj" class="anchorTag"></div>
                 <h1>WHEN TO USE THESE RULES</h1>
@@ -416,15 +441,55 @@
             <div class='paragraphShell anchor'>
                 <div id='9pSmkihxTzQZ' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pSmkihxTzQZ'"></app-bm-chapter-icon>
-                <p> For the blacksmith giving away his sword, there really isn’t one. However, if you Conflict over a
-                    discount, that gives him a window to upsell you if you lose the Conflict. That might be worth it to
-                    him.</p>
+                <p> So, if you have a Conflict over a discount, that gives him a window to upsell you if you lose the
+                    Conflict.
+                    That might be worth it to him, while just having him give you the sword for away for free results in
+                    no Conflict unless the fighter
+                    convinces the blacksmith that the town is going to be shortly
+                    overrun by a goblin horde and that he needs a better weapon to fight them off, perhaps the
+                    blacksmith would be willing to part with the weapon for free, or maybe, if he's particularly stingy,
+                    he'd be willing to lend it to him temporarily for free.
+                </p>
             </div>
             <div class='marginBottom paragraphShell anchor'>
                 <div id='9pwWhBCUpdpN' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pwWhBCUpdpN'"></app-bm-chapter-icon>
                 <p> And so setting the stage for a Conflict is often helping the NPC see what they could possibly get
                     from you should they win.</p>
+            </div>
+            <div class="space"></div>
+            <div class='paragraphShell anchor'>
+                <div id='anotherwaytostartaconfictisto' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'anotherwaytostartaconfictisto'"></app-bm-chapter-icon>
+                <p> Another way to start a Conflict is to get a person to act on their Characteristics, such as
+                    provoking
+                    a very aggressive person to attack you, or getting someone who is a softtouch to give you money. In
+                    that case,
+                    you simply state that, based on what you know about the person, they should probably act this way.
+                    If you're
+                    actually correct, you can start a Conflict with them. If you're wrong, you lose 1 Honor.
+                </p>
+            </div>
+            <div class='paragraphShell anchor'>
+                <div id='soforinstanceyouknowthatannpc' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'soforinstanceyouknowthatannpc'"></app-bm-chapter-icon>
+                <p> So, for instance, you know that an NPC is a known liar so you want him to lie to make a bold faced
+                    lie
+                    in front of the king to out him as the enemy. You state something along the lines of "You know, I
+                    think
+                    this guy is just a compulsive liar that he'll try and get away with lying to the king". If that's
+                    correct,
+                    you start the Conflict.
+                </p>
+            </div>
+            <div class='marginBottom paragraphShell anchor'>
+                <div id='butletssaythatthenpcdoesn' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'butletssaythatthenpcdoesn'"></app-bm-chapter-icon>
+                <p> But let's say that the NPC doesn't have a Trait, Flaw, or Passion that related to lying. Turns out,
+                    the man has a Passion for manipulation instead. He wasn't lying because he was a complusive liar, he
+                    was
+                    lying for a very specific purpose. In that case, you'd lose 1 Honor.
+                </p>
             </div>
             <div class='sidebarShell marginBottom'>
                 <h2 class='sidebarTitle'>Other Reasons to Start a Conflict</h2>
@@ -452,23 +517,40 @@
             <div class='paragraphShell anchor'>
                 <div id='9pvTWpgIrSlm' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pvTWpgIrSlm'"></app-bm-chapter-icon>
-                <p> The characters have to decide what’s at stake; this is what they’re butting heads about and why
+                <p> Most commonly, The characters have to decide
+                    what’s at stake; this is what they’re butting heads about and why
                     they’re willing to put themselves on the line. More importantly, each side has to define what they
                     want to happen to the stakes. If the stakes are high, this might change how much each side to
                     willing to fight to get what they want or what tactic they’ll use to get it.</p>
+            </div>
+            <div class='paragraphShell anchor'>
+                <div id='youalsohavetotakeintoaccount' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'youalsohavetotakeintoaccount'"></app-bm-chapter-icon>
+                <p> You also have to take into account what the other person is just straight up not willing to do. You
+                    can't convince a priest to desecrate the altar of his Divine, for instance, or someone to give away
+                    a family heirloom just because you want it.
+                    Additionally, both sides have to see some sort of benefit, should they win.
+                </p>
             </div>
             <div class='marginBottom paragraphShell anchor'>
                 <div id='9pJfcnHadYEY' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pJfcnHadYEY'"></app-bm-chapter-icon>
                 <p> So, for instance, a blacksmith and a fighter want to get in a conflict over the price of a sword.
-                    That’s what’s at stake. The fighter wants its a discount, the blacksmith wants to make a bigger
+                    That’s what’s at stake. The fighter wants it at a discount, the blacksmith wants to make a bigger
                     profit.</p>
             </div>
-            <div class="space"></div>
+            <div class='paragraphShell anchor marginBottom'>
+                    <div id='9pvTWpgIrSlm' class='anchorTag'></div>
+                    <app-bm-chapter-icon [id]="'9pvTWpgIrSlm'"></app-bm-chapter-icon>
+                    <p>If you're starting the Conflict because you're trying to get someone to act on one of their Characteristics,
+                        you don't have stakes in the same way. Instead, if you win the Conflict, they act on their Characteristic, if they
+                        win, they manage to restrain themselves and you might lose 1 Honor (plus any additional you may have ponyed up).
+                    </p>
+                </div>
             <div class='paragraphShell anchor'>
                 <div id='9pQlpkRPffds' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pQlpkRPffds'"></app-bm-chapter-icon>
-                <p> Then each player rolls a single Trait’s worth of dice, representing their starting tactic, and any
+                <p> Either way, each player rolls a single Trait’s worth of dice, representing their starting tactic, and any
                     additional Leverage that are applicable. This is the dice pool that you’ll be working from
                     to begin with, these rolls will be used later. These are primarily from their Goals, Passions, and
                     Devotions but can also be from their Flaws, Honor, equipment, or anything else the character might
@@ -711,12 +793,18 @@
                     <p>Lose a Trait, Passion, or Devotion</p>
                 </div>
             </div>
-            <div class="bulletListShell marginBottom">
+            <div class="bulletListShell">
                 <h4 class="bulletTriangle">🜂</h4>
                 <div>
                     <p>Change a Goal</p>
                 </div>
             </div>
+            <div class="bulletListShell marginBottom">
+                    <h4 class="bulletTriangle">🜂</h4>
+                    <div>
+                        <p>Add another d4 to the strength of a Flaw</p>
+                    </div>
+                </div>
             <div class='marginBottom paragraphShell anchor'>
                 <div id='9pwZCVyywnvH' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'9pwZCVyywnvH'"></app-bm-chapter-icon>
