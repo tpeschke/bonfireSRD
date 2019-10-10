@@ -182,7 +182,7 @@ button:hover {
 }
 
 .backTexture {
-  background-image: url("https://thumbnails-photos.amazon.com/v1/thumbnail/HST0FuohTD2KjMSWfQTlXw?viewBox=953%2C635&ownerId=A3TBELKKNOSLNI&groupShareToken=5y7TMK32SWCqCG_70rqhqg.wZdcyWcL0rmsP6cK_qAPyj");
+  background-image: url("./assets/images/chapterBackground.jpg");
   background-size: fill;
   height: 900px;
   width: 635px;
@@ -961,7 +961,7 @@ button.toast-close-button {
 .toast-info .toast-title {
   width: 225px;
   height: 310px;
-  background-image: url("https://thumbnails-photos.amazon.com/v1/thumbnail/kw5m-TBDSYea9W96O0UpKg?viewBox=338%2C459&ownerId=A3TBELKKNOSLNI&groupShareToken=xkdIjbPbRWO7G7NpiM664w.lp3tgVTgFwqx76kXGSMKj3");
+  background-image: url("./assets/images/step1.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
