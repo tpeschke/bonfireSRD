@@ -1,0 +1,69 @@
+.Strengthvalue {
+    width: 60px;
+}
+
+.Dexterityvalue {
+    width: 60px;
+}
+
+.Constitutionvalue {
+    width: 65px;
+}
+
+.Intellectvalue {
+    width: 65px;
+}
+
+.wisdomTable {
+    width: 390px;
+}
+
+.Wisdomvalue {
+    width: 65px;
+}
+
+.Charismavalue {
+    width: 60px;
+}
+
+.tableOverflowWindow {
+    float: left;
+    margin-right: 15px;
+}
+
+.dexMargin {
+    margin-top: 115px;
+}
+
+.fatiMargin {
+    margin-top: 80px;
+}
+
+.traitMargin {
+    margin-top: 65px;
+}
+
+@media (max-width: 770px) {
+    .tableOverflowWindow {
+        float: none;
+        margin: 15px auto 25px auto;
+    }
+    
+    .dexMargin {
+        margin-top: 0px;
+    }
+    
+    .fatiMargin {
+        margin-top: 0px;
+    }
+    
+    .traitMargin {
+        margin-top: 0px;
+    }
+ }
+
+ @media (max-width: 400px) {
+    .wisdomTable {
+        width: 100%;
+    }
+ }
