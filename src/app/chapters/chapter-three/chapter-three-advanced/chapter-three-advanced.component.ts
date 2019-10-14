@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { NotReduxService } from '../../not-redux.service';
+import { NotReduxService } from '../../../not-redux.service';
 import { Router } from '@angular/router';
-import { ChapterService } from '../../chapter.service'
+import { ChapterService } from '../../../chapter.service'
 
 @Component({
-  selector: 'app-chapter-three',
-  templateUrl: './chapter-three.component.html',
-  styleUrls: ['./chapter-three.component.css']
+  selector: 'app-chapter-three-advanced',
+  templateUrl: './chapter-three-advanced.component.html',
+  styleUrls: ['./chapter-three-advanced.component.css']
 })
-export class ChapterThreeComponent implements OnInit {
+export class ChapterThreeAdvancedComponent implements OnInit {
 
   constructor(
     private notRedux: NotReduxService,
@@ -22,8 +22,8 @@ export class ChapterThreeComponent implements OnInit {
 
   ngOnInit() {
     this.chapterService.checkPatreon().subscribe(tier => {
-      if (+tier >= 1) {
-        this.router.navigate(['/chapter/3/advanced'])
+      if (tier < 1) {
+        this.router.navigate(['/chapter/3'])
       }
     })
     this.navDisplay = window.document.body.clientWidth > 650 ? true : false
