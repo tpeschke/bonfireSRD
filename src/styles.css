@@ -741,9 +741,8 @@ h2 {
 
 .headerSide {
   transform: rotate(270deg);
-  top: 81px;
-  left: -18px;
-  width: 85px;
+  top: 150px;
+  left: -50px;
 }
 
 .exception {
