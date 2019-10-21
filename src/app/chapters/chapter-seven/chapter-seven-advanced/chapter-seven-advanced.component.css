@@ -1,7 +1,29 @@
 .thievesCant {
-    width: 100%;
+  width: 100%;
 }
 
 .thievesCant:last-child {
-    text-align: right;
+  text-align: right;
+}
+
+.rangedbreakdownvalue {
+  min-width: 85px;
+}
+
+.tableValue {
+  padding: 0;
+}
+
+.tableValue .rangedbreakdownvalue:first-child {
+  background: #222;
+  min-width: 75px;
+  height: 24px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sideheading {
+  color: whitesmoke;
 }
