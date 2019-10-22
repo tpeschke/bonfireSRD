@@ -1,0 +1,49 @@
+.raceSidebar {
+  width: 300px;
+  float: left;
+  margin-right: 15px;
+}
+
+.headerTop {
+  background: #222;
+  color: whitesmoke;
+  width: 100%;
+}
+
+.headerSide {
+  position: absolute;
+  color: whitesmoke;
+}
+
+.RacialPreferencesvalue {
+  width: 73px;
+}
+
+.tableValue {
+  padding: 0;
+}
+
+.tableValue .RacialPreferencesvalue:first-child {
+  background: #222;
+  width: 50px;
+  height: 24px;
+  margin-bottom: 0;
+}
+
+.preferenceTable {
+  margin: 0 auto 25px;
+  width: 605px;
+  overflow: auto;
+}
+
+@media (max-width: 500px) {
+  .raceSidebar {
+    width: 100%;
+    float: none;
+  }
+
+  .preferenceTable {
+    margin: 0 auto 25px;
+    width: 100%;
+  }
+}

@@ -9,7 +9,8 @@ const routes: Routes = [
   {
     path: '',
     component: ChapterTwelveComponent
-  }
+  },
+  { path: 'advanced', loadChildren: './chapter-twelve-advanced/chapter-twelve-advanced.module#ChapterTwelveAdvancedModule', data: { preload: true } },
 ];
 
 @NgModule({

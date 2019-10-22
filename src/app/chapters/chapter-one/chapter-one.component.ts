@@ -9,7 +9,7 @@ import { NotReduxService } from '../../not-redux.service';
 export class ChapterOneComponent implements OnInit {
 
   constructor(
-    private notRedux: NotReduxService
+    private notRedux: NotReduxService,
   ) { }
 
   navDisplay = false;

@@ -6,11 +6,7 @@ import { ChaptersModule } from '../chapters.module';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: ChapterOneComponent
-  }
-];
+  { path: '', component: ChapterOneComponent }];
 
 @NgModule({
   declarations: [
