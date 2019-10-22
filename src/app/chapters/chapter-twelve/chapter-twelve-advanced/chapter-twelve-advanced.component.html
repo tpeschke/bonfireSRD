@@ -532,21 +532,25 @@
         <h2 class='sidebarTitle'>Arcane Training</h2>
         <div class='paragraphShell anchor'>
           <div id='12pDOupMlOnab' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pDOupMlOnab'"></app-bm-chapter-icon>
           <p> Through years of study, a Wizard is able to develop an affinity for an Order or two of magic</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='12popnzgGapMv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12popnzgGapMv'"></app-bm-chapter-icon>
           <p> A Wizard can spend 5 CrP to gain a + 1 in a certain Order of Magic. When casting a spell of that Order
             after channeling, they automatically increase their effective SP by that number.</p>
         </div>
         <div class="space"></div>
         <div class='paragraphShell anchor'>
           <div id='12pUgMyPCsGUw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pUgMyPCsGUw'"></app-bm-chapter-icon>
           <p> A Wizard may continue to increase his knowledge in that school, or another Order, with the cost of each
             increase equal to the total training across all Orders x 5 x the number of Orders you have trainings in.</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='12pVAyUruPcLV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pVAyUruPcLV'"></app-bm-chapter-icon>
           <p> So, if Malazar the Unseen has a +1 in Alteration, a +3 in Air, and +1 in Animancy, and wants to increase
             his Alteration to +2, he’ll have to pay 75 CrP ( ( 3 + 1 + 1 ) x 5 x 3 ).</p>
         </div>
@@ -556,25 +560,30 @@
         </div>
         <div class='paragraphShell anchor'>
           <div id='12pukyQLemrSi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pukyQLemrSi'"></app-bm-chapter-icon>
           <p> You can’t actually train in the Elemental Order itself. Instead, you train in a specific element with the
             following caveat:</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='12pjETexyvxcf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pjETexyvxcf'"></app-bm-chapter-icon>
           <p> Once you purchase a training in a particular element, you’re unable to purchase any trainings in that
             element’s opposite. </p>
         </div>
         <div class="space"></div>
         <div class='paragraphShell anchor'>
           <div id='12pyQCrNosRSP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pyQCrNosRSP'"></app-bm-chapter-icon>
           <p> Air - Earth</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='12pVDecQKGQpu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pVDecQKGQpu'"></app-bm-chapter-icon>
           <p> Fire - Water</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='12pnXtdOKszCc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pnXtdOKszCc'"></app-bm-chapter-icon>
           <p> Chaos - Order</p>
         </div>
         <div class='anchor'>
@@ -583,6 +592,7 @@
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='12pfCsARRPYUI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12pfCsARRPYUI'"></app-bm-chapter-icon>
           <p> If you have a spell that has 1 or more Orders assigned to it, you only get to apply one school’s training
             to it.</p>
         </div>
@@ -702,6 +712,57 @@
           days
           of study for the second try, d10! for the fourth attempt and so on).</p>
       </div>
+      <div class='tableOverflowWindow magicteachingTable'>
+        <div class='tableOuterShell' [ngStyle]='{width: "490px"}'>
+            <h1 class='tableTitle'>Spell Transfer</h1>
+            <div class='tableHeaders'>
+                <div class='tableRow'>
+                    <h1 class="headerTop">Learning</h1>
+                    <h1 class="headerSide">Teaching</h1>
+                    <div class='tableValue'>
+                        <p class='magicteachingvalue TableIndividual'> </p>
+                        <p class='magicteachingvalue TableIndividual'> </p>
+                        <p class='magicteachingvalue TableIndividual'>Wild</p>
+                        <p class='magicteachingvalue TableIndividual'>Sourcerous</p>
+                        <p class='magicteachingvalue TableIndividual'>True Naming</p>
+                        <p class='magicteachingvalue TableIndividual'>Vancian</p>
+                    </div>
+                    <div class='tableValue'>
+                        <p class='magicteachingvalue TableIndividual'> </p>
+                        <p class='magicteachingvalue TableIndividual'>Wild</p>
+                        <p class='magicteachingvalue TableIndividual'>Average</p>
+                        <p class='magicteachingvalue TableIndividual'>Easy</p>
+                        <p class='magicteachingvalue TableIndividual'>X</p>
+                        <p class='magicteachingvalue TableIndividual'>Hard</p>
+                    </div>
+                    <div class='tableValue'>
+                        <p class='magicteachingvalue TableIndividual'> </p>
+                        <p class='magicteachingvalue TableIndividual'>Sourcerous</p>
+                        <p class='magicteachingvalue TableIndividual'>Hard</p>
+                        <p class='magicteachingvalue TableIndividual'>Trivial</p>
+                        <p class='magicteachingvalue TableIndividual'>Heroic</p>
+                        <p class='magicteachingvalue TableIndividual'>X</p>
+                    </div>
+                    <div class='tableValue'>
+                        <p class='magicteachingvalue TableIndividual'> </p>
+                        <p class='magicteachingvalue TableIndividual'>True Naming</p>
+                        <p class='magicteachingvalue TableIndividual'>X</p>
+                        <p class='magicteachingvalue TableIndividual'>Challenging</p>
+                        <p class='magicteachingvalue TableIndividual'>Challenging</p>
+                        <p class='magicteachingvalue TableIndividual'>Average</p>
+                    </div>
+                    <div class='tableValue'>
+                      <p class='magicteachingvalue TableIndividual'> </p>
+                      <p class='magicteachingvalue TableIndividual'>Vancian</p>
+                      <p class='magicteachingvalue TableIndividual'>Hard</p>
+                      <p class='magicteachingvalue TableIndividual'>Easy</p>
+                      <p class='magicteachingvalue TableIndividual'>Average</p>
+                      <p class='magicteachingvalue TableIndividual'>X</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <div class="space"></div>
       <div class='anchor'>
         <div id='12ekMmbFdQXU' class='anchorTag'></div>
