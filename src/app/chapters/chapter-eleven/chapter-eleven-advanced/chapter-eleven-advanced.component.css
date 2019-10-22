@@ -1,0 +1,39 @@
+.rangesShell {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .rangevalue {
+    width: 50%;
+  }
+  
+  .equipmentvalue {
+    width: 75px;
+  }
+  
+  .tableValue .equipmentvalue:first-child {
+    padding-left: 10px;
+    width: 215px;
+    text-align: left;
+  }
+  
+  .armorvalue {
+    width: 55px;
+  }
+  
+  .tableValue .armorvalue:first-child {
+    padding-left: 10px;
+    width: 100px;
+    text-align: left;
+  }
+  
+  .tableValue .armorvalue:nth-child(3) {
+    width: 70px;
+  }
+  
+  .subtitle {
+    color: whitesmoke;
+    background: rgb(100, 100, 100) !important;
+  }
