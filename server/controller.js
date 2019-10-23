@@ -5,11 +5,21 @@ module.exports = {
     search: (req, res) => {
         const db = req.app.get('db')
         db.get.search(req.body.search).then(result => {
-            let formattedResult = result.map(val => {
-                let newVal = { chap: +val.linkid.match(/^\d+/g)[0], body: val.body, linkid: val.linkid }
-                return newVal
-            })
-            res.send(formattedResult)
+            if (req.user.patreon) {
+                db.get.advsearch(req.body.search).then(advResult => {
+                    let allResults = [...result, ...advResult].sort((a, b) => a-b).splice(0, 49).map(val => {
+                        let newVal = { chap: +val.linkid.match(/^\d+/g)[0], body: val.body, linkid: val.linkid }
+                    return newVal
+                    })
+                    res.send(allResults)
+                })
+            } else {
+                let formattedResult = result.map(val => {
+                    let newVal = { chap: +val.linkid.match(/^\d+/g)[0], body: val.body, linkid: val.linkid }
+                    return newVal
+                })
+                res.send(formattedResult)
+            }
         })
     },
     handleOAuthRedirectRequest: (req, res) => {
