@@ -23,7 +23,12 @@ export class ChapterElevenComponent implements OnInit {
   ngOnInit() {
     this.chapterService.checkPatreon().subscribe(tier => {
       if (+tier >= 1) {
-        this.router.navigate(['/chapter/11/advanced'])
+        let searchParams = this.router.url.split('=')[1]
+        if (searchParams) {
+          this.router.navigate(['/chapter/11/advanced'], { queryParams: { search: searchParams }})
+        } else {
+          this.router.navigate(['/chapter/11/advanced'])
+        }
       }
     })
     this.navDisplay = window.document.body.clientWidth > 650 ? true : false
