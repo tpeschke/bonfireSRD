@@ -64,453 +64,114 @@
       <div class='paragraphShell anchor'>
         <div id='8pvrTVawRrAZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pvrTVawRrAZ'"></app-bm-chapter-icon>
-        <p> Take a look at the Skill Matrix Table below. Find the average of any relevant ability scores along the top
-          and then cross reference that with the number of times you've purchased that skill. For Advanced Skills, also
-          add any purchases of its parent Skill Suite to the total.</p>
+        <p> For Skill Suites, your starting Rank is the 10s digit of the relevant score, the 10s digit of the average of
+          the listed scores.
+          For Advanced Skill, unless it says otherwise (I'm looking at you Literacy and Combat Style), it is the Rank of
+          the mother Skill Suite.
+        </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8pcCUJeCdJSB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pcCUJeCdJSB'"></app-bm-chapter-icon>
-        <p>You can purchase a skill more than 21 times but this chart doesn’t go on forever because I’m lazy.
+        <p>So, if you have 15 Wis and 18 Cha, your starting Rank in Streetwise is 1. If you didn't purchase Perception,
+          your Rank in that is 1 as well since
+          it's mother Skill Suite is Streetwise.
         </p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8pqVqRTkCqsG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pqVqRTkCqsG'"></app-bm-chapter-icon>
-        <p> When you see a “*”, that means that every purchase after that point only gives you an average of +.1 to your
-          Skill Mastery. For “**”, it’s a +.2, “***” nets a +.3 and so on.</p>
+        <p> It is possible to have a Rank 0.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ptmNxKgqedZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8ptmNxKgqedZ'"></app-bm-chapter-icon>
-        <p> You character’s Rank in that skill is equal to that number rounded down. So, having a 3.6 in a skill gives
-          you
-          a
-          Rank of 3. Everything before the period represents how close that Skill is to increasing</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8prvieeTWUNt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8prvieeTWUNt'"></app-bm-chapter-icon>
-        <p> Why have this table and not just give you the Rank? Bonfire Basic is only to get you playing the game as
-          quickly as possible. In Bonfire Advanced, you'll be able to roll for your Skill mastery. Why would you do
-          this? The Skill Matrix only considers the average of the rolls without exploding dice,
-          which
-          means that, while you could just use it to skip the rolling part of skills, you’ll end up crippling your
-          character compared to those that do roll them, so this option is given to players focusing on being Skill
-          Monkeys</p>
-      </div>
-      <div class='tableOverflowWindow SkillMatrixTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Skill Matrix</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <h1 class="headerTop">Ability Score</h1>
-              <h1 class="headerSide matrixSide">Number of Purchases</h1>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>2</p>
-                <p class='SkillMatrixvalue TableIndividual'>4</p>
-                <p class='SkillMatrixvalue TableIndividual'>6</p>
-                <p class='SkillMatrixvalue TableIndividual'>8</p>
-                <p class='SkillMatrixvalue TableIndividual'>10</p>
-                <p class='SkillMatrixvalue TableIndividual'>12</p>
-                <p class='SkillMatrixvalue TableIndividual'>14</p>
-                <p class='SkillMatrixvalue TableIndividual'>16</p>
-                <p class='SkillMatrixvalue TableIndividual'>18</p>
-                <p class='SkillMatrixvalue TableIndividual'>20</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>2</p>
-                <p class='SkillMatrixvalue TableIndividual'>.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>1.2</p>
-                <p class='SkillMatrixvalue TableIndividual'>1.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>1.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.2</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.7</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.1</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.5</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.8</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>4</p>
-                <p class='SkillMatrixvalue TableIndividual'>1.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.5</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.7</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.2</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.7</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.3</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.3</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>6</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.3</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.7</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.3</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.9</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.5</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>8</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.2</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.9</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.7</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.3</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.1</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.9</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.6</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>10</p>
-                <p class='SkillMatrixvalue TableIndividual'>2.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.2</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.9</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.9</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>8.5</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>12</p>
-                <p class='SkillMatrixvalue TableIndividual'>3.1</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>4.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.5</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>***</p>
-                <p class='SkillMatrixvalue TableIndividual'>****</p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>14</p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.1</p>
-                <p class='SkillMatrixvalue TableIndividual'>5.1</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.0</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.1</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.2</p>
-                <p class='SkillMatrixvalue TableIndividual'>8.2</p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>16</p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'>6.4</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.5</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.6</p>
-                <p class='SkillMatrixvalue TableIndividual'>** </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>18</p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>6.8</p>
-                <p class='SkillMatrixvalue TableIndividual'>7.9</p>
-                <p class='SkillMatrixvalue TableIndividual'>8.0</p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue skillValueMatrix'>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>20</p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'>*</p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-                <p class='SkillMatrixvalue TableIndividual'> </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="anchor">
-        <div id="8hDzWWdfGtEh" class="anchorTag"></div>
-        <h1>ROLLING YOUR RANK</h1>
-        <h4 class="advancedHeader" id="advancedHead">🜂 Advanced Rule</h4>
-        <div class="underline"></div>
-      </div>
-      <div class='tableOverflowWindow AbilityScoreModifiersTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "220px"}'>
-          <h1 class='tableTitle'>Ability Score Modifiers</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>Ability Score</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>Modifier</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>1</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>-4</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>2 - 3</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>-3</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>4 - 5</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>-2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>6 - 7</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>-1</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>8 - 9</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>-1</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>10 - 11</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>0</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>12 - 13</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>1</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>14 - 15</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>1</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>16 - 17</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>18 - 19</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>3</p>
-              </div>
-              <div class='tableValue'>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>20</p>
-                <p class='AbilityScoreModifiersvalue TableIndividual'>4</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8fWeLWiaGKA' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8fWeLWiaGKA'"></app-bm-chapter-icon>
-                <p> If you'd like, you can roll for your Rank. Why would you do this? Because you come out with slightly better results than if you 
-          just used the matrix because your rolls can explode for thing. This take a bit more time but may be worth it for skill based characters.
+        <p> When you purchase a Skill, the cost is (base price - the average of the relevant scores, minimum 1) * the
+          previous Rank of that Skill.
+          Every purchase increases your Rank in that Skill by 1. Should you purchase a Skill Suite, it also increases
+          all of its Advanced Skills by 1
+          as well.
         </p>
       </div>
-      <div class='anchor'>
-        <div id=8hgocYFnbuRvd class='anchorTag'></div>
-        <h3>SKILL SUITES</h3>
-      </div>
       <div class='marginBottom paragraphShell anchor'>
-        <div id='8pMmtGglTExX' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pMmtGglTExX'"></app-bm-chapter-icon>
-                <p> Skill Suites have a starting base amount of the relevant ability or the average of the relevant abilities
-          listed divided by 10.</p>
-      </div>
-      <div class='anchor'>
-        <div id=8hgVTiKGRfvrM class='anchorTag'></div>
-        <h3>ADVANCED SKILLS</h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pUfkVUfypOG' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pUfkVUfypOG'"></app-bm-chapter-icon>
-                <p> Advanced Skills start at 0%: if you haven’t bought them, you can’t use them; you’ll have to use their parent
-          Skill Suite instead.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pnYrwqJaFBX' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pnYrwqJaFBX'"></app-bm-chapter-icon>
-                <p> If you’ve paid the price and got the skill, that Advanced Skill’s starting mastery is equal to its mother
-          Skill Suite. So, the Religion skill would use Lore’s mastery as it’s base.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pBoQRnZKNQT' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pBoQRnZKNQT'"></app-bm-chapter-icon>
-                <p> From there, you’ll roll a d12! plus the modifier from that specific skill’s relevant ability and add that, divided by 10, to
-          the base mastery, and wahla, your new mastery.</p>
-      </div>
-      <div class="anchor">
-        <div id="8hOExDtTKNNM" class="anchorTag"></div>
-        <h1>IMPROVING SKILLS</h1>
-        <h4 class="advancedHeader" id="advancedHead">🜂 Advanced Rule</h4>
-        <div class="underline"></div>
-      </div>
-      <div class='tableOverflowWindow RankDiceTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "150px"}'>
-          <h1 class='tableTitle'>Rank Dice</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>Skill Rank</p>
-                <p class='RankDicevalue TableIndividual'>Die</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>> 1</p>
-                <p class='RankDicevalue TableIndividual'>D12!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>1</p>
-                <p class='RankDicevalue TableIndividual'>D12!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>2</p>
-                <p class='RankDicevalue TableIndividual'>D10!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>3</p>
-                <p class='RankDicevalue TableIndividual'>D8!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>4</p>
-                <p class='RankDicevalue TableIndividual'>D6!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>5</p>
-                <p class='RankDicevalue TableIndividual'>D4!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>6</p>
-                <p class='RankDicevalue TableIndividual'>D3!</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>7</p>
-                <p class='RankDicevalue TableIndividual'>D3</p>
-              </div>
-              <div class='tableValue'>
-                <p class='RankDicevalue TableIndividual'>> 7</p>
-                <p class='RankDicevalue TableIndividual'>D2</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pMRHmYByOFL' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pMRHmYByOFL'"></app-bm-chapter-icon>
-                <p> The most likely scenario is that you’ll, at some point, want to improve one of your skills so that you’ll be
-          better at it.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pWRaSOZKrbc' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pWRaSOZKrbc'"></app-bm-chapter-icon>
-                <p> In both cases (Suites and Advanced Skills), you pay the price of that skill and you get to improve it.</p>
-      </div>
-      <div class="space"></div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pexUvOGbCuO' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pexUvOGbCuO'"></app-bm-chapter-icon>
-                <p> You can simply bump it up using the Skill Matrix, or you can toll the dice that’s indicated based on that skill’s Rank. Add the modifier based on that skill’s relevant
-          ability (or the average of them). Add that total, divided by 10, to the skill’s mastery. That’s the new mastery.</p>
-      </div>
-      <div class='paragraphShell'>
-        <p> You always increase a Skill by .1 for every purchase, even if your roll with modifiers brings the total below
-          0.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pCOBoQgGhaA' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pCOBoQgGhaA'"></app-bm-chapter-icon>
-                <p> Repeat this process for each time you purchased the skill. </p>
+        <div id='8prvieeTWUNt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'8prvieeTWUNt'"></app-bm-chapter-icon>
+        <p> So, let's go back to the above example and say that you purchased Perception twice. You'd have to pay 15
+          CrP. The first time you bought it
+          it cost 1 ( 15 - 15, minimum 1 ) * 1. Remember that you're already considered to have Rank 1 in it because you
+          have Rank 1 in Streetwise.
+          The second time costs 2 ( 15 - 15, minimum 1) * 2.
+        </p>
       </div>
       <div class="anchor">
         <div id="8UnZepBZjYQ" class="anchorTag"></div>
         <h1>SKILL SPECIALIZATIONS</h1>
         <h4 class="advancedHeader" id="advancedHead">🜂 Advanced Rule</h4>
         <div class="underline"></div>
-    </div>
-    <div class='paragraphShell anchor'>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='8iTANmWGHVn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8iTANmWGHVn'"></app-bm-chapter-icon>
-        <p>It often pays to specialize. After all, many dissertations cover extremely minute subjects with incredible depth
-            and drawing on that well of knowledge can be a huge benefit.</p>
-    </div>
-    <div class='paragraphShell anchor marginBottom'>
+        <p>It often pays to specialize. After all, many dissertations cover extremely minute subjects with incredible
+          depth
+          and drawing on that well of knowledge can be a huge benefit.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='8uzlQmjXQlK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8uzlQmjXQlK'"></app-bm-chapter-icon>
-        <p>Skill Specializations represent an area of knowledge within an Advanced Skill that your character spends extra
-            time versing themselves in. As such, they gain a bonus.</p>
-    </div>
-    <div class='paragraphShell anchor'>
+        <p>Skill Specializations represent an area of knowledge within an Advanced Skill that your character spends
+          extra
+          time versing themselves in. As such, they gain a bonus.</p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='8MjNerdRRXq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8MjNerdRRXq'"></app-bm-chapter-icon>
         <p>Skill specializations come in layers, modifiers that narrow down the field. Each layer gives a +1 to your
-            effective Rank when it comes into play.</p>
-    </div>
-    <div class='paragraphShell anchor marginBottom'>
+          effective Rank when it comes into play.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='8sETmtpGVoW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8sETmtpGVoW'"></app-bm-chapter-icon>
         <p>For example, a monster hunter studying predators, would gain a+1 Rank, while another that studies flying
-            predators would gain a +2 Rank bonus to their checks, and a monster hunter that studies the flying predators of
-            the Uchka Mountains would gain a bonus of +3 to their Rank.</p>
-    </div>
-    <div class='paragraphShell anchor'>
+          predators would gain a +2 Rank bonus to their checks, and a monster hunter that studies the flying predators
+          of
+          the Uchka Mountains would gain a bonus of +3 to their Rank.</p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='8IaFsgCrBGn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8IaFsgCrBGn'"></app-bm-chapter-icon>
-        <p>There may come a time when a specialization only kind of applies. In this case, it may be kind of helpful, as the
-            max bonus that can be gained from it is +1.</p>
-    </div>
-    <div class='paragraphShell anchor marginBottom'>
+        <p>There may come a time when a specialization only kind of applies. In this case, it may be kind of helpful, as
+          the
+          max bonus that can be gained from it is +1.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='8eDiLHhIbWp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8eDiLHhIbWp'"></app-bm-chapter-icon>
         <p>So, when encountering a land predator in the Uchka Mountains, all three monster hunters would only gain +1 to
-            their Rank.</p>
-    </div>
-    <div class='paragraphShell anchor marginBottom'>
+          their Rank.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='8cIplcPvnIB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8cIplcPvnIB'"></app-bm-chapter-icon>
-        <p>That sort of super-focused study takes a lot of time and effort and man only has so much time and energy to give.
-            The total number of specializations per Advanced Skill that a character can have is equal to half his
-            Intelligence score.</p>
-    </div>
-    <div class='paragraphShell anchor'>
+        <p>That sort of super-focused study takes a lot of time and effort and man only has so much time and energy to
+          give.
+          The total number of specializations per Advanced Skill that a character can have is equal to half his
+          Intelligence score.</p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='8qaoPqBsIyT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8qaoPqBsIyT'"></app-bm-chapter-icon>
         <p>A character can gain a specialization like any other skill; having his character go out of the way to
-            learn more about his craft. The price is the base cost of the Advanced Skill times the number of layers in the
-            specialization plus one.</p>
-    </div>
-    <div class='paragraphShell anchor marginBottom'>
+          learn more about his craft. The price is the base cost of the Advanced Skill times the number of layers in the
+          specialization plus one.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='8KemRTIrgJd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8KemRTIrgJd'"></app-bm-chapter-icon>
-        <p>A character can go back and increase the number of layers in his Skill Specialization after his initial purchase
-            of it, but it costs additional amount of CrPs equal to twice the base cost of the Advanced Skill.</p>
-    </div>
+        <p>A character can go back and increase the number of layers in his Skill Specialization after his initial
+          purchase
+          of it, but it costs additional amount of CrPs equal to twice the base cost of the Advanced Skill.</p>
+      </div>
       <div class="anchor">
         <div id="8hgLyZuRuhBU" class="anchorTag"></div>
         <h1>SKILL CHECKS</h1>
@@ -822,47 +483,47 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Acrobatics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Climbing</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Disarm Trap</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Endurance</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Con</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Escape Artist</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Jumping</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Sport (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Stealth</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Swimming</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
@@ -872,57 +533,57 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Administration</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Arcana</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>10</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>22</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>History</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Language (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Law (Culture)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Literacy (Culture)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Mathematics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Medicine</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Dex</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Monster Craft</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Nature</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Religion (Cult)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
@@ -932,52 +593,52 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Current Affairs</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Deception</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Int/Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Forgery</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Gambling/Gaming</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Intuition</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Listening</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Lock Picking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>21</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Perception</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Sleight of Hand</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Trap Finding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
               </div>
@@ -1000,57 +661,62 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Botany</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Camouflage</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Fire Building</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                 </div>
                 <div class='tableValue'>
+                  <p class='SkillDescriptionsvalue TableIndividual'>First Aid</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Int</p>
+                </div>
+                <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Handle Animal (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Hiding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Monster Craft</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Navigation</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Scavenging</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Snaring</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Dex</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Tracking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Use Rope</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
@@ -1060,47 +726,47 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Combat Style (Style)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Distraction</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>1</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Leadership</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Quarter Mastering</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Rally</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Recruiting</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Riding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Signalling</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Warfare</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis/Cha</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
@@ -1110,52 +776,52 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Appraisal (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Artistry (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cooking/Baking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Craft (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Leatherworking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Maintaince</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Metalworking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>19</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Musician (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Performance</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>3</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Persuasion</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>2</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                 </div>
               </div>
@@ -1574,7 +1240,8 @@
         <div id='8pAVPdNCzwSj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pAVPdNCzwSj'"></app-bm-chapter-icon>
         <p> Additionally, when two native speakers are in a Conflict, the one with the higher Language Rank gains
-          Leverage (see Applicable Skills under the Leverage Advance Rule in <a routerLink='../../../../../chapter/9'>Chapter 9:
+          Leverage (see Applicable Skills under the Leverage Advance Rule in <a
+            routerLink='../../../../../chapter/9'>Chapter 9:
             Social</a> ). In case of tie, nothing happens.</p>
       </div>
       <div class="space"></div>
@@ -2396,6 +2063,15 @@
         <p> So a character with the Combat Skill (unarmed fighting, attack) at 56 who gets into a tavern brawl gets a
           +2 to attack as long as he doesn’t draw his weapon and simply uses fisticuffs.</p>
       </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='8faIWqMAeco' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'8faIWqMAeco'"></app-bm-chapter-icon>
+        <p> Having a high Rank in Tactics doesn't automatically give you Combat Style bonuses under all circumstances
+          and
+          buying this
+          skill for the first time starts it off at Rank 0, instead of the Tactic Suite's Rank.
+        </p>
+      </div>
       <div class="space"></div>
       <div class='tableOverflowWindow DistractionCheckTable'>
         <div class='tableOuterShell' [ngStyle]='{width: "200px"}'>
@@ -2590,15 +2266,15 @@
       <div class="space"></div>
       <div class='paragraphShell anchor'>
         <div id='8pfKUtfRKhT' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8pfKUtfRKhT'"></app-bm-chapter-icon>
-                <p><strong class='orangeHeader'>RIDING</strong> This skill teaches a character how to maintain their stability
+        <app-bm-chapter-icon [id]="'8pfKUtfRKhT'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>RIDING</strong> This skill teaches a character how to maintain their stability
           while
           on horseback and making them capable of feats of equine prowess.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8bRKMvsThgi' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8bRKMvsThgi'"></app-bm-chapter-icon>
-                <p> A character without this skill Attacks and Defends with a d8! on horseback but is only able to do so while
+        <app-bm-chapter-icon [id]="'8bRKMvsThgi'"></app-bm-chapter-icon>
+        <p> A character without this skill Attacks and Defends with a d8! on horseback but is only able to do so while
           the
           horse is relatively still. Each speed category above a stand still, lowers that dice by 1 size, down to
           simply
@@ -2606,8 +2282,8 @@
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8CLXuoHnNWm' class='anchorTag'></div>
-                <app-bm-chapter-icon [id]="'8CLXuoHnNWm'"></app-bm-chapter-icon>
-                <p> For each difficulty they can pass without rolling, they increase that dice size by 1, back up to their
+        <app-bm-chapter-icon [id]="'8CLXuoHnNWm'"></app-bm-chapter-icon>
+        <p> For each difficulty they can pass without rolling, they increase that dice size by 1, back up to their
           full
           Attack and Defense. Flanking and other modifiers may lower this again, in the normal manner. </p>
       </div>
