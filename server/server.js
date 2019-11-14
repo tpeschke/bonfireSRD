@@ -28,13 +28,13 @@ passport.use(new Auth0Strategy({
     callbackURL: logCallback,
     scope: 'openid profile'
 }, function (accessToken, refreshToken, extraParams, profile, done) {
-    let { username, user_id } = profile;
+    let { displayName, user_id } = profile;
     const db = app.get('db');
 
     db.get.findUser([user_id]).then(function (users) {
         if (!users[0]) {
             db.post.createUser([
-                username,
+                displayName,
                 user_id
             ]).then(users => {
                 return done(null, users[0].id)
