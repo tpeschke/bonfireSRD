@@ -63,7 +63,7 @@
         <div id='15pqwgjInTnCF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pqwgjInTnCF'"></app-bm-chapter-icon>
           <p> A failure denotes that the symptoms are getting worse. Symptoms are what the poison attacks. This could be
-          one of the character’s Ability Scores, their Stress, their Fatigue or any combination of these choices.</p>
+          one of the character’s Ability Scores, their Stress, their Encumbrance or any combination of these choices.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='15psdIuKWAdHj' class='anchorTag'></div>
@@ -77,7 +77,7 @@
         <app-bm-chapter-icon [id]="'15pKGDhxzsZmE'"></app-bm-chapter-icon>
           <p> Each successive failure on a save causes an increase in the poison’s stage. On a single success, the poison
           begins to go backwards, healing an amount from the Score equal to 1 point per 5 points they succeeded by,
-          rounded up. This also cures any Stress or Fatigue specifically inflicted by the poison.</p>
+          rounded up. This also cures any Stress or Encumbrance specifically inflicted by the poison.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='15pBnnKcoHhdG' class='anchorTag'></div>
@@ -370,33 +370,8 @@
       <div class='paragraphShell anchor'>
         <div id='15pMFKhdzPgEf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pMFKhdzPgEf'"></app-bm-chapter-icon>
-        <p> A character going without either of these three things for a day automatically gains a Level of Fatigue that
-          does not go away until she’s gotten what she’s lacking.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='15pOcOKPCiNAn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pOcOKPCiNAn'"></app-bm-chapter-icon>
-        <p> This does stack; so a character who’s gone without food, water, or sleep for an entire day gains 3 Levels of
-          Fatigue (netting them a -4 to Attack, Damage, Defense, and a +4 to his Fatigue Score, Speed, and Skill Checks)
-          until they’ve had their fair share of water, food, and rest.</p>
-      </div>
-      <div class="space"></div>
-      <div class='paragraphShell anchor'>
-        <div id='15phsOBUYZFwb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15phsOBUYZFwb'"></app-bm-chapter-icon>
-        <p> If this continues for a number of levels equal to the character’s Con Score, they must then make a Con check
-          vs d20! + the number of days they’ve had to make the check. A failure indicates the character has died.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='15pVfKCuaBtVI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pVfKCuaBtVI'"></app-bm-chapter-icon>
-        <p> So, a character with 8 Con can go 8 days without water before making checks.</p>
-      </div>
-      <div class="space"></div>
-      <div class='paragraphShell anchor'>
-        <div id='15pEaholPOCiD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pEaholPOCiD'"></app-bm-chapter-icon>
-        <p> What’s more likely, however, is the character going on reduced rations to survive.</p>
+        <p> A character going without either of these three things for a day automatically gains 1 damage that isn't
+          healed until she’s gotten what she’s lacking. This does stack</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15pyAYflwuHDg' class='anchorTag'></div>
@@ -406,21 +381,13 @@
       <div class='paragraphShell anchor'>
         <div id='15pEDNbecttCl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pEDNbecttCl'"></app-bm-chapter-icon>
-        <p> Every half pound of food, 8 oz of water, and hour of sleep off that raises the Fatigue Score of the
-          individual by 1. This is cumulative over the successive number of days skipped.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15pgpbHtarvZa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pgpbHtarvZa'"></app-bm-chapter-icon>
-        <p> If the Fatigue Score penalty inflicted this way exceeds the character’s Con, they then have to make a check
-          every morning for each thing they’ve been skimping on, becoming Fatigued for each failure as if they had
-          completely skipped what they’re restricted on that day, but resets their Fatigue Score back to what it was
-          natively.</p>
+        <p> Every half pound of food, 16 oz of water, and hour of sleep off deals 1 point of damage. This is cumulative over the successive number of days skipped.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
-        <div id='15pGmsduCeiuh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pGmsduCeiuh'"></app-bm-chapter-icon>
-        <p> It’s a much slower way to die.</p>
+        <div id='15pOcOKPCiNAn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15pOcOKPCiNAn'"></app-bm-chapter-icon>
+        <p> So a character who’s gone without food, water, or sleep for an entire day gains 21 damage which doesn't heal
+          until they’ve had their fair share of water, food, and rest.</p>
       </div>
     </div>
     <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">

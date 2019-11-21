@@ -18,7 +18,7 @@ export class ChapterFifteenAdvancedComponent implements OnInit {
   
     navDisplay = false;
     chapterName = '';
-    side = { height: {'height': '2100px'}, side: [{linkid: 'hnu', body: 'ABILITY SCORE DAMAGE', jump: '15hbYNKwyrdVf'}, { linkid: 'hnu', body: 'DISEASES & POISONS', jump: '15hThjcdwfpAY'}, {linkid: 'hnu', body: 'FALLING DAMAGE', jump: '15hOfPmmhELBY'}, {linkid: 'hnu', body: 'ILLUMINATION', jump: '15hLzcrnSHGfR'}, {linkid: 'hnu', body: 'LONG TERM EXHAUSTION', jump: '15hfrDRlgsYQh'}]   };
+    side = { height: {'height': '2700px'}, side: [{linkid: 'hnu', body: 'ABILITY SCORE DAMAGE', jump: '15hbYNKwyrdVf'}, { linkid: 'hnu', body: 'DISEASES & POISONS', jump: '15hThjcdwfpAY'}, {linkid: 'hnu', body: 'FALLING DAMAGE', jump: '15hOfPmmhELBY'}, {linkid: 'hnu', body: 'ILLUMINATION', jump: '15hLzcrnSHGfR'}, {linkid: 'hnu', body: 'LONG TERM EXHAUSTION', jump: '15hfrDRlgsYQh'}]   };
   
     ngOnInit() {
       this.chapterService.checkPatreon().subscribe(tier => {
