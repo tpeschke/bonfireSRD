@@ -112,13 +112,13 @@
           </div>
         </div>
       </div>
-      <div class='marginBottom paragraphShell anchor'>
+      <div class='paragraphShell anchor'>
         <div id='10pyOpaLjDflp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pyOpaLjDflp'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>MOVEMENT</strong> While, for the most part, you’ll be using your common sense to
           determine how long things will take, to unify at least one thing, movement rates are given below.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='marginBottom paragraphShell anchor'>
         <div id='10pdoZkHbODEA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pdoZkHbODEA'"></app-bm-chapter-icon>
         <p> A person may move up 1 movement category or down 2 in a second.</p>
@@ -126,24 +126,20 @@
       <div class='paragraphShell anchor'>
         <div id='10pJTYGSapvfb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pJTYGSapvfb'"></app-bm-chapter-icon>
-        <p> When a person Runs or Sprints they must make a Fatigue check on a d20 if they're Running, or a d10 if
-          they’re Sprinting.</p>
+        <p> Running can be kept up for 5 Seconds + Endurance Rank. If you continue to Run after that you take d4 damage at the beginning of every 5 Seconds + Endurance Rank period..</p>
       </div>
       <div class='paragraphShell'>
-        <p> This happens a number of seconds equal to their Endurance Rank after they start to at least Run. So, a
-          character with an Endurance Rank of 3, who starts Sprinting on 2, needs to make a check on second 5, 8, 11,
-          and so on.</p>
+        <p> Sprinting can be kept up for Endurance Rank - Stress Penalty in Seconds. If continue to Sprint you take d4! damage at the beginning of every Endurance Rank - Stress Penalty period.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pNMJylJCTzA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pNMJylJCTzA'"></app-bm-chapter-icon>
-        <p> A result equal to or under their Fatigue Score means they need to stop and catch their breath. They need to
-          Walk for twice the amount of time they were Running or Sprinting for before Running or Sprinting again. </p>
+        <p> If you take damage from Running or Sprinting, you can’t Run or Sprint again until you take a breather.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pnyZWNpgvIV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnyZWNpgvIV'"></app-bm-chapter-icon>
-        <p> Every roll increases the person's Fatigue by 1 regardless of the results.</p>
+        <p> Also, moving from a Run to Sprint, or vice versa, doesn’t reset that count, so don’t think you can skip taking damage by moving from a Sprint to a Run, you cheeky devil.</p>
       </div>
       <div class='marginBottom paragraphShell'>
         <p> While Running or Sprinting, you're unable to attack or defend yourself</p>
@@ -585,7 +581,7 @@
         <app-bm-chapter-icon [id]="'10prdIUzAktjr'"></app-bm-chapter-icon>
         <p> However, if it’s not, the attack lands and the attacker rolls his weapon’s damage die and adds any
           appropriate damage modifiers. The defender than subtracts their Damage Reduction and the remaining total is
-          subtracted from their Health and added to their list of wounds.</p>
+          subtracted from their Vitality and added to their list of wounds.</p>
       </div>
       <div class="space"></div>
       <div class='paragraphShell anchor'>
@@ -622,43 +618,19 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='10pKiQYyhqLY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pKiQYyhqLY'"></app-bm-chapter-icon>
-        <p>If the pre-DR damage is higher than your enemy’s Health Size Modifier + 3 for every level of Encumbrance you
+        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 3 for every level of Encumbrance you
           have, the attack also moves them back 5 feet. If it’s twice the damage needed, they get knocked back 10 feet,
           and so on.</p>
       </div>
       <div class='anchor'>
-        <div id='10hgGZXlbYmifU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10hgGZXlbYmifU'"></app-bm-chapter-icon>
-        <h3>GAINING FATIGUE IN COMBAT</h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10pczjQejCnab' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pczjQejCnab'"></app-bm-chapter-icon>
-        <p> As the battle drags on, character’s body and spirit become more and more fatigued. Their swings become
-          slower and have less impact, and they don’t dodge as quickly as before. This is represented by Fatigue.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='10pGSYnsZQEaH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pGSYnsZQEaH'"></app-bm-chapter-icon>
-        <p> If a character rolls under his Fatigue Score on his defense, the character gains a level of Fatigue.</p>
-      </div>
-      <div class='anchor'>
         <div id='10hgGvtwrnIOmt' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10hgGvtwrnIOmt'"></app-bm-chapter-icon>
-        <h3>HEALTH & DAMAGE</h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10pdNPKkcslCS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pdNPKkcslCS'"></app-bm-chapter-icon>
-        <p> Your character’s Health will probably slowly drain over the course of combat and as that happens, he’ll be a
-          less effective fighter.</p>
+        <h3>VITALITY & DAMAGE</h3>
       </div>
       <div class='marginBottom paragraphShell anchor'>
-        <div id='10pBgpzKyMwJo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pBgpzKyMwJo'"></app-bm-chapter-icon>
-        <p> At each wound category above Unharmed, a character automatically receives 1 level of Fatigue. So a character
-          who’s Wounded is fighting with a penalty of 4 to his Speed, Defense, Damage, Attack, Fatigue Score and Skill
-          Checks (assuming he isn’t Fatigued from doing anything else in the fight).</p>
+        <div id='10pdNPKkcslCS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10pdNPKkcslCS'"></app-bm-chapter-icon>
+        <p> Remember that if you drop a Vitality Category you gain Stress equal to your Encumbrance</p>
       </div>
       <div class='anchor'>
         <div id='10hgxhgLSKeBpK' class='anchorTag'></div>
@@ -668,7 +640,7 @@
       <div class='paragraphShell anchor'>
         <div id='10pnJLKKdZDMg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnJLKKdZDMg'"></app-bm-chapter-icon>
-        <p> If someone does enough damage in one hit for you to skip a Wound Category (25% of their Health), you’ll have
+        <p> If someone does enough damage in one hit for you to skip a Wound Category (25% of their Vitality), you’ll have
           to roll a Trauma check, which is a Con check.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
@@ -736,15 +708,24 @@
       <div class='paragraphShell anchor'>
         <div id='10pmaKTmEtNSf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pmaKTmEtNSf'"></app-bm-chapter-icon>
-        <p> On Trauma and Attack rolls, characters may choose to reach deep down and push through. If they do so, they
-          automatically succeed at their check, but gain an amount of Fatigue equal to how much they failed by, though
-          they do gain at least 1 even if they succeed. This needs to be declared before the roll.</p>
+        <p> You may spend Vitality to increase or decrease any dice roll on a 1 for 1 with it all going on 1 wound. The following are exceptions:</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pCLLNIliqLy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pCLLNIliqLy'"></app-bm-chapter-icon>
-        <p> Note: if you're using Grit for an Attack and you gain enough Fatigue to have your character pass out, he
-          does so after the rest of the Attack is resolved.
+        <p> The first Vitality spent also zero outs any Stress Penalties, so spending 1 Vitality while Bloodied, gives you a net +1.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='onlyonepersonmatusgrit' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'onlyonepersonmatusgrit'"></app-bm-chapter-icon>
+        <p> Only one person may use Grit at a time. If two people declare they’re using Grit, it goes to the person in the Vitality Category closest to Bleeding Out. Ties go to the person who declared first.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='youmaydeclareyouruseof' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youmaydeclareyouruseof'"></app-bm-chapter-icon>
+        <p> You may declare your use of Grit after you know the totals of the rolls but before the next roll is made.
         </p>
       </div>
       <div class='anchor'>
@@ -1140,9 +1121,9 @@
       <div class='paragraphShell anchor'>
         <div id='10akSwjtfzyu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10akSwjtfzyu'"></app-bm-chapter-icon>
-        <p>If the difference between the attack and defense totals were more than the target’s Health Size Modifier, you
+        <p>If the difference between the attack and defense totals were more than the target’s Vitality Size Modifier, you
           may
-          gain additional benefits listed in the move. If the difference is double the Target’s Health Size Modifier,
+          gain additional benefits listed in the move. If the difference is double the Target’s Vitality Size Modifier,
           they
           may immediately make a second unarmed combat attack for free the same second.</p>
       </div>
@@ -1289,14 +1270,14 @@
       <div class='paragraphShell anchor'>
         <div id='10pPUtVwXXzWQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pPUtVwXXzWQ'"></app-bm-chapter-icon>
-        <p> A character whose Health is below 0 is bleeding out and is danger of dying. He can still move, attack, and
+        <p> A character whose Vitality is below 0 is bleeding out and is danger of dying. He can still move, attack, and
           basically function if he's still above his Fatigue.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10prWgRCAbpxQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10prWgRCAbpxQ'"></app-bm-chapter-icon>
-        <p> Every 5 seconds that character is in this state, he rolls a Con check + his current Health vs d20! + 10. If
-          he fails, he takes another point of damage. If he succeeds, he doesn’t lose any Health that second.</p>
+        <p> Every 5 seconds that character is in this state, he rolls a Con check + his current Vitality vs d20! + 10. If
+          he fails, he takes another point of damage. If he succeeds, he doesn’t lose any Vitality that second.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pSfkHLHeknG' class='anchorTag'></div>
@@ -1306,7 +1287,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pnhJknsUjJh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnhJknsUjJh'"></app-bm-chapter-icon>
-        <p> Should his Health reach half his Con in the negative (whether from bleeding out or additional Wounds), he
+        <p> Should his Vitality reach half his Con in the negative (whether from bleeding out or additional Wounds), he
           dies. So, a character with 12 Con dies at -6,
           while one with 8 dies at -4.</p>
       </div>
@@ -1405,19 +1386,19 @@
       <div class='paragraphShell anchor'>
         <div id='10GUdsQyxKFi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10GUdsQyxKFi'"></app-bm-chapter-icon>
-        <p>From there, events and actions may increase or decrease these thresholds by 1 Health. This can be from Stress
+        <p>From there, events and actions may increase or decrease these thresholds by 1 Vitality. This can be from Stress
           or
           what’s going on on the battlefield currently.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='10DqJFvqPyok' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10DqJFvqPyok'"></app-bm-chapter-icon>
-        <p>Record this for your character by circling the Wound Category in your Health Section.</p>
+        <p>Record this for your character by circling the Wound Category in your Vitality Section.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10ldYvtOczlq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10ldYvtOczlq'"></app-bm-chapter-icon>
-        <p>For example, let's say there’s a fighter with Average Honor and 26 Health, which means, baseline, he Panics
+        <p>For example, let's say there’s a fighter with Average Honor and 26 Vitality, which means, baseline, he Panics
           when
           he’s taken a total of 13 damage and Routes when he’s taken 19 damage. </p>
       </div>
@@ -1426,14 +1407,14 @@
         <app-bm-chapter-icon [id]="'10GgCWYXPIxc'"></app-bm-chapter-icon>
         <p>Now let’s say that he’s fighting goblins on the top of a fortified hill. Because he’s in a really good
           position
-          (he has the high ground), he feels pretty confident. This raises his Morale by 3 Health. He now Panics at 16
+          (he has the high ground), he feels pretty confident. This raises his Morale by 3 Vitality. He now Panics at 16
           damage and won’t Route until he’s taken 22 damage.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='10XDADWjtFCO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10XDADWjtFCO'"></app-bm-chapter-icon>
         <p>Additionally, a character can make a Rally check to keep a fighter from Panicking or Routeing, temporarily
-          raising their Morale thresholds by 1 Health per point they succeeded by. If the enemy has a leader, that Rally
+          raising their Morale thresholds by 1 Vitality per point they succeeded by. If the enemy has a leader, that Rally
           check is opposed by them.</p>
       </div>
       <div class='anchor'>

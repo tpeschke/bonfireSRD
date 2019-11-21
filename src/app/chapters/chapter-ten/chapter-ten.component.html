@@ -112,13 +112,13 @@
           </div>
         </div>
       </div>
-      <div class='marginBottom paragraphShell anchor'>
+      <div class='paragraphShell anchor'>
         <div id='10pyOpaLjDflp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pyOpaLjDflp'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>MOVEMENT</strong> While, for the most part, you’ll be using your common sense to
           determine how long things will take, to unify at least one thing, movement rates are given below.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='marginBottom paragraphShell anchor'>
         <div id='10pdoZkHbODEA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pdoZkHbODEA'"></app-bm-chapter-icon>
         <p> A person may move up 1 movement category or down 2 in a second.</p>
@@ -126,24 +126,23 @@
       <div class='paragraphShell anchor'>
         <div id='10pJTYGSapvfb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pJTYGSapvfb'"></app-bm-chapter-icon>
-        <p> When a person Runs or Sprints they must make a Fatigue check on a d20 if they're Running, or a d10 if
-          they’re Sprinting.</p>
+        <p> Running can be kept up for 5 Seconds + Endurance Rank. If you continue to Run after that you take d4 damage
+          at the beginning of every 5 Seconds + Endurance Rank period..</p>
       </div>
       <div class='paragraphShell'>
-        <p> This happens a number of seconds equal to their Endurance Rank after they start to at least Run. So, a
-          character with an Endurance Rank of 3, who starts Sprinting on 2, needs to make a check on second 5, 8, 11,
-          and so on.</p>
+        <p> Sprinting can be kept up for Endurance Rank - Stress Penalty in Seconds. If continue to Sprint you take d4!
+          damage at the beginning of every Endurance Rank - Stress Penalty period.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pNMJylJCTzA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pNMJylJCTzA'"></app-bm-chapter-icon>
-        <p> A result equal to or under their Fatigue Score means they need to stop and catch their breath. They need to
-          Walk for twice the amount of time they were Running or Sprinting for before Running or Sprinting again. </p>
+        <p> If you take damage from Running or Sprinting, you can’t Run or Sprint again until you take a breather.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pnyZWNpgvIV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnyZWNpgvIV'"></app-bm-chapter-icon>
-        <p> Every roll increases the person's Fatigue by 1 regardless of the results.</p>
+        <p> Also, moving from a Run to Sprint, or vice versa, doesn’t reset that count, so don’t think you can skip
+          taking damage by moving from a Sprint to a Run, you cheeky devil.</p>
       </div>
       <div class='marginBottom paragraphShell'>
         <p> While Running or Sprinting, you're unable to attack or defend yourself</p>
@@ -192,8 +191,9 @@
       <div class='paragraphShell anchor'>
         <div id='10pCgTkMAcMsf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pCgTkMAcMsf'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>ENGAGED</strong> You’ve closed the distance and can actually make an attack. 
-          The person with the highest weapon measure attacks first. If both weapons are exactly the same measure, the attacks happen simultaneously.</p>
+        <p><strong class='orangeHeader'>ENGAGED</strong> You’ve closed the distance and can actually make an attack.
+          The person with the highest weapon measure attacks first. If both weapons are exactly the same measure, the
+          attacks happen simultaneously.</p>
       </div>
       <div class='anchor'>
         <div id='10hgrAqUBiMqtw' class='anchorTag'></div>
@@ -242,7 +242,7 @@
         <app-bm-chapter-icon [id]="'10prdIUzAktjr'"></app-bm-chapter-icon>
         <p> However, if it’s not, the attack lands and the attacker rolls his weapon’s damage die and adds any
           appropriate damage modifiers. The defender than subtracts their Damage Reduction and the remaining total is
-          subtracted from their Health and added to their list of wounds.</p>
+          subtracted from their Vitality and added to their list of wounds.</p>
       </div>
       <div class="space"></div>
       <div class='paragraphShell anchor'>
@@ -279,36 +279,18 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='10pKiQYyhqLY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pKiQYyhqLY'"></app-bm-chapter-icon>
-        <p>If the pre-DR damage is higher than your enemy’s Health Size Modifier + 3 for every level of Encumbrance you
+        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 3 for every level of Encumbrance you
           have, the attack also moves them back 5 feet. If it’s twice the damage needed, they get knocked back 10 feet,
           and so on.</p>
-      </div>
-      <div class='anchor'>
-        <div id='10hgGZXlbYmifU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10hgGZXlbYmifU'"></app-bm-chapter-icon>
-        <h3>GAINING FATIGUE IN COMBAT</h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10pczjQejCnab' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pczjQejCnab'"></app-bm-chapter-icon>
-        <p> As the battle drags on, character’s body and spirit become more and more fatigued. Their swings become
-          slower and have less impact, and they don’t dodge as quickly as before. This is represented by Fatigue.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='10pGSYnsZQEaH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pGSYnsZQEaH'"></app-bm-chapter-icon>
-        <p> If a character rolls under his Fatigue Score on his defense, the character gains a level of Fatigue.</p>
-      </div>
-      <div class='anchor'>
+      </div><div class='anchor'>
         <div id='10hgGvtwrnIOmt' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10hgGvtwrnIOmt'"></app-bm-chapter-icon>
-        <h3>HEALTH & DAMAGE</h3>
+        <h3>VITALITY & DAMAGE</h3>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='marginBottom paragraphShell anchor'>
         <div id='10pdNPKkcslCS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pdNPKkcslCS'"></app-bm-chapter-icon>
-        <p> Your character’s Health will probably slowly drain over the course of combat and as that happens, he’ll be a
-          less effective fighter.</p>
+        <p> Remember that if you drop a Vitality Category you gain Stress equal to your Encumbrance</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pBgpzKyMwJo' class='anchorTag'></div>
@@ -325,7 +307,7 @@
       <div class='paragraphShell anchor'>
         <div id='10pnJLKKdZDMg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnJLKKdZDMg'"></app-bm-chapter-icon>
-        <p> If someone does enough damage in one hit for you to skip a Wound Category (25% of their Health), you’ll have
+        <p> If someone does enough damage in one hit for you to skip a Wound Category (25% of their Vitality), you’ll have
           to roll a Trauma check, which is a Con check.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
@@ -349,15 +331,27 @@
       <div class='paragraphShell anchor'>
         <div id='10pmaKTmEtNSf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pmaKTmEtNSf'"></app-bm-chapter-icon>
-        <p> On Trauma and Attack rolls, characters may choose to reach deep down and push through. If they do so, they
-          automatically succeed at their check, but gain an amount of Fatigue equal to how much they failed by, though
-          they do gain at least 1 even if they succeed. This needs to be declared before the roll.</p>
+        <p> You may spend Vitality to increase or decrease any dice roll on a 1 for 1 with it all going on 1 wound. The
+          following are exceptions:</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pCLLNIliqLy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pCLLNIliqLy'"></app-bm-chapter-icon>
-        <p> Note: if you're using Grit for an Attack and you gain enough Fatigue to have your character pass out, he
-          does so after the rest of the Attack is resolved.
+        <p> The first Vitality spent also zero outs any Stress Penalties, so spending 1 Vitality while Bloodied, gives
+          you a net +1.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='onlyonepersonmatusgrit' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'onlyonepersonmatusgrit'"></app-bm-chapter-icon>
+        <p> Only one person may use Grit at a time. If two people declare they’re using Grit, it goes to the person in
+          the Vitality Category closest to Bleeding Out. Ties go to the person who declared first.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='youmaydeclareyouruseof' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youmaydeclareyouruseof'"></app-bm-chapter-icon>
+        <p> You may declare your use of Grit after you know the totals of the rolls but before the next roll is made.
         </p>
       </div>
       <div class='anchor'>
@@ -458,8 +452,9 @@
         <div id='10pNRQBQaKKHa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pNRQBQaKKHa'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>CHOKING UP ON YOUR WEAPON</strong> When you’ve choked up on your weapon, your
-          weapon’s Measure is halved, and you add that number, rounded down to its speed. Your halved Measure is considered your 
-        new Measure for determining who attacks first and what Tactics can be employed on you as well.</p>
+          weapon’s Measure is halved, and you add that number, rounded down to its speed. Your halved Measure is
+          considered your
+          new Measure for determining who attacks first and what Tactics can be employed on you as well.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pQJofMLfjZy' class='anchorTag'></div>
@@ -487,23 +482,29 @@
       <div class='paragraphShell anchor'>
         <div id='10JCnocIFROh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10JCnocIFROh'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>FEND OFF</strong> If your weapon's measure is at least 1 foot greater than your opponent's, 
-        you can try and fend them off. This means that you may attack them freely, while they can't do the same to you.</p>
+        <p><strong class='orangeHeader'>FEND OFF</strong> If your weapon's measure is at least 1 foot greater than your
+          opponent's,
+          you can try and fend them off. This means that you may attack them freely, while they can't do the same to
+          you.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10WZRRfHohFX' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10WZRRfHohFX'"></app-bm-chapter-icon>
-        <p> You may only use this Tactic as someone is going from Threathened to Engaged, in which case they're automatically considered to be Fended Off. 
-          To full becoming engaged with you, they'll have to knock your weapon aside with a regular attack that deals no damage. Should they hit, they become 
+        <p> You may only use this Tactic as someone is going from Threathened to Engaged, in which case they're
+          automatically considered to be Fended Off.
+          To full becoming engaged with you, they'll have to knock your weapon aside with a regular attack that deals no
+          damage. Should they hit, they become
           fully engaged and can attack freely again.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10VArjPhRqOR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10VArjPhRqOR'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>IN THEIR GUARD</strong> If you're engaged with a person and have a weapon that is at least 1 foot shorter 
-        than your opponent, you may attempt to get in their guard. On a successful attack that deals no damage, the shorter weapon fighter has successfully 
-      knocked his foe's weapon aside and is no fighting at extreme close range, cause them huge penalties.</p>
+        <p><strong class='orangeHeader'>IN THEIR GUARD</strong> If you're engaged with a person and have a weapon that
+          is at least 1 foot shorter
+          than your opponent, you may attempt to get in their guard. On a successful attack that deals no damage, the
+          shorter weapon fighter has successfully
+          knocked his foe's weapon aside and is no fighting at extreme close range, cause them huge penalties.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pPuxveLbUxn' class='anchorTag'></div>
@@ -639,14 +640,14 @@
       <div class='paragraphShell anchor'>
         <div id='10pPUtVwXXzWQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pPUtVwXXzWQ'"></app-bm-chapter-icon>
-        <p> A character whose Health is below 0 is bleeding out and is danger of dying. He can still move, attack, and
+        <p> A character whose Vitality is below 0 is bleeding out and is danger of dying. He can still move, attack, and
           basically function if he's still above his Fatigue.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10prWgRCAbpxQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10prWgRCAbpxQ'"></app-bm-chapter-icon>
-        <p> Every 5 seconds that character is in this state, he rolls a Con check + his current Health vs d20! + 10. If
-          he fails, he takes another point of damage. If he succeeds, he doesn’t lose any Health that second.</p>
+        <p> Every 5 seconds that character is in this state, he rolls a Con check + his current Vitality vs d20! + 10. If
+          he fails, he takes another point of damage. If he succeeds, he doesn’t lose any Vitality that second.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pSfkHLHeknG' class='anchorTag'></div>
@@ -656,7 +657,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pnhJknsUjJh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnhJknsUjJh'"></app-bm-chapter-icon>
-        <p> Should his Health reach half his Con in the negative (whether from bleeding out or additional Wounds), he
+        <p> Should his Vitality reach half his Con in the negative (whether from bleeding out or additional Wounds), he
           dies. So, a character with 12 Con dies at -6,
           while one with 8 dies at -4.</p>
       </div>
