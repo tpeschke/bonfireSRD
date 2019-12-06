@@ -4,13 +4,17 @@ import { SelectivePreloadingStrategyService } from '../../selective-preloading.s
 import { ChapterThreeComponent } from './chapter-three.component';
 import { ChaptersModule } from '../chapters.module';
 import { Routes, RouterModule } from '@angular/router';
+import { BasicGuardService } from '../basic-guard.service';
+import { AdvGuardService } from '../adv-guard.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: ChapterThreeComponent
+    component: ChapterThreeComponent,
+    canActivate: [BasicGuardService]
   },
-  { path: 'advanced', loadChildren: './chapter-three-advanced/chapter-three-advanced.module#ChapterThreeAdvancedModule', data: { preload: true } },
+  { path: 'advanced', loadChildren: './chapter-three-advanced/chapter-three-advanced.module#ChapterThreeAdvancedModule', 
+    canActivate: [AdvGuardService] },
 ];
 
 @NgModule({

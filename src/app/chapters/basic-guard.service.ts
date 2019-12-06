@@ -8,12 +8,12 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class AdvGuardService implements CanActivate {
+export class BasicGuardService {
 
   constructor(
     private http: HttpClient,
     private router: Router
-  ) { }
+    ) { }
 
   canActivate(
     next: ActivatedRouteSnapshot,
@@ -21,10 +21,15 @@ export class AdvGuardService implements CanActivate {
   ): Observable<boolean> | Promise<boolean> | boolean {
     return this.http.get(local.endpointBase + '/checkPatreon').pipe(
       map(result => {
-        if (result >= 1) {
+        if (result === 0 || !result) {
           return true
         }
-        this.router.navigate([state.url.split('/advanced')[0]])
+        let searchParams = state.url.split('?')
+        if (searchParams[1]) {
+          this.router.navigate([searchParams[0] + '/advanced'], {queryParams: {search: searchParams[1].split('=')[1]}})
+        } else {
+          this.router.navigate([state.url + '/advanced'])
+        }
         return false
       })
     )

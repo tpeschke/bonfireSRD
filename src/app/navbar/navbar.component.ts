@@ -30,13 +30,7 @@ export class NavbarComponent implements OnInit {
   public login = ''
 
   ngOnInit() {
-    if (!this.chapterService.login) {
-      this.chapterService.checkLogin().subscribe(login => {
-        if (login) {
-          this.chapterService.checkPatreon().subscribe().unsubscribe
-        }
-      }).unsubscribe()
-    }
+    this.chapterService.checkPatreon().subscribe().unsubscribe()
     
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {

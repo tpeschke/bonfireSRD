@@ -21,16 +21,6 @@ export class ChapterFifteenComponent implements OnInit {
   side = { height: {'height': '2100px'}, side: [{linkid: 'hnu', body: 'ABILITY SCORE DAMAGE', jump: '15hbYNKwyrdVf'}, {linkid: 'hnu', body: 'FALLING DAMAGE', jump: '15hOfPmmhELBY'}, {linkid: 'hnu', body: 'ILLUMINATION', jump: '15hLzcrnSHGfR'}, {linkid: 'hnu', body: 'LONG TERM EXHAUSTION', jump: '15hfrDRlgsYQh'}]   };
 
   ngOnInit() {
-    this.chapterService.checkPatreon().subscribe(tier => {
-      if (+tier >= 1) {
-        let searchParams = this.router.url.split('=')[1]
-        if (searchParams) {
-          this.router.navigate(['/chapter/15/advanced'], { queryParams: { search: searchParams }})
-        } else {
-          this.router.navigate(['/chapter/15/advanced'])
-        }
-      }
-    })
     this.navDisplay = window.document.body.clientWidth > 650 ? true : false
     this.notRedux.toggleShow(true);
   }
