@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
-import { Router, NavigationEnd } from '@angular/router'
+import { Router, NavigationEnd, NavigationStart } from '@angular/router'
 import { ChapterService } from '../chapter.service'
 import local from '../local'
 
@@ -28,12 +28,17 @@ export class NavbarComponent implements OnInit {
   public ham = false;
   public height = 0
   public login = ''
+  public loadIcon = false
 
   ngOnInit() {
     this.chapterService.checkPatreon().subscribe().unsubscribe()
     
     this.router.events.subscribe(p => {
+      if (p instanceof NavigationStart) {
+        this.loadIcon = true
+      }
       if (p instanceof NavigationEnd) {
+        this.loadIcon = false
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0
 
