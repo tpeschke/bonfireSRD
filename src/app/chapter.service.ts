@@ -20,7 +20,10 @@ export class ChapterService {
   constructor(
     private http: HttpClient,
     private toastr: ToastrService
-  ) { }
+  ) {}
+
+  public login: boolean | string = false
+  public patreon = null;
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
@@ -35,10 +38,11 @@ export class ChapterService {
     }
   }
 
+  
+
   getSearch(search: string): Observable<Search[]> {
     return this.http.post<Search[]>(local.endpointBase + '/search', { search })
       .pipe(
-        tap(),
         catchError(this.handleError('search', []))
       )
   }
@@ -46,7 +50,7 @@ export class ChapterService {
   checkLogin(): any {
     return this.http.get(local.endpointBase + '/checkLogin')
       .pipe(
-        tap(),
+        tap(value => this.login = !!value),
         catchError(this.handleError('logon', []))
       )
   }
@@ -54,7 +58,7 @@ export class ChapterService {
   checkPatreon(): any {
     return this.http.get(local.endpointBase + '/checkPatreon')
       .pipe(
-        tap(),
+        tap(value => this.patreon = value),
         catchError(this.handleError('patreon', []))
       )
   }
@@ -62,7 +66,6 @@ export class ChapterService {
   updatePatreon(code): any {
     return this.http.post(local.endpointBase + '/linkPatreon', { code })
       .pipe(
-        tap(),
         catchError(this.handleError('patreon update', []))
       )
   }
@@ -70,7 +73,6 @@ export class ChapterService {
   getBookmarks(): Observable<any> {
     return this.http.get<any[]>(local.endpointBase + '/bm')
       .pipe(
-        tap(),
         catchError(this.handleError('getBookmarks', []))
       )
   }
@@ -86,7 +88,6 @@ export class ChapterService {
   deleteBookmark(code): any {
     return this.http.delete(local.endpointBase + '/dbm/' + code)
       .pipe(
-        tap(),
         catchError(this.handleError('delete bookmark', []))
       )
   }
@@ -94,7 +95,6 @@ export class ChapterService {
   getTrait(): any {
     return this.http.get(local.endpointBase + '/trait')
       .pipe(
-        tap(),
         catchError(this.handleError('get trait', []))
       )
   }

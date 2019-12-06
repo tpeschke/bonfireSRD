@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
 import { Router, NavigationEnd } from '@angular/router'
+import { ChapterService } from '../chapter.service'
 import local from '../local'
 
 @Component({
@@ -14,6 +15,7 @@ export class NavbarComponent implements OnInit {
   constructor(
     private notRedux: NotReduxService,
     private router: Router,
+    private chapterService: ChapterService
   ) { }
 
   public chapter = '';
@@ -28,6 +30,14 @@ export class NavbarComponent implements OnInit {
   public login = ''
 
   ngOnInit() {
+    if (!this.chapterService.login) {
+      this.chapterService.checkLogin().subscribe(login => {
+        if (login) {
+          this.chapterService.checkPatreon().subscribe().unsubscribe
+        }
+      }).unsubscribe()
+    }
+    
     this.router.events.subscribe(p => {
       if (p instanceof NavigationEnd) {
         document.body.scrollTop = 0;

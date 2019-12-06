@@ -29,6 +29,7 @@ const routes: Routes = [
   {path: 'chapter/15', loadChildren: './chapters/chapter-fifteen/chapter-fifteen.module#ChapterFifteenModule' },
   {path: 'search', component: SearchComponent},
   {path: 'privacypolicy', component: PrivacyPolicyComponent},
+  {path: '**', redirectTo: ''},
 ]
 
 @NgModule({
