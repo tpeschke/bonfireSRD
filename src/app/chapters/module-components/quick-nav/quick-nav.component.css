@@ -4,10 +4,18 @@
 }
 
 .quickNavShellSide {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+}
+
+.quickNavBox {
   background: rgba(245, 245, 245, 0.9);
   padding: 10px 5px;
   border-top: 5px solid #b45f06;
   border-bottom: 5px solid #b45f06;
+  overflow-y: auto;
+  max-height: 445px;
 }
 
 .imageBannerSide {
@@ -49,13 +57,39 @@ p:hover {
 }
 
 .toTopButton {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: unset;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.toTopButton:hover {
+  background: #b45f06;
+  color: whitesmoke;
 }
 
 .quickNavShellSide div:last-child h1{
   border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b45f06; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b45f06; 
 }
 
 /* ======================================================= */
