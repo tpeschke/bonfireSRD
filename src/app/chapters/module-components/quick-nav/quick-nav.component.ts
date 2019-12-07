@@ -18,4 +18,9 @@ export class QuickNavComponent implements OnInit {
     document.documentElement.scrollTop = 0
   }
 
+  scrollToElement(element): void {
+    let el = document.getElementById(element.replace(/ |-|:|&|'|([()])|\//ig, ''))
+    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
+
 }
