@@ -27,12 +27,12 @@ import { BookmarkingModule } from './bookmarking/Bookmarking.module';
     FormatSearchPipe
   ],
   imports: [
-    AppRoutingModule,
     HttpClientModule,
     BrowserModule,
     BookmarkingModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot({preventDuplicates: true})
+    ToastrModule.forRoot({preventDuplicates: true}),
+    AppRoutingModule
   ],
   providers: [  ],
   bootstrap: [AppComponent]

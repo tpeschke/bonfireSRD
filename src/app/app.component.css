@@ -13,6 +13,10 @@
     z-index: 1;
 }
 
+.routerDiv {
+    min-height: 100vh;
+}
+
 .footHolder {
     max-width: 950px;
     width: 100%;
@@ -41,3 +45,4 @@
     height: auto;
     z-index: -100;
 }
+

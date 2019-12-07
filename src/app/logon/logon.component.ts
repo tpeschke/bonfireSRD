@@ -15,20 +15,20 @@ export class LogonComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  public loggedIn = false
-  public patreon: boolean | string = false;
+  public loggedIn = this.chapterService.login
+  public patreon = this.chapterService.patreon;
   public loginEndpoint = local.login
   public patreonEndpoint = local.patreon
 
   ngOnInit() {
-    this.chapterService.checkLogin()
-      .subscribe(result => {
-        this.loggedIn = result
-        if (this.loggedIn) {
+    if (!this.loggedIn) {
+      this.chapterService.checkLogin().subscribe(newLoginValue => {
+        this.loggedIn = newLoginValue
+        if (!this.patreon) {
           this.chapterService.checkPatreon()
-            .subscribe(pResult => {
-              this.patreon = pResult
-              if (!pResult) {
+            .subscribe(newPatreonValue => {
+              this.patreon = newPatreonValue
+              if (!newPatreonValue) {
                 this.route.queryParams.subscribe(params => {
                   if (params.code) {
                     this.patreon = 'loading';
@@ -42,6 +42,7 @@ export class LogonComponent implements OnInit {
             })
         }
       })
+    }
   }
 
 }

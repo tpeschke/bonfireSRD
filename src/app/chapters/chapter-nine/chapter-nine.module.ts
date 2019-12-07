@@ -4,13 +4,17 @@ import { CommonModule } from '@angular/common';
 import { ChapterNineComponent } from './chapter-nine.component';
 import { ChaptersModule } from '../chapters.module';
 import { Routes, RouterModule } from '@angular/router';
+import { BasicGuardService } from '../basic-guard.service';
+import { AdvGuardService } from '../adv-guard.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: ChapterNineComponent
+    component: ChapterNineComponent,
+    canActivate: [BasicGuardService]
   },
-  { path: 'advanced', loadChildren: './chapter-nine-advanced/chapter-nine-advanced.module#ChapterNineAdvancedModule', data: { preload: true } },
+  { path: 'advanced', loadChildren: './chapter-nine-advanced/chapter-nine-advanced.module#ChapterNineAdvancedModule',
+    canActivate: [AdvGuardService]},
 ];
 
 @NgModule({

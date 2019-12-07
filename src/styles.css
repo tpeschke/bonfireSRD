@@ -401,7 +401,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-  
   .pairedShell {
     width: 80% !important
   }
@@ -790,6 +789,28 @@ h2 {
   width: 80px;
   padding: 0 5px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b45f06; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b45f06; 
+}
+
+
 
 /* =============TOASTR======================== */
 /* based on angular-toastr css https://github.com/Foxandxss/angular-toastr/blob/cb508fe6801d6b288d3afc525bb40fee1b101650/dist/angular-toastr.css */

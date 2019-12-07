@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NotReduxService } from '../../not-redux.service';
 import { Router } from '@angular/router';
 import { ChapterService } from '../../chapter.service'
 
@@ -11,38 +10,20 @@ import { ChapterService } from '../../chapter.service'
 export class ChapterThreeComponent implements OnInit {
 
   constructor(
-    private notRedux: NotReduxService,
-    private router: Router,
+        private router: Router,
     private chapterService: ChapterService
   ) { }
 
-  navDisplay = false;
   chapterName = '';
-  side = { height: {'height': '3503px'}, side: [{linkid: 'hg', body: 'A BRIEF OVERVIEW OF THE HISTORY OF THE MIDDLE REALM', jump: '3hg1'}, {linkid: 'h', body: 'WHICH RACE SHOULD I CHOOSE?', jump: '3ibTsjRfDjl'}, {linkid: 'hg', body: 'ABILITY SCORE MODIFIERS', jump: '3kOpuEvckQq'}, {linkid: 'hg', body: 'GAMEPLAY REWARDS', jump: '3FtaYQizyom'}, {linkid: 'hg', body: 'ARCHETYPE COSTS', jump: '3NLyIsVRDgl'}, {linkid: 'h', body: 'ELVES', jump: '3h1'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg15'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg16'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg17'}, {linkid: 'h', body: 'HUMANS', jump: '3h2'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg18'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg19'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg20'}, {linkid: 'h', body: 'ORCS', jump: '3h3'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg21'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg22'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg23'}] };
+  side =[{linkid: 'hg', body: 'A BRIEF OVERVIEW OF THE HISTORY OF THE MIDDLE REALM', jump: '3hg1'}, {linkid: 'h', body: 'WHICH RACE SHOULD I CHOOSE?', jump: '3ibTsjRfDjl'}, {linkid: 'hg', body: 'ABILITY SCORE MODIFIERS', jump: '3kOpuEvckQq'}, {linkid: 'hg', body: 'GAMEPLAY REWARDS', jump: '3FtaYQizyom'}, {linkid: 'hg', body: 'ARCHETYPE COSTS', jump: '3NLyIsVRDgl'}, {linkid: 'h', body: 'ELVES', jump: '3h1'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg15'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg16'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg17'}, {linkid: 'h', body: 'HUMANS', jump: '3h2'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg18'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg19'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg20'}, {linkid: 'h', body: 'ORCS', jump: '3h3'}, {linkid: 'hg', body: 'HISTORY', jump: '3hg21'}, {linkid: 'hg', body: 'APPEARANCE', jump: '3hg22'}, {linkid: 'hg', body: 'PERSONALITY', jump: '3hg23'}]
 
-  ngOnInit() {
-    this.chapterService.checkPatreon().subscribe(tier => {
-      if (+tier >= 1) {
-        let searchParams = this.router.url.split('=')[1]
-        if (searchParams) {
-          this.router.navigate(['/chapter/3/advanced'], { queryParams: { search: searchParams }})
-        } else {
-          this.router.navigate(['/chapter/3/advanced'])
-        }
-      }
-    })
-    this.navDisplay = window.document.body.clientWidth > 650 ? true : false
-    this.notRedux.toggleShow(true);
-  }
+  ngOnInit(){}
 
   ngOnDestroy() {
-    this.navDisplay = false;
-    this.notRedux.toggleShow(false);
+     
     this.chapterName = ''
   }
 
-  displayTables() {
-    this.navDisplay = !this.navDisplay
-  }
+   
 
 }
