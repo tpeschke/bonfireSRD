@@ -101,6 +101,17 @@ p:hover {
     border-bottom: none;
   }
 
+  .quickNavBox {
+    background: none;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
   .imageShellSide {
     display: none;
   }
@@ -112,16 +123,23 @@ p:hover {
   .quickNavShellSide {
     background: none;
     border: none;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    background: lightgrey;
+    padding: 5px;
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
+    min-height: 32px;
+    max-width: 250px;
+    margin: 0 auto;
   }
 
   h1 {
     font-size: 20px;
+    max-width: 250px;
+    margin: 0 auto;
   }
 }

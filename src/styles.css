@@ -401,7 +401,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-  
   .pairedShell {
     width: 80% !important
   }
@@ -797,9 +796,9 @@ h2 {
 }
 
 /* Track */
-/* ::-webkit-scrollbar-track {
-  
-} */
+::-webkit-scrollbar-track {
+  background: transparent 
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {

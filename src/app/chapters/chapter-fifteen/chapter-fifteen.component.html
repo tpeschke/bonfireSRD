@@ -312,14 +312,8 @@
         <p> It’s a much slower way to die.</p>
       </div>
     </div>
-    <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">
-      <p>Hide Quick Nav</p>
-    </div>
     <div class="sideShell">
-      <app-quick-nav *ngIf=navDisplay [side]="side"></app-quick-nav>
-    </div>
-    <div class="tableShell" (click)="displayTables()">
-      <p>Show Quick Nav</p>
+      <app-quick-nav  [side]="side"></app-quick-nav>
     </div>
     <h1 class="chapterTitle">Miscellaneous Rules</h1>
   </div>

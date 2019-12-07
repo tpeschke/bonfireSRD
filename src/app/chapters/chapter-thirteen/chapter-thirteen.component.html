@@ -2340,14 +2340,8 @@
           they’re in a Zone of Truth and you can’t actually lie in a Zone of Truth, right?</p>
       </div>
     </div>
-    <div *ngIf=navDisplay class="tableShell" (click)="displayTables()">
-      <p>Hide Quick Nav</p>
-    </div>
     <div class="sideShell">
-      <app-quick-nav *ngIf=navDisplay [side]="side"></app-quick-nav>
-    </div>
-    <div class="tableShell" (click)="displayTables()">
-      <p>Show Quick Nav</p>
+      <app-quick-nav [side]="side"></app-quick-nav>
     </div>
     <h1 class="chapterTitle">Divine</h1>
   </div>

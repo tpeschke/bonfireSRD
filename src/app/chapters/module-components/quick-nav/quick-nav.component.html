@@ -1,7 +1,7 @@
 <div class="outerShellSide">
   <div class="quickNavShellSide">
     <div class="quickNavBox">
-      <div *ngFor="let piece of side.side">
+      <div *ngFor="let piece of side">
         <h1 *ngIf='piece.linkid === "h"' (click)="scrollToElement(piece.jump)">{{piece.body}}</h1>
         <h1 *ngIf='piece.linkid === "hnu"' class="hnu" (click)="scrollToElement(piece.jump)">{{piece.body}}</h1>
         <p *ngIf='piece.linkid === "hg"' (click)="scrollToElement(piece.jump)">{{piece.body}}</p>

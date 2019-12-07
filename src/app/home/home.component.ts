@@ -11,8 +11,6 @@ export class HomeComponent implements OnInit {
   constructor(
     private notRedux: NotReduxService) { }
 
-  ngOnInit() {
-    this.notRedux.toggleShow(false)
-  }
+  ngOnInit() {}
 
 }
