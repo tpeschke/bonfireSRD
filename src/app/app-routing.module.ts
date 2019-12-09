@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
-import { SelectivePreloadingStrategyService } from './selective-preloading.service'
-
 import { SearchComponent } from './search/search.component'
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component'
 
@@ -33,7 +31,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes, {preloadingStrategy: SelectivePreloadingStrategyService}) ],
+  imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
