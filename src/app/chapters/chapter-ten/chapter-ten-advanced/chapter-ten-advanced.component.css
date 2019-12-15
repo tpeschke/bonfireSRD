@@ -1,17 +1,46 @@
-.MovementTable {
-  width: 200px;
-  float: left;
-  margin: 0 15px 0 0;
-}
-
 .MoraleTable {
   width: 250px;
   float: left;
   margin: 0 15px 0 0;
 }
 
-.Movementvalue {
+.Moralevalue {
   width: 100px;
+  padding: 4px 0;
+}
+
+.headerTop {
+  background: #222;
+  color: whitesmoke;
+  width: 100%;
+}
+
+.headerSide {
+  position: absolute;
+  color: whitesmoke;
+  top: 80px;
+  left: 15px;
+}
+
+.movementvalue {
+  min-width: 90px;
+}
+
+.tableValue {
+  padding: 0;
+}
+
+.tableValue .movementvalue:first-child {
+  background: #222;
+  width: 50px;
+  height: 24px;
+  margin-bottom: 0;
+}
+
+.movementTable {
+  margin: 0 auto 25px;
+  width: 605px;
+  overflow: auto;
 }
 
 @media (max-width: 450px) {

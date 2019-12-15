@@ -79,36 +79,50 @@
           includes handy references to other rules found in this chapter as well.</p>
       </div>
       <div class="space"></div>
-      <div class='tableOverflowWindow MovementTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "200px"}'>
+      <div class='tableOverflowWindow movementTable'>
+        <div class='tableOuterShell' [ngStyle]='{width: "665px"}'>
           <h1 class='tableTitle'>Movement</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
+              <h1 class="headerTop">Speed</h1>
+              <h1 class="headerSide">Size</h1>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Category</p>
-                <p class='Movementvalue TableIndividual'>Speed</p>
+                <p class='movementvalue TableIndividual'> </p>
+                <p class='movementvalue TableIndividual'> </p>
+                <p class='movementvalue TableIndividual'>Stroll/Crawl</p>
+                <p class='movementvalue TableIndividual'>Walk</p>
+                <p class='movementvalue TableIndividual'>Jog</p>
+                <p class='movementvalue TableIndividual'>Run</p>
+                <p class='movementvalue TableIndividual'>Sprint</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Crawl/Stroll</p>
-                <p class='Movementvalue TableIndividual'>2.5 Ft/sec</p>
+                <p class='movementvalue TableIndividual'> </p>
+                <p class='movementvalue TableIndividual'>Small</p>
+                <p class='movementvalue TableIndividual'>2.5 ft /sec</p>
+                <p class='movementvalue TableIndividual'>2.5 ft /sec</p>
+                <p class='movementvalue TableIndividual'>5 ft /sec</p>
+                <p class='movementvalue TableIndividual'>10 ft /sec</p>
+                <p class='movementvalue TableIndividual'>15 ft /sec</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Walk</p>
-                <p class='Movementvalue TableIndividual'>5 Ft/sec</p>
-              </div>
-              <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Jog</p>
-                <p class='Movementvalue TableIndividual'>10 Ft/sec</p>
-              </div>
-              <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Run</p>
-                <p class='Movementvalue TableIndividual'>15 Ft/sec</p>
-              </div>
-              <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Sprint</p>
-                <p class='Movementvalue TableIndividual'>20 Ft/sec</p>
-              </div>
+                  <p class='movementvalue TableIndividual'> </p>
+                  <p class='movementvalue TableIndividual'>Medium</p>
+                  <p class='movementvalue TableIndividual'>2.5 ft /sec</p>
+                  <p class='movementvalue TableIndividual'>5 ft /sec</p>
+                  <p class='movementvalue TableIndividual'>10 ft /sec</p>
+                  <p class='movementvalue TableIndividual'>15 ft /sec</p>
+                  <p class='movementvalue TableIndividual'>20 ft /sec</p>
+                </div>
             </div>
+            <div class='tableValue'>
+                <p class='movementvalue TableIndividual'> </p>
+                <p class='movementvalue TableIndividual'>Large</p>
+                <p class='movementvalue TableIndividual'>5 ft / sec</p>
+                <p class='movementvalue TableIndividual'>7.5 ft / sec</p>
+                <p class='movementvalue TableIndividual'>15 ft /sec</p>
+                <p class='movementvalue TableIndividual'>17.5 ft /sec</p>
+                <p class='movementvalue TableIndividual'>25 ft /sec</p>
+              </div>
           </div>
         </div>
       </div>
@@ -126,20 +140,25 @@
       <div class='paragraphShell anchor'>
         <div id='10pJTYGSapvfb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pJTYGSapvfb'"></app-bm-chapter-icon>
-        <p> Running can be kept up for 5 Seconds + Endurance Rank. If you continue to Run after that you take d4 damage at the beginning of every 5 Seconds + Endurance Rank period..</p>
+        <p> Running can be kept up for 5 Seconds + Endurance Rank. If you continue to Run after that you take d4 damage
+          at the beginning of every 5 Seconds + Endurance Rank period..</p>
       </div>
       <div class='paragraphShell'>
-        <p> Sprinting can be kept up for Endurance Rank - Stress Penalty in Seconds. If continue to Sprint you take d4! damage at the beginning of every Endurance Rank - Stress Penalty period.</p>
+        <p> Sprinting can be kept up for Endurance Rank - Stress Penalty in Seconds. If continue to Sprint you take d4!
+          damage at the beginning of every Endurance Rank - Stress Penalty period.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pNMJylJCTzA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pNMJylJCTzA'"></app-bm-chapter-icon>
-        <p> If you take damage from Running or Sprinting, you can’t Run or Sprint again until you take a breather.</p>
+        <p> You can push your character as hard as you'd like, continuing to take damage until they die from fatigue but
+          if you take damage from Running or Sprinting and you stop, you can’t Run or Sprint again until you take a
+          breather.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pnyZWNpgvIV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnyZWNpgvIV'"></app-bm-chapter-icon>
-        <p> Also, moving from a Run to Sprint, or vice versa, doesn’t reset that count, so don’t think you can skip taking damage by moving from a Sprint to a Run, you cheeky devil.</p>
+        <p> Also, moving from a Run to Sprint, or vice versa, doesn’t reset that count, so don’t think you can skip
+          taking damage by moving from a Sprint to a Run, you cheeky devil.</p>
       </div>
       <div class='marginBottom paragraphShell'>
         <p> While Running or Sprinting, you're unable to attack or defend yourself</p>
@@ -210,7 +229,8 @@
       <div class='paragraphShell anchor'>
         <div id='10CFPzghQMSm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10CFPzghQMSm'"></app-bm-chapter-icon>
-        <p>First, if the off-hand weapon is smaller than your size, your Parry becomes your off-hand's Parry + 1/2 your main hand's Parry but only against 1
+        <p>First, if the off-hand weapon is smaller than your size, your Parry becomes your off-hand's Parry + 1/2 your
+          main hand's Parry but only against 1
           non-flanking foe.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -463,7 +483,8 @@
         <app-bm-chapter-icon [id]="'10DvlurUtDsJ'"></app-bm-chapter-icon>
         <p>Cover dice for other objects works the same as shields - if you’re behind cover, you add a roll of that dice
           to
-          your defense. If you’re actively crouching behind it, you add the max it would give you to your defense plus another roll of the dice.</p>
+          your defense. If you’re actively crouching behind it, you add the max it would give you to your defense plus
+          another roll of the dice.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10AgzZFpPgXN' class='anchorTag'></div>
@@ -618,7 +639,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='10pKiQYyhqLY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pKiQYyhqLY'"></app-bm-chapter-icon>
-        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 3 for every level of Encumbrance you
+        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 3 for every level of Encumbrance
+          you
           have, the attack also moves them back 5 feet. If it’s twice the damage needed, they get knocked back 10 feet,
           and so on.</p>
       </div>
@@ -640,7 +662,8 @@
       <div class='paragraphShell anchor'>
         <div id='10pnJLKKdZDMg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnJLKKdZDMg'"></app-bm-chapter-icon>
-        <p> If someone does enough damage in one hit for you to skip a Wound Category (25% of their Vitality), you’ll have
+        <p> If someone does enough damage in one hit for you to skip a Wound Category (25% of their Vitality), you’ll
+          have
           to roll a Trauma check, which is a Con check.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
@@ -708,18 +731,21 @@
       <div class='paragraphShell anchor'>
         <div id='10pmaKTmEtNSf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pmaKTmEtNSf'"></app-bm-chapter-icon>
-        <p> You may spend Vitality to increase or decrease any dice roll on a 1 for 1 with it all going on 1 wound. The following are exceptions:</p>
+        <p> You may spend Vitality to increase or decrease any dice roll on a 1 for 1 with it all going on 1 wound. The
+          following are exceptions:</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pCLLNIliqLy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pCLLNIliqLy'"></app-bm-chapter-icon>
-        <p> The first Vitality spent also zero outs any Stress Penalties, so spending 1 Vitality while Bloodied, gives you a net +1.
+        <p> The first Vitality spent also zero outs any Stress Penalties, so spending 1 Vitality while Bloodied, gives
+          you a net +1.
         </p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10uOddiLQALr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10uOddiLQALr'"></app-bm-chapter-icon>
-        <p> Only one person may use Grit at a time. If two people declare they’re using Grit, it goes to the person in the Vitality Category closest to Bleeding Out. Ties go to the person who declared first.
+        <p> Only one person may use Grit at a time. If two people declare they’re using Grit, it goes to the person in
+          the Vitality Category closest to Bleeding Out. Ties go to the person who declared first.
         </p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
@@ -1110,7 +1136,8 @@
       <div class='paragraphShell anchor'>
         <div id='10sUIDKuXuql' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10sUIDKuXuql'"></app-bm-chapter-icon>
-        <p>To use an unarmed attack, roll an attack on a d10! but also add your Damage Modifier. Your opponent rolls a
+        <p>To use an unarmed attack, roll an attack on a d10!, adding your normal attack modifiers, but also add your
+          Damage Modifier. Your opponent rolls a
           regular defense (including shield unless otherwise stated) but also adds their Damage Modifier as well.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -1121,7 +1148,8 @@
       <div class='paragraphShell anchor'>
         <div id='10akSwjtfzyu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10akSwjtfzyu'"></app-bm-chapter-icon>
-        <p>If the difference between the attack and defense totals were more than the target’s Vitality Size Modifier, you
+        <p>If the difference between the attack and defense totals were more than the target’s Vitality Size Modifier,
+          you
           may
           gain additional benefits listed in the move. If the difference is double the Target’s Vitality Size Modifier,
           they
@@ -1276,7 +1304,8 @@
       <div class='paragraphShell anchor'>
         <div id='10prWgRCAbpxQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10prWgRCAbpxQ'"></app-bm-chapter-icon>
-        <p> Every 5 seconds that character is in this state, he rolls a Con check + his current Vitality vs d20! + 10. If
+        <p> Every 5 seconds that character is in this state, he rolls a Con check + his current Vitality vs d20! + 10.
+          If
           he fails, he takes another point of damage. If he succeeds, he doesn’t lose any Vitality that second.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -1338,39 +1367,39 @@
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Honor</p>
-                <p class='Movementvalue TableIndividual'>Panic</p>
-                <p class='Movementvalue TableIndividual'>Broken</p>
+                <p class='Moralevalue TableIndividual'>Honor</p>
+                <p class='Moralevalue TableIndividual'>Panic</p>
+                <p class='Moralevalue TableIndividual'>Broken</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Too Much</p>
-                <p class='Movementvalue TableIndividual'>Bloodied</p>
-                <p class='Movementvalue TableIndividual'>Wounded</p>
+                <p class='Moralevalue TableIndividual'>Too Much</p>
+                <p class='Moralevalue TableIndividual'>Bloodied</p>
+                <p class='Moralevalue TableIndividual'>Wounded</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Great</p>
-                <p class='Movementvalue TableIndividual'>Wounded</p>
-                <p class='Movementvalue TableIndividual'>Never</p>
+                <p class='Moralevalue TableIndividual'>Great</p>
+                <p class='Moralevalue TableIndividual'>Wounded</p>
+                <p class='Moralevalue TableIndividual'>Never</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>High</p>
-                <p class='Movementvalue TableIndividual'>Bloodied</p>
-                <p class='Movementvalue TableIndividual'>Never</p>
+                <p class='Moralevalue TableIndividual'>High</p>
+                <p class='Moralevalue TableIndividual'>Bloodied</p>
+                <p class='Moralevalue TableIndividual'>Never</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Average</p>
-                <p class='Movementvalue TableIndividual'>Hurt</p>
-                <p class='Movementvalue TableIndividual'>Wounded</p>
+                <p class='Moralevalue TableIndividual'>Average</p>
+                <p class='Moralevalue TableIndividual'>Hurt</p>
+                <p class='Moralevalue TableIndividual'>Wounded</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Low</p>
-                <p class='Movementvalue TableIndividual'>Tired</p>
-                <p class='Movementvalue TableIndividual'>Bloodied</p>
+                <p class='Moralevalue TableIndividual'>Low</p>
+                <p class='Moralevalue TableIndividual'>Tired</p>
+                <p class='Moralevalue TableIndividual'>Bloodied</p>
               </div>
               <div class='tableValue'>
-                <p class='Movementvalue TableIndividual'>Dishonor</p>
-                <p class='Movementvalue TableIndividual'>Fresh</p>
-                <p class='Movementvalue TableIndividual'>Hurt</p>
+                <p class='Moralevalue TableIndividual'>Dishonor</p>
+                <p class='Moralevalue TableIndividual'>Fresh</p>
+                <p class='Moralevalue TableIndividual'>Hurt</p>
               </div>
             </div>
           </div>
@@ -1386,7 +1415,8 @@
       <div class='paragraphShell anchor'>
         <div id='10GUdsQyxKFi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10GUdsQyxKFi'"></app-bm-chapter-icon>
-        <p>From there, events and actions may increase or decrease these thresholds by 1 Vitality. This can be from Stress
+        <p>From there, events and actions may increase or decrease these thresholds by 1 Vitality. This can be from
+          Stress
           or
           what’s going on on the battlefield currently.</p>
       </div>
@@ -1414,7 +1444,8 @@
         <div id='10XDADWjtFCO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10XDADWjtFCO'"></app-bm-chapter-icon>
         <p>Additionally, a character can make a Rally check to keep a fighter from Panicking or Routeing, temporarily
-          raising their Morale thresholds by 1 Vitality per point they succeeded by. If the enemy has a leader, that Rally
+          raising their Morale thresholds by 1 Vitality per point they succeeded by. If the enemy has a leader, that
+          Rally
           check is opposed by them.</p>
       </div>
       <div class='anchor'>
