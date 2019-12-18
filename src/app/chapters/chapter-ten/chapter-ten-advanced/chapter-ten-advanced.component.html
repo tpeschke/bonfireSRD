@@ -234,6 +234,13 @@
           non-flanking foe.</p>
       </div>
       <div class='paragraphShell anchor'>
+        <div id='iftheoffhandweaponisthesamesizeasyou' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'iftheoffhandweaponisthesamesizeasyou'"></app-bm-chapter-icon>
+        <p>If the off-hand weapon the same size as you, however, you don't gain the Parry bonus and attack on a 
+          d12! base. This penalty is even if you're ambidextrous but at least you get a lot of extra damage. 
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='10zpTEsEQEUF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10zpTEsEQEUF'"></app-bm-chapter-icon>
         <p>Dual wielding in such a manner also allows you to gain an extra attack, if you so choose. The secondary
@@ -950,7 +957,8 @@
         <div id='10phfYxZodDmI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10phfYxZodDmI'"></app-bm-chapter-icon>
         <p> While employing this tactic, you attack 3 seconds quicker, however, you suffer a -3 to Attack, your damage
-          doesn’t explode, and attacks inflict a level of Fatigue if the attack die rolls under your Fatigue Score.</p>
+          doesn’t explode, and you gain Stress equal to your encumbrance for every 20 seconds you keep up your onslaught, though
+          this is all healed if you Take a Breather.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10puAkKluidcM' class='anchorTag'></div>
@@ -1171,10 +1179,10 @@
         <div id='10GZgJOkdBPf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10GZgJOkdBPf'"></app-bm-chapter-icon>
         <p>The target must be declared before the roll. Attempting to grab a shield means the target subtracts their
-          shield’s unmodified Fatigue Adjustment from their roll as well since a larger shield is easier to grab.
+          shield’s unmodified Encumbrance Adjustment from their roll as well since a larger shield is easier to grab.
           Additionally, attempting to grab most parts of the body involve grabbing armor, if they're wearing any. Add
           your target's armor's
-          unmodified Fatigue Adjustment as well as applicable.</p>
+          unmodified Encumbrance Adjustment as well as applicable.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='10ZUYLXDPyjP' class='anchorTag'></div>
@@ -1191,7 +1199,7 @@
       <div class='paragraphShell anchor'>
         <div id='10fLAZKKRpaW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10fLAZKKRpaW'"></app-bm-chapter-icon>
-        <p>Shield: The defender no longer gains any bonus from their shield but still has the defense and Fatigue
+        <p>Shield: The defender no longer gains any bonus from their shield but still has the defense and Encumbrance
           penalties.
         </p>
       </div>
@@ -1285,10 +1293,30 @@
           to
           strike, you subtract that shield’s Speed Defense to that amount, delaying them further.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='10rqtumGlTKj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10rqtumGlTKj'"></app-bm-chapter-icon>
         <p>The extra bonus for this move is that it increases the time to a d8!.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='breakfreetherewilprob' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'breakfreetherewilprob'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>BREAK FREE </strong>There will probably come a time when you want to break free from a grab, pin, or choke hold.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='10rqtumGlTKj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10rqtumGlTKj'"></app-bm-chapter-icon>
+        <p>This is done through the normal unarmed combat resolution method with the following notes:</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thefirstisthatthedefender' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thefirstisthatthedefender'"></app-bm-chapter-icon>
+        <p>The first is that the defender rolls a d12! while you roll a full d20! as a base. Additionally, the defender adds their Rank in Escape Artist to the check.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thesecondisthatyoucanonlyattempthis' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thesecondisthatyoucanonlyattempthis'"></app-bm-chapter-icon>
+        <p>The second is that you can only attempt this manuever every 10 seconds, though this is modified by any Advanced Weapon Training you have in unarmed attack.</p>
       </div>
       <div class='anchor'>
         <div id='10hgdPALGCCSTw' class='anchorTag'></div>
@@ -1298,8 +1326,7 @@
       <div class='paragraphShell anchor'>
         <div id='10pPUtVwXXzWQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pPUtVwXXzWQ'"></app-bm-chapter-icon>
-        <p> A character whose Vitality is below 0 is bleeding out and is danger of dying. He can still move, attack, and
-          basically function if he's still above his Fatigue.</p>
+        <p> A character whose Vitality is below 0 is bleeding out and is danger of dying.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10prWgRCAbpxQ' class='anchorTag'></div>
@@ -1596,7 +1623,7 @@
         <p>If the character is below his Broken Threshold and has to rely on this inner resolve but ends up with half of
           what the other side anted up, he routes and flees for his life. If cornered and given to space to run, he
           enters
-          a frenzy - only using aggressive Tactics and becoming immune to Fatigue penalties, though gaining 10 Stress
+          a frenzy - only using aggressive Tactics and becoming immune to Stress penalties, though gaining 10 Stress
           per
           second he’s in this state.</p>
       </div>

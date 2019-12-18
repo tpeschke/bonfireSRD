@@ -1,9 +1,3 @@
-.traitpassionshell {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 .sidebarMargin {
   margin-bottom: 15px;
 }
@@ -18,6 +12,8 @@
 
 .TraitDiceTable {
   width: 250px;
+  float: left;
+    margin-right: 15px;
 }
 
 .PassionDiceTable {
