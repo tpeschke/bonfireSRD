@@ -5,6 +5,10 @@
 */
 
 @import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
+@font-face {
+  font-family: 'north';
+  src: url('./assets/jancient.ttf') format("truetype");
+}
 
 html,
 body,
@@ -115,6 +119,14 @@ body {
   line-height: 1;
   background: black;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'north'
+}
 ol,
 ul {
   list-style: none;
@@ -214,7 +226,7 @@ button:hover {
 .chapterTitle {
   z-index: 0;
   margin: 0 auto 10px auto;
-  font-family: "Vollkorn SC", serif;
+  font-family: 'north';
   border-bottom: 1px solid #222;
   display: none;
   padding: 25px 0 10px 0;
@@ -235,7 +247,7 @@ button:hover {
 
 .tableShell > p {
   color: whitesmoke;
-  font-family: "Vollkorn SC", serif;
+  font-family: 'north';
 }
 
 /* =========================================================================== */
@@ -427,12 +439,12 @@ h2 {
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 12pt;
-  font-family: "Vollkorn SC";
+  font-family: "north";
 }
 
 h3 {
   font-size: 14px;
-  font-family: "Vollkorn SC";
+  font-family: "north";
   color: #434343;
   font-weight: 800;
 }
@@ -484,8 +496,8 @@ p {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  font-family: "Vollkorn SC";
-  font-size: 13px;
+  font-family: "north";
+  font-size: 17px;
   margin-bottom: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -584,17 +596,17 @@ p {
   color: #b45f06;
   font-weight: 700;
   font-size: 13pt;
-  font-family: "Vollkorn SC";
+  font-family: "north";
 }
 
 a {
   margin-right: 5px;
   text-align: center;
-  font-family: "Vollkorn SC";
+  font-family: "north";
   color: #434343;
   font-weight: 700;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a:hover {
@@ -642,7 +654,7 @@ p {
 }
 
 .tableOuterShell {
-  font-family: "Vollkorn SC", serif;
+  font-family: 'north';
   background: whitesmoke;
   position: relative;
 }
@@ -656,7 +668,7 @@ p {
   padding: 5px;
   font-size: 15px;
   color: whitesmoke;
-  font-family: "Vollkorn SC", serif;
+  font-family: 'north';
 }
 
 .tableHeaders {
@@ -666,7 +678,7 @@ p {
 .tableRow {
   display: flex;
   flex-direction: column;
-  font-family: "Vollkorn SC", serif;
+  font-family: 'north';
 }
 
 .TableIndividual {

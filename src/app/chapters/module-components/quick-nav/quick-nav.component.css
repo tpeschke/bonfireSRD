@@ -44,7 +44,7 @@ h1:hover {
 }
 
 p {
-  font-family: "Vollkorn SC";
+  font-family: "north";
   font-size: 14px;
   color: #434343;
   font-weight: 800;
@@ -61,6 +61,7 @@ p:hover {
   margin: 5px 0;
   width: 100%;
   border-radius: 0;
+  font-family: "north";
 }
 
 .toTopButton:hover {
