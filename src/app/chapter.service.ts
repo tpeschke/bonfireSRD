@@ -104,7 +104,7 @@ export class ChapterService {
       case 1:
         return 'Character Creation';
       case 2:
-        return 'Ability Scores';
+        return 'Stat Scores';
       case 3:
         return 'Races';
       case 4:

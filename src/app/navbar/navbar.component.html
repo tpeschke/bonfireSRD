@@ -8,7 +8,7 @@
     <div class="middleNav">
         <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/1" (mouseover)="viewChapter('Character Creation')"
             (mouseout)="resetChapter()" (click)="setChapter(1)">1</a>
-        <a [ngClass]="{'active': reset === 'Ability Scores'}" routerLink="chapter/2" (mouseover)="viewChapter('Ability Scores')"
+        <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="chapter/2" (mouseover)="viewChapter('Stat Scores')"
             (mouseout)="resetChapter()" (click)="setChapter(2)">2</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="chapter/3" (mouseover)="viewChapter('Races')"
             (mouseout)="resetChapter()" (click)="setChapter(3)">3</a>
@@ -75,8 +75,8 @@
             (mouseout)="resetChapter()" (click)="setChapter()">Home</a>
         <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/1"
             (mouseout)="resetChapter()" (click)="setChapter(1)">1 Character Creation</a>
-        <a [ngClass]="{'active': reset === 'Ability Scores'}" routerLink="chapter/2"
-            (mouseout)="resetChapter()" (click)="setChapter(2)">2 Ability Scores</a>
+        <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="chapter/2"
+            (mouseout)="resetChapter()" (click)="setChapter(2)">2 Stat Scores</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="chapter/3"
             (mouseout)="resetChapter()" (click)="setChapter(3)">3 Races</a>
         <a [ngClass]="{'active': reset === 'Archetypes'}" routerLink="chapter/4"
