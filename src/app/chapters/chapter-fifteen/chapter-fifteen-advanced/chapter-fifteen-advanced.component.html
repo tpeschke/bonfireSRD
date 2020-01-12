@@ -216,7 +216,7 @@
       <div class='tableOverflowWindow anchor FallingModifiersTable'>
         <div id='15t2' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15t2'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "300px"}'>
+        <div class='tableOuterShell' [ngStyle]='{width: "200px"}'>
           <h1 class='tableTitle'>Falling Modifiers</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
@@ -361,35 +361,82 @@
         <h1>LONG TERM EXHAUSTION</h1>
         <div class="underline"></div>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='tableOverflowWindow anchor longtermexhaustionTable'>
+        <div id='longtermexhaustiontable' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'longtermexhaustiontable'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
+          <h1 class='tableTitle'>Long Term Exhaustion</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='longtermexhaustionvalue TableIndividual'>Need</p>
+                <p class='longtermexhaustionvalue TableIndividual'>Deprivation</p>
+                <p class='longtermexhaustionvalue TableIndividual'>Maintenance</p>
+                <p class='longtermexhaustionvalue TableIndividual'>Indulgence</p>
+              </div>
+              <div class='tableValue'>
+                <p class='longtermexhaustionvalue TableIndividual'>Food</p>
+                <p class='longtermexhaustionvalue TableIndividual'>1 lb</p>
+                <p class='longtermexhaustionvalue TableIndividual'>3 lb</p>
+                <p class='longtermexhaustionvalue TableIndividual'>5 lb</p>
+              </div>
+              <div class='tableValue'>
+                <p class='longtermexhaustionvalue TableIndividual'>Water</p>
+                <p class='longtermexhaustionvalue TableIndividual'>1/4 gallon</p>
+                <p class='longtermexhaustionvalue TableIndividual'>1/2 gallon</p>
+                <p class='longtermexhaustionvalue TableIndividual'>n/a</p>
+              </div>
+              <div class='tableValue'>
+                <p class='longtermexhaustionvalue TableIndividual'>Sleep</p>
+                <p class='longtermexhaustionvalue TableIndividual'>4 hours</p>
+                <p class='longtermexhaustionvalue TableIndividual'>6 hours</p>
+                <p class='longtermexhaustionvalue TableIndividual'>8 hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='marginBottom paragraphShell anchor'>
         <div id='15pgLmIdPreGz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pgLmIdPreGz'"></app-bm-chapter-icon>
-        <p> Fatigue can be caused by more than just running around the battlefield. It can result, and often does, by a
-          lack of proper food, water, and sleep.</p>
+        <p> Your character isn’t immortal, or at least, they didn’t start out that way, and so still needs to fulfil their basic needs of food, drink, and sleep. Without those basic requirements, he may find himself a bit more lethargic or, worse case scenario, dead.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15pMFKhdzPgEf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pMFKhdzPgEf'"></app-bm-chapter-icon>
-        <p> A character going without either of these three things for a day automatically gains 1 damage that isn't
-          healed until she’s gotten what she’s lacking. This does stack</p>
+        <p>There are three things your character needs to take care of, as mentioned above: food, water, and sleep, and three levels at which they either gain penalties or bonuses: Deprivation, Maintenance, and Indulgence. These bonuses and penalties stack.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='15pyAYflwuHDg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pyAYflwuHDg'"></app-bm-chapter-icon>
-        <p> An average Medium sized adventurer needs 5 pounds of food, half a gallon of water, and 8 hours of sleep each day.
-          A small adventurer requires half of that while a large adventurer required double.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15pEDNbecttCl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pEDNbecttCl'"></app-bm-chapter-icon>
-        <p> Every half pound of food, 16 oz of water, and hour of sleep off deals 1 point of damage. This is cumulative over the successive number of days skipped.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
         <div id='15pOcOKPCiNAn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pOcOKPCiNAn'"></app-bm-chapter-icon>
-        <p> So a character who’s gone without food, water, or sleep for an entire day gains 21 damage which doesn't heal
-          until they’ve had their fair share of water, food, and rest.</p>
+        <p><strong class='orangeHeader'>DEPRIVATION</strong> is when your character starts to die of starvation, dehydration, and/or sleep deprivation. You take 1 point of damage per day for each time you’re below this threshold. This damage is on 1 Wound doesn’t heal until you bring that thing above above Maintenance again.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='eastingdrinkingornotsleeping' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'eastingdrinkingornotsleep'"></app-bm-chapter-icon>
+        <p>Eating, drinking, or not sleeping deals 2 points of damage a day so something is better than nothing.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='mainenanceiswhenyourcharactern' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'mainenanceiswhenyourcharactern'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>MAINTENANCE</strong> is when your character is getting enough to survive and that’s it. Being below this threshold but above Deprivation offers no bonuses or penalties.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='infulgenceiseatingandsleepmore' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'infulgenceiseatingandsleepmore'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>INDULGENCE</strong> is eating and sleeping more than you need to but not overeating or over sleeping. Being below this threshold but above Maintenance means that you heal an additional Stress that day.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='15phsOBUYZFwb' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15phsOBUYZFwb'"></app-bm-chapter-icon>
+        <p>For example, while out in the wilderness, Olbrecht discovers that he is almost out of food and water. Luckily, he knows a river is two days way and he’s able to scavenge on the way there, but that still means that he’s drinking less then 1/4 a gallon and only eating 3/4 lbs of food.</p>
+      </div>
+      <div class="space"></div>
+      <div class='paragraphShell anchor'>
+        <div id='15pEaholPOCiD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15pEaholPOCiD'"></app-bm-chapter-icon>
+        <p> Over his two days of travel, therefore, he takes 4 points of damage on 2 Wounds but he does make it the river. Now, he’s down to 1/4 lbs of food per day but he’s able to drink as much water as he likes, so over the two days getting back to civilization, he takes an additional 2 Wounds from starvation but heals 1 from being able to drink freely again.</p>
       </div>
     </div>
     <div class="sideShell">
