@@ -38,8 +38,6 @@ export class ChapterService {
     }
   }
 
-  
-
   getSearch(search: string): Observable<Search[]> {
     return this.http.post<Search[]>(local.endpointBase + '/search', { search })
       .pipe(
