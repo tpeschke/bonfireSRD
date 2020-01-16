@@ -86,7 +86,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ptmNxKgqedZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8ptmNxKgqedZ'"></app-bm-chapter-icon>
-        <p> When you purchase a Skill, the cost is Bbase Price - the average of the relevant scores, minimum 1 + the
+        <p> When you purchase a Skill, the cost is Base Price - the average of the relevant scores, minimum 1 + the
           previous Rank of that Skill.
           Every purchase increases your Rank in that Skill by 1. Should you purchase a Skill Suite, it also increases
           all of its Advanced Skills by 1
@@ -316,6 +316,34 @@
         <p> Note on notation: whenever something says it increases the difficulty by 1, that means it increases it by 1
           step. So, a Challenging check increased by 2 becomes a Heroic check.</p>
       </div>
+      <div class='sidebarShell'>
+        <h2 class='sidebarTitle'>Extended Checks</h2>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='extendedcheckareasinglecheckmake' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'extendedcheckareasinglecheckmake'"></app-bm-chapter-icon>
+          <p> Extended Checks are a single check made over a longer period of time than just the base time.
+            So, this would be tracking someone over a series of days, for instance. In reality, these would be a 
+            bunch of smaller checks of the same kind in a row, but, let's be honest, that's super boring and no one wants to 
+            deal with that so we've made guidelines for rolling it into one.
+          </p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='inthsecasetheoppoptions' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'inthsecasetheoppoptions'"></app-bm-chapter-icon>
+          <p> In these cases, the opposition would increase the size of all their Difficulty Dice by 1 size for everytime the Base Time is doubled.
+            So, if a Skill has a base time of a minute but instead circumstances for you to do it for 2 minutes, you would increase it by 1 size. 
+            If instead it takes 4 minutes, you increase it by 2, 8 minutes, you increase it by 3 and so on.
+          </p>
+        </div>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='howmuchyoufailbyorsucchess' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'howmuchyoufailbyorsucchess'"></app-bm-chapter-icon>
+          <p> How much you fail or succeed by is multipled by half the Skill's Base Time and then added or substracted from any applicable clocks.
+            For example, you're forced to sneak across a room that will take you 2 minutes to cross. You succeed by 2 on your check.
+            Turns out, as you were crossing, you realized there was some soft carpetting so you were able to move faster over that area, saving you a minute of time.
+          </p>
+        </div>
+      </div>
       <div class="anchor">
         <div id="SkillChallengheader" class="anchorTag"></div>
         <h1>SKILL CHALLENGES</h1>
@@ -367,6 +395,13 @@
         <p>The point is that time will rarely be on your side and just knowing how much time you have will greatly
           improve
           your chances of success.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='basetimeyoullnoticeonthe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'basetimeyoullnoticeonthe'"></app-bm-chapter-icon>
+        <p><strong>BASE TIME </strong>You'll notice on the Skill Description Table that there is a base time listed for each Skill.
+        This is a generally guide line to help you figure out how much time each thing takes but may be modified based on the Asset you use or 
+      other circumstances.</p>
       </div>
       <div class='anchor'>
         <div id='FAILINGASKILlfgJFeEEBc' class='anchorTag'></div>
@@ -446,6 +481,13 @@
           routine and nothing exciting has happened in the last month, so his mind is more on dinner than any possible
           crimes going on.</p>
       </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='howeverthenumberofpeople' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'howeverthenumberofpeople'"></app-bm-chapter-icon>
+        <p>However, the number of people that could spot you is important and adds an additional d8 for every time that number is doubled.
+          So, if there are two watchmen, you would be against 2d8!s. Against 4, you could be against 3d8!, against 8, 4 and so on.
+        </p>
+      </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='PassiveopposicXZoAAflwK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PassiveopposicXZoAAflwK'"></app-bm-chapter-icon>
@@ -474,7 +516,7 @@
         <app-bm-chapter-icon [id]="'HecannowusebMhgqbFeZV'"></app-bm-chapter-icon>
         <p>He can now use his time wisely; he’ll use that time to make Perception or Listening checks against you.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='NowtotryandXJqNQTPeyG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NowtotryandXJqNQTPeyG'"></app-bm-chapter-icon>
         <p>Now to try and pickpocket someone, you have make a Stealth Check to move into position and try again, but
@@ -482,6 +524,13 @@
           he’s Active and Perception takes less time than Stealth, he’ll get 2 Checks against your one and another
           against
           your Sleight of Hand, with every failed check knocking a minute off that time before he finds you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ifyouhavemultipleactiveinanarea' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyouhavemultipleactiveinanarea'"></app-bm-chapter-icon>
+        <p>If you have multiple Actives in an area, you're in an even worse situation since now they can all make Perception checks.
+          So, with two watchmen, in this case, instead of 3 total checks, you instead of to beat the best of 6.
+        </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ActiveOppositAYqzeLVQon' class='anchorTag'></div>
@@ -505,6 +554,17 @@
         <p>Do that on a few blocks and now it’s a completely different Challenge: get out of the city before you get
           caught
           since every guard is on your tail now.</p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>Staying Active</h2>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='nowmostnpcswillrastj' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'nowmostnpcswillrastj'"></app-bm-chapter-icon>
+          <p> Now, most NPCs will stay Active for 1d4! hours unless they have a Characteristic that effects how diligent they are, but what about players?
+            A person, NPC or not, gains 3 Stress for every hour they remain Active, so yeah, your players can remain ever viligent but they'll be mental wrecks
+            in a week or so.
+          </p>
+        </div>
       </div>
       <div class="anchor">
         <div id="ToolsAtYourheader" class="anchorTag"></div>
@@ -560,11 +620,22 @@
         <app-bm-chapter-icon [id]="'FortheseChecHpgQJBfVzK'"></app-bm-chapter-icon>
         <p>For these Checks, you’ll know if you’ve failed on Step 3.</p>
       </div>
+      
       <div class='paragraphShell anchor'>
         <div id='SucceedingonkQIXHGziyF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SucceedingonkQIXHGziyF'"></app-bm-chapter-icon>
-        <p>Succeeding on a Prep Check gives you another Difficulty Dice to roll on that specific Action Check since you
-          planned ahead. You only get one Prep Check per Skill that applies for each upcoming Action Check, unless you
+        <p>Succeeding on a Prep Check gives you one of two things: another Difficulty Dice to roll on that specific Action Check since you
+          planned ahead.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ofyoucanforceyouropo' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ofyoucanforceyouropo'"></app-bm-chapter-icon>
+        <p>Or you can force your opposition to roll another dice but they take the lowest result.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='eitherwayyouonlygetonprepcheck' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'eitherwayyouonlygetonprepcheck'"></app-bm-chapter-icon>
+        <p>Either way, you only get one Prep Check per Skill that applies for each upcoming Action Check, unless you
           have Assets but remember that they do take time!</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -1082,7 +1153,7 @@
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Tracking</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Hunting</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>16</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
@@ -2251,7 +2322,7 @@
       </div>
       <div class='tableOverflowWindow TrackingCheckTable'>
         <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
-          <h1 class='tableTitle'>Tracking Check</h1>
+          <h1 class='tableTitle'>Hunting Check</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -2293,7 +2364,7 @@
       <div class='paragraphShell anchor'>
         <div id='8puIHzbCOxjP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8puIHzbCOxjP'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>TRACKING</strong> Most of the time, you’re not going to down your query in one
+        <p><strong class='orangeHeader'>HUNTING</strong> Most of the time, you’re not going to down your query in one
           go,
           and so the hunt is on as your watch for subtle signs of their passing. While this skill was originally used
           to
@@ -2304,7 +2375,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='8plRomcHhZqv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8plRomcHhZqv'"></app-bm-chapter-icon>
-        <p> The base for a Tracking check is Average difficulty, however, a lot of different factors play into a hunt.
+        <p> The base for a Hunting check is Average difficulty, however, a lot of different factors play into a hunt.
           Each
           condition either raises or lowers the difficulty by the noted amount. These are not all the conditions that
           come
@@ -2322,7 +2393,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='8pFVXbwnehlv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pFVXbwnehlv'"></app-bm-chapter-icon>
-        <p> If your query is actively trying to hide their tracks, it becomes opposed by the query’s Tracking skill.
+        <p> If your query is actively trying to hide their tracks, it becomes opposed by the query’s Hunting skill.
         </p>
       </div>
       <div class='paragraphShell anchor'>
