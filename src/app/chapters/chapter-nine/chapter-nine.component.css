@@ -11,21 +11,9 @@
 }
 
 .TraitDiceTable {
-    width: 410px;
+    max-width: 410px;
     float: left;
     margin-right: 15px;
-}
-
-.PassionDiceTable {
-    width: 200px;
-}
-
-.PassionDicevalue:first-child {
-    width: 40%;
-}
-
-.PassionDicevalue:nth-child(2) {
-    width: 60%;
 }
 
 .resultHolder {
@@ -45,4 +33,11 @@
 
 .generateButton:hover {
     background: #222;
+}
+
+@media (max-width: 630px) {
+    .TraitDiceTable {
+      float: none;
+      margin: 0 auto 15px auto;
+    }
 }
