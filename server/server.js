@@ -2,7 +2,7 @@ const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
     , massive = require('massive')
-    , { server, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect } = require('./serv-config')
+    , { server, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect, fakeAuth } = require('./serv-config')
     , ctrl = require('./controller')
     , path = require('path')
     , session = require('express-session')
@@ -45,20 +45,7 @@ passport.use(new Auth0Strategy({
     }).catch(e => console.log(e))
 }))
 
-/////////////////////////////////
-//TESTING TOPLEVEL MIDDLEWARE////
-///COMMENT OUT WHEN AUTH0 READY///
-/////////////////////////////////
-// app.use((req, res, next) => {
-//     if (!req.user) {
-//         req.user = {
-//             id: 1,
-//             email: "mr.peschke@gmail.com",
-//             patreon: 1
-//         }
-//     }
-//     next();
-// })
+app.use(fakeAuth)
 
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
