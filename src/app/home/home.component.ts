@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
 
 @Component({
@@ -6,11 +6,20 @@ import { NotReduxService } from '../not-redux.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewChecked {
 
   constructor(
-    private notRedux: NotReduxService) { }
+    private notRedux: NotReduxService
+  ) { }
 
-  ngOnInit() {}
+  private displayBanner = false;
 
-}
+  ngOnInit() {
+    
+  }
+
+  ngAfterViewChecked() {
+    this.displayBanner = true;
+  }
+
+} 
