@@ -15,7 +15,7 @@
   border-top: 5px solid #b45f06;
   border-bottom: 5px solid #b45f06;
   overflow-y: auto;
-  max-height: 445px;
+  max-height: 75vh;
 }
 
 .imageBannerSide {
