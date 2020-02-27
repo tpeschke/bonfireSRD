@@ -15,11 +15,11 @@
 }
 
 .wisdomTable {
-    width: 390px;
+    width: 255px;
 }
 
 .Wisdomvalue {
-    width: 65px;
+    width: 55px;
 }
 
 .Charismavalue {
@@ -32,11 +32,7 @@
 }
 
 .dexMargin {
-    margin-top: 115px;
-}
-
-.fatiMargin {
-    margin-top: 80px;
+    margin-top: 125px;
 }
 
 .traitMargin {
@@ -52,11 +48,7 @@
     .dexMargin {
         margin-top: 0px;
     }
-    
-    .fatiMargin {
-        margin-top: 0px;
-    }
-    
+
     .traitMargin {
         margin-top: 0px;
     }
