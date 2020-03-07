@@ -19,7 +19,7 @@
       </div>
       <div class="anchor">
         <div id="8hjKMpLZrmva" class="anchorTag"></div>
-        <h1>TYPES of SKILLS</h1>
+        <h1>SKILL INTRODUCTION</h1>
         <div class="underline"></div>
       </div>
       <div class='paragraphShell anchor'>
@@ -45,8 +45,7 @@
       </div>
       <div class="anchor">
         <div id="8hZLxLyRaXkr" class="anchorTag"></div>
-        <h1>ACQUIRING SKILLS</h1>
-        <div class="underline"></div>
+        <h3>ACQUIRING SKILLS</h3>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8pvxfQnqTMli' class='anchorTag'></div>
@@ -58,56 +57,32 @@
       </div>
       <div class="anchor">
         <div id="8hDzWWdfGtEh" class="anchorTag"></div>
-        <h1>CALCULATING RANK</h1>
-        <div class="underline"></div>
+        <h3>CALCULATING RANK</h3>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8pvrTVawRrAZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pvrTVawRrAZ'"></app-bm-chapter-icon>
-        <p> For Skill Suites, your starting Rank is the 10s digit of the relevant score, the 10s digit of the average of
-          the listed scores.
-          For Advanced Skill, unless it says otherwise (I'm looking at you Literacy and Combat Style), it is the Rank of
-          the mother Skill Suite.
-        </p>
+        <p><strong class='orangeHeader'>SKILL SUITES </strong>Your Skill Suites, your starting Rank is the Skill Bonus listed under the corresponding Stat. For Suites with multiple Stats, average the Skill Bonus, rounded down.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='8pcCUJeCdJSB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pcCUJeCdJSB'"></app-bm-chapter-icon>
-        <p>So, if you have 15 Wis and 18 Cha, your starting Rank in Streetwise is 1. If you didn't purchase Perception,
-          your Rank in that is 1 as well since
-          it's mother Skill Suite is Streetwise.
-        </p>
+        <p><strong class='orangeHeader'>ADVANCED SUITES </strong> Your starting Rank for Advanced Skills is the Rank for the mother Skill Suite.</p>
       </div>
-      <div class='marginBottom paragraphShell anchor'>
+      <div class='paragraphShell anchor'>
         <div id='8pqVqRTkCqsG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pqVqRTkCqsG'"></app-bm-chapter-icon>
-        <p> It is possible to have a Rank 0.</p>
+        <p><strong class='orangeHeader'>PURCHASING A SKILL </strong>Skills cost their Base Cost - Skill Bonus + (Current Rank * 2), minimum 1. This is true for both Skill Suites and Advanced Skill. Note that, like Skills Suites above, if there are multiple Stats attached to a Skill, average the Skill Bonus, rounded down.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ptmNxKgqedZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8ptmNxKgqedZ'"></app-bm-chapter-icon>
-        <p> When you purchase a Skill, the cost is Base Price - the average of the relevant scores, minimum 1 + the
-          previous Rank of that Skill.
-          Every purchase increases your Rank in that Skill by 1. Should you purchase a Skill Suite, it also increases
-          all of its Advanced Skills by 1
-          as well.
-        </p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8prvieeTWUNt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8prvieeTWUNt'"></app-bm-chapter-icon>
-        <p> So, let's go back to the above example and say that you purchased Perception twice. You'd have to pay 4
-          CrP. The first time you bought it
-          it cost 1 ( 15 - 15, minimum 1 + 1 ). Remember that you're already considered to have Rank 1 in it because you
-          have Rank 1 in Streetwise.
-          The second time costs 3 ( 15 - 15, minimum 1 + 2 ).
-        </p>
+        <p>Every purchase increases your Rank in that Skill by 1. Purchases of Skill Suites also raises the Rank of any child Advanced Skills you’ve already purchased, so that’s nice.</p>
       </div>
       <div class="anchor">
         <div id="8UnZepBZjYQ" class="anchorTag"></div>
-        <h1>SKILL SPECIALIZATIONS</h1>
-        <h4 class="advancedHeader" id="advancedHead">🜂 Advanced Rule</h4>
-        <div class="underline"></div>
+        <h3>SKILL SPECIALIZATIONS</h3>
+        <h4 class="advancedHeader">🜂 Advanced Rule</h4>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8iTANmWGHVn' class='anchorTag'></div>
@@ -181,8 +156,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='BeforewegoouVRhZzJRMs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'BeforewegoouVRhZzJRMs'"></app-bm-chapter-icon>
-        <p>Before we go off talking about Skill Challenges, time, equipment, and all those other things, it’s first
-          important to understand the very basic mechanic all of those things will hang off of: Skill Checks.</p>
+        <p>Before we go off talking about Skill Challenges, time, equipment, and all those other things, it’s first important to understand the very basic mechanic all of those things will hang off of: Skill Checks.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SkillChecksaGRbVZZyLdx' class='anchorTag'></div>
@@ -192,10 +166,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThesearemadelNDolfHkns' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThesearemadelNDolfHkns'"></app-bm-chapter-icon>
-        <p>These are made by rolling the Difficulty Dice (defaulting as a d8!), adding your Rank and comparing it to
+        <p>These are made by rolling the Difficulty Dice (defaulting as a d20!), adding your Rank and comparing it to
           your
-          opponent’s total. If you are rolling multiple dice, you’re going to select the highest and add your Rank to
-          that.</p>
+          opponent’s total, who will be rolling similar dice.</p>
       </div>
       <div class='anchor'>
         <div id='ORDEROFOPERAPnqxHTQbXf' class='anchorTag'></div>
@@ -217,132 +190,24 @@
       <div class='paragraphShell anchor'>
         <div id='RollallDiUTJzIEsxob' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RollallDiUTJzIEsxob'"></app-bm-chapter-icon>
-        <p>2. Roll All Difficulty Dice
+        <p>2. Figure Out Factors
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='rollallldicejiojfioe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'rollallldicejiojfioe'"></app-bm-chapter-icon>
+        <p>3. Roll Dice
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='DecideifyGdzXrRChBL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DecideifyGdzXrRChBL'"></app-bm-chapter-icon>
-        <p>3. Decide If You Want Any Equipment to Apply</p>
+        <p>4. Decide If You Want Any Equipment to Apply</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ResolvefaldwapPRRtHC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ResolvefaldwapPRRtHC'"></app-bm-chapter-icon>
-        <p>4. Resolve Fallout</p>
-      </div>
-      <div class='sidebarShell marginBottom'>
-        <h2 class='sidebarTitle'>Skill Rank 0</h2>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='8pdEfTeKsEBm' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'8pdEfTeKsEBm'"></app-bm-chapter-icon>
-          <p> If you have sub 10 in a stat and are untrained in a Skill, you still succeed on Skill check if you roll a
-            natural 1, however, you take 1 Stress, even if you weren’t Stressing about the roll before hand.</p>
-        </div>
-      </div>
-      <div class='anchor'>
-        <div id='8hgwrDKAUOPOt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8hgwrDKAUOPOt'"></app-bm-chapter-icon>
-        <h3>SKILL DIFFICULTIES</h3>
-      </div>
-      <div class='tableOverflowWindow SkillDifficultyTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "180px"}'>
-          <h1 class='tableTitle'>Skill Difficulty</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>Dice</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Difficulty</p>
-              </div>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>D4!</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Trivial</p>
-              </div>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>D6!</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Easy</p>
-              </div>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>D8!</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Average</p>
-              </div>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>D10!</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Challenging</p>
-              </div>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>D12!</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Hard</p>
-              </div>
-              <div class='tableValue'>
-                <p class='SkillDifficultyvalue TableIndividual'>D20!</p>
-                <p class='SkillDifficultyvalue TableIndividual'>Heroic</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pLtrUfdWNAP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pLtrUfdWNAP'"></app-bm-chapter-icon>
-        <p> Because not all tasks are the same in terms of how challenging they are (building a house is harder than
-          building a simple table), Skills Checks are given variable difficulties that are represented by different
-          sized dice. The bigger the dice, the harder the task.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8prVKPYJjTxi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8prVKPYJjTxi'"></app-bm-chapter-icon>
-        <p> This difficulty dice is an abstraction, of course, and represents a number of things, and so, therefore, can
-          be
-          changed based on planning and equipment used, or the amount of time granted to complete it. So, for example, a
-          character wishing to pick a lock underwater might be rolling a d12!, but one doing the same task while
-          blindfolded might be rolling a d20!. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pNtoExdvCYZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pNtoExdvCYZ'"></app-bm-chapter-icon>
-        <p> It may be possible, because this is a fantasy game, to go beyond a Heroic level task, in that case add an
-          additional smaller die to a d20!.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pnpkohmixqO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pnpkohmixqO'"></app-bm-chapter-icon>
-        <p> Following the previous example, if someone was trying to pick a lock underwater while blindfolded and having
-          to
-          do so under a minute, he might roll a d20! + d4!, hoping that that total is under his Skill Rank.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pvOsjwOxlIk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pvOsjwOxlIk'"></app-bm-chapter-icon>
-        <p> Note on notation: whenever something says it increases the difficulty by 1, that means it increases it by 1
-          step. So, a Challenging check increased by 2 becomes a Heroic check.</p>
-      </div>
-      <div class='sidebarShell marginBottom'>
-        <h2 class='sidebarTitle'>Extended Checks</h2>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='extendedcheckareasinglecheckmake' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'extendedcheckareasinglecheckmake'"></app-bm-chapter-icon>
-          <p> Extended Checks are a single check made over a longer period of time than just the base time.
-            So, this would be tracking someone over a series of days, for instance. In reality, these would be a 
-            bunch of smaller checks of the same kind in a row, but, let's be honest, that's super boring and no one wants to 
-            deal with that so we've made guidelines for rolling it into one.
-          </p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='inthsecasetheoppoptions' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'inthsecasetheoppoptions'"></app-bm-chapter-icon>
-          <p> In these cases, the opposition would increase the size of all their Difficulty Dice by 1 size for everytime the Base Time is doubled.
-            So, if a Skill has a base time of a minute but instead circumstances for you to do it for 2 minutes, you would increase it by 1 size. 
-            If instead it takes 4 minutes, you increase it by 2, 8 minutes, you increase it by 3 and so on.
-          </p>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='howmuchyoufailbyorsucchess' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'howmuchyoufailbyorsucchess'"></app-bm-chapter-icon>
-          <p> How much you fail or succeed by is multipled by half the Skill's Base Time and then added or substracted from any applicable clocks.
-            For example, you're forced to sneak across a room that will take you 2 minutes to cross. You succeed by 2 on your check.
-            Turns out, as you were crossing, you realized there was some soft carpetting so you were able to move faster over that area, saving you a minute of time.
-          </p>
-        </div>
+        <p>5. Resolve Fallout</p>
       </div>
       <div class="anchor">
         <div id="SkillChallengheader" class="anchorTag"></div>
@@ -352,226 +217,161 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='SkillChecksrdOQYaVxoYh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SkillChecksrdOQYaVxoYh'"></app-bm-chapter-icon>
-        <p>Skill Checks refer to a single roll against a single Skill, while a Skill Challenge refers to a host of Skill
-          Checks. To use a metaphor: a Skill Challenge would be breaking into the castle. The Skill Checks would be
-          climbing the walls, hiding in the shadows, sneaking past the guards, listening at doors, lockpicking any
-          locks,
-          etc.</p>
+        <p>Skill Checks refer to a single roll against a single Skill, while a Skill Challenge refers to a host of Skill Checks. To use a metaphor: a Skill Challenge would be breaking into the castle. The Skill Checks would be climbing the walls, hiding in the shadows, sneaking past the guards, listening at doors, lockpicking any locks, etc.</p>
       </div>
       <div class='anchor'>
         <div id='TIMEYOURGREqBcOBuMQDR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TIMEYOURGREqBcOBuMQDR'"></app-bm-chapter-icon>
-        <h3>TIME, YOUR GREATEST ENEMY</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='GivenaninfinCdtnAMrpmP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'GivenaninfinCdtnAMrpmP'"></app-bm-chapter-icon>
-        <p>Given an infinite amount of time, you’d really have no chance of failure so if there isn’t a time crunch of
-          time
-          kind, there isn’t a Skill Challenge, in the same way that if there are no monsters attacking you, there isn’t
-          a
-          combat. Using Skills is all about managing your time properly and applying your efforts in the right place.
-        </p>
+        <h3>CLOCKS, FAILURES & SUCCESSES</h3>
       </div>
       <div class='paragraphShell anchor'>
+        <div id='GivenaninfinCdtnAMrpmP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'GivenaninfinCdtnAMrpmP'"></app-bm-chapter-icon>
+        <p>Like a warrior has Vitality, experts have Clocks. These Clocks represent how your character could fail or succeed at their Skill Challenge and are defined by the how of how you  tackle the Challenge. These are known as fail state and objective Clocks.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='SoforinstanrzeOGWiHsD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoforinstanrzeOGWiHsD'"></app-bm-chapter-icon>
-        <p>So, for instance, no mechanical benefit to knowing the lay of the land when traveling but it does allow you
-          to
-          plan a good route, prep for challenges, and ration your time and Assets wisely.</p>
+        <p>For instance, let’s say that you’re breaking into the house to steal the royal jewels. You have 2 ways you can fail, running into a patrol or running into the family, and 1 way to succeed, finding those jewels. If you just go in blind, your GM may say that it will take 3 minutes for the guards to find you, 5 minutes to run into a member of the family, and 15 minutes to find the jewels, though your character won’t know this starting out.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IfyouknowyoVVEQbXzNID' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyouknowyoVVEQbXzNID'"></app-bm-chapter-icon>
-        <p>If you know you’re going to have to cross the forest with no landmarks in sight, you know that you should
-          learn
-          more about that area so you don’t get lost. Perhaps you’ll pack more supplies or talk to trappers that
-          frequent
-          that area.</p>
+        <p>You can modify, remove, discover, or get to know Clocks by gathering information. Continuing the above example: by getting to know how the patrols move around the mansion, your character can always be where they’re not so not there’s no chance of running to a patrol and that Clock doesn’t exist any longer.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ThepointistpoykrfcxCf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThepointistpoykrfcxCf'"></app-bm-chapter-icon>
-        <p>The point is that time will rarely be on your side and just knowing how much time you have will greatly
-          improve
-          your chances of success.</p>
+        <p>Maybe, through some friends who work there, he discovers that the family randomly moves around the house so it’s impossible to know their movements at any given time but he can guess how likely he is to run into them. Now, he knows that there is 5 minutes on the family Clock.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='basetimeyoullnoticeonthe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'basetimeyoullnoticeonthe'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>BASE TIME </strong>You'll notice on the Skill Description Table that there is a base time listed for each Skill.
-        This is a generally guide line to help you figure out how much time each thing takes but may be modified based on the Asset you use or 
-      other circumstances.</p>
+        <p>And, finally, he uses some reasoning to decide that the jewels are probably in the private quarters of the mansion, vastly narrowing his searching and reducing that Clock from 15 to 7 minutes. Though, if he’s wrong, that Clock also disappears because it won’t matter how long he searches: what he’s looking for isn’t there.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='forthemostpartplayers' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'forthemostpartplayers'"></app-bm-chapter-icon>
+        <p>For the most part, players shouldn’t know what Clocks they’re up against or how long they have on them starting out and need to use their brains, Skills, and other party members to discover the information. Knowledge is power.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='everythinginaskillchallenge' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'everythinginaskillchallenge'"></app-bm-chapter-icon>
+        <p>Everything in a Skill Challenge is considered in time. You don’t say “the wall is 200 feet high,” instead you say “it’ll take you 3 minutes to scale the wall.” This represents the minimum amount of time to get there and the base line around which you’ll plan your trip.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='everythinginaskillchallenge' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'everythinginaskillchallenge'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>THE HOW, SKILL CHALLENGES, & YOU </strong>It is important to note that all these things factor into the Skill Challenge itself and you may slide from one Skill Challenge to another by changing the how. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='everythinginaskillchallenge' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'everythinginaskillchallenge'"></app-bm-chapter-icon>
+        <p>For instance, the objective is to find the enemies base. You start by simply wandering around their territory trying to find it, but part way through, you run into a patrol, when that Clock runs out. You don’t get caught so you think: this patrol will probably head back to base eventually so I should tail them. The objective is the same but suddenly the How is different and so, essentially, a new Skill Challenge is starting with different Clocks to deal with.</p>
       </div>
       <div class='anchor'>
         <div id='FAILINGASKILlfgJFeEEBc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FAILINGASKILlfgJFeEEBc'"></app-bm-chapter-icon>
-        <h3>FAILING A SKILL CHALLENGE</h3>
+        <h3>CLOCKS STATES & OPPOSITION</h3>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='FailingaSkilwpopSXykEU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FailingaSkilwpopSXykEU'"></app-bm-chapter-icon>
-        <p>Failing a Skill Challenges means a lot of things based on how your fail and what you’re doing. Failing a
-          Skill
-          Challenge to get back to civilization means that you get so lost that you starve to death but it’s often not
-          as
-          clear cut as that.</p>
+        <p>Clocks can have two states: Passive and Active. These represent what the opposition is going to roll. You can also go into Dire Straits on a Clock, which I’ll get to in a bit.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TakeforexamTiwqkIaXUp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TakeforexamTiwqkIaXUp'"></app-bm-chapter-icon>
-        <p>Take, for example, assassinating someone in a castle. You can fail by getting caught and killed, fail by just
-          being seen but escaping, fail by having the sun come up and so you decide that it’s time to get out of dodge,
-          or
-          you could fail by having your target move or not be there at all.</p>
+        <p><strong class='orangeHeader'>PASSIVE </strong>means that whomever you’re up against doesn’t realize they’re up against you. This is the, for example, the watchman doing his nightly rounds or the river you have to cross.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ObviouslythePPqiYslpwa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ObviouslythePPqiYslpwa'"></app-bm-chapter-icon>
-        <p>Obviously, the last four mean that you can try again but the second means it’ll be harder since the guards
-          will
-          be more alert and the last one means your intel was wrong that they’re on to you.</p>
+        <p>By default they roll a d20! + a dice that represents their Rank or Difficulty. For the watchman, it’s based on his Perception Rank and for the river, it’s based on white water it is.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='EssentiallyyoOrZrnPIfQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EssentiallyyoOrZrnPIfQ'"></app-bm-chapter-icon>
-        <p>Essentially, you’re fighting against several different clocks and knowing what those clocks are gives you a
-          distinct advantage. I’m saying this to absolutely stress the idea of knowing your time window.</p>
+        <p>To figure out what to roll, take the Rank and turn it into the nearest dice size, rounded down. So, if the watchman’s Perception is 7, he’s going to roll a d6!, if a 4, a d4!, or if a 3 or less, he gets nothing.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='TheseclockscvoFmhmuojz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheseclockscvoFmhmuojz'"></app-bm-chapter-icon>
-        <p>These clocks could be part of the environment (how alert the guards are), apart of the situation (how much
-          food
-          you have left), or they can be self imposed (doing the heist between sun up and sun down so that you have
-          darkness on your side). They can be gently ticking away at all times (like the time till the sun is up) or
-          they
-          can stop and start (like guard’s searching for you).</p>
+        <p><strong class='orangeHeader'>ACTIVE </strong>means that whomever you’re up against realizing something is amiss and is now actively working against you. This doesn’t mean your caught: it just means the person is on high alert.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ButevenwhenRjHRNCTBxL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ButevenwhenRjHRNCTBxL'"></app-bm-chapter-icon>
-        <p>But even when they run out, they’re not always a hard failure. Running out of rations means that if you fail
-          your
-          Scavenging Checks, you start to die but you have to start failing them first. You could always push forward
-          and
-          seize victory from the jaws of defeat.</p>
-      </div>
-      <div class='anchor'>
-        <div id='ACTIVEPASSIwMLtwrWjFE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ACTIVEPASSIwMLtwrWjFE'"></app-bm-chapter-icon>
-        <h3>ACTIVE & PASSIVE OPPOSITION</h3>
+        <p>In this case, they roll a d20! + their full Rank. They can additionally make use of Factors more offensively.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThereisadifzEhzjTmJxU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThereisadifzEhzjTmJxU'"></app-bm-chapter-icon>
-        <p>There is a difference between trying to get information from someone who is laid back and a bit sloshed
-          rather
-          than someone who is on their guard and suspicious. This is the difference between Active and Passive
-          Opposition.
-        </p>
+        <p>On top of this, any failed checks subtracts your Base Time from any applicable Clocks again: so when Stealthing, instead of eating up 1 minute of your time, 2 minutes are eaten up instead.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='NowasadefaELRbomfaMT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NowasadefaELRbomfaMT'"></app-bm-chapter-icon>
-        <p>Now, as a default, opposition is considered Passive, which means they roll a d8! against your Action Check
-          (plus
-          any circumstantial modifiers) if they could have a Skill Rank and 20! if not. So, both a river and a watchman
-          can be considered Passive opposition: The river you’re trying to cross isn’t actively trying to stop you; it’s
-          just
-          doing its own thing and being a river and thewatchman on patrol isn’t considered Active since his beat is
-          routine and nothing exciting has happened in the last month, so his mind is more on dinner than any possible
-          crimes going on. But because the watchman could have a Rank in a Skill, he would roll a d8! (even if he
-          doesn't have one), while the river would
-          roll a d20!. This is referred to as Intelligent vs Environmental opposition.</p>
+        <p><strong class='orangeHeader'>GOING FROM PASSIVE TO ACTIVE </strong>When you fail a check, any applicable Clocks go Active. Additionally, a new Clock may start.</p>
       </div>
-      <div class='paragraphShell marginBottom anchor'>
+      <div class='paragraphShell anchor'>
         <div id='howeverthenumberofpeople' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'howeverthenumberofpeople'"></app-bm-chapter-icon>
-        <p>Additionally, for Intelligent opposition the number of people that could spot you is important and adds an
-          additional d8! for every time that number is doubled.
-          So, if there are two watchmen, you would be against 2d8!s. Against 4, you could be against 3d8!, against 8, 4
-          and so on.
-        </p>
+        <p>So, returning to the original example; you’re in the house and know the patrols but, as you’re sneaking around, you stubble and make a noise. This failure doesn’t affect your objective Clock, nor does it affect the families Clock, but it does alert the guards a room or two over. This means that a new Clock is started since the guards are now on the hunt for something suspicious.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='PassiveopposicXZoAAflwK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PassiveopposicXZoAAflwK'"></app-bm-chapter-icon>
-        <p>Passive opposition can turn to Active on a failed Action Check, but that’s not a sure thing. Again, failing
-          your
-          Swimming check won’t make the river suddenly start fighting back, but a failed Sleight of Hand would make the
-          watchman perk up. You’re not caught but someone yelps about a hand being in their pocket and the watchman goes
-          to investigate; he’s now Active.</p>
+        <p>Generally, these new Clock start as Passive and when they run out, as long as they also didn’t go Active, they simply disappear: in this case, the guards go back to their patrols and dismiss the noise.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='ActiveoppositiMMCMBfenc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ActiveoppositiMMCMBfenc'"></app-bm-chapter-icon>
-        <p>Active opposition means that people are on the hunt for you and that they’re starting to eat away at one of
-          the
-          clocks. Time is eaten away at double the rate for every person on the alert in the area.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='SoyouvefainjYBBSgTLq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SoyouvefainjYBBSgTLq'"></app-bm-chapter-icon>
-        <p>So, you’ve failed your Sleight of Hand, the watchman is alerted. A clock starts: you have 5 minutes before
-          he’s
-          able to track you down. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='HecannowusebMhgqbFeZV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'HecannowusebMhgqbFeZV'"></app-bm-chapter-icon>
-        <p>He can now use his time wisely; he’ll use that time to make Perception or Listening checks against you.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='NowtotryandXJqNQTPeyG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NowtotryandXJqNQTPeyG'"></app-bm-chapter-icon>
-        <p>Now to try and pickpocket someone, you have make a Stealth Check to move into position and try again, but
-          since
-          he’s Active and Perception takes less time than Stealth, he’ll get 2 Checks against your one and another
-          against
-          your Sleight of Hand, with every failed check knocking a minute off that time before he finds you.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ifyouhavemultipleactiveinanarea' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifyouhavemultipleactiveinanarea'"></app-bm-chapter-icon>
-        <p>If you have multiple Actives in an area, you're in an even worse situation since now they can all make Perception checks.
-          So, with two watchmen, in this case, instead of 3 total checks, you instead of to beat the best of 6.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ActiveOppositAYqzeLVQon' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ActiveOppositAYqzeLVQon'"></app-bm-chapter-icon>
-        <p>Active Opposition is “regional”. If you can move away from the area, you won’t get caught so sneaking away is
-          a
-          good option but alert enough people in a general area and people will be put on high alert and then everywhere
-          you go, your opposition will be Active. Time eaten away from that clock will still be eaten - it just won’t be
-          going away at a higher rate. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='Soafter30sROlpZpIdXZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'Soafter30sROlpZpIdXZ'"></app-bm-chapter-icon>
-        <p>So, after 30 seconds you decide not to risk it and travel two blocks over to avoid that watchman’s beat. If
-          you
-          fail over here, you only have 4 minutes.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='DothatonafHhsQwRtQkR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'DothatonafHhsQwRtQkR'"></app-bm-chapter-icon>
-        <p>Do that on a few blocks and now it’s a completely different Challenge: get out of the city before you get
-          caught
-          since every guard is on your tail now.</p>
+        <p>Even Fail State Clocks don’t have to become Active if it makes no sense for them to do so.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <h2 class='sidebarTitle'>Staying Active</h2>
         <div class='marginBottom paragraphShell anchor'>
           <div id='nowmostnpcswillrastj' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'nowmostnpcswillrastj'"></app-bm-chapter-icon>
-          <p> Now, most NPCs will stay Active for 1d4! hours unless they have a Characteristic that effects how diligent they are, but what about players?
-            A person, NPC or not, gains 3 Stress for every hour they remain Active, so yeah, your players can remain ever viligent but they'll be mental wrecks
+          <p> Now, most NPCs will stay Active for 1d4! hours unless they have a Characteristic that effects how diligent
+            they are, but what about players?
+            A person, NPC or not, gains 3 Stress for every hour they remain Active, so yeah, your players can remain
+            ever viligent but they'll be mental wrecks
             in a week or so.
           </p>
         </div>
       </div>
+      
+      <div class='paragraphShell anchor'>
+        <div id='SoyouvefainjYBBSgTLq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoyouvefainjYBBSgTLq'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>DIRE STRAITS </strong>If one of your fail state Clocks run out, that isn’t the end: you don’t automatically fail but you do enter Dire Straits, which means your next fail on a Skill Check does result in bad things happening but, if by some miracle, you manage to keep passing your Checks, you can possibly seize victory from defeat’s jaws.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='HecannowusebMhgqbFeZV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HecannowusebMhgqbFeZV'"></app-bm-chapter-icon>
+        <p>What state the Clock is in (and which Clocks have put you in Dire Straits) depends on how ready the opposition is to take you down.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='NowtotryandXJqNQTPeyG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NowtotryandXJqNQTPeyG'"></app-bm-chapter-icon>
+        <p>For instance, a Passive Clock for patrols means that, on your next failure, the guard runs into you but they’re completely surprised while if they were Active, they would have figured out exactly where you are.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ifyouhavemultipleactiveinanarea' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyouhavemultipleactiveinanarea'"></app-bm-chapter-icon>
+        <p>This can also be used to determine other outcomes. For instance, a Passive River might buffet you around, dealing some damage and causing some Stress, but ultimately throw you on the right side, while an Active one does the same but forces you back to where you came, forcing you to start the Challenge over again.</p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>GM Note For Setting Up Some Clocks</h2>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='theremaybeclocksthatmayormaynotbeafail' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'theremaybeclocksthatmayormaynotbeafail'"></app-bm-chapter-icon>
+          <p>There may be Clocks that may or may not be a fail state. For instance, bad weather when traveling. In these cases, the GM can boil them down to a single Check that represents that it might be an issue. Failure on the Check means it is, success, don’t worry about it.</p>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="ToolsAtYourheader" class="anchorTag"></div>
         <h1>TOOLS AT YOUR DISPOSAL</h1>
@@ -580,7 +380,52 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='OkaynowitszDOKpELWNY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OkaynowitszDOKpELWNY'"></app-bm-chapter-icon>
-        <p>Okay, now it’s time to talk about what you can do to make success more likely.</p>
+        <p>Okay, now it’s time to talk about what you can do to make success more likely. As a player, it is on your shoulders to divvy up the time that you’ve been given and figure out how to approach things, so here are some things you should consider using.</p>
+      </div>
+      <div class='anchor'>
+        <div id='dactordicejfje' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'dactordicejfje'"></app-bm-chapter-icon>
+        <h3>FACTOR DICE</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='themostbasicrolls' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'themostbasicrolls'"></app-bm-chapter-icon>
+        <p>The most basic roll assumes that everything is on a level playing field, which it rarely is. Different tasks may be harder than others, like trying to stealth in broad daylight, or easier, like trying to spot someone stealthing in broad daylight. These are considered as Factors.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='facotrsaddadicetooneside' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'facotrsaddadicetooneside'"></app-bm-chapter-icon>
+        <p>Factors add a dice to one side’s roll, with the size of that dice and who it gets added to based on how many advantages or disadvantages that side has. Generally, each Factor adds or subtracts 1 to the dice size but really good advantages or really bad disadvantages may add or subtract more.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='letsrutrien' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'letsrutrien'"></app-bm-chapter-icon>
+        <p>Let’s return to the above example, since our sneakthief is trying to sneak in broad daylight, that means the watcher has a slight advantage, giving him an extra d4! to his Skill Check. Now, let’s also say that the designer of the castle specifically put in squeaky floor boards to better hear thieves. This is also a Factor and now the watcher increases his Factor dice to a d6! instead.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='onlyonepersoncanhavea' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'onlyonepersoncanhavea'"></app-bm-chapter-icon>
+        <p>Only one person can have a Factor dice working in their favor at once so if the thief had 3 things going in his favor at this point, the watcher would get no extra dice and he would get a d4!.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='notethatthereare' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'notethatthereare'"></app-bm-chapter-icon>
+        <p>Note that there are <strong class='orangeHeader'>EXTENDED CHECKS</strong> or checks where your character is making a single check made over a longer period of time than just the Base Time listed by the Skill against a fail state Clock. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='sothiswouldbetracking' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sothiswouldbetracking'"></app-bm-chapter-icon>
+        <p>So, this would be tracking someone over a series of days, for instance. In reality, these would be a bunch of smaller checks of the same kind in a row, but, let's be honest, that's super boring and no one wants to deal with that so we've made guidelines for rolling it into one.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='inthesecasestheopposit' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'inthesecasestheopposit'"></app-bm-chapter-icon>
+        <p>In these cases, the opposition would increase the size of their Factor Dice by 1 size for everytime the Base Time is doubled. So, if a Skill has a base time of a minute but the circumstances for you to do it for 2 minutes, you would increase it by 1 size. If instead it takes 4 minutes, you increase it by 2, 8 minutes, you increase it by 3 and so on.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='howmuchyoufailbyord' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'howmuchyoufailbyord'"></app-bm-chapter-icon>
+        <p>How much you fail or succeed by is multiplied by half the Skill's Base Time and then added or subtracted from any applicable Clocks. For example, you're forced to sneak across a room that will take you 2 minutes to cross. You succeed by 2 on your check. Turns out, as you were crossing, you realized there was some soft carpeting so you were able to move faster over that area, saving you a minute of time.</p>
       </div>
       <div class='anchor'>
         <div id='TAKINGYOURTIXbTUfUXNlY' class='anchorTag'></div>
@@ -590,16 +435,12 @@
       <div class='paragraphShell anchor'>
         <div id='IfyouhavetiwsACYWsrgI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyouhavetiwsACYWsrgI'"></app-bm-chapter-icon>
-        <p>If you have time to spare, you definitely up your chances of getting the job done. Every increment of the
-          standard time for a Skill you spend, you gain another roll of the Difficulty Die for Step 4, but this
-          increment
-          doubles for each time you use it.</p>
+        <p>If you have time to spare, you definitely up your chances of getting the job done. Every increment of the standard time for a Skill you add to your objective Clock, you gain 1 Factor in your favor, but this increment doubles for each time you use it.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='SosincePercZoMjlpSzrC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SosincePercZoMjlpSzrC'"></app-bm-chapter-icon>
-        <p>So, since Perception takes 30 seconds, if you take 2 and a half minutes to take a look around, you would roll
-          three Difficult Dice (30 for the first, 1 minute for the second, 2 minutes for the third).</p>
+        <p>So, since Perception takes 30 seconds, if you take 2 and a half minutes to take a look around, you would gain +3 Factor (30 for the first, 1 minute for the second, 2 minutes for the third).</p>
       </div>
       <div class='anchor'>
         <div id='PREPCHECKSjarBjZitkA' class='anchorTag'></div>
@@ -609,56 +450,33 @@
       <div class='paragraphShell anchor'>
         <div id='PrepChecksaryqhvhKuSte' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PrepChecksaryqhvhKuSte'"></app-bm-chapter-icon>
-        <p>Prep Checks are special checks made to influence a specific Skill Check that will be made in the future (even
-          if
-          that future is 2 seconds from now). </p>
+        <p>Prep Checks are special checks made to influence a specific Skill Check that will be made in the future (even if that future is 2 seconds from now).</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='ThesearemadenfYQIOQcZq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThesearemadenfYQIOQcZq'"></app-bm-chapter-icon>
-        <p>These are made by using the normal Order of Operations when resolving a check but instead of rolling your
-          Difficulty Dice and adding your Rank, you’re rolling to get under your Rank. If you have an Asset available,
-          you
-          may get to roll additional Difficulty Dice, taking the lowest.</p>
+        <p>These are made like normal Checks only they’re against a straight d20! + Factors and, generally, you’ll know if you failed right away.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='FortheseChecHpgQJBfVzK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FortheseChecHpgQJBfVzK'"></app-bm-chapter-icon>
-        <p>For these Checks, you’ll know if you’ve failed on Step 3.</p>
+        <p>On a success, you gain a reroll 1 future Skill Check: this only affects one of the dice rolled (either the d20!, the Factor Dice, or the Rank Dice, if applicable) but this reroll can affect either you or your opponent’s.</p>
       </div>
-      
+
       <div class='paragraphShell anchor'>
         <div id='SucceedingonkQIXHGziyF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SucceedingonkQIXHGziyF'"></app-bm-chapter-icon>
-        <p>Succeeding on a Prep Check gives you one of two things: another Difficulty Dice to roll on that specific Action Check since you
-          planned ahead.</p>
+        <p>Either way, you only get one Prep Check per Skill that applies for each upcoming Check, unless you have Assets but remember that they do take time!</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottomanchor'>
         <div id='ofyoucanforceyouropo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ofyoucanforceyouropo'"></app-bm-chapter-icon>
-        <p>Or, if the opposition is Environmental, you can force your opposition to roll another dice but they take the lowest result.</p>
+        <p>That means that if you know you're going to have to make a jump, you can use Acrobatics to stretch, Endurance to do a few practice sprints to the edge, and Sports (long jumping) to remember techniques all to prep for the same Jump check.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='eitherwayyouonlygetonprepcheck' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'eitherwayyouonlygetonprepcheck'"></app-bm-chapter-icon>
-        <p>Either way, you only get one Prep Check per Skill that applies for each upcoming Action Check, unless you
-          have Assets but remember that they do take time!</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThatmeansthaDysgJjwGAx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThatmeansthaDysgJjwGAx'"></app-bm-chapter-icon>
-        <p>That means that if you know you're going to have to make a jump, you can use Acrobatics to stretch, Endurance
-          to
-          do a few practice sprints to the edge, and Sports (long jumping) to remember techniques all to prep for the
-          same
-          Jump check.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='OnelastthingXiRqdTGtPc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'OnelastthingXiRqdTGtPc'"></app-bm-chapter-icon>
-        <p>One last thing they can be used for, which is not a mechanical benefit but still useful; finding out more
-          information. So, for instance, if you want to know whether there’s a river you could follow between a mountain
-          range and a lake, you could use a Prep Check to find out.</p>
+        <p>One last thing they can be used for, which is not a mechanical benefit but still useful; finding out more information. So, for instance, if you want to know whether there’s a river you could follow between a mountain range and a lake, you could use a Prep Check to find out.</p>
       </div>
       <div class='anchor'>
         <div id='ASSETSuOCwqAKtuj' class='anchorTag'></div>
@@ -668,79 +486,47 @@
       <div class='paragraphShell anchor'>
         <div id='TheserepreseniFUwCQirfo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheserepreseniFUwCQirfo'"></app-bm-chapter-icon>
-        <p>These represent static pools of knowledge or information that you can pull from with a Prep Check. So, for
-          instance, a book on the subject, or a library is an example of an Asset but also an old friend who used to be
-          a
-          ranger could give you a few pointers so a Gather Information Prep Check could give you a bonus to the
-          Navigation
-          Check you’re going to have to make to find the ruins you’re going to.</p>
+        <p>These represent static pools of knowledge or information that you can pull from with a Prep Check. So, for instance, a book on the subject, or a library is an example of an Asset but also an old friend who used to be a ranger could give you a few pointers so a Gather Information Prep Check could give you a bonus to the Navigation Check you’re going to have to make to find those ruins.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='BasicallyanyNNmJpGcVxT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'BasicallyanyNNmJpGcVxT'"></app-bm-chapter-icon>
-        <p>Basically, anything you can think of that might apply might be Resource you can draw on.</p>
+        <p>Basically, anything you can think of that might apply might be an Asset you can draw on.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AssetshaveaEsQImOLkFC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AssetshaveaEsQImOLkFC'"></app-bm-chapter-icon>
-        <p>Assets have a time investment and a maximum benefit, which is how long you have to spend to get an extra roll
-          on
-          your Prep Check and how many extra rolls you can possibly get, respectively. Note, that taking extra time with
-          an Asset doesn’t scale exponentially like Taking Your Time does.</p>
+        <p>Assets have a Time Investment and a Usefulness, which is how long you have to spend to get an extra roll on your Prep Check and what they add to their Check, respectively. Note, that taking extra time with an Asset doesn’t scale exponentially like Taking Your Time does, but instead scales linearly.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SoyougotoywKajIoIHh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoyougotoywKajIoIHh'"></app-bm-chapter-icon>
-        <p>So, you go to your old ranger friend, who happens to be a talker, so you know it’ll take you at least 2 hours
-          to
-          get anything useful out of him so you decide to spend the day with him, spending about 8 hours there.</p>
+        <p>So, you go to your old ranger friend, who happens to be a talker, so you know it’ll take you at least 2 hours to get anything useful out of him so you decide to spend the day with him, spending about 8 hours there.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='NowthiswoulVDSRWvPwSD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NowthiswoulVDSRWvPwSD'"></app-bm-chapter-icon>
-        <p>Now, this would normally get you 4 extra Difficulty Dice to roll on for your Gather Information Prep Check,
-          but
-          your friend doesn’t remember as much as he used to so you only get 3 instead, which is his maximum benefit.
-        </p>
+        <p>Now, your friend doesn’t remember as much as he used to so you get a d10! Factor ( 8 / 2 = 4 ) for spending so much time with him but his Usefulness is a d12!, so that’s what he adds to the opposition dice for your Prep Check.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoudontautoiryACQClAu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoudontautoiryACQClAu'"></app-bm-chapter-icon>
-        <p>You don’t automatically know what the maximum benefit for an Asset is until you’ve gone over it, so you still
-          spend those 4 hours there that time but probably probably only stay there a max of 3 hours the next time.</p>
+        <p>You don’t automatically know the Usefulness of an Asset.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottomnchor'>
         <div id='AnotherbenefiTGYnVLPHBf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnotherbenefiTGYnVLPHBf'"></app-bm-chapter-icon>
-        <p>Another benefit of Assets is that they allow you to do multiple Prep Checks for a single Skill Check and the
-          same
-          Resource can be used to Prep for multiple different checks. A library, for example, could allow you to Prep
-          for
-          both a Monster Craft and History check.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='SoyoualsoksCAOwlCQjs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SoyoualsoksCAOwlCQjs'"></app-bm-chapter-icon>
-        <p>So, you also know there’s a witch on the edge of town who knows a lot about the woods. You may have to
-          convince
-          her but if you do, spending 4 hours with her might net your 8 Difficulty Dice on your Prep Check as well.</p>
+        <p>Another benefit of Assets is that they allow you to do multiple Prep Checks for a single Skill Check and the same Asset can be used to Prep for multiple different checks. A library, for example, could allow you to Prep for both a Monster Craft and History check.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AssetscanalsslsUHUqPLd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AssetscanalsslsUHUqPLd'"></app-bm-chapter-icon>
-        <p>Assets can also be increased and expanded upon as well, increasing its Maximum Benefit. A good relationship
-          with
-          a contact might give you more information, donating to the local library may increase its selection, or hiring
-          excavators to dig up a ruin may unearth more artifacts that help you decipher that ancient script.</p>
+        <p>Assets can also be increased and expanded upon as well, increasing its Usefulness. A good relationship with a contact might give you more information, donating to the local library may increase its selection, or hiring excavators to dig up a ruin may unearth more artifacts that help you decipher that ancient script.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheremaybesQAiSsaVIhc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheremaybesQAiSsaVIhc'"></app-bm-chapter-icon>
-        <p>There may be some special cases where an Asset will take care of itself but you have to check back on it,
-          such as
-          Snaring in the forest. You set you trap and then a day or two later, you can go back and check it to see if
-          you
-          caught anything - in the meantime, you can get other work done.</p>
+        <p>There may be some special cases where an Asset will take care of itself but you have to check back on it, such as Snaring in the forest. You set your trap and then a day or two later, you can go back and check it to see if you caught anything - in the meantime, you can get other work done..</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <h2 class='sidebarTitle'>ASSET & EQUIPMENT BASED SKILLS</h2>
@@ -761,20 +547,12 @@
       <div class='paragraphShell anchor'>
         <div id='WhenyoureabRTNcKBXGlV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenyoureabRTNcKBXGlV'"></app-bm-chapter-icon>
-        <p>When you’re about to make a Skill Check, you can choose to Stress about it. Why would you do this? Because by
-          forcing your character to hyper-focus on what he’s doing, he can pull out a win, but it comes at a cost.</p>
+        <p>When you’re about to make a Skill Check, you can choose to Stress about it. Why would you do this? Because by forcing your character to hyper-focus on what he’s doing, he can pull out a win, but it comes at a cost.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenyouStresiVpRTzCasA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenyouStresiVpRTzCasA'"></app-bm-chapter-icon>
-        <p>When you Stress, you can roll as many d4!s as you want and add or subtract their total from any Difficulty
-          Dice
-          you select, however, you gain that amount of Stress regardless of whether you succeed or not.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyFawvmhJEtG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyFawvmhJEtG'"></app-bm-chapter-icon>
-        <p>Additionally, you can choose to take 3 points of Stress to cut a Skill Check’s time in half.</p>
+        <p>When you Stress, you can +6 to your roll, or +8 if the Skill Check directly relates to a Goal. At the end of the Skill Challenge, roll 1d6! for each time you did this and gain that much Stress.</p>
       </div>
       <div class='anchor'>
         <div id='EQUIPMENTZKUUKdyIBF' class='anchorTag'></div>
@@ -789,29 +567,22 @@
       <div class='paragraphShell anchor'>
         <div id='DuringStep4YyetpwvWOh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DuringStep4YyetpwvWOh'"></app-bm-chapter-icon>
-        <p>During Step 4, you can choose to use equipment to give you, in that moment, a reroll one of your Difficulty
-          Dice
-          per piece of equipment (taking the better of the two), assuming that the equipment applies to the situation (a
-          mandolin won’t help you sneak better, for example).</p>
+        <p>Players are assumed to be using any and all equipment that would help them with a check and during Step 4, you can choose to have one of these pieces of equipment to give you, in that moment, a reroll one of one your dice (taking the better of the two).</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ForthefirstLnTbNQkevV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForthefirstLnTbNQkevV'"></app-bm-chapter-icon>
-        <p>For the first reroll used between Maintenance Prep Checks it’s free but every time after that, the tool
-          degrades,
-          giving it a -1 regardless of whether you succeed or not.</p>
+        <p>For the first reroll used between Maintenance Prep Checks this comes with no penalty but every time after that, the tool degrades, giving it a -1 regardless of whether you succeed or not.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='YoucanusefaEuOVuYokGj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoucanusefaEuOVuYokGj'"></app-bm-chapter-icon>
-        <p>You can use faulty equipment (ones with a negative modifier), since something is better than nothing which
-          does
-          give you that reroll but it’s on one Difficult Dice harder and you take the lower of the two results.</p>
+        <p>You can use faulty equipment (ones with a negative modifier), since something is better than nothing. This still gives you a reroll but it’s on 1 dice lower.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='SuperiorequipNqQXedPxxC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SuperiorequipNqQXedPxxC'"></app-bm-chapter-icon>
-        <p>Superior equipment also gives you that reroll but one Difficult Dice easier instead.</p>
+        <p>Superior equipment also gives you that reroll but 1 size larger instead.</p>
       </div>
       <div class='anchor'>
         <div id='COMPANIONShkErztFZmk' class='anchorTag'></div>
@@ -821,49 +592,46 @@
       <div class='paragraphShell anchor'>
         <div id='YourfriendscnGfROPeGNh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YourfriendscnGfROPeGNh'"></app-bm-chapter-icon>
-        <p>Your friends can help by making their own Prep and Action Checks. For example, they can research in the
-          library
-          while you try and get information from the local monster hunters guild.</p>
+        <p>Your friends can help by making their own Checks. For example, they can research in the library while you try and get information from the local monster hunters guild.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='Theydobecomecaveferkfz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Theydobecomecaveferkfz'"></app-bm-chapter-icon>
-        <p>They do become a drawback when there’s Active Opposition. Every companion you have effectively counts as
-          another
-          person searching when it comes to eating up your time.</p>
+        <p>They do become a drawback. While Passive, their failed checks also count towards whether a Clock becomes Active and on failed Checks against Active Clocks, you multiple the time lost by the number of companions you have helping.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='SogoingallMUBPkQUoOv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SogoingallMUBPkQUoOv'"></app-bm-chapter-icon>
-        <p>So, going all the way back to the pickpocket example, if you had a friend also helping you lift change and
-          the
-          watchman becomes alert, even if you get out of there in 30 seconds, you knock a minute and a half off your
-          clock.</p>
+        <p>So, when the guards are looking for you and your two mates, and any one fails a Stealth Check, you lose 3 minutes off your time, instead of 1.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <h2 class='sidebarTitle'>PREP & ACTION PHASE</h2>
         <div class='paragraphShell anchor'>
-            <div id='whileitisntentrirelybalnkeand' class='anchorTag'></div>
-            <app-bm-chapter-icon [id]="'whileitisntentrirelybalnkeand'"></app-bm-chapter-icon>
-            <p>While it isn’t entirely black and white, it’s helpful to think of Challenges as composing two phases: prep and action; the planning and then the heist.</p>
+          <div id='whileitisntentrirelybalnkeand' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'whileitisntentrirelybalnkeand'"></app-bm-chapter-icon>
+          <p>While it isn’t entirely black and white, it’s helpful to think of Challenges as composing two phases: prep
+            and action; the planning and then the heist.</p>
         </div>
         <div class='paragraphShell anchor'>
-            <div id='prepringisgatheringintiale' class='anchorTag'></div>
-            <app-bm-chapter-icon [id]="'prepringisgatheringintiale'"></app-bm-chapter-icon>
-            <p>Prepping is gathering intel, getting your team and equipment together, and planning your route of attack. This is where you’ll use Prep Checks, Taking Your Time, and Assets mostly.</p>
+          <div id='prepringisgatheringintiale' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'prepringisgatheringintiale'"></app-bm-chapter-icon>
+          <p>Prepping is gathering intel, getting your team and equipment together, and planning your route of attack.
+            This is where you’ll use Prep Checks, Taking Your Time, and Assets mostly.</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
-            <div id='actionphaseisiwhenyoullbedoingalot' class='anchorTag'></div>
-            <app-bm-chapter-icon [id]="'actionphaseisiwhenyoullbedoingalot'"></app-bm-chapter-icon>
-            <p>Action phase is when you’ll be doing a lot of the Action Checks and Stress, as well as equipment and companions - using what you learned in the Prep Phase to help you get through the sticky parts.</p>
+          <div id='actionphaseisiwhenyoullbedoingalot' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'actionphaseisiwhenyoullbedoingalot'"></app-bm-chapter-icon>
+          <p>Action phase is when you’ll be doing a lot of the Action Checks and Stress, as well as equipment and
+            companions - using what you learned in the Prep Phase to help you get through the sticky parts.</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
-            <div id='butdontgettoohungoonseparatin' class='anchorTag'></div>
-            <app-bm-chapter-icon [id]="'butdontgettoohungoonseparatin'"></app-bm-chapter-icon>
-            <p>But don’t get too hung up on separating these ideas though. Even during the heist, you might find it worth your time to sit on your heels and take your time while doing some Prep Checks as there will almost certainly be problems that crop up that you need to adjust to.</p>
+          <div id='butdontgettoohungoonseparatin' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'butdontgettoohungoonseparatin'"></app-bm-chapter-icon>
+          <p>But don’t get too hung up on separating these ideas though. Even during the heist, you might find it worth
+            your time to sit on your heels and take your time while doing some Prep Checks as there will almost
+            certainly be problems that crop up that you need to adjust to.</p>
         </div>
-    </div>
-
+      </div>
       <div class="anchor">
         <div id="8hpQcRATNVSD" class="anchorTag"></div>
         <h1>SKILL DESCRIPTIONS</h1>
@@ -876,205 +644,205 @@
               <div class='tableRow'>
                 <div class='tableValue SkillDescriptionTitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Skill Name</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>CrP Cost</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Abilities</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Base Cost</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Stats</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Base Time</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Athletics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>30</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>41</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con/Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Acrobatics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Climbing</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Disarm Trap</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>11</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Endurance</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Con</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Escape Artist</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Jumping</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Sport (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Stealth</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Swimming</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Lore</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>53</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>59</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Administration</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Arcana</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>22</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>12</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>History</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Language (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Law (Culture)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Literacy (Culture)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Depends</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Mathematics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Medicine</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Int/Dex</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Monster Craft</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Nature</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Religion (Cult)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Streetwise</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>47</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>64</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Current Affairs</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Deception</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Forgery</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>11</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Gambling/Gaming</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Intuition</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Listening</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Lock Picking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>21</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>11</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Perception</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Sleight of Hand</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Trap Finding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>10</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
@@ -1088,211 +856,211 @@
               <div class='tableRow'>
                 <div class='tableValue SkillDescriptionTitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Skill Name</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>CrP Cost</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Abilities</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Base Cost</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Stats</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Base Time</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Survival</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>48</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>69</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Botany</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Camouflage</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Fire Building</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>First Aid</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Int</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis/Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Handle Animal (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Hiding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>20</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Monster Craft</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Navigation</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Scavenging</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Snaring</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Hunting</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Use Rope</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Tactics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>32</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>53</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Combat Style (Style)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Distraction</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>13</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Leadership</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>17</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Quarter Mastering</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Rally</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Recruiting</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Riding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Signalling</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Warfare</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Trades</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>39</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>56</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Appraisal (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Artistry (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Cooking/Baking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Craft (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>16</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Leatherworking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>18</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Maintaince</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Metalworking</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>19</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Per Asset</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Musician (Specific)</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>6</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Depends</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Performance</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>15</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>1 Minute</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Persuasion</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>14</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>30 Seconds</p>
                 </div>
