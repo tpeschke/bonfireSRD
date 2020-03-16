@@ -93,37 +93,87 @@
             </div>
             <div class='sidebarShell marginBottom'>
                 <h2 class='sidebarTitle'>Weapon, Shield, & Armor Advanced Training</h2>
+                <div class='paragraphShell anchor'>
+                    <div id='7pEIKQvUtyOu' class='anchorTag'></div>
+                    <app-bm-chapter-icon [id]="'7pEIKQvUtyOu'"></app-bm-chapter-icon>
+                    <p> Weapon, Shield, & Armor Advanced Training are further training in those particular fields. They can only be taken for things that you already have Basic Training in. So, a character can’t take any masteries for any Medium Armor if he doesn’t have the Medium Armor Basic Training. </p>
+                </div>
                 <div class='marginBottom paragraphShell anchor'>
                     <div id='7pEIKQvUtyOu' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pEIKQvUtyOu'"></app-bm-chapter-icon>
-                    <p> Weapon, Shield, & Armor Advanced Training are further training in those particular fields. They
-                        are a refining of the basics that allow your character to take their knowledge to new heights.
-                        They can only be taken for items that you already have training in. So, a character can’t take
-                        any masteries for any Medium Armor if he doesn’t have the Medium Armor Training. Every category
-                        will have areas that you can specialize in. Each specialization in that area gives them a +1 for
-                        every rank they obtain. This can't bring a negative bonus above 0. </p>
+                    <p> Every type will have categories you can specialize in. Each specialization in that area gives them a +1 for every Rank they obtain in it. This can't bring a negative bonus above 0 </p>
                 </div>
-                <div class="space"></div>
                 <div class='paragraphShell anchor'>
                     <div id='7pUZShKsgHvI' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pUZShKsgHvI'"></app-bm-chapter-icon>
-                    <p> The base price for a rank is based on the Tier your specializing in times the rank you’re
-                        obtaining. So, to get a +3 in something at Tier 1 (8 CrP), it’s going to cost you 24 CrP (8 x
-                        3), with the following caveat:</p>
+                    <p> The price for increasing your Rank in a category is the Tier’s Base Cost + twice the current Rank.</p>
                 </div>
                 <div class='marginBottom paragraphShell anchor'>
                     <div id='7pYpdLmuUEli' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pYpdLmuUEli'"></app-bm-chapter-icon>
-                    <p> You have to also purchase all the ranks below that for every area you can specialize in.</p>
+                    <p> You can’t buy up a Rank again until you’ve either filled out all the rest of the category or you have two categories at that Rank. This is true all the way down so your Advanced Training for a weird looking triangle (as shown below). This is true even if you have reached the maximum benefit from a category.</p>
                 </div>
                 <div class="space"></div>
                 <div class='paragraphShell anchor'>
                     <div id='7pdGGzWyrMbK' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pdGGzWyrMbK'"></app-bm-chapter-icon>
-                    <p> For example, if I wanted to gain a +2 in Defense for Kite Shields, I’d have to buy the +1 for
-                        Defense, Encumbrance, Parry, and Breakage, before buying it. Meaning that that +2
-                        actually costs you 98 CrP. </p>
+                    <p> For example, let’s say that you want to increase your training in Scale Armor specifically, which have the stats of Def 0, Init 3, Speed 1, and Encumbrance of 8. If you want to get a Rank 5 in Encumbrance (lowering it by 4 points), you would have to also buy a Rank 4 in one category, Rank 3 in another, and Rank 2 in a final thing. </p>
                 </div>
+                <div class='paragraphShell anchor marginBottom'>
+                    <div id='7pdGGzWyrMbK' class='anchorTag'></div>
+                    <app-bm-chapter-icon [id]="'7pdGGzWyrMbK'"></app-bm-chapter-icon>
+                    <p> Ideally, that means that you bought Rank 4 in Init, Rank 3 in Speed, and Rank 2 in Def. Notice that that additional 2 Ranks in Speed and that Rank 1 in Def doesn’t give you anything besides allowing you to reach Rank 4 in Encumbrance. </p>
+                </div>
+
+                <div class='tableOverflowWindow rankexampleTable'>
+                    <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
+                      <div class='tableHeaders'>
+                        <div class='tableRow'>
+                          <div class='tableValue'>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                            <p class='rankexamplevalue TableIndividual'>Rank 1</p>
+                            <p class='rankexamplevalue TableIndividual'>Rank 2</p>
+                            <p class='rankexamplevalue TableIndividual'>Rank 3</p>
+                            <p class='rankexamplevalue TableIndividual'>Rank 4</p>
+                            <p class='rankexamplevalue TableIndividual'>Rank 5</p>
+                          </div>
+                          <div class='tableValue'>
+                            <p class='rankexamplevalue TableIndividual'>Def</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                          </div>
+                          <div class='tableValue'>
+                            <p class='rankexamplevalue TableIndividual'>Init</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                          </div>
+                          <div class='tableValue'>
+                            <p class='rankexamplevalue TableIndividual'>Speed</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                            <p class='rankexamplevalue TableIndividual'> </p>
+                          </div>
+                          <div class='tableValue'>
+                            <p class='rankexamplevalue TableIndividual'>Encumb</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                            <p class='rankexamplevalue TableIndividual'>X</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>            
+
                 <div class='marginBottom paragraphShell anchor'>
                     <div id='7pFcYxIREICZ' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pFcYxIREICZ'"></app-bm-chapter-icon>
@@ -137,43 +187,54 @@
                     <app-bm-chapter-icon [id]="'7hgcFiVOcYkjx'"></app-bm-chapter-icon>
                     <h3>TIERS</h3>
                 </div>
+                <div class='tableOverflowWindow tierpriceTable'>
+                    <div class='tableOuterShell' [ngStyle]='{width: "225px"}'>
+                        <h1 class='tableTitle'>Tier Prices</h1>
+                        <div class='tableHeaders'>
+                            <div class='tableRow'>
+                                <div class='tableValue'>
+                                    <p class='tierpricevalue TableIndividual'> </p>
+                                    <p class='tierpricevalue TableIndividual'>Base Cost (Non-Warrior)</p>
+                                    <p class='tierpricevalue TableIndividual'>Base Cost (Warrior)</p>
+                                </div>
+                                <div class='tableValue'>
+                                    <p class='tierpricevalue TableIndividual'>Tier 5</p>
+                                    <p class='tierpricevalue TableIndividual'>20</p>
+                                    <p class='tierpricevalue TableIndividual'>16</p>
+                                </div>
+                                <div class='tableValue'>
+                                    <p class='tierpricevalue TableIndividual'>Tier 4</p>
+                                    <p class='tierpricevalue TableIndividual'>16</p>
+                                    <p class='tierpricevalue TableIndividual'>12</p>
+                                </div>
+                                <div class='tableValue'>
+                                    <p class='tierpricevalue TableIndividual'>Tier 3</p>
+                                    <p class='tierpricevalue TableIndividual'>12</p>
+                                    <p class='tierpricevalue TableIndividual'>10</p>
+                                </div>
+                                <div class='tableValue'>
+                                    <p class='tierpricevalue TableIndividual'>Tier 2</p>
+                                    <p class='tierpricevalue TableIndividual'>9</p>
+                                    <p class='tierpricevalue TableIndividual'>8</p>
+                                </div>     
+                                <div class='tableValue'>
+                                    <p class='tierpricevalue TableIndividual'>Tier 1</p>
+                                    <p class='tierpricevalue TableIndividual'>8</p>
+                                    <p class='tierpricevalue TableIndividual'>8</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class='marginBottom paragraphShell anchor'>
                     <div id='7pazueIvdMxY' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pazueIvdMxY'"></app-bm-chapter-icon>
                     <p> These are the base price based on specialization Tier:</p>
                 </div>
-                <div class="chartShell">
-                    <div>Tier 5:</div>
-                    <div>24</div>
-                </div>
-                <div class="chartShell">
-                    <div>Tier 4:</div>
-                    <div>20</div>
-                </div>
-                <div class="chartShell">
-                    <div>Tier 3:</div>
-                    <div>16</div>
-                </div>
-                <div class="chartShell">
-                    <div>Tier 2:</div>
-                    <div>12</div>
-                </div>
-                <div class="marginBottom chartShell">
-                    <div>Tier 1:</div>
-                    <div>8</div>
-                </div>
-                <div class='marginBottom paragraphShell anchor'>
-                    <div id='7vkoTiAkuGM' class='anchorTag'></div>
-                    <app-bm-chapter-icon [id]="'7vkoTiAkuGM'"></app-bm-chapter-icon>
-                    <p> Warrior Archetypes, due to greater familiarity with weapons of all kind, can pick up Weapon
-                        Masteries
-                        easier. Tier 2 is discounted 2 CrP while Tiers 3, 4, and 5 are discounted 4 CrP.
-                    </p>
-                </div>
                 <div class='marginBottom paragraphShell anchor'>
                     <div id='7pQsWXVaPfrh' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pQsWXVaPfrh'"></app-bm-chapter-icon>
-                    <p> Bonuses cascade down through Tiers but only if they’re applicable. So, a +3 to Attack with
+                    <p class="armorMarginBottom"> Bonuses cascade down through Tiers but only if they’re applicable. So, a +3 to Attack with
                         Piercing weapons (Tier 3), applies that bonus to most of the polearms, any applicable swords,
                         and the goedendag, a weapon falling under the trauma weapon type.</p>
                 </div>
@@ -217,8 +278,8 @@
                 <div class='marginBottom paragraphShell anchor'>
                     <div id='7pwAOsLRRXZS' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'7pwAOsLRRXZS'"></app-bm-chapter-icon>
-                    <p> Breakage increases each Shield Breakage Threshold by 2 points for every plus you have in it. So,
-                        wielding a shield with a +2 in this area of Mastery means that your shield can take 19 points
+                    <p> Breakage increases each Shield Breakage Threshold by 2 points for every rank obtained. So,
+                        wielding a shield with 2 ranks in this area of Mastery means that your shield can take 19 points
                         of damage before saving vs d20!+10, 24 before saving vs d20!, and 29 before saving vs d20!-10.
                         This mastery doesn't effect weapon breakage.</p>
                 </div>
@@ -240,7 +301,7 @@
                 </div>
                 <div class="anchor marginBottom">
                     <div id="7isPJLdbfbEz" class="anchorTag"></div>
-                    <img src="../../../assets/images/weapon.png"
+                    <img src="../../../assets/images/weaponsAdv.png"
                         alt="All Weapons (Tier 5), Melee Weapons (Tier 4), Ranged Weapons (Tier 4), Damage Category (Crushing, Slashing, Piercing) (Tier 3), Personal Ranged (Tier 3), Siege (Tier 3), Specific Weapon Type (Axe, Sword, Crushing, etc) (Tier 2), Thrown (Tier 2), Mechanical (Tier 2), Direct Fire (Tier 2), Indirect Fire (Tier 2), Specific Weapon (Tier 1), Unarmed (Tier 1)">
                 </div>
             </div>
@@ -287,6 +348,16 @@
                 <p> One might describe this character as having a certain spring in their step and they use it to get up
                     and going quicker than those around them. A person with this Mastery can increase their speed
                     category by 2, allowing them to move from a Walk to a Run in a single second, for example.</p>
+            </div>
+            <div class="chartShell pairedShell anchor">
+                <div id="deadeyetriat" class="anchorTag"></div>
+                <h3>DEADEYE</h3>
+                <h3> CrP: 25</h3>
+            </div>
+            <div class='marginBottom paragraphShell anchor'>
+                <div id='deadeyejyoucan' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'deadeyejyoucan'"></app-bm-chapter-icon>
+                <p> You can see the whites of your enemy’s eyes, you can also get a good sense of where their vital organs are. When at -4 range or lower, add a d4! to your damage.</p>
             </div>
             <div class="chartShell pairedShell anchor">
                 <div id="7pcrrvLJCYMzS" class="anchorTag"></div>
@@ -339,8 +410,12 @@
             <div class='marginBottom paragraphShell anchor'>
                 <div id='7pVTCjbYIXjo' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'7pVTCjbYIXjo'"></app-bm-chapter-icon>
-                <p> Through training and breathing techniques, this character can fight and sprint longer than others.
-                    They receive a -5 to their Encumbrance.</p>
+                <p> Through training and breathing techniques, this character can fight and sprint longer than others. They receive a -1 to their Encumbrance.</p>
+            </div>
+            <div class='marginBottom paragraphShell anchor'>
+                <div id='youcanbutythima' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'youcanbutythima'"></app-bm-chapter-icon>
+                <p> You can buy this Mastery multiple times, but the price increases by 2 each time. So, the second time, you gain a -2 for 17 CrP, the third -3 for 19, and so on.</p>
             </div>
             <div class="chartShell pairedShell anchor">
                 <div id="7pclhHDobLJuR" class="anchorTag"></div>
@@ -475,6 +550,16 @@
                 <p> Some people just bounce back from wounds that would have put others down for months. With this
                     Mastery, a character heals 1 day quicker for each level of wound severity. So, a 5 Severity Wound
                     would heal in 10 days ( 4 + 3 + 2 + 1 + 0) instead of 15 ( 5 + 4 + 3 + 2 + 1).</p>
+            </div>
+            <div class="chartShell pairedShell anchor">
+                <div id="sharpshooter" class="anchorTag"></div>
+                <h3>SHARP SHOOTER</h3>
+                <h3> CrP: 35</h3>
+            </div>
+            <div class='marginBottom paragraphShell anchor'>
+                <div id='carefulaimcangetyous' class='anchorTag'></div>
+                <app-bm-chapter-icon [id]="'carefulaimcangetyous'"></app-bm-chapter-icon>
+                <p> Careful aim can get you so far; sometimes, some people are just born with an eye for distance. The penalties for long ranged shots are lowered from 16 to 12, and from 32 to 24.</p>
             </div>
             <div class="chartShell pairedShell anchor">
                 <div id="7pceUELFZYOGQ" class="anchorTag"></div>

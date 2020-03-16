@@ -222,32 +222,12 @@
       <div class='paragraphShell anchor'>
         <div id='10BSUTmNVArp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10BSUTmNVArp'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>2 1 HANDED WEAPONS </strong>Using a 1 handed weapon in both hands is a good
-          tactic against a single opponent as it can give a small defense
-          bonus and allow the character to make a few extra strikes.</p>
+        <p><strong class='orangeHeader'>2 1 HANDED WEAPONS (without Ambidextrous Mastery) </strong>If attacking with both, your primary hand attacks with a d12! while your secondary attacks with a d8!. You only receive your main hand’s Parry, if any. The secondary attacks slightly slower; always attacking a number of seconds equal to its speed after the primary makes its attacks.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10CFPzghQMSm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10CFPzghQMSm'"></app-bm-chapter-icon>
-        <p>First, if the off-hand weapon is smaller than your size, your Parry becomes your off-hand's Parry + 1/2 your
-          main hand's Parry but only against 1
-          non-flanking foe.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='iftheoffhandweaponisthesamesizeasyou' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'iftheoffhandweaponisthesamesizeasyou'"></app-bm-chapter-icon>
-        <p>If the off-hand weapon the same size as you, however, you don't gain the Parry bonus and attack on a
-          d12! base. This penalty is even if you're ambidextrous but at least you get a lot of extra damage.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10zpTEsEQEUF' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10zpTEsEQEUF'"></app-bm-chapter-icon>
-        <p>Dual wielding in such a manner also allows you to gain an extra attack, if you so choose. The secondary
-          weapon
-          has a speed of its unmodified weapon speed + 3 but doing so causes you to lose the extra Parry from the off
-          hand
-          until it can attack again.</p>
+        <p>When defending with one hand, you defend against the first attack against you with a d20!, using the Parry value of the off-hand weapon.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10rxLXScTJVZ' class='anchorTag'></div>
@@ -255,16 +235,32 @@
         <p>You can only switch Tactics on your primary attack.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='10xaslajaiEO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10xaslajaiEO'"></app-bm-chapter-icon>
-        <p>Non-Ambidextrous people receive a +3 Speed penalty to their primary weapon and the secondary attacks with a
-          d12!.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='10geYumxMGax' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10geYumxMGax'"></app-bm-chapter-icon>
         <p>If the weapon off-hand weapon is as large as you, you can only attack with it.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='iftheoffhandweaponisthesamesizeasyou' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'iftheoffhandweaponisthesamesizeasyou'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>2 1 HANDED WEAPONS (with Ambidextrous Mastery) </strong>f attacking with both, both attack with a d20!. You only receive your main hand’s Parry, if any. The secondary attacks slightly slower; always attacking a number of seconds equal to its speed after the primary makes its attacks.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='10zpTEsEQEUF' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10zpTEsEQEUF'"></app-bm-chapter-icon>
+        <p>When defending with one, you defend against the first attack against you with a d20!, using the full Parry of one and half the Parry of the other, added together (the combination is your choice).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='10xaslajaiEO' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10xaslajaiEO'"></app-bm-chapter-icon>
+        <p>You can only switch Tactics and Weapon Styles on your primary attack.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifyoutheweaponif' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyoutheweaponif'"></app-bm-chapter-icon>
+        <p>If the weapon off-hand is as large as you, you can only attack with it.
+        </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10krZZdSRyvv' class='anchorTag'></div>
@@ -611,7 +607,26 @@
           appropriate damage modifiers. The defender than subtracts their Damage Reduction and the remaining total is
           subtracted from their Vitality and added to their list of wounds.</p>
       </div>
-      <div class="space"></div>
+      <div class='paragraphShell anchor'>
+        <div id='damagerduceiontio' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'damagerduceiontio'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>DAMAGE REDUCTION</strong> Armor and one Mastery allows you to reduce the amount of damage taken. This 
+        is often times shorted to DR. There
+        are
+        two types: Static, noted by just a number, and Per Die, noted by a number /D.</p>
+      </div> 
+      <div class='paragraphShell anchor'>
+        <div id='11pLenZokpoSD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pLenZokpoSD'"></app-bm-chapter-icon>
+        <p> Static simply subtracts that number from the damage and is done.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='11pJeIHUVfZwj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pJeIHUVfZwj'"></app-bm-chapter-icon>
+        <p> /D subtracts that number multiplied by the number of dice the attack is using. So, if someone is attacking
+          you with a slashing weapon (2d6!), and you have armor that gives you 4/D, you’d subtract 8 from the damage.
+        </p>
+      </div>
       <div class='paragraphShell anchor'>
         <div id='10puoBeenjWnP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10puoBeenjWnP'"></app-bm-chapter-icon>

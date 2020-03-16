@@ -1,3 +1,29 @@
+.rankexamplevalue {
+  margin: 5px 0;
+  width: 50px
+}
+
+.rankexampleTable {
+  width: 250px;
+  margin: 0px 10px 10px 0;
+  float: left
+}
+
+.tierpricevalue {
+  margin: 5px 0;
+  width: 75px
+}
+
+.tierpriceTable {
+  width: 225px;
+  margin: 0px 10px 10px 0;
+  float: left
+}
+
+.armorMarginBottom {
+  margin-bottom: 15px;
+}
+
 .thievesCant {
   width: 100%;
 }
