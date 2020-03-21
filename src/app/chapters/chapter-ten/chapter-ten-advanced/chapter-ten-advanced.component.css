@@ -43,6 +43,31 @@
   overflow: auto;
 }
 
+.terrianvalue {
+  padding: 7px;
+  text-align: center;
+  width: 50px;
+}
+
+.terrianvalue:first-child {
+  min-width: 150px;
+  text-align: left;
+}
+
+.terrianvalue:last-child {
+  text-align: left;
+  width: 330px
+}
+
+.shootOnTheRunFirst {
+  width: 105px;
+}
+
+.shootOnTheRunSecond {
+  width: 0;
+  padding: 0;
+}
+
 @media (max-width: 450px) {
   .MovementTable {
     float: none;

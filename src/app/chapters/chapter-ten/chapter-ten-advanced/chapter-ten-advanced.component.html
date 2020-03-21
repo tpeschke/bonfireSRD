@@ -35,7 +35,7 @@
       <div class='anchor'>
         <div id='10hgxuNhMIIbra' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10hgxuNhMIIbra'"></app-bm-chapter-icon>
-        <h3>STARTING INITIATIVE </h3>
+        <h3>STARTING INITIATIVE & SURPRISE</h3>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10potRPpPHuDo' class='anchorTag'></div>
@@ -44,6 +44,29 @@
           typically the instigator goes on second 1. Those that know the battle is about to start (like being warned by
           a predetermined sign) use a d4, and the completely surprised receive a d20, while everyone else typically
           falls on a dice between that. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thosewhoeinitiative' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thosewhoeinitiative'"></app-bm-chapter-icon>
+        <p> Those whose initiative hasn’t come up are surprised and continue to do what they were doing as if nothing is wrong. They can take no other actions: they’re completely unaware of what’s going on.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='shouldsomeoneattackthem' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'shouldsomeoneattackthem'"></app-bm-chapter-icon>
+        <p> Should someone attack them during this time, they can instinctually try and defend, rolling a d20 but instead of adding their full modifier, they instead receive the next closest dice size, rounded down. Additionally, they receive a -3 Factor. So, a surprised person with a +5 Defense, rolls a d20! + d4! (the modifier rounds down to a d4! Instead of a d6!) and the attacker gains an additional d8! to their roll.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='ifthesurprisedishint' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifthesurprisedishint'"></app-bm-chapter-icon>
+        <p> If the surprised person is hit, the pain quickly brings them into the reality of the situation and they may act 2 seconds later (or before that if their initiative was the next second). </p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>Factors In Combat</h2>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='factorsincombatworkmuchtheydo' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'factorsincombatworkmuchtheydo'"></app-bm-chapter-icon>
+          <p>Factors in Combat work much like they do for Skill Checks, either adding Factor Dice or Subtracting them from a person’s Attack or Defense roll. You’re unfamiliar with them, review the Factor Dice under the Tools At Your Disposal section of Chapter 8: Skills.</p>
+        </div>
       </div>
       <div class='anchor'>
         <div id='10hgSUsZSWLDmm' class='anchorTag'></div>
@@ -267,14 +290,12 @@
         <app-bm-chapter-icon [id]="'10krZZdSRyvv'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>2 HANDING 1 HANDED WEAPONS </strong>Using two hands where one is sufficient
           allows you to leverage more of your strength and deal a harsher blow but
-          leaves you open.</p>
+          slows you down.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10QuVCuRivMM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10QuVCuRivMM'"></app-bm-chapter-icon>
-        <p>When doing this move on a weapon, you increase the damage dice as if you were Power Attacking with it,
-          however,
-          you swap out the bonuses for a +3 to Speed and Max Strength.</p>
+        <p>When using this style, you increase your damage by +4, however, you swap out the bonuses for a +3 to Speed.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10FXHaoTTnMB' class='anchorTag'></div>
@@ -595,10 +616,29 @@
         <app-bm-chapter-icon [id]="'10pqIUTkjDrBi'"></app-bm-chapter-icon>
         <p> Once both sides have rolled and added all modifiers, compare the totals against each other.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='marginBottom paragraphShell anchor'>
         <div id='10pazAnWBEunD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pazAnWBEunD'"></app-bm-chapter-icon>
         <p> If the defender’s is equal to or greater than the attacker, the attack misses.</p>
+      </div>
+      
+      <div class='paragraphShell anchor'>
+        <div id='10puoBeenjWnP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10puoBeenjWnP'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>PARRYING</strong> If the attack roll is within the Parry Threshold of the
+          defender’s total, the defender may choose to deflect some of the incoming attack.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='10pOtgkPYEHit' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10pOtgkPYEHit'"></app-bm-chapter-icon>
+        <p> The attacker rolls their damage and subtracts the shield or weapon’s DR and then their armor’s DR. Any left over is still done to the defender. For piercing weapons, the /d DR of the shield or weapon is tripled.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='10pomWYbybVdb' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10pomWYbybVdb'"></app-bm-chapter-icon>
+        <p> So, a defender with a Parry Threshold of 4, and a total of 10 for their defense roll vs an attack roll of 14,
+          could choose to parry the blow, taking less damage.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10prdIUzAktjr' class='anchorTag'></div>
@@ -626,25 +666,6 @@
         <p> /D subtracts that number multiplied by the number of dice the attack is using. So, if someone is attacking
           you with a slashing weapon (2d6!), and you have armor that gives you 4/D, you’d subtract 8 from the damage.
         </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10puoBeenjWnP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10puoBeenjWnP'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>PARRYING</strong> If the attack roll is within the Parry Threshold of the
-          defender’s total, the defender may choose to deflect some of the incoming attack.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10pOtgkPYEHit' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pOtgkPYEHit'"></app-bm-chapter-icon>
-        <p> For non-piercing weapons, The attacker rolls their regular damage for their weapon (if applicable) and
-          subtracts the shield or weapon’s DR and then their armor’s DR. Any left over is still done to the defender.
-        </p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='10pomWYbybVdb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pomWYbybVdb'"></app-bm-chapter-icon>
-        <p> So, a defender with a Parry Threshold of 4, and total of 10 for their defense roll vs a attack roll of 14,
-          could choose to parry the blow, taking less damage.</p>
       </div>
       <div class="space"></div>
       <div class='marginBottom paragraphShell anchor'>
@@ -803,30 +824,167 @@
       <div class='paragraphShell anchor'>
         <div id='10pdLQIuVXinJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pdLQIuVXinJ'"></app-bm-chapter-icon>
-        <p> You have one primary front at your basic defense (d20!). This front is directly in front of you. Every
-          additional person after the first that engages you, however, can take advantage of your split attention,
-          forcing you to roll a d12! for your defense verses their attacks.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10pASeEWywJbx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pASeEWywJbx'"></app-bm-chapter-icon>
-        <p> This penalty can be mitigated through the use of shields. Small shields allow you to defend against an
-          additional assailant with your standard defense, while Medium and Large ones allow you to defend against an
-          extra 2 and 3, respectively.</p>
+        <p> Defending right in front of you is pretty easy and so brooks no Factors, however, every 45 degree off that gives the attacker +1 Factor, with those directly behind your character getting an additional +2 Factor (for a grand total of +5 Factor) since they take advantage of a huge blindspot.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
-        <div id='10pFFsALmAwxH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pFFsALmAwxH'"></app-bm-chapter-icon>
-        <p> If a person is coming up straight behind you, and taking advantage of that blindspot, you only defend with a
-          d8!, however, only one person can really fit in that space.</p>
+        <div id='10pASeEWywJbx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10pASeEWywJbx'"></app-bm-chapter-icon>
+        <p>This penalty can be mitigated through the use of shields. Small shields allow you to defend against an additional assailant, depriving them of that bonus, while Medium and Large ones allow you to defend against an extra 2 and 3, respectively.</p>
       </div>
-      <div class="space"></div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pmXXnJfBHlG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pmXXnJfBHlG'"></app-bm-chapter-icon>
         <p> A maximum of 8 people at a time can effectively attack person at once, assuming that they’re out in the
           open. After that, every assailant’s attack die is lowered by 1 size per extra person.</p>
       </div>
+      
+      <div class='anchor'>
+        <div id='terrianandsituation' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'terrianandsituation'"></app-bm-chapter-icon>
+        <h3>TERRAIN & SITUATIONAL FACTORS</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='nobattleifledisbaol' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nobattleifledisbaol'"></app-bm-chapter-icon>
+        <p> No battlefield is absolutely flat and featureless and often these features can make a difference for those cunning enough to use them. This section won’t give you all the different situations you might find yourself in, but should give you a good basis to judge off of.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thensumbersundertheeatt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thensumbersundertheeatt'"></app-bm-chapter-icon>
+        <p> The numbers under the Attack and Defense columns are the change in Factor. So, standing in quicksand gives you a -3 Factor to Defense (amongst other things).</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='notethatdefesnsepent' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'notethatdefesnsepent'"></app-bm-chapter-icon>
+        <p> Note that defense penalties also affect ranged defenses.</p>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='terriantable' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'terriantable'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Terrian & Situational Factors</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>Attack</p>
+                <p class='terrianvalue TableIndividual'>Defense</p>
+                <p class='terrianvalue TableIndividual'>Other Modifiers</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Attacking Around a Corner</p>
+                <p class='terrianvalue TableIndividual'>-2</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Balancing On Something</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>Acrobatics Rank round up to nearest dice size for attack and defense, max d20. If they're not trained, attacking and defending are not possible.</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Climbing</p>
+                <p class='terrianvalue TableIndividual'>-4</p>
+                <p class='terrianvalue TableIndividual'>-4</p>
+                <p class='terrianvalue TableIndividual'> </p>
+              </div>
+          
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Enclosed Corridor</p>
+                <p class='terrianvalue TableIndividual shootOnTheRunFirst'>-1 per 1 foot over 5 ft in Measure</p>
+                <p class='terrianvalue TableIndividual shootOnTheRunSecond'> </p>
+                <p class='terrianvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Flinching</p>
+                <p class='terrianvalue TableIndividual'>-2</p>
+                <p class='terrianvalue TableIndividual'>-2</p>
+                <p class='terrianvalue TableIndividual'>Can't move above a Walk</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Limited Visibility</p>
+                <p class='terrianvalue TableIndividual'>*</p>
+                <p class='terrianvalue TableIndividual'>*</p>
+                <p class='terrianvalue TableIndividual'>See Illumination in Chapter 15: Misc Rules</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Mud</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>-2</p>
+                <p class='terrianvalue TableIndividual'>Start at Stroll, Walk/Jog/Run/Spring cause 1 Damage / Sec</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>On Higher Plane</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>1</p>
+                <p class='terrianvalue TableIndividual'>+d4! to damage</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>On Lowerer Plane</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>-1/2 ft to Measure</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Prone</p>
+                <p class='terrianvalue TableIndividual'>-2</p>
+                <p class='terrianvalue TableIndividual'>-4</p>
+                <p class='terrianvalue TableIndividual'>Can only Crawl at Stroll Speed</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Quick Sand</p>
+                <p class='terrianvalue TableIndividual'>-1</p>
+                <p class='terrianvalue TableIndividual'>-2</p>
+                <p class='terrianvalue TableIndividual'>Can't move</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Shooting on the Move</p>
+                <p class='terrianvalue TableIndividual'>-3 / Movement Category</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Slippery Surface</p>
+                <p class='terrianvalue TableIndividual'>-3</p>
+                <p class='terrianvalue TableIndividual'>-3</p>
+                <p class='terrianvalue TableIndividual'>No damage from Running or Sprinting but you can only slow down 1 Movement Category / 5 secs. Lower Knock Back threshold by 10.</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Surprised</p>
+                <p class='terrianvalue TableIndividual'>n/a</p>
+                <p class='terrianvalue TableIndividual'>-3</p>
+                <p class='terrianvalue TableIndividual'>Can't take any aggressive actions</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Undergrowth</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>Jogging and above requires an Acrobatics check to stay on your feet. Knock Backs always knock you prone.</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Uneven Footing</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>-1</p>
+                <p class='terrianvalue TableIndividual'>Lower Knock Back threshold by 5</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Water, Shin Deep</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>-1</p>
+                <p class='terrianvalue TableIndividual'>Start at a Stroll, Jog/Run/Sprint cause 1 Damage / sec</p>
+              </div>
+              <div class='tableValue'>
+                <p class='terrianvalue TableIndividual'>Water, Waist Deep</p>
+                <p class='terrianvalue TableIndividual'> </p>
+                <p class='terrianvalue TableIndividual'>-1</p>
+                <p class='terrianvalue TableIndividual'>Start at Stroll, Can't move above Walk. Take 1 Damage / sec Walking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class='anchor'>
         <div id='10hgKuowiuYcTE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10hgKuowiuYcTE'"></app-bm-chapter-icon>
@@ -896,8 +1054,7 @@
       <div class='paragraphShell anchor'>
         <div id='10phqEwWEYFwZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10phqEwWEYFwZ'"></app-bm-chapter-icon>
-        <p> A charge is a terrifying tactic: should the blow land, the target’s Morale drops by 1 for every point the
-          attacker hits by.</p>
+        <p>A charge is a terrifying tactic: should the blow land, they may add a d6! Leverage to their side’s Morale for the rest of the combat.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pNRQBQaKKHa' class='anchorTag'></div>
@@ -1062,13 +1219,13 @@
         <div id='10pKHrpcMcwNK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pKHrpcMcwNK'"></app-bm-chapter-icon>
         <p> However, if you Shift with another tactic, you don’t receive this penalty and gain a +1 that can be either
-          used to increase a bonus or decrease a penalty from that tactic. You may do this freely with any tactic except
+          used to increase a bonus or decrease a penalty from that tactic. You may do this freely with any Tactic except
           Retreat and Step Back.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pXwAsMvDDNM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pXwAsMvDDNM'"></app-bm-chapter-icon>
-        <p> Shifting is also used to changed Facings.</p>
+        <p>Shifting is also used to change Facings so if you’re engaged with an enemy and you Shift. And don’t forget that you get that tasty +1 Factor from flanking your enemy if they don’t also Shift to face you.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pzIeitmfMbw' class='anchorTag'></div>
@@ -1079,8 +1236,12 @@
       <div class='paragraphShell anchor'>
         <div id='10pgTLNeNYfGf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pgTLNeNYfGf'"></app-bm-chapter-icon>
-        <p> Before your defense roll, if you declare a Step Back, you receive a +5 to your next Defense roll but also a
-          -2 to your next Attack and must continue to move back at a walking speed until your next attack.</p>
+        <p> Before your defense roll, if you declare a Step Back, you receive a +5 to your next Defense roll but on your next attack roll shrink the damage of your dice based on its type and must continue to move back at a Walking speed until your next attack.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='piercingweaponslower' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'piercingweaponslower'"></app-bm-chapter-icon>
+        <p> Piercing weapons lower 1 of their dice by 1 size. Slashing lower all dice by 1 size and crushing lowers their highest die by 2 sizes.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pKdccEvYftR' class='anchorTag'></div>
