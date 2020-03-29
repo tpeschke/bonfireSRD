@@ -125,18 +125,18 @@ p {
 
 .homeTitleShell {
   position: relative;
-  margin: 35px 45px;
+  margin: 22px 15px;
 }
 
 .homeTitle {
-  position: absolute;
-  height: 125px;
+  height: 145px;
+  max-width: none;
 }
 
 .homeSubtitle {
   position: absolute;
   top: 110px;
-  left: 45px;
+  left: 106px;
 }
 
 .homeImage {
