@@ -150,6 +150,36 @@
         <app-bm-chapter-icon [id]="'SkillChecksrdOQYaVxoYh'"></app-bm-chapter-icon>
         <p>Skill Checks refer to a single roll against a single Skill, while a Skill Challenge refers to a host of Skill Checks. To use a metaphor: a Skill Challenge would be breaking into the castle. The Skill Checks would be climbing the walls, hiding in the shadows, sneaking past the guards, listening at doors, lockpicking any locks, etc.</p>
       </div>
+
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>The Single Check</h2>
+        <div class='paragraphShell anchor'>
+          <div id='beforewedivieinithinkits' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'beforewedivieinithinkits'"></app-bm-chapter-icon>
+          <p> Before we dive in, I think it's worth saying that there may be times when you have something that might call 
+            for a Skill Check but not a Skill Challenges. Most often you'll
+            do this when there is danger but not a huge time crunch, like, for instance, players leaping over a cliff.
+          </p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='inthatcaseitwould' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'inthatcaseitwould'"></app-bm-chapter-icon>
+          <p> In that case, it would be perfectly reasonable to just call for a single Jumping Check. If the players want to 
+            do some Prep Checks or use any of the other tools at their disposal, they can, just hand waving and saying that,
+            since the players have enough time, they can essentially spend as much time as they need to pass the Prep Checks
+            so don't worry about it.
+          </p>
+        </div>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='orifthereisatimecrunsh' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'orifthereisatimecrunsh'"></app-bm-chapter-icon>
+          <p> Or, if there is a time crunch but it is so narrow players really wouldn't have the time to prepare, like having 
+            to jump the chasm while a horde of brigands with bows are closing it, you might also just default to the single roll:
+            no need to break out these rules in that case.
+          </p>
+        </div>
+      </div>
+
       <div class='anchor'>
         <div id='tempoandbasetime' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'tempoandbasetime'"></app-bm-chapter-icon>
@@ -426,7 +456,9 @@
       <div class='paragraphShell anchor'>
         <div id='inthesecasestheopposit' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'inthesecasestheopposit'"></app-bm-chapter-icon>
-        <p>In these cases, the opposition would increase the size of their Factor Dice by 1 size for everytime the Base Time is doubled. So, if a Skill has a base time of a minute but the circumstances for you to do it for 2 minutes, you would increase it by 1 size. If instead it takes 4 minutes, you increase it by 2, 8 minutes, you increase it by 3 and so on.</p>
+        <p>In these cases, the opposition would increase the size of their Factor Dice by 1 size for everytime the Base Time is doubled and you would gain Stress equal to your Encumbrance at the end of it. 
+          So, if a Skill has a Base Time of 1 and the Pace is 1 minute but the circumstances for you to do it for 2 minutes, you would increase it by 1 size. 
+          If instead it takes 4 minutes, you increase it by 2, 8 minutes, you increase it by 3 and so on. Either way, you'd gain Stress equal to your Encumbrance after the Check.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='howmuchyoufailbyord' class='anchorTag'></div>
@@ -449,6 +481,19 @@
         <div id='SosincePercZoMjlpSzrC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SosincePercZoMjlpSzrC'"></app-bm-chapter-icon>
         <p>So, since Perception takes 30 seconds, if you take 2 and a half minutes to take a look around, you would gain +3 Factor (30 for the first, 1 minute for the second, 2 minutes for the third).</p>
+      </div>
+      <div class='anchor'>
+        <div id='rushjobsheading' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'rushjobsheading'"></app-bm-chapter-icon>
+        <h3>RUSH JOBS</h3>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='ontheothersideof' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ontheothersideof'"></app-bm-chapter-icon>
+        <p>On the other side of patience, is impatience. Sometimes you don't have a choice: you just need to get something done now, the consquences be damned. 
+          In this case you'd want to do a Rush Job, which halves the Pace of a Check, however, it inflicts Stress equal to your Encumbrance and you roll your 
+          Check on a d12! instead of a d20!.
+        </p>
       </div>
       <div class='anchor'>
         <div id='PREPCHECKSjarBjZitkA' class='anchorTag'></div>
@@ -503,25 +548,35 @@
         <app-bm-chapter-icon [id]="'BasicallyanyNNmJpGcVxT'"></app-bm-chapter-icon>
         <p>Basically, anything you can think of that might apply might be an Asset you can draw on.</p>
       </div>
+      <div class='paragraphShell anchor'>
+        <div id='AssetshaveaEsQImOLkFC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AssetshaveaEsQImOLkFC'"></app-bm-chapter-icon>
+        <p>Assets add their Skill Rank to your Check, however this happens slowly based on that Asset's Time Investment.</p>
+      </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AssetshaveaEsQImOLkFC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AssetshaveaEsQImOLkFC'"></app-bm-chapter-icon>
-        <p>Assets have a Time Investment and a Usefulness, which is how long you have to spend to get an extra roll on your Prep Check and what they add to their Check, respectively. Note, that taking extra time with an Asset doesn’t scale exponentially like Taking Your Time does, but instead scales linearly.</p>
+        <p>For each period of the Time Investment you spend with the Asset, you gain a +1 to your Check up til the Asset's Rank.</p>
       </div>
+
       <div class='paragraphShell anchor'>
         <div id='SoyougotoywKajIoIHh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoyougotoywKajIoIHh'"></app-bm-chapter-icon>
-        <p>So, you go to your old ranger friend, who happens to be a talker, so you know it’ll take you at least 2 hours to get anything useful out of him so you decide to spend the day with him, spending about 8 hours there.</p>
+        <p>So, you go to your old ranger friend to get information about the local area. You know he happens to be a talker, so you know it’ll take you at least 2 hours (his Time Investment) to get anything useful out of him so you decide to spend the day with him, spending about 8 hours there.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='NowthiswoulVDSRWvPwSD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NowthiswoulVDSRWvPwSD'"></app-bm-chapter-icon>
-        <p>Now, your friend doesn’t remember as much as he used to so you get a d10! Factor ( 8 / 2 = 4 ) for spending so much time with him but his Usefulness is a d12!, so that’s what he adds to the opposition dice for your Prep Check.</p>
+        <p>Now, your friend doesn’t remember as much as he used to so his Navigation is Rank 3. 
+          After spending 8 hours with him, you get a +3 to your Navigation Prep Check. If you have stayed 6 or 7 hours, you would 
+          have still gotten that +3, while if you had stayed 
+          on 2 hours, you would have only gotten only a +1. 
+        </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoudontautoiryACQClAu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoudontautoiryACQClAu'"></app-bm-chapter-icon>
-        <p>You don’t automatically know the Usefulness of an Asset.</p>
+        <p>You don’t automatically know the Rank or the Time Investment of an Asset.</p>
       </div>
       <div class='paragraphShell marginBottomnchor'>
         <div id='AnotherbenefiTGYnVLPHBf' class='anchorTag'></div>
@@ -531,12 +586,12 @@
       <div class='paragraphShell anchor'>
         <div id='AssetscanalsslsUHUqPLd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AssetscanalsslsUHUqPLd'"></app-bm-chapter-icon>
-        <p>Assets can also be increased and expanded upon as well, increasing its Usefulness. A good relationship with a contact might give you more information, donating to the local library may increase its selection, or hiring excavators to dig up a ruin may unearth more artifacts that help you decipher that ancient script.</p>
+        <p>Assets can also be increased and expanded upon as well, increasing its Rank. A good relationship with a contact might give you information quicker, donating to the local library may increase its selection, or hiring excavators to dig up a ruin may unearth more artifacts that help you decipher that ancient script.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheremaybesQAiSsaVIhc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheremaybesQAiSsaVIhc'"></app-bm-chapter-icon>
-        <p>There may be some special cases where an Asset will take care of itself but you have to check back on it, such as Snaring in the forest. You set your trap and then a day or two later, you can go back and check it to see if you caught anything - in the meantime, you can get other work done..</p>
+        <p>There may be some special cases where an Asset will take care of itself but you may have to check back on it, such as Snaring in the forest. You set your trap and then a day or two later, you can go back and check it to see if you caught anything - in the meantime, you can get other work done.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <h2 class='sidebarTitle'>ASSET & EQUIPMENT BASED SKILLS</h2>
@@ -588,11 +643,6 @@
         <div id='YoucanusefaEuOVuYokGj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoucanusefaEuOVuYokGj'"></app-bm-chapter-icon>
         <p>You can use faulty equipment (ones with a negative modifier), since something is better than nothing. This still gives you a reroll but it’s on 1 dice lower (again, keeping the better of the two) or on a d4!.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='SuperiorequipNqQXedPxxC' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SuperiorequipNqQXedPxxC'"></app-bm-chapter-icon>
-        <p>Superior equipment also gives you that reroll but 1 size larger instead or gives you a +d8!.</p>
       </div>
       <div class='anchor'>
         <div id='COMPANIONShkErztFZmk' class='anchorTag'></div>
