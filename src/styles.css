@@ -471,7 +471,7 @@ p {
 
 .anchorTag {
   position: absolute;
-  top: -110px;
+  top: -120px;
   left: 0;
 }
 
@@ -633,16 +633,6 @@ p {
   font-size: 15px;
   margin-bottom: 0px;
   margin-top: 2px;
-}
-
-.anchor {
-  position: relative;
-}
-
-.anchorTag {
-  position: absolute;
-  top: -110px;
-  left: 0;
 }
 
 /* TABLE STYLINGS ========================================================= */
