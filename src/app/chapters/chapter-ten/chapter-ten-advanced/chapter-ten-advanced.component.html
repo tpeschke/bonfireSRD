@@ -54,26 +54,13 @@
       <div class='paragraphShell anchor'>
         <div id='shouldsomeoneattackthem' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'shouldsomeoneattackthem'"></app-bm-chapter-icon>
-        <p> Should someone attack them during this time, they can instinctually try and defend, rolling a d20 but
-          instead of adding their full modifier, they instead receive the next closest dice size, rounded down.
-          Additionally, they receive a -3 Factor. So, a surprised person with a +5 Defense, rolls a d20! + d4! (the
-          modifier rounds down to a d4! Instead of a d6!) and the attacker gains an additional d8! to their roll.</p>
+        <p> Should someone attack them during this time, they are completely helpless, defending on a d8!.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='ifthesurprisedishint' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifthesurprisedishint'"></app-bm-chapter-icon>
         <p> If the surprised person is hit, the pain quickly brings them into the reality of the situation and they may
           act 2 seconds later (or before that if their initiative was the next second). </p>
-      </div>
-      <div class='sidebarShell marginBottom'>
-        <h2 class='sidebarTitle'>Factors In Combat</h2>
-        <div class='paragraphShell anchor marginBottom'>
-          <div id='factorsincombatworkmuchtheydo' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'factorsincombatworkmuchtheydo'"></app-bm-chapter-icon>
-          <p>Factors in Combat work much like they do for Skill Checks, either adding Factor Dice or Subtracting them
-            from a person’s Attack or Defense roll. You’re unfamiliar with them, review the Factor Dice under the Tools
-            At Your Disposal section of <a routerLink='../../../../../chapter/8'>Chapter 8: Skills</a>.</p>
-        </div>
       </div>
       <div class='anchor'>
         <div id='10hgSUsZSWLDmm' class='anchorTag'></div>
@@ -842,9 +829,9 @@
       <div class='paragraphShell anchor'>
         <div id='10pdLQIuVXinJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pdLQIuVXinJ'"></app-bm-chapter-icon>
-        <p> Defending right in front of you is pretty easy and so brooks no Factors, however, every 45 degree off that
-          gives the attacker +1 Factor, with those directly behind your character getting an additional +2 Factor (for a
-          grand total of +5 Factor) since they take advantage of a huge blindspot.</p>
+        <p> Defending right in front of you is pretty easy and so brooks no penalties, however, every 45 degree off that
+          the defender lowers their Defense dice by 1 size, with those being attacked from directly behind defend
+          on a d8! since they take advantage of a huge blindspot.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pASeEWywJbx' class='anchorTag'></div>
@@ -875,8 +862,10 @@
       <div class='paragraphShell anchor'>
         <div id='thensumbersundertheeatt' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thensumbersundertheeatt'"></app-bm-chapter-icon>
-        <p> The numbers under the Attack and Defense columns are the change in Factor. So, standing in quicksand gives
-          you a -3 Factor to Defense (amongst other things).</p>
+        <p> The numbers under the Attack and Defense columns are the change penalty or bonus.
+          If there is a dice noted there, you replace your d20! with that when rolling.
+          So, standing in quicksand gives
+          you a -8 to Defense (amongst other things).</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='notethatdefesnsepent' class='anchorTag'></div>
@@ -898,7 +887,7 @@
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Attacking Around a Corner</p>
-                <p class='terrainvalue TableIndividual'>-2</p>
+                <p class='terrainvalue TableIndividual'>-4</p>
                 <p class='terrainvalue TableIndividual'> </p>
                 <p class='terrainvalue TableIndividual'> </p>
               </div>
@@ -911,21 +900,21 @@
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Climbing</p>
-                <p class='terrainvalue TableIndividual'>-4</p>
-                <p class='terrainvalue TableIndividual'>-4</p>
+                <p class='terrainvalue TableIndividual'>d8!</p>
+                <p class='terrainvalue TableIndividual'>d8!</p>
                 <p class='terrainvalue TableIndividual'> </p>
               </div>
 
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Enclosed Corridor</p>
-                <p class='terrainvalue TableIndividual shootOnTheRunFirst'>-1 per 1 foot over 5 ft in Measure</p>
+                <p class='terrainvalue TableIndividual shootOnTheRunFirst'>-2 per 1 foot over 5 ft in Measure</p>
                 <p class='terrainvalue TableIndividual shootOnTheRunSecond'> </p>
                 <p class='terrainvalue TableIndividual'> </p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Flinching</p>
-                <p class='terrainvalue TableIndividual'>-2</p>
-                <p class='terrainvalue TableIndividual'>-2</p>
+                <p class='terrainvalue TableIndividual'>d12!</p>
+                <p class='terrainvalue TableIndividual'>d12!</p>
                 <p class='terrainvalue TableIndividual'>Can't move above a Walk</p>
               </div>
               <div class='tableValue'>
@@ -938,13 +927,13 @@
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Mud</p>
                 <p class='terrainvalue TableIndividual'> </p>
-                <p class='terrainvalue TableIndividual'>-2</p>
+                <p class='terrainvalue TableIndividual'>-4</p>
                 <p class='terrainvalue TableIndividual'>Start at Stroll, Walk/Jog/Run/Spring cause 1 Damage / Sec</p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>On Higher Plane</p>
                 <p class='terrainvalue TableIndividual'> </p>
-                <p class='terrainvalue TableIndividual'>1</p>
+                <p class='terrainvalue TableIndividual'>+2</p>
                 <p class='terrainvalue TableIndividual'>+d4! to damage</p>
               </div>
               <div class='tableValue'>
@@ -955,33 +944,33 @@
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Prone</p>
-                <p class='terrainvalue TableIndividual'>-2</p>
-                <p class='terrainvalue TableIndividual'>-4</p>
+                <p class='terrainvalue TableIndividual'>d10!</p>
+                <p class='terrainvalue TableIndividual'>d6!</p>
                 <p class='terrainvalue TableIndividual'>Can only Crawl at Stroll Speed</p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Quick Sand</p>
-                <p class='terrainvalue TableIndividual'>-1</p>
                 <p class='terrainvalue TableIndividual'>-2</p>
+                <p class='terrainvalue TableIndividual'>-8</p>
                 <p class='terrainvalue TableIndividual'>Can't move</p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Shooting on the Move</p>
-                <p class='terrainvalue TableIndividual'>-3 / Movement Category</p>
+                <p class='terrainvalue TableIndividual'>-2 Dice Size / Movement Category</p>
                 <p class='terrainvalue TableIndividual'> </p>
                 <p class='terrainvalue TableIndividual'> </p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Slippery Surface</p>
-                <p class='terrainvalue TableIndividual'>-3</p>
-                <p class='terrainvalue TableIndividual'>-3</p>
+                <p class='terrainvalue TableIndividual'>d10!</p>
+                <p class='terrainvalue TableIndividual'>d10!</p>
                 <p class='terrainvalue TableIndividual'>No damage from Running or Sprinting but you can only slow down 1
                   Movement Category / 5 secs. Lower Knock Back threshold by 10.</p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Surprised</p>
                 <p class='terrainvalue TableIndividual'>n/a</p>
-                <p class='terrainvalue TableIndividual'>-3</p>
+                <p class='terrainvalue TableIndividual'>d8!</p>
                 <p class='terrainvalue TableIndividual'>Can't take any aggressive actions</p>
               </div>
               <div class='tableValue'>
@@ -994,19 +983,19 @@
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Uneven Footing</p>
                 <p class='terrainvalue TableIndividual'> </p>
-                <p class='terrainvalue TableIndividual'>-1</p>
+                <p class='terrainvalue TableIndividual'>-2</p>
                 <p class='terrainvalue TableIndividual'>Lower Knock Back threshold by 5</p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Water, Shin Deep</p>
                 <p class='terrainvalue TableIndividual'> </p>
-                <p class='terrainvalue TableIndividual'>-1</p>
+                <p class='terrainvalue TableIndividual'>d12!</p>
                 <p class='terrainvalue TableIndividual'>Start at a Stroll, Jog/Run/Sprint cause 1 Damage / sec</p>
               </div>
               <div class='tableValue'>
                 <p class='terrainvalue TableIndividual'>Water, Waist Deep</p>
                 <p class='terrainvalue TableIndividual'> </p>
-                <p class='terrainvalue TableIndividual'>-1</p>
+                <p class='terrainvalue TableIndividual'>d12!-4</p>
                 <p class='terrainvalue TableIndividual'>Start at Stroll, Can't move above Walk. Take 1 Damage / sec
                   Walking</p>
               </div>
@@ -1281,7 +1270,7 @@
         <div id='10pXwAsMvDDNM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pXwAsMvDDNM'"></app-bm-chapter-icon>
         <p>Shifting is also used to change Facings so if you’re engaged with an enemy and you Shift. And don’t forget
-          that you get that tasty +1 Factor from flanking your enemy if they don’t also Shift to face you.</p>
+          that you get those tasty bonuses from flanking your enemy if they don’t also Shift to face you.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10pzIeitmfMbw' class='anchorTag'></div>
