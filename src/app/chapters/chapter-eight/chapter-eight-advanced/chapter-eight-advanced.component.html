@@ -290,6 +290,48 @@
         </div>
       </div>
 
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>Multi-Layer Checks</h2>
+        <div class='paragraphShell anchor'>
+          <div id='letsaythatyouretying' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'letsaythatyouretying'"></app-bm-chapter-icon>
+          <p>Let's say that you're trying to deduce facts about bears before you go to fight one.
+            The thing is, there is a lot to know about bears and your character probably isn't going to 
+            know all of it, so making a single Check is too binary while making multiple Checks is too tedious.
+          </p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='instepsthemitl' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'instepsthemitl'"></app-bm-chapter-icon>
+          <p>In steps the Mutli-Layer Check.</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='inthiscasethewoudassigndif' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'inthiscasethewoudassigndif'"></app-bm-chapter-icon>
+          <p>In this case, the GM would assign Difficulty Dice to the different facts about bears based on how esoteric the knowledge is.
+            He would then roll 1 d20! and all of those Difficulty Dice. You would only roll a single Check and the compare that to the difference 
+            totals to see if you recall those facts.
+          </p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='soforinstancetheknowlege' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'soforinstancetheknowlege'"></app-bm-chapter-icon>
+          <p>So, for instance, the knowledge that they habernate is no common but it's not uncommon, do the GM assigns that d6!. The knoweldge that 
+            they're afraid of fire is common, so he rolls d4! for that and the knowledge that they're sacred animals to the local indigious tribe is 
+            pretty rare because said tribe is extremely secretative so that would be a d20!. 
+          </p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='yourollyourmonstercraft' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'yourollyourmonstercraft'"></app-bm-chapter-icon>
+          <p>You roll your Monster Craft and get a total of 16. The GM gets a 13 for the d20, a 4 for the d4!, a 5 for the d6! and a 1 for the second d20!.
+            That means the totals are 17, 18, and 14 respectively. This means your character hasn't really been around bears to he doesn't know that they hibernate 
+            or that you can scare them with fire, however, he does recall over hearing some of the wanderers in the local tavern talk about how the animal was 
+            sacred to the local tribe and killed one of them after he wounded one of the creatures.
+          </p>
+        </div>
+      </div>
+
       <div class='anchor'>
         <div id='DifficultyMWhPZKPrLQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DifficultyMWhPZKPrLQ'"></app-bm-chapter-icon>
@@ -401,7 +443,7 @@
       <div class='anchor'>
         <div id='FailuresSoftriTlAUJpwm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FailuresSoftriTlAUJpwm'"></app-bm-chapter-icon>
-        <h3>FAILURES, SOFT & HARD</h3>
+        <h3>FAILURES, HARD & SOFT</h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='FailingaChecbYVZTkvTGz' class='anchorTag'></div>
@@ -413,7 +455,7 @@
       <div class='paragraphShell anchor'>
         <div id='SoftfailuresyqlPsGMxjy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoftfailuresyqlPsGMxjy'"></app-bm-chapter-icon>
-        <p>Soft failures are when you fail a single Skill Check or only succeed through use of tools. How much you
+        <p>Soft failures are when you fail a single Skill Check. How much you
           failed by
           is added to the Failure of the Obstacle you’re making the Check against and your Stress, while how much you
           succeed by due to help is just added to that Failure. </p>
@@ -688,7 +730,13 @@
         <app-bm-chapter-icon [id]="'ForthefirstdyrJmWRPxe'"></app-bm-chapter-icon>
         <p>For the first redemption of this bonus between Maintenance Prep Checks this comes with no penalty but every
           time
-          after that, the tool degrades, giving it a -1 regardless of whether you succeed or not.</p>
+          after that, the tool degrades, giving it a -1 regardless of whether you succeed or not. While players are
+          assumed to
+          be using all equpment that might be useful without having to specifically state as such, if a player did point
+          out how a
+          piece of equipment is being used to help them, they're automatically considered to have made a Maintenace
+          Check before using it
+          if they have that Skill.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='YoucanusefaDNCIhYhFsz' class='anchorTag'></div>
@@ -730,9 +778,9 @@
         <div class='paragraphShell anchor marginBottom'>
           <div id='forgminsnote' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'forgminsnote'"></app-bm-chapter-icon>
-          <p>For GMs, note that Helper Skills are how you handle Skill Mobbing, where everyone 
-            just overpowers a roll by all rolling against it. Instead, only one person rolls and 
-            only those with an applicable Advanced Skill and willing to take that Stress Dice 
+          <p>For GMs, note that Helper Skills are how you handle Skill Mobbing, where everyone
+            just overpowers a roll by all rolling against it. Instead, only one person rolls and
+            only those with an applicable Advanced Skill and willing to take that Stress Dice
             add their Rank to help out.
           </p>
         </div>
@@ -2734,8 +2782,9 @@
       <div class='paragraphShell anchor'>
         <div id='8bRKMvsThgi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8bRKMvsThgi'"></app-bm-chapter-icon>
-        <p> The bonuses for this Skill are varied and many with the specifics spelled out in <a routerLink='../chapter/10'>Chapter 10:
-          Combat</a> under the Mounted Combat section so they won't be listed here. Seriously, go check it out.</p>
+        <p> The bonuses for this Skill are varied and many with the specifics spelled out in <a
+            routerLink='../chapter/10'>Chapter 10:
+            Combat</a> under the Mounted Combat section so they won't be listed here. Seriously, go check it out.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8pKNPkWewvBL' class='anchorTag'></div>
