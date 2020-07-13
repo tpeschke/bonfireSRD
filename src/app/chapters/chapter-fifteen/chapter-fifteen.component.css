@@ -17,6 +17,16 @@
     margin-right: 15px;
 }
 
+.sizeTable {
+    width: 225px;
+    float: left;
+    margin-right: 15px;
+}
+
+.sizeMargin {
+    margin-top: 175px;
+}
+
 .FallingModifiersTable {
     width: 300px;
 }
@@ -50,15 +60,11 @@
 }
 
 @media (max-width: 650px) {
-    .imageMargin {
+    .fallingMargin, .sizeMargin, .imageMargin {
         margin-top: 0;
     }
 
-    .fallingMargin {
-        margin-top: 0;
-    }
-
-    .FallingDamageTable, .FallingModifiersTable, .miscImage {
+    .FallingDamageTable, .FallingModifiersTable, .miscImage, .sizeTable {
         float: none;
         margin: 5px auto;
     }

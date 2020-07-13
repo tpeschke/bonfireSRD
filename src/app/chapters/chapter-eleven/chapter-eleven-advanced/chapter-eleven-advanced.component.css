@@ -37,3 +37,15 @@
     color: whitesmoke;
     background: rgb(100, 100, 100) !important;
   }
+
+  .kitBottomLine {
+    background: grey !important;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .kitBottomItem {
+    color: whitesmoke;
+    text-indent: 0;
+    width: 50%;
+  }
