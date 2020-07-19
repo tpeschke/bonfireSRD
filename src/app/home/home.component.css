@@ -65,7 +65,7 @@
 .homeList a {
   text-decoration: none;
   color: #222;
-  font-family: "north", serif;
+  font-family: "ancient";
   margin-bottom: 5px;
   font-weight: normal;
   text-align: left;
@@ -77,13 +77,13 @@
 }
 
 .homeInnerRight h1 {
-  font-family: "north", serif;
+  font-family: "umbria";
   border-bottom: 2px solid #222;
   margin-bottom: 10px;
 }
 
 p {
-  font-family: "north", serif;
+  font-family: "ancient", serif;
   color: #222;
   text-indent: 0;
 }
@@ -119,7 +119,6 @@ p {
 
 .homeLeftShell {
   background: white;
-  height: 195px;
   width: 475px;
 }
 
@@ -129,14 +128,8 @@ p {
 }
 
 .homeTitle {
-  height: 145px;
   max-width: none;
-}
-
-.homeSubtitle {
-  position: absolute;
-  top: 110px;
-  left: 106px;
+  width: 445px;
 }
 
 .homeImage {

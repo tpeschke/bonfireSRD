@@ -6,8 +6,12 @@
 
 @import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
 @font-face {
-  font-family: 'north';
+  font-family: 'ancient';
   src: url('./assets/jancient.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'umbria';
+  src: url('./assets/umbria.ttf') format("truetype");
 }
 
 html,
@@ -125,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'north'
+  font-family: 'ancient'
 }
 ol,
 ul {
@@ -226,7 +230,6 @@ button:hover {
 .chapterTitle {
   z-index: 0;
   margin: 0 auto 10px auto;
-  font-family: 'north';
   border-bottom: 1px solid #222;
   display: none;
   padding: 25px 0 10px 0;
@@ -247,7 +250,7 @@ button:hover {
 
 .tableShell > p {
   color: whitesmoke;
-  font-family: 'north';
+  font-family: 'ancient';
 }
 
 /* =========================================================================== */
@@ -426,12 +429,14 @@ h1 {
   color: #990000;
   font-weight: 700;
   font-size: 12pt;
+  font-family: "umbria";
   padding: 5px 15px 5px 15px;
 }
 
 .sidebarTitle {
   position: inherit;
   color: #b45f06;
+  font-family: "umbria";
 }
 
 h2 {
@@ -439,12 +444,12 @@ h2 {
   font-weight: 600;
   margin-bottom: 5px;
   font-size: 12pt;
-  font-family: "north";
+  font-family: "ancient";
 }
 
 h3 {
   font-size: 14px;
-  font-family: "north";
+  font-family: "ancient";
   color: #434343;
   font-weight: 800;
 }
@@ -496,7 +501,7 @@ p {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  font-family: "north";
+  font-family: "ancient";
   font-size: 17px;
   margin-bottom: 2px;
   margin-left: auto;
@@ -596,13 +601,13 @@ p {
   color: #b45f06;
   font-weight: 700;
   font-size: 13pt;
-  font-family: "north";
+  font-family: "ancient";
 }
 
 a {
   margin-right: 5px;
   text-align: center;
-  font-family: "north";
+  font-family: "ancient";
   color: #434343;
   font-weight: 700;
   text-decoration: none;
@@ -621,6 +626,7 @@ p {
 
 .orangeHeader {
   color: #b45f06;
+  font-family: "ancient";
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 0px;
@@ -644,7 +650,7 @@ p {
 }
 
 .tableOuterShell {
-  font-family: 'north';
+  font-family: 'ancient';
   background: whitesmoke;
   position: relative;
 }
@@ -658,7 +664,7 @@ p {
   padding: 5px;
   font-size: 15px;
   color: whitesmoke;
-  font-family: 'north';
+  font-family: 'ancient';
 }
 
 .tableHeaders {
@@ -668,7 +674,7 @@ p {
 .tableRow {
   display: flex;
   flex-direction: column;
-  font-family: 'north';
+  font-family: 'ancient';
 }
 
 .TableIndividual {

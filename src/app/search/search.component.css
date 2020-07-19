@@ -7,7 +7,7 @@
 
 input {
   width: 100%;
-  font-family: "north", serif;
+  font-family: "ancient", serif;
   padding-left: 10px;
 }
 
@@ -55,7 +55,7 @@ input {
 .searchTitle {
   margin-top: 15px;
   font-size: 13px;
-  font-family: "north", serif;
+  font-family: "ancient", serif;
 }
 
 .searchShell {
