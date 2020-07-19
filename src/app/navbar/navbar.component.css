@@ -157,26 +157,8 @@ h1 {
 }
 
 .navTitleWords {
-  height: 45px;
   position: absolute;
-  top: 7px;
-  left: 18px;
-}
-
-.navTitleFire {
-  height: 65px;
-  position: absolute;
-  top: -5px;
-  right: 49px;
-}
-
-.navSubtitle {
-  font-family: "north", serif;
-  color: whitesmoke;
-  position: absolute;
-  bottom: 7px;
-  left: 2px;
-  font-size: 9px;
+  top: 14px;
 }
 
 .navSelectShell {
