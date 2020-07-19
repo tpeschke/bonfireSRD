@@ -8,32 +8,35 @@
     background: #222;
     color: whitesmoke;
     width: 100%;
-}
-
-.headerSide {
+    font-family: "ancient";
+  }
+  
+  .headerSide {
     position: absolute;
     color: whitesmoke;
     left: -25px;
-}
+    font-family: "ancient";
+  }
 
 .RacialPreferencesvalue {
-    width: 79px;
+  width: 73px;
 }
 
 .tableValue {
-    padding: 0;
+  padding: 0;
 }
 
 .tableValue .RacialPreferencesvalue:first-child {
-    background: #222; 
-    width: 50px;
-    height: 24px;
-    margin-bottom: 0;
+  background: #222;
+  width: 50px;
+  height: 24px;
+  margin-bottom: 0;
 }
 
 .preferenceTable {
-    margin: 0 auto 25px;
-    width: 395px;
+  margin: 0 auto 25px;
+  width: 605px;
+  overflow: auto;
 }
 
 @media (max-width: 500px) {

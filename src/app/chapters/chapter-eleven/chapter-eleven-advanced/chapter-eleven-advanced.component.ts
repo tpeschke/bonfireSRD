@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-chapter-eleven-advanced',
   templateUrl: './chapter-eleven-advanced.component.html',
-  styleUrls: ['./chapter-eleven-advanced.component.css']
+  styleUrls: ['../chapter-eleven.component.css']
 })
 export class ChapterElevenAdvancedComponent implements OnInit {
 

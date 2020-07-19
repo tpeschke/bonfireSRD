@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-chapter-fifteen-advanced',
   templateUrl: './chapter-fifteen-advanced.component.html',
-  styleUrls: ['./chapter-fifteen-advanced.component.css']
+  styleUrls: ['../chapter-fifteen.component.css']
 })
 export class ChapterFifteenAdvancedComponent implements OnInit {
 

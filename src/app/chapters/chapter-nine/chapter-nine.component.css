@@ -1,52 +1,65 @@
 .sidebarMargin {
     margin-bottom: 15px;
-}
-
-.TraitDicevalue {
+  }
+  
+  .TraitDicevalue {
     min-width: 50px;
-}
-
-.TraitDicevalue:first-child {
+  }
+  
+  .TraitDicevalue:first-child {
     min-width: 65px;
-}
-
-.TraitDiceTable {
+  }
+  
+  .TraitDiceTable {
     max-width: 410px;
     float: left;
     margin-right: 15px;
-}
-
-.resultHolder {
+  }
+  
+  .crptraitvalue {
+    min-width: 65px;
+  }
+  
+  .crptraitTable {
+    max-width: 350px;
+    float: left;
+    margin-right: 15px;
+  }
+  
+  .crpcosttablemargin {
+    margin-bottom: 20px;
+  }
+  
+  .resultHolder {
     margin: 10px auto;
     width: 85%;
     text-align: center;
-}
-
-.generateButton {
+  }
+  
+  .generateButton {
     background: #b45f06;
     color: whitesmoke;
     width: 100px;
     position: inherit;
     border-radius: 25px; 
     transition: .6s;  
-}
-
-.generateButton:hover {
+  }
+  
+  .generateButton:hover {
     background: #222;
-}
-
-.indent-one {
+  }
+  
+  .indent-one {
     text-indent: 100px;
-}
-
-.indent-two {
+  }
+  
+  .indent-two {
     text-indent: 150px;
-}
-
-
-@media (max-width: 630px) {
+  }
+  
+  @media (max-width: 630px) {
     .TraitDiceTable {
       float: none;
       margin: 0 auto 15px auto;
     }
-}
+  }

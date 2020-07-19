@@ -1,3 +1,19 @@
 .doubleSidebar {
     margin-bottom: 25px;
 }
+
+.dayboonTable {
+    width: 200px;
+    float: left;
+    margin: 15px 15px 0 0;
+}
+
+.dayboonvalue {
+    width: 50%;
+}
+
+h5 {
+    color: #b45f06;
+    font-family: "umbria";
+    font-size: 35px;
+}

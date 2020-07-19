@@ -1,17 +1,62 @@
 .DemonSummonedvalue {
     width: 50%;
-}
-
-.DemonSummonedTable {
+  }
+  
+  .DemonSummonedTable {
     width: 200px;
     float: left;
     margin: 0 15px 0 0;
-}
-
-
-@media (max-width: 650px) {
+  }
+  
+  .headerTop {
+    background: #222;
+    color: whitesmoke;
+    width: 100%;
+  }
+  
+  .headerSide {
+    position: absolute;
+    color: whitesmoke;
+    top: 89px;
+    left: -15px;
+  }
+  
+  .magicteachingTable {
+    margin: 0 auto 25px;
+    width: 490px;
+    overflow: auto;
+  }
+  
+  .magicteachingvalue {
+    min-width: 83px;
+  }
+  
+  .tableValue {
+    padding: 0;
+    height: 24px;
+  }
+  
+  .tableValue .magicteachingvalue:first-child {
+    background: #222;
+    min-width: 50px;
+    margin-bottom: 0;
+    min-height: 24px;
+  }
+  
+  .DemonSummonedvalue {
+    width: 50%;
+  }
+  
+  .DemonSummonedTable {
+    width: 200px;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  
+  @media (max-width: 650px) {
     .DemonSummonedTable {
-        float: none;
-        margin: 10px auto;
+      float: none;
+      margin: 10px auto;
     }
-}
+  }
+  

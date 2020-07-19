@@ -636,9 +636,10 @@ p {
 .greyHeader {
   color: #222222;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 0px;
   margin-top: 2px;
+  font-family: "ancient";
 }
 
 /* TABLE STYLINGS ========================================================= */

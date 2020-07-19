@@ -6,7 +6,7 @@ import { ChapterService } from '../../../chapter.service'
 @Component({
   selector: 'app-chapter-six-advanced',
   templateUrl: './chapter-six-advanced.component.html',
-  styleUrls: ['./chapter-six-advanced.component.css']
+  styleUrls: ['../chapter-six.component.css']
 })
 export class ChapterSixAdvancedComponent implements OnInit {
 
