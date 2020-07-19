@@ -207,6 +207,12 @@ p {
     margin: 90px 0 10px;
     margin-left: 50%;
   }
+
+  .homeList a {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0;
+  }
 }
 
 

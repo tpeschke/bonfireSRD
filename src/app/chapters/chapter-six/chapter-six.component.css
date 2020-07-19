@@ -11,3 +11,10 @@
     width: 200px;
     float: left;
 }
+
+@media (max-width: 580px) {
+    .BonusHonorTable {
+        float: none;
+        margin: 5px auto 0 auto;
+    }
+}

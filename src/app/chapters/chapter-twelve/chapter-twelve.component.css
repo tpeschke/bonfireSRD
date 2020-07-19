@@ -58,5 +58,11 @@
       float: none;
       margin: 10px auto;
     }
+
+    .magicteachingTable[_ngcontent-c5] {
+      margin: 0 auto 5px;
+      float: none;
+      width: 100%;
+    }
   }
   

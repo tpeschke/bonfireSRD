@@ -62,4 +62,9 @@
       float: none;
       margin: 0 auto 15px auto;
     }
+
+    .crptraitTable {
+      float: none;
+      margin-right: 0;
+    }
   }

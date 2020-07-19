@@ -66,6 +66,16 @@
 
     .FallingDamageTable, .FallingModifiersTable, .miscImage, .sizeTable {
         float: none;
+        width: 75%;
         margin: 5px auto;
+    }
+
+    .miscImage {
+        width: 100%;
+    }
+
+    .longtermexhaustionTable {
+        float: none;
+        margin: 0 auto;
     }
 }

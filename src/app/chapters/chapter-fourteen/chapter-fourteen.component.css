@@ -2,7 +2,7 @@
     width: 320px;
     display: flex;
     float: left;
-    margin-right: 15px;
+    margin: 0 15px 15px 0;
 }
 
 .tableValue .LevelingHonorvalue:first-child, .tableValue .xpvalue:nth-child(2) {
@@ -36,5 +36,20 @@
     .levelShell {
         float: none;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .levelShell {
+        flex-direction: column;
+        width: 50%
+    }
+
+    .secondColumn {
+        display: none;
+    }
+
+    .sideBorder {
+        border: none
     }
 }

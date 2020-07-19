@@ -86,8 +86,14 @@
         margin: 0 auto;
       }
 
-      .MovementTable {
+      .movementTable {
         float: none;
         margin: 0 auto;
+        width: 100%;
+      }
+
+      .MoraleTable {
+        float: none;
+        margin: 0 auto 0 auto;
       }
 }

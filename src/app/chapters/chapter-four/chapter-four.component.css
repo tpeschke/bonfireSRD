@@ -17,3 +17,10 @@ h5 {
     font-family: "umbria";
     font-size: 35px;
 }
+
+@media (max-width: 450px ) { 
+    .dayboonTable{
+        margin: 15px auto 0 auto;
+        float: none;
+    }
+}
