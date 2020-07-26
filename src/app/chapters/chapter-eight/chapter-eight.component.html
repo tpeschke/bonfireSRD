@@ -327,8 +327,8 @@
         <app-bm-chapter-icon [id]="'thisisarmtermforanobt'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>UNIVERSAL </strong>This is a term for an Obstacle that will go off at sometime but 
         won't be directly faced by the players. It represents a chance encounter, such as running into someone randomly, or 
-        a stroke of bad luck, like bad weather. Unlike other Obstacles, players won't make Checks directly against it but 
-        any Failure against another Obstacle in that Challenge adds a like amount of Failure to any Universal Obstacles.</p>
+        a stroke of bad luck, like bad weather. Unlike other Obstacles, players won't make Checks directly against it but
+        any Failure (or Success) against another Obstacle in that Challenge adds a like amount of Failure (or Success) to any Universal Obstacles.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='meansitstartPZgWQqWmSW' class='anchorTag'></div>
@@ -389,7 +389,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='FailingaChecbYVZTkvTGz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FailingaChecbYVZTkvTGz'"></app-bm-chapter-icon>
-        <p>Failing a Check doesn’t automatically mean that you’re instantly screwed: Failing a single Stealth Check
+        <p>Failing a Check doesn’t automatically mean that you’re instantly screwed: Failing a single Move Silently Check
           doesn’t
           result in the guards catching you. In Bonfire, there are soft failures and hard failures.</p>
       </div>
@@ -638,6 +638,12 @@
             Time Investment of 2 Hours, 6 Minutes.
           </p>
         </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='GMshouldalsoreward' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'GMshouldalsoreward'"></app-bm-chapter-icon>
+          <p>GMs should also feel free to reward players who sit there and talk things out and plan by awarding the Asset bonus as well,
+            even if they don't spend a full hour+ planning.</p>
+        </div>
       </div>
 
       <div class='sidebarShell marginBottom'>
@@ -763,17 +769,17 @@
       <div class='paragraphShell anchor'>
         <div id='SoifyoureMaXCJnFrBK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoifyoureMaXCJnFrBK'"></app-bm-chapter-icon>
-        <p>So, if you’re climbing a wall and trying to do so quietly, you’d have to make a Climbing and a Stealth Check.
+        <p>So, if you’re climbing a wall and trying to do so quietly, you’d have to make a Climbing and a Move Silently Check.
           You
-          could split it like so: d12! for Climbing and d8! for Stealth, or d10! for Climbing and d10! for Stealth, or
-          d12!+d4! for Stealth and d4! for Climbing.</p>
+          could split it like so: d12! for Climbing and d8! for Move Silently, or d10! for Climbing and d10! for Move Silently, or
+          d12!+d4! for Move Silently and d4! for Climbing.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='OryoucouldjelQjhupAiy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OryoucouldjelQjhupAiy'"></app-bm-chapter-icon>
-        <p>Or you could just say “screw being quiet” and roll a d20! for Climbing and take a 0 for Stealth. In this
+        <p>Or you could just say “screw being quiet” and roll a d20! for Climbing and take a 0 for Move Silently. In this
           case,
-          the GM would just roll against your Skill Rank. So, if you choose to ignore Stealth but have a Rank 4 in it,
+          the GM would just roll against your Skill Rank. So, if you choose to ignore Move Silently but have a Rank 4 in it,
           the
           GM would roll their dice, and you can hope they don’t roll higher than 4.</p>
       </div>
@@ -1061,14 +1067,14 @@
                   <p class='SkillDescriptionsvalue TableIndividual'>Str</p>
                 </div>
                 <div class='tableValue'>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Move Silently</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
+                </div>
+                <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Sport (Specific)</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>4</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Stealth</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>9</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Swimming</p>
@@ -1573,7 +1579,7 @@
 
       <div class='tableOverflowWindow StealthSpeedTable'>
         <div class='tableOuterShell' [ngStyle]='{width: "260px"}'>
-          <h1 class='tableTitle'>Stealth Speed</h1>
+          <h1 class='tableTitle'>Move Silently Speed</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -1608,7 +1614,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='8pufnPywySnd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pufnPywySnd'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>STEALTH</strong> When you want to move silently, you’ll want to use this
+        <p><strong class='orangeHeader'>MOVE SILENTLY</strong> When you want to move silently, you’ll want to use this
           skill. This
           involves being able to feel your way along and compensate for creaks.</p>
       </div>
@@ -1618,7 +1624,7 @@
         <app-bm-chapter-icon [id]="'8pJLTGcKofDv'"></app-bm-chapter-icon>
         <p> This is always an opposed check vs any potentially listener’s Listening, with a failure indicating that
           the
-          listener has heard something suspicious, though the person attempting Stealth may not be aware that they
+          listener has heard something suspicious, though the person attempting Move Silently may not be aware that they
           were
           detected. </p>
       </div>
@@ -1814,18 +1820,19 @@
       <div class='paragraphShell anchor'>
         <div id='8prLnehHSyJY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8prLnehHSyJY'"></app-bm-chapter-icon>
-        <p> A character with this skill can make a check for each Wound sustained within the last hour with the
-          difficulty dice equal to the Severity of the Wound rounded up to the closest dice size. So, a Severity 5
-          Wound
-          has a d6! difficulty. Success means that the person can take 1 day off the healing time for that Wound every
+        <p> A character with this skill can make a Check for a wounded person,
+          added the Severity of any Wounds that he's treating to the opposing roll.
+          So, if a person has a 5, 3, and 8 Severity Wound, he can make a Medicine Check 
+          vs d20+16 or he can choose not to treat the 8 Severity Wound and make a vs d20!+8. 
+          Success means that the person can take 1 day off the healing time for that Wound every
           time it drops a Severity.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8pZfiuwApxPB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pZfiuwApxPB'"></app-bm-chapter-icon>
-        <p> So, a 5 Severity Wound would be an Easy (d6!) Check. A success means that is was treated properly and takes
+        <p> So, a success against a 5 Severity Wound means that is was treated properly and takes
           10 days
-          to completely heal ( 4 + 15 + 2 + 1 + 0 ) instead of the normal 15.</p>
+          to completely heal ( 4 + 3 + 2 + 1 + 0 ) instead of the normal 15.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ppuUCovMuOB' class='anchorTag'></div>
@@ -2302,12 +2309,12 @@
       <div class='paragraphShell anchor'>
         <div id='8pqhjKJgYhmI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pqhjKJgYhmI'"></app-bm-chapter-icon>
-        <p> A character with this skill can make a check for each Wound sustained within the last 30 minutes with the
-          difficulty dice equal to the Severity of the Wound rounded up to the closest dice size. So, a Severity 5
-          Wound
-          has a d6! difficulty. Success means that the person can take 1 level of Severity off that Wound. So a 5
-          Severity
-          Wound drops immediately to a 4 Severity Wound.</p>
+        <p> A character with this skill can make a Check for a person wounded in that last 30 minutes,
+          added the Severity of any Wounds that he's treating to the opposing roll.
+          So, if a person has a 5, 3, and 8 Severity Wound, he can make a First Aid Check 
+          vs d20+16 or he can choose not to treat the 8 Severity Wound and make a vs d20!+8. Success means 
+          that the person can take 1 level of Severity off those Wounds. So a 5
+          Severity Wound drops immediately to a 4 Severity Wound.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8pOxjVExqCsK' class='anchorTag'></div>
@@ -2643,14 +2650,12 @@
         <div id='8pbXSnzZwexQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pbXSnzZwexQ'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>RALLY</strong> When manure hits the windmill, no speeches or grand narratives
-          will
-          keep a person from bolting. Only the cold will of a competent commander can keep a battle from becoming a
+          will keep a person from bolting. Only the cold will of a competent commander can keep a battle from becoming a
           route.
-          This skill is rolled to rally fleeing allies and to force them to fight on or to get the enemy to break.
-          This is
-          always rolled opposed against the enemy’s Rally skill. More information is found in the Morale Advanced
-          Rules of
-          Combat (which are not in the basic edition).</p>
+          A captain who successfully makes a Check for someone who is currently over their Stress Threshold, heals that
+          person a number of Stress equal to his Rank. This is opposed by the enemy captain, if appliable, and each
+          Check
+          against the same target increases the Difficulty by 1, regardless of whether it was successful or not.</p>
       </div>
       <div class='tableOverflowWindow RecruitingCheckTable'>
         <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
