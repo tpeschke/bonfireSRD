@@ -43,8 +43,11 @@
     min-height: 24px;
   }
   
-  .DemonSummonedvalue {
-    width: 50%;
+  .tableValue .DemonSummonedvalue:first-child {
+    width: 25%;
+  }
+  .tableValue .DemonSummonedvalue:last-child {
+    width: 75%;
   }
   
   .DemonSummonedTable {
@@ -53,6 +56,12 @@
     margin: 0 15px 0 0;
   }
   
+.multitableShell {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
   @media (max-width: 650px) {
     .DemonSummonedTable {
       float: none;
