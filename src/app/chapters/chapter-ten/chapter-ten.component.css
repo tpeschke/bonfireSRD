@@ -81,6 +81,8 @@
 
 .MountedTable {
   width: 250px;
+  float: left;
+  margin: 10px 15px 0 0;
 }
 
 
