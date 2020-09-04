@@ -79,6 +79,10 @@
   padding: 0;
 }
 
+.MountedTable {
+  width: 250px;
+}
+
 
 @media (max-width: 450px) {
     .MovementBasicTable {
