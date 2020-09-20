@@ -5,7 +5,7 @@ module.exports = {
     search: (req, res) => {
         const db = req.app.get('db')
 
-        if (req.user.patreon) {
+        if (req.user && req.user.patreon) {
             db.get.advsearch(req.body.search).then(result => {
                 res.send(result)
             })
