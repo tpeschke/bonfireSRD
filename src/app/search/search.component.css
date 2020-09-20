@@ -14,7 +14,12 @@ input {
 .inputShell {
   display: flex;
   background: white;
-  padding: 50px;
+  padding: 25px;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid;
 }
 
 .searchIcon {

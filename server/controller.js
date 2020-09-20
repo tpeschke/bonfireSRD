@@ -4,30 +4,23 @@ const axios = require('axios')
 module.exports = {
     search: (req, res) => {
         const db = req.app.get('db')
-        db.get.search(req.body.search).then(result => {
-            if (req.user.patreon) {
-                db.get.advsearch(req.body.search).then(advResult => {
-                    let allResults = [...result, ...advResult].sort((a, b) => a-b).splice(0, 49).map(val => {
-                        let newVal = { chap: +val.linkid.match(/^\d+/g)[0], body: val.body, linkid: val.linkid }
-                    return newVal
-                    })
-                    res.send(allResults)
-                })
-            } else {
-                let formattedResult = result.map(val => {
-                    let newVal = { chap: +val.linkid.match(/^\d+/g)[0], body: val.body, linkid: val.linkid }
-                    return newVal
-                })
-                res.send(formattedResult)
-            }
-        })
+
+        if (req.user.patreon) {
+            db.get.advsearch(req.body.search).then(result => {
+                res.send(result)
+            })
+        } else {
+            db.get.search(req.body.search).then(result => {
+                res.send(result)
+            })
+        }
     },
     handleOAuthRedirectRequest: (req, res) => {
         let { code } = req.body
         const db = req.app.get('db')
         axios.post(`https://www.patreon.com/api/oauth2/token?code=${code}&grant_type=authorization_code&client_id=${patreonId}&client_secret=${patreonSecret}&redirect_uri=${redirect}`, {}, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
             .then(result => {
-                axios.get(`https://www.patreon.com/api/oauth2/api/current_user`, { headers: { 'Authorization': `Bearer ${result.data.access_token}`} })
+                axios.get(`https://www.patreon.com/api/oauth2/api/current_user`, { headers: { 'Authorization': `Bearer ${result.data.access_token}` } })
                     .then(account => {
                         db.update.patreon(account.data.included[0].attributes.amount_cents / 100, req.user.id)
                         req.user.patreon = account.data.included[0].attributes.amount_cents / 100

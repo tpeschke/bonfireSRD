@@ -28,7 +28,7 @@ export class SearchComponent implements OnInit {
       if (search.target.value.length > 2) {
         this.cs.getSearch(search.target.value.trim())
           .subscribe(result => {
-            this.searches = _.sortBy(result, 'chap');
+            this.searches = _.sortBy(result, 'chapter');
           })
       }
     }
