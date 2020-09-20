@@ -19,10 +19,11 @@ export class NavbarComponent implements OnInit {
   ) { }
 
   public chapter = '';
+  public route = 1;
   public pervious = '';
-  public perviousRoute = 1;
+  public perviousRoute = '';
   public next = '';
-  public nextRoute = 1;
+  public nextRoute = '';
   public reset = '';
   public marginBack = true;
   public ham = false;
@@ -53,9 +54,9 @@ export class NavbarComponent implements OnInit {
         } else {
           this.chapter = '';
           this.pervious = '';
-          this.perviousRoute = 1;
+          this.perviousRoute = '';
           this.next = '';
-          this.nextRoute = 1;
+          this.nextRoute = '';
           this.reset = '';
         }
       }
@@ -121,22 +122,25 @@ export class NavbarComponent implements OnInit {
 
   setChapter(chapter: any): void {
     if (chapter === 'p') {
-      this.chapter = this.getChapter(this.perviousRoute);
-      this.reset = this.getChapter(this.perviousRoute);
-      this.nextRoute = this.nextRoute - 1;
-      this.perviousRoute = this.perviousRoute - 1;
-      this.pervious = this.getChapter(this.perviousRoute);
-      this.next = this.getChapter(this.nextRoute);
+      this.route = this.route - 1;
+      this.reset = this.getChapter(this.route);
+      this.chapter = this.getChapter(this.route);
+      this.nextRoute = this.returnRoute(this.route + 1);
+      this.perviousRoute = this.returnRoute(this.route - 1);
+      this.pervious = this.getChapter(this.route - 1);
+      this.next = this.getChapter(this.route + 1);
     } else if (chapter === 'n') {
-      this.chapter = this.getChapter(this.nextRoute);
-      this.reset = this.getChapter(this.nextRoute);
-      this.nextRoute = this.nextRoute + 1;
-      this.perviousRoute = this.perviousRoute + 1;
-      this.pervious = this.getChapter(this.perviousRoute);
-      this.next = this.getChapter(this.nextRoute);
+      this.route = this.route + 1;
+      this.reset = this.getChapter(this.route);
+      this.chapter = this.getChapter(this.route);
+      this.nextRoute = this.returnRoute(this.route + 1);
+      this.perviousRoute = this.returnRoute(this.route - 1);
+      this.pervious = this.getChapter(this.route - 1);
+      this.next = this.getChapter(this.route + 1);
     } else {
-      this.perviousRoute = chapter - 1;
-      this.nextRoute = chapter + 1
+      this.route = chapter;
+      this.nextRoute = this.returnRoute(this.route + 1);
+      this.perviousRoute = this.returnRoute(this.route - 1);
       this.chapter = this.getChapter(chapter);
       this.reset = this.getChapter(chapter);
       this.pervious = this.getChapter(chapter - 1);
@@ -144,6 +148,14 @@ export class NavbarComponent implements OnInit {
     }
     if (this.ham) {
       this.ham = false;
+    }
+  }
+
+  returnRoute(chapter) {
+    if (chapter > 0 && chapter < 15) {
+      return '/chapter/' + chapter
+    } else {
+      return '/'
     }
   }
 

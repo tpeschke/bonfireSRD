@@ -37,13 +37,10 @@
         <a [ngClass]="{'active': reset === 'Misc Rules'}" routerLink="chapter/15" (mouseover)="viewChapter('Misc Rules')"
             (mouseout)="resetChapter()" (click)="setChapter(15)">15</a>
     </div>
-    <div class="bottomNav" *ngIf="notRedux.showChapter">
-        <a routerLink="chapter/{{perviousRoute}}" (click)="setChapter('p')" class="selectChapter"><div><img src="../../assets/images/backButton.png" alt="back button" class="buttonImage">{{pervious}}</div></a>
+    <div class="bottomNav">
+        <a *ngIf="reset !== ''" routerLink="{{perviousRoute}}" (click)="setChapter('p')" class="selectChapter"><div><img src="../../assets/images/backButton.png" alt="back button" class="buttonImage">{{pervious}}</div></a>
         <p class="selectChapter">{{chapter}}</p>
-        <a routerLink="chapter/{{nextRoute}}" (click)="setChapter('n')" class="selectChapter"><div>{{next}}<img src="../../assets/images/forwardButton.png" alt="forward button" class="buttonImage"></div></a>
-    </div>
-    <div class="bottomNav home" *ngIf="!notRedux.showChapter">
-        <p class="selectChapter">{{chapter}}</p>
+        <a *ngIf="reset !== ''" routerLink="{{nextRoute}}" (click)="setChapter('n')" class="selectChapter"><div>{{next}}<img src="../../assets/images/forwardButton.png" alt="forward button" class="buttonImage"></div></a>
     </div>
 
     <img src="../../assets/images/dragon.png" alt="dragon" class="heraldRight">

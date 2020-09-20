@@ -3,12 +3,6 @@
 .discordOverflow {
   width: 100%;
   overflow: hidden;
-  opacity: 0;
-  transition: .6s;
-}
-
-.displayed {
-  opacity:  1;
 }
 
 .discordBanner {
