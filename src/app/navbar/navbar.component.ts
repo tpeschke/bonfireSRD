@@ -137,7 +137,7 @@ export class NavbarComponent implements OnInit {
       this.perviousRoute = this.returnRoute(this.route - 1);
       this.pervious = this.getChapter(this.route - 1);
       this.next = this.getChapter(this.route + 1);
-    } else {
+    } else if (chapter) {
       this.route = chapter;
       this.nextRoute = this.returnRoute(this.route + 1);
       this.perviousRoute = this.returnRoute(this.route - 1);
