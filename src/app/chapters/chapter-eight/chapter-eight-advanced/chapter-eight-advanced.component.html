@@ -41,7 +41,7 @@
         <p> Advanced Skills are more tightly focused, covering one intellectual discipline. They’re easier to master but
           may
           not be applicable in every case. An example of this would be the First Aid, Fire Building, and Foraging skills
-          in the Survival Skill Suite and the Arcana, History, and Medicine skills in the Lore Skill Suite.</p>
+          in the Survival Skill Suite and the Law, History, and Medicine skills in the Lore Skill Suite.</p>
       </div>
       <div class="anchor">
         <div id="8hZLxLyRaXkr" class="anchorTag"></div>
@@ -81,6 +81,15 @@
           Rank * 2), while Skill Suites cost their Base Cost Base Cost - Skill Bonus + (Current
           Rank * 5), both have a minimum of 1. Note that, like Skills Suites
           above, if there are multiple Stats attached to a Skill, average the Skill Bonus, rounded down.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='theexceptionsitoghigs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'theexceptionsitoghigs'"></app-bm-chapter-icon>
+        <p> The exception to this is the Weirdcraft Advanced Skills, that more expensive as you purchase other Weirdcraft Advanced Skills.
+          The price is the Base Cost + 2 * (Current Ranks + number of previous Weirdcraft Advanced Skills you've got Ranks in).
+          Going back and purchasing more Ranks in a Weirdcraft Advanced Skills you’re already got Ranks in doesn’t “shift” it around for 
+          purposes of “number of previous Traditions trained in”.
+        </p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ptmNxKgqedZ' class='anchorTag'></div>
@@ -1104,7 +1113,7 @@
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Athletics</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>41</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>30</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str/Con/Dex</p>
                 </div>
                 <div class='tableValue'>
@@ -1116,11 +1125,6 @@
                   <p class='SkillDescriptionsvalue TableIndividual'>Climbing</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Str</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Disarm Trap</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>11</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Endurance</p>
@@ -1154,17 +1158,12 @@
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Lore</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>59</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>47</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Administration</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>7</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Arcana</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>12</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
@@ -1214,7 +1213,7 @@
                 </div>
                 <div class='tableValue SkillDescriptionSubtitle'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Streetwise</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>64</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>54</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                 </div>
                 <div class='tableValue'>
@@ -1261,11 +1260,6 @@
                   <p class='SkillDescriptionsvalue TableIndividual'>Sleight of Hand</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>7</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Trap Finding</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>10</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Dex/Wis</p>
                 </div>
               </div>
             </div>
@@ -1573,26 +1567,6 @@
           gets
           bumped up 1), Challenging, and Easy.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pGatdMZjeHN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pGatdMZjeHN'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>DISARM TRAP</strong> It takes nerves of steel to be able to cut the right wire
-          or
-          trip the trap in such a way that the least bad thing happens</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pijiZnUtKrc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pijiZnUtKrc'"></app-bm-chapter-icon>
-        <p> Disarming a trap takes a base of 30 minutes if you don’t want to just set it off. If you’re in a hurry,
-          you can
-          half that time but you increase the difficult by 1 each time you do so. So, reducing the time to 7 minutes,
-          would bump a Trivial trap up to Average in difficulty.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pGXZpULsfqO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pGXZpULsfqO'"></app-bm-chapter-icon>
-        <p> A failure indicates that you set the trap off accidentally.</p>
-      </div>
       <div class='paragraphShell anchor new'>
         <div id='8AbBUEiNnFL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8AbBUEiNnFL'"></app-bm-chapter-icon>
@@ -1750,30 +1724,6 @@
         <div id='8puXjScbftOx' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8puXjScbftOx'"></app-bm-chapter-icon>
         <p> Each of these checks they make increases the difficulty of the next one by 1 step.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pYRbJaJGNIv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pYRbJaJGNIv'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>ARCANA</strong> The science of magic is an oft studied but little understood
-          branch
-          of Lore that requires a deep knowledge of the nature of the Painted World.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8ppTemreDMyQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8ppTemreDMyQ'"></app-bm-chapter-icon>
-        <p> With this skill, someone can identify a spell, point out needed regents and processes for ritual shapings,
-          detect if something is magical, or even detect if a spell has been cast in an area, and have a chance of
-          finding
-          out what it was.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pyoAwVENKUu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pyoAwVENKUu'"></app-bm-chapter-icon>
-        <p> All of these, except for the last two, are Average checks, with detecting whether or not a spell was cast
-          in an
-          area is Trivial + 1 for every day since the shaping, or to detect what specific spell it was, Challenging +
-          1
-          for every day since the shaping.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='8pcscqQZeLXl' class='anchorTag'></div>
@@ -2245,25 +2195,6 @@
           quick,
           delicate movements with your fingers. This may be slipping a card up your sleeve, picking a pocket, or doing
           cat’s cradle while bored.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pHNTiYqTHvJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pHNTiYqTHvJ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>TRAP FINDING</strong> This actually covers a lot more than simple detecting
-          trip
-          wires or arrow holes in a dungeon. This can detect pits and snares, as well as buttons disguised as bricks
-          or
-          switches hidden as sconces.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pgyAjrevDuR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pgyAjrevDuR'"></app-bm-chapter-icon>
-        <p> A character can sweep an entire room with a Hard check but a character may be awarded a modifier secretly
-          by the
-          GM if they point out 2 or 3 spots they want to pay extra close attention to if one or more of those places
-          actually houses the trap. Obviously, you don’t earn that modifier if you just name everything in the room
-          and
-          the more specific you are with what you’re searching, the higher that modifier should be.</p>
       </div>
       <div class='anchor'>
         <div id='8hgdxmAtpfWqx' class='anchorTag'></div>
@@ -3072,6 +3003,68 @@
             </div>
           </div>
         </div>
+      </div>
+      
+      <div class='anchor'>
+        <div id='weirdcarfttitle' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'weirdcarfttitle'"></app-bm-chapter-icon>
+        <h3>WEIRDCRAFT SKILL SUITE</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thescienceofthewierid' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thescienceofthewierid'"></app-bm-chapter-icon>
+        <p> The science of the Weird is an oft studied but little understood branch of knowledge that requires a deep
+          knowledge of the nature of the Painted World.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='withthissukileie' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'withthissukileie'"></app-bm-chapter-icon>
+        <p> With this Skill Suite, someone can identify a spell, point out needed regents and processes for ritual
+          shapings, detect if something is touched by the Weird and what its properties are, or even detect if a spell
+          has been cast in an area, and have a chance of finding out what it was.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='alltheifdadiotunle' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'alltheifdadiotunle'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>ALL ADVANCED WEIRDCRAFT SKILLS</strong> Unlike other Advanced Skilled, the
+          Weirdcraft Advanced Skills pretty much work the same and so don't need their own section.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='thefirstbonusthatihave' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thefirstbonusthatihave'"></app-bm-chapter-icon>
+        <p> The first bonus that having an Advanced Weirdcraft Skill gives you is that it gives you further insight into
+          a particular Weird Tradition, allowing you do detect it better. For more information in
+          what each Tradition specializes in, head over to <a routerLink='../../chapter/12'>Chapter 12: The Weird</a>.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='theotherhtinsiodonet' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'theotherhtinsiodonet'"></app-bm-chapter-icon>
+        <p> The other thing it does is allow you to shape cantrip versions of spells from that Tradition, regardless of
+          Archetype.
+          The ability to shape is inherit in all living things though it takes decades of practice, a strong familiy
+          bloodline, and/or
+          a natural gift to do what Caster Archetypes do, a form of practical "folkweird" is often passed down as part
+          of the tools of the trade.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thisdoesntohowever' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thisdoesntohowever'"></app-bm-chapter-icon>
+        <p> This doesn't, and will never, allow someone to shape the full version of a spell but it can give them a
+          boost or an edge.
+          The specific details should be left up to the GM and player but they should always be appropriate to the
+          Tradition and
+          never be more powerful than a spell that does the same thing. Most commonly this will mean it will get used 
+          as a Helper Skill.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='shapeaingios' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'shapeaingios'"></app-bm-chapter-icon>
+        <p> Shaping a cantrip is still shaping and is stressful and so that anytime any of these Skills are used to shape, 
+          the shaper gets 2d6! Stress dice.
+        </p>
       </div>
       <!-- Start Here -->
     </div>
