@@ -53,6 +53,25 @@
   .sideheading {
     color: whitesmoke;
   }
+
+  .tierBox {
+    padding: 5px 10px;
+    margin: 0 auto 15px;
+    background: white;
+  }
+
+  .tierTitle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tierTwo {
+    background: lightgrey
+  }
+
+  .tierBox p {
+    text-indent: 0;
+  }
   
   @media (max-width: 580px) {
     .rankexampleTable, .tierpriceTable{
