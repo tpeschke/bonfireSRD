@@ -428,7 +428,7 @@
         <div class='paragraphShell anchor marginBottom'>
           <div id='instepsthemitl' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'instepsthemitl'"></app-bm-chapter-icon>
-          <p>In steps the Mutli-Layer Check.</p>
+          <p>In steps the Multi-Layer Check.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
           <div id='inthiscasethewoudassigndif' class='anchorTag'></div>
@@ -505,16 +505,23 @@
       <div class='paragraphShell anchor'>
         <div id='SoftfailuresyqlPsGMxjy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoftfailuresyqlPsGMxjy'"></app-bm-chapter-icon>
-        <p>Soft failures are when you fail a single Skill Check. How much you
-          failed by is added to the Failure of the Obstacle you’re making the
-          Check against and your Stress. If you succeed because of help (excluding Honor),
-          you still gain the Stress you would have gained had you failed. But, hey, at
-          least you didn't get closer to hard failure. </p>
+        <p>Every Obstacle will have a number of Soft Failures it can gain before it hard fails.
+          This is called its Failure Threshold.
+          You gain Soft Failures by failing Skill Checks: every 5 points below what you needed 
+          to get gives the Obstacle 1 Soft Failure.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='SoftfailuresyqlPsGMxjy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoftfailuresyqlPsGMxjy'"></app-bm-chapter-icon>
+        <p>Soft Failures represent complications, such as the guard hearing something, or you leaving a clue 
+          behind that might give someone a heads up that you're there. An Obstacle gets +2 for every Soft Failure 
+          is has on it.
+        </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenthatFailsRnVwhXuBV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenthatFailsRnVwhXuBV'"></app-bm-chapter-icon>
-        <p>When that Failure goes over that Obstacle’s Failure Threshold, you get a hard failure for that Obstacle. Hard
+        <p>When an Obstacle gets more Soft Failures than its Failure Threshold, it hard fails. Hard
           failures are when something bad actually happens. In this case, it does result in you getting caught by the
           guards, or it results in your falling off the wall and taking damage. Even after a hard failure, you can
           sometimes try again, like in the case of falling off the wall.</p>
@@ -538,93 +545,23 @@
           <app-bm-chapter-icon [id]="'ForaquickexycpLxksQKN'"></app-bm-chapter-icon>
           <p>For a quick example, let’s say that there’s an adventurer, we’ll call him New York Smith, York for short,
             who is
-            attempting to jump a chasm, which has a Failure Threshold of 10.</p>
+            attempting to jump a chasm, which has a Failure Threshold of 1.</p>
         </div>
-        <div class='paragraphShell anchor marginBottom'>
+        <div class='paragraphShell anchor'>
           <div id='HerollshisCNIffWDCFEL' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'HerollshisCNIffWDCFEL'"></app-bm-chapter-icon>
-          <p>He rolls his Check but fails by 7. In this case, he obviously jumped but also didn’t make it. What does
-            that
-            mean? Well, New York didn’t quite make it but managed to grab the ledge as he fell, so he didn’t fall to his
-            death but he isn’t safe either: the GM can make a roll for another Check to see if he can scramble up the
-            sides,
-            but that probably won’t be a Jumping Check.</p>
-        </div>
-      </div>
-
-      <div class='anchor'>
-        <div id='ActivePassisbphPhmARL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ActivePassisbphPhmARL'"></app-bm-chapter-icon>
-        <h3>ACTIVE & PASSIVE OBSTACLES</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AnotherthingByVSFMISzP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnotherthingByVSFMISzP'"></app-bm-chapter-icon>
-        <p>Another thing to consider is whether or not the Obstacle is Active or Passives.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='meansthatwhowCYRaYpkml' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'meansthatwhowCYRaYpkml'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>PASSIVE </strong>means that whomever you’re up against doesn’t realize they’re
-          up against you. This is the, for example, the
-          watchman doing his nightly rounds or the river you have to cross.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='meansthatwhoqfYdJfjvbU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'meansthatwhoqfYdJfjvbU'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>ACTIVE </strong>means that whomever you’re up against realizing something is
-          amiss and is now actively working against you. This
-          doesn’t mean you're caught: it just means the person is on high alert.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='InanimateobjeeszvonHxBX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'InanimateobjeeszvonHxBX'"></app-bm-chapter-icon>
-        <p>Inanimate objects can also become “Active” though. While not the most appropriate term for it, it still
-          represents a dangerous situation that suddenly occurs that makes failure more deadly, such as having your
-          safety
-          line snap while climbing.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='PassiveistheekgHzOISTq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'PassiveistheekgHzOISTq'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>BECOMING ACTIVE AND PASSIVE </strong>Passive is the default state for an
-          Obstacle to be in, so you don’t really need to do anything special.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='APassiveObstFhzRRgzqQQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'APassiveObstFhzRRgzqQQ'"></app-bm-chapter-icon>
-        <p>A Passive Obstacle becomes Active when you fail a Check against it.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ActiveObstaclJNLbnwYUGm' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ActiveObstaclJNLbnwYUGm'"></app-bm-chapter-icon>
-        <p>Active Obstacle adds the amount of Failures it has to its Check, making it that much harder to succeed
-          against
-          it.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AnActiveObstwRpixDcpdP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnActiveObstwRpixDcpdP'"></app-bm-chapter-icon>
-        <p>An Active Obstacle goes back to being Passive if you succeed at a Skill Check without any help (outside of
-          Honor).</p>
-      </div>
-
-      <div class='sidebarShell marginBottom'>
-        <h2 class='sidebarTitle'>Staying Active</h2>
-        <div class='paragraphShell anchor'>
-          <div id='NowmostNPCsTAnoiQApyM' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'NowmostNPCsTAnoiQApyM'"></app-bm-chapter-icon>
-          <p>Now, most NPCs will stay Active for 1d4! hours unless they have a Characteristic that affects how diligent
-            they
-            are, but what about players? A person, NPC or not, gains 3 Stress for every hour they remain Active, so
-            yeah,
-            your players can remain ever vigilant but they'll be mental wrecks in a week or so.</p>
+          <p>He rolls his Check but fails by 7, giving the Obstacle 1 Soft Failure. In this case, he obviously jumped but also didn’t make it. What does
+            that mean? Well, York didn’t quite make it but managed to grab the ledge as he fell, so he didn’t fall to his
+            death but he isn’t safe either.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
-          <div id='WhataboutifNhSyvfUUkf' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'WhataboutifNhSyvfUUkf'"></app-bm-chapter-icon>
-          <p>What about if the players want to come back to try again? They can with any Active penalty they gained
-            diminishing by 3 for every hour the Obstacle is Passive.</p>
+          <div id='yorkisgrabingholdsohe' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'yorkisgrabingholdsohe'"></app-bm-chapter-icon>
+          <p>York is grabbing hold of the ledge so he can't make another Jumping Check, but he does reason that he can use Climbing.
+            Makes sense to the GM so they roll again. If York fails this time, he falls, but if he succeeds, he manages to 
+            scramble up the cliff, safe on the other side, but he is working at a disadvantage: the GM gets +2 to her roll this time around
+            so he better hope he put Ranks in Climbing.
+          </p>
         </div>
       </div>
 
@@ -903,6 +840,18 @@
         <app-bm-chapter-icon [id]="'EitherwaybezNNoIGWwTu'"></app-bm-chapter-icon>
         <p>Either way, besides this, it works like a normal Check</p>
       </div>
+      
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>Not Paying Attention</h2>
+        <div class='paragraphShell anchor'>
+          <div id='isalsohaenowhiou' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'isalsohaenowhiou'"></app-bm-chapter-icon>
+          <p>Multi-Tasking is also used when someone isn't paying attention, such as a guard whose on watch but he's been there 
+            for several hours at this point so he's not doing it so closely. In this case, start at a d10!, lowering it further as needs be.
+          </p>
+        </div>
+      </div>
+
 
       <div class='sidebarShell marginBottom'>
         <h2 class='sidebarTitle'>Helping Others</h2>
@@ -1096,10 +1045,7 @@
       <div class='paragraphShell anchor'>
         <div id='UsingthistoojhjeGoRgMn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'UsingthistoojhjeGoRgMn'"></app-bm-chapter-icon>
-        <p>Using this tool allows you to half the current Active penalty. You can also take points from that Active
-          penalty
-          and add them to the Failure against that Obstacle, though you can’t push the Obstacle above its Failure
-          Threshold. You do roll 1 Stress Dice either way.</p>
+        <p>Using this tool allows you to half the current Soft Failures. You do roll 1 Stress Dice either way.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismayormaoBmQSnEzwI' class='anchorTag'></div>
