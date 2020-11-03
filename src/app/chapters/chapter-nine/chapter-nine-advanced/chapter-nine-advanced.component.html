@@ -813,7 +813,7 @@
             <div class='paragraphShell anchor marginBottom'>
                 <div id='ThesidewhodmoRkfHxdEf' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'ThesidewhodmoRkfHxdEf'"></app-bm-chapter-icon>
-                <p>The side who didn’t start the Conflict starts with 1 point.</p>
+                <p>The side who started the Conflict starts with 1 point, which isn't great because you want the lowest number of points, like golf.</p>
             </div>
             <div class='paragraphShell anchor marginBottom'>
                 <div id='PointscomeinBIYhISKBUf' class='anchorTag'></div>
@@ -837,7 +837,7 @@
             <div class='paragraphShell anchor'>
                 <div id='EvidencegivesUENVfnuykC' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'EvidencegivesUENVfnuykC'"></app-bm-chapter-icon>
-                <p>Evidence gives you 3 points. Evidence is the surest way of convincing your opponent but it also tends
+                <p>Conceding to Evidence gives you 3 points. Evidence is the surest way of convincing your opponent but it also tends
                     to be more
                     work: you have to know about your opponent and know their situation.</p>
             </div>
@@ -866,17 +866,17 @@
                 <div id='AppealsvaryiJAcoQLjoiI' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'AppealsvaryiJAcoQLjoiI'"></app-bm-chapter-icon>
                 <p>Appeals vary in the number of points they get you. When presented against Evidence, the Appeal gives
-                    you as many
-                    points as dice. You also get a d4! Reprecussion Dice.</p>
+                    them as many points as dice you put up but you're considered to have conceded the point, giving you 3 points. 
+                    You also get a d4! Reprecussion Dice.</p>
             </div>
             <div class='paragraphShell anchor'>
                 <div id='IfhoweverylypWsopGUu' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'IfhoweverylypWsopGUu'"></app-bm-chapter-icon>
                 <p>If, however, you meet Appeal with Appeal, then each person rolls the dice assigned to it. The person
                     with the
-                    highest total gets points equal to the number of dice but sets aside a d6! for Repercussions, while
+                    lowest total gets points equal to the number of dice the other side put up and sets aside a d8! for Repercussions, while
                     the other
-                    person gets nothing and sets aside a d8!. This makes this a sound move for very charismatic people
+                    person gets nothing and sets aside a d6!. This makes this a sound move for very charismatic people
                     but it is
                     still risky.</p>
             </div>
@@ -898,9 +898,8 @@
                 <div class='paragraphShell anchor marginBottom'>
                     <div id='wreitenaneanioeatioff' class='anchorTag'></div>
                     <app-bm-chapter-icon [id]="'wreitenaneanioeatioff'"></app-bm-chapter-icon>
-                    <p>Write an E and A on top of each other, and then draw a line between them. When someone presents
-                        Evidence, put a tally next to
-                        the E. When someone wins a round with an Appeal, note how many dice are added by the A. When
+                    <p>Write an E and A on top of each other, and then draw a line between them. When you concede a point, put a tally next to
+                        the E. When someone loses a round with an Appeal, note how many dice are added by the A. When
                         you're totaling your points at the end
                         just multiple the tallies next to E by 3 and add that to the sum of the numbers by A. This
                         should allow you to quickly jot things
@@ -1211,18 +1210,13 @@
             <div class='paragraphShell anchor'>
                 <div id='CounteringanKrVmYTmQfp' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'CounteringanKrVmYTmQfp'"></app-bm-chapter-icon>
-                <p>Countering an argument means that both sides could gain points: if they both put forward Evidence,
-                    they both get
-                    3 points, if one side puts forward an Appeal against Evidence, that side gets points equal to that
-                    Appeal’s dice
-                    and the other gets 3 points, and so on.</p>
+                <p>Both sides putting up relevant Evidence is countering the argument and means that neither sides could gain points.</p>
             </div>
             <div class='paragraphShell anchor marginBottom'>
                 <div id='IfonesidecorFVxiHtOht' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'IfonesidecorFVxiHtOht'"></app-bm-chapter-icon>
-                <p>If one side conceded, that means they don’t really have anything to counter it and so they get no
-                    points and the
-                    other gets whatever they put forward.</p>
+                <p>If one side conceded, that means they don’t really have anything to counter it (either through Evidence or an Appeal)
+                    and so they get points as noted above.</p>
             </div>
             <div class='paragraphShell anchor marginBottom'>
                 <div id='ThesepointsaHzVfzPLeyy' class='anchorTag'></div>
@@ -1319,16 +1313,14 @@
                 <app-bm-chapter-icon [id]="'TherearesomepzzTPKxWUC'"></app-bm-chapter-icon>
                 <p>There are some arguments that are so good that they can counter multiple points. These are considered
                     trump cards
-                    and should be played carefully because they can only counter arguments that your opponent has put
+                    and should be played carefully because they can only counter arguments that your opponent has already put
                     forward.</p>
             </div>
             <div class='paragraphShell anchor'>
                 <div id='TrumpcardsgifAILsViirY' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'TrumpcardsgifAILsViirY'"></app-bm-chapter-icon>
-                <p>Trump cards give a number of points equal to their base times the number of points they counter. So,
-                    if you put
-                    forward Evidence that counters 3 arguments, it would give you 9 points, while having a 4 dice Appeal
-                    that counts
+                <p>Trump cards give a number of points equal to their base times the number of points they counter. So, if you put
+                    forward Evidence that counters 3 arguments, it would give the other side 9 points, while having a 4 dice Appeal that counts
                     the same number gives you 12 points.</p>
             </div>
             <div class='paragraphShell anchor marginBottom'>
@@ -1438,9 +1430,8 @@
             <div class='paragraphShell anchor marginBottom'>
                 <div id='IfitturnsouegrpcZQjVe' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'IfitturnsouegrpcZQjVe'"></app-bm-chapter-icon>
-                <p>If it turns out that the other person does still have more to say, the Conflict continues and the
-                    person who was
-                    pushed but gave no ground gains 1 point.</p>
+                <p>If it turns out that the other person does still have more to say, the Conflict continues and the pusing 
+                    person gains 1 point.</p>
             </div>
             <div class='paragraphShell anchor marginBottom'>
                 <div id='IfhoweverireDVBViDib' class='anchorTag'></div>
@@ -1529,7 +1520,7 @@
             <div class='paragraphShell anchor'>
                 <div id='AttheendofQgdCLWQWNq' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'AttheendofQgdCLWQWNq'"></app-bm-chapter-icon>
-                <p>At the end of the Conflict, both sides reveal their points. The one with the most points gets their
+                <p>At the end of the Conflict, both sides reveal their points. The one with the least points gets their
                     way.</p>
             </div>
             <div class='paragraphShell anchor marginBottom'>
