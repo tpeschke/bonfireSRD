@@ -59,14 +59,29 @@
     width: 250px;
 }
 
+
+.sizevalue {
+    width: 90px;
+}
+
+.sizevalue:first-child {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sizeTable {
+    float: left;
+    margin-right: 15px;
+    width: 270px;
+}
+
 @media (max-width: 650px) {
     .fallingMargin, .sizeMargin, .imageMargin {
         margin-top: 0;
     }
 
-    .FallingDamageTable, .FallingModifiersTable, .miscImage, .sizeTable {
+    .FallingDamageTable, .FallingModifiersTable, .miscImage {
         float: none;
-        width: 75%;
         margin: 5px auto;
     }
 
@@ -74,7 +89,7 @@
         width: 100%;
     }
 
-    .longtermexhaustionTable {
+    .longtermexhaustionTable, .sizeTable {
         float: none;
         margin: 0 auto;
     }
