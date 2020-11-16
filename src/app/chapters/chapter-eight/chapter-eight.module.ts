@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'advanced', 
     loadChildren: './chapter-eight-advanced/chapter-eight-advanced.module#ChapterEightAdvancedModule',
     canActivate: [AdvGuardService]
-}
+  }
 ];
 
 @NgModule({

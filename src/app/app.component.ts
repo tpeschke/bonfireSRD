@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NotReduxService } from './not-redux.service';
-import { Router } from '@angular/router'
+import { NavigationCancel, Router } from '@angular/router'
 import { fadeInAnimation } from './app.animations';
+import { ChapterService } from './chapter.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,12 @@ import { fadeInAnimation } from './app.animations';
 export class AppComponent {
   constructor(
     private notRedux: NotReduxService,
-    private router: Router
+    private router: Router,
+    private chapterService: ChapterService
   ){}
+
+  ngOnInit() {
+    this.chapterService.checkPatreon().subscribe().unsubscribe()
+  }
   
 }
