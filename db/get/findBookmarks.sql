@@ -1,3 +1,3 @@
-select srdbookmarks.id, bookmarkcode, body from srdbookmarks 
+select * from srdbookmarks 
 join srdbasic on srdbasic.linkid = srdbookmarks.bookmarkcode
 where userid = $1

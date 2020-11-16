@@ -22,7 +22,7 @@ export class BasicGuardService {
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
     if (this.chapterService.patreon) {
-      return this.canView(this.chapterService, state)
+      return this.canView(this.chapterService.patreon, state)
     } else {
       return this.http.get(local.endpointBase + '/checkPatreon').pipe(
         map(result => {

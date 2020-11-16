@@ -13,12 +13,6 @@ import { ChapterService } from './chapter.service';
 export class AppComponent {
   constructor(
     private notRedux: NotReduxService,
-    private router: Router,
-    private chapterService: ChapterService
   ){}
-
-  ngOnInit() {
-    this.chapterService.checkPatreon().subscribe().unsubscribe()
-  }
   
 }

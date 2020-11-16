@@ -22,7 +22,7 @@ export class AdvGuardService implements CanActivate {
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
     if (this.chapterService.patreon) {
-      return this.canView(this.chapterService, state)
+      return this.canView(this.chapterService.patreon, state)
     } else {
       return this.http.get(local.endpointBase + '/checkPatreon').pipe(
         map(result => {
@@ -33,6 +33,7 @@ export class AdvGuardService implements CanActivate {
   }
 
   canView (patreon, state) {
+    console.log(patreon, patreon > 0)
     if (patreon > 0) {
       return true
     }
