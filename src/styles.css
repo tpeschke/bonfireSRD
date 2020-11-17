@@ -800,6 +800,10 @@ h2 {
   padding: 0 5px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
