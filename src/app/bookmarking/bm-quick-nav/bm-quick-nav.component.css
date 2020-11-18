@@ -3,6 +3,12 @@ h1 {
   text-align: left;
 }
 
+h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 i {
   font-size: 15px;
 }
@@ -47,18 +53,25 @@ i:hover {
 }
 
 .bookmarkShelfHeading div {
-  min-width: 15px
+  min-width: 15px;
+  width: 10%;
 }
 
 .bookmarkShelfHeading h3:first-child {
   min-width: 39px;
   color: whitesmoke;
+  width: 10%;
 }
 
 .bookmarkShelfHeading h3:nth-child(2) {
   min-width: 306px;
   color: whitesmoke;
   text-align: left;
+  width: 80%;
+}
+
+.bookmarkShelf i {
+width: 10%;
 }
 
 .bookmarkShelf {
@@ -69,11 +82,11 @@ i:hover {
 }
 
 .bookmarkShelf h3:first-child {
-  min-width: 39px;
+  width: 10%;
 }
 
 .bookmarkShelf h3:nth-child(2) {
-  min-width: 306px;
+  width: 80%;
   text-align: left;
 }
 
@@ -110,9 +123,6 @@ i:hover {
 
   h3 {
     font-size: 25px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .bookmarkingShell {
@@ -133,30 +143,6 @@ i:hover {
   bottom: -15px;
   right: 5px;
   }
-
-  .bookmarkShelfHeading h3:first-child {
-    width: 10%;
-  }
-  
-  .bookmarkShelfHeading h3:nth-child(2) {
-    width: 80%;
-  }
-
-  .bookmarkShelfHeading div {
-    width: 10%;
-  }
-
-.bookmarkShelf h3:first-child {
-  width: 10%;
-}
-
-.bookmarkShelf h3:nth-child(2) {
-  width: 80%;
-}
-
-.bookmarkShelf i {
-  width: 10%;
-}
 }
 
 @media (max-width: 450px ) {

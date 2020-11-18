@@ -177,7 +177,7 @@
                 <p>Even if your character doesn't suffer a heartattack, they'll be shaken and changed 
                     from the experiance. When they dip below their Stress Treshold again, they 
                 suffer 2 negative Long Term Reprecussions as laid out in the Reprecussions of a Conflict 
-            section in <a routerLink='../../chapter/9'>Chapter 9: Social</a>.</p>
+            section in <a [routerLink]='["/chapter/9"]' [queryParams]="{search: 'AnyonewithdiBpMxTcoIPP'}">Chapter 9: Social</a>.</p>
             </div>
             <div class="anchor">
                 <div id="6hscFsXKKFIO" class="anchorTag"></div>
@@ -278,7 +278,7 @@
             <div class='paragraphShell anchor'>
                 <div id='soforexampelletssaythat' class='anchorTag'></div>
                 <app-bm-chapter-icon [id]="'soforexampelletssaythat'"></app-bm-chapter-icon>
-                <p> So, for example, let's say that you have a base Encumbrance of 10 from your Abilities but you're
+                <p class="italic"> So, for example, let's say that you have a base Encumbrance of 10 from your Abilities but you're
                     carrying around only a Light Shield, so your actual
                     Encumbrance is 16. You drop from Fresh to Hurt, and you gain 32 Stress because of it. You're in the
                     middle of combat, so you can't Take a Breather, so you

@@ -74,6 +74,11 @@
   margin: 10px 15px 0 0;
 }
 
+.Moralevalue {
+  width: 33%;
+  padding: 4px;
+}
+
 
 @media (max-width: 450px) {
     .MovementBasicTable {

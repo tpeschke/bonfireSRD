@@ -41,7 +41,6 @@ export class NavbarComponent implements OnInit, AfterViewInit {
         this.loadIcon = true
       }
       if (p instanceof NavigationEnd) {
-        this.loadIcon = false
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0
 
@@ -50,9 +49,13 @@ export class NavbarComponent implements OnInit, AfterViewInit {
           if (route !== 0) {
             this.setChapter(route)
             if (p.url.split('=')[1]) {
-              setTimeout(_=>this.scrollToElement(p.url.split('=')[1]), 3000)
+              setTimeout(_=>{
+                this.scrollToElement(p.url.split('=')[1])
+                this.loadIcon = false}, 2500)
+            } else {
+              this.loadIcon = false 
             }
-          } 
+          }
         } else {
           this.chapter = '';
           this.pervious = '';
@@ -60,6 +63,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
           this.next = '';
           this.nextRoute = '';
           this.reset = '';
+          this.loadIcon = false 
         }
       }
     })

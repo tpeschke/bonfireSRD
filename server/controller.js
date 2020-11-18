@@ -63,7 +63,7 @@ module.exports = {
         db.delete.bookmarks(req.params.id).then(result => {
             db.get.findBookmarks(req.user.id).then(result => {
                 let newResult = result.map(val => {
-                    return { id: val.id, chapter: val.bookmarkcode.match(/^\d+/g)[0], body: val.body.substring(0, 35) + '...', link: val.bookmarkcode }
+                    return { id: val.id, chapter: val.chapter, body: val.body, link: val.bookmarkcode }
                 })
                 res.send(newResult)
             })
