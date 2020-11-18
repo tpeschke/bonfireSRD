@@ -2,7 +2,7 @@ import { trigger, animate, transition, style, group, query} from '@angular/anima
 
 export const fadeInAnimation = trigger('fadeInAnimation', [
     transition('* <=> *', [
-        query(':enter, :leave', style({position: 'fixed', width: '150px', height: '150px', zIndex: 2}), {optional: true}),
+        query(':enter, :leave', style({position: 'fixed', width: '100%', height: '100%', zIndex: 2}), {optional: true}),
         group([
             query(':enter', [
                 style({ opacity: '0%'}),
