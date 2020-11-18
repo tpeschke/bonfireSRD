@@ -33,7 +33,6 @@ export class AdvGuardService implements CanActivate {
   }
 
   canView (patreon, state) {
-    console.log(patreon, patreon > 0)
     if (patreon > 0) {
       return true
     }
