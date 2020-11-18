@@ -16,7 +16,7 @@ export class ChapterFifteenAdvancedComponent implements OnInit {
   
     navDisplay = false;
     chapterName = '';
-    side = [{linkid: 'hnu', body: 'STAT SCORE DAMAGE', jump: '15hbYNKwyrdVf'}, { linkid: 'hnu', body: 'DISEASES & POISONS', jump: '15hThjcdwfpAY'}, {linkid: 'hnu', body: 'FALLING DAMAGE', jump: '15hOfPmmhELBY'}, {linkid: 'hnu', body: 'ILLUMINATION', jump: '15hLzcrnSHGfR'}, {linkid: 'hnu', body: 'LONG-TERM EXHAUSTION', jump: '15hfrDRlgsYQh'}, {linkid: 'hnu', body: 'SIZING & SIZE CHARTS', jump: 'sizingandsizercharhear'}]
+    side = [{linkid: 'hnu', body: 'Stat Score Damage', jump: '15hbYNKwyrdVf'}, {linkid: 'hnu', body: 'Diseases & Poisons', jump: '15hThjcdwfpAY'}, {linkid: 'hnu', body: 'Falling Damage', jump: '15hOfPmmhELBY'}, {linkid: 'hnu', body: 'Illumination', jump: '15hLzcrnSHGfR'}, {linkid: 'h', body: 'Long-term Exhaustion', jump: '15hfrDRlgsYQh'}, {linkid: 'hg', body: 'SMALL & LARGE SIZED CREATURES', jump: 'smalleandrlargesizedcreaut'}, {linkid: 'h', body: 'Sizing & Size Charts', jump: 'sizingandsizercharhear'}]
 
     ngOnInit() {
     }
