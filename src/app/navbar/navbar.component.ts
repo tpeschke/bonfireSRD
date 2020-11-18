@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 import { NotReduxService } from '../not-redux.service';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router'
 import { ChapterService } from '../chapter.service'
@@ -10,7 +10,7 @@ import local from '../local'
   styleUrls: ['./navbar.component.css']
 })
 
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, AfterViewInit {
 
   constructor(
     private notRedux: NotReduxService,
@@ -33,7 +33,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.chapterService.checkPatreon().subscribe().unsubscribe()
-    
+  }
+
+  ngAfterViewInit() {
     this.router.events.subscribe(p => {
       if (p instanceof NavigationStart) {
         this.loadIcon = true
@@ -48,7 +50,7 @@ export class NavbarComponent implements OnInit {
           if (route !== 0) {
             this.setChapter(route)
             if (p.url.split('=')[1]) {
-              this.scrollToElement(p.url.split('=')[1])
+              setTimeout(_=>this.scrollToElement(p.url.split('=')[1]), 3000)
             }
           } 
         } else {

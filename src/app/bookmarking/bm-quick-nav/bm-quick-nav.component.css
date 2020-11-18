@@ -106,34 +106,62 @@ i:hover {
   animation-direction: alternate;
 }
 
-@media (max-width: 450px ) {
+@media (max-width: 770px) {
+
+  h3 {
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .bookmarkingShell {
     width: 100vw;
     height: 100%;
     position: relative;
   }
 
-  .bookmarkShelfHeading {
-    width: 100vw;
+  i {
+    font-size: 25px;
   }
+
+  .bookmarkShelfHeading, .bookmarkShelf {
+    height: 30px;
+  }
+
+  .positioning {
+  bottom: -15px;
+  right: 5px;
+  }
+
   .bookmarkShelfHeading h3:first-child {
-    min-width: 20%;
+    width: 10%;
   }
   
   .bookmarkShelfHeading h3:nth-child(2) {
-    min-width: 80%;
+    width: 80%;
+  }
+
+  .bookmarkShelfHeading div {
+    width: 10%;
   }
 
 .bookmarkShelf h3:first-child {
-  min-width: 10%;
+  width: 10%;
 }
 
 .bookmarkShelf h3:nth-child(2) {
-  min-width: 80%;
+  width: 80%;
 }
 
-.positioning{
-  bottom: -20px;
-  right: 5px;
+.bookmarkShelf i {
+  width: 10%;
 }
+}
+
+@media (max-width: 450px ) {
+
+  .bookmarkShelfHeading {
+    width: 100vw;
+  }
 }

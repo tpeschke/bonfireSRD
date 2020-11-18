@@ -79,6 +79,13 @@ a:hover {
   animation-direction: alternate;
 }
 
+@media (max-width: 770px) {
+  .loginShell {
+    min-width: 100vw;
+    padding: 0;
+  }
+}
+
 @media (max-width: 450px ) {
   .loginShell {
     margin: 0;
