@@ -9,6 +9,8 @@
     background: #222;
     color: whitesmoke;
     width: 100%;
+    font-size: 15px;
+    font-family: "ancient";
   }
   
   .headerSide {
@@ -16,6 +18,8 @@
     color: whitesmoke;
     top: 89px;
     left: -15px;
+    font-size: 15px;
+    font-family: "ancient";
   }
   
   .magicteachingTable {
