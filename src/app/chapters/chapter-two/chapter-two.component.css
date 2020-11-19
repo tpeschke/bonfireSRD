@@ -26,6 +26,10 @@
     width: 60px;
 }
 
+.charismaTable {
+    width: 350px;
+}
+
 .tableOverflowWindow {
     float: left;
     margin-right: 15px;
