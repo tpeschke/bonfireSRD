@@ -75,17 +75,17 @@ h1 {
 }
 
 .heraldRight {
-  height: 114px;
-  position: absolute;
-  top: -3px;
-  right: -33px;
+  height: 104px;
+    position: absolute;
+    top: -1px;
+    right: -13px;
 }
 
 .heraldLeft {
-  height: 130px;
+  height: 111px;
   position: absolute;
-  top: -11px;
-  left: -40px;
+  top: -3px;
+  left: -12px;
 }
 
 .topNav {
