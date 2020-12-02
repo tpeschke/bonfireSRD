@@ -112,22 +112,20 @@ export class ChapterService {
       case 6:
         return 'Character Vitals';
       case 7:
-        return 'Masteries';
-      case 8:
         return 'Skills';
-      case 9:
+      case 8:
         return 'Social';
-      case 10:
+      case 9:
         return 'Combat';
-      case 11:
+      case 10:
         return 'Equipment';
-      case 12:
+      case 11:
         return 'The Weird';
-      case 13:
+      case 12:
         return 'Divine';
-      case 14:
+      case 13:
         return 'Character Progression';
-      case 15:
+      case 14:
         return 'Misc Rules';
       default:
         return 'Home';

@@ -23,7 +23,6 @@ import { BookmarkingModule } from './bookmarking/Bookmarking.module';
     SearchComponent,
     PrivacyPolicyComponent,
     LogonComponent,
-    SearchComponent,
     FormatSearchPipe
   ],
   imports: [

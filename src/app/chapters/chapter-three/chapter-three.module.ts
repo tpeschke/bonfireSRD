@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SelectivePreloadingStrategyService } from '../../selective-preloading.service'
 import { ChapterThreeComponent } from './chapter-three.component';
 import { ChaptersModule } from '../chapters.module';
 import { Routes, RouterModule } from '@angular/router';
