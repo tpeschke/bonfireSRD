@@ -63,7 +63,7 @@
       <div class='paragraphShell anchor'>
         <div id='8pvrTVawRrAZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pvrTVawRrAZ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>SKILL SUITES </strong>Your Skill Suites, your starting Rank is the Skill Bonus
+        <p><strong class='orangeHeader'>SKILL SUITES </strong>For your Skill Suites, your starting Rank is the Skill Bonus
           listed under the corresponding Stat. For Suites with multiple Stats, average the Skill Bonus, rounded down.
         </p>
       </div>
@@ -82,20 +82,19 @@
           Rank * 5), both have a minimum of 1. Note that, like Skills Suites
           above, if there are multiple Stats attached to a Skill, average the Skill Bonus, rounded down.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='theexceptionsitoghigs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'theexceptionsitoghigs'"></app-bm-chapter-icon>
-        <p> The exception to this is the Weirdcraft Advanced Skills, that more expensive as you purchase other Weirdcraft Advanced Skills.
-          The price is the Base Cost + 2 * (Current Ranks + number of previous Weirdcraft Advanced Skills you've got Ranks in).
-          Going back and purchasing more Ranks in a Weirdcraft Advanced Skills you’re already got Ranks in doesn’t “shift” it around for 
-          purposes of “number of previous Traditions trained in”.
-        </p>
-      </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ptmNxKgqedZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8ptmNxKgqedZ'"></app-bm-chapter-icon>
         <p>Every purchase increases your Rank in that Skill by 1. Purchases of Skill Suites also raises the Rank of any
           child Advanced Skills you’ve already purchased, so that’s nice.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='theexceptionsitoghigs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'theexceptionsitoghigs'"></app-bm-chapter-icon>
+        <p> The exception to this is the Weirdcraft Advanced Skills, that more expensive as you purchase other Weirdcraft Advanced Skills.
+          The price is the Base Cost + 2 * (Current Ranks + number of previous Weirdcraft Advanced Skills you've got Ranks in).
+          Going back and purchasing more Ranks in a Weirdcraft Advanced Skills you’re already got Ranks in doesn’t “shift” it around for 
+          purposes of “number of previous Traditions trained in”. </p>
       </div>
       <div class="anchor">
         <div id="TheBasicsSkheader" class="anchorTag"></div>
@@ -656,7 +655,11 @@
         <app-bm-chapter-icon [id]="'YoucanusefaDNCIhYhFsz'"></app-bm-chapter-icon>
         <p>You can use faulty equipment (ones with a negative modifier), since something is better than nothing. This
           still
-          gives you a reroll but it’s on 1 dice lower (again, keeping the better of the two).</p>
+          gives you a reroll but if your roll is equal to or 
+          below the equipment's absolute value than it breaks. 
+          So, if you roll a 5 or less while using a -5 rope, 
+          the rope snaps, dropping you to the ground.
+          This applies to defenses for shields and weapons.</p>
       </div>
 
       <div class='sidebarShell marginBottom'>

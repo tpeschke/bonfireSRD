@@ -122,7 +122,7 @@ export class ChapterService {
       case 11:
         return 'The Weird';
       case 12:
-        return 'Divine';
+        return 'The Divine';
       case 13:
         return 'Character Progression';
       case 14:
