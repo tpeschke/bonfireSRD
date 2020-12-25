@@ -14,7 +14,7 @@ const routes: Routes = [
     canActivate: [BasicGuardService]
 
   },
-  { path: 'advanced', loadChildren: './chapter-two-advanced/chapter-two-advanced.module#ChapterTwoAdvancedModule',
+  { path: 'deluxe', loadChildren: './chapter-two-advanced/chapter-two-advanced.module#ChapterTwoAdvancedModule',
     canActivate: [AdvGuardService]
   }
 ];

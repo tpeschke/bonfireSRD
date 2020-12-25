@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChapterService } from '../chapter.service';
 import { NotReduxService } from '../not-redux.service';
 
 @Component({
@@ -9,10 +10,16 @@ import { NotReduxService } from '../not-redux.service';
 export class HomeComponent implements OnInit {
 
   constructor(
-    private notRedux: NotReduxService
+    private notRedux: NotReduxService,
+    private chapterService: ChapterService
   ) { }
+
+  public patreon = this.chapterService.patreon
+
   ngOnInit() {
-    
+    if (!this.patreon) {
+      this.chapterService.checkPatreon().subscribe(patreon => this.patreon = patreon)
+    }
   }
 
 } 

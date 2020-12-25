@@ -38,9 +38,9 @@ export class BasicGuardService {
     }
     let searchParams = state.url.split('?')
     if (searchParams[1]) {
-      this.router.navigate([searchParams[0] + '/advanced'], {queryParams: {search: searchParams[1].split('=')[1]}})
+      this.router.navigate([searchParams[0] + '/deluxe'], {queryParams: {search: searchParams[1].split('=')[1]}})
     } else {
-      this.router.navigate([state.url + '/advanced'])
+      this.router.navigate([state.url + '/deluxe'])
     }
     return false
   }

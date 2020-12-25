@@ -38,6 +38,16 @@
   background: rgb(100, 100, 100) !important;
 }
 
+.kitShell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kitTable {
+  width: 300px;
+}
+
 .kitBottomLine {
   background: grey !important;
   display: flex;

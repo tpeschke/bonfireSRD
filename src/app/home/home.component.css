@@ -126,6 +126,14 @@ p {
   width: 445px;
 }
 
+.deluxeTitle {
+  width: 125px;
+  right: 3px;
+  top: 29px;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+
 .homeImage {
   height: 150px;
   position: absolute;

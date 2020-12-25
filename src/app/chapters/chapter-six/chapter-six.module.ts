@@ -13,7 +13,7 @@ const routes: Routes = [
     component: ChapterSixComponent,
     canActivate: [BasicGuardService]
   },
-  { path: 'advanced', loadChildren: './chapter-six-advanced/chapter-six-advanced.module#ChapterSixAdvancedModule', 
+  { path: 'deluxe', loadChildren: './chapter-six-advanced/chapter-six-advanced.module#ChapterSixAdvancedModule', 
     canActivate: [AdvGuardService]},
 ];
 
