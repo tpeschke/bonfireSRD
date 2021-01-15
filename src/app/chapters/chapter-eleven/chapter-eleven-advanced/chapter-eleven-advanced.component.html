@@ -1139,7 +1139,7 @@
                 <p class='equipmentvalue TableIndividual'>2d6!</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'><a href="https://bestiary.dragon-slayer.net/beast/245/gm"
+                <p class='equipmentvalue TableIndividual'><a href="https://bestiary.dragon-slayer.net/beast/252/gm"
                     target="_blank">Lizard, Pack</a></p>
                 <p class='equipmentvalue TableIndividual'>2d8!</p>
                 <p class='equipmentvalue TableIndividual'>2d6!</p>
@@ -1989,49 +1989,49 @@
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Poison</p>
-                <p class='equipmentvalue TableIndividual'>Effect</p>
-                <p class='equipmentvalue TableIndividual'>Delivery</p>
+                <p class='poisonvalue TableIndividual'>Poison</p>
+                <p class='poisonvalue TableIndividual'>Effect</p>
+                <p class='poisonvalue TableIndividual'>Delivery</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Blacknessel</p>
-                <p class='equipmentvalue TableIndividual'>2/20 Sec/Int/1</p>
-                <p class='equipmentvalue TableIndividual'>Ingestion</p>
+                <p class='poisonvalue TableIndividual'>Blacknessel</p>
+                <p class='poisonvalue TableIndividual'>2/20 Sec/Int/1</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Blue Glory</p>
-                <p class='equipmentvalue TableIndividual'>1/5 Sec/Str/4</p>
-                <p class='equipmentvalue TableIndividual'>Ingestion</p>
+                <p class='poisonvalue TableIndividual'>Blue Glory</p>
+                <p class='poisonvalue TableIndividual'>1/5 Sec/Str/4</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Bondweed</p>
-                <p class='equipmentvalue TableIndividual'>3/1 Min/Stress/7</p>
-                <p class='equipmentvalue TableIndividual'>Contact</p>
+                <p class='poisonvalue TableIndividual'>Bondweed</p>
+                <p class='poisonvalue TableIndividual'>3/1 Min/Stress/7</p>
+                <p class='poisonvalue TableIndividual'>Contact</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Griffin Hair</p>
-                <p class='equipmentvalue TableIndividual'>2/3 Min/Encumb/4</p>
-                <p class='equipmentvalue TableIndividual'>Ingestion</p>
+                <p class='poisonvalue TableIndividual'>Griffin Hair</p>
+                <p class='poisonvalue TableIndividual'>2/3 Min/Encumb/4</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Lylullin</p>
-                <p class='equipmentvalue TableIndividual'>2/15 Sec/Wis/4</p>
-                <p class='equipmentvalue TableIndividual'>Ingestion</p>
+                <p class='poisonvalue TableIndividual'>Lylullin</p>
+                <p class='poisonvalue TableIndividual'>2/15 Sec/Wis/4</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Maidenscap</p>
-                <p class='equipmentvalue TableIndividual'>5/1 Hour/Con/3</p>
-                <p class='equipmentvalue TableIndividual'>Ingestion</p>
+                <p class='poisonvalue TableIndividual'>Maidenscap</p>
+                <p class='poisonvalue TableIndividual'>5/1 Hour/Con/3</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Palm Of St Germain</p>
-                <p class='equipmentvalue TableIndividual'>4/5 Sec/Cha/3</p>
-                <p class='equipmentvalue TableIndividual'>Ingestion</p>
+                <p class='poisonvalue TableIndividual'>Palm Of St Germain</p>
+                <p class='poisonvalue TableIndividual'>4/5 Sec/Cha/3</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
               </div>
               <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Tears Of Sicyon</p>
-                <p class='equipmentvalue TableIndividual'>2/10 Sec/Dex/6</p>
-                <p class='equipmentvalue TableIndividual'>Contact</p>
+                <p class='poisonvalue TableIndividual'>Tears Of Sicyon</p>
+                <p class='poisonvalue TableIndividual'>2/10 Sec/Dex/6</p>
+                <p class='poisonvalue TableIndividual'>Contact</p>
               </div>
             </div>
           </div>
@@ -2376,35 +2376,6 @@
                 <p class='equipmentvalue TableIndividual'>Distant City</p>
               </div>
               <div *ngFor="let content of tables.polearms" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t28' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Thrown Weapons</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.thrown" class='tableValue'>
                 <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
@@ -3321,43 +3292,6 @@
         </div>
         <div class='marginBottom'>
           <div class='tableOuterShell' [ngStyle]='{width: "160px"}'>
-            <h1 class='tableTitle'>Javelin</h1>
-            <div class='tableHeaders'>
-              <div class='tableRow'>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>Penalty</p>
-                  <p class='rangevalue TableIndividual'>Range (ft)</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>0</p>
-                  <p class='rangevalue TableIndividual'>5 - 26</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>-2</p>
-                  <p class='rangevalue TableIndividual'>27 - 52</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>-4</p>
-                  <p class='rangevalue TableIndividual'>53 - 78</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>-8</p>
-                  <p class='rangevalue TableIndividual'>79 - 104</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>-16</p>
-                  <p class='rangevalue TableIndividual'>105 - 130</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='rangevalue TableIndividual'>-32</p>
-                  <p class='rangevalue TableIndividual'>131 - 160</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='marginBottom'>
-          <div class='tableOuterShell' [ngStyle]='{width: "160px"}'>
             <h1 class='tableTitle'>Hakenbuchse</h1>
             <div class='tableHeaders'>
               <div class='tableRow'>
@@ -3425,6 +3359,43 @@
                 <div class='tableValue'>
                   <p class='rangevalue TableIndividual'>-32</p>
                   <p class='rangevalue TableIndividual'>151 - 180</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='marginBottom'>
+          <div class='tableOuterShell' [ngStyle]='{width: "160px"}'>
+            <h1 class='tableTitle'>Javelin</h1>
+            <div class='tableHeaders'>
+              <div class='tableRow'>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>Penalty</p>
+                  <p class='rangevalue TableIndividual'>Range (ft)</p>
+                </div>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>0</p>
+                  <p class='rangevalue TableIndividual'>5 - 26</p>
+                </div>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>-2</p>
+                  <p class='rangevalue TableIndividual'>27 - 52</p>
+                </div>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>-4</p>
+                  <p class='rangevalue TableIndividual'>53 - 78</p>
+                </div>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>-8</p>
+                  <p class='rangevalue TableIndividual'>79 - 104</p>
+                </div>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>-16</p>
+                  <p class='rangevalue TableIndividual'>105 - 130</p>
+                </div>
+                <div class='tableValue'>
+                  <p class='rangevalue TableIndividual'>-32</p>
+                  <p class='rangevalue TableIndividual'>131 - 160</p>
                 </div>
               </div>
             </div>
@@ -3700,11 +3671,21 @@
         <app-bm-chapter-icon [id]="'11puHeSPcqBZB'"></app-bm-chapter-icon>
         <p><strong class='greyHeader'>Fire Lance</strong> This weapon’s loud noise causes everyone to duck. Everyone
           within its range flinches for a number of seconds equal to 1 of the d10s, determined before hand (see Terrain
-          and Situational Factors section of Chapter 9). This includes the gunner as well.
-          If they’re still surprised, they can act after those seconds are over. This
-          includes the gunner as well. If several firearms have gone off on the same second, you take the highest delay
+          and Situational Factors section of Chapter 9). This includes the gunner as well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='firelancepenality' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'firelancepenality'"></app-bm-chapter-icon>
+        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
+          have Basic Weapon Training (Any Firearm).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='firelanceifseveral' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'firelanceifseveral'"></app-bm-chapter-icon>
+        <p> If several firearms have gone off on the same second, you take the highest delay
           rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
-          firearm's delay. </p>
+          firearm's delay.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='11pkWibHwpbfI' class='anchorTag'></div>
@@ -3747,10 +3728,21 @@
         <p> This weapon’s loud noise causes everyone to duck. Everyone within the first two range categories of this
           weapon flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain
           and Situational Factors section of Chapter 9). If they’re still surprised, they can act after those seconds
-          are over. This
-          includes the gunner as well. If several firearms have gone off on the same second, you take the highest delay
+          are over. This includes the gunner as well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thispenalitsilower' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thispenalitsilower'"></app-bm-chapter-icon>
+        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
+          have Basic Weapon Training (Any Firearm).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifseverfirearhave' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifseverfirearhave'"></app-bm-chapter-icon>
+        <p> If several firearms have gone off on the same second, you take the highest delay
           rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
-          firearm's delay. </p>
+          firearm's delay.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='11pyLQElpyiHS' class='anchorTag'></div>
@@ -3785,9 +3777,21 @@
           weapon flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain
           and Situational Factors section of Chapter 9). If they’re still surprised, they can act after those seconds
           are over. This
-          includes the gunner as well. If several firearms have gone off on the same second, you take the highest delay
+          includes the gunner as well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='penaislowerijif' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'penaislowerijif'"></app-bm-chapter-icon>
+        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
+          have Basic Weapon Training (Any Firearm).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='sevealifremahhave' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sevealifremahhave'"></app-bm-chapter-icon>
+        <p> If several firearms have gone off on the same second, you take the highest delay
           rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
-          firearm's delay. </p>
+          firearm's delay.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='thisweaponbackgire' class='anchorTag'></div>

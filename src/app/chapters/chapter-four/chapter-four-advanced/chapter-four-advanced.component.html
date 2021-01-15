@@ -294,18 +294,16 @@
                                 <app-bm-chapter-icon [id]="'AFighterpickApTZSVQEjD'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>MARTIAL TRAINING (ARMOR & SHIELDS - TIER 2) </strong>A
                                         Fighter picks things up as they go, otherwise, they get themselves and their
-                                        companions killed. A Fighter
-                                        receives a free Tier 2 Armor or Shield Advanced Training for every level she’s
-                                        obtained.</p>
+                                        companions killed. At first level and every level she's obtained, a Fighter
+                                        receives a free Tier 2 Armor or Shield Advanced Training.</p>
                         </div>
                         <div class='paragraphShell anchor marginBottom'>
                                 <div id='AFighterpickzXRjRXkBuI' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'AFighterpickzXRjRXkBuI'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>MARTIAL TRAINING (WEAPONS - TIER 2) </strong>A Fighter
                                         picks things up as they go, otherwise, they get themselves and their companions
-                                        killed. A Fighter
-                                        receives a free Tier 2 Weapon Advanced Training for every level she’s obtained.
-                                </p>
+                                        killed. At first level and every level she's obtained, a Fighter
+                                        receives a free Tier 2 Weapon Advanced Training.</p>
                         </div>
                         <div class='anchor'>
                                 <div id='PrimaryDrawbafUjNJdEqNE' class='anchorTag'></div>
@@ -403,15 +401,22 @@
                                         a free Devotion to their Divine, starting at 3. They also start Anointed in
                                         their cult.</p>
                         </div>
-                        <div class='paragraphShell anchor marginBottom'>
+                        <div class='paragraphShell anchor'>
                                 <div id='AServantcanbnPKIkiiHX' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'AServantcanbnPKIkiiHX'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>FORMER LIFE </strong>A Servant can be called from
-                                        anywhere and any walk of life. Select a leveling Archetype Ability from your
-                                        other
-                                        Archetype: this Former Life has all the same effects as that ability, though it
-                                        still counts as a separate
-                                        leveling ability.</p>
+                                        anywhere and any walk of life. Select a leveling Archetype ability. This can 
+                                        be either from the Generalist you chose as a Secondary or a Specialist within the 
+                                        category to which your Secondary belongs.
+                                        Former Life has all the same effects as that ability, though it
+                                        still counts as a separate leveling ability.</p>
+                        </div>
+                        <div class='paragraphShell anchor marginBottom'>
+                                <div id='thisabiliti' class='anchorTag'></div>
+                                <app-bm-chapter-icon [id]="'thisabiliti'"></app-bm-chapter-icon>
+                                <p>This ability stays with you after you replace the Servant Generalist Archetype, however,
+                                        it stops leveling, even if your pick the Specialist Archetype it's from.
+                                </p>
                         </div>
                         <div class='anchor'>
                                 <div id='PrimaryDrawbaqwcJLEQzMe' class='anchorTag'></div>
@@ -590,11 +595,8 @@
                                 <p><strong class='orangeHeader'>APPLIED FOLKWEIRD </strong>While anyone can shape a
                                         simple cantrip, the Weird-Adepts knows how to apply those lessons to shape a
                                         real spell.
-                                        After 10 seconds of concentration, the Weird-Adept can make an Advanced
-                                        Weirdcraft Skill Check. Success results
-                                        in them gaining a number of Spell Points (SP) equal to their Rank in the
-                                        Weirdcraft Advanced Skill corresponding
-                                        to the Tradition of the Effect they’re trying to shape.</p>
+                                        After 10 seconds of concentration, the Weird-Adept generates a number of Spell Points 
+                                        equal to their Level + Weirdcraft Skill Suite Rank + applicable Weirdcraft Advanced Skill's Rank.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='TheyreceivetkRFAqkYlRi' class='anchorTag'></div>
@@ -604,7 +606,13 @@
                         <div class='paragraphShell anchor marginBottom'>
                                 <div id='AtfirstlevelSvQobOpmqD' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'AtfirstlevelSvQobOpmqD'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>SKILL FOCUS (WEIRDCRAFT, 2) </strong>At first level and
+                                <p><strong class='orangeHeader'>SKILL FOCUS (Weirdcraft Skill Suite) </strong>At first level and
+                                        every level other up, Weird-Adept receive 1 free skill purchase in the Weirdcraft Skill Suite.</p>
+                        </div>
+                        <div class='paragraphShell anchor marginBottom'>
+                                <div id='AtfirstlevelSvQobOpmqD' class='anchorTag'></div>
+                                <app-bm-chapter-icon [id]="'AtfirstlevelSvQobOpmqD'"></app-bm-chapter-icon>
+                                <p><strong class='orangeHeader'>SKILL FOCUS (Weirdcraft, 2) </strong>At first level and
                                         every level other up, Weird-Adept receive 2 free skill purchases. These can be
                                         distributed
                                         between any Advanced Skills from the Weirdcraft Skill Suite. These free
@@ -645,7 +653,17 @@
                                 <div class='paragraphShell anchor'>
                                         <div id='Shapeafter7STFGKxYwEz' class='anchorTag'></div>
                                         <app-bm-chapter-icon [id]="'Shapeafter7STFGKxYwEz'"></app-bm-chapter-icon>
-                                        <p>Shape after 7 seconds of concentration.</p>
+                                        <p>Shape after 7 seconds of concentration and gain SPs equal to twice your level + Weirdcraft Skill Suite Rank + applicable Weirdcraft Advanced Skill's Rank.</p>
+                                </div>
+                                <div class='anchor'>
+                                        <div id='bothskilfocus' class='anchorTag'></div>
+                                        <app-bm-chapter-icon [id]="'bothskilfocus'"></app-bm-chapter-icon>
+                                        <h3>SKILL FOCUSES</h3>
+                                </div>
+                                <div class='paragraphShell anchor'>
+                                        <div id='yougethisever' class='anchorTag'></div>
+                                        <app-bm-chapter-icon [id]="'yougethisever'"></app-bm-chapter-icon>
+                                        <p>You get these are every level up, instead of every other.</p>
                                 </div>
                         </div>
                         <div class="anchor">
@@ -693,7 +711,8 @@
                                         <p>You’ll then take everything from the Specialist Archetypes but add in the
                                                 Skills &
                                                 Trainings from your Generalist
-                                                choice.</p>
+                                                choice. You also get any free stuff from abilities that say "at first level", so Experts get some free 
+                                        skills and Weird-Adepts get their starting Rudiments.</p>
                                 </div>
                                 <div class='paragraphShell anchor marginBottom'>
                                         <div id='youdonthowevegainthiegijo' class='anchorTag'></div>
@@ -4343,13 +4362,7 @@
                                         to their advantage. If in a Morale Conflict, enemies that are Appealing to those
                                         flinching gain an extra 2d6!.</p>
                         </div>
-                        <div class='paragraphShell marginBottom anchor'>
-                                <div id='4WTNSKjKMeZ' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'4WTNSKjKMeZ'"></app-bm-chapter-icon>
-                                <p>He has also grown accustomed to the roar of the cannon and so it immune to flinching
-                                        from firearms.</p>
-                        </div>
-                        <div class='paragraphShell anchor'>
+                        <div class='paragraphShell anchor marginBottom'>
                                 <div id='4KESEcjrTPU' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4KESEcjrTPU'"></app-bm-chapter-icon>
                                 <p>Further, those that travel with the Fusilier gain an immunity to this after a combat and lower their flinch times 
@@ -5111,7 +5124,7 @@
                         <div class='paragraphShell anchor'>
                                 <div id='astruinugoaspart' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'astruinugoaspart'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>ASTRUM IUNGO </strong>As part of their training, Augurs
+                                <p><strong class='orangeHeader'>JUDICII STELLATUM </strong>As part of their training, Augurs
                                         are taught how to harness the magic that drifts down from the stars and
                                         constellations. This gives them a steady pool of Spell Points whenever they cast
                                         a spell.</p>
@@ -5186,7 +5199,7 @@
                         <div class='paragraphShell anchor'>
                                 <div id='signumsabbatitheyoaugue' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'signumsabbatitheyoaugue'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>SIGNUM SABBATI </strong>The Augur knows each week brings
+                                <p><strong class='orangeHeader'>SIGNUM HEBDOMADA </strong>The Augur knows each week brings
                                         a new fate and with it, new boons. The Augur gains an additional bonus of 1 SP
                                         whenever shaping a spell that applies to the particular Rudiment. This is
                                         increased by 1 SP for every 5 levels they’ve obtained.</p>
@@ -5227,7 +5240,7 @@
                         <div class='paragraphShell anchor'>
                                 <div id='librodeibusjiangue' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'librodeibusjiangue'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>LIBRO DEIBUS </strong>An Augur keeps a Book of Days
+                                <p><strong class='orangeHeader'>LIBRO DIEBUS </strong>An Augur keeps a Book of Days
                                         where they store their spells. They gain 4 Rudiments of their choice at 1st
                                         level and an additional Rudiment every other level.</p>
                         </div>
@@ -5263,7 +5276,7 @@
                                 <div class='anchor'>
                                         <div id='oubdleasturme' class='anchorTag'></div>
                                         <app-bm-chapter-icon [id]="'oubdleasturme'"></app-bm-chapter-icon>
-                                        <h3>ASTRUM IUNGO</h3>
+                                        <h3>JUDICII STELLATUM</h3>
                                 </div>
                                 <div class='paragraphShell anchor marginBottom'>
                                         <div id='doublethistarsts' class='anchorTag'></div>
@@ -5272,9 +5285,19 @@
                                                 level.</p>
                                 </div>
                                 <div class='anchor'>
+                                        <div id='lectiofofioceij' class='anchorTag'></div>
+                                        <app-bm-chapter-icon [id]="'lectiofofioceij'"></app-bm-chapter-icon>
+                                        <h3>LECTIO COTIDIE</h3>
+                                </div>
+                                <div class='paragraphShell anchor marginBottom'>
+                                        <div id='lectioriocioti' class='anchorTag'></div>
+                                        <app-bm-chapter-icon [id]="'lectioriocioti'"></app-bm-chapter-icon>
+                                        <p>Incease the number of SPs you get to a d6!.</p>
+                                </div>
+                                <div class='anchor'>
                                         <div id='douibesginaumt' class='anchorTag'></div>
                                         <app-bm-chapter-icon [id]="'douibesginaumt'"></app-bm-chapter-icon>
-                                        <h3>SIGNUM SABBATI</h3>
+                                        <h3>SIGNUM HEBDOMADA</h3>
                                 </div>
                                 <div class='paragraphShell anchor marginBottom'>
                                         <div id='doublethisisincrease' class='anchorTag'></div>
@@ -5284,7 +5307,7 @@
                                 <div class='anchor'>
                                         <div id='doubledownlibrandeibus' class='anchorTag'></div>
                                         <app-bm-chapter-icon [id]="'doubledownlibrandeibus'"></app-bm-chapter-icon>
-                                        <h3>LIBRO DEIBUS</h3>
+                                        <h3>LIBRO DIEBUS</h3>
                                 </div>
                                 <div class='paragraphShell anchor'>
                                         <div id='doublethisisincreasedstarting' class='anchorTag'></div>
@@ -5349,7 +5372,7 @@
                                 <p>After 7 seconds, the Mage gains their Spell Points. Unlike other Archetypes of this
                                         type, however, a lot is left up to chance. The Mage rolls randomly for the
                                         Shape, Origin, and Range of the spell and d3! SP that they can spend on the
-                                        Effect.</p>
+                                        Effect (which you select after learning what the Shape, Origin, and Range is).</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='4pXVurTITOyt' class='anchorTag'></div>
@@ -5410,7 +5433,7 @@
                                 <p>You can stop shaping at any time; however, you take Stress equal to the amount of SP
                                         you have left - Weird is a powerful primal force and once unleashed, it is not
                                         stopped without cost. You also cannot cast or keep up a spell and Channel. This
-                                        doesn’t remove those SP but the Wizard does lose 1 SP every 6 seconds.</p>
+                                        doesn’t remove those SP but the Mage does lose 1 SP every 6 seconds.</p>
                         </div>
 
                         <div class='sidebarShell marginBottom'>
@@ -5503,24 +5526,15 @@
                         <div class='paragraphShell anchor'>
                                 <div id='mageappleidfolk' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'mageappleidfolk'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>APPLIED FOLKWEIRD</strong> The Mage,
-                                        through training and mediation is able to apply folkweird in a way that few can.
-                                        When shaping a spell in a Tradition he has the corresponding Advanced Weirdcraft
-                                        Skill in,
-                                        he adds his Rank in it to the number of SP he just channeled.</p>
-                        </div>
-                        <div class='paragraphShell anchor'>
-                                <div id='mageaijofeioew' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'mageaijofeioew'"></app-bm-chapter-icon>
-                                <p>He also benefits from a deep intuiative understanding of the Weird and so purchases
-                                        of any
-                                        Advanced Weirdcraft Skill is lowered by 4 CrP.</p>
+                                <p><strong class='orangeHeader'>UNLEARN DOGMA</strong> As the Mage grows in power, 
+                                the can set aside things that are holding them back. At each level up, a Mage can forget a non-Effect 
+                                Rudiment. If they do so, they gain an Effect Rudiment of their choice.</p>
                         </div>
                         <div class='paragraphShell marginBottom anchor'>
                                 <div id='4pVEVkxwFuUM' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4pVEVkxwFuUM'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>SPELL LIST</strong> A Mage gains no new Rudiments at
-                                        1st level but an additional Rudiment every 3rd level.</p>
+                                        1st level but an additional Rudiment every 3rd level. Any new Rudiments must be Effect Rudiments.</p>
                         </div>
                         <div class='anchor'>
                                 <div id=4hgsHpJnRyjXy class='anchorTag'></div>
@@ -6026,7 +6040,7 @@
                                 <div id='4QtmctmCLNA' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4QtmctmCLNA'"></app-bm-chapter-icon>
                                 <p>Once the Speaker decides what their spell will look like (Shape, Origin, Range, and
-                                        Effect) and what its Drain will be, they roll 343 (note that these dice don’t
+                                        Effect) and what its Drain will be, they roll 3d3 (note that these dice don’t
                                         explode). If the result is higher than the Drain cost, the spell comes into
                                         being. The Speaker is free to roll less dice and/or smaller dice, if they so
                                         desire.</p>
@@ -6034,7 +6048,7 @@
                         <div class='paragraphShell marginBottom anchor'>
                                 <div id='4xvSTmvOtsJ' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4xvSTmvOtsJ'"></app-bm-chapter-icon>
-                                <p>Speaking words of power takes actually time, specifically 2 seconds per dice rolled.
+                                <p>Speaking words of power takes actually time, specifically 1 seconds per dice rolled.
                                 </p>
                         </div>
                         <div class='paragraphShell anchor'>
@@ -6069,22 +6083,6 @@
                                         level. These spells can be from any Tradition.</p>
                         </div>
                         <div class='paragraphShell anchor'>
-                                <div id='speakersppaliedfol' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'speakersppaliedfol'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>APPLIED FOLKWEIRD</strong> The Speaker,
-                                        through training and mediation is able to apply folkweird in a way that few can.
-                                        When shaping a spell in a Tradition he has the corresponding Advanced Weirdcraft
-                                        Skill in,
-                                        he adds his Rank in it to the number of SP he just channeled.</p>
-                        </div>
-                        <div class='paragraphShell anchor'>
-                                <div id='speakerheslaosbeneidft' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'speakerheslaosbeneidft'"></app-bm-chapter-icon>
-                                <p>He also benefits from a deep understand of the technical side of Weird and so
-                                        purchases of any
-                                        Advanced Weirdcraft Skill is lowered by 4 CrP.</p>
-                        </div>
-                        <div class='paragraphShell anchor marginBottom'>
                                 <div id='4xCQzNGGMmI' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4xCQzNGGMmI'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>SKILL FOCUS (special) </strong>Through the course of her
@@ -6094,7 +6092,7 @@
                                         Advanced Skill at every level up.
                                 </p>
                         </div>
-                        <div class='paragraphShell anchor'>
+                        <div class='paragraphShell anchor marginBottom'>
                                 <div id='polyogrlotabili' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'polyogrlotabili'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>POLYGLOT </strong>Speakers naturally pick up languages in ways that others can only dream of.
@@ -6438,32 +6436,6 @@
                                         Origin. They also take Stress equal to how much they were over.</p>
                         </div>
                         <div class='paragraphShell anchor'>
-                                <div id='4plzBmeeLdgg' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'4plzBmeeLdgg'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>IMPROVED APPLIED FOLKWEIRD</strong> The Wizard,
-                                        through training and mediation is able to apply folkweird in a way that few can.
-                                        When shaping a spell in a Tradition he has the corresponding Advanced Weirdcraft
-                                        Skill in,
-                                        he adds his Rank in it to the number of SP he just channeled.</p>
-                        </div>
-                        <div class='paragraphShell anchor'>
-                                <div id='aweirldaondstinost' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'aweirldaondstinost'"></app-bm-chapter-icon>
-                                <p>A wielder and constrainer of power, the Wizard may also use the SP gained from it to
-                                        lower the number of SPs they
-                                        receive from channeling, thus having a chance at avoiding a disastrous Wild
-                                        Surge or at least minimizing the penalty from one.</p>
-                        </div>
-                        <div class='paragraphShell anchor'>
-                                <div id='theiwxiostraings' class='anchorTag'></div>
-                                <app-bm-chapter-icon [id]="'theiwxiostraings'"></app-bm-chapter-icon>
-                                <p>The Wizard is trained
-                                        as a good student and so takes less time to learn things when it comes to magic.
-                                        Weirdcraft Advanced Skills are 8 CrP cheaper for this Archetype and gains a free
-                                        purchase in one
-                                        every 4 levels.</p>
-                        </div>
-                        <div class='paragraphShell anchor'>
                                 <div id='4pqELgsotSLI' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4pqELgsotSLI'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>WEIRD MEDIUM</strong> The Wizard is a bit more
@@ -6513,14 +6485,14 @@
                                 <div class='marginBottom paragraphShell anchor'>
                                         <div id='whileholdingthis' class='anchorTag'></div>
                                         <app-bm-chapter-icon [id]="'whileholdingthis'"></app-bm-chapter-icon>
-                                        <p>While holding this item, she may cast any spell with Somatic components as if
+                                        <p>While holding this item, she may cast any spell as if
                                                 the hand was free.
                                                 For armor, the Invested Item offsets the penalty to shaping by 1 Drain
                                                 for every 5 levels the Wizard has obtained. This can only offset the
                                                 penalty, and never lower it below the base speed.
                                                 For weapons and other items, they may also cast spells with a Touch
                                                 Origin on a successful hit, storing one spell indefinitely until it’s
-                                                used.
+                                                used. If it is a ranged weapon, Touch spells are cast from the ammunition.
                                                 Needless to say, this a much favored Medium of battle mages.</p>
                                 </div>
                                 <div class='anchor'>

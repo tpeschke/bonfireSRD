@@ -758,7 +758,8 @@
       <div class='paragraphShell anchor'>
         <div id='10pnJLKKdZDMg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pnJLKKdZDMg'"></app-bm-chapter-icon>
-        <p> If someone does more damage after DR than your Trauma Treshold, that triggers a Con Check vs d20! + the damage dealt.</p>
+        <p> If someone does more damage after DR than your Trauma Treshold, that triggers a Con Check vs d20! + the
+          damage dealt.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10ptDaOMTLdfD' class='anchorTag'></div>
@@ -1433,41 +1434,40 @@
         <app-bm-chapter-icon [id]="'10ZUYLXDPyjP'"></app-bm-chapter-icon>
         <p>The exact bonus will depend on the situation but here are some guidelines:</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='10nhnmukzPij' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10nhnmukzPij'"></app-bm-chapter-icon>
-        <p>Weapon: The defender gets a free attack if the move isn’t successful but when grabbed it means the defender
-          can
-          no longer attack.</p>
+      <div class="marginBottom unarmedShell">
+        <div class="bulletListShell">
+          <h4 class="bulletTriangle">🜂</h4>
+          <div>
+            <p><strong class='orangeHeader'>WEAPON</strong> The defender gets a free attack if the move isn’t successful
+              but when grabbed it means the defender can no longer attack.</p>
+          </div>
+        </div>
+        <div class="bulletListShell">
+          <h4 class="bulletTriangle">🜂</h4>
+          <div>
+            <p><strong class='orangeHeader'>SHIELD</strong> The defender no longer gains any bonus from their shield but
+              still has the defense and Encumbrance penalties.</p>
+          </div>
+        </div>
+        <div class="bulletListShell">
+          <h4 class="bulletTriangle">🜂</h4>
+          <div>
+            <p><strong class='orangeHeader'>ARM</strong> See Weapon if it’s the weapon’s arm and Shield if it’s the
+              shield’s arm. The defender also defends on a d12 vs Pushes and can’t change their facing willingly.</p>
+          </div>
+        </div>
+        <div class="bulletListShell">
+          <h4 class="bulletTriangle">🜂</h4>
+          <div>
+            <p><strong class='orangeHeader'>LEG</strong> Moving above a crawl is impossible and moving at all can only be
+              done after a successful opposed Str check vs d20! + the grabber’s strength. </p>
+              <p>The grabber defends with a d8! unless they’re employing something to let them keep their distance (a lasso or
+                mancatcher, for example). The grabber only defends with a d8! against Throws/Tackles. Their defense dice is
+                lowered by 1 for all facings.</p>
+          </div>
+        </div>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='10fLAZKKRpaW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10fLAZKKRpaW'"></app-bm-chapter-icon>
-        <p>Shield: The defender no longer gains any bonus from their shield but still has the defense and Encumbrance
-          penalties.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10HicIzradDZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10HicIzradDZ'"></app-bm-chapter-icon>
-        <p>Arm: See Weapon if it’s the weapon’s arm and Shield if it’s the shield’s arm. The defender also defends on a
-          d12
-          vs Pushes and can’t change their facing willingly.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10HwdqEWgXTa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10HwdqEWgXTa'"></app-bm-chapter-icon>
-        <p>Leg: Moving above a crawl is impossible and moving at all can only be done after a successful opposed Str
-          check
-          vs d20! + the grabber’s strength. </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10WQejfojjUx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10WQejfojjUx'"></app-bm-chapter-icon>
-        <p>The grabber defends with a d8! unless they’re employing something to let them keep their distance (a lasso or
-          mancatcher, for example). The grabber only defends with a d8! against Throws/Tackles. Their defense dice is
-          lowered by 1 for all facings.</p>
-      </div>
+      
       <div class='paragraphShell anchor'>
         <div id='10dKonceamJO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10dKonceamJO'"></app-bm-chapter-icon>
@@ -2048,6 +2048,62 @@
         <div class="underline"></div>
       </div>
       <div class='anchor'>
+        <div id='clacubaseline' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'clacubaseline'"></app-bm-chapter-icon>
+        <h3>CALCULATING BASELINE COMBAT ABILITIES</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='befwhegetinog' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'befwhegetinog'"></app-bm-chapter-icon>
+        <p> Before we get into trainings and all that jazz, let's calculate your baseline abilties.
+          This is from the corresponding stat as laid out in <a [routerLink]='["/chapter/2"]'>Chapter 12: Stats</a>
+          but here is a quick summary.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='anasorisoie' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'anasorisoie'"></app-bm-chapter-icon>
+        <p> An (A) or (S) means that this abilities will be affected by your Armor and/or Shield, if you're wearing
+          them.</p>
+      </div>
+      <div class="bulletListShell">
+        <h4 class="bulletTriangle">🜂</h4>
+        <div>
+          <p><strong class='orangeHeader'>ATTACK</strong> Dex Mod + Int Mod</p>
+        </div>
+      </div>
+      <div class="bulletListShell">
+        <h4 class="bulletTriangle">🜂</h4>
+        <div>
+          <p><strong class='orangeHeader'>DEFENSE</strong> Dex Mod + Wis Mod + A + S</p>
+        </div>
+      </div>
+      <div class="bulletListShell">
+        <h4 class="bulletTriangle">🜂</h4>
+        <div>
+          <p><strong class='orangeHeader'>INITIATIVE</strong> Dex Mod + Wis Mod + A</p>
+        </div>
+      </div>
+      <div class="bulletListShell">
+        <h4 class="bulletTriangle">🜂</h4>
+        <div>
+          <p><strong class='orangeHeader'>DAMAGE</strong> Str Mod</p>
+        </div>
+      </div>
+      <div class="bulletListShell marginBottom">
+        <h4 class="bulletTriangle">🜂</h4>
+        <div>
+          <p><strong class='orangeHeader'>ENCUMBRANCE</strong> Con Mod + Wis Mod + A + S</p>
+        </div>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='youllalsofhaive' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youllalsofhaive'"></app-bm-chapter-icon>
+        <p>You'll also have Parry and Recovery, which are both based on the weapon you used but Parry may be replaced by
+          your shield's Parry
+          while your Recovery will be affected by your Armor.
+        </p>
+      </div>
+      <div class='anchor'>
         <div id='7pcYyBLwmyXlz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'7pcYyBLwmyXlz'"></app-bm-chapter-icon>
         <h3>ARMOR BASIC TRAINING</h3>
@@ -2133,7 +2189,8 @@
       <div class='paragraphShell anchor'>
         <div id='7pCqTDlPKvxS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'7pCqTDlPKvxS'"></app-bm-chapter-icon>
-        <p>  Weapon training costs 10 CrP and is taken for individual weapons, however its benefits extend to weapons of that
+        <p> Weapon training costs 10 CrP and is taken for individual weapons, however its benefits extend to weapons of
+          that
           share similar features.</p>
       </div>
       <div class='paragraphShell anchor'>

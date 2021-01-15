@@ -1531,36 +1531,6 @@
         </div>
       </div>
       <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t28' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t28'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Thrown Weapons</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.thrown" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t29' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11t29'"></app-bm-chapter-icon>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>

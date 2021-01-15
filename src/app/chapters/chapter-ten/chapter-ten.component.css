@@ -146,6 +146,9 @@
   text-indent: 0;
 }
 
+.unarmedShell {
+  padding: 0 15px
+}
 
 @media (max-width: 450px) {
     .MovementBasicTable {
