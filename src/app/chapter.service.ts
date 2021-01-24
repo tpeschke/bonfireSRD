@@ -114,7 +114,7 @@ export class ChapterService {
       case 7:
         return 'Skills';
       case 8:
-        return 'Social';
+        return 'Confrontation';
       case 9:
         return 'Combat';
       case 10:
