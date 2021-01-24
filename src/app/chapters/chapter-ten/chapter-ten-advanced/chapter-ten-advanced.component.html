@@ -1577,80 +1577,56 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='wheretyourpa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'wheretyourpa'"></app-bm-chapter-icon>
-        <p>Whether you're playing a knight or a bounty hunter, you might find it's to your advantage
-          to find yourself something to ride on and you'll probably want to know how you can use that
-          mount in combat, so here are some rules to help you out.
-        </p>
+        <p>Whether you're playing a knight or a bounty hunter, you might find it's to your advantage to find yourself something to ride on and you'll probably want to know how you can use that mount in combat, so here are some rules to help you out.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='yourmountwill' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'yourmountwill'"></app-bm-chapter-icon>
-        <p>Your mount will have a Turning, Acceleration, and Deceleration stat: this tells you how long,
-          at base, it takes you to turn 180 degrees, speed up 1 Speed Category, or slowdown 1 Speed Category.
-          You declare your intent, wait the few seconds, and, BAM, you've done.
-        </p>
+        <p>So you’re not making constant Skill Checks all the time, Riding, in this case, is handled a little bit differently. Your mount will have a Turning, Acceleration, and Deceleration stat: this tells you how long, at base, to perform the corresponding action. You can lower all of these base times by up to your Riding Skill, however, you can never go below 3 seconds.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='notehowever' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'notehowever'"></app-bm-chapter-icon>
-        <p>Note, however, that you can't do more than one of these things at a time and once you've committed,
-          you've committed because your mount has its own inertia that it has to deal with and there is a delay
-          between you telling it something and it actually doing it, with the exception of Turning, which can be stopped
-          at any time (so you don't have to always turn your mount 180 degrees), but you don't retroactively straighten
-          out your mount to where it was.
-        </p>
+        <p>You can also never perform more than one action at a time and you can’t change actions until the last one you declared is finished since your mount has its own inertia.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='wsofroeemxpale' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'wsofroeemxpale'"></app-bm-chapter-icon>
-        <p class="italic">So, for example, if you have a mount with a Turning of 8, that means it turns 22.5 degrees per
-          second.
-          If you declare you're turning and then 3 seconds later, you decide, never mind, you'll still have turned 67.5
-          degrees. A lot of this should be commonsense but I figure it's worth pointing out, just in case.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thatbeingsaid' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thatbeingsaid'"></app-bm-chapter-icon>
-        <p>That being said, you can lower all of these base times by up to your Riding Skill, however, a mule
-          will probably never be as quick on its hooves as a courser, so you can only lower it to half of what the
-          unmodified value for that derived stat is. So, if your mount's Turning is 8, the lower is can go is 4.
-        </p>
+        <p><strong class='orangeHeader'>TURNING </strong>This is the base time it takes to turn one Facing (45 degrees). This is, however, affected by your speed, adding 1 second to the base time for every Speed Category above Walking your mount is going.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
+        <div id='thatbeingsaid' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thatbeingsaid'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>ACCELERATION/DECELERATION </strong>This moves your mount up or down 1 Speed Category, respectively.</p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='additoinalforeturining' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'additoinalforeturining'"></app-bm-chapter-icon>
-        <p>Additionally, for Turning, your mount's Speed Category does prevent it from turning as quickly as you might
-          like
-          with each Speed Category above a Walk adding 2 Seconds to it.
-        </p>
+        <p><strong class='orangeHeader'>DOING SOMETHING DANGEROUS </strong>Your mount might also be smarter than you and decide that it really doesn't want to put itself in danger. This could be charging into a wall of pikes or just a wall. In this case, you’ll have to convince your mount into taking the action.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='soifyouhavetoapylcoe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'soifyouhavetoapylcoe'"></app-bm-chapter-icon>
-        <p>So, if you have to think further ahead in combat so that you don't run into anything, what's the point of
-          using a mount?
-        </p>
+        <p>This acts exactly like a Morale Conflict with the rider adding his Riding Skill as an additional dice and the mount adding its Bravery. Note that if the Bravery is a negative dice, it gets added to the oppositions roll.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='becaisetios' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'becaisetios'"></app-bm-chapter-icon>
-        <p>1) because it's awesome and 2) you get a lot of extra bonuses for doing so.
-        </p>
+        <p>And finally, the opposition will also add dice equal to how much damage if could do to the mount (not including DR), though if it’s non-piercing, you’re going to half the damage dice.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='becaisetios' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'becaisetios'"></app-bm-chapter-icon>
+        <p>Since this is an Appeal, Stress Dice are still given out to both rider and mount.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='forestatert' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'forestatert'"></app-bm-chapter-icon>
-        <p>For starters, if you get that nice +2 to Defense and +d4! to damage if your opponent isn't mounted or on a
-          rock
-          or something, as well as additional damage dice if you're using a weapon specifically meant to be used from
-          horse
-          back (though you get this die even if you're on a camel, lizard, or what-have you).
-        </p>
+        <p class="italic">So, charging into a pike (3d6! Damage) would mean rolling vs a d20!+3d6!, while charging a man brandishing a schiavona would be a d20!+d6! (or 2d3!, either is valid and up to you). Trying to get it to leap a chasm with a 40 ft drop would also cause you to make a roll vs d20!+3d12!.</p>
       </div>
       <div class='tableOverflowWindow MountedTable'>
         <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
-          <h1 class='tableTitle'>Mounted Bonuses</h1>
+          <h1 class='tableTitle'>Rider Benefits</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -1687,22 +1663,24 @@
           </div>
         </div>
       </div>
+      <div class='paragraphShell anchor'>
+        <div id='thatbeingsaid' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thatbeingsaid'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>RIDER BENEFITS </strong>So, if you have to think further ahead in combat so that you don't run into anything, what's the point of using a mount? 1) because it's awesome and 2) you get a lot of extra bonuses for doing so.</p>
+      </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='ontopeofhtisobased' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ontopeofhtisobased'"></app-bm-chapter-icon>
-        <p>On top of this, based on the Speed you're moving, you get a bonus to your Defense and bonus to your effective
-          damage
-          when considering Knock Back.
-          Should you gain a successful double Knock Back, your opponent is trampled under hoof, dealing d6! damage and
-          allowing
-          you continue past them. Note that bonuses to Defense are doubled against ranged attacks, which are the values
-          in paranthesis
-          for ease of reference.
-        </p>
+        <p>For starters, if you get that nice +2 to Defense and +d4! to damage if your opponent isn't mounted or equalizing your height somehow, as well as additional damage dice if you're using a weapon specifically meant to be used from horseback (though you get this die even if you're on a camel, lizard, or what-have you), regardless of height difference.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='ontopeofhtisobased' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ontopeofhtisobased'"></app-bm-chapter-icon>
+        <p>On top of this, based on the Speed you're moving, you get a bonus to your Defense and bonus to your effective damage when considering Knock Back. Should you gain a successful double Knock Back, your opponent is trampled under hoof, dealing d8! damage and allowing you to continue past them. Note that bonuses to Defense are doubled against ranged attacks, which are the values in parenthesis for ease of reference.</p>
       </div>
       <div class='tableOverflowWindow MountedTable'>
         <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
-          <h1 class='tableTitle'>Mounted Penalties</h1>
+          <h1 class='tableTitle'>Rider Penalties</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -1740,37 +1718,20 @@
         </div>
       </div>
 
-      <div class='paragraphShell marginBottom anchor'>
+      <div class='paragraphShell anchor'>
         <div id='bonfitofofjociej' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'bonfitofofjociej'"></app-bm-chapter-icon>
-        <p>But, of course, it isn't all good news: moving at higher speeds means that
-          it's harder to hit things, especially in ranged combat. For each
-          Speed Category above Strolling, you lower your Attack Dice by 1 size for melee
-          and 2 sizes for ranged. This can bring you below a d4! and into the negative so
-          lowering 1 size down from a d4! means you roll a d0 and stepping 2 sizes down
-          gives you a -d4! to your attack. A handy table has been provided. Remember that your Riding Skill Rank does
-          off set this,
-          giving you a +1 to your Attack Dice size for each Rank, up to a d20!.
-        </p>
+        <p><strong class='orangeHeader'>RIDER PENALTIES </strong>But, of course, it isn't all good news: moving at higher speeds means that it's harder to hit things, especially in ranged combat. </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='yourmountmight' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'wheretyourpa'"></app-bm-chapter-icon>
-        <p>Your mount might also be smarter than you and decide that it really doesn't want to
-          put itself in danger. To get your mount to do something that could cause it damage,
-          you roll a Riding Check + the Mount’s Bravery vs d20! + the amount of damage involved
-          without the mount’s DR factored in. The exception to this is when presented with a crushing
-          or slashing weapon, in which case you half the bonus the enemy d20! gets, rounded down.
-        </p>
+        <p>For each Speed Category above Strolling, you lower your Attack Dice by 1 size for melee and 2 sizes for ranged. This can bring you below a d4! and into the negative so lowering 1 size down from a d4! means you roll a d0 and stepping 2 sizes down gives you a -d4! to your attack. A handy table has been provided. </p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='sochariggienoapike' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'sochariggienoapike'"></app-bm-chapter-icon>
-        <p>So, charging into a pike (3d6! Damage) would mean rolling vs a d20!+3d6!, while
-          charging a man brandishing a schiavona would be a d20!+d6! (or 2d3!, either is valid and up to you).
-          Trying to get it to leap a chasm with a 40 ft drop would also cause you to make a roll
-          vs d20!+3d12!.
-        </p>
+        <p>Remember that your Riding Skill Rank does offset this, giving you a +1 to your Attack Dice size for each Rank, which can bring it up past the standard d20!.</p>
       </div>
 
       <div class='anchor'>
