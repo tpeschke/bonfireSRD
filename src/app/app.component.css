@@ -30,6 +30,7 @@
 .footHolder a {
     color: whitesmoke;
     font-family: "umbria";
+    font-weight: unset;
 }
 
 .footHolder a:hover {

@@ -168,16 +168,6 @@
   margin-top: 80px;
 }
 
-.CamouflagingObjectsTable {
-  width: 200px;
-  float: left;
-  margin: 0 15px 0 0;
-}
-
-.CamouflagingObjectsvalue {
-  width: 100px;
-}
-
 .TrackingCheckTable {
   width: 250px;
   float: left;
@@ -235,7 +225,6 @@
   .StealthSpeedTable,
   .SkillDifficultyTable,
   .LockPickingTable,
-  .CamouflagingObjectsTable,
   .TrackingCheckTable,
   .DistractionCheckTable,
   .RecruitingCheckTable,

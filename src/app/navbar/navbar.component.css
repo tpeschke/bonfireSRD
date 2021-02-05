@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   padding: 10px;
   color: white;
+  font-weight: unset;
   min-width: 6%;
 }
 
