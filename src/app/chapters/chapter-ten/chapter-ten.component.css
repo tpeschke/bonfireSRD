@@ -1,3 +1,18 @@
+.equipmentTable {
+  float: left;
+  padding-right: 15px;
+  width: unset;
+}
+
+.tableRow .tableValue:first-child {
+  padding: 0px;
+}
+
+.equipmentvalue {
+  width: 50%;
+  padding: 7px 4px;
+}
+
 .MovementBasicTable {
   width: 200px;
   float: left;
@@ -13,13 +28,15 @@
   background: #222;
   color: whitesmoke;
   width: 100%;
+  font-size: unset;
 }
 
 .headerSide {
   position: absolute;
   color: whitesmoke;
   top: 80px;
-  left: 15px;
+  left: -15px;
+  font-size: unset;
 }
 
 .movementvalue {
@@ -32,7 +49,8 @@
 
 .tableValue .movementvalue:first-child {
   background: #222;
-  width: 50px;
+  width: 40px;
+  min-width: unset;
   height: 24px;
   margin-bottom: 0;
 }

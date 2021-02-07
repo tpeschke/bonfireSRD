@@ -96,7 +96,7 @@
           includes handy references to other rules found in this chapter as well.</p>
       </div>
       <div class='tableOverflowWindow movementTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "665px"}'>
+        <div class='tableOuterShell' [ngStyle]='{width: "605px"}'>
           <h1 class='tableTitle'>Movement</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
@@ -728,6 +728,53 @@
           second on the Clock. Once the Clock reaches that new number, he may attack again. </p>
       </div>
       <div class='anchor'>
+        <div id='breakgeheading' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'breakgeheading'"></app-bm-chapter-icon>
+        <h3>BREAKAGE; WEAPON, ARMOR, & SHIELDS</h3>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom equipmentTable'>
+        <div id='11t34' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t34'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "200px"}'>
+          <h1 class='tableTitle'>Shield And Weapon Breakage</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Type</p>
+                <p class='equipmentvalue TableIndividual'>Threshold</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Polearms</p>
+                <p class='equipmentvalue TableIndividual'>10</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Shields & Armor</p>
+                <p class='equipmentvalue TableIndividual'>15</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Other Weapons</p>
+                <p class='equipmentvalue TableIndividual'>20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pUwNiCCaGDM' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pUwNiCCaGDM'"></app-bm-chapter-icon>
+        <p>When you parry with a shield or weapon, or when your armor absorbs damage, if the damage after DR is greater than a certain threshold, the item gains 1 Wear, which leads to a greater chance of it breaking.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='11pSdktEJyxqh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pSdktEJyxqh'"></app-bm-chapter-icon>
+        <p>If it doubles or triples this threshold, you gain double and triple the Wear, and so on.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pueoODsDRGh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pueoODsDRGh'"></app-bm-chapter-icon>
+        <p>More on Wear can be found in <a [routerLink]='["/chapter/10"]' [queryParams]='{ search : "wearheading"}'>Chapter 10: Equipment</a>.</p>
+      </div>
+      <div class='anchor'>
         <div id='10DSTACCyEqI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10DSTACCyEqI'"></app-bm-chapter-icon>
         <h3>KNOCK-BACKS</h3>
@@ -1354,19 +1401,13 @@
         <div id='10pkrnpMwjpMo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pkrnpMwjpMo'"></app-bm-chapter-icon>
         <p> Should the attack succeed, he delays the defender’s next attack by a number of seconds equal to 1 for every
-          3 full points he scored above the defender’s total.</p>
+          2 full points he scored above the defender’s total.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='10pejgnFJKYZC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pejgnFJKYZC'"></app-bm-chapter-icon>
-        <p> If the difference between the attack and defense was greater than 15, the attacker has a chance of breaking
-          the opponent’s weapon</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='10pTTlrAdnTtr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10pTTlrAdnTtr'"></app-bm-chapter-icon>
-        <p> The defender’s weapon is treated as a shield using the Shield Breakage rules, with the attacker dealing his
-          damage to the weapon.</p>
+        <p> The attacker also gains a bonus to damage when performing this Tactic: Piercing weapons increase 1 die by 1 size. Slashing weapons increase all dice by 1 size and crushing weapons
+          increase its highest die by 2 sizes. If the damage is greater than triple the breakage threshold, the weapon automatically breaks.</p>
       </div>
       <div class='anchor'>
         <div id='10gCjjGGtsOo' class='anchorTag'></div>
