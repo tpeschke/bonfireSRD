@@ -1390,7 +1390,287 @@
           </div>
         </div>
       </div>
-
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t21' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t21'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Armor</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.armor" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="anchor">
+        <div id="11hgKBqkCxSAI" class="anchorTag"></div>
+        <h1>Armor Table Header Explanation</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pTBHqvIoStI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pTBHqvIoStI'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>DR</strong> This number is subtracted from the damage dealt by a weapon.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pcwwNxxyjiN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pcwwNxxyjiN'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Def</strong> All armor weighs you down and makes it harder to dodge incoming
+          attacks. This number is added to your Defense roll.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pirLlDxzXYH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pirLlDxzXYH'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Init Mod</strong> Armor is restricting, even at the best of times. This is added
+          to your Initiative roll at the start of combat.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pIsNmoGVETY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pIsNmoGVETY'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Rec Mod</strong> Again, armor is restricting. This is added to your weapon’s
+          Recovery.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pogIhwZsyIr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pogIhwZsyIr'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Type</strong> This donates what category your armor falls in. You should note
+          that
+          should you purchase Medium or Heavy armor, this comes with a Gambeson that’s worn underneath for comfort.
+          This
+          is already factored into the other stats of the armor.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pKmwLYNtWvx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pKmwLYNtWvx'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Weight</strong> This is how heavy your armor is for encumbrance when your armor
+          is
+          carried on your person. Worn armor doesn’t count towards your encumbrance.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pKfXsKbDmWQ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pKfXsKbDmWQ'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Encumb</strong> This number is added to your Encumbrance as doing things
+          with a weight on you is tiring.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='11pWXWuVeYtxK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pWXWuVeYtxK'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Skill Adj</strong> Armor, regardless of how fitted, is restricting and heavy,
+          making it harder to perform certain skills in certain gear. This is the number applied to physical Skill
+          Checks.</p>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t32' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t32'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "540px"}'>
+          <h1 class='tableTitle'>Armor Stats</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Dr</p>
+                <p class='equipmentvalue TableIndividual'>Def</p>
+                <p class='equipmentvalue TableIndividual'>Init Mod</p>
+                <p class='equipmentvalue TableIndividual'>Rec Mod</p>
+                <p class='equipmentvalue TableIndividual'>Type</p>
+                <p class='equipmentvalue TableIndividual'>Encumb</p>
+                <p class='equipmentvalue TableIndividual'>Skill Adj</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Pelt</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>Light</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Bone</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>Light</p>
+                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Buff Coat</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>Light</p>
+                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Gambeson</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>Light</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Leather</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>Light</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Coat Of Plates</p>
+                <p class='equipmentvalue TableIndividual'>1/d</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>Medium</p>
+                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>-4</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Scale</p>
+                <p class='equipmentvalue TableIndividual'>2/d</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>Medium</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>-4</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Lamellar</p>
+                <p class='equipmentvalue TableIndividual'>3/d</p>
+                <p class='equipmentvalue TableIndividual'>-5</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>Medium</p>
+                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'>-4</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Brigandine</p>
+                <p class='equipmentvalue TableIndividual'>3/d</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>Medium</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>-4</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Maile</p>
+                <p class='equipmentvalue TableIndividual'>1/d + 2</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
+                <p class='equipmentvalue TableIndividual'>1</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>Heavy</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>-8</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Interlocking Maile</p>
+                <p class='equipmentvalue TableIndividual'>3/d + 1</p>
+                <p class='equipmentvalue TableIndividual'>-3</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>Heavy</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>-8</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Plated Maile</p>
+                <p class='equipmentvalue TableIndividual'>3/d + 3</p>
+                <p class='equipmentvalue TableIndividual'>-4</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>Heavy</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>-8</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Full Plate</p>
+                <p class='equipmentvalue TableIndividual'>4/d + 2</p>
+                <p class='equipmentvalue TableIndividual'>-4</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>Heavy</p>
+                <p class='equipmentvalue TableIndividual'>10</p>
+                <p class='equipmentvalue TableIndividual'>-8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="anchor">
+        <div id="11hxJgcyHTTRc" class="anchorTag"></div>
+        <h1>Armor Bonuses</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='11pahrBWughMm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pahrBWughMm'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Bone</strong> This armor is especially effective when channeling magic. It only
+          increases your channeling time by 5 if the legs and arms are uncovered and 10 if you wear the gauntlets and
+          boots.</p>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t8' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t8'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Beverages</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.beverages" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t2' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11t2'"></app-bm-chapter-icon>
@@ -1664,6 +1944,193 @@
           </div>
         </div>
       </div>
+      
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t10' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Livestock Feed</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.feed" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t11' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Meat</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.meat" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="anchor">
+        <div id="11hCvqhFlEIMU" class="anchorTag"></div>
+        <h1>Poisons & Toxins</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='11pbBSwmAHOQp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pbBSwmAHOQp'"></app-bm-chapter-icon>
+        <p> More information about poisons and the rules pertaining to such will be found in <a
+            [routerLink]='["/chapter/14"]' [queryParams]="{search: '15hThjcdwfpAY'}">Chapter 14: Miscellaneous
+            Rules.</a></p>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t14' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Poisons And Toxins</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.poisons" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t15' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "350px"}'>
+          <h1 class='tableTitle'>Poison Effects</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Poison</p>
+                <p class='poisonvalue TableIndividual'>Effect</p>
+                <p class='poisonvalue TableIndividual'>Delivery</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Blacknessel</p>
+                <p class='poisonvalue TableIndividual'>2/20 Sec/Int/1</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Blue Glory</p>
+                <p class='poisonvalue TableIndividual'>1/5 Sec/Str/4</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Bondweed</p>
+                <p class='poisonvalue TableIndividual'>3/1 Min/Stress/7</p>
+                <p class='poisonvalue TableIndividual'>Contact</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Griffin Hair</p>
+                <p class='poisonvalue TableIndividual'>2/3 Min/Encumb/4</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Lylullin</p>
+                <p class='poisonvalue TableIndividual'>2/15 Sec/Wis/4</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Maidenscap</p>
+                <p class='poisonvalue TableIndividual'>5/1 Hour/Con/3</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Palm Of St Germain</p>
+                <p class='poisonvalue TableIndividual'>4/5 Sec/Cha/3</p>
+                <p class='poisonvalue TableIndividual'>Ingestion</p>
+              </div>
+              <div class='tableValue'>
+                <p class='poisonvalue TableIndividual'>Tears Of Sicyon</p>
+                <p class='poisonvalue TableIndividual'>2/10 Sec/Dex/6</p>
+                <p class='poisonvalue TableIndividual'>Contact</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t12' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t12'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Rations And Ingredients</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.rations" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t6' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11t6'"></app-bm-chapter-icon>
@@ -1770,6 +2237,307 @@
           </div>
         </div>
       </div>
+      
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t22' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t22'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Shields</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.shields" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="anchor">
+        <div id="11hyyTygqlCvx" class="anchorTag"></div>
+        <h1>Shield Table Header Explanation</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pOSmBFcWWTs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pOSmBFcWWTs'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Size</strong> This indicates the general size of a shield. It also determines
+          how
+          tough your shield is.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pnBNacBoPah' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pnBNacBoPah'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>DR</strong> This number is subtracted from the damage dealt by a weapon on a
+          successful parry with a shield.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pjjvpjwrSJx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pjjvpjwrSJx'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Def</strong> This is the number that you subtract from your character’s defense.
+          Lugging a huge piece of material on the end of your arm makes dodging a bit difficult. Additionally, you’re
+          often moving a shield into harm’s way, meaning, overall, you get hit more while wielding one.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11plnGNHvaaxY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11plnGNHvaaxY'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Parry</strong> Some shields are balanced better than others and that allows you
+          to
+          deflect blows more effectively. This number is the shield’s Parry Threshold. This is overrides by your
+          weapon’s Parry. Parrying with a shield subjects it to the Shield Breakage rules.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pvXGZpbHuko' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pvXGZpbHuko'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Cover</strong> This dice is added to your Defense roll against ranged weapons.
+          If
+          you’re actively crouching behind it, you instead add the maximum value of any dice and roll of that dice
+          (i.e., a d8, you add d8 + 8,
+          for
+          d12 + d8, you add d12 + d8 + 20, etc.).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11MSnDKQdOaY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11MSnDKQdOaY'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Flanks</strong> This is the number of additional attackers from the side
+          that the shield can defend against. More on that is found in <a [routerLink]='["/chapter/10"]'
+            [queryParams]='{search: "10hgUnxGAkHaoZ"}'>Chapter
+            10: Combat</a></p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11plQrSeeiIsR' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11plQrSeeiIsR'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Weight</strong> This is how heavy your shield is for encumbrance.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pmWczObrKZK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pmWczObrKZK'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Encumb</strong> This number is added to your Encumbrance as doing things
+          with a weight on you is tiring.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pDOMrTxJFzN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pDOMrTxJFzN'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Bonus</strong> Some shields have additional unique bonuses. If there is a ‘yes’
+          in
+          this column, look up the shield in the following section to find out more details.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thisisarandomcene' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thisisarandomcene'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>For</strong> This is a recommendation for who would benefit most from using this
+          type of shield.
+          "S" stands for Specialist, meaning that if you're a primarily a shield fighter, this shield will get
+          drastically better as you take
+          Advanced Trainings in it but it will not serve your average person well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='wstandsforawarioior' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'wstandsforawarioior'"></app-bm-chapter-icon>
+        <p>"W" stands for warrior: this is a solid shield for frontline fighters who are going to be specializing in
+          other things and only lightly
+          deeping into Shield Advanced Trainings.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='asstandsforanyone' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'asstandsforanyone'"></app-bm-chapter-icon>
+        <p>"A" stands for anyone: these shields serve as cheap replacements for armor and anyone can pick one of these
+          up and get an instant
+          benefit from the.
+        </p>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t33' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Shield Stats</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Dr</p>
+                <p class='equipmentvalue TableIndividual'>Def</p>
+                <p class='equipmentvalue TableIndividual'>Parry</p>
+                <p class='equipmentvalue TableIndividual'>Cover</p>
+                <p class='equipmentvalue TableIndividual'>Flanks</p>
+                <p class='equipmentvalue TableIndividual'>Encumb</p>
+                <p class='equipmentvalue TableIndividual'>Bonus</p>
+                <p class='equipmentvalue TableIndividual'>For</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Buckler</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+                <p class='equipmentvalue TableIndividual'>3/d + 8</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>Yes</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Clothe</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'> </p>
+                <p class='equipmentvalue TableIndividual'>A</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Figure Eight</p>
+                <p class='equipmentvalue TableIndividual'>M</p>
+                <p class='equipmentvalue TableIndividual'>2/d + 6</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>d8!+2</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>Yes</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Heater</p>
+                <p class='equipmentvalue TableIndividual'>L</p>
+                <p class='equipmentvalue TableIndividual'>2/d + 4</p>
+                <p class='equipmentvalue TableIndividual'>-7</p>
+                <p class='equipmentvalue TableIndividual'>15</p>
+                <p class='equipmentvalue TableIndividual'>2d8!+7</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>13</p>
+                <p class='equipmentvalue TableIndividual'> </p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Kite</p>
+                <p class='equipmentvalue TableIndividual'>M</p>
+                <p class='equipmentvalue TableIndividual'>2/d + 4</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>d6!+2</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'> </p>
+                <p class='equipmentvalue TableIndividual'>W</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Light</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+                <p class='equipmentvalue TableIndividual'>3/d + 6</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
+                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'>d4!+1</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'> </p>
+                <p class='equipmentvalue TableIndividual'>W</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Pavise</p>
+                <p class='equipmentvalue TableIndividual'>L</p>
+                <p class='equipmentvalue TableIndividual'>4/d + 2</p>
+                <p class='equipmentvalue TableIndividual'>-8</p>
+                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>d20!</p>
+                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>20</p>
+                <p class='equipmentvalue TableIndividual'>Yes</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Round</p>
+                <p class='equipmentvalue TableIndividual'>M</p>
+                <p class='equipmentvalue TableIndividual'>2/d + 8</p>
+                <p class='equipmentvalue TableIndividual'>-5</p>
+                <p class='equipmentvalue TableIndividual'>10</p>
+                <p class='equipmentvalue TableIndividual'>d6!+5</p>
+                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>Yes</p>
+                <p class='equipmentvalue TableIndividual'>S</p>
+              </div>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Tower</p>
+                <p class='equipmentvalue TableIndividual'>L</p>
+                <p class='equipmentvalue TableIndividual'>2/d + 1</p>
+                <p class='equipmentvalue TableIndividual'>-8</p>
+                <p class='equipmentvalue TableIndividual'>16</p>
+                <p class='equipmentvalue TableIndividual'>2d8!+8</p>
+                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>9</p>
+                <p class='equipmentvalue TableIndividual'> </p>
+                <p class='equipmentvalue TableIndividual'>A</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="anchor">
+        <div id="11hiFfWgYkSiH" class="anchorTag"></div>
+        <h1>Shield Bonuses</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pqoCtjwWCGN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pqoCtjwWCGN'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Buckler</strong> The buckler is a lightweight shield which relies more on
+          parrying
+          blows than outright stopping them. The buckler also has the added benefit of being rather small with almost
+          no
+          weight, allowing it to be worn but not used while wielding two handed weapons. You receive no bonuses when
+          doing this but it means that if you do switch over to a one handed weapon, you instantly get the buckler’s
+          bonus.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pjPQRZuGkJV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pjPQRZuGkJV'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Figure Eight</strong> This shield is designed specifically for phalanx or shield
+          wall tactics. This gives a +2 Parry and a Cover of d4 to anyone fighting on either side of you. This stacks
+          with any Parry or Cover that they have from either their weapon or shields.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11piBQazuAqiq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11piBQazuAqiq'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Pavise</strong> This shield is less a shield and more portable cover employed by
+          gunners and crossbowman, rather than fighters.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pZEstZlVKJh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pZEstZlVKJh'"></app-bm-chapter-icon>
+        <p> However, the Pavise can be set up using a kick stand in the back, giving anyone crouching behind it
+          basically complete cover and allowing that person the ability to steady their weapon on it.</p>
+      </div>
+
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='11pvCJAPyHQsi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pvCJAPyHQsi'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Round</strong> This shield was meant for hitting your opponent, trying to throw
+          them off guard. On a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next
+          attack
+          by 5 seconds.</p>
+      </div>
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t9' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
@@ -1799,124 +2567,7 @@
           </div>
         </div>
       </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t8' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t8'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Beverages</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.beverages" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t10' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Livestock Feed</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.feed" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t11' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Meat</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.meat" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t12' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t12'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Rations And Ingredients</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.rations" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t13' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
@@ -1941,102 +2592,6 @@
                   {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
                 <p class='equipmentvalue TableIndividual'>
                   {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="anchor">
-        <div id="11hCvqhFlEIMU" class="anchorTag"></div>
-        <h1>Poisons & Toxins</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='11pbBSwmAHOQp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pbBSwmAHOQp'"></app-bm-chapter-icon>
-        <p> More information about poisons and the rules pertaining to such will be found in <a
-            [routerLink]='["/chapter/14"]' [queryParams]="{search: '15hThjcdwfpAY'}">Chapter 14: Miscellaneous
-            Rules.</a></p>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t14' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Poisons And Toxins</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.poisons" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t15' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "350px"}'>
-          <h1 class='tableTitle'>Poison Effects</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Poison</p>
-                <p class='poisonvalue TableIndividual'>Effect</p>
-                <p class='poisonvalue TableIndividual'>Delivery</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Blacknessel</p>
-                <p class='poisonvalue TableIndividual'>2/20 Sec/Int/1</p>
-                <p class='poisonvalue TableIndividual'>Ingestion</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Blue Glory</p>
-                <p class='poisonvalue TableIndividual'>1/5 Sec/Str/4</p>
-                <p class='poisonvalue TableIndividual'>Ingestion</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Bondweed</p>
-                <p class='poisonvalue TableIndividual'>3/1 Min/Stress/7</p>
-                <p class='poisonvalue TableIndividual'>Contact</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Griffin Hair</p>
-                <p class='poisonvalue TableIndividual'>2/3 Min/Encumb/4</p>
-                <p class='poisonvalue TableIndividual'>Ingestion</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Lylullin</p>
-                <p class='poisonvalue TableIndividual'>2/15 Sec/Wis/4</p>
-                <p class='poisonvalue TableIndividual'>Ingestion</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Maidenscap</p>
-                <p class='poisonvalue TableIndividual'>5/1 Hour/Con/3</p>
-                <p class='poisonvalue TableIndividual'>Ingestion</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Palm Of St Germain</p>
-                <p class='poisonvalue TableIndividual'>4/5 Sec/Cha/3</p>
-                <p class='poisonvalue TableIndividual'>Ingestion</p>
-              </div>
-              <div class='tableValue'>
-                <p class='poisonvalue TableIndividual'>Tears Of Sicyon</p>
-                <p class='poisonvalue TableIndividual'>2/10 Sec/Dex/6</p>
-                <p class='poisonvalue TableIndividual'>Contact</p>
               </div>
             </div>
           </div>
@@ -2161,157 +2716,9 @@
         </div>
       </div>
       <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t20' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t20'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Ranged Munitions</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.munitions" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t21' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t21'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Armor</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.armor" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t22' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t22'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Shields</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.shields" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t23' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Swords</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.swords" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t24' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Sidearms</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.sidearms" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t25' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Axes</h1>
+          <h1 class='tableTitle'>Weapons, Axes</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -2338,38 +2745,9 @@
         </div>
       </div>
       <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t26' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Trauma</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.trauma" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t27' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Polearms</h1>
+          <h1 class='tableTitle'>Weapons, Polearms</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -2396,9 +2774,9 @@
         </div>
       </div>
       <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t29' class='anchorTag'></div>
+        <div id='11t24' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Ranged Weapons</h1>
+          <h1 class='tableTitle'>Weapons, Sidearms</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -2409,7 +2787,7 @@
                 <p class='equipmentvalue TableIndividual'>Nearby Market</p>
                 <p class='equipmentvalue TableIndividual'>Distant City</p>
               </div>
-              <div *ngFor="let content of tables.ranged" class='tableValue'>
+              <div *ngFor="let content of tables.sidearms" class='tableValue'>
                 <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
@@ -2424,6 +2802,65 @@
           </div>
         </div>
       </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t23' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Weapons, Swords</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.swords" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t26' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Weapons, Trauma</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.trauma" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="anchor">
         <div id="11hOUgQlIPWxE" class="anchorTag"></div>
         <h1>Weapon Table Header Explanation</h1>
@@ -2489,6 +2926,142 @@
                 <p class='armorvalue TableIndividual'>Parry</p>
                 <p class='armorvalue TableIndividual'>Measure</p>
                 <p class='armorvalue TableIndividual'>Bonus</p>
+              </div>
+              <div class='tableValue subtitle'>
+                <p class='armorvalue TableIndividual'>Axes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Bardiche</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>d12!+4d3!</p>
+                <p class='armorvalue TableIndividual'>16</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>5</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Battle Axe</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d8!+3d4!</p>
+                <p class='armorvalue TableIndividual'>15</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>2.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Handaxe</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>3d4!</p>
+                <p class='armorvalue TableIndividual'>10</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>1</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Horsemans Pick</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d12!+2d4!</p>
+                <p class='armorvalue TableIndividual'>13</p>
+                <p class='armorvalue TableIndividual'>P</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Lochaber Axe</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>d12!+3d4!</p>
+                <p class='armorvalue TableIndividual'>17</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>6</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue subtitle'>
+                <p class='armorvalue TableIndividual'>Sidearms</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Cinquedea</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>2d3!+d6!</p>
+                <p class='armorvalue TableIndividual'>9</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>1.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Dagger</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>d6!</p>
+                <p class='armorvalue TableIndividual'>6</p>
+                <p class='armorvalue TableIndividual'>P</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'>1</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Dagger</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>d4!+d3!</p>
+                <p class='armorvalue TableIndividual'>6</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'>1</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Dusack</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>2d4!+d3!</p>
+                <p class='armorvalue TableIndividual'>8</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'>2.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Katzbalger</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>d4+2d3!</p>
+                <p class='armorvalue TableIndividual'>9</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>4</p>
+                <p class='armorvalue TableIndividual'>2.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Knife</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>3d3!</p>
+                <p class='armorvalue TableIndividual'>8</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>0.25</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Scourge</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>4d3!</p>
+                <p class='armorvalue TableIndividual'>10</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Stiletto</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>d8!</p>
+                <p class='armorvalue TableIndividual'>4</p>
+                <p class='armorvalue TableIndividual'>P</p>
+                <p class='armorvalue TableIndividual'>4</p>
+                <p class='armorvalue TableIndividual'>1.5</p>
+                <p class='armorvalue TableIndividual'> </p>
               </div>
               <div class='tableValue subtitle'>
                 <p class='armorvalue TableIndividual'>Swords</p>
@@ -2592,265 +3165,6 @@
                 <p class='armorvalue TableIndividual'>0</p>
                 <p class='armorvalue TableIndividual'>7</p>
                 <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue subtitle'>
-                <p class='armorvalue TableIndividual'>Sidearms</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Cinquedea</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>2d3!+d6!</p>
-                <p class='armorvalue TableIndividual'>9</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>1.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Dagger</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>d6!</p>
-                <p class='armorvalue TableIndividual'>6</p>
-                <p class='armorvalue TableIndividual'>P</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'>1</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Dagger</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>d4!+d3!</p>
-                <p class='armorvalue TableIndividual'>6</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'>1</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Dusack</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>2d4!+d3!</p>
-                <p class='armorvalue TableIndividual'>8</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'>2.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Katzbalger</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>d4+2d3!</p>
-                <p class='armorvalue TableIndividual'>9</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>4</p>
-                <p class='armorvalue TableIndividual'>2.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Knife</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>3d3!</p>
-                <p class='armorvalue TableIndividual'>8</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>0.25</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Scourge</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>4d3!</p>
-                <p class='armorvalue TableIndividual'>10</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Stiletto</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>d8!</p>
-                <p class='armorvalue TableIndividual'>4</p>
-                <p class='armorvalue TableIndividual'>P</p>
-                <p class='armorvalue TableIndividual'>4</p>
-                <p class='armorvalue TableIndividual'>1.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue subtitle'>
-                <p class='armorvalue TableIndividual'>Axes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Bardiche</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>d12!+4d3!</p>
-                <p class='armorvalue TableIndividual'>16</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>5</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Battle Axe</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d8!+3d4!</p>
-                <p class='armorvalue TableIndividual'>15</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>2.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Handaxe</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>3d4!</p>
-                <p class='armorvalue TableIndividual'>10</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>1</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Horsemans Pick</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d12!+2d4!</p>
-                <p class='armorvalue TableIndividual'>13</p>
-                <p class='armorvalue TableIndividual'>P</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Lochaber Axe</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>d12!+3d4!</p>
-                <p class='armorvalue TableIndividual'>17</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>6</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue subtitle'>
-                <p class='armorvalue TableIndividual'>Trauma</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Bec De Corbin</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>d12!+d10!</p>
-                <p class='armorvalue TableIndividual'>12</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Bludgeon</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>d10!</p>
-                <p class='armorvalue TableIndividual'>7</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>1.25</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Club</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d12!</p>
-                <p class='armorvalue TableIndividual'>9</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Goedendag</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>d8!+d3!</p>
-                <p class='armorvalue TableIndividual'>6</p>
-                <p class='armorvalue TableIndividual'>P</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>3.75</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Mace</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d12!+d6!</p>
-                <p class='armorvalue TableIndividual'>10</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Maul</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>2d12!</p>
-                <p class='armorvalue TableIndividual'>15</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>5.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Peasant's Flail</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>2d10!</p>
-                <p class='armorvalue TableIndividual'>15</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>4</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Pernach</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d12!+d4!</p>
-                <p class='armorvalue TableIndividual'>12</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>3.5</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Quarterstaff</p>
-                <p class='armorvalue TableIndividual'>L</p>
-                <p class='armorvalue TableIndividual'>2d8!</p>
-                <p class='armorvalue TableIndividual'>15</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>2</p>
-                <p class='armorvalue TableIndividual'>6</p>
-                <p class='armorvalue TableIndividual'> </p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>Unarmed</p>
-                <p class='armorvalue TableIndividual'>S</p>
-                <p class='armorvalue TableIndividual'>2d4!</p>
-                <p class='armorvalue TableIndividual'>8</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>War Flail</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d10!+d8!</p>
-                <p class='armorvalue TableIndividual'>11</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>4</p>
-                <p class='armorvalue TableIndividual'>Yes</p>
-              </div>
-              <div class='tableValue'>
-                <p class='armorvalue TableIndividual'>War Hammer</p>
-                <p class='armorvalue TableIndividual'>M</p>
-                <p class='armorvalue TableIndividual'>d12!+d8!</p>
-                <p class='armorvalue TableIndividual'>13</p>
-                <p class='armorvalue TableIndividual'>C</p>
-                <p class='armorvalue TableIndividual'>0</p>
-                <p class='armorvalue TableIndividual'>2.5</p>
-                <p class='armorvalue TableIndividual'> </p>
               </div>
               <div class='tableValue subtitle'>
                 <p class='armorvalue TableIndividual'>Polearms</p>
@@ -3005,10 +3319,573 @@
                 <p class='armorvalue TableIndividual'>6.25</p>
                 <p class='armorvalue TableIndividual'> </p>
               </div>
+              <div class='tableValue subtitle'>
+                <p class='armorvalue TableIndividual'>Trauma</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Bec De Corbin</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>d12!+d10!</p>
+                <p class='armorvalue TableIndividual'>12</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Bludgeon</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>d10!</p>
+                <p class='armorvalue TableIndividual'>7</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>1.25</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Club</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d12!</p>
+                <p class='armorvalue TableIndividual'>9</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Goedendag</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>d8!+d3!</p>
+                <p class='armorvalue TableIndividual'>6</p>
+                <p class='armorvalue TableIndividual'>P</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>3.75</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Mace</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d12!+d6!</p>
+                <p class='armorvalue TableIndividual'>10</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Maul</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>2d12!</p>
+                <p class='armorvalue TableIndividual'>15</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>5.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Peasant's Flail</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>2d10!</p>
+                <p class='armorvalue TableIndividual'>15</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>4</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Pernach</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d12!+d4!</p>
+                <p class='armorvalue TableIndividual'>12</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>3.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Quarterstaff</p>
+                <p class='armorvalue TableIndividual'>L</p>
+                <p class='armorvalue TableIndividual'>2d8!</p>
+                <p class='armorvalue TableIndividual'>15</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>2</p>
+                <p class='armorvalue TableIndividual'>6</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>Unarmed</p>
+                <p class='armorvalue TableIndividual'>S</p>
+                <p class='armorvalue TableIndividual'>2d4!</p>
+                <p class='armorvalue TableIndividual'>8</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>War Flail</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d10!+d8!</p>
+                <p class='armorvalue TableIndividual'>11</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>4</p>
+                <p class='armorvalue TableIndividual'>Yes</p>
+              </div>
+              <div class='tableValue'>
+                <p class='armorvalue TableIndividual'>War Hammer</p>
+                <p class='armorvalue TableIndividual'>M</p>
+                <p class='armorvalue TableIndividual'>d12!+d8!</p>
+                <p class='armorvalue TableIndividual'>13</p>
+                <p class='armorvalue TableIndividual'>C</p>
+                <p class='armorvalue TableIndividual'>0</p>
+                <p class='armorvalue TableIndividual'>2.5</p>
+                <p class='armorvalue TableIndividual'> </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <div class="anchor">
+        <div id="11hXItIqSyOQf" class="anchorTag"></div>
+        <h1>Weapon Bonuses</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pqMpDpnypse' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pqMpDpnypse'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Bardiche</strong> This weapon can be braced for a charge. It takes 3 seconds to do
+          so and deals double damage to charging foes if you hit.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pHTRTpQbJQT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pHTRTpQbJQT'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Bellybow</strong> All this weapon’s damage is counted as if it were on 1 dice
+          for
+          /D armor.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pjXfQPfcuXr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pjXfQPfcuXr'"></app-bm-chapter-icon>
+        <p> Recovery Advanced Trainings for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus instead of
+          1.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pGnONxcgNUL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pGnONxcgNUL'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Bill</strong> Damage with this weapon is effectively doubled for Knock-Backs vs
+          mounted defenders.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pyQRuOwrMTl' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pyQRuOwrMTl'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Bludgeon</strong> Damage with this weapon is effectively doubled for Trauma
+          checks.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pzLQsljNmaz' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pzLQsljNmaz'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Composite Bow</strong> This is the only mechanical ranged weapon that may be
+          used
+          from horseback.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11psFpTNkVaWH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11psFpTNkVaWH'"></app-bm-chapter-icon>
+        <p> This weapon requires two hands regardless of size.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pSOcZnmLJgh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pSOcZnmLJgh'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Court Sword</strong> When rolling damage, reroll the lowest die. It’s doesn’t
+          explode.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11poybMLDJwVY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11poybMLDJwVY'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Crossbow</strong> If you steady this weapon against the ground or a stand, you
+          may
+          double your Attack bonus from training with this weapon. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='speedmasteriescorwossbow' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'speedmasteriescorwossbow'"></app-bm-chapter-icon>
+        <p> Recovery Advanced Trainings for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus instead of
+          1.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pQvCvMvFxSg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pQvCvMvFxSg'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Dagger</strong> This weapon can be used as either a Slashing or Piercing weapon.
+          You only need one Weapon Basic Training and any Weapon Advanced Trainings count for both.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pZLLVAsgaai' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pZLLVAsgaai'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Estoc</strong> When wielding this weapon two handed, damage from it is
+          effectively dealt on 1 die.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11puHeSPcqBZB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11puHeSPcqBZB'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Fire Lance</strong> This weapon’s loud noise causes everyone to duck. Everyone
+          within its range flinches for a number of seconds equal to 1 of the d10s, determined before hand (see Terrain
+          and Situational Factors section of Chapter 9). This includes the gunner as well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='firelancepenality' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'firelancepenality'"></app-bm-chapter-icon>
+        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
+          have Basic Weapon Training (Any Firearm).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='firelanceifseveral' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'firelanceifseveral'"></app-bm-chapter-icon>
+        <p> If several firearms have gone off on the same second, you take the highest delay
+          rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
+          firearm's delay.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pkWibHwpbfI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pkWibHwpbfI'"></app-bm-chapter-icon>
+        <p> This is a single use weapon.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pXCHqPHFqpl' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pXCHqPHFqpl'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Guisarme</strong> Damage with this weapon is effectively doubled for Knock-Backs
+          vs mounted defenders.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pjfdPoYyuHJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pjfdPoYyuHJ'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Halberd</strong> This weapon can be used as either a Slashing or Piercing
+          weapon.
+          You only need one Weapon Basic Training and any Weapon Advanced Trainings count for both.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pifZclWfhaF' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pifZclWfhaF'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Hakenbuchse</strong> If you steady this weapon against the ground or a stand, you
+          may double your Attack bonus from training with this weapon.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='hajenbuchejio' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'hajenbuchejio'"></app-bm-chapter-icon>
+        <p> Recovery Advanced Trainings for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus instead of
+          1.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pAquAqsXVbr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pAquAqsXVbr'"></app-bm-chapter-icon>
+        <p> This weapon also comes with a drop-down pole that takes 5 seconds to deploy or stow away.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11puEfnaFhaDB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11puEfnaFhaDB'"></app-bm-chapter-icon>
+        <p> This weapon’s loud noise causes everyone to duck. Everyone within the first two range categories of this
+          weapon flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain
+          and Situational Factors section of Chapter 9). If they’re still surprised, they can act after those seconds
+          are over. This includes the gunner as well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thispenalitsilower' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thispenalitsilower'"></app-bm-chapter-icon>
+        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
+          have Basic Weapon Training (Any Firearm).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifseverfirearhave' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifseverfirearhave'"></app-bm-chapter-icon>
+        <p> If several firearms have gone off on the same second, you take the highest delay
+          rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
+          firearm's delay.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='11pyLQElpyiHS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pyLQElpyiHS'"></app-bm-chapter-icon>
+        <p> This weapon Backfires (see sidebar).</p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <h2 class='sidebarTitle'>Back Firing</h2>
+        <div class='paragraphShell anchor'>
+          <div id='11plkfIOHAbhu' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'11plkfIOHAbhu'"></app-bm-chapter-icon>
+          <p> On a roll of 1 on your attack dice, this weapon jams, making it unusable until repaired.</p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='11pKxnqujvphP' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'11pKxnqujvphP'"></app-bm-chapter-icon>
+          <p> On top of this, you need to roll another d20. On the roll of 20, the gun still goes off but does half
+            damage and the firing mechanism is broken so the firearm is unusable until repaired.</p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='11pUccnusafcv' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'11pUccnusafcv'"></app-bm-chapter-icon>
+          <p> On the roll of a second 1, the gun backfires, dealing half damage to you. At least, it’s not jammed? </p>
+        </div>
+      </div>
+
+      <div class='paragraphShell anchor'>
+        <div id='handgonntitle' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'handgonntitle'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Handgonne</strong> This weapon’s loud noise causes everyone to duck. Everyone
+          within the first two range categories of this
+          weapon flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain
+          and Situational Factors section of Chapter 9). If they’re still surprised, they can act after those seconds
+          are over. This
+          includes the gunner as well.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='penaislowerijif' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'penaislowerijif'"></app-bm-chapter-icon>
+        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
+          have Basic Weapon Training (Any Firearm).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='sevealifremahhave' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sevealifremahhave'"></app-bm-chapter-icon>
+        <p> If several firearms have gone off on the same second, you take the highest delay
+          rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
+          firearm's delay.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thisweaponbackgire' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thisweaponbackgire'"></app-bm-chapter-icon>
+        <p> This weapon Backfires (see sidebar).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pJfUDRHvaFx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pJfUDRHvaFx'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Handaxe</strong> This weapon can be used either in melee or as the Throwing Axe.
+          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='horemansepickhthisweapon' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'horemansepickhthisweapon'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Horsemans Pick</strong> This weapon is designed for use on horseback. Double its
+          damage
+          dice while mounted.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pyeamFNQyCR' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pyeamFNQyCR'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Javelin</strong> If this weapon strikes a shield and its damage is greater than
+          the shield’s DR, the javelin has gotten lodged in the shield’s surface. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11ptmvBdagTLg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11ptmvBdagTLg'"></app-bm-chapter-icon>
+        <p> The Defender must either spend 2d6! seconds pulling it out or defend with a base 1d12! for as long as he
+          continues to use the shield. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11prJluBDqWbM' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11prJluBDqWbM'"></app-bm-chapter-icon>
+        <p> Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pLBCTwPzjKn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pLBCTwPzjKn'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Knife</strong> This weapon can be used either in melee or as the Throwing Axe.
+          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pHlvDCBycau' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pHlvDCBycau'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Koncerz</strong> This weapon is designed for use on horseback. Double its
+          damage
+          dice while mounted.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pkerfreqBzQ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pkerfreqBzQ'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Lance</strong> When mounted, this weapon can be wielded 1 handed without penalty.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11piQpjbEPXOe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11piQpjbEPXOe'"></app-bm-chapter-icon>
+        <p> This weapon is designed for use on horseback. Double its damage
+          dice while mounted.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pBGPxSInmee' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pBGPxSInmee'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Lochaber Axe</strong> This weapon can be braced for a charge. It takes 3 seconds
+          to
+          do so and deals double damage to charging foes if you hit.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pnKRMyGmMrE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pnKRMyGmMrE'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Lucerne</strong> This counts as having one effective less damage dice for the
+          purposes of /D.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pLELCbxdOeZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pLELCbxdOeZ'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Peasant’s Flail</strong> This weapon can get around guards more effectively.
+          While
+          attacking someone, reduce their Parry by 4.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pNiSPXpnUII' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pNiSPXpnUII'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Throwing Axe</strong> If this weapon strikes a shield and its damage is greater
+          than the shield’s DR, the axe has gotten lodged in the shield’s surface.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pdtKOvUdUfm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pdtKOvUdUfm'"></app-bm-chapter-icon>
+        <p> The Defender must either spend 2d6! seconds pulling it out or defend with a base 1d12!.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11prUyZMaHlBy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11prUyZMaHlBy'"></app-bm-chapter-icon>
+        <p> Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pIrzJGmIeKk' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pIrzJGmIeKk'"></app-bm-chapter-icon>
+        <p> This weapon can be used either in melee or as the Throwing Axe.
+          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
+      </div>
+
+      <div class='paragraphShell anchor'>
+        <div id='11pLELCbxdOeZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pLELCbxdOeZ'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Scourge</strong> This weapon can get around guards more effectively.
+          While
+          attacking someone, reduce their Parry by 4.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pyIrqMTOFao' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pyIrqMTOFao'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Sabre</strong> This weapon is designed for use on horseback. Double its damage
+          dice while mounted.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pIYzTWgGSPp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pIYzTWgGSPp'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Schiavona</strong> This weapon is designed for use on horseback. Double its
+          damage dice while mounted.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pMHqqroTMnc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pMHqqroTMnc'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Sovnya</strong> This weapon is designed for use on horseback. Double its damage
+          dice while mounted.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11paTWYGnzuOU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11paTWYGnzuOU'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Throwing Knife</strong> This weapon can be used either in melee or as the Throwing
+          Axe.
+          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11popQKQOJdSe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11popQKQOJdSe'"></app-bm-chapter-icon>
+        <p> Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pHnQHeXXSYG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pHnQHeXXSYG'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Unarmed</strong> This is the character’s bare knuckles and so they pose less of
+          a
+          threat to those attacking with a weapon, meaning attackers double their weapon’s Recovery against unarmed
+          opponents.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11pXcEGmFHTMX' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11pXcEGmFHTMX'"></app-bm-chapter-icon>
+        <p> On explosions, the additional dice are at a -2, instead of the standard -1.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11plhmAUKHEoi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11plhmAUKHEoi'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Warbow</strong> This weapon must be used from a prone position, bracing the body
+          of the bow with your legs. It takes 10 second + the Encumbrance of your armor to get up, but only 3
+          seconds to drop prone. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='11prJhxXObTgi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11prJhxXObTgi'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>War Flail</strong> This weapon can get around guards more effectively. While
+          attacking someone, reduce their Parry by 4.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='11prmBsgCckqL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11prmBsgCckqL'"></app-bm-chapter-icon>
+        <p><strong class='greyHeader'>Zweihander</strong> This weapon is built for breaking and chopping. When this
+          weapon strikes a weapon or a shield, reduce its effective number of dice to 3.</p>
+      </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t29' class='anchorTag'></div>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Weapons, Ranged</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.ranged" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='11t20' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t20'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Weapons, Ranged Munitions</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.munitions" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t31' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "410px"}'>
@@ -3592,875 +4469,8 @@
           </div>
         </div>
       </div>
-      <div class="anchor">
-        <div id="11hXItIqSyOQf" class="anchorTag"></div>
-        <h1>Weapon Bonuses</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pqMpDpnypse' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pqMpDpnypse'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Bardiche</strong> This weapon can be braced for a charge. It takes 3 seconds to do
-          so and deals double damage to charging foes if you hit.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pHTRTpQbJQT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pHTRTpQbJQT'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Bellybow</strong> All this weapon’s damage is counted as if it were on 1 dice
-          for
-          /D armor.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pjXfQPfcuXr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pjXfQPfcuXr'"></app-bm-chapter-icon>
-        <p> Recovery Advanced Trainings for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus instead of
-          1.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pGnONxcgNUL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pGnONxcgNUL'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Bill</strong> Damage with this weapon is effectively doubled for Knock-Backs vs
-          mounted defenders.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pyQRuOwrMTl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pyQRuOwrMTl'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Bludgeon</strong> Damage with this weapon is effectively doubled for Trauma
-          checks.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pzLQsljNmaz' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pzLQsljNmaz'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Composite Bow</strong> This is the only mechanical ranged weapon that may be
-          used
-          from horseback.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11psFpTNkVaWH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11psFpTNkVaWH'"></app-bm-chapter-icon>
-        <p> This weapon requires two hands regardless of size.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pSOcZnmLJgh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pSOcZnmLJgh'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Court Sword</strong> When rolling damage, reroll the lowest die. It’s doesn’t
-          explode.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11poybMLDJwVY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11poybMLDJwVY'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Crossbow</strong> If you steady this weapon against the ground or a stand, you
-          may
-          double your Attack bonus from training with this weapon. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='speedmasteriescorwossbow' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'speedmasteriescorwossbow'"></app-bm-chapter-icon>
-        <p> Recovery Advanced Trainings for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus instead of
-          1.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pQvCvMvFxSg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pQvCvMvFxSg'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Dagger</strong> This weapon can be used as either a Slashing or Piercing weapon.
-          You only need one Weapon Basic Training and any Weapon Advanced Trainings count for both.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pZLLVAsgaai' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pZLLVAsgaai'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Estoc</strong> When wielding this weapon two handed, damage from it is
-          effectively dealt on 1 die.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11puHeSPcqBZB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11puHeSPcqBZB'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Fire Lance</strong> This weapon’s loud noise causes everyone to duck. Everyone
-          within its range flinches for a number of seconds equal to 1 of the d10s, determined before hand (see Terrain
-          and Situational Factors section of Chapter 9). This includes the gunner as well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='firelancepenality' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'firelancepenality'"></app-bm-chapter-icon>
-        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
-          have Basic Weapon Training (Any Firearm).
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='firelanceifseveral' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'firelanceifseveral'"></app-bm-chapter-icon>
-        <p> If several firearms have gone off on the same second, you take the highest delay
-          rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
-          firearm's delay.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pkWibHwpbfI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pkWibHwpbfI'"></app-bm-chapter-icon>
-        <p> This is a single use weapon.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pXCHqPHFqpl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pXCHqPHFqpl'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Guisarme</strong> Damage with this weapon is effectively doubled for Knock-Backs
-          vs mounted defenders.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pjfdPoYyuHJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pjfdPoYyuHJ'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Halberd</strong> This weapon can be used as either a Slashing or Piercing
-          weapon.
-          You only need one Weapon Basic Training and any Weapon Advanced Trainings count for both.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pifZclWfhaF' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pifZclWfhaF'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Hakenbuchse</strong> If you steady this weapon against the ground or a stand, you
-          may double your Attack bonus from training with this weapon.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='hajenbuchejio' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'hajenbuchejio'"></app-bm-chapter-icon>
-        <p> Recovery Advanced Trainings for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus instead of
-          1.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pAquAqsXVbr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pAquAqsXVbr'"></app-bm-chapter-icon>
-        <p> This weapon also comes with a drop-down pole that takes 5 seconds to deploy or stow away.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11puEfnaFhaDB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11puEfnaFhaDB'"></app-bm-chapter-icon>
-        <p> This weapon’s loud noise causes everyone to duck. Everyone within the first two range categories of this
-          weapon flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain
-          and Situational Factors section of Chapter 9). If they’re still surprised, they can act after those seconds
-          are over. This includes the gunner as well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thispenalitsilower' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thispenalitsilower'"></app-bm-chapter-icon>
-        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
-          have Basic Weapon Training (Any Firearm).
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ifseverfirearhave' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifseverfirearhave'"></app-bm-chapter-icon>
-        <p> If several firearms have gone off on the same second, you take the highest delay
-          rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
-          firearm's delay.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='11pyLQElpyiHS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pyLQElpyiHS'"></app-bm-chapter-icon>
-        <p> This weapon Backfires (see sidebar).</p>
-      </div>
-      <div class='sidebarShell marginBottom'>
-        <h2 class='sidebarTitle'>Back Firing</h2>
-        <div class='paragraphShell anchor'>
-          <div id='11plkfIOHAbhu' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'11plkfIOHAbhu'"></app-bm-chapter-icon>
-          <p> On a roll of 1 on your attack dice, this weapon jams, making it unusable until repaired.</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='11pKxnqujvphP' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'11pKxnqujvphP'"></app-bm-chapter-icon>
-          <p> On top of this, you need to roll another d20. On the roll of 20, the gun still goes off but does half
-            damage and the firing mechanism is broken so the firearm is unusable until repaired.</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='11pUccnusafcv' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'11pUccnusafcv'"></app-bm-chapter-icon>
-          <p> On the roll of a second 1, the gun backfires, dealing half damage to you. At least, it’s not jammed? </p>
-        </div>
-      </div>
 
-      <div class='paragraphShell anchor'>
-        <div id='handgonntitle' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'handgonntitle'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Handgonne</strong> This weapon’s loud noise causes everyone to duck. Everyone
-          within the first two range categories of this
-          weapon flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain
-          and Situational Factors section of Chapter 9). If they’re still surprised, they can act after those seconds
-          are over. This
-          includes the gunner as well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='penaislowerijif' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'penaislowerijif'"></app-bm-chapter-icon>
-        <p> This penalty is lowered by 1 for every combat a person has been in that involves firearms or is completely negated if they 
-          have Basic Weapon Training (Any Firearm).
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='sevealifremahhave' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'sevealifremahhave'"></app-bm-chapter-icon>
-        <p> If several firearms have gone off on the same second, you take the highest delay
-          rolled. Additionally, those already stunned by a firearm when another goes off are unaffected by that
-          firearm's delay.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thisweaponbackgire' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thisweaponbackgire'"></app-bm-chapter-icon>
-        <p> This weapon Backfires (see sidebar).</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pJfUDRHvaFx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pJfUDRHvaFx'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Handaxe</strong> This weapon can be used either in melee or as the Throwing Axe.
-          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='horemansepickhthisweapon' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'horemansepickhthisweapon'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Horsemans Pick</strong> This weapon is designed for use on horseback. Double its
-          damage
-          dice while mounted.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pyeamFNQyCR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pyeamFNQyCR'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Javelin</strong> If this weapon strikes a shield and its damage is greater than
-          the shield’s DR, the javelin has gotten lodged in the shield’s surface. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11ptmvBdagTLg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11ptmvBdagTLg'"></app-bm-chapter-icon>
-        <p> The Defender must either spend 2d6! seconds pulling it out or defend with a base 1d12! for as long as he
-          continues to use the shield. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11prJluBDqWbM' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11prJluBDqWbM'"></app-bm-chapter-icon>
-        <p> Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pLBCTwPzjKn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pLBCTwPzjKn'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Knife</strong> This weapon can be used either in melee or as the Throwing Axe.
-          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pHlvDCBycau' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pHlvDCBycau'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Koncerz</strong> This weapon is designed for use on horseback. Double its
-          damage
-          dice while mounted.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pkerfreqBzQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pkerfreqBzQ'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Lance</strong> When mounted, this weapon can be wielded 1 handed without penalty.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11piQpjbEPXOe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11piQpjbEPXOe'"></app-bm-chapter-icon>
-        <p> This weapon is designed for use on horseback. Double its damage
-          dice while mounted.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pBGPxSInmee' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pBGPxSInmee'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Lochaber Axe</strong> This weapon can be braced for a charge. It takes 3 seconds
-          to
-          do so and deals double damage to charging foes if you hit.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pnKRMyGmMrE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pnKRMyGmMrE'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Lucerne</strong> This counts as having one effective less damage dice for the
-          purposes of /D.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pLELCbxdOeZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pLELCbxdOeZ'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Peasant’s Flail</strong> This weapon can get around guards more effectively.
-          While
-          attacking someone, reduce their Parry by 4.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pNiSPXpnUII' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pNiSPXpnUII'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Throwing Axe</strong> If this weapon strikes a shield and its damage is greater
-          than the shield’s DR, the axe has gotten lodged in the shield’s surface.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pdtKOvUdUfm' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pdtKOvUdUfm'"></app-bm-chapter-icon>
-        <p> The Defender must either spend 2d6! seconds pulling it out or defend with a base 1d12!.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11prUyZMaHlBy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11prUyZMaHlBy'"></app-bm-chapter-icon>
-        <p> Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pIrzJGmIeKk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pIrzJGmIeKk'"></app-bm-chapter-icon>
-        <p> This weapon can be used either in melee or as the Throwing Axe.
-          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
-      </div>
-
-      <div class='paragraphShell anchor'>
-        <div id='11pLELCbxdOeZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pLELCbxdOeZ'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Scourge</strong> This weapon can get around guards more effectively.
-          While
-          attacking someone, reduce their Parry by 4.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pyIrqMTOFao' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pyIrqMTOFao'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Sabre</strong> This weapon is designed for use on horseback. Double its damage
-          dice while mounted.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pIYzTWgGSPp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pIYzTWgGSPp'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Schiavona</strong> This weapon is designed for use on horseback. Double its
-          damage dice while mounted.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pMHqqroTMnc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pMHqqroTMnc'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Sovnya</strong> This weapon is designed for use on horseback. Double its damage
-          dice while mounted.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11paTWYGnzuOU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11paTWYGnzuOU'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Throwing Knife</strong> This weapon can be used either in melee or as the Throwing
-          Axe.
-          Tier 2 Melee Weapon and Ranged Weapon Advanced Trainings are shared</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11popQKQOJdSe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11popQKQOJdSe'"></app-bm-chapter-icon>
-        <p> Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pHnQHeXXSYG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pHnQHeXXSYG'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Unarmed</strong> This is the character’s bare knuckles and so they pose less of
-          a
-          threat to those attacking with a weapon, meaning attackers double their weapon’s Recovery against unarmed
-          opponents.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pXcEGmFHTMX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pXcEGmFHTMX'"></app-bm-chapter-icon>
-        <p> On explosions, the additional dice are at a -2, instead of the standard -1.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11plhmAUKHEoi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11plhmAUKHEoi'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Warbow</strong> This weapon must be used from a prone position, bracing the body
-          of the bow with your legs. It takes 10 second + the Encumbrance of your armor to get up, but only 3
-          seconds to drop prone. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11prJhxXObTgi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11prJhxXObTgi'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>War Flail</strong> This weapon can get around guards more effectively. While
-          attacking someone, reduce their Parry by 4.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='11prmBsgCckqL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11prmBsgCckqL'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Zweihander</strong> This weapon is built for breaking and chopping. When this
-          weapon strikes a weapon or a shield, reduce its effective number of dice to 3.</p>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t32' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t32'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "540px"}'>
-          <h1 class='tableTitle'>Armor Stats</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Dr</p>
-                <p class='equipmentvalue TableIndividual'>Def</p>
-                <p class='equipmentvalue TableIndividual'>Init Mod</p>
-                <p class='equipmentvalue TableIndividual'>Rec Mod</p>
-                <p class='equipmentvalue TableIndividual'>Type</p>
-                <p class='equipmentvalue TableIndividual'>Encumb</p>
-                <p class='equipmentvalue TableIndividual'>Skill Adj</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Pelt</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>-1</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Bone</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Buff Coat</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Gambeson</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>-1</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Leather</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>-1</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Coat Of Plates</p>
-                <p class='equipmentvalue TableIndividual'>1/d</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
-                <p class='equipmentvalue TableIndividual'>-4</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Scale</p>
-                <p class='equipmentvalue TableIndividual'>2/d</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'>-4</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Lamellar</p>
-                <p class='equipmentvalue TableIndividual'>3/d</p>
-                <p class='equipmentvalue TableIndividual'>-5</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
-                <p class='equipmentvalue TableIndividual'>-4</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Brigandine</p>
-                <p class='equipmentvalue TableIndividual'>3/d</p>
-                <p class='equipmentvalue TableIndividual'>-1</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>-4</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Maile</p>
-                <p class='equipmentvalue TableIndividual'>1/d + 2</p>
-                <p class='equipmentvalue TableIndividual'>-1</p>
-                <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>-8</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Interlocking Maile</p>
-                <p class='equipmentvalue TableIndividual'>3/d + 1</p>
-                <p class='equipmentvalue TableIndividual'>-3</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>-8</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Plated Maile</p>
-                <p class='equipmentvalue TableIndividual'>3/d + 3</p>
-                <p class='equipmentvalue TableIndividual'>-4</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'>-8</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Full Plate</p>
-                <p class='equipmentvalue TableIndividual'>4/d + 2</p>
-                <p class='equipmentvalue TableIndividual'>-4</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
-                <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>10</p>
-                <p class='equipmentvalue TableIndividual'>-8</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="anchor">
-        <div id="11hgKBqkCxSAI" class="anchorTag"></div>
-        <h1>Armor Table Header Explanation</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pTBHqvIoStI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pTBHqvIoStI'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>DR</strong> This number is subtracted from the damage dealt by a weapon.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pcwwNxxyjiN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pcwwNxxyjiN'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Def</strong> All armor weighs you down and makes it harder to dodge incoming
-          attacks. This number is added to your Defense roll.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pirLlDxzXYH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pirLlDxzXYH'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Init Mod</strong> Armor is restricting, even at the best of times. This is added
-          to your Initiative roll at the start of combat.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pIsNmoGVETY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pIsNmoGVETY'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Rec Mod</strong> Again, armor is restricting. This is added to your weapon’s
-          Recovery.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pogIhwZsyIr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pogIhwZsyIr'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Type</strong> This donates what category your armor falls in. You should note
-          that
-          should you purchase Medium or Heavy armor, this comes with a Gambeson that’s worn underneath for comfort.
-          This
-          is already factored into the other stats of the armor.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pKmwLYNtWvx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pKmwLYNtWvx'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Weight</strong> This is how heavy your armor is for encumbrance when your armor
-          is
-          carried on your person. Worn armor doesn’t count towards your encumbrance.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pKfXsKbDmWQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pKfXsKbDmWQ'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Encumb</strong> This number is added to your Encumbrance as doing things
-          with a weight on you is tiring.</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='11pWXWuVeYtxK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pWXWuVeYtxK'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Skill Adj</strong> Armor, regardless of how fitted, is restricting and heavy,
-          making it harder to perform certain skills in certain gear. This is the number applied to physical Skill
-          Checks.</p>
-      </div>
-      <div class="anchor">
-        <div id="11hxJgcyHTTRc" class="anchorTag"></div>
-        <h1>Armor Bonuses</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='11pahrBWughMm' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pahrBWughMm'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Bone</strong> This armor is especially effective when channeling magic. It only
-          increases your channeling time by 5 if the legs and arms are uncovered and 10 if you wear the gauntlets and
-          boots.</p>
-      </div>
-      <div class="anchor">
-        <div id="11hyyTygqlCvx" class="anchorTag"></div>
-        <h1>Shield Table Header Explanation</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pOSmBFcWWTs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pOSmBFcWWTs'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Size</strong> This indicates the general size of a shield. It also determines
-          how
-          tough your shield is.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pnBNacBoPah' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pnBNacBoPah'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>DR</strong> This number is subtracted from the damage dealt by a weapon on a
-          successful parry with a shield.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pjjvpjwrSJx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pjjvpjwrSJx'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Def</strong> This is the number that you subtract from your character’s defense.
-          Lugging a huge piece of material on the end of your arm makes dodging a bit difficult. Additionally, you’re
-          often moving a shield into harm’s way, meaning, overall, you get hit more while wielding one.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11plnGNHvaaxY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11plnGNHvaaxY'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Parry</strong> Some shields are balanced better than others and that allows you
-          to
-          deflect blows more effectively. This number is the shield’s Parry Threshold. This is overrides by your
-          weapon’s Parry. Parrying with a shield subjects it to the Shield Breakage rules.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pvXGZpbHuko' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pvXGZpbHuko'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Cover</strong> This dice is added to your Defense roll against ranged weapons.
-          If
-          you’re actively crouching behind it, you instead add the maximum value of any dice and roll of that dice
-          (i.e., a d8, you add d8 + 8,
-          for
-          d12 + d8, you add d12 + d8 + 20, etc.).</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11MSnDKQdOaY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11MSnDKQdOaY'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Flanks</strong> This is the number of additional attackers from the side
-          that the shield can defend against. More on that is found in <a [routerLink]='["/chapter/10"]'
-            [queryParams]='{search: "10hgUnxGAkHaoZ"}'>Chapter
-            10: Combat</a></p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11plQrSeeiIsR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11plQrSeeiIsR'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Weight</strong> This is how heavy your shield is for encumbrance.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pmWczObrKZK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pmWczObrKZK'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Encumb</strong> This number is added to your Encumbrance as doing things
-          with a weight on you is tiring.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pDOMrTxJFzN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pDOMrTxJFzN'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Bonus</strong> Some shields have additional unique bonuses. If there is a ‘yes’
-          in
-          this column, look up the shield in the following section to find out more details.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thisisarandomcene' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thisisarandomcene'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>For</strong> This is a recommendation for who would benefit most from using this
-          type of shield.
-          "S" stands for Specialist, meaning that if you're a primarily a shield fighter, this shield will get
-          drastically better as you take
-          Advanced Trainings in it but it will not serve your average person well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='wstandsforawarioior' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'wstandsforawarioior'"></app-bm-chapter-icon>
-        <p>"W" stands for warrior: this is a solid shield for frontline fighters who are going to be specializing in
-          other things and only lightly
-          deeping into Shield Advanced Trainings.
-        </p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='asstandsforanyone' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'asstandsforanyone'"></app-bm-chapter-icon>
-        <p>"A" stands for anyone: these shields serve as cheap replacements for armor and anyone can pick one of these
-          up and get an instant
-          benefit from the.
-        </p>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t33' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Shield Stats</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Dr</p>
-                <p class='equipmentvalue TableIndividual'>Def</p>
-                <p class='equipmentvalue TableIndividual'>Parry</p>
-                <p class='equipmentvalue TableIndividual'>Cover</p>
-                <p class='equipmentvalue TableIndividual'>Flanks</p>
-                <p class='equipmentvalue TableIndividual'>Encumb</p>
-                <p class='equipmentvalue TableIndividual'>Bonus</p>
-                <p class='equipmentvalue TableIndividual'>For</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Buckler</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-                <p class='equipmentvalue TableIndividual'>3/d + 8</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>Yes</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Clothe</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'> </p>
-                <p class='equipmentvalue TableIndividual'>A</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Figure Eight</p>
-                <p class='equipmentvalue TableIndividual'>M</p>
-                <p class='equipmentvalue TableIndividual'>2/d + 6</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'>d8!+2</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'>Yes</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Heater</p>
-                <p class='equipmentvalue TableIndividual'>L</p>
-                <p class='equipmentvalue TableIndividual'>2/d + 4</p>
-                <p class='equipmentvalue TableIndividual'>-7</p>
-                <p class='equipmentvalue TableIndividual'>15</p>
-                <p class='equipmentvalue TableIndividual'>2d8!+7</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>13</p>
-                <p class='equipmentvalue TableIndividual'> </p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Kite</p>
-                <p class='equipmentvalue TableIndividual'>M</p>
-                <p class='equipmentvalue TableIndividual'>2/d + 4</p>
-                <p class='equipmentvalue TableIndividual'>-2</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'>d6!+2</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'> </p>
-                <p class='equipmentvalue TableIndividual'>W</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-                <p class='equipmentvalue TableIndividual'>3/d + 6</p>
-                <p class='equipmentvalue TableIndividual'>-1</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
-                <p class='equipmentvalue TableIndividual'>d4!+1</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
-                <p class='equipmentvalue TableIndividual'> </p>
-                <p class='equipmentvalue TableIndividual'>W</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Pavise</p>
-                <p class='equipmentvalue TableIndividual'>L</p>
-                <p class='equipmentvalue TableIndividual'>4/d + 2</p>
-                <p class='equipmentvalue TableIndividual'>-8</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
-                <p class='equipmentvalue TableIndividual'>d20!</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>20</p>
-                <p class='equipmentvalue TableIndividual'>Yes</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Round</p>
-                <p class='equipmentvalue TableIndividual'>M</p>
-                <p class='equipmentvalue TableIndividual'>2/d + 8</p>
-                <p class='equipmentvalue TableIndividual'>-5</p>
-                <p class='equipmentvalue TableIndividual'>10</p>
-                <p class='equipmentvalue TableIndividual'>d6!+5</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
-                <p class='equipmentvalue TableIndividual'>Yes</p>
-                <p class='equipmentvalue TableIndividual'>S</p>
-              </div>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Tower</p>
-                <p class='equipmentvalue TableIndividual'>L</p>
-                <p class='equipmentvalue TableIndividual'>2/d + 1</p>
-                <p class='equipmentvalue TableIndividual'>-8</p>
-                <p class='equipmentvalue TableIndividual'>16</p>
-                <p class='equipmentvalue TableIndividual'>2d8!+8</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>9</p>
-                <p class='equipmentvalue TableIndividual'> </p>
-                <p class='equipmentvalue TableIndividual'>A</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="anchor">
-        <div id="11hiFfWgYkSiH" class="anchorTag"></div>
-        <h1>Shield Bonuses</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pqoCtjwWCGN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pqoCtjwWCGN'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Buckler</strong> The buckler is a lightweight shield which relies more on
-          parrying
-          blows than outright stopping them. The buckler also has the added benefit of being rather small with almost
-          no
-          weight, allowing it to be worn but not used while wielding two handed weapons. You receive no bonuses when
-          doing this but it means that if you do switch over to a one handed weapon, you instantly get the buckler’s
-          bonus.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pjPQRZuGkJV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pjPQRZuGkJV'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Figure Eight</strong> This shield is designed specifically for phalanx or shield
-          wall tactics. This gives a +2 Parry and a Cover of d4 to anyone fighting on either side of you. This stacks
-          with any Parry or Cover that they have from either their weapon or shields.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11piBQazuAqiq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11piBQazuAqiq'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Pavise</strong> This shield is less a shield and more portable cover employed by
-          gunners and crossbowman, rather than fighters.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='11pZEstZlVKJh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pZEstZlVKJh'"></app-bm-chapter-icon>
-        <p> However, the Pavise can be set up using a kick stand in the back, giving anyone crouching behind it
-          basically complete cover and allowing that person the ability to steady their weapon on it.</p>
-      </div>
-
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='11pvCJAPyHQsi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11pvCJAPyHQsi'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Round</strong> This shield was meant for hitting your opponent, trying to throw
-          them off guard. On a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next
-          attack
-          by 5 seconds.</p>
-      </div>
     </div>
-
     <div class="sideShell">
       <app-quick-nav [side]="side"></app-quick-nav>
     </div>
