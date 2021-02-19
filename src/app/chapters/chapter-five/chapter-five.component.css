@@ -79,7 +79,7 @@
   
   .tableValue .equipmentvalue:first-child {
     padding-left: 10px;
-    width: 215px;
+    width: 215px !important;
     text-align: left;
   }
 
