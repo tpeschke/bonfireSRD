@@ -17,10 +17,35 @@ h5 {
     font-family: "umbria";
     font-size: 35px;
 }
+  
+.DemonSummonedTable {
+    width: 350px;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  
+  .DemonSummonedvalue {
+    width: 30%;
+    text-align: left;
+  }
+  
+  .tableValue .DemonSummonedvalue:first-child {
+    width: 25%;
+    text-align: center;
+  }
+
+  .tableValue .DemonSummonedvalue:last-child {
+    width: 55%;
+  }
 
 @media (max-width: 450px ) { 
     .dayboonTable{
         margin: 15px auto 0 auto;
         float: none;
     }
+    
+    .DemonSummonedTable {
+        float: none;
+        margin: 10px auto;
+      }
 }
