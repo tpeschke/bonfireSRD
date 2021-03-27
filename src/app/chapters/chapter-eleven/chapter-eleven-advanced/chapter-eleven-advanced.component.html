@@ -1916,9 +1916,9 @@
         </div>
       </div>
       <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t7' class='anchorTag'></div>
+        <div id='adventuringtable' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Fruits Vegetables And Nuts</h1>
+          <h1 class='tableTitle'>Goods, Adventuring</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -1929,7 +1929,7 @@
                 <p class='equipmentvalue TableIndividual'>Nearby Market</p>
                 <p class='equipmentvalue TableIndividual'>Distant City</p>
               </div>
-              <div *ngFor="let content of tables.fruits" class='tableValue'>
+              <div *ngFor="let content of tables.adventuring" class='tableValue'>
                 <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
@@ -2041,36 +2041,6 @@
           </div>
         </div>
       </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t11' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Meat</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.meat" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
       <div class="anchor">
         <div id="11hCvqhFlEIMU" class="anchorTag"></div>
         <h1>Poisons & Toxins</h1>
@@ -2168,36 +2138,6 @@
         </div>
       </div>
       
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t12' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'11t12'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Rations And Ingredients</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.rations" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t6' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11t6'"></app-bm-chapter-icon>
@@ -2606,36 +2546,6 @@
           by 5 seconds.</p>
       </div>
       <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t9' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Spices</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.spices" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t13' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
           <h1 class='tableTitle'>Substances Alchemical</h1>
@@ -2650,64 +2560,6 @@
                 <p class='equipmentvalue TableIndividual'>Distant City</p>
               </div>
               <div *ngFor="let content of tables.alchemical" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t16' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Substances Animal Products</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.products" class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
-                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
-                <p class='equipmentvalue TableIndividual'>
-                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='tableOverflowWindow anchor marginBottom'>
-        <div id='11t17' class='anchorTag'></div>
-        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Substances Metal Ore</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='equipmentvalue TableIndividual'>Name</p>
-                <p class='equipmentvalue TableIndividual'>Size</p>
-                <p class='equipmentvalue TableIndividual'>Source</p>
-                <p class='equipmentvalue TableIndividual'>Local Market</p>
-                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
-                <p class='equipmentvalue TableIndividual'>Distant City</p>
-              </div>
-              <div *ngFor="let content of tables.ore" class='tableValue'>
                 <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
@@ -2756,7 +2608,7 @@
         <div id='11t19' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11t19'"></app-bm-chapter-icon>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
-          <h1 class='tableTitle'>Tools</h1>
+          <h1 class='tableTitle'>Tools, General</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
@@ -2767,7 +2619,7 @@
                 <p class='equipmentvalue TableIndividual'>Nearby Market</p>
                 <p class='equipmentvalue TableIndividual'>Distant City</p>
               </div>
-              <div *ngFor="let content of tables.tools" class='tableValue'>
+              <div *ngFor="let content of tables.general" class='tableValue'>
                 <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
                 <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
@@ -2782,6 +2634,37 @@
           </div>
         </div>
       </div>
+      <div class='tableOverflowWindow anchor marginBottom'>
+        <div id='tradetable' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'11t19'"></app-bm-chapter-icon>
+        <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
+          <h1 class='tableTitle'>Tools, Trade</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>Name</p>
+                <p class='equipmentvalue TableIndividual'>Size</p>
+                <p class='equipmentvalue TableIndividual'>Source</p>
+                <p class='equipmentvalue TableIndividual'>Local Market</p>
+                <p class='equipmentvalue TableIndividual'>Nearby Market</p>
+                <p class='equipmentvalue TableIndividual'>Distant City</p>
+              </div>
+              <div *ngFor="let content of tables.trades" class='tableValue'>
+                <p class='equipmentvalue TableIndividual'>{{content.name}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.size}}</p>
+                <p class='equipmentvalue TableIndividual'>{{content.price}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</p>
+                <p class='equipmentvalue TableIndividual'>
+                  {{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class='tableOverflowWindow anchor marginBottom'>
         <div id='11t25' class='anchorTag'></div>
         <div class='tableOuterShell' [ngStyle]='{width: "600px"}'>
