@@ -111,6 +111,20 @@ p {
   font-weight: 700;
 }
 
+.homeInnerSettings {
+  background: white;
+  width: 475px;
+  padding: 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeInnerSettings h1 {
+  border-bottom: 2px solid #222;
+  margin-bottom: 10px;
+}
+
 .homeLeftShell {
   background: white;
   width: 475px;
@@ -144,7 +158,6 @@ p {
 .homeList {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
 }
 
 .homeSettingsTray {
@@ -170,10 +183,6 @@ p {
     display: none;
   }
 
-  .homeInnerLeft {
-    width: 100%;
-  }
-
   .homeInnerRight {
     margin: 0;
     width: 100%;
@@ -184,7 +193,7 @@ p {
     flex-direction: column-reverse;
   }
 
-  .homeInnerSearch {
+  .homeInnerSearch, .homeInnerSettings, .homeInnerLeft {
     width: 100%;
   }
 
