@@ -2,12 +2,12 @@ const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
     , massive = require('massive')
-    , { server, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect, fakeAuth } = require('./serv-config')
+    , { server, databaseCredentials, connection, auth, logId, logSecret, logDomain, logCallback, sessionSecret, redirect, fakeAuth } = require('./serv-config')
     , ctrl = require('./controller')
     , path = require('path')
     , session = require('express-session')
     , passport = require('passport')
-    , Auth0Strategy = require('passport-auth0')
+    , Auth0Strategy = require('passport-auth0');
 
 const app = new express()
 app.use(bodyParser.json())
@@ -66,7 +66,6 @@ app.get('/auth/logout', function (req, res) {
     res.redirect(`/`)
 })
 
-
 // ================================== \\
 
 app.get('/checkLogin', (req, res) => req.user ? res.send(true) : res.send(false))
@@ -84,10 +83,9 @@ app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/../dist/bonfireSRD/index.html'))
 })
 // ================================== \\
-
-massive(connection).then(dbI => {
+massive(databaseCredentials).then(dbI => {
     app.set('db', dbI)
     app.listen(server, _ => {
         console.log(`The night lays like a lullaby on the earth ${server}`)
     })
-})
+}).catch(e => console.log(e))
