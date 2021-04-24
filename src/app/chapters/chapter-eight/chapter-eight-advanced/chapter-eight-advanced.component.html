@@ -63,8 +63,34 @@
       <div class='paragraphShell anchor'>
         <div id='8pvrTVawRrAZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pvrTVawRrAZ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>SKILL SUITES </strong>For your Skill Suites, your starting Rank is the Skill Bonus
-          listed under the corresponding Stat. For Suites with multiple Stats, average the Skill Bonus, rounded down.
+        <p><strong class='orangeHeader'>SKILL SUITES </strong>For your Skill Suites, your starting Rank is 0, unless it is listed 
+        under the Main Skill for your Primary Generalist Archetype, in which case, it starts at Rank 3. If you have two different ones,
+       one starts at Rank 3 and the other at 2.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='whenyouspecialist' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'whenyouspecialist'"></app-bm-chapter-icon>
+        <p>When you Specialize your Primary Archetype, you gain a Rank 2 in that Archetype's Main Skill Suite. If there are two listed,
+          one starts at Rank 2 and the other at Rank 1.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='finallyatfirstleve' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'finallyatfirstleve'"></app-bm-chapter-icon>
+        <p>Finally, at first level, you receive Rank 2 in any Skill Suite of your choice, representing your character's general interests and background.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifayatnitme' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifayatnitme'"></app-bm-chapter-icon>
+        <p>If, at any time, these Skill Suites overlap (like in the instance of getting a Skill Suite twice, as in the case of the Sage, or your choice also 
+          matching up with your Primary's Main Skill Suite), you instead receive a +1 Rank for each time after the first.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='soyouvechoisense' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'soyouvechoisense'"></app-bm-chapter-icon>
+        <p>So, if you've chosen Streetwise for your background Skill Suite and than Specialize into Thug, you would end up with a Rank 4 in it. That's because you'd 
+          start at Rank 2 from your background choice and then get two +1s from the Thug (since they have it as their Main Skill Suite twice).
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -76,11 +102,11 @@
       <div class='paragraphShell anchor'>
         <div id='8pqVqRTkCqsG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pqVqRTkCqsG'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>PURCHASING A SKILL </strong>Advanced Skills cost their Base Cost - Skill Bonus +
+        <p><strong class='orangeHeader'>PURCHASING A SKILL </strong>Advanced Skills cost their Base Cost - Skill Discount +
           (Current
-          Rank * 2), while Skill Suites cost their Base Cost Base Cost - Skill Bonus + (Current
+          Rank * 2), while Skill Suites cost their Base Cost Base Cost - Skill Discount + (Current
           Rank * 5), both have a minimum of 1. Note that, like Skills Suites
-          above, if there are multiple Stats attached to a Skill, average the Skill Bonus, rounded down.</p>
+          above, if there are multiple Stats attached to a Skill use the highest.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8ptmNxKgqedZ' class='anchorTag'></div>

@@ -15,7 +15,7 @@
 }
 
 .wisdomTable {
-    width: 255px;
+    width: 371px;
 }
 
 .Wisdomvalue {
@@ -27,16 +27,12 @@
 }
 
 .charismaTable {
-    width: 350px;
+    width: 434px;
 }
 
 .tableOverflowWindow {
     float: left;
     margin-right: 15px;
-}
-
-.dexMargin {
-    margin-top: 48px;
 }
 
 .traitMargin {
