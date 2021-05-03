@@ -777,6 +777,17 @@
                                         Stress from wounds, however. </p>
                         </div>
                         <div class='paragraphShell anchor'>
+                                <div id='outhinkingadventuer' class='anchorTag'></div>
+                                <app-bm-chapter-icon [id]="'outhinkingadventuer'"></app-bm-chapter-icon>
+                                <p><strong class='orangeHeader'>OUTTHINKING</strong> While they may not be the best with
+                                        the blade,
+                                        the Adventurer is often able to beat their opponents by outthinking them. Gain a
+                                        use of your Honor dice
+                                        whenever you use a Skill in combat, regardless of whether or not its successful.
+                                        Gain an additional one for every
+                                        3 levels you've obtained.</p>
+                        </div>
+                        <div class='paragraphShell anchor'>
                                 <div id='4p13' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4p13'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>SKILL FOCUS (Any < 7 CrP, 6)</strong> At first level
@@ -862,9 +873,9 @@
                                         personally, mean harm to them), the
                                         Assassin’s weappon's base damage explodes on the highest and second highest result. i.e., d4!s
                                         explode on natural 3s and 4s.
-                                        They also gain an additional dice of damage every 2 levels when backstabbing,
+                                        They also gain an additional dice of damage at 1st level and every 2 levels after that when backstabbing,
                                         which doesn’t increase the total
-                                        number of dice for /D armor.</p>
+                                        number of dice for /D armor but isn't effected by anything that would otherwise increase the weapon's damage.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='shouldtheassasinsactk' class='anchorTag'></div>
@@ -886,7 +897,7 @@
                                 <app-bm-chapter-icon [id]="'4hFLUTfdbAQ'"></app-bm-chapter-icon>
                                 <p> If an opponent flees and the Assassin is within half their weapon Recovery, they may
                                         Backstab using half their
-                                        additional damage dice from this ability.</p>
+                                        additional damage dice from this ability, rounded up.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='4YgGMHkDBfS' class='anchorTag'></div>
@@ -996,11 +1007,9 @@
                         <div class='paragraphShell anchor'>
                                 <div id='mehtojidcioaminded' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'mehtojidcioaminded'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>METHODICALLY MINDED </strong>If you’re careful with how
-                                        you treat your equipment and come prepared, you can see yourself through a tough
-                                        spot. You may pay 15 Stress so that you or others who use your equipment ignore
-                                        the degradation of a piece of equipment you use on a Check. This Stress penalty
-                                        is lowered by 1 every 3 levels down to a minimum of 3.</p>
+                                <p><strong class='orangeHeader'>MANAGE MINIONS </strong>Any Mastermind worth his salt will 
+                                keep a stable of minions around to help him out, even if they're the other players.
+                                When he uses one of their Skills, or vice versa, as a Helper Skill, the Stress gain is halved.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='preprpayskopfff' class='anchorTag'></div>
@@ -1254,8 +1263,8 @@
                                 <app-bm-chapter-icon [id]="'buyingitmieime'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>BUYING TIME </strong>The sands of the hourglass trickle
                                         onward but sometimes you can slow it down for a moment or two. During a Skill
-                                        Challenge on a failed Check, you can sacrifice Honor to increase your roll by 2.
-                                        This can’t, however, turn the failure into a success.</p>
+                                        Challenge on a failed Check, for each point of Honor you spend to modify the roll, increase your roll by 2 instead.
+                                        This can’t, however, turn the failure into a success so if you intend to change failure into success, you don't gain this benefit.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='quijcithinking' class='anchorTag'></div>
@@ -1368,6 +1377,15 @@
                                         communication is key and doing so quickly is often extremely important. When
                                         using each other as Assets, all allies of the Ranger have their Organization
                                         considered 1 better.</p>
+                        </div>
+                        <div class='paragraphShell anchor'>
+                                <div id='rangerendurancetraining' class='anchorTag'></div>
+                                <app-bm-chapter-icon [id]="'rangerendurancetraining'"></app-bm-chapter-icon>
+                                <p><strong class='orangeHeader'>ENDURANCE TRAINING </strong>A Ranger is used to
+                                        running and jumping for hours on end and gain a -1 to their Encumbrance for
+                                        every 2
+                                        levels
+                                        obtained.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='4phKzTRyDyAR' class='anchorTag'></div>
@@ -1706,11 +1724,9 @@
                         <div class='paragraphShell anchor'>
                                 <div id='4ErBSqLMPOM' class='anchorTag'></div>
                                 <app-bm-chapter-icon [id]="'4ErBSqLMPOM'"></app-bm-chapter-icon>
-                                <p><strong class='orangeHeader'>ENDURANCE TRAINING </strong>A Wilderman is used to
-                                        running and jumping for hours on end and gain a -1 to their Encumbrance for
-                                        every 2
-                                        levels
-                                        obtained.</p>
+                                <p><strong class='orangeHeader'>SAVAGE MAN in a SAVAGE LAND </strong>A Wilderman is used to
+                                        fighting in all conditions, good or bad. They gain a +1 to their Checks when they're suffering 
+                                from penalties from terrain or weather. This increases by 1 for every 2 levels they've obtained.</p>
                         </div>
                         <div class='marginBottom paragraphShell anchor'>
                                 <div id='4SnpcyUmtjG' class='anchorTag'></div>
@@ -5101,8 +5117,8 @@
                                 <app-bm-chapter-icon [id]="'4pnkFBuYAMUA'"></app-bm-chapter-icon>
                                 <p><strong class='orangeHeader'>NOBLE BEARING</strong> By reminding others of their
                                         lower station in life, you can remind them just how petty their needs are. You
-                                        inflict 1 point of Stress for every Characteristic your opponent(s) brings in
-                                        each round up to your level, rounded up.</p>
+                                        inflict 1 point of Stress for every dice your opponent(s) brings in
+                                        each round up to your level.</p>
                         </div>
                         <div class='paragraphShell anchor'>
                                 <div id='4pPpQlHiPyRL' class='anchorTag'></div>
