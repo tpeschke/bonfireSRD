@@ -1,5 +1,5 @@
 select * from srdbookmarks bm
-join (select * from srdadvanced adv
+join (select * from srdadvanced
 union
-select * from srdbasic basic) as basic on basic.linkid = bm.bookmarkcode
+select * from srdbasic) as searchTable on searchTable.linkid = bm.bookmarkcode
 where userid = $1
