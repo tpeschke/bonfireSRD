@@ -258,33 +258,29 @@
       <div class='tableOverflowWindow anchor longtermexhaustionTable'>
         <div id='longtermexhaustiontable' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'longtermexhaustiontable'"></app-bm-chapter-icon>
-        <div class='tableOuterShell' [ngStyle]='{width: "250px"}'>
+        <div class='tableOuterShell' [ngStyle]='{width: "350px"}'>
           <h1 class='tableTitle'>Long-Term Exhaustion</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
                 <p class='longtermexhaustionvalue TableIndividual'>Need</p>
-                <p class='longtermexhaustionvalue TableIndividual'>Deprivation</p>
-                <p class='longtermexhaustionvalue TableIndividual'>Maintenance</p>
-                <p class='longtermexhaustionvalue TableIndividual'>Indulgence</p>
+                <p class='longtermexhaustionvalue TableIndividual'>Nothing</p>
+                <p class='longtermexhaustionvalue TableIndividual'>Rationing</p>
               </div>
               <div class='tableValue'>
                 <p class='longtermexhaustionvalue TableIndividual'>Food</p>
-                <p class='longtermexhaustionvalue TableIndividual'>1 lb</p>
-                <p class='longtermexhaustionvalue TableIndividual'>3 lb</p>
-                <p class='longtermexhaustionvalue TableIndividual'>5 lb</p>
+                <p class='longtermexhaustionvalue TableIndividual'>d6! Stress, d6! Damage</p>
+                <p class='longtermexhaustionvalue TableIndividual'>1d6! halved damage, 1d6! halved Stress, rounded up</p>
               </div>
               <div class='tableValue'>
                 <p class='longtermexhaustionvalue TableIndividual'>Water</p>
-                <p class='longtermexhaustionvalue TableIndividual'>1/4 gallon</p>
-                <p class='longtermexhaustionvalue TableIndividual'>1/2 gallon</p>
-                <p class='longtermexhaustionvalue TableIndividual'>n/a</p>
+                <p class='longtermexhaustionvalue TableIndividual'>2d6! Damage</p>
+                <p class='longtermexhaustionvalue TableIndividual'>1d6! Damage/p>
               </div>
               <div class='tableValue'>
                 <p class='longtermexhaustionvalue TableIndividual'>Sleep</p>
-                <p class='longtermexhaustionvalue TableIndividual'>4 hours</p>
-                <p class='longtermexhaustionvalue TableIndividual'>6 hours</p>
-                <p class='longtermexhaustionvalue TableIndividual'>8 hours</p>
+                <p class='longtermexhaustionvalue TableIndividual'>2d6! Stress</p>
+                <p class='longtermexhaustionvalue TableIndividual'>1d6! Stress</p>
               </div>
             </div>
           </div>
@@ -302,57 +298,28 @@
         <div id='15pMFKhdzPgEf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pMFKhdzPgEf'"></app-bm-chapter-icon>
         <p>There are three things your character needs to take care of, as mentioned above: food, water, and sleep, and
-          three levels at which they either gain penalties or bonuses: Deprivation, Maintenance, and Indulgence. These
-          bonuses and penalties stack.</p>
+          three levels associated with each, normal, rationing, and nothing, which related to how much you have of each.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15pOcOKPCiNAn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pOcOKPCiNAn'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>DEPRIVATION</strong> is when your character starts to die of starvation,
-          dehydration, and/or sleep deprivation. You take 1 point of damage per day for each time you’re below this
-          threshold. This damage is on 1 Wound doesn’t heal until you bring that thing above Maintenance again. Going
-          with
-          limited sleep also inflicts 5 Stress. A Mental Break because of this causes the person to collapse and enter a
-          deep
-          sleep or go insane if they're unable to.
+        <p>If a person sleeps the normal amount (assumed to be 8 hours), eats a healthy amount of food, and drinks a good amount of water, they 
+          take no damage or Stress.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='eastingdrinkingornotsleeping' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'eastingdrinkingornotsleep'"></app-bm-chapter-icon>
-        <p>Doing a strenuous activity (Combat, Confrontations, or Skill Challenges, for example) you gives you an additional
-          2 Stress for
-          each thing you're deprived off.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='mainenanceiswhenyourcharactern' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'mainenanceiswhenyourcharactern'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>MAINTENANCE</strong> is when your character is getting enough to survive and
-          that’s it. Being below this threshold but above Deprivation offers no bonuses or penalties.</p>
+        <p>However, if they cut back on any of three (called rationing) or don't get any sleep, food, or water (called nothing), they 
+          take the associate damage and/or Stress as noted by the table.
+        </p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
-        <div id='infulgenceiseatingandsleepmore' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'infulgenceiseatingandsleepmore'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>INDULGENCE</strong> is eating and sleeping more than you need to but not
-          overeating or over sleeping. Being below this threshold but above Maintenance means that you gain an
-          additional Relaxation that day. This stacks as well, though no additional bonuses for over-indulging.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15phsOBUYZFwb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15phsOBUYZFwb'"></app-bm-chapter-icon>
-        <p class="italic">For example, while out in the wilderness, Olbrecht discovers that he is almost out of food and
-          water.
-          Luckily, he knows a river is two days way and he’s able to scavenge on the way there, but that still means
-          that he’s drinking less then 1/4 a gallon and only eating 3/4 lbs of food.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15pEaholPOCiD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15pEaholPOCiD'"></app-bm-chapter-icon>
-        <p class="italic"> Over his two days of travel, therefore, he takes 4 points of damage on 2 Wounds but he does
-          make it the
-          river. Now, he’s down to 1/4 lbs of food per day but he’s able to drink as much water as he likes, so over the
-          two days getting back to civilization, he takes an additional 2 Wounds from starvation but heals 1 from being
-          able to drink freely again.</p>
+        <div id='mainenanceiswhenyourcharactern' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'mainenanceiswhenyourcharactern'"></app-bm-chapter-icon>
+        <p>This is on 1 Wound per need but does stack: having no food and water gives you 2d6! damage and d6! Stress. Additionally, a Wound doesn't 
+          heal until the associated need is returned to normal.
+        </p>
       </div>
 
       <div class="anchor">

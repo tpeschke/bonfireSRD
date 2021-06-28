@@ -45,18 +45,19 @@
 }
 
 .longtermexhaustionvalue {
-    width: 60px;
+    width: 40%;
 }
 
 .longtermexhaustionvalue:first-child {
     text-align: left;
     padding-left: 10px;
+    width: 60px;
 }
 
 .longtermexhaustionTable {
     float: left;
     margin-right: 15px;
-    width: 250px;
+    width: 350px;
 }
 
 

@@ -160,7 +160,7 @@
         <div id='itisassumedthatyourcharacter' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'itisassumedthatyourcharacter'"></app-bm-chapter-icon>
         <p>It is assumed that your character is trying their hardest to be successfully in whatever they attempt and
-          so any Check you make inflicts d4! Stress.</p>
+          so any Check you make inflicts d4! Stress if they don't succeed by more than 5.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <h2 class='sidebarTitle'>Answering a Question</h2>
@@ -230,7 +230,7 @@
         <div id='ObstaclesalsoxjBNMvDhIl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ObstaclesalsoxjBNMvDhIl'"></app-bm-chapter-icon>
         <p>Obstacles also have Failure Threshold, which represents badly you have to fail against them to actually fail.
-          More on this in the Failures, Hard & Soft section below.</p>
+          More on this in the Complications & Hard Failures section below.</p>
       </div>
 
 
@@ -344,7 +344,7 @@
       <div class='paragraphShell anchor'>
         <div id='thiscanalsobeusedfortimedchalge' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thiscanalsobeusedfortimedchalge'"></app-bm-chapter-icon>
-        <p>This can also be used for timed Challenges, such as a chance or encroaching deadline. In that case you not only count both Soft Successes and Failures, as they represent time passing, but also questions your players ask count as 1 Soft Failure, representing them taking time to get stock of their surroundings, which you oftentimes don’t have as much time to do under pressure.</p>
+        <p>This can also be used for timed Challenges, such as a chance or encroaching deadline. In that case you not only count both Soft Successes and Complications, as they represent time passing, but also questions your players ask count as 1 Complication, representing them taking time to get stock of their surroundings, which you oftentimes don’t have as much time to do under pressure.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='meansitstartPZgWQqWmSW' class='anchorTag'></div>
@@ -358,7 +358,7 @@
       <div class='paragraphShell anchor'>
         <div id='linkedobstaclesarte' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'linkedobstaclesarte'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>LINKED </strong>Obstacles are Obstacles that whose outcomes affect one another. So, for instance, if the players are in a wagon chase down a rocky road, with one player at the helm, stirring, and the others in the back firing crossbows, how well the player of the reigns does affects the attack rolls of those in the back. In this case, add or subtract the number of Soft Failures or Soft Successes to the Check of any linked Obstacles.</p>
+        <p><strong class='orangeHeader'>LINKED </strong>Obstacles are Obstacles that whose outcomes affect one another. So, for instance, if the players are in a wagon chase down a rocky road, with one player at the helm, stirring, and the others in the back firing crossbows, how well the player of the reigns does affects the attack rolls of those in the back. In this case, add or subtract the number of Complications or Soft Successes to the Check of any linked Obstacles.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='notethatlinkedobstacles' class='anchorTag'></div>
@@ -459,7 +459,7 @@
       <div class='anchor'>
         <div id='FailuresSoftriTlAUJpwm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FailuresSoftriTlAUJpwm'"></app-bm-chapter-icon>
-        <h3>FAILURES, HARD & SOFT</h3>
+        <h3>COMPLICATIONS & HARD FAILURES</h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='FailingaChecbYVZTkvTGz' class='anchorTag'></div>
@@ -467,28 +467,28 @@
         <p>Failing a Check doesn’t automatically mean that you’re instantly screwed: Failing a single Move Silently
           Check
           doesn’t
-          result in the guards catching you. In Bonfire, there are soft failures and hard failures.</p>
+          result in the guards catching you. In Bonfire, this represented by Complications and Hard Failures.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SoftfailuresyqlPsGMxjy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoftfailuresyqlPsGMxjy'"></app-bm-chapter-icon>
-        <p>Every Obstacle will have a number of Soft Failures it can gain before it hard fails.
+        <p>Every Obstacle will have a number of Complications it can gain before it hard fails.
           This is called it's Failure Threshold.
-          You gain Soft Failures by failing Skill Checks: every 5 points below what you needed 
-          to get gives the Obstacle 1 Soft Failure, rounded up (so a failure by 1 - 5 is still considered a soft failure).</p>
+          You gain Complications by failing Skill Checks: every 5 points below what you needed 
+          to get gives the Obstacle 1 Complication, rounded up (so a failure by 1 - 5 is still considered a Complication).</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='SoftfailuresyqlPsGMxjy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoftfailuresyqlPsGMxjy'"></app-bm-chapter-icon>
-        <p>Soft Failures represent complications, such as the guard hearing something, or you leaving a clue 
-          behind that might give someone a heads up that you're there. An Obstacle gets +2 for every Soft Failure 
+        <p>Complications represent complications, such as the guard hearing something, or you leaving a clue 
+          behind that might give someone a heads up that you're there. An Obstacle gets +2 for every Complication 
           is has on it.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenthatFailsRnVwhXuBV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenthatFailsRnVwhXuBV'"></app-bm-chapter-icon>
-        <p>When an Obstacle gets more Soft Failures than its Failure Threshold, it hard fails. Hard
+        <p>When an Obstacle gets more Complications than its Failure Threshold, it hard fails. Hard
           failures are when something bad actually happens. In this case, it does result in you getting caught by the
           guards, or it results in your falling off the wall and taking damage. Even after a hard failure, you can
           sometimes try again, like in the case of falling off the wall.</p>
@@ -500,11 +500,11 @@
       </div>
       
       <div class='sidebarShell marginBottom'>
-        <h2 class='sidebarTitle'>Soft Failure in the Narrative</h2>
+        <h2 class='sidebarTitle'>Complication in the Narrative</h2>
         <div class='paragraphShell anchor marginBottom'>
           <div id='SoftFailuresQplbplkWKk' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'SoftFailuresQplbplkWKk'"></app-bm-chapter-icon>
-          <p>Soft Failures don’t mean that the Skill Challenge grinds to a halt while the players keep reattempting that
+          <p>Complications don’t mean that the Skill Challenge grinds to a halt while the players keep reattempting that
             Skill: instead it should represent the players coming closer to danger.</p>
         </div>
         <div class='paragraphShell anchor'>
@@ -517,7 +517,7 @@
         <div class='paragraphShell anchor'>
           <div id='HerollshisCNIffWDCFEL' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'HerollshisCNIffWDCFEL'"></app-bm-chapter-icon>
-          <p class="italic">He rolls his Check but fails by 7, giving the Obstacle 1 Soft Failure. In this case, he obviously jumped but also didn’t make it. What does
+          <p class="italic">He rolls his Check but fails by 7, giving the Obstacle 1 Complication. In this case, he obviously jumped but also didn’t make it. What does
             that mean? Well, York didn’t quite make it but managed to grab the ledge as he fell, so he didn’t fall to his
             death but he isn’t safe either.</p>
         </div>
@@ -763,7 +763,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='EitherwaybezNNoIGWwTu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EitherwaybezNNoIGWwTu'"></app-bm-chapter-icon>
-        <p>Either way, besides this, it works like a normal Check</p>
+        <p>Either way, besides this, it works like a normal Check, except that, for the Stress gain, you're going to roll 1d4! for each Skill they're attempting but only use the highest if applicable.
+          They need to succeed all Checks by 5 to completely remove the Stress gain.</p>
       </div>
 
       <div class='sidebarShell marginBottom'>
@@ -839,7 +840,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='inthiscasethie' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'inthiscasethie'"></app-bm-chapter-icon>
-        <p>In this case, they take no Stress from the Check but roll a d12! instead of a d20!</p>
+        <p>In this case, they take no Stress from the Check but take a -4 penalty.</p>
       </div>
       <div class='anchor'>
         <div id='PreparationgjAmEBsugq' class='anchorTag'></div>
@@ -943,8 +944,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='FailuresdonttYtYZkoJrX' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FailuresdonttYtYZkoJrX'"></app-bm-chapter-icon>
-        <p>The bonus for this is that Soft Failures you would get from the Check don't get added to Universial or Linked 
-           Obstacles in the Challenge, though Hard Failures do add 2 Soft Failures to them.
+        <p>The bonus for this is that Complications you would get from the Check don't get added to Universial or Linked 
+           Obstacles in the Challenge, though Hard Failures do add 2 Complications to them.
         </p>
       </div>
       <div class="anchor">
@@ -1246,6 +1247,11 @@
                   <p class='SkillDescriptionsvalue TableIndividual'>Int</p>
                 </div>
                 <div class='tableValue'>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Articulation</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
+                  <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
+                </div>
+                <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Artistry (Specific)</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>8</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Dex</p>
@@ -1282,11 +1288,6 @@
                 </div>
                 <div class='tableValue'>
                   <p class='SkillDescriptionsvalue TableIndividual'>Performance</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>5</p>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
-                </div>
-                <div class='tableValue'>
-                  <p class='SkillDescriptionsvalue TableIndividual'>Persuasion</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>5</p>
                   <p class='SkillDescriptionsvalue TableIndividual'>Wis/Cha</p>
                 </div>
@@ -2644,6 +2645,77 @@
         <p> Additionally, the character should get a bonus if he has any skill that’s applicable to the thing he’s
           purchasing.</p>
       </div>
+      <div class='paragraphShell anchor'>
+        <div id='8pjHETCpoIZs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'8pjHETCpoIZs'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>ARTICULATION</strong> You may think that the truth is powerful enough to carry
+          your
+          argument but you can be beat out by a master of deception. Articulation is the skill of rhetoric and
+          formulating
+          the truth in such a way that make it the most convincing.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='8pVgAmFkendE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'8pVgAmFkendE'"></app-bm-chapter-icon>
+        <p> The level of difficulty to convince someone is how much evidence you can supply to back up your arguments.
+          This
+          is opposed by Deception or Articulation but only if someone is trying to actively trying to deceive or
+          convince
+          the same person as you.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='8pzaapGuNDZy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'8pzaapGuNDZy'"></app-bm-chapter-icon>
+        <p> Even if you succeed, this isn’t a permanent way of changing a person’s mind. Others may lie more
+          effectively
+          than you can tell the truth and that may cause them to rethink their opinion on what you tried to sell them.
+        </p>
+      </div>
+      <div class='tableOverflowWindow PersuasionCheckTable'>
+        <div class='tableOuterShell' [ngStyle]='{width: "500px"}'>
+          <h1 class='tableTitle'>Articulation Check</h1>
+          <div class='tableHeaders'>
+            <div class='tableRow'>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>Modifiers</p>
+                <p class='PersuasionCheckvalue TableIndividual'>Level Of Evidence</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>13</p>
+                <p class='PersuasionCheckvalue TableIndividual'>Amply Evidence Right At Hand, Backed Up By First
+                  Hand Experience</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>8</p>
+                <p class='PersuasionCheckvalue TableIndividual'>Amply Evidence Available But Not At Hand With
+                  Conviction, Backed Up By First Hand Experience</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>5</p>
+                <p class='PersuasionCheckvalue TableIndividual'>Some Evidence With Conviction With First Hand
+                  Experience</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>3</p>
+                <p class='PersuasionCheckvalue TableIndividual'>Some Evidence With Conviction With Only Rumors</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>2</p>
+                <p class='PersuasionCheckvalue TableIndividual'>No Evidence But Conviction, Or Vice Versa. Rumors
+                  Of The Truth</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>1</p>
+                <p class='PersuasionCheckvalue TableIndividual'>No Evidence Or Conviction, Rumors Of The Truth</p>
+              </div>
+              <div class='tableValue'>
+                <p class='PersuasionCheckvalue TableIndividual'>0</p>
+                <p class='PersuasionCheckvalue TableIndividual'>No Evidence Or Conviction, No Rumors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='8plLCBmmcXNr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8plLCBmmcXNr'"></app-bm-chapter-icon>
@@ -2753,77 +2825,6 @@
           already exists, the size is temporarily increased. Additionally, the Devotion can be increased by 1
           for
           every extra level of difficulty the orator passes their check by.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pjHETCpoIZs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pjHETCpoIZs'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>PERSUASION</strong> You may think that the truth is powerful enough to carry
-          your
-          argument but you can be beat out by a master of deception. Persuasion is the skill of rhetoric and
-          formulating
-          the truth in such a way that make it the most convincing.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8pVgAmFkendE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pVgAmFkendE'"></app-bm-chapter-icon>
-        <p> The level of difficulty to convince someone is how much evidence you can supply to back up your arguments.
-          This
-          is opposed by Deception or Persuasion but only if someone is trying to actively trying to deceive or
-          convince
-          the same person as you.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='8pzaapGuNDZy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8pzaapGuNDZy'"></app-bm-chapter-icon>
-        <p> Even if you succeed, this isn’t a permanent way of changing a person’s mind. Others may lie more
-          effectively
-          than you can tell the truth and that may cause them to rethink their opinion on what you tried to sell them.
-        </p>
-      </div>
-      <div class='tableOverflowWindow PersuasionCheckTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "500px"}'>
-          <h1 class='tableTitle'>Persuasion Check</h1>
-          <div class='tableHeaders'>
-            <div class='tableRow'>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>Modifiers</p>
-                <p class='PersuasionCheckvalue TableIndividual'>Level Of Evidence</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>13</p>
-                <p class='PersuasionCheckvalue TableIndividual'>Amply Evidence Right At Hand, Backed Up By First
-                  Hand Experience</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>8</p>
-                <p class='PersuasionCheckvalue TableIndividual'>Amply Evidence Available But Not At Hand With
-                  Conviction, Backed Up By First Hand Experience</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>5</p>
-                <p class='PersuasionCheckvalue TableIndividual'>Some Evidence With Conviction With First Hand
-                  Experience</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>3</p>
-                <p class='PersuasionCheckvalue TableIndividual'>Some Evidence With Conviction With Only Rumors</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>2</p>
-                <p class='PersuasionCheckvalue TableIndividual'>No Evidence But Conviction, Or Vice Versa. Rumors
-                  Of The Truth</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>1</p>
-                <p class='PersuasionCheckvalue TableIndividual'>No Evidence Or Conviction, Rumors Of The Truth</p>
-              </div>
-              <div class='tableValue'>
-                <p class='PersuasionCheckvalue TableIndividual'>0</p>
-                <p class='PersuasionCheckvalue TableIndividual'>No Evidence Or Conviction, No Rumors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class='anchor'>
