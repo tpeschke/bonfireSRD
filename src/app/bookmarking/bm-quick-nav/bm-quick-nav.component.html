@@ -1,23 +1,29 @@
 <div class='bookmarkingShell'>
   <h1>Your Bookmarks</h1>
-  <div class="bookmarkShelfHeading">
+
+  <div *ngIf="!bookmarkArray" class="loadingArray">
+    <div class="triangle"></div>
+  </div>
+
+  <div *ngIf="bookmarkArray.length > 0">
+    <div class="bookmarkShelfHeading">
       <h3>Ch</h3>
       <h3>Body</h3>
       <div></div>
     </div>
-
-  <div class="bookmarksShell">
-    <div *ngIf="!bookmarkArray" class="loadingArray">
-      <div class="triangle"></div>
-    </div>
-  
-    <div *ngIf="bookmarkArray" >
+    <div class="bookmarksShell">
       <div *ngFor="let mark of bookmarkArray" class="bookmarkShelf" (click)="goToLink(mark.link, mark.chapter)">
         <h3>{{mark.chapter}}</h3>
         <h3>{{mark.body}}</h3>
         <i stopPropagation (click)="deleteBookmark($event, mark.id)" class="fa fa-unlink"></i>
       </div>
+  
     </div>
+    <i class="fas fa-question-circle positioning" (click)="openHelp()"></i>
   </div>
-  <i class="fas fa-question-circle positioning" (click)="openHelp()"></i>
+  
+  <div *ngIf="bookmarkArray.length === 0">
+    <h3 class="no-marks-header">You Have No Bookmarks. To Add Them, See Below:</h3>
+    <img src="../../../assets/images/step1.png" alt="">
+  </div>
 </div>

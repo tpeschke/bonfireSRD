@@ -102,6 +102,14 @@ width: 10%;
   color: whitesmoke;
 }
 
+.no-marks-header {
+  margin-top: 5px;
+}
+
+img {
+  width: 52%;
+}
+
 @keyframes fade {
   100% {
     border-color: transparent transparent #b45f0600 transparent;
