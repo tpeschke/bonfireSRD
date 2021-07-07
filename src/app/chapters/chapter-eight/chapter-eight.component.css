@@ -114,6 +114,8 @@
 
 .CheckToNotSlowDownTable {
   width: 220px;
+  float: left;
+  margin: 0 15px 0;
 }
 
 .CheckToNotSlowDownvalue {
@@ -135,7 +137,7 @@
 }
 
 .StealthSpeedTable {
-  width: 260px;
+  width: 200px;
   float: left;
   margin: 0 15px 0;
 }
@@ -145,7 +147,7 @@
 }
 
 .DeceptionCheckTable {
-  width: 330px;
+  width: 225px;
   float: left;
   margin: 0 15px 0 0;
 }
