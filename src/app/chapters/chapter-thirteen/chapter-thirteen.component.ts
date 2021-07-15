@@ -16,7 +16,7 @@ export class ChapterThirteenComponent implements OnInit {
   ) { }
 
   chapterName = '';
-  side =[{linkid: 'h', body: 'Anatomy Of The Divine', jump: 'ANATOMYoftheheader'}, {linkid: 'hg', body: 'COVENANTS', jump: 'COVENANTSiADfRSYVws'}, {linkid: 'hg', body: 'COSMIC LINKS', jump: 'COSMICLINKSvHGbhXmpwF'}, {linkid: 'h', body: 'Favor Of The Divines', jump: 'FAVORoftheDheader'}, {linkid: 'hg', body: 'WHAT IS FAVOR?', jump: 'WHATisFAVORIoOErAXOZr'}, {linkid: 'hg', body: 'LEVELS OF DEVOTION', jump: 'LEVELSofDEVOlaroqlcirH'}, {linkid: 'hg', body: 'ACQUIRING FAVOR', jump: 'ACQUIRINGFAVOpycTIdBLJE'}, {linkid: 'hg', body: 'MAXIMUM FAVOR', jump: 'MAXIMUMFAVORuKbAjGtpsD'}, {linkid: 'h', body: 'Invoking Miracles', jump: 'INVOKINGMIRACheader'}]
+  side =[{linkid: 'h', body: 'Anatomy of the Divine', jump: 'ANATOMYoftheheader'}, {linkid: 'hg', body: 'COVENANTS', jump: 'COVENANTSiADfRSYVws'}, {linkid: 'hg', body: 'COSMIC LINKS', jump: 'COSMICLINKSvHGbhXmpwF'}, {linkid: 'h', body: 'Favor of the Divines', jump: 'FAVORoftheDheader'}, {linkid: 'hg', body: 'WHAT IS FAVOR?', jump: 'WHATisFAVORIoOErAXOZr'}, {linkid: 'hg', body: 'LEVELS OF DEVOTION', jump: 'LEVELSofDEVOlaroqlcirH'}, {linkid: 'hg', body: 'ACQUIRING FAVOR', jump: 'ACQUIRINGFAVOpycTIdBLJE'}, {linkid: 'hg', body: 'MAXIMUM FAVOR', jump: 'MAXIMUMFAVORuKbAjGtpsD'}, {linkid: 'h', body: 'Invoking Miracles', jump: 'INVOKINGMIRACheader'}]
 
   ngOnInit(){}
 
