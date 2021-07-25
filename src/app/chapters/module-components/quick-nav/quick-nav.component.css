@@ -86,12 +86,12 @@ p:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b45f06; 
+  background: rgba(245, 245, 245, .9); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b45f06; 
+  background: rgba(245, 245, 245, .9); 
 }
 
 /* ======================================================= */

@@ -813,17 +813,17 @@ h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent 
+  background: #b45f06; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b45f06; 
+  background: #222 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b45f06; 
+  background: #222 
 }
 
 
