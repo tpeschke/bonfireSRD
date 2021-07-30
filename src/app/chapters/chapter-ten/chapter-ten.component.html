@@ -417,7 +417,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pdNPKkcslCS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10pdNPKkcslCS'"></app-bm-chapter-icon>
-        <p> Remember that if you drop a Vitality Category you gain Stress equal to your Encumbrance</p>
+        <p> Remember that if you drop a Wound Category you could become Fatigued.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='10pBgpzKyMwJo' class='anchorTag'></div>
@@ -834,16 +834,10 @@
               <p><strong class='orangeHeader'>Initiative</strong> Dex Mod + Wis Mod + A</p>
           </div>
       </div>
-      <div class="bulletListShell">
-          <h4 class="bulletTriangle">🜂</h4>
-          <div>
-              <p><strong class='orangeHeader'>Damage</strong> Str Mod</p>
-          </div>
-      </div>
       <div class="bulletListShell marginBottom">
           <h4 class="bulletTriangle">🜂</h4>
           <div>
-              <p><strong class='orangeHeader'>ENCUMBRANCE</strong> Con Mod + Wis Mod + A + S</p>
+              <p><strong class='orangeHeader'>Damage</strong> Str Mod</p>
           </div>
       </div>
       <div class='marginBottom paragraphShell anchor'>
@@ -891,7 +885,7 @@
         <div id='7pxEriGlPnIf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'7pxEriGlPnIf'"></app-bm-chapter-icon>
         <p> You can always try and use armor without the baseline knowledge of how to properly wear and don it,
-          but the Defense penalty and Encumbrance are both doubled if that’s the case.</p>
+          but the Defense penalty is doubled and you're always considered Fatigued if that’s the case.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='7pgCROMOpoNP' class='anchorTag'></div>
@@ -1047,7 +1041,7 @@
             that type of
             Advanced Training, but you train in specific Tiers. So, Armor Advanced Training has Defense,
             Recovery Modifier,
-            Encumbrance, and Initiative as its areas. Each purchase in that area gives them a Rank in one of
+            Fatigue, and Initiative as its areas. Each purchase in that area gives them a Rank in one of
             the Tiers,
             which is a bonus that’s applied when applicable. This bonus can't bring a negative bonus above
             0, however.</p>
@@ -1095,7 +1089,7 @@
                   <p class='rankexamplevalue TableIndividual'> </p>
                 </div>
                 <div class='tableValue'>
-                  <p class='rankexamplevalue TableIndividual'>Encumb</p>
+                  <p class='rankexamplevalue TableIndividual'>Fatigue</p>
                   <p class='rankexamplevalue TableIndividual'>X</p>
                   <p class='rankexamplevalue TableIndividual'>X</p>
                   <p class='rankexamplevalue TableIndividual'>X</p>
@@ -1124,8 +1118,8 @@
           <p class="italic">For example, let’s say that you want to increase your training in Scale Armor, which, as we
             all
             know, has the
-            stats of Def 0, Init 3, Recovery 1, and Encumbrance of 8. If you want to get a Rank 5 in
-            Encumbrance, you would
+            stats of Def 0, Init 3, Recovery 1, and Fatigue of Bloodied. If you want to get a Rank 5 in
+            Fatigue, you would
             have to buy up to a Rank 4 in a different category, Rank 3 in another, and Rank 2 in a final
             thing.</p>
         </div>
@@ -1137,7 +1131,7 @@
             that that
             additional 2 Ranks in Recovery and that Rank 1 in Def doesn’t give you anything besides allowing
             you to reach
-            Rank 4 in Encumbrance.</p>
+            Rank 4 in Fatigue.</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='TiersdontstQJzeUCiFFs' class='anchorTag'></div>
@@ -1161,13 +1155,11 @@
           <app-bm-chapter-icon [id]="'7hgcFiVOcYkjx'"></app-bm-chapter-icon>
           <h3>COST</h3>
         </div>
-
         <div class='paragraphShell anchor marginBottom'>
           <div id='TheBaseCostsMnWJwzZGwF' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'TheBaseCostsMnWJwzZGwF'"></app-bm-chapter-icon>
           <p>The Base Costs are listed next to each tier. The number in parenthesis is what Fighter Archetypes
-            pay instead.
-          </p>
+            pay instead BEFORE any Improved Advanced Training Archetype Abilities they may have.</p>
         </div>
 
         <div class='anchor'>
@@ -1177,7 +1169,7 @@
         </div>
         <div class="tierBox">
           <div class="tierTitle">
-            <p>Tier 3: All Armor</p>
+            <p>Tier 3: All Armor (including improvised armor)</p>
             <p>Cost: 16 (12)</p>
           </div>
           <div class="tierBox tierTwo">
@@ -1196,13 +1188,13 @@
         <div class='marginBottom paragraphShell anchor'>
           <div id='7pbnysHVHcHa' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'7pbnysHVHcHa'"></app-bm-chapter-icon>
-          <p><strong class='orangeHeader'>AREAS</strong> Defense, Recovery Modifier, Encumbrance,
+          <p><strong class='orangeHeader'>AREAS</strong> Defense, Recovery Modifier, Fatigue,
             Initiative </p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='encurmbrancelowersthatarmors' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'encurmbrancelowersthatarmors'"></app-bm-chapter-icon>
-          <p> Encumbrance lowers that armor's Encumbrance by 2 for every plus you have in it.</p>
+          <p> Fatigue lowers that armor's Fatigue by 1 Category for every 2 Ranks you have in it.</p>
         </div>
         <div class='anchor'>
           <div id='7hgclXvcuGWDt' class='anchorTag'></div>
@@ -1211,7 +1203,7 @@
         </div>
         <div class="tierBox">
           <div class="tierTitle">
-            <p>Tier 3: All Shield</p>
+            <p>Tier 3: All Shield (including improvised shields)</p>
             <p>Cost: 16 (12)</p>
           </div>
           <div class="tierBox tierTwo">
@@ -1230,12 +1222,12 @@
         <div class='marginBottom paragraphShell anchor'>
           <div id='7pYJaAMEIxcR' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'7pYJaAMEIxcR'"></app-bm-chapter-icon>
-          <p><strong class='orangeHeader'>AREAS</strong> Defense, Parry, Encumbrance, Breakage</p>
+          <p><strong class='orangeHeader'>AREAS</strong> Defense, Parry, Fatigue, Breakage</p>
         </div>
         <div class='paragraphShell anchor'>
-          <div id='encumbrancelowersthatsheild' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'encumbrancelowersthatsheild'"></app-bm-chapter-icon>
-          <p> Encumbrance lowers that shield's Encumbrance by 2 for every plus you have in it.</p>
+          <div id='faitugerancelowersthatsheild' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'faitugerancelowersthatsheild'"></app-bm-chapter-icon>
+          <p> Fatigue lowers that shield's Fatigue by 1 Category for every 2 Ranks you have in it.</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='7pwAOsLRRXZS' class='anchorTag'></div>
@@ -1253,7 +1245,7 @@
         </div>
         <div class="tierBox">
           <div class="tierTitle">
-            <p>Tier 3: All Melee Weapons</p>
+            <p>Tier 3: All Melee Weapons (including improvised melee weapons)</p>
             <p>Cost: 16 (12)</p>
           </div>
           <div class="tierBox tierTwo">
@@ -1282,7 +1274,7 @@
         </div>
         <div class="tierBox">
           <div class="tierTitle">
-            <p>Tier 3: All Ranged Weapons</p>
+            <p>Tier 3: All Ranged Weapons (including improvised ranged weapons)</p>
             <p>Cost: 18 (14)</p>
           </div>
           <div class="tierBox tierTwo">

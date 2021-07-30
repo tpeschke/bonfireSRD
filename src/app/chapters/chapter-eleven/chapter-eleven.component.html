@@ -15,7 +15,7 @@
       </div>
       <div class="anchor">
         <div id="11hlkpDcuULVK" class="anchorTag"></div>
-        <h1>Encumbrance</h1>
+        <h1>Carry</h1>
         <div class="underline"></div>
       </div>
       <div class='paragraphShell anchor'>
@@ -42,7 +42,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='theotherbenefitsithat' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theotherbenefitsithat'"></app-bm-chapter-icon>
-        <p> Each individual instance of an item counts towards this: carrying two daggers, both S items, would count as 2S for Encumbrance.</p>
+        <p> Each individual instance of an item counts towards this: carrying two daggers, both S items, would count as 2S for Carry.</p>
       </div>
 
       <div class='anchor'>
@@ -53,7 +53,7 @@
       <div class='paragraphShell anchor'>
         <div id='11pVvDeeZTILE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11pVvDeeZTILE'"></app-bm-chapter-icon>
-        <p>Normally what is written under the Carry column for each item is its Encumbrance. The only exception is clothes, armor, and personal containers. If worn on your person, not carried or stuffed in a backpack, these become less encumbering since their weight is distributed across basically the entire body.</p>
+        <p>Normally what is written under the Carry column for each item is its Size. The only exception is clothes, armor, and personal containers. If worn on your person, not carried or stuffed in a backpack, these become less encumbering since their weight is distributed across basically the entire body.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='11uJWKXGErDY' class='anchorTag'></div>
@@ -87,10 +87,15 @@
         <app-bm-chapter-icon [id]="'goingovercaryy'"></app-bm-chapter-icon>
         <h3>GOING OVER CARRY</h3>
       </div>
-      <div class='paragraphShell marginBottom anchor'>
+      <div class='paragraphShell anchor'>
         <div id='youcangoroveyouer' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youcangoroveyouer'"></app-bm-chapter-icon>
-        <p>You can go over your Carry, of course, but each M item worth over your limit increases your Encumbrance by +1, which is fairly forgiving for S and smaller items but not for L and larger items.</p>
+        <p>You can go over your Carry, of course, but it will slow you down. Going over your Carry prevents you from Sprinting.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='beytondthathioyoiu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'beytondthathioyoiu'"></app-bm-chapter-icon>
+        <p>Beyond that, each M of weight over your limit removes the next quickest Movement Category (so, removing Running, Jogging, Walking, and then Crawling) until your character is unable to move.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='unlessproveother' class='anchorTag'></div>
@@ -860,7 +865,7 @@
       <div class='paragraphShell anchor'>
         <div id='houostilmain' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'houostilmain'"></app-bm-chapter-icon>
-        <p>1) You still maintain any penalties (Encumbrance, Defense Modifiers from armor and shields, for example) that item gives you unless you discard it.</p>
+        <p>1) You still maintain any penalties (Fatigue, Defense Modifiers from armor and shields, for example) that item gives you unless you discard it.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ifnthieoocaio' class='anchorTag'></div>
@@ -1035,15 +1040,13 @@
       <div class='paragraphShell anchor'>
         <div id='11pKmwLYNtWvx' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11pKmwLYNtWvx'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Weight</strong> This is how heavy your armor is for encumbrance when your armor
-          is
-          carried on your person. Worn armor doesn’t count towards your encumbrance.</p>
+        <p><strong class='greyHeader'>Weight</strong> This is how heavy your armor is for Carry when your armor
+          is carried on your person.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='11pKfXsKbDmWQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11pKfXsKbDmWQ'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Encumb</strong> This number is added to your Encumbrance as doing things
-          with a weight on you is tiring.</p>
+        <p><strong class='greyHeader'>Fatigue</strong> This donates at what Wound Category you become Fatigued. A for Always, H for Hurt, B for Bloodied, and W for Wounded.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='11pWXWuVeYtxK' class='anchorTag'></div>
@@ -1065,7 +1068,7 @@
                 <p class='equipmentvalue TableIndividual'>Init Mod</p>
                 <p class='equipmentvalue TableIndividual'>Rec Mod</p>
                 <p class='equipmentvalue TableIndividual'>Type</p>
-                <p class='equipmentvalue TableIndividual'>Encumb</p>
+                <p class='equipmentvalue TableIndividual'>Fatigue</p>
                 <p class='equipmentvalue TableIndividual'>Skill Adj</p>
               </div>
               <div class='tableValue'>
@@ -1075,7 +1078,7 @@
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>0</p>
+                <p class='equipmentvalue TableIndividual'>B</p>
                 <p class='equipmentvalue TableIndividual'>-2</p>
               </div>
               <div class='tableValue'>
@@ -1085,7 +1088,7 @@
                 <p class='equipmentvalue TableIndividual'>2</p>
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>B</p>
                 <p class='equipmentvalue TableIndividual'>-2</p>
               </div>
               <div class='tableValue'>
@@ -1095,7 +1098,7 @@
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>B</p>
                 <p class='equipmentvalue TableIndividual'>-2</p>
               </div>
               <div class='tableValue'>
@@ -1105,7 +1108,7 @@
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>B</p>
                 <p class='equipmentvalue TableIndividual'>-2</p>
               </div>
               <div class='tableValue'>
@@ -1115,7 +1118,7 @@
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>Light</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>B</p>
                 <p class='equipmentvalue TableIndividual'>-2</p>
               </div>
               <div class='tableValue'>
@@ -1125,7 +1128,7 @@
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>5</p>
+                <p class='equipmentvalue TableIndividual'>W</p>
                 <p class='equipmentvalue TableIndividual'>-4</p>
               </div>
               <div class='tableValue'>
@@ -1135,7 +1138,7 @@
                 <p class='equipmentvalue TableIndividual'>3</p>
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>W</p>
                 <p class='equipmentvalue TableIndividual'>-4</p>
               </div>
               <div class='tableValue'>
@@ -1145,7 +1148,7 @@
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>2</p>
                 <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'>W</p>
                 <p class='equipmentvalue TableIndividual'>-4</p>
               </div>
               <div class='tableValue'>
@@ -1155,7 +1158,7 @@
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>4</p>
                 <p class='equipmentvalue TableIndividual'>Medium</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>W</p>
                 <p class='equipmentvalue TableIndividual'>-4</p>
               </div>
               <div class='tableValue'>
@@ -1165,7 +1168,7 @@
                 <p class='equipmentvalue TableIndividual'>1</p>
                 <p class='equipmentvalue TableIndividual'>2</p>
                 <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>H</p>
                 <p class='equipmentvalue TableIndividual'>-8</p>
               </div>
               <div class='tableValue'>
@@ -1175,7 +1178,7 @@
                 <p class='equipmentvalue TableIndividual'>4</p>
                 <p class='equipmentvalue TableIndividual'>3</p>
                 <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>4</p>
+                <p class='equipmentvalue TableIndividual'>H</p>
                 <p class='equipmentvalue TableIndividual'>-8</p>
               </div>
               <div class='tableValue'>
@@ -1185,7 +1188,7 @@
                 <p class='equipmentvalue TableIndividual'>4</p>
                 <p class='equipmentvalue TableIndividual'>4</p>
                 <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>H</p>
                 <p class='equipmentvalue TableIndividual'>-8</p>
               </div>
               <div class='tableValue'>
@@ -1195,7 +1198,7 @@
                 <p class='equipmentvalue TableIndividual'>4</p>
                 <p class='equipmentvalue TableIndividual'>5</p>
                 <p class='equipmentvalue TableIndividual'>Heavy</p>
-                <p class='equipmentvalue TableIndividual'>10</p>
+                <p class='equipmentvalue TableIndividual'>H</p>
                 <p class='equipmentvalue TableIndividual'>-8</p>
               </div>
             </div>
@@ -1712,13 +1715,13 @@
       <div class='paragraphShell anchor'>
         <div id='11plQrSeeiIsR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11plQrSeeiIsR'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Weight</strong> This is how heavy your shield is for encumbrance.</p>
+        <p><strong class='greyHeader'>Weight</strong> This is how heavy your shield is for your Carry.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='11pmWczObrKZK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'11pmWczObrKZK'"></app-bm-chapter-icon>
-        <p><strong class='greyHeader'>Encumb</strong> This number is added to your Encumbrance as doing things
-          with a weight on you is tiring.</p>
+        <p><strong class='greyHeader'>Fatigue</strong> This number adjust the Wound Category at which you become Fatigued. So a shield with Fatigue -1 means that 
+        you become Fatigued at Wounded, instead of Critical (assuming you're not wearing armor as this penalty stacks with armor's).</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='11pDOMrTxJFzN' class='anchorTag'></div>
@@ -1763,7 +1766,7 @@
                 <p class='equipmentvalue TableIndividual'>Parry</p>
                 <p class='equipmentvalue TableIndividual'>Cover</p>
                 <p class='equipmentvalue TableIndividual'>Flanks</p>
-                <p class='equipmentvalue TableIndividual'>Encumb</p>
+                <p class='equipmentvalue TableIndividual'>Fatigue</p>
                 <p class='equipmentvalue TableIndividual'>Bonus</p>
                 <p class='equipmentvalue TableIndividual'>For</p>
               </div>
@@ -1775,7 +1778,7 @@
                 <p class='equipmentvalue TableIndividual'>6</p>
                 <p class='equipmentvalue TableIndividual'>2</p>
                 <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>3</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
                 <p class='equipmentvalue TableIndividual'>Yes</p>
                 <p class='equipmentvalue TableIndividual'>S</p>
               </div>
@@ -1787,7 +1790,7 @@
                 <p class='equipmentvalue TableIndividual'>5</p>
                 <p class='equipmentvalue TableIndividual'>0</p>
                 <p class='equipmentvalue TableIndividual'>1</p>
-                <p class='equipmentvalue TableIndividual'>2</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
                 <p class='equipmentvalue TableIndividual'> </p>
                 <p class='equipmentvalue TableIndividual'>A</p>
               </div>
@@ -1799,7 +1802,7 @@
                 <p class='equipmentvalue TableIndividual'>15</p>
                 <p class='equipmentvalue TableIndividual'>2d8!+7</p>
                 <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>13</p>
+                <p class='equipmentvalue TableIndividual'>-3</p>
                 <p class='equipmentvalue TableIndividual'> </p>
                 <p class='equipmentvalue TableIndividual'>S</p>
               </div>
@@ -1811,7 +1814,7 @@
                 <p class='equipmentvalue TableIndividual'>8</p>
                 <p class='equipmentvalue TableIndividual'>d6!+2</p>
                 <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
                 <p class='equipmentvalue TableIndividual'> </p>
                 <p class='equipmentvalue TableIndividual'>W</p>
               </div>
@@ -1823,7 +1826,7 @@
                 <p class='equipmentvalue TableIndividual'>6</p>
                 <p class='equipmentvalue TableIndividual'>d4!+1</p>
                 <p class='equipmentvalue TableIndividual'>2</p>
-                <p class='equipmentvalue TableIndividual'>6</p>
+                <p class='equipmentvalue TableIndividual'>-1</p>
                 <p class='equipmentvalue TableIndividual'> </p>
                 <p class='equipmentvalue TableIndividual'>W</p>
               </div>
@@ -1835,7 +1838,7 @@
                 <p class='equipmentvalue TableIndividual'>10</p>
                 <p class='equipmentvalue TableIndividual'>d6!+5</p>
                 <p class='equipmentvalue TableIndividual'>3</p>
-                <p class='equipmentvalue TableIndividual'>8</p>
+                <p class='equipmentvalue TableIndividual'>-2</p>
                 <p class='equipmentvalue TableIndividual'>Yes</p>
                 <p class='equipmentvalue TableIndividual'>S</p>
               </div>
@@ -1847,7 +1850,7 @@
                 <p class='equipmentvalue TableIndividual'>16</p>
                 <p class='equipmentvalue TableIndividual'>2d8!+8</p>
                 <p class='equipmentvalue TableIndividual'>4</p>
-                <p class='equipmentvalue TableIndividual'>9</p>
+                <p class='equipmentvalue TableIndividual'>-3</p>
                 <p class='equipmentvalue TableIndividual'> </p>
                 <p class='equipmentvalue TableIndividual'>A</p>
               </div>
@@ -2070,7 +2073,7 @@
         <app-bm-chapter-icon [id]="'11prStbTOLqpW'"></app-bm-chapter-icon>
         <p><strong class='greyHeader'>Size</strong> A weapon’s size indicates the smallest size the wielder can be to
           use it 1 handed. Weapons 1 size larger must be wielded with 2 hands and those 2 sizes greater must be wielded with 2 hands 
-          and the wielder gains a +3 to their Encumbrance.</p>
+          and the wielder gains a -2 to their Fatigue.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='11ptALRhFjuGc' class='anchorTag'></div>

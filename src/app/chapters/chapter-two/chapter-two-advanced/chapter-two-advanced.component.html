@@ -231,7 +231,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='2p4' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'2p4'"></app-bm-chapter-icon>
-        <p> This number represents the number of items a character can carry in their hands before he gets more Encumbered. More on Encumbrance is found in <a routerLink='../../../../../chapter/10'>Chapter 10: Equipment.</a></p>
+        <p> This number represents the number of items a character can carry before he becomes slowed. More on Carry is found in <a routerLink='../../chapter/10'>Chapter 10: Equipment.</a></p>
       </div>
       <div class='anchor'>
         <div id='skillheadingstrenght' class='anchorTag'></div>
@@ -510,98 +510,85 @@
         <div class="underline"></div>
       </div>
 
-      <div class='tableOverflowWindow' [ngStyle]='{width: "311px"}'>
-        <div class='tableOuterShell' [ngStyle]='{width: "311px"}'>
+      <div class='tableOverflowWindow' [ngStyle]='{width: "270px"}'>
+        <div class='tableOuterShell' [ngStyle]='{width: "270px"}'>
           <h1 class='tableTitle'>Constitution</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>Score</p>
                 <p class='Constitutionvalue TableIndividual'>Min Vitality</p>
-                <p class='Constitutionvalue TableIndividual'>Encumb.</p>
                 <p class='Constitutionvalue TableIndividual'>Skill Discount</p>
                 <p class='Constitutionvalue TableIndividual'>Confrontation</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
-                <p class='Constitutionvalue TableIndividual'>10</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>2</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
-                <p class='Constitutionvalue TableIndividual'>9</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>3</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
-                <p class='Constitutionvalue TableIndividual'>8</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>4</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
-                <p class='Constitutionvalue TableIndividual'>7</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>5</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
-                <p class='Constitutionvalue TableIndividual'>6</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>6</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
-                <p class='Constitutionvalue TableIndividual'>6</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>7</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
-                <p class='Constitutionvalue TableIndividual'>6</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>8</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
-                <p class='Constitutionvalue TableIndividual'>5</p>
                 <p class='Constitutionvalue TableIndividual'>0</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>9</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
-                <p class='Constitutionvalue TableIndividual'>5</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>10</p>
                 <p class='Constitutionvalue TableIndividual'>3</p>
-                <p class='Constitutionvalue TableIndividual'>5</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>11</p>
                 <p class='Constitutionvalue TableIndividual'>3</p>
-                <p class='Constitutionvalue TableIndividual'>4</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>n/a</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>12</p>
-                <p class='Constitutionvalue TableIndividual'>4</p>
                 <p class='Constitutionvalue TableIndividual'>4</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>D4!</p>
@@ -609,28 +596,24 @@
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>13</p>
                 <p class='Constitutionvalue TableIndividual'>5</p>
-                <p class='Constitutionvalue TableIndividual'>4</p>
                 <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>D4!</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>14</p>
                 <p class='Constitutionvalue TableIndividual'>6</p>
-                <p class='Constitutionvalue TableIndividual'>4</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
                 <p class='Constitutionvalue TableIndividual'>D6!</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>15</p>
                 <p class='Constitutionvalue TableIndividual'>7</p>
-                <p class='Constitutionvalue TableIndividual'>3</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
                 <p class='Constitutionvalue TableIndividual'>D6!</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>16</p>
                 <p class='Constitutionvalue TableIndividual'>8</p>
-                <p class='Constitutionvalue TableIndividual'>3</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
                 <p class='Constitutionvalue TableIndividual'>D8!</p>
               </div>
@@ -638,27 +621,23 @@
                 <p class='Constitutionvalue TableIndividual'>17</p>
                 <p class='Constitutionvalue TableIndividual'>9</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
-                <p class='Constitutionvalue TableIndividual'>2</p>
                 <p class='Constitutionvalue TableIndividual'>D8!</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>18</p>
                 <p class='Constitutionvalue TableIndividual'>10</p>
                 <p class='Constitutionvalue TableIndividual'>2</p>
-                <p class='Constitutionvalue TableIndividual'>2</p>
                 <p class='Constitutionvalue TableIndividual'>D10!</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>19</p>
                 <p class='Constitutionvalue TableIndividual'>11</p>
-                <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>3</p>
                 <p class='Constitutionvalue TableIndividual'>D12!</p>
               </div>
               <div class='tableValue'>
                 <p class='Constitutionvalue TableIndividual'>20</p>
                 <p class='Constitutionvalue TableIndividual'>12</p>
-                <p class='Constitutionvalue TableIndividual'>1</p>
                 <p class='Constitutionvalue TableIndividual'>3</p>
                 <p class='Constitutionvalue TableIndividual'>D20!</p>
               </div>
@@ -701,21 +680,6 @@
           cannot exceed the amount that can be rolled on your dice. If a wizard has a minimum reroll of 7, they will
           still
           only get 4 Vitality from their dice.</p>
-      </div>
-      <div class='anchor'>
-        <div id='2hg9' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2hg9'"></app-bm-chapter-icon>
-        <h3>ENCUMB.</h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='2p16' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2p16'"></app-bm-chapter-icon>
-        <p>Encumbrance plays a critical role in any fight and represents your character’s ability to overcome his weariness and struggle mentally and physically on.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='2p17' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2p17'"></app-bm-chapter-icon>
-        <p> More on calculating Encumbrance is found in <a routerLink='../../../../../chapter/10'>Chapter 10: Equipment.</a></p>
       </div>
       <div class='anchor'>
         <div id='skillheadingcon' class='anchorTag'></div>
@@ -989,14 +953,13 @@
       </div>
 
       <div class='tableOverflowWindow wisdomTable'>
-        <div class='tableOuterShell' [ngStyle]='{width: "371px"}'>
+        <div class='tableOuterShell' [ngStyle]='{width: "313px"}'>
           <h1 class='tableTitle'>Wisdom</h1>
           <div class='tableHeaders'>
             <div class='tableRow'>
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>Score</p>
                 <p class='Wisdomvalue TableIndividual'>Defense</p>
-                <p class='Wisdomvalue TableIndividual'>Encumb.</p>
                 <p class='Wisdomvalue TableIndividual'>Init</p>
                 <p class='Wisdomvalue TableIndividual'>Skill Discount</p>
                 <p class='Wisdomvalue TableIndividual'>Confrontation</p>
@@ -1004,7 +967,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>-4</p>
-                <p class='Wisdomvalue TableIndividual'>7</p>
                 <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1012,7 +974,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>-3</p>
-                <p class='Wisdomvalue TableIndividual'>7</p>
                 <p class='Wisdomvalue TableIndividual'>4</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1020,7 +981,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>-3</p>
-                <p class='Wisdomvalue TableIndividual'>7</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1028,7 +988,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>4</p>
                 <p class='Wisdomvalue TableIndividual'>-3</p>
-                <p class='Wisdomvalue TableIndividual'>7</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1036,7 +995,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>-2</p>
-                <p class='Wisdomvalue TableIndividual'>6</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1044,7 +1002,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>6</p>
                 <p class='Wisdomvalue TableIndividual'>-2</p>
-                <p class='Wisdomvalue TableIndividual'>6</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1052,7 +1009,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>7</p>
                 <p class='Wisdomvalue TableIndividual'>-1</p>
-                <p class='Wisdomvalue TableIndividual'>6</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1060,7 +1016,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>8</p>
                 <p class='Wisdomvalue TableIndividual'>-1</p>
-                <p class='Wisdomvalue TableIndividual'>6</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1068,7 +1023,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>9</p>
                 <p class='Wisdomvalue TableIndividual'>-1</p>
-                <p class='Wisdomvalue TableIndividual'>6</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1076,7 +1030,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>10</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
-                <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1084,7 +1037,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>11</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
-                <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>n/a</p>
@@ -1092,7 +1044,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>12</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
-                <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>D4!</p>
@@ -1100,7 +1051,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>13</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
-                <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>1</p>
                 <p class='Wisdomvalue TableIndividual'>D4!</p>
@@ -1108,7 +1058,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>14</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
-                <p class='Wisdomvalue TableIndividual'>5</p>
                 <p class='Wisdomvalue TableIndividual'>0</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>D6!</p>
@@ -1116,7 +1065,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>15</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
-                <p class='Wisdomvalue TableIndividual'>4</p>
                 <p class='Wisdomvalue TableIndividual'>-1</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>D6!</p>
@@ -1124,7 +1072,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>16</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
-                <p class='Wisdomvalue TableIndividual'>4</p>
                 <p class='Wisdomvalue TableIndividual'>-1</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>D8!</p>
@@ -1132,7 +1079,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>17</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
-                <p class='Wisdomvalue TableIndividual'>4</p>
                 <p class='Wisdomvalue TableIndividual'>-2</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>D8!</p>
@@ -1140,14 +1086,12 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>18</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
-                <p class='Wisdomvalue TableIndividual'>4</p>
                 <p class='Wisdomvalue TableIndividual'>-2</p>
                 <p class='Wisdomvalue TableIndividual'>2</p>
                 <p class='Wisdomvalue TableIndividual'>D10!</p>
               </div>
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>19</p>
-                <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>-3</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
@@ -1156,7 +1100,6 @@
               <div class='tableValue'>
                 <p class='Wisdomvalue TableIndividual'>20</p>
                 <p class='Wisdomvalue TableIndividual'>4</p>
-                <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>-4</p>
                 <p class='Wisdomvalue TableIndividual'>3</p>
                 <p class='Wisdomvalue TableIndividual'>D20!</p>
@@ -1188,24 +1131,6 @@
           need to be. This coupled with the ability to read your opponent allows the wise character to keep from
           getting
           hit. This number gets added to all melee defense rolls your character makes.</p>
-      </div>
-      <div class='anchor fatiMargin'>
-        <div id='2hg16' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2hg16'"></app-bm-chapter-icon>
-        <h3>ENCUMB.</h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='2p28' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2p28'"></app-bm-chapter-icon>
-        <p> The ability to disconnect your mind from the pain and ignore your screaming muscles is part of what gives
-          long
-          distance runners their ability to run miles without tiring. Your ability to put yourself “in the zone” is
-          represented by this number.</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='2p29' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2p29'"></app-bm-chapter-icon>
-        <p> More on calculating Encumbrance is found in <a routerLink='../../../../../chapter/11'>Chapter 6: Equipment.</a></p>
       </div>
       <div class='anchor'>
         <div id='2hg17' class='anchorTag'></div>
