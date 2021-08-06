@@ -60,58 +60,34 @@
         <div id="8hDzWWdfGtEh" class="anchorTag"></div>
         <h3>CALCULATING RANK</h3>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='8pvrTVawRrAZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pvrTVawRrAZ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>SKILL SUITES </strong>For your Skill Suites, your starting Rank is 0, unless it
-          is listed
-          under the Main Skill Suite for your Primary Generalist Archetype, in which case, it starts at Rank 3. If you
-          have two different ones (noted with an "and", not "or"),
-          one starts at Rank 3 and the other at 2.</p>
+        <p><strong class='orangeHeader'>SKILL SUITES </strong>For all your Skill Suites, your starting Rank is 0, unless noted in the following example:</p>
       </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='whenyouspecialist' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'whenyouspecialist'"></app-bm-chapter-icon>
-        <p>When you Specialize your Primary Archetype, you gain a Rank 2 in that Archetype's Main Skill Suite. If there
-          are two listed,
-          one starts at Rank 2 and the other at Rank 1.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='whenyouspecialist' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'whenyouspecialist'"></app-bm-chapter-icon>
-        <p>The Main Skill Suite for your Secondary Generalist's Archetype starts at Rank 2. When you Specialize it, you
-          gain Rank 1 in the Specialist's Main Skill Suite.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='whenyouspecialist' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'whenyouspecialist'"></app-bm-chapter-icon>
-        <p>If two are listed for either, you don't gain anything</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='finallyatfirstleve' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'finallyatfirstleve'"></app-bm-chapter-icon>
-        <p>Finally, at first level, you receive Rank 2 in any Skill Suite of your choice that's not already covered by
-          any of your Archetypes, representing your character's general interests and background.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ifayatnitme' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifayatnitme'"></app-bm-chapter-icon>
-        <p>If, at any time, these Skill Suites overlap (like in the instance of getting a Skill Suite twice, as in the
-          case of the Sage, or your choice also
-          matching up with your Primary's Main Skill Suite), you instead receive a +1 Rank for each time after the
-          first.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='soyouvechoisense' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'soyouvechoisense'"></app-bm-chapter-icon>
-        <p>So, if you've chosen Streetwise for your background Skill Suite and then Specialize into Thug, you would end
-          up with a Rank 4 in it. That's because you'd
-          start at Rank 2 from your background choice and then get two +1s from the Thug (since they have it as their
-          Main Skill Suite twice).
-        </p>
-      </div>
+      <ul class="marginBottom">
+        <li>Your Primary Generalist's Main Skill Suite starts at Rank 3.
+          <ul>
+            <li>If you get two (noted with an "and", not "or"), one starts at Rank 3, the other starts at Rank 2, otherwise pick one to start at 3.</li>
+            <li>When you Specialize, you gain Rank 2 in its Main Skill Suite.
+              <ul>
+                <li>If you get two (noted with an "and", not "or"), one starts at Rank 2, the other starts at Rank 1, otherwise pick one to start at 2.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Your Secondary Generalist's Main Skill Suite starts at Rank 2.
+          <ul>
+            <li>If you would normally get two, you only get 1.</li>
+            <li>When you Specialize, you gain Rank 1 in its Main Skill Suite.</li>
+            <ul>
+              <li>If you would normally get two, you only get 1.</li>
+            </ul>
+          </ul>
+        </li>
+        <li>Finally, you may pick 1 Skill Suite to start at Rank 2.</li>
+        <li>If, for any reason, a Skill Suite doubles up, you only get a +1 to its Rank.</li>
+      </ul>
       <div class='paragraphShell anchor marginBottom'>
         <div id='8pcCUJeCdJSB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'8pcCUJeCdJSB'"></app-bm-chapter-icon>
@@ -352,7 +328,8 @@
           <app-bm-chapter-icon [id]="'InthesecasespwVqqsqwPq'"></app-bm-chapter-icon>
           <p>In these cases, the Failure Threshold of the Check would be 1, meaning a failure is a failure, but you can
             spice
-            it up by having the jump almost make it but now the player is just barely hanging out: however, much time you
+            it up by having the jump almost make it but now the player is just barely hanging out: however, much time
+            you
             want to spend on it.</p>
         </div>
       </div>
@@ -715,7 +692,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='thereymaniobecomse' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thereymaniobecomse'"></app-bm-chapter-icon>
-        <p>There may be some special cases where an Asset will take care of itself, but you may have to check back on it,
+        <p>There may be some special cases where an Asset will take care of itself, but you may have to check back on
+          it,
           such as Snaring in the forest. You set your trap and then a day or two later, you can go back and check it to
           see if you caught anything - in the meantime, you can get other work done.</p>
       </div>
@@ -2295,7 +2273,8 @@
           not to
           treat the 8 Severity Wound and make a vs d20!+8. Success means that the person can take 1 level of Severity
           off
-          those Wounds. So, a 5 Severity Wound drops immediately to a 4 Severity Wound. You cannot go back and do a Check
+          those Wounds. So, a 5 Severity Wound drops immediately to a 4 Severity Wound. You cannot go back and do a
+          Check
           for a Wound that you skipped.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -2399,7 +2378,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisdoesntglTekzKTpjs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisdoesntglTekzKTpjs'"></app-bm-chapter-icon>
-        <p>This doesn’t give even a ballpark of what anything is worth, but it only takes a few seconds of consideration.
+        <p>This doesn’t give even a ballpark of what anything is worth, but it only takes a few seconds of
+          consideration.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -2591,7 +2571,8 @@
         <app-bm-chapter-icon [id]="'ThisSkillisAeHPddCBNV'"></app-bm-chapter-icon>
         <p>This Skill is less effective when the person knows they’re in immediate danger. In this case, as long as
           they’re
-          not actively engaged in melee with someone (in which case it’s an instant failure under most circumstances), the
+          not actively engaged in melee with someone (in which case it’s an instant failure under most circumstances),
+          the
           person is distracted for seconds, instead of minutes. </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>

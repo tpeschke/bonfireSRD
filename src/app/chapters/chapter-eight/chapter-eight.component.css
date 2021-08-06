@@ -221,6 +221,13 @@
   width: 350px;
 }
 
+ul {
+  padding-left: 50px;
+}
+li {
+  padding: 5px 0
+}
+
 @media (max-width: 630px) {
   .AbilityScoreModifiersTable,
   .RankDiceTable,

@@ -131,10 +131,10 @@ h5,
 h6 {
   font-family: 'ancient'
 }
-ol,
+/* ol,
 ul {
   list-style: none;
-}
+} */
 blockquote,
 q {
   quotes: none;
