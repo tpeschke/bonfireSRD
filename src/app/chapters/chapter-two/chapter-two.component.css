@@ -26,13 +26,15 @@
     width: 60px;
 }
 
-.charismaTable {
-    width: 434px;
-}
-
 .tableOverflowWindow {
     float: left;
     margin-right: 15px;
+}
+
+.charismaTable {
+    float: unset;
+    margin: 0 auto 15px;
+    width: 434px;
 }
 
 .traitMargin {

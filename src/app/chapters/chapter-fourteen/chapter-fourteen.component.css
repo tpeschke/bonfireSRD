@@ -27,6 +27,37 @@
     border-left: 1px solid #222;
 }
 
+.followerTable {
+    width: 200px;
+    float: left;
+    margin: 10px 15px 0 0;
+  }
+  
+  .followerModTable {
+    width: 370px;
+    float: left;
+    margin: 10px 15px 0 0;
+  }
+
+  .followervalue {
+    width: 50%;
+    padding: 4px;
+  }
+
+  .followerModTable .followervalue:first-child {
+      width: 25%
+  }
+  .followerModTable .followervalue:last-child{
+    width: 75%;
+    text-align: left;
+}
+  
+.followerTablesShell {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 @media (max-width: 650px) {
     .LevelingHonorTable {
         float: none;
@@ -36,6 +67,10 @@
     .levelShell {
         float: none;
         margin: 0 auto;
+    }
+    .followerTablesShell {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -52,4 +87,8 @@
     .sideBorder {
         border: none
     }
+
+    .followerTable, .followerModTable {
+        width: 100%;
+      }
 }
