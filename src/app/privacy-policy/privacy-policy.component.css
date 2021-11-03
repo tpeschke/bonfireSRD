@@ -12,27 +12,33 @@ h1 {
   font-family: "umbria";
   border-bottom: 1px solid #222;
   padding: 25px 0 10px 0;
-  font-size: 20pt;
+  font-size: 14pt;
   color: rgb(151, 23, 21);
-}
-
-h3 {
-    color: #222;
-    font-family: "ancient", serif;
-    margin: 10px auto;
-    font-size: 17pt;
-}
-
-h4, h2 {
-    font-family: "umbria";
-    font-size: 24px;
-    margin: 10px auto;
-    font-size: 13pt;
-    position: inherit;
 }
 
 h2 {
     color: #b45f06;
+    font-family: "umbria";
+    font-size: 12px;
+}
+
+
+h3 {
+    color: #b45f06;
+    font-family: "umbria";
+    margin: 10px auto;
+    font-size: 10pt;
+}
+
+h4, h2 {
+    margin: 10px auto;
+    font-size: 8pt;
+    position: inherit;
+}
+
+h4 {
+    color: #222;
+    font-family: "ancient", serif;
 }
 
 p {

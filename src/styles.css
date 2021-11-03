@@ -11,7 +11,7 @@
 }
 @font-face {
   font-family: 'umbria';
-  src: url('./assets/vinque.ttf') format("truetype");
+  src: url('./assets/Baldur.ttf') format("truetype");
 }
 
 html,
@@ -428,7 +428,7 @@ button:hover {
 h1 {
   color: #990000;
   font-weight: 700;
-  font-size: 18pt;
+  font-size: 14pt;
   font-family: "umbria";
   padding: 5px 15px 5px 15px;
 }
@@ -443,7 +443,7 @@ h2 {
   color: #b45f06;
   font-weight: 600;
   margin-bottom: 5px;
-  font-size: 12pt;
+  font-size: 10pt;
   font-family: "ancient";
 }
 
@@ -612,7 +612,7 @@ a {
   font-weight: 700;
   color: #434343;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 a:hover {
