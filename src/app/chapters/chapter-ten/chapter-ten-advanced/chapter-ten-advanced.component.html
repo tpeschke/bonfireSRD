@@ -312,7 +312,7 @@
       <!-- <div class='paragraphShell anchor'>
         <div id='iftheoffhandweaponisthesamesizeasyou' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'iftheoffhandweaponisthesamesizeasyou'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>2 1 HANDED WEAPONS (with Ambidextrous Mastery) </strong>f attacking with both,
+        <p><strong class='orangeHeader'>2 1 HANDED WEAPONS (Ambidextrous) </strong>f attacking with both,
           both attack with a d20!. You only receive your main hand’s Parry, if any. The secondary attacks slightly
           slower; always attacking a number of seconds equal to its Recovery after the primary makes its attacks.
         </p>
@@ -1157,6 +1157,13 @@
           the fifth second you get a +1 (for a total of +9).</p>
       </div>
       <div class='paragraphShell anchor'>
+        <div id='carefionfonlybeofjire' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'carefionfonlybeofjire'"></app-bm-chapter-icon>
+        <p>Careful Aiming can only be performed with a ranged weapon and can only be performed when the fighter is standing still.
+          On top of this, the fighter takes Stress equal to the bonus they receive when they finally make the shot.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='futherdelaygivesyounobonus' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'futherdelaygivesyounobonus'"></app-bm-chapter-icon>
         <p>Further delay gives you no bonuses.</p>
@@ -1586,9 +1593,7 @@
         <app-bm-chapter-icon [id]="'10PZoqwwadIl'"></app-bm-chapter-icon>
         <p>On a successful Strike, you delay your opponent’s next attack by 1d4 seconds, though if you’re using a shield
           to strike, you subtract that shield’s Recovery Mod from that amount, delaying them further.
-          Striking an already stunned opponent is less effective and so the number of second they would be further
-          delayed
-          is lowered by 1 for each time you've successfully struck them since their last attack, down to 0.</p>
+          Striking an already stunned opponent does nothing.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10rqtumGlTKj' class='anchorTag'></div>
@@ -1604,19 +1609,12 @@
       <div class='paragraphShell anchor'>
         <div id='10rqtumGlTKj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10rqtumGlTKj'"></app-bm-chapter-icon>
-        <p>This is done through the normal unarmed combat resolution method with the following notes:</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thefirstisthatthedefender' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thefirstisthatthedefender'"></app-bm-chapter-icon>
-        <p>The first is that the defender rolls a d12! while you roll a full d20! as a base. Additionally, the defender
-          adds their Rank in Escape Artist to the check.</p>
+        <p>The grappled fighter can add their Rank in Escape Artist if they have the Advanced Skill: otherwise, it is resolved in the normal way with success resulting in the person breaking free</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='thesecondisthatyoucanonlyattempthis' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thesecondisthatyoucanonlyattempthis'"></app-bm-chapter-icon>
-        <p>The second is that you can only attempt this maneuver every 10 seconds, though this is modified by any
-          Advanced Weapon Basic Training you have in unarmed attack.</p>
+        <p>The extra bonus is that the grappled person is able to turn it around on their enemy: they get a free, unarmed maneuver, however, it is always on a d12! regardless of how many hands they have free since they’re still working from a disadvantage.</p>
       </div>
 
       <div class='anchor'>
@@ -2612,6 +2610,11 @@
           <div id='7pNgPeiLboDm' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'7pNgPeiLboDm'"></app-bm-chapter-icon>
           <p><strong class='orangeHeader'>AREAS</strong> Attack, Damage, Parry, Recovery</p>
+        </div>
+        <div class='paragraphShell marginBottom anchor'>
+          <div id='advancetiraint' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'advancetiraint'"></app-bm-chapter-icon>
+          <p> Advanced Training in Parry also increases the weapon's Breakage Threshold by a like amount.</p>
         </div>
 
         <div class='anchor'>

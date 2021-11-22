@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn+SC");
 
-.discordOverflow {
-  width: 100%;
-  overflow: hidden;
-}
-
 .discordBanner {
   width: 950px;
   height: 150px;
@@ -45,6 +40,19 @@
 .discordBanner div h2:nth-child(2) {
   bottom: 2px;
   right: 10px;
+}
+
+.iframeOverflow, .discordOverflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.iframeDiv {
+  margin: 132px 0 15px;
+}
+
+iframe {
+  width: 100%;
 }
 
 .homeOuterShell {
@@ -195,14 +203,6 @@ p {
     width: 100%;
   }
 
-  .discordBanner div {
-    position: inherit;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    right: 0;
-    background: rgba(34, 34, 34, 0.9);
-  }
-
   h1 {
     font-size: 25px;
   }
@@ -212,16 +212,28 @@ p {
     margin-bottom: 10px;
   }
 
-  .discordBanner {
+  .iframeDiv {
     margin: 90px 0 10px;
-    margin-left: 50%;
-    transform: translateX(-50%);
   }
 
   .homeList a {
     text-align: center;
     font-size: 25px;
     padding: 5px 0;
+  }
+
+  .discordBanner div {
+    position: inherit;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    background: rgba(34, 34, 34, 0.9);
+  }
+
+  .discordBanner {
+    margin: 90px 0 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 
