@@ -93,7 +93,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   getChapter(id: number): string {
     switch (id) {
       case 1:
-        return 'Character Creation';
+        return 'Basic Mechanics';
       case 2:
         return 'Stat Scores';
       case 3:

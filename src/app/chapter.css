@@ -1,0 +1,68 @@
+h2 {
+    position: unset;
+    color: #222;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: "umbria";
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #b45f06;
+    padding: 5px 15px 0px 15px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.sidebarShell h5 {
+    font-family: "umbria";
+    color: #b45f06;
+    padding: 0 0 10px;
+    font-size: 15px;
+}
+
+strong {
+    font-family: "ancient";
+    color: #222;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+}
+
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+th, td {
+    padding: 0.25rem;
+}
+
+th {
+    background: #990000;
+    color: white;
+    position: sticky;
+    top: 100px;
+    font-family: "ancient";
+    letter-spacing: 2px;
+}
+
+.notSticky th {
+    position: unset;
+}
+
+.float {
+    float: left;
+    margin: 0 10px 10px 0;
+}

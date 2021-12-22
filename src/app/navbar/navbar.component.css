@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  padding: 10px;
+  padding: 8px;
   color: white;
   font-weight: unset;
   min-width: 6%;
@@ -28,6 +28,12 @@ h1 {
   size: 10px;
   margin-left: 5px;
   padding: 0;
+}
+
+p {
+  text-align: center;
+    color: whitesmoke;
+    text-indent: 0;
 }
 
 .navBar {

@@ -6,8 +6,8 @@
         <a class="selectChapter" (click)="setChapter()" routerLink="search">Search</a>
     </div>
     <div class="middleNav">
-        <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/1" (mouseover)="viewChapter('Character Creation')"
-            (mouseout)="resetChapter()" (click)="setChapter(1)">1</a>
+        <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="rules-reference/1" (mouseover)="viewChapter('Basic Mechanics')"
+            (mouseout)="resetChapter()" (click)="setChapter(1)">1.1</a>
         <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="chapter/2" (mouseover)="viewChapter('Stat Scores')"
             (mouseout)="resetChapter()" (click)="setChapter(2)">2</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="chapter/3" (mouseover)="viewChapter('Races')"
@@ -20,6 +20,7 @@
             (mouseout)="resetChapter()" (click)="setChapter(6)">6</a>
         <a [ngClass]="{'active': reset === 'Skills'}" routerLink="chapter/7" (mouseover)="viewChapter('Skills')"
             (mouseout)="resetChapter()" (click)="setChapter(7)">7</a>
+        <p>|</p>
         <a [ngClass]="{'active': reset === 'Confrontation'}" routerLink="chapter/8" (mouseover)="viewChapter('Confrontation')"
             (mouseout)="resetChapter()" (click)="setChapter(8)">8</a>
         <a [ngClass]="{'active': reset === 'Combat'}" routerLink="chapter/9" (mouseover)="viewChapter('Combat')"
@@ -66,8 +67,8 @@
         <h1 class="navX" (click)="openHam()">X</h1>
         <a [ngClass]="{'active': reset === ''}" routerLink="../"
             (mouseout)="resetChapter()" (click)="setChapter()">Home</a>
-        <a [ngClass]="{'active': reset === 'Character Creation'}" routerLink="chapter/1"
-            (mouseout)="resetChapter()" (click)="setChapter(1)">1 Character Creation</a>
+        <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="chapter/1"
+            (mouseout)="resetChapter()" (click)="setChapter(1)">1 Basic Mechanics</a>
         <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="chapter/2"
             (mouseout)="resetChapter()" (click)="setChapter(2)">2 Stat Scores</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="chapter/3"

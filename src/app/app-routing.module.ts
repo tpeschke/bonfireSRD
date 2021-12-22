@@ -19,11 +19,12 @@ const routes: Routes = [
   {path: 'chapter/3', loadChildren: './chapters/chapter-three/chapter-three.module#ChapterThreeModule' },
   {path: 'chapter/2', loadChildren: './chapters/chapter-two/chapter-two.module#ChapterTwoModule' },
   {path: 'chapter/9', loadChildren: './chapters/chapter-ten/chapter-ten.module#ChapterTenModule' },
-  {path: 'chapter/1', loadChildren: './chapters/chapter-one/chapter-one.module#ChapterOneModule' },
   {path: 'chapter/6', loadChildren: './chapters/chapter-six/chapter-six.module#ChapterSixModule' },
   {path: 'chapter/8', loadChildren: './chapters/chapter-nine/chapter-nine.module#ChapterNineModule' },
   {path: 'chapter/13', loadChildren: './chapters/chapter-fourteen/chapter-fourteen.module#ChapterFourteenModule' },
   {path: 'chapter/14', loadChildren: './chapters/chapter-fifteen/chapter-fifteen.module#ChapterFifteenModule' },
+
+  {path: 'rules-reference/1', loadChildren: './rules-reference/chapter-one/rr-one.module#RrOneModule' },
   {path: 'search', component: SearchComponent},
   {path: 'privacypolicy', component: PrivacyPolicyComponent},
   {path: '**', redirectTo: ''},
