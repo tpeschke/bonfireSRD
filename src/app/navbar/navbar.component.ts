@@ -97,15 +97,15 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       case 2:
         return 'Confrontations';
       case 3:
-        return 'Races';
+        return 'Combat';
       case 4:
-        return 'Archetypes';
+        return 'Challenges';
       case 5:
-        return 'Flaws';
+        return 'The Divine';
       case 6:
-        return 'Character Vitals';
+        return 'The Weird';
       case 7:
-        return 'Skills';
+        return 'Misc. Rules';
       case 8:
         return 'Confrontation';
       case 9:
