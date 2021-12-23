@@ -8,8 +8,8 @@
     <div class="middleNav">
         <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="rules-reference/1" (mouseover)="viewChapter('Basic Mechanics')"
             (mouseout)="resetChapter()" (click)="setChapter(1)">1.1</a>
-        <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="chapter/2" (mouseover)="viewChapter('Stat Scores')"
-            (mouseout)="resetChapter()" (click)="setChapter(2)">2</a>
+        <a [ngClass]="{'active': reset === 'Confrontations'}" routerLink="rules-reference/2" (mouseover)="viewChapter('Confrontations')"
+            (mouseout)="resetChapter()" (click)="setChapter(2)">1.2</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="chapter/3" (mouseover)="viewChapter('Races')"
             (mouseout)="resetChapter()" (click)="setChapter(3)">3</a>
         <a [ngClass]="{'active': reset === 'Archetypes'}" routerLink="chapter/4" (mouseover)="viewChapter('Archetypes')"
@@ -37,9 +37,9 @@
             (mouseout)="resetChapter()" (click)="setChapter(14)">14</a>
     </div>
     <div class="bottomNav">
-        <a *ngIf="reset !== ''" routerLink="{{perviousRoute}}" (click)="setChapter('p')" class="selectChapter"><div><img src="../../assets/images/backButton.png" alt="back button" class="buttonImage">{{pervious}}</div></a>
+        <a *ngIf="reset !== ''" routerLink="{{perviousRoute}}" (click)="setChapter('p')" class="selectChapter side"><div><img src="../../assets/images/backButton.png" alt="back button" class="buttonImage">{{pervious}}</div></a>
         <p class="selectChapter">{{chapter}}</p>
-        <a *ngIf="reset !== ''" routerLink="{{nextRoute}}" (click)="setChapter('n')" class="selectChapter"><div>{{next}}<img src="../../assets/images/forwardButton.png" alt="forward button" class="buttonImage"></div></a>
+        <a *ngIf="reset !== ''" routerLink="{{nextRoute}}" (click)="setChapter('n')" class="selectChapter side"><div>{{next}}<img src="../../assets/images/forwardButton.png" alt="forward button" class="buttonImage"></div></a>
     </div>
 
     <img src="../../assets/images/dragon.png" alt="dragon" class="heraldRight">
@@ -67,10 +67,10 @@
         <h1 class="navX" (click)="openHam()">X</h1>
         <a [ngClass]="{'active': reset === ''}" routerLink="../"
             (mouseout)="resetChapter()" (click)="setChapter()">Home</a>
-        <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="chapter/1"
-            (mouseout)="resetChapter()" (click)="setChapter(1)">1 Basic Mechanics</a>
-        <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="chapter/2"
-            (mouseout)="resetChapter()" (click)="setChapter(2)">2 Stat Scores</a>
+        <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="rules-reference/1"
+            (mouseout)="resetChapter()" (click)="setChapter(1)">1.1 Basic Mechanics</a>
+        <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="rules-reference/2"
+            (mouseout)="resetChapter()" (click)="setChapter(2)">1.2 Confrontations</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="chapter/3"
             (mouseout)="resetChapter()" (click)="setChapter(3)">3 Races</a>
         <a [ngClass]="{'active': reset === 'Archetypes'}" routerLink="chapter/4"

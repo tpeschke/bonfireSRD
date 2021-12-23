@@ -17,13 +17,13 @@ const routes: Routes = [
   {path: 'chapter/7', loadChildren: './chapters/chapter-eight/chapter-eight.module#ChapterEightModule' },
   {path: 'chapter/5', loadChildren: './chapters/chapter-five/chapter-five.module#ChapterFiveModule' },
   {path: 'chapter/3', loadChildren: './chapters/chapter-three/chapter-three.module#ChapterThreeModule' },
-  {path: 'chapter/2', loadChildren: './chapters/chapter-two/chapter-two.module#ChapterTwoModule' },
   {path: 'chapter/9', loadChildren: './chapters/chapter-ten/chapter-ten.module#ChapterTenModule' },
   {path: 'chapter/6', loadChildren: './chapters/chapter-six/chapter-six.module#ChapterSixModule' },
   {path: 'chapter/8', loadChildren: './chapters/chapter-nine/chapter-nine.module#ChapterNineModule' },
   {path: 'chapter/13', loadChildren: './chapters/chapter-fourteen/chapter-fourteen.module#ChapterFourteenModule' },
   {path: 'chapter/14', loadChildren: './chapters/chapter-fifteen/chapter-fifteen.module#ChapterFifteenModule' },
-
+  
+  {path: 'rules-reference/2', loadChildren: './rules-reference/chapter-two/rr-two.module#RrTwoModule' },
   {path: 'rules-reference/1', loadChildren: './rules-reference/chapter-one/rr-one.module#RrOneModule' },
   {path: 'search', component: SearchComponent},
   {path: 'privacypolicy', component: PrivacyPolicyComponent},

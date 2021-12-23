@@ -39,6 +39,21 @@ table {
     text-align: left;
     position: relative;
     border-collapse: collapse;
+    font-size: 13px;
+}
+
+.all-centered {
+    text-align: center;
+}
+
+.all-centered thead tr:nth-child(1) th {
+    text-align: left;
+}
+
+thead tr:nth-child(2) th, tbody tr th {
+    background-color: #222;
+    text-align: center;
+    font-size: 13px;
 }
 
 tbody tr:nth-child(even) {
@@ -46,7 +61,7 @@ tbody tr:nth-child(even) {
 }
 
 th, td {
-    padding: 0.25rem;
+    padding: 4px 7px;
 }
 
 th {
@@ -62,7 +77,36 @@ th {
     position: unset;
 }
 
+.with-side-header {
+    top: 15px;
+    position: absolute !important;
+    width: 100%;
+}
+
+.side-header {
+    display: flex;
+}
+
 .float {
     float: left;
     margin: 0 10px 10px 0;
+}
+
+ol {
+    padding-left: 67px;
+}
+
+.pairs {
+    width: 75%;
+}
+
+.pair {
+    display: flex;
+    justify-content: space-between;
+    font-family: "ancient";
+    letter-spacing: 2px;
+}
+
+.table-overflow {
+    overflow: auto;
 }

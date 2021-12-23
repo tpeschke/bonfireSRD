@@ -95,7 +95,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       case 1:
         return 'Basic Mechanics';
       case 2:
-        return 'Stat Scores';
+        return 'Confrontations';
       case 3:
         return 'Races';
       case 4:

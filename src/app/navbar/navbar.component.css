@@ -209,6 +209,10 @@ p {
   display: none;
 }
 
+.side {
+  font-size: 12px;
+}
+
 @media (max-width: 770px) {
   .mobile {
     display: inherit;
