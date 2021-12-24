@@ -1,0 +1,11 @@
+
+.rudiment-shell {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.rudiment-shell table {
+    margin-bottom: 15px;
+}

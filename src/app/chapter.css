@@ -124,3 +124,11 @@ ol {
     display: flex;
     justify-content: space-around;
 }
+
+.orangeHeader {
+    color: #b45f06
+}
+
+.table-center {
+    margin: 0 auto;
+}
