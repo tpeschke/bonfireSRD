@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-cc-two',
   templateUrl: './cc-two.component.html',
-  styleUrls: ['./cc-two.component.css']
+  styleUrls: ['./cc-two.component.css', '../../../chapter.css']
 })
 export class CcTwoComponent implements OnInit {
 

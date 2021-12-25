@@ -21,20 +21,20 @@
         <a [ngClass]="{'active': reset === 'Misc. Rules'}" routerLink="rules-reference/7" (mouseover)="viewChapter('Misc. Rules')"
             (mouseout)="resetChapter()" (click)="setChapter(7)">1.7</a>
         <p>|</p>
-        <a [ngClass]="{'active': reset === 'Confrontation'}" routerLink="chapter/8" (mouseover)="viewChapter('Confrontation')"
-            (mouseout)="resetChapter()" (click)="setChapter(8)">8</a>
-        <a [ngClass]="{'active': reset === 'Combat'}" routerLink="chapter/9" (mouseover)="viewChapter('Combat')"
-            (mouseout)="resetChapter()" (click)="setChapter(9)">9</a>
-        <a [ngClass]="{'active': reset === 'Equipment'}" routerLink="chapter/10" (mouseover)="viewChapter('Equipment')"
-            (mouseout)="resetChapter()" (click)="setChapter(10)">10</a>
-        <a [ngClass]="{'active': reset === 'The Weird'}" routerLink="chapter/11" (mouseover)="viewChapter('The Weird')"
-            (mouseout)="resetChapter()" (click)="setChapter(11)">11</a>
-        <a [ngClass]="{'active': reset === 'The Divine'}" routerLink="chapter/12" (mouseover)="viewChapter('The Divine')"
-            (mouseout)="resetChapter()" (click)="setChapter(12)">12</a>
-        <a [ngClass]="{'active': reset === 'Character Progression'}" routerLink="chapter/13" (mouseover)="viewChapter('Character Progression')"
-            (mouseout)="resetChapter()" (click)="setChapter(13)">13</a>
-        <a [ngClass]="{'active': reset === 'Misc Rules'}" routerLink="chapter/14" (mouseover)="viewChapter('Misc Rules')"
-            (mouseout)="resetChapter()" (click)="setChapter(14)">14</a>
+        <a [ngClass]="{'active': reset === 'Step-by-Step Overview'}" routerLink="character-creation/1" (mouseover)="viewChapter('Step-by-Step Overview')"
+            (mouseout)="resetChapter()" (click)="setChapter(8)">2.1</a>
+        <a [ngClass]="{'active': reset === 'Races'}" routerLink="character-creation/2" (mouseover)="viewChapter('Races')"
+            (mouseout)="resetChapter()" (click)="setChapter(9)">2.2</a>
+        <a [ngClass]="{'active': reset === 'Archetypes'}" routerLink="character-creation/3" (mouseover)="viewChapter('Archetypes')"
+            (mouseout)="resetChapter()" (click)="setChapter(10)">2.3</a>
+        <a [ngClass]="{'active': reset === 'Flaws'}" routerLink="character-creation/4" (mouseover)="viewChapter('Flaws')"
+            (mouseout)="resetChapter()" (click)="setChapter(11)">2.4</a>
+        <a [ngClass]="{'active': reset === 'Skills & Training'}" routerLink="character-creation/5" (mouseover)="viewChapter('Skills & Training')"
+            (mouseout)="resetChapter()" (click)="setChapter(12)">2.5</a>
+        <a [ngClass]="{'active': reset === 'Equipment'}" routerLink="character-creation/6" (mouseover)="viewChapter('Equipment')"
+            (mouseout)="resetChapter()" (click)="setChapter(13)">2.6</a>
+        <a [ngClass]="{'active': reset === 'Character Progression'}" routerLink="character-creation/7" (mouseover)="viewChapter('Character Progression')"
+            (mouseout)="resetChapter()" (click)="setChapter(14)">2.7</a>
     </div>
     <div class="bottomNav">
         <a *ngIf="reset !== ''" routerLink="{{perviousRoute}}" (click)="setChapter('p')" class="selectChapter side"><div><img src="../../assets/images/backButton.png" alt="back button" class="buttonImage">{{pervious}}</div></a>

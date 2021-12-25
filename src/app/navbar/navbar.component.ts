@@ -45,8 +45,13 @@ export class NavbarComponent implements OnInit, AfterViewInit {
         document.documentElement.scrollTop = 0
 
         if (p.url !== '/search' && p.url !== '/') {
-          let route = +p.url.split('/')[2].split('?')[0]
+          let segmentedUrl = p.url.split('/')
+          let route = +segmentedUrl[2].split('?')[0]
+          let base = segmentedUrl[1]
           if (route !== 0) {
+            if (base === 'character-creation') {
+              route += 7
+            }
             this.setChapter(route)
             if (p.url.split('=')[1]) {
               setTimeout(_ => {
@@ -107,19 +112,19 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       case 7:
         return 'Misc. Rules';
       case 8:
-        return 'Confrontation';
+        return 'Step-by-Step Overview';
       case 9:
-        return 'Combat';
+        return 'Races';
       case 10:
-        return 'Equipment';
+        return 'Archetypes';
       case 11:
-        return 'The Weird';
+        return 'Flaws';
       case 12:
-        return 'The Divine';
+        return 'Skills & Training';
       case 13:
-        return 'Character Progression';
+        return 'Equipment';
       case 14:
-        return 'Misc Rules';
+        return 'Character Progression';
       default:
         return 'Home';
     }
