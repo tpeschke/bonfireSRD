@@ -1,0 +1,18 @@
+.falling-damage-shell {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.miscImage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.exhaustion-table {
+    width: 400px
+}
+
+.sizing-table {
+    width: 350px;
+}
