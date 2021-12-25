@@ -14,6 +14,9 @@ import { LogonComponent } from './logon/logon.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
 import { BookmarkingModule } from './bookmarking/Bookmarking.module';
+import { CcOneComponent } from './character-creation/chapter-one/cc-one/cc-one.component';
+import { CcFiveComponent } from './character-creation/chapter-five/cc-five/cc-five.component';
+import { CcSevenComponent } from './character-creation/chapter-seven/cc-seven/cc-seven.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { BookmarkingModule } from './bookmarking/Bookmarking.module';
     SearchComponent,
     PrivacyPolicyComponent,
     LogonComponent,
-    FormatSearchPipe
+    FormatSearchPipe,
+    CcOneComponent,
+    CcFiveComponent,
+    CcSevenComponent
   ],
   imports: [
     HttpClientModule,
