@@ -60,6 +60,11 @@ thead tr:nth-child(2) th, tbody tr th {
     top: 75px
 }
 
+tbody tr th {
+    background-color: rgb(87, 87, 87);
+    color: whitesmoke;
+}
+
 tbody tr:nth-child(even) {
     background-color: lightgrey;
 }
@@ -131,4 +136,12 @@ ol {
 
 .table-center {
     margin: 0 auto;
+}
+
+ul {
+    padding-left: 50px;
+}
+
+li {
+    padding: 5px 0
 }

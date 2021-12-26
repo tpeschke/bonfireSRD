@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import kits from './kit';
 
 @Component({
   selector: 'app-cc-one',
@@ -9,6 +10,7 @@ export class CcOneComponent implements OnInit {
 
   constructor() { }
 
+  public kits = kits
   ngOnInit() {
   }
 

@@ -1,0 +1,15 @@
+.bonus-crp-spacing {
+    height: 7vw;
+    max-height: 58px;
+}
+
+.kit-shell {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.kit-shell table {
+    width: 350px
+}
