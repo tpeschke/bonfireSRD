@@ -74,6 +74,10 @@ tbody tr th {
     color: whitesmoke;
 }
 
+.side-header-coloring th {
+    background-color: #222 !important;
+}
+
 tbody tr:nth-child(even) {
     background-color: lightgrey;
 }
@@ -153,4 +157,15 @@ ul {
 
 li {
     padding: 5px 0
+}
+
+.multiple-tables-shell {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.multiple-tables-shell table {
+    margin-bottom: 15px;
 }
