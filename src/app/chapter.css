@@ -22,6 +22,15 @@ h3 {
     font-size: 15px;
 }
 
+.sidebarShell h2 {
+    font-family: "ancient";
+    font-size: 17px;
+}
+
+.sidebarShell h3 {
+    font-size: 15px;
+}
+
 strong {
     font-family: "ancient";
     color: #222;
