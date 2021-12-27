@@ -117,6 +117,10 @@ th {
     display: flex;
 }
 
+.dark-side-header tr th {
+    background-color: #222;
+}
+
 .float {
     float: left;
     margin: 0 10px 10px 0;
