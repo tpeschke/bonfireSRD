@@ -473,6 +473,7 @@ p {
 
 .anchor {
   position: relative;
+  overflow: hidden;
 }
 
 .anchorTag {
