@@ -9,6 +9,7 @@ export class RrFiveComponent implements OnInit {
 
   constructor() { }
 
+  side = [{linkid: 'h', body: 'Max Favor', jump: 'MaxFavorheader'}, {linkid: 'h', body: 'Acquiring Favor', jump: 'AcquiringFavoheader'}, {linkid: 'hg', body: 'Daily Sacrifices ', jump: 'DailySacrificheader'}, {linkid: 'hg', body: 'Sabbatic Holy Days', jump: 'SabbaticHolyheader'}, {linkid: 'hg', body: 'Lunar Holy Days', jump: 'LunarHolyDayheader'}, {linkid: 'hg', body: 'Solar Holy Days', jump: 'SolarHolyDayheader'}, {linkid: 'hg', body: 'Annual Holy Days', jump: 'AnnualHolyDaheader'}, {linkid: 'hg', body: 'Taking an Oath', jump: 'TakinganOathheader'}, {linkid: 'hg', body: 'Crusades & Pilgrimages', jump: 'CrusadesPilheader'}, {linkid: 'hg', body: 'Condemnation & Absolution', jump: 'Condemnationheader'}]
   ngOnInit() {
   }
 
