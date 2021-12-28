@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import tables from '../tables'
 
 @Component({
   selector: 'app-cc-six',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class CcSixComponent implements OnInit {
 
   constructor() { }
+
+  tables = tables.tables;
+  multi = tables.multipliers
 
   ngOnInit() {
   }
