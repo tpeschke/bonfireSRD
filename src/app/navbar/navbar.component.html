@@ -69,7 +69,7 @@
             (mouseout)="resetChapter()" (click)="setChapter()">Home</a>
         <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="rules-reference/1"
             (mouseout)="resetChapter()" (click)="setChapter(1)">1.1 Basic Mechanics</a>
-        <a [ngClass]="{'active': reset === 'Stat Scores'}" routerLink="rules-reference/2"
+        <a [ngClass]="{'active': reset === 'Confrontations'}" routerLink="rules-reference/2"
             (mouseout)="resetChapter()" (click)="setChapter(2)">1.2 Confrontations</a>
         <a [ngClass]="{'active': reset === 'Combat'}" routerLink="rules-reference/3"
             (mouseout)="resetChapter()" (click)="setChapter(3)">1.3 Combat</a>
@@ -81,6 +81,7 @@
             (mouseout)="resetChapter()" (click)="setChapter(6)">1.6 The Weird</a>
         <a [ngClass]="{'active': reset === 'Misc. Rules'}" routerLink="rules-reference/7"
             (mouseout)="resetChapter()" (click)="setChapter(7)">1.7 Misc. Rules</a>
+            <div class="divid"></div>
         <a [ngClass]="{'active': reset === 'Step-by-Step Overview'}" routerLink="character-creation/1"
             (mouseout)="resetChapter()" (click)="setChapter(8)">2.1 Step-by-Step Overview</a>
         <a [ngClass]="{'active': reset === 'Races'}" routerLink="character-creation/2"

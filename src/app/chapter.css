@@ -172,3 +172,40 @@ li {
 .multiple-tables-shell table {
     margin-bottom: 15px;
 }
+
+@media (max-width: 770px) { 
+
+    h2 {
+        text-align: center;
+    }
+
+    .sidebarShell  h2 {
+        text-align: left;
+    }
+
+    th {
+        top: 75px;
+    }
+
+    .float {
+        float: unset;
+        margin: 10px auto;
+    }
+
+    .pairs {
+        width: 100%;
+    }
+
+    .pair p {
+        text-indent: 0;
+        width: 50%;
+    }
+
+    .pair p:nth-child(2) {
+        text-align: right;
+    }
+
+    .sidebar-width {
+        width: unset;
+    }
+}

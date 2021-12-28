@@ -11,6 +11,7 @@ a {
   color: white;
   font-weight: unset;
   min-width: 6%;
+  margin: 1px 0;
 }
 
 a:hover, .navX:hover {
@@ -181,7 +182,7 @@ p {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.9);
+  background: #222;
   z-index: 99;
   font-family: "north", serif;
   font-size: 20px;
@@ -211,6 +212,13 @@ p {
 
 .side {
   font-size: 12px;
+}
+
+.divid {
+  height: 1px;
+  width: 95%;
+  margin: 1px auto;
+  background-color: rgba(245, 245, 245, 0.507);
 }
 
 @media (max-width: 770px) {
