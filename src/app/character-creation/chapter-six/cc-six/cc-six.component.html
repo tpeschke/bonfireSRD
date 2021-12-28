@@ -489,55 +489,59 @@
         <div class="underline"></div>
       </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="6">Animals, Livestock & Pets</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.livestock">
-            <td>{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="6">Animals, Livestock & Pets</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.livestock">
+              <td>{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="6">Animals, Mounts</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.mounts">
-            <td>{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="6">Animals, Mounts</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.mounts">
+              <td>{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class='anchor'>
         <div id='mountstatesffff' class='anchorTag'></div>
@@ -568,135 +572,137 @@
         <p> You’ll note the min roll for each stat at the very top of the table for easy reference.</p>
       </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="8">Mount Stats</th>
-          </tr>
-          <tr class="notSticky">
-            <th> </th>
-            <th>Turning</th>
-            <th>Deceleration</th>
-            <th>Acceleration</th>
-            <th>Carry</th>
-            <th>Vitality</th>
-            <th>Endurance</th>
-            <th>Bravery</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="notSticky">
-            <th>Min</th>
-            <th>3</th>
-            <th>3</th>
-            <th>3</th>
-            <th>0</th>
-            <th>none</th>
-            <th>none</th>
-            <th>none</th>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/257/gm" target="_blank">Camel, Bachrian</a></td>
-            <td>5+d4!</td>
-            <td>10+d4!</td>
-            <td>10+2d4!</td>
-            <td>40+3d6!</td>
-            <td>4d8+125</td>
-            <td>1+2d4!</td>
-            <td>-d6!</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/262/gm" target="_blank">Camel, Dromedary</a></td>
-            <td>d4!</td>
-            <td>10+d4!</td>
-            <td>9+2d4!</td>
-            <td>20+2d6!</td>
-            <td>7d8!+125</td>
-            <td>2d4!</td>
-            <td>-d4!</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/237/gm" target="_blank">Horse, Courser</a></td>
-            <td>10-d4!</td>
-            <td>10+2d4!</td>
-            <td>10-2d4!</td>
-            <td>50+3d6!</td>
-            <td>5d8!+100</td>
-            <td>d4!-2</td>
-            <td>d4!-2</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/238/gm" target="_blank">Horse, Destrier</a></td>
-            <td>10+2d4!</td>
-            <td>10+2d6!</td>
-            <td>10-2d6!</td>
-            <td>20+3d6!</td>
-            <td>3d8!+100</td>
-            <td>d4!</td>
-            <td>2d4!-6</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/256/gm" target="_blank">Horse, Palfrey</a></td>
-            <td>7+d4!</td>
-            <td>10+2d6!</td>
-            <td>10+2d4!</td>
-            <td>20+3d6!</td>
-            <td>9d8!+100</td>
-            <td>5+d4!</td>
-            <td>2-d4!</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/253/gm" target="_blank">Horse, Rounsey</a></td>
-            <td>8+d4!</td>
-            <td>8+d4!</td>
-            <td>8+d4!</td>
-            <td>45+3d8!</td>
-            <td>7d8!+100</td>
-            <td>d4!+1</td>
-            <td>d4!-2</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/254/gm" target="_blank">Horse, Sumpter</a></td>
-            <td>2+d4!</td>
-            <td>6+d4!</td>
-            <td>10+2d6!</td>
-            <td>50+3d6!</td>
-            <td>7d8!+100</td>
-            <td>2d4!+1</td>
-            <td>-d4!</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/252/gm" target="_blank">Lizard, Pack</a></td>
-            <td>10+2d4!</td>
-            <td>6+d4!</td>
-            <td>4+d4!</td>
-            <td>85+3d10!</td>
-            <td>7d8!+75</td>
-            <td>d4!</td>
-            <td>d4!-2</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/246/gm" target="_blank">Lizard, Riding</a></td>
-            <td>15+3d6!</td>
-            <td>10+d4!</td>
-            <td>4+d4!</td>
-            <td>85+3d10!</td>
-            <td>11d8!+75</td>
-            <td>3d4!</td>
-            <td>d4!</td>
-          </tr>
-          <tr>
-            <td><a href="https://bestiary.dragon-slayer.net/beast/117/gm" target="_blank">Mule</a></td>
-            <td>10+2d4!</td>
-            <td>d4!</td>
-            <td>10+2d4!</td>
-            <td>85+3d10!</td>
-            <td>7d8!+100</td>
-            <td>8+d4!</td>
-            <td>-2d4!</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="8">Mount Stats</th>
+            </tr>
+            <tr class="notSticky">
+              <th> </th>
+              <th>Turning</th>
+              <th>Deceleration</th>
+              <th>Acceleration</th>
+              <th>Carry</th>
+              <th>Vitality</th>
+              <th>Endurance</th>
+              <th>Bravery</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="notSticky">
+              <th>Min</th>
+              <th>3</th>
+              <th>3</th>
+              <th>3</th>
+              <th>0</th>
+              <th>none</th>
+              <th>none</th>
+              <th>none</th>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/257/gm" target="_blank">Camel, Bachrian</a></td>
+              <td>5+d4!</td>
+              <td>10+d4!</td>
+              <td>10+2d4!</td>
+              <td>40+3d6!</td>
+              <td>4d8+125</td>
+              <td>1+2d4!</td>
+              <td>-d6!</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/262/gm" target="_blank">Camel, Dromedary</a></td>
+              <td>d4!</td>
+              <td>10+d4!</td>
+              <td>9+2d4!</td>
+              <td>20+2d6!</td>
+              <td>7d8!+125</td>
+              <td>2d4!</td>
+              <td>-d4!</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/237/gm" target="_blank">Horse, Courser</a></td>
+              <td>10-d4!</td>
+              <td>10+2d4!</td>
+              <td>10-2d4!</td>
+              <td>50+3d6!</td>
+              <td>5d8!+100</td>
+              <td>d4!-2</td>
+              <td>d4!-2</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/238/gm" target="_blank">Horse, Destrier</a></td>
+              <td>10+2d4!</td>
+              <td>10+2d6!</td>
+              <td>10-2d6!</td>
+              <td>20+3d6!</td>
+              <td>3d8!+100</td>
+              <td>d4!</td>
+              <td>2d4!-6</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/256/gm" target="_blank">Horse, Palfrey</a></td>
+              <td>7+d4!</td>
+              <td>10+2d6!</td>
+              <td>10+2d4!</td>
+              <td>20+3d6!</td>
+              <td>9d8!+100</td>
+              <td>5+d4!</td>
+              <td>2-d4!</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/253/gm" target="_blank">Horse, Rounsey</a></td>
+              <td>8+d4!</td>
+              <td>8+d4!</td>
+              <td>8+d4!</td>
+              <td>45+3d8!</td>
+              <td>7d8!+100</td>
+              <td>d4!+1</td>
+              <td>d4!-2</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/254/gm" target="_blank">Horse, Sumpter</a></td>
+              <td>2+d4!</td>
+              <td>6+d4!</td>
+              <td>10+2d6!</td>
+              <td>50+3d6!</td>
+              <td>7d8!+100</td>
+              <td>2d4!+1</td>
+              <td>-d4!</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/252/gm" target="_blank">Lizard, Pack</a></td>
+              <td>10+2d4!</td>
+              <td>6+d4!</td>
+              <td>4+d4!</td>
+              <td>85+3d10!</td>
+              <td>7d8!+75</td>
+              <td>d4!</td>
+              <td>d4!-2</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/246/gm" target="_blank">Lizard, Riding</a></td>
+              <td>15+3d6!</td>
+              <td>10+d4!</td>
+              <td>4+d4!</td>
+              <td>85+3d10!</td>
+              <td>11d8!+75</td>
+              <td>3d4!</td>
+              <td>d4!</td>
+            </tr>
+            <tr>
+              <td><a href="https://bestiary.dragon-slayer.net/beast/117/gm" target="_blank">Mule</a></td>
+              <td>10+2d4!</td>
+              <td>d4!</td>
+              <td>10+2d4!</td>
+              <td>85+3d10!</td>
+              <td>7d8!+100</td>
+              <td>8+d4!</td>
+              <td>-2d4!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class='marginBottom paragraphShell anchor'>
         <div id='8pjfMNGFJTYh' class='anchorTag'></div>
@@ -708,193 +714,200 @@
           and Endurance and Vitality work the same as they do in humans.</p>
       </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="6">Animal, Barding</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.barding">
-            <td>{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="6">Animal, Barding</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.barding">
+              <td>{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="8">Animal, Barding Stats</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Name</th>
-            <th>Weight</th>
-            <th>Dr</th>
-            <th>Def</th>
-            <th>Turning</th>
-            <th>Decel</th>
-            <th>Acc</th>
-            <th>End</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Padded</td>
-            <td>9L</td>
-            <td>3</td>
-            <td>-2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Leather</td>
-            <td>9L</td>
-            <td>4</td>
-            <td>-1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>+1</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Leathered Plates</td>
-            <td>18L</td>
-            <td>1/d</td>
-            <td>-2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>+1</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Scale</td>
-            <td>18L</td>
-            <td>2/d</td>
-            <td>0</td>
-            <td>+1</td>
-            <td>-1</td>
-            <td>+1</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Lamellar</td>
-            <td>18L</td>
-            <td>3/d</td>
-            <td>-5</td>
-            <td>0</td>
-            <td>-1</td>
-            <td>0</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Brigandine</td>
-            <td>18L</td>
-            <td>3/d</td>
-            <td>-1</td>
-            <td>+2</td>
-            <td>-2</td>
-            <td>+2</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Maile</td>
-            <td>26L</td>
-            <td>1/d + 2</td>
-            <td>-1</td>
-            <td>+3</td>
-            <td>-3</td>
-            <td>+3</td>
-            <td>-8</td>
-          </tr>
-          <tr>
-            <td>Plated Maile</td>
-            <td>26L</td>
-            <td>3/d + 3</td>
-            <td>-4</td>
-            <td>+4</td>
-            <td>-3</td>
-            <td>+4</td>
-            <td>-6</td>
-          </tr>
-          <tr>
-            <td>Full Plate</td>
-            <td>26L</td>
-            <td>4/d + 2</td>
-            <td>-4</td>
-            <td>+4</td>
-            <td>-3</td>
-            <td>+3</td>
-            <td>-8</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="8">Animal, Barding Stats</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Name</th>
+              <th>Weight</th>
+              <th>Dr</th>
+              <th>Def</th>
+              <th>Turning</th>
+              <th>Decel</th>
+              <th>Acc</th>
+              <th>End</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Padded</td>
+              <td>9L</td>
+              <td>3</td>
+              <td>-2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Leather</td>
+              <td>9L</td>
+              <td>4</td>
+              <td>-1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>+1</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Leathered Plates</td>
+              <td>18L</td>
+              <td>1/d</td>
+              <td>-2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>+1</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Scale</td>
+              <td>18L</td>
+              <td>2/d</td>
+              <td>0</td>
+              <td>+1</td>
+              <td>-1</td>
+              <td>+1</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Lamellar</td>
+              <td>18L</td>
+              <td>3/d</td>
+              <td>-5</td>
+              <td>0</td>
+              <td>-1</td>
+              <td>0</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Brigandine</td>
+              <td>18L</td>
+              <td>3/d</td>
+              <td>-1</td>
+              <td>+2</td>
+              <td>-2</td>
+              <td>+2</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Maile</td>
+              <td>26L</td>
+              <td>1/d + 2</td>
+              <td>-1</td>
+              <td>+3</td>
+              <td>-3</td>
+              <td>+3</td>
+              <td>-8</td>
+            </tr>
+            <tr>
+              <td>Plated Maile</td>
+              <td>26L</td>
+              <td>3/d + 3</td>
+              <td>-4</td>
+              <td>+4</td>
+              <td>-3</td>
+              <td>+4</td>
+              <td>-6</td>
+            </tr>
+            <tr>
+              <td>Full Plate</td>
+              <td>26L</td>
+              <td>4/d + 2</td>
+              <td>-4</td>
+              <td>+4</td>
+              <td>-3</td>
+              <td>+3</td>
+              <td>-8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Animals, Feed</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.feed">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Animals, Feed</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.feed">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Armor</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.armor">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Armor</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.armor">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="anchor">
         <div id="SMALLLARGEheader" class="anchorTag"></div>
@@ -997,414 +1010,425 @@
           gear. This is the number applied to physical Skill Checks.</p>
       </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="8">Armor Stats</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Name</th>
+              <th>Dr</th>
+              <th>Def</th>
+              <th>Init Mod</th>
+              <th>Rec Mod</th>
+              <th>Type</th>
+              <th>Fatigue</th>
+              <th>Skill Adj</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pelt</td>
+              <td>1</td>
+              <td>-1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Light</td>
+              <td>W</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Bone</td>
+              <td>2</td>
+              <td>-2</td>
+              <td>2</td>
+              <td>0</td>
+              <td>Light</td>
+              <td>W</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Buff Coat</td>
+              <td>3</td>
+              <td>-2</td>
+              <td>1</td>
+              <td>0</td>
+              <td>Light</td>
+              <td>W</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Gambeson</td>
+              <td>3</td>
+              <td>-1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>Light</td>
+              <td>W</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Leather</td>
+              <td>4</td>
+              <td>-1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>Light</td>
+              <td>W</td>
+              <td>-2</td>
+            </tr>
+            <tr>
+              <td>Coat Of Plates</td>
+              <td>1/d</td>
+              <td>-2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Medium</td>
+              <td>B</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Scale</td>
+              <td>2/d</td>
+              <td>0</td>
+              <td>3</td>
+              <td>1</td>
+              <td>Medium</td>
+              <td>B</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Lamellar</td>
+              <td>3/d</td>
+              <td>-5</td>
+              <td>1</td>
+              <td>2</td>
+              <td>Medium</td>
+              <td>B</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Brigandine</td>
+              <td>3/d</td>
+              <td>-1</td>
+              <td>0</td>
+              <td>4</td>
+              <td>Medium</td>
+              <td>B</td>
+              <td>-4</td>
+            </tr>
+            <tr>
+              <td>Maile</td>
+              <td>1/d + 2</td>
+              <td>-1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>Heavy</td>
+              <td>H</td>
+              <td>-8</td>
+            </tr>
+            <tr>
+              <td>Interlocking Maile</td>
+              <td>3/d + 1</td>
+              <td>-3</td>
+              <td>4</td>
+              <td>3</td>
+              <td>Heavy</td>
+              <td>H</td>
+              <td>-8</td>
+            </tr>
+            <tr>
+              <td>Plated Maile</td>
+              <td>3/d + 3</td>
+              <td>-4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>Heavy</td>
+              <td>H</td>
+              <td>-8</td>
+            </tr>
+            <tr>
+              <td>Full Plate</td>
+              <td>4/d + 2</td>
+              <td>-4</td>
+              <td>4</td>
+              <td>5</td>
+              <td>Heavy</td>
+              <td>H</td>
+              <td>-8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="8">Armor Stats</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Name</th>
-            <th>Dr</th>
-            <th>Def</th>
-            <th>Init Mod</th>
-            <th>Rec Mod</th>
-            <th>Type</th>
-            <th>Fatigue</th>
-            <th>Skill Adj</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Pelt</td>
-            <td>1</td>
-            <td>-1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>Light</td>
-            <td>W</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Bone</td>
-            <td>2</td>
-            <td>-2</td>
-            <td>2</td>
-            <td>0</td>
-            <td>Light</td>
-            <td>W</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Buff Coat</td>
-            <td>3</td>
-            <td>-2</td>
-            <td>1</td>
-            <td>0</td>
-            <td>Light</td>
-            <td>W</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Gambeson</td>
-            <td>3</td>
-            <td>-1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>Light</td>
-            <td>W</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Leather</td>
-            <td>4</td>
-            <td>-1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>Light</td>
-            <td>W</td>
-            <td>-2</td>
-          </tr>
-          <tr>
-            <td>Coat Of Plates</td>
-            <td>1/d</td>
-            <td>-2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>Medium</td>
-            <td>B</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Scale</td>
-            <td>2/d</td>
-            <td>0</td>
-            <td>3</td>
-            <td>1</td>
-            <td>Medium</td>
-            <td>B</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Lamellar</td>
-            <td>3/d</td>
-            <td>-5</td>
-            <td>1</td>
-            <td>2</td>
-            <td>Medium</td>
-            <td>B</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Brigandine</td>
-            <td>3/d</td>
-            <td>-1</td>
-            <td>0</td>
-            <td>4</td>
-            <td>Medium</td>
-            <td>B</td>
-            <td>-4</td>
-          </tr>
-          <tr>
-            <td>Maile</td>
-            <td>1/d + 2</td>
-            <td>-1</td>
-            <td>1</td>
-            <td>2</td>
-            <td>Heavy</td>
-            <td>H</td>
-            <td>-8</td>
-          </tr>
-          <tr>
-            <td>Interlocking Maile</td>
-            <td>3/d + 1</td>
-            <td>-3</td>
-            <td>4</td>
-            <td>3</td>
-            <td>Heavy</td>
-            <td>H</td>
-            <td>-8</td>
-          </tr>
-          <tr>
-            <td>Plated Maile</td>
-            <td>3/d + 3</td>
-            <td>-4</td>
-            <td>4</td>
-            <td>4</td>
-            <td>Heavy</td>
-            <td>H</td>
-            <td>-8</td>
-          </tr>
-          <tr>
-            <td>Full Plate</td>
-            <td>4/d + 2</td>
-            <td>-4</td>
-            <td>4</td>
-            <td>5</td>
-            <td>Heavy</td>
-            <td>H</td>
-            <td>-8</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Beverages</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.beverages">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Beverages</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.beverages">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Clothing</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.clothing">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Clothing</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.clothing">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Clothing, Accessories</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.accessories">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Clothing, Accessories</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.accessories">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Containers, Heavy</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.heavy">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Containers, Heavy</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.heavy">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Containers, Personal</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Name</th>
-            <th>Carry Bonus</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Backpack, Leather, Small</td>
-            <td>+M</td>
-            <td>S</td>
-            <td>9</td>
-            <td>13.5</td>
-            <td>27</td>
-            <td>54</td>
-          </tr>
-          <tr>
-            <td>Backpack, Leather, Medium</td>
-            <td>+2M</td>
-            <td>S</td>
-            <td>10</td>
-            <td>15</td>
-            <td>30</td>
-            <td>60</td>
-          </tr>
-          <tr>
-            <td>Backpack, Leather, Large</td>
-            <td>+L</td>
-            <td>S</td>
-            <td>15</td>
-            <td>22.5</td>
-            <td>45</td>
-            <td>90</td>
-          </tr>
-          <tr>
-            <td>Bag, Buckskin, Small</td>
-            <td>+S</td>
-            <td>S</td>
-            <td>5</td>
-            <td>7.5</td>
-            <td>15</td>
-            <td>30</td>
-          </tr>
-          <tr>
-            <td>Bag, Buckskin, Medium</td>
-            <td>+2S</td>
-            <td>S</td>
-            <td>6.5</td>
-            <td>9.75</td>
-            <td>19.5</td>
-            <td>39</td>
-          </tr>
-          <tr>
-            <td>Canteen, quart</td>
-            <td>*</td>
-            <td>S</td>
-            <td>2</td>
-            <td>3</td>
-            <td>6</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <td>Coin Purse, 3"x4"</td>
-            <td>*</td>
-            <td>S</td>
-            <td>0.35</td>
-            <td>0.53</td>
-            <td>1.05</td>
-            <td>2.1</td>
-          </tr>
-          <tr>
-            <td>Pouch, Belt, Small</td>
-            <td>+S</td>
-            <td>S</td>
-            <td>0.5</td>
-            <td>0.75</td>
-            <td>1.5</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Pouch, Belt, Medium</td>
-            <td>+2S</td>
-            <td>S</td>
-            <td>1.2</td>
-            <td>1.8</td>
-            <td>3.6</td>
-            <td>7.2</td>
-          </tr>
-          <tr>
-            <td>Quiver, Leather, 12 Cap</td>
-            <td>*</td>
-            <td>S</td>
-            <td>2.5</td>
-            <td>3.75</td>
-            <td>7.5</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Scabbard, Leather</td>
-            <td>*</td>
-            <td>S</td>
-            <td>5</td>
-            <td>7.5</td>
-            <td>15</td>
-            <td>30</td>
-          </tr>
-          <tr>
-            <td>Scroll Case, Wood</td>
-            <td>*</td>
-            <td>S</td>
-            <td>6</td>
-            <td>9</td>
-            <td>18</td>
-            <td>36</td>
-          </tr>
-          <tr>
-            <td>Sheathe, Small, Leather</td>
-            <td>*</td>
-            <td>S</td>
-            <td>2.5</td>
-            <td>3.75</td>
-            <td>7.5</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Waterskin, Gallon</td>
-            <td>*</td>
-            <td>S</td>
-            <td>5</td>
-            <td>7.5</td>
-            <td>15</td>
-            <td>30</td>
-          </tr>
-          <tr>
-            <td>Waterskin, Half Gallon</td>
-            <td>*</td>
-            <td>S</td>
-            <td>3</td>
-            <td>4.5</td>
-            <td>9</td>
-            <td>18</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Containers, Personal</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Name</th>
+              <th>Carry Bonus</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Backpack, Leather, Small</td>
+              <td>+M</td>
+              <td>S</td>
+              <td>9</td>
+              <td>13.5</td>
+              <td>27</td>
+              <td>54</td>
+            </tr>
+            <tr>
+              <td>Backpack, Leather, Medium</td>
+              <td>+2M</td>
+              <td>S</td>
+              <td>10</td>
+              <td>15</td>
+              <td>30</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>Backpack, Leather, Large</td>
+              <td>+L</td>
+              <td>S</td>
+              <td>15</td>
+              <td>22.5</td>
+              <td>45</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Bag, Buckskin, Small</td>
+              <td>+S</td>
+              <td>S</td>
+              <td>5</td>
+              <td>7.5</td>
+              <td>15</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Bag, Buckskin, Medium</td>
+              <td>+2S</td>
+              <td>S</td>
+              <td>6.5</td>
+              <td>9.75</td>
+              <td>19.5</td>
+              <td>39</td>
+            </tr>
+            <tr>
+              <td>Canteen, quart</td>
+              <td>*</td>
+              <td>S</td>
+              <td>2</td>
+              <td>3</td>
+              <td>6</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Coin Purse, 3"x4"</td>
+              <td>*</td>
+              <td>S</td>
+              <td>0.35</td>
+              <td>0.53</td>
+              <td>1.05</td>
+              <td>2.1</td>
+            </tr>
+            <tr>
+              <td>Pouch, Belt, Small</td>
+              <td>+S</td>
+              <td>S</td>
+              <td>0.5</td>
+              <td>0.75</td>
+              <td>1.5</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Pouch, Belt, Medium</td>
+              <td>+2S</td>
+              <td>S</td>
+              <td>1.2</td>
+              <td>1.8</td>
+              <td>3.6</td>
+              <td>7.2</td>
+            </tr>
+            <tr>
+              <td>Quiver, Leather, 12 Cap</td>
+              <td>*</td>
+              <td>S</td>
+              <td>2.5</td>
+              <td>3.75</td>
+              <td>7.5</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Scabbard, Leather</td>
+              <td>*</td>
+              <td>S</td>
+              <td>5</td>
+              <td>7.5</td>
+              <td>15</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Scroll Case, Wood</td>
+              <td>*</td>
+              <td>S</td>
+              <td>6</td>
+              <td>9</td>
+              <td>18</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>Sheathe, Small, Leather</td>
+              <td>*</td>
+              <td>S</td>
+              <td>2.5</td>
+              <td>3.75</td>
+              <td>7.5</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Waterskin, Gallon</td>
+              <td>*</td>
+              <td>S</td>
+              <td>5</td>
+              <td>7.5</td>
+              <td>15</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Waterskin, Half Gallon</td>
+              <td>*</td>
+              <td>S</td>
+              <td>3</td>
+              <td>4.5</td>
+              <td>9</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="anchor">
         <div id="Hirelingsheader" class="anchorTag"></div>
@@ -1495,31 +1519,34 @@
         <p>Subtract Presence in cc from price/day.</p>
       </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Poisons & Toxins</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.poisons">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Poisons & Toxins</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.poisons">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
 
       <table class="all-centered first-left">
         <thead>
@@ -1576,137 +1603,140 @@
         </tbody>
       </table>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="3">Services</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Name</th>
+              <th>Source</th>
+              <th>Local Market</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cartage, P/barrel, P/day, Overland</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Fortune Telling (half Hour)</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Handsome Cab, Half Hour</td>
+              <td>1</td>
+              <td>1.5</td>
+            </tr>
+            <tr>
+              <td>Lodging, Common, Ave. Inn (each)</td>
+              <td>1.5</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Lodging, Common, Cheap Inn (each)</td>
+              <td>1</td>
+              <td>1.33</td>
+            </tr>
+            <tr>
+              <td>Lodging, Double, Ave. Inn (each)</td>
+              <td>3.5</td>
+              <td>4.66</td>
+            </tr>
+            <tr>
+              <td>Lodging, Double, Boarding House (monthly, each)</td>
+              <td>75</td>
+              <td>99.75</td>
+            </tr>
+            <tr>
+              <td>Lodging, Double, Cheap Inn (each)</td>
+              <td>2.5</td>
+              <td>3.33</td>
+            </tr>
+            <tr>
+              <td>Lodging, Quadruple, Ave. Inn (each)</td>
+              <td>3</td>
+              <td>3.99</td>
+            </tr>
+            <tr>
+              <td>Lodging, Quadruple, Cheap Inn (each)</td>
+              <td>2</td>
+              <td>2.66</td>
+            </tr>
+            <tr>
+              <td>Lodging, Single, Boarding House (monthly)</td>
+              <td>100</td>
+              <td>133</td>
+            </tr>
+            <tr>
+              <td>Lodging, Single, Religious Hostel</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Scribe, Writing or Copying, Per Hour</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Shipping, P/barrel, P/day, Sea</td>
+              <td>1.5</td>
+              <td>2.25</td>
+            </tr>
+            <tr>
+              <td>Shoeing Horse (w/ 4 Shoes)</td>
+              <td>19</td>
+              <td>28.5</td>
+            </tr>
+            <tr>
+              <td>Stabling Horse, W/ Hay, No Grain, Per Day</td>
+              <td>0.75</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Travel, Coach, P/day</td>
+              <td>10</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Travel, Ship, P/day</td>
+              <td>12</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="3">Services</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Name</th>
-            <th>Source</th>
-            <th>Local Market</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cartage, P/barrel, P/day, Overland</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Fortune Telling (half Hour)</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Handsome Cab, Half Hour</td>
-            <td>1</td>
-            <td>1.5</td>
-          </tr>
-          <tr>
-            <td>Lodging, Common, Ave. Inn (each)</td>
-            <td>1.5</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Lodging, Common, Cheap Inn (each)</td>
-            <td>1</td>
-            <td>1.33</td>
-          </tr>
-          <tr>
-            <td>Lodging, Double, Ave. Inn (each)</td>
-            <td>3.5</td>
-            <td>4.66</td>
-          </tr>
-          <tr>
-            <td>Lodging, Double, Boarding House (monthly, each)</td>
-            <td>75</td>
-            <td>99.75</td>
-          </tr>
-          <tr>
-            <td>Lodging, Double, Cheap Inn (each)</td>
-            <td>2.5</td>
-            <td>3.33</td>
-          </tr>
-          <tr>
-            <td>Lodging, Quadruple, Ave. Inn (each)</td>
-            <td>3</td>
-            <td>3.99</td>
-          </tr>
-          <tr>
-            <td>Lodging, Quadruple, Cheap Inn (each)</td>
-            <td>2</td>
-            <td>2.66</td>
-          </tr>
-          <tr>
-            <td>Lodging, Single, Boarding House (monthly)</td>
-            <td>100</td>
-            <td>133</td>
-          </tr>
-          <tr>
-            <td>Lodging, Single, Religious Hostel</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Scribe, Writing or Copying, Per Hour</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Shipping, P/barrel, P/day, Sea</td>
-            <td>1.5</td>
-            <td>2.25</td>
-          </tr>
-          <tr>
-            <td>Shoeing Horse (w/ 4 Shoes)</td>
-            <td>19</td>
-            <td>28.5</td>
-          </tr>
-          <tr>
-            <td>Stabling Horse, W/ Hay, No Grain, Per Day</td>
-            <td>0.75</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Travel, Coach, P/day</td>
-            <td>10</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Travel, Ship, P/day</td>
-            <td>12</td>
-            <td>18</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Shields</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.shields">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Shields</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.shields">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="anchor">
         <div id="ShieldTableHheader" class="anchorTag"></div>
@@ -1841,135 +1871,137 @@
           and get an instant benefit from the.</p>
       </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="10">Shield Stats</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Name</th>
-            <th>Size</th>
-            <th>DR</th>
-            <th>Def</th>
-            <th>Parry</th>
-            <th>Cover</th>
-            <th>Flanks</th>
-            <th>Fatigue</th>
-            <th>Bonus</th>
-            <th>For</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Buckler</td>
-            <td>S</td>
-            <td>3/d + 8</td>
-            <td>-2</td>
-            <td>6</td>
-            <td>2</td>
-            <td>2</td>
-            <td>-1</td>
-            <td>Yes</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <td>Clothe</td>
-            <td>S</td>
-            <td>6</td>
-            <td>0</td>
-            <td>5</td>
-            <td>0</td>
-            <td>2</td>
-            <td>-1</td>
-            <td> </td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>Figure Eight</td>
-            <td>M</td>
-            <td>2/d + 6</td>
-            <td>-2</td>
-            <td>8</td>
-            <td>d8!+2</td>
-            <td>3</td>
-            <td>-2</td>
-            <td>Yes</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <td>Heater</td>
-            <td>L</td>
-            <td>2/d + 4</td>
-            <td>-7</td>
-            <td>15</td>
-            <td>2d8!+7</td>
-            <td>4</td>
-            <td>-3</td>
-            <td> </td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <td>Kite</td>
-            <td>M</td>
-            <td>2/d + 4</td>
-            <td>-2</td>
-            <td>8</td>
-            <td>d6!+2</td>
-            <td>3</td>
-            <td>-2</td>
-            <td> </td>
-            <td>W</td>
-          </tr>
-          <tr>
-            <td>Light</td>
-            <td>S</td>
-            <td>3/d + 6</td>
-            <td>-1</td>
-            <td>6</td>
-            <td>d4!+1</td>
-            <td>2</td>
-            <td>-1</td>
-            <td> </td>
-            <td>W</td>
-          </tr>
-          <tr>
-            <td>Pavise</td>
-            <td>L</td>
-            <td>4/d + 2</td>
-            <td>-8</td>
-            <td>0</td>
-            <td>d20!</td>
-            <td>2</td>
-            <td>-3</td>
-            <td>Yes</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <td>Round</td>
-            <td>M</td>
-            <td>2/d + 8</td>
-            <td>-5</td>
-            <td>10</td>
-            <td>d6!+5</td>
-            <td>3</td>
-            <td>-2</td>
-            <td>Yes</td>
-            <td>S</td>
-          </tr>
-          <tr>
-            <td>Tower</td>
-            <td>L</td>
-            <td>2/d + 1</td>
-            <td>-8</td>
-            <td>16</td>
-            <td>2d8!+8</td>
-            <td>4</td>
-            <td>-3</td>
-            <td> </td>
-            <td>A</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="10">Shield Stats</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Name</th>
+              <th>Size</th>
+              <th>DR</th>
+              <th>Def</th>
+              <th>Parry</th>
+              <th>Cover</th>
+              <th>Flanks</th>
+              <th>Fatigue</th>
+              <th>Bonus</th>
+              <th>For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Buckler</td>
+              <td>S</td>
+              <td>3/d + 8</td>
+              <td>-2</td>
+              <td>6</td>
+              <td>2</td>
+              <td>2</td>
+              <td>-1</td>
+              <td>Yes</td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td>Clothe</td>
+              <td>S</td>
+              <td>6</td>
+              <td>0</td>
+              <td>5</td>
+              <td>0</td>
+              <td>2</td>
+              <td>-1</td>
+              <td> </td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Figure Eight</td>
+              <td>M</td>
+              <td>2/d + 6</td>
+              <td>-2</td>
+              <td>8</td>
+              <td>d8!+2</td>
+              <td>3</td>
+              <td>-2</td>
+              <td>Yes</td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td>Heater</td>
+              <td>L</td>
+              <td>2/d + 4</td>
+              <td>-7</td>
+              <td>15</td>
+              <td>2d8!+7</td>
+              <td>4</td>
+              <td>-3</td>
+              <td> </td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td>Kite</td>
+              <td>M</td>
+              <td>2/d + 4</td>
+              <td>-2</td>
+              <td>8</td>
+              <td>d6!+2</td>
+              <td>3</td>
+              <td>-2</td>
+              <td> </td>
+              <td>W</td>
+            </tr>
+            <tr>
+              <td>Light</td>
+              <td>S</td>
+              <td>3/d + 6</td>
+              <td>-1</td>
+              <td>6</td>
+              <td>d4!+1</td>
+              <td>2</td>
+              <td>-1</td>
+              <td> </td>
+              <td>W</td>
+            </tr>
+            <tr>
+              <td>Pavise</td>
+              <td>L</td>
+              <td>4/d + 2</td>
+              <td>-8</td>
+              <td>0</td>
+              <td>d20!</td>
+              <td>2</td>
+              <td>-3</td>
+              <td>Yes</td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td>Round</td>
+              <td>M</td>
+              <td>2/d + 8</td>
+              <td>-5</td>
+              <td>10</td>
+              <td>d6!+5</td>
+              <td>3</td>
+              <td>-2</td>
+              <td>Yes</td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td>Tower</td>
+              <td>L</td>
+              <td>2/d + 1</td>
+              <td>-8</td>
+              <td>16</td>
+              <td>2d8!+8</td>
+              <td>4</td>
+              <td>-3</td>
+              <td> </td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="anchor">
         <div id="ShieldBonusesheader" class="anchorTag"></div>
@@ -2029,274 +2061,285 @@
           Defense or an Unarmed Strike, you delay your opponent’s next attack by 5 seconds. </p>
       </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Substances, Alchemical</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.alchemical">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Substances, Alchemical</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.alchemical">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Substances, Ropes & Fabrics</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.ropes">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Tools, Adventuring</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.adventuring">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Substances, Ropes & Fabrics</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.ropes">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Tools, General</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.general">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Tools, Trade</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.trades">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Tools, Adventuring</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.adventuring">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Weapons, Axes</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.axes">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Weapons, Polearms</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.polearms">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Tools, General</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.general">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Weapons, Sidearms</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.sidearms">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Weapons, Swords</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.swords">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Tools, Trade</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.trades">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Weapons, Axes</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.axes">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Weapons, Polearms</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.polearms">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Weapons, Sidearms</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.sidearms">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Weapons, Swords</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.swords">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Weapons, Trauma</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.trauma">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Weapons, Trauma</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.trauma">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="anchor">
         <div id="WeaponTableHheader" class="anchorTag"></div>
@@ -2388,560 +2431,563 @@
           following section to find out more details.</p>
       </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="8">Melee Weapon Stats</th>
-          </tr>
-          <tr>
-            <th>Name</th>
-            <th>Size</th>
-            <th>Damage</th>
-            <th>Recovery</th>
-            <th>Dam Type</th>
-            <th>Parry</th>
-            <th>Measure</th>
-            <th>Bonus</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="notSticky">
-            <th colspan="8">Axes</th>
-          </tr>
-          <tr>
-            <td>Bardiche</td>
-            <td>L</td>
-            <td>d12!+4d3!</td>
-            <td>16</td>
-            <td>S</td>
-            <td>0</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Battle Axe</td>
-            <td>M</td>
-            <td>d8!+3d4!</td>
-            <td>15</td>
-            <td>S</td>
-            <td>0</td>
-            <td>2.5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Handaxe</td>
-            <td>S</td>
-            <td>3d4!</td>
-            <td>10</td>
-            <td>S</td>
-            <td>0</td>
-            <td>1</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Horsemans Pick</td>
-            <td>M</td>
-            <td>d12!+2d4!</td>
-            <td>13</td>
-            <td>P</td>
-            <td>0</td>
-            <td>2</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Lochaber Axe</td>
-            <td>L</td>
-            <td>d12!+3d4!</td>
-            <td>17</td>
-            <td>S</td>
-            <td>0</td>
-            <td>6</td>
-            <td>Yes</td>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="8">Sidearms</th>
-          </tr>
-          <tr>
-            <td>Cinquedea</td>
-            <td>S</td>
-            <td>2d3!+d6!</td>
-            <td>9</td>
-            <td>S</td>
-            <td>0</td>
-            <td>1.5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Dagger</td>
-            <td>S</td>
-            <td>d6!</td>
-            <td>6</td>
-            <td>P</td>
-            <td>2</td>
-            <td>1</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Dagger</td>
-            <td>S</td>
-            <td>d4!+d3!</td>
-            <td>6</td>
-            <td>S</td>
-            <td>2</td>
-            <td>1</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Dusack</td>
-            <td>S</td>
-            <td>2d4!+d3!</td>
-            <td>8</td>
-            <td>S</td>
-            <td>2</td>
-            <td>2.5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Katzbalger</td>
-            <td>S</td>
-            <td>d4!+2d3!</td>
-            <td>9</td>
-            <td>S</td>
-            <td>4</td>
-            <td>2.5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Knife</td>
-            <td>S</td>
-            <td>3d3!</td>
-            <td>8</td>
-            <td>S</td>
-            <td>0</td>
-            <td>0.25</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Scourge</td>
-            <td>M</td>
-            <td>4d3!</td>
-            <td>10</td>
-            <td>S</td>
-            <td>0</td>
-            <td>2</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Stiletto</td>
-            <td>S</td>
-            <td>d8!</td>
-            <td>4</td>
-            <td>P</td>
-            <td>4</td>
-            <td>1.5</td>
-            <td> </td>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="8">Swords</th>
-          </tr>
-          <tr>
-            <td>Arming Sword</td>
-            <td>M</td>
-            <td>2d4!+2d3!</td>
-            <td>12</td>
-            <td>S</td>
-            <td>4</td>
-            <td>3</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Court Sword</td>
-            <td>S</td>
-            <td>d6!+d4!</td>
-            <td>5</td>
-            <td>P</td>
-            <td>2</td>
-            <td>3.25</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Estoc</td>
-            <td>M</td>
-            <td>d10!+d3!</td>
-            <td>7</td>
-            <td>P</td>
-            <td>0</td>
-            <td>3.75</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Falchion</td>
-            <td>M</td>
-            <td>3d4!+2d3!</td>
-            <td>14</td>
-            <td>S</td>
-            <td>2</td>
-            <td>3</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Koncerz</td>
-            <td>M</td>
-            <td>d8!+d6!</td>
-            <td>10</td>
-            <td>P</td>
-            <td>0</td>
-            <td>5.25</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Longsword</td>
-            <td>M</td>
-            <td>3d4!+d3!</td>
-            <td>11</td>
-            <td>S</td>
-            <td>2</td>
-            <td>3.75</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Messer</td>
-            <td>M</td>
-            <td>2d6!+d3!</td>
-            <td>10</td>
-            <td>S</td>
-            <td>3</td>
-            <td>3</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Pishaq</td>
-            <td>M</td>
-            <td>d4!+3d3!</td>
-            <td>13</td>
-            <td>S</td>
-            <td>2</td>
-            <td>2.5</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Rapier</td>
-            <td>M</td>
-            <td>2d6!</td>
-            <td>5</td>
-            <td>P</td>
-            <td>4</td>
-            <td>4</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Sabre</td>
-            <td>M</td>
-            <td>d4!+4d3!</td>
-            <td>13</td>
-            <td>S</td>
-            <td>2</td>
-            <td>3</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Schiavona</td>
-            <td>S</td>
-            <td>d8!+2d3!</td>
-            <td>13</td>
-            <td>S</td>
-            <td>2</td>
-            <td>3</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Zweihander</td>
-            <td>L</td>
-            <td>5d4!+d3!</td>
-            <td>15</td>
-            <td>S</td>
-            <td>0</td>
-            <td>7</td>
-            <td>Yes</td>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="8">Polearms</th>
-          </tr>
-          <tr>
-            <td>Ahlspiess</td>
-            <td>L</td>
-            <td>d10!+2d4!</td>
-            <td>8</td>
-            <td>P</td>
-            <td>0</td>
-            <td>6</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Bill</td>
-            <td>L</td>
-            <td>d6!+4d3!</td>
-            <td>12</td>
-            <td>S</td>
-            <td>0</td>
-            <td>8</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Glaive</td>
-            <td>L</td>
-            <td>d4!+5d3!</td>
-            <td>14</td>
-            <td>S</td>
-            <td>0</td>
-            <td>8</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Guisarme</td>
-            <td>L</td>
-            <td>2d8!+d4!</td>
-            <td>10</td>
-            <td>P</td>
-            <td>0</td>
-            <td>7.5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Halberd</td>
-            <td>L</td>
-            <td>5d4!</td>
-            <td>16</td>
-            <td>S</td>
-            <td>0</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Halberd</td>
-            <td>L</td>
-            <td>d6!+2d4!</td>
-            <td>8</td>
-            <td>P</td>
-            <td>0</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Lance</td>
-            <td>L</td>
-            <td>3d8!</td>
-            <td>20</td>
-            <td>P</td>
-            <td>0</td>
-            <td>10</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Lucerne</td>
-            <td>L</td>
-            <td>d20!</td>
-            <td>12</td>
-            <td>C</td>
-            <td>0</td>
-            <td>7</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Military Fork</td>
-            <td>L</td>
-            <td>2d6!+d4!</td>
-            <td>8</td>
-            <td>P</td>
-            <td>2</td>
-            <td>6.75</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Pike</td>
-            <td>L</td>
-            <td>3d6!</td>
-            <td>9</td>
-            <td>P</td>
-            <td>0</td>
-            <td>13</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Ranseur</td>
-            <td>L</td>
-            <td>d8!+2d6!</td>
-            <td>10</td>
-            <td>P</td>
-            <td>0</td>
-            <td>7.25</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Short Spear</td>
-            <td>M</td>
-            <td>d10!+d4!</td>
-            <td>7</td>
-            <td>P</td>
-            <td>0</td>
-            <td>5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Sovnya</td>
-            <td>L</td>
-            <td>d6!+d4!+3d3!</td>
-            <td>12</td>
-            <td>S</td>
-            <td>0</td>
-            <td>6.5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Voulge</td>
-            <td>L</td>
-            <td>d10!+d6!</td>
-            <td>7</td>
-            <td>P</td>
-            <td>0</td>
-            <td>7</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>War-scythe</td>
-            <td>L</td>
-            <td>d8!+2d4!</td>
-            <td>9</td>
-            <td>P</td>
-            <td>0</td>
-            <td>6.25</td>
-            <td> </td>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="8">Trauma</th>
-          </tr>
-          <tr>
-            <td>Bec De Corbin</td>
-            <td>L</td>
-            <td>d12!+d10!</td>
-            <td>12</td>
-            <td>C</td>
-            <td>0</td>
-            <td>5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Bludgeon</td>
-            <td>S</td>
-            <td>d10!</td>
-            <td>7</td>
-            <td>C</td>
-            <td>0</td>
-            <td>1.25</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Club</td>
-            <td>M</td>
-            <td>d12!</td>
-            <td>9</td>
-            <td>C</td>
-            <td>0</td>
-            <td>2</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Goedendag</td>
-            <td>L</td>
-            <td>d8!+d3!</td>
-            <td>6</td>
-            <td>P</td>
-            <td>0</td>
-            <td>3.75</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Mace</td>
-            <td>M</td>
-            <td>d12!+d6!</td>
-            <td>10</td>
-            <td>C</td>
-            <td>0</td>
-            <td>2</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Maul</td>
-            <td>L</td>
-            <td>2d12!</td>
-            <td>15</td>
-            <td>C</td>
-            <td>0</td>
-            <td>5.5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Peasant's Flail</td>
-            <td>L</td>
-            <td>2d10!</td>
-            <td>15</td>
-            <td>C</td>
-            <td>0</td>
-            <td>4</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Pernach</td>
-            <td>M</td>
-            <td>d12!+d4!</td>
-            <td>12</td>
-            <td>C</td>
-            <td>0</td>
-            <td>3.5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Quarterstaff</td>
-            <td>L</td>
-            <td>2d8!</td>
-            <td>15</td>
-            <td>C</td>
-            <td>2</td>
-            <td>6</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Unarmed</td>
-            <td>S</td>
-            <td>2d4!</td>
-            <td>10</td>
-            <td>C</td>
-            <td>0</td>
-            <td>0</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>War Flail</td>
-            <td>M</td>
-            <td>d10!+d8!</td>
-            <td>11</td>
-            <td>C</td>
-            <td>0</td>
-            <td>4</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>War Hammer</td>
-            <td>M</td>
-            <td>d12!+d8!</td>
-            <td>13</td>
-            <td>C</td>
-            <td>0</td>
-            <td>2.5</td>
-            <td> </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="8">Melee Weapon Stats</th>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <th>Size</th>
+              <th>Damage</th>
+              <th>Recovery</th>
+              <th>Dam Type</th>
+              <th>Parry</th>
+              <th>Measure</th>
+              <th>Bonus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="notSticky">
+              <th colspan="8">Axes</th>
+            </tr>
+            <tr>
+              <td>Bardiche</td>
+              <td>L</td>
+              <td>d12!+4d3!</td>
+              <td>16</td>
+              <td>S</td>
+              <td>0</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Battle Axe</td>
+              <td>M</td>
+              <td>d8!+3d4!</td>
+              <td>15</td>
+              <td>S</td>
+              <td>0</td>
+              <td>2.5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Handaxe</td>
+              <td>S</td>
+              <td>3d4!</td>
+              <td>10</td>
+              <td>S</td>
+              <td>0</td>
+              <td>1</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Horsemans Pick</td>
+              <td>M</td>
+              <td>d12!+2d4!</td>
+              <td>13</td>
+              <td>P</td>
+              <td>0</td>
+              <td>2</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Lochaber Axe</td>
+              <td>L</td>
+              <td>d12!+3d4!</td>
+              <td>17</td>
+              <td>S</td>
+              <td>0</td>
+              <td>6</td>
+              <td>Yes</td>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="8">Sidearms</th>
+            </tr>
+            <tr>
+              <td>Cinquedea</td>
+              <td>S</td>
+              <td>2d3!+d6!</td>
+              <td>9</td>
+              <td>S</td>
+              <td>0</td>
+              <td>1.5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Dagger</td>
+              <td>S</td>
+              <td>d6!</td>
+              <td>6</td>
+              <td>P</td>
+              <td>2</td>
+              <td>1</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Dagger</td>
+              <td>S</td>
+              <td>d4!+d3!</td>
+              <td>6</td>
+              <td>S</td>
+              <td>2</td>
+              <td>1</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Dusack</td>
+              <td>S</td>
+              <td>2d4!+d3!</td>
+              <td>8</td>
+              <td>S</td>
+              <td>2</td>
+              <td>2.5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Katzbalger</td>
+              <td>S</td>
+              <td>d4!+2d3!</td>
+              <td>9</td>
+              <td>S</td>
+              <td>4</td>
+              <td>2.5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Knife</td>
+              <td>S</td>
+              <td>3d3!</td>
+              <td>8</td>
+              <td>S</td>
+              <td>0</td>
+              <td>0.25</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Scourge</td>
+              <td>M</td>
+              <td>4d3!</td>
+              <td>10</td>
+              <td>S</td>
+              <td>0</td>
+              <td>2</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Stiletto</td>
+              <td>S</td>
+              <td>d8!</td>
+              <td>4</td>
+              <td>P</td>
+              <td>4</td>
+              <td>1.5</td>
+              <td> </td>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="8">Swords</th>
+            </tr>
+            <tr>
+              <td>Arming Sword</td>
+              <td>M</td>
+              <td>2d4!+2d3!</td>
+              <td>12</td>
+              <td>S</td>
+              <td>4</td>
+              <td>3</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Court Sword</td>
+              <td>S</td>
+              <td>d6!+d4!</td>
+              <td>5</td>
+              <td>P</td>
+              <td>2</td>
+              <td>3.25</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Estoc</td>
+              <td>M</td>
+              <td>d10!+d3!</td>
+              <td>7</td>
+              <td>P</td>
+              <td>0</td>
+              <td>3.75</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Falchion</td>
+              <td>M</td>
+              <td>3d4!+2d3!</td>
+              <td>14</td>
+              <td>S</td>
+              <td>2</td>
+              <td>3</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Koncerz</td>
+              <td>M</td>
+              <td>d8!+d6!</td>
+              <td>10</td>
+              <td>P</td>
+              <td>0</td>
+              <td>5.25</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Longsword</td>
+              <td>M</td>
+              <td>3d4!+d3!</td>
+              <td>11</td>
+              <td>S</td>
+              <td>2</td>
+              <td>3.75</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Messer</td>
+              <td>M</td>
+              <td>2d6!+d3!</td>
+              <td>10</td>
+              <td>S</td>
+              <td>3</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Pishaq</td>
+              <td>M</td>
+              <td>d4!+3d3!</td>
+              <td>13</td>
+              <td>S</td>
+              <td>2</td>
+              <td>2.5</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Rapier</td>
+              <td>M</td>
+              <td>2d6!</td>
+              <td>5</td>
+              <td>P</td>
+              <td>4</td>
+              <td>4</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Sabre</td>
+              <td>M</td>
+              <td>d4!+4d3!</td>
+              <td>13</td>
+              <td>S</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Schiavona</td>
+              <td>S</td>
+              <td>d8!+2d3!</td>
+              <td>13</td>
+              <td>S</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Zweihander</td>
+              <td>L</td>
+              <td>5d4!+d3!</td>
+              <td>15</td>
+              <td>S</td>
+              <td>0</td>
+              <td>7</td>
+              <td>Yes</td>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="8">Polearms</th>
+            </tr>
+            <tr>
+              <td>Ahlspiess</td>
+              <td>L</td>
+              <td>d10!+2d4!</td>
+              <td>8</td>
+              <td>P</td>
+              <td>0</td>
+              <td>6</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Bill</td>
+              <td>L</td>
+              <td>d6!+4d3!</td>
+              <td>12</td>
+              <td>S</td>
+              <td>0</td>
+              <td>8</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Glaive</td>
+              <td>L</td>
+              <td>d4!+5d3!</td>
+              <td>14</td>
+              <td>S</td>
+              <td>0</td>
+              <td>8</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Guisarme</td>
+              <td>L</td>
+              <td>2d8!+d4!</td>
+              <td>10</td>
+              <td>P</td>
+              <td>0</td>
+              <td>7.5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Halberd</td>
+              <td>L</td>
+              <td>5d4!</td>
+              <td>16</td>
+              <td>S</td>
+              <td>0</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Halberd</td>
+              <td>L</td>
+              <td>d6!+2d4!</td>
+              <td>8</td>
+              <td>P</td>
+              <td>0</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Lance</td>
+              <td>L</td>
+              <td>3d8!</td>
+              <td>20</td>
+              <td>P</td>
+              <td>0</td>
+              <td>10</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Lucerne</td>
+              <td>L</td>
+              <td>d20!</td>
+              <td>12</td>
+              <td>C</td>
+              <td>0</td>
+              <td>7</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Military Fork</td>
+              <td>L</td>
+              <td>2d6!+d4!</td>
+              <td>8</td>
+              <td>P</td>
+              <td>2</td>
+              <td>6.75</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Pike</td>
+              <td>L</td>
+              <td>3d6!</td>
+              <td>9</td>
+              <td>P</td>
+              <td>0</td>
+              <td>13</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Ranseur</td>
+              <td>L</td>
+              <td>d8!+2d6!</td>
+              <td>10</td>
+              <td>P</td>
+              <td>0</td>
+              <td>7.25</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Short Spear</td>
+              <td>M</td>
+              <td>d10!+d4!</td>
+              <td>7</td>
+              <td>P</td>
+              <td>0</td>
+              <td>5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Sovnya</td>
+              <td>L</td>
+              <td>d6!+d4!+3d3!</td>
+              <td>12</td>
+              <td>S</td>
+              <td>0</td>
+              <td>6.5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Voulge</td>
+              <td>L</td>
+              <td>d10!+d6!</td>
+              <td>7</td>
+              <td>P</td>
+              <td>0</td>
+              <td>7</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>War-scythe</td>
+              <td>L</td>
+              <td>d8!+2d4!</td>
+              <td>9</td>
+              <td>P</td>
+              <td>0</td>
+              <td>6.25</td>
+              <td> </td>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="8">Trauma</th>
+            </tr>
+            <tr>
+              <td>Bec De Corbin</td>
+              <td>L</td>
+              <td>d12!+d10!</td>
+              <td>12</td>
+              <td>C</td>
+              <td>0</td>
+              <td>5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Bludgeon</td>
+              <td>S</td>
+              <td>d10!</td>
+              <td>7</td>
+              <td>C</td>
+              <td>0</td>
+              <td>1.25</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Club</td>
+              <td>M</td>
+              <td>d12!</td>
+              <td>9</td>
+              <td>C</td>
+              <td>0</td>
+              <td>2</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Goedendag</td>
+              <td>L</td>
+              <td>d8!+d3!</td>
+              <td>6</td>
+              <td>P</td>
+              <td>0</td>
+              <td>3.75</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Mace</td>
+              <td>M</td>
+              <td>d12!+d6!</td>
+              <td>10</td>
+              <td>C</td>
+              <td>0</td>
+              <td>2</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Maul</td>
+              <td>L</td>
+              <td>2d12!</td>
+              <td>15</td>
+              <td>C</td>
+              <td>0</td>
+              <td>5.5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Peasant's Flail</td>
+              <td>L</td>
+              <td>2d10!</td>
+              <td>15</td>
+              <td>C</td>
+              <td>0</td>
+              <td>4</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Pernach</td>
+              <td>M</td>
+              <td>d12!+d4!</td>
+              <td>12</td>
+              <td>C</td>
+              <td>0</td>
+              <td>3.5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Quarterstaff</td>
+              <td>L</td>
+              <td>2d8!</td>
+              <td>15</td>
+              <td>C</td>
+              <td>2</td>
+              <td>6</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Unarmed</td>
+              <td>S</td>
+              <td>2d4!</td>
+              <td>10</td>
+              <td>C</td>
+              <td>0</td>
+              <td>0</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>War Flail</td>
+              <td>M</td>
+              <td>d10!+d8!</td>
+              <td>11</td>
+              <td>C</td>
+              <td>0</td>
+              <td>4</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>War Hammer</td>
+              <td>M</td>
+              <td>d12!+d8!</td>
+              <td>13</td>
+              <td>C</td>
+              <td>0</td>
+              <td>2.5</td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="anchor">
         <div id="WeaponBonusesheader" class="anchorTag"></div>
@@ -3444,169 +3490,172 @@
         <p>This weapon is built for area control. This weapon's damage is doubled for considering Knock-Backs.</p>
       </div>
 
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Weapons, Ranged</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.ranged">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Weapons, Ranged</th>
-          </tr>
-          <tr class="notSticky">
-            <th colspan="2">Name</th>
-            <th>Size</th>
-            <th>Source</th>
-            <th>Local Market</th>
-            <th>Nearby Market</th>
-            <th>Distant City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let content of tables.ranged">
-            <td colspan="2">{{content.name}}</td>
-            <td>{{content.size}}</td>
-            <td>{{content.price}}</td>
-            <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-            <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Ranged Weapon Stats</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Name</th>
+              <th>Size</th>
+              <th>Damage</th>
+              <th>Recovery</th>
+              <th>Dam Type</th>
+              <th>Min Recovery</th>
+              <th>Bonus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class='notSticky'>
+              <th colspan="7">Thrown</th>
+            </tr>
+            <tr>
+              <td>Javelin</td>
+              <td>M</td>
+              <td>2d8!</td>
+              <td>10</td>
+              <td>P</td>
+              <td>4</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Throwing Axe</td>
+              <td>S</td>
+              <td>2d4!+d3!</td>
+              <td>9</td>
+              <td>S</td>
+              <td>4</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Throwing Knife</td>
+              <td>S</td>
+              <td>2d6!</td>
+              <td>7</td>
+              <td>P</td>
+              <td>4</td>
+              <td>Yes</td>
+            </tr>
+            <tr class='notSticky'>
+              <th colspan="7">Mechanical</th>
+            </tr>
+            <tr>
+              <td>Bellybow</td>
+              <td>L</td>
+              <td>d20!+d4!</td>
+              <td>35</td>
+              <td>P</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Composite Bow</td>
+              <td>M*</td>
+              <td>d12!+d8!</td>
+              <td>12</td>
+              <td>P</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Crossbow</td>
+              <td>L</td>
+              <td>d20!</td>
+              <td>25</td>
+              <td>P</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Longbow</td>
+              <td>L</td>
+              <td>d12+d10!</td>
+              <td>14</td>
+              <td>P</td>
+              <td>5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Sling</td>
+              <td>S</td>
+              <td>d10!</td>
+              <td>10</td>
+              <td>P</td>
+              <td>5</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Warbow</td>
+              <td>L</td>
+              <td>d20!+d12!</td>
+              <td>14</td>
+              <td>P</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr class='notSticky'>
+              <th colspan="7">Firearms</th>
+            </tr>
+            <tr>
+              <td>Fire Lance</td>
+              <td>L</td>
+              <td>2d10!</td>
+              <td>14</td>
+              <td>P</td>
+              <td>4</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Hakenbuchse</td>
+              <td>L</td>
+              <td>d10!+d8!</td>
+              <td>30</td>
+              <td>P</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Handgonne</td>
+              <td>M</td>
+              <td>d10!+d4!</td>
+              <td>18</td>
+              <td>P</td>
+              <td>5</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-
-      <table class="all-centered first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="7">Ranged Weapon Stats</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Name</th>
-            <th>Size</th>
-            <th>Damage</th>
-            <th>Recovery</th>
-            <th>Dam Type</th>
-            <th>Min Recovery</th>
-            <th>Bonus</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class='notSticky'>
-            <th colspan="7">Thrown</th>
-          </tr>
-          <tr>
-            <td>Javelin</td>
-            <td>M</td>
-            <td>2d8!</td>
-            <td>10</td>
-            <td>P</td>
-            <td>4</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Throwing Axe</td>
-            <td>S</td>
-            <td>2d4!+d3!</td>
-            <td>9</td>
-            <td>S</td>
-            <td>4</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Throwing Knife</td>
-            <td>S</td>
-            <td>2d6!</td>
-            <td>7</td>
-            <td>P</td>
-            <td>4</td>
-            <td>Yes</td>
-          </tr>
-          <tr class='notSticky'>
-            <th colspan="7">Mechanical</th>
-          </tr>
-          <tr>
-            <td>Bellybow</td>
-            <td>L</td>
-            <td>d20!+d4!</td>
-            <td>35</td>
-            <td>P</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Composite Bow</td>
-            <td>M*</td>
-            <td>d12!+d8!</td>
-            <td>12</td>
-            <td>P</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Crossbow</td>
-            <td>L</td>
-            <td>d20!</td>
-            <td>25</td>
-            <td>P</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Longbow</td>
-            <td>L</td>
-            <td>d12+d10!</td>
-            <td>14</td>
-            <td>P</td>
-            <td>5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Sling</td>
-            <td>S</td>
-            <td>d10!</td>
-            <td>10</td>
-            <td>P</td>
-            <td>5</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Warbow</td>
-            <td>L</td>
-            <td>d20!+d12!</td>
-            <td>14</td>
-            <td>P</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr class='notSticky'>
-            <th colspan="7">Firearms</th>
-          </tr>
-          <tr>
-            <td>Fire Lance</td>
-            <td>L</td>
-            <td>2d10!</td>
-            <td>14</td>
-            <td>P</td>
-            <td>4</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Hakenbuchse</td>
-            <td>L</td>
-            <td>d10!+d8!</td>
-            <td>30</td>
-            <td>P</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Handgonne</td>
-            <td>M</td>
-            <td>d10!+d4!</td>
-            <td>18</td>
-            <td>P</td>
-            <td>5</td>
-            <td>Yes</td>
-          </tr>
-        </tbody>
-      </table>
 
       <div class="multiple-tables-shell">
         <table class="all-centered">

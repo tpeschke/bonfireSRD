@@ -142,8 +142,7 @@ ol {
 
 .table-overflow {
     overflow: auto;
-    display: flex;
-    justify-content: space-around;
+    margin: 0 0 15px 0;
 }
 
 .orangeHeader {
@@ -175,7 +174,7 @@ li {
 
 @media (max-width: 770px) { 
 
-    h2 {
+    h2, h3 {
         text-align: center;
     }
 
@@ -187,6 +186,10 @@ li {
         top: 75px;
     }
 
+    .table-overflow tr th {
+        top: 20px;
+    }
+
     .float {
         float: unset;
         margin: 10px auto;
@@ -194,6 +197,10 @@ li {
 
     .pairs {
         width: 100%;
+    }
+
+    .pair {
+        align-items: center;
     }
 
     .pair p {
@@ -207,5 +214,13 @@ li {
 
     .sidebar-width {
         width: unset;
+    }
+
+    ol, ul {
+        padding-left: 16px
+    }
+
+    .dark-side-header tr th {
+        top: 0;
     }
 }

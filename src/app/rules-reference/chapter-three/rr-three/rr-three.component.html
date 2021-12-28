@@ -134,7 +134,7 @@
         <app-bm-chapter-icon [id]="'ApersonmaymZayPJDOjrq'"></app-bm-chapter-icon>
         <p>A person may move up 1 movement category or down 2 in a second.</p>
       </div>
-      <div class="table-overflow marginBottom">
+      <div class="table-overflow">
         <table class="all-centered">
           <thead>
             <tr class="notSticky">
@@ -924,133 +924,136 @@
         <app-bm-chapter-icon [id]="'NotethatdefeHAwVPDJULn'"></app-bm-chapter-icon>
         <p>Note that defense penalties also affect ranged defenses.</p>
       </div>
-      <table class="all-centered">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="4">Terrain & Situational Modifiers</th>
-          </tr>
-          <tr class="notSticky">
-            <th>&nbsp;</th>
-            <th>Attack</th>
-            <th>Defense</th>
-            <th>Other Modifiers</th>
-          </tr>
-        </thead>
-        <tbody class="first-left fourth-left">
-          <tr>
-            <td>Attacking Around a Corner</td>
-            <td>-4</td>
-            <td> </td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Balancing on Somthing</td>
-            <td> </td>
-            <td> </td>
-            <td>Acrobatics Rank round up to nearest dice size for attack and defense, max d20. If they're not trained, attacking and defending are not possible.</td>
-          </tr>
-          <tr>
-            <td>Climbing</td>
-            <td>d8!</td>
-            <td>d8!</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Enclosed Corridor</td>
-            <td colspan="2">-2 per 1 foot over 5 ft in Measure</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Flinching</td>
-            <td>d12!</td>
-            <td>d12!</td>
-            <td>Can't move above a Walk</td>
-          </tr>
-          <tr>
-            <td>Limited Visibility</td>
-            <td>*</td>
-            <td>*</td>
-            <td>See Illumination in Chapter X: Misc. Rules</td>
-          </tr>
-          <tr>
-            <td>Mud</td>
-            <td> </td>
-            <td>Armor Skill Adj</td>
-            <td>Start at Stroll, Walk/Jog/Run/Spring cause 1 Damage / Sec</td>
-          </tr>
-          <tr>
-            <td>On Higher Plane</td>
-            <td> </td>
-            <td>+2</td>
-            <td>+d4! damage</td>
-          </tr>
-          <tr>
-            <td>On Lower Plane</td>
-            <td> </td>
-            <td> </td>
-            <td>-1/2 ft to Measure</td>
-          </tr>
-          <tr>
-            <td>Prone</td>
-            <td>d10!</td>
-            <td>d6!</td>
-            <td>Can only Crawl at Stroll Speed. -2 Attack dice size if wielding a Medium Size weapon or larger</td>
-          </tr>
-          <tr>
-            <td>Quicksand</td>
-            <td>-2</td>
-            <td>-8</td>
-            <td>Can't Move</td>
-          </tr>
-          <tr>
-            <td>Shooting on the Move</td>
-            <td colspan="2">-2 Dice Size / Movement Category</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Slippery Surface</td>
-            <td>d10!</td>
-            <td>d10!</td>
-            <td>No damage from Running or Sprinting but you can only slowdown 1 Movement Category / 5 secs. Lower Knock-Back threshold by 10.</td>
-          </tr>
-          <tr>
-            <td>Sun in Eyes</td>
-            <td> </td>
-            <td> </td>
-            <td>Delay all actions by 1d4! seconds. See Bright Illumination in Chapter X: Misc. Rules</td>
-          </tr>
-          <tr>
-            <td>Surprised</td>
-            <td>n/a</td>
-            <td>d8!</td>
-            <td>Can't take any aggressive actions</td>
-          </tr>
-          <tr>
-            <td>Undergrowth</td>
-            <td> </td>
-            <td> </td>
-            <td>Jogging and above requires an Acrobatics check to stay on your feet. Knock-Backs always knock you prone.</td>
-          </tr>
-          <tr>
-            <td>Uneven Footing</td>
-            <td> </td>
-            <td>-2</td>
-            <td>Lower Knock-Back threshold by 5</td>
-          </tr>
-          <tr>
-            <td>Water, Shin Deep</td>
-            <td> </td>
-            <td>d12!-Armor Skill Adj</td>
-            <td>Start at a Stroll, Jog/Run/Sprint cause 1 Damage / sec</td>
-          </tr>
-          <tr>
-            <td>Water, Waist Deep</td>
-            <td> </td>
-            <td>d12!-Armor Skill Adj * 2</td>
-            <td>Start at Stroll, Can't move above Walk. Take 1 Damage / sec Walking</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-overflow">
+
+        <table class="all-centered">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="4">Terrain & Situational Modifiers</th>
+            </tr>
+            <tr class="notSticky">
+              <th>&nbsp;</th>
+              <th>Attack</th>
+              <th>Defense</th>
+              <th>Other Modifiers</th>
+            </tr>
+          </thead>
+          <tbody class="first-left fourth-left">
+            <tr>
+              <td>Attacking Around a Corner</td>
+              <td>-4</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Balancing on Somthing</td>
+              <td> </td>
+              <td> </td>
+              <td>Acrobatics Rank round up to nearest dice size for attack and defense, max d20. If they're not trained, attacking and defending are not possible.</td>
+            </tr>
+            <tr>
+              <td>Climbing</td>
+              <td>d8!</td>
+              <td>d8!</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Enclosed Corridor</td>
+              <td colspan="2">-2 per 1 foot over 5 ft in Measure</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Flinching</td>
+              <td>d12!</td>
+              <td>d12!</td>
+              <td>Can't move above a Walk</td>
+            </tr>
+            <tr>
+              <td>Limited Visibility</td>
+              <td>*</td>
+              <td>*</td>
+              <td>See Illumination in Chapter X: Misc. Rules</td>
+            </tr>
+            <tr>
+              <td>Mud</td>
+              <td> </td>
+              <td>Armor Skill Adj</td>
+              <td>Start at Stroll, Walk/Jog/Run/Spring cause 1 Damage / Sec</td>
+            </tr>
+            <tr>
+              <td>On Higher Plane</td>
+              <td> </td>
+              <td>+2</td>
+              <td>+d4! damage</td>
+            </tr>
+            <tr>
+              <td>On Lower Plane</td>
+              <td> </td>
+              <td> </td>
+              <td>-1/2 ft to Measure</td>
+            </tr>
+            <tr>
+              <td>Prone</td>
+              <td>d10!</td>
+              <td>d6!</td>
+              <td>Can only Crawl at Stroll Speed. -2 Attack dice size if wielding a Medium Size weapon or larger</td>
+            </tr>
+            <tr>
+              <td>Quicksand</td>
+              <td>-2</td>
+              <td>-8</td>
+              <td>Can't Move</td>
+            </tr>
+            <tr>
+              <td>Shooting on the Move</td>
+              <td colspan="2">-2 Dice Size / Movement Category</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Slippery Surface</td>
+              <td>d10!</td>
+              <td>d10!</td>
+              <td>No damage from Running or Sprinting but you can only slowdown 1 Movement Category / 5 secs. Lower Knock-Back threshold by 10.</td>
+            </tr>
+            <tr>
+              <td>Sun in Eyes</td>
+              <td> </td>
+              <td> </td>
+              <td>Delay all actions by 1d4! seconds. See Bright Illumination in Chapter X: Misc. Rules</td>
+            </tr>
+            <tr>
+              <td>Surprised</td>
+              <td>n/a</td>
+              <td>d8!</td>
+              <td>Can't take any aggressive actions</td>
+            </tr>
+            <tr>
+              <td>Undergrowth</td>
+              <td> </td>
+              <td> </td>
+              <td>Jogging and above requires an Acrobatics check to stay on your feet. Knock-Backs always knock you prone.</td>
+            </tr>
+            <tr>
+              <td>Uneven Footing</td>
+              <td> </td>
+              <td>-2</td>
+              <td>Lower Knock-Back threshold by 5</td>
+            </tr>
+            <tr>
+              <td>Water, Shin Deep</td>
+              <td> </td>
+              <td>d12!-Armor Skill Adj</td>
+              <td>Start at a Stroll, Jog/Run/Sprint cause 1 Damage / sec</td>
+            </tr>
+            <tr>
+              <td>Water, Waist Deep</td>
+              <td> </td>
+              <td>d12!-Armor Skill Adj * 2</td>
+              <td>Start at Stroll, Can't move above Walk. Take 1 Damage / sec Walking</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div class="anchor">
         <div id="Strategiesheader" class="anchorTag"></div>
         <h1>Strategies</h1>
