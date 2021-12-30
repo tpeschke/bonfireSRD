@@ -4,13 +4,25 @@ import { RrThreeComponent } from './rr-three/rr-three.component';
 
 import { ChaptersModule } from '../../chapters/chapters.module';
 import { Routes, RouterModule } from '@angular/router';
+import { RrThreeDeluxeComponent } from './rr-three-deluxe/rr-three-deluxe.component';
+import { AdvGuardService } from 'src/app/chapters/adv-guard.service';
+import { BasicGuardService } from 'src/app/chapters/basic-guard.service';
 
 const routes: Routes = [
-  { path: '', component: RrThreeComponent }];
+  {
+    path: '', component: RrThreeComponent,
+    canActivate: [BasicGuardService]
+  },
+  {
+    path: 'deluxe', component: RrThreeDeluxeComponent,
+    canActivate: [AdvGuardService]
+  }
+];
 
 @NgModule({
   declarations: [
-    RrThreeComponent
+    RrThreeComponent,
+    RrThreeDeluxeComponent
   ],
   imports: [
     CommonModule,

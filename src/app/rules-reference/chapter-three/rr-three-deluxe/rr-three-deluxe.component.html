@@ -1,0 +1,2287 @@
+<div class="outerShell">
+  <div class="innerShell">
+    <div class="backTexture"></div>
+    <div class="backColor"></div>
+    <div class="chapterShell">
+      <div class="anchor">
+        <div id="Introductionheader" class="anchorTag"></div>
+        <h1>Introduction</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='WhatiscombatAtelRQwNTS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhatiscombatAtelRQwNTS'"></app-bm-chapter-icon>
+        <p>What is combat?</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CombatiswhatjWOahDEAwv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CombatiswhatjWOahDEAwv'"></app-bm-chapter-icon>
+        <p>Combat is what happens when one side wants to kill the other and are trying to do it right now, on a
+          second-by-second basis.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IdontthinkapDwKhpnbN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IdontthinkapDwKhpnbN'"></app-bm-chapter-icon>
+        <p>I don’t think I really need to define combat because, as a naturally violence species, combat often comes
+          second nature to us but I thought it would be an interesting exercise.</p>
+      </div>
+      <div class="anchor">
+        <div id="ChecksDieheader" class="anchorTag"></div>
+        <h2>Checks Die</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhenmakingaYQLZgvFJcD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenmakingaYQLZgvFJcD'"></app-bm-chapter-icon>
+        <p>When making a Check using this framework, you’re going to be rolling on a d20!.</p>
+      </div>
+      <div class="anchor">
+        <div id="StartingaComheader" class="anchorTag"></div>
+        <h1>Starting a Combat</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="anchor">
+        <div id="TheClockheader" class="anchorTag"></div>
+        <h2>The Clock</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheClockbegicJDDVLVOEK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheClockbegicJDDVLVOEK'"></app-bm-chapter-icon>
+        <p>The Clock begins at 1, and then progresses to 2, 3, 4 etc, ad infinitum. When the Clock matches a character’s
+          Initiative, they go. Each of these numbers represent 1 second of time passing. What second a character's next
+          action is referred to as their initiative (or "where they are on the Clock")</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThiscanbeamNWzUgYrcO' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThiscanbeamNWzUgYrcO'"></app-bm-chapter-icon>
+        <p>This can be a difficult when you first start so we recommend that you start with only running two or three
+          enemies until you get the hang of it.</p>
+      </div>
+      <div class="anchor">
+        <div id="StartingInitiheader" class="anchorTag"></div>
+        <h2>Starting Initiative & Surprise</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='EachsiderollsFbjPHlGWp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'EachsiderollsFbjPHlGWp'"></app-bm-chapter-icon>
+        <p>Each side rolls an initiative die. The lower the die, the more prepared they are for the attack, though
+          typically the instigator goes on second 1. Those that know the battle is about to start (like being warned by
+          a predetermined sign) use a d4, and the completely surprised receive a d20, while everyone else typically
+          falls on a die between that.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThosewhoseinnOJrpMFbrV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThosewhoseinnOJrpMFbrV'"></app-bm-chapter-icon>
+        <p>Those whose initiative hasn’t come up are surprised and continue to do what they were doing as if nothing is
+          wrong. They can take no other actions: they’re completely unaware of what’s going on.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ShouldsomeoneVMDMCGVQfp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ShouldsomeoneVMDMCGVQfp'"></app-bm-chapter-icon>
+        <p>Should someone attack them during this time, they are completely helpless and so their TN for defense is 1.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfthesurprisHXnjrzJyaa' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfthesurprisHXnjrzJyaa'"></app-bm-chapter-icon>
+        <p>If the surprised person is hit, the pain quickly brings them into the reality of the situation, and they may
+          act 2 seconds later (or before that if their initiative was the next second).</p>
+      </div>
+      <div class="anchor">
+        <div id="CombatBasicsheader" class="anchorTag"></div>
+        <h1>Combat Basics</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="anchor">
+        <div id="TakingActionsheader" class="anchorTag"></div>
+        <h2>Taking Actions</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='EveryactiontbNULOqnUND' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'EveryactiontbNULOqnUND'"></app-bm-chapter-icon>
+        <p>Every action takes a certain amount of time. On a character’s Initiative, they declare their action and are
+          told how long that action will take. After that time, the action is complete.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoifacharaWYnLVWxlyt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoifacharaWYnLVWxlyt'"></app-bm-chapter-icon>
+        <p>So, if a character wants to walk across a room, which will take 8 seconds, and his Initiative is 5, once the
+          Clock reaches 5, he starts walking and once it reaches 14, he’s gotten the other side of the room.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AtanypointAbxVlMSRvf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AtanypointAbxVlMSRvf'"></app-bm-chapter-icon>
+        <p>At any point, you may choose to forfeit your action and change your course. If, when halfway across the room
+          (at second 9), the character sees that his buddy is in trouble, he can immediately decide that, no, he’d
+          rather be there, his character stops walking across the room and instead heads over to help his friend.</p>
+      </div>
+      <div class="anchor">
+        <div id="Movementheader" class="anchorTag"></div>
+        <h2>Movement</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='WhilefortheHoxdJUbEuZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhilefortheHoxdJUbEuZ'"></app-bm-chapter-icon>
+        <p>While, for the most part, you’ll be using your common sense to determine how long things will take, to unify
+          at least one thing, movement rates are given below.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ApersonmaymZayPJDOjrq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ApersonmaymZayPJDOjrq'"></app-bm-chapter-icon>
+        <p>A person may move up 1 movement category or down 2 in a second.</p>
+      </div>
+      <div class="table-overflow">
+        <table class="all-centered">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Movement</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="3" class="with-side-header">Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="side-header-coloring">
+              <th rowspan="5"><br><br><br>Size</th>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>Stroll/Crawl</td>
+              <td>Walk</td>
+              <td>Jog</td>
+              <td>Run</td>
+              <td>Sprint</td>
+            </tr>
+            <tr>
+              <td>Small</td>
+              <td>2.5 ft / sec</td>
+              <td>2.5 ft / sec</td>
+              <td>5 ft / sec</td>
+              <td>10 ft / sec</td>
+              <td>15 ft / sec</td>
+            </tr>
+            <tr>
+              <td>Medium</td>
+              <td>2.5 ft / sec</td>
+              <td>5 ft / sec</td>
+              <td>10 ft / sec</td>
+              <td>15 ft / sec</td>
+              <td>20 ft / sec</td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td>5 ft / sec</td>
+              <td>7.5 ft / sec</td>
+              <td>15 ft / sec</td>
+              <td>17.5 ft / sec</td>
+              <td>25 ft / sec</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='Forevery10sfqIGGcHHRB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'Forevery10sfqIGGcHHRB'"></app-bm-chapter-icon>
+        <p>For every 10 seconds of Running, you take damage. This starts at a d4! but increases by 1 dice size every 10
+          seconds, capping at a d20!.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ForSprintingUiUdPAzQLS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForSprintingUiUdPAzQLS'"></app-bm-chapter-icon>
+        <p>For Sprinting, this happens every 5 seconds.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisdamageisABHnqSRpPA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisdamageisABHnqSRpPA'"></app-bm-chapter-icon>
+        <p>This damage is reduced by your Endurance (or Athletics) Rank, down to a minimum of 0.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='YoucanpushyhJnjULGSnP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoucanpushyhJnjULGSnP'"></app-bm-chapter-icon>
+        <p>You can push your character as hard as you'd like, continuing to take damage until they die from fatigue but
+          if you take damage from Running or Sprinting and you stop, you can't Run or Sprint again until you've waited
+          10 seconds for every time your damage dice was increased.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AlsomovingfumdbChfNuS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AlsomovingfumdbChfNuS'"></app-bm-chapter-icon>
+        <p>Also, moving from a Run to Sprint, or vice versa, doesn’t reset that count, so don’t think you can skip
+          taking damage by moving from a Sprint to a Run, you cheeky devil.</p>
+      </div>
+      <div class="anchor">
+        <div id="ImprovisedWeaheader" class="anchorTag"></div>
+        <h2>Improvised Weapons</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ItisentirelynjPFZtmCEu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ItisentirelynjPFZtmCEu'"></app-bm-chapter-icon>
+        <p>It is entirely possible that you’ll find yourself unarmed and must defend yourself with a chair leg or broken
+          bottle. In these cases, treat is as a club but penalize it for 3 seconds and drop its Parry to 0 for not being
+          balanced properly.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='NowitsalsovYeYRubWAx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NowitsalsovYeYRubWAx'"></app-bm-chapter-icon>
+        <p>Now, it’s also possible that you have superhuman strength and so you can rip a door off its hinges and start
+          bashing people with want and abandon. In this case, it’s entirely possible to do more than a zweihander in
+          sheer concussive force, however, you’ll find that because a door (or similar) isn’t properly weighted or
+          balanced, you’ll find yourself taking a long time to swing and unable to defend yourself properly. In extreme
+          cases like these, the GM can give you a Defense Modifier of somewhere around -8 and the Recovery should never
+          be quicker than 20 seconds.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='OntopofthisRvPEAdXGRv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OntopofthisRvPEAdXGRv'"></app-bm-chapter-icon>
+        <p>On top of this, these wide swings make an otherwise threatening object easy to dodge and so less of a danger,
+          meaning you may still be counted as unarmed while trying to use it.</p>
+      </div>
+      <div class="anchor">
+        <div id="WeaponStylesheader" class="anchorTag"></div>
+        <h2>Weapon Styles</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThewayyourcaPFgiOoPvC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThewayyourcaPFgiOoPvC'"></app-bm-chapter-icon>
+        <p>The way your character wields a weapon can tell a lot about their priorities in a combat and a weapon can be
+          versatile in the extreme if some thought is put into how it's held.</p>
+      </div>
+      <div class="anchor">
+        <div id="1HandedWeapoheader" class="anchorTag"></div>
+        <h3>1-Handed Weapon with Shield</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisthestXmNUVvNhlI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisthestXmNUVvNhlI'"></app-bm-chapter-icon>
+        <p>This is the standard way your character is assumed to be wielding their weapon.</p>
+      </div>
+      <div class="anchor">
+        <div id="1HandedWeapoheader" class="anchorTag"></div>
+        <h3>1-Handed Weapon with Free Hand</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WithonehandIiRttEWgoY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WithonehandIiRttEWgoY'"></app-bm-chapter-icon>
+        <p>With one hand free, the character can focus a bit more on their defense and seizing openings. They gain a +2
+          to their Parry and -1 to their Recovery.</p>
+      </div>
+      <div class="anchor">
+        <div id="21HandedWeaheader" class="anchorTag"></div>
+        <h3>2 1-Handed Weapons</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfattackingwglqpEgHULf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfattackingwglqpEgHULf'"></app-bm-chapter-icon>
+        <p>If attacking with both, your primary hand attacks with a d12! while your secondary attacks with a d8!. You
+          only receive your main hand’s Parry, if any. The secondary attacks slightly slower; always attacking a number
+          of seconds equal to its Recovery after the primary makes its attacks.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoucanonlysSTGmoBDROP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoucanonlysSTGmoBDROP'"></app-bm-chapter-icon>
+        <p>You can only switch Tactics on your primary attack.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhendefendinglddjRMFuzC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhendefendinglddjRMFuzC'"></app-bm-chapter-icon>
+        <p>When defending with one hand, you defend against the first attack against you with a d20!, using the Parry
+          value of the off-hand weapon.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IftheweaponFiAFVYxEPF' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IftheweaponFiAFVYxEPF'"></app-bm-chapter-icon>
+        <p>If the weapon off-hand weapon is as large as you, you can only attack with it.</p>
+      </div>
+      <div class="anchor">
+        <div id="2Handing1Haheader" class="anchorTag"></div>
+        <h3>2 Handing 1-Handed Weapon</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='UsingtwohandyjEjIFATxT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'UsingtwohandyjEjIFATxT'"></app-bm-chapter-icon>
+        <p>Using two hands where one is sufficient allows you to leverage more of your strength and deal a harsher blow
+          but slows you down.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='WhenusingthiChItiAmirB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenusingthiChItiAmirB'"></app-bm-chapter-icon>
+        <p>When using this style, you increase your damage by +4, however, you swap out the bonuses for a +3 to
+          Recovery.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisstylecanomtgsbADfw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisstylecanomtgsbADfw'"></app-bm-chapter-icon>
+        <p>This style can’t be effectively used in combat on weapons smaller than your size.</p>
+      </div>
+      <div class="anchor">
+        <div id="DoubleShieldsheader" class="anchorTag"></div>
+        <h3>Double Shields</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhileitgivesMVrCuRCkRZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhileitgivesMVrCuRCkRZ'"></app-bm-chapter-icon>
+        <p>While it gives no offensive benefit, the double shields style allows you to cover more facings to gain a
+          greater defense. If two shields have overlapping faces, use the higher of the two's Parry.</p>
+      </div>
+      <div class="anchor">
+        <div id="Weaponinyourheader" class="anchorTag"></div>
+        <h3>Weapon in your Off-Hand</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismaycomeTfrPKzeYbC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismaycomeTfrPKzeYbC'"></app-bm-chapter-icon>
+        <p>This may come about because your main hand is disabled, or you just want to show off. But this implies the
+          main hand is free. If not, see the 2 1 Handed Weapons style.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='NonAmbidextrobDgpWXUxmF' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NonAmbidextrobDgpWXUxmF'"></app-bm-chapter-icon>
+        <p>Non-Ambidextrous people attack with a d12! And gain a +5 Recovery penalty to off-handed attacks.</p>
+      </div>
+      <div class="anchor">
+        <div id="2HandsFreeheader" class="anchorTag"></div>
+        <h3>2 Hands Free (No Weapon)</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfyouhavenoivngYDEbhU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouhavenoivngYDEbhU'"></app-bm-chapter-icon>
+        <p>If you have no weapons in combat, you’re not really seen as a threat and so an attacker doesn’t really have
+          to do the dance to try to avoid you blows while trying to strike you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='InthisstyleIOEkvxDQzf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'InthisstyleIOEkvxDQzf'"></app-bm-chapter-icon>
+        <p>In this style, your opponent attacks at half their weapon Recovery and they get a free attack whenever you
+          try and close in an attack them. That includes moving ranges.</p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="DroppingYourheader" class="anchorTag"></div>
+          <h5>Dropping Your Weapon to Grapple</h5>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='UnarmedmovesvfyISxwjyG' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'UnarmedmovesvfyISxwjyG'"></app-bm-chapter-icon>
+          <p>Unarmed moves are more effective with two hands rather than one so you may decide to drop your weapon to
+            try and grapple your opponent easier. If the unarmed attack is on the same second that you drop your weapon,
+            your opponent doesn’t receive the free attack on you.</p>
+        </div>
+      </div>
+      <div class="anchor">
+        <div id="ZonesofEngagheader" class="anchorTag"></div>
+        <h2>Zones of Engagement</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='Thereare3poZrypdaFMkB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'Thereare3poZrypdaFMkB'"></app-bm-chapter-icon>
+        <p>There are 3 positions that you can have relative to your enemy. These positions aren’t reciprocal by nature:
+          you can be threatened by someone and not have them be threatened by you.</p>
+      </div>
+      <div class="anchor">
+        <div id="NotEngagedheader" class="anchorTag"></div>
+        <h3>Not Engaged</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisbasicaaggyliaXOn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisbasicaaggyliaXOn'"></app-bm-chapter-icon>
+        <p>This is basically the default. You are too far away for them to reasonable do anything.</p>
+      </div>
+      <div class="anchor">
+        <div id="Threatenedheader" class="anchorTag"></div>
+        <h3>Threatened</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThismeansthalamJypdFij' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismeansthalamJypdFij'"></app-bm-chapter-icon>
+        <p>This means that you’re within 5 feet + your opponent’s weapon’s measure. From here, if you move faster than a
+          Jog and if they’re within half their weapon Recovery, they can attack you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyougofromxyzpTNsZyO' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyougofromxyzpTNsZyO'"></app-bm-chapter-icon>
+        <p>If you go from Engaged to Threatened, your weapon initiative doesn't reset, so if you become Engaged again
+          for any reason before your weapon's Recovery, you may not attack.</p>
+      </div>
+      <div class="anchor">
+        <div id="Engagedheader" class="anchorTag"></div>
+        <h3>Engaged</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YouveclosedTzZPOfXxsG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YouveclosedTzZPOfXxsG'"></app-bm-chapter-icon>
+        <p>You’ve closed the distance and can actually make an attack. The person with the highest weapon measure
+          attacks first. If both weapons are exactly the same measure, the attacks happen simultaneously.</p>
+      </div>
+      <div class="anchor">
+        <div id="MeleeCombatheader" class="anchorTag"></div>
+        <h1>Melee Combat</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="anchor">
+        <div id="MeleeAttackheader" class="anchorTag"></div>
+        <h2>Melee Attack & Defense</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='BasicmeleeatAvwVZnroSg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'BasicmeleeatAvwVZnroSg'"></app-bm-chapter-icon>
+        <p>Basic melee attacks always roll a base d20! + any attack modifiers, while defenders roll a d20! + any defense
+          modifiers</p>
+      </div>
+      <div class="anchor">
+        <div id="PerfectAttackheader" class="anchorTag"></div>
+        <h2>Perfect Attacks & Defenses</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='APerfectAttaMsiiYzogOa' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'APerfectAttaMsiiYzogOa'"></app-bm-chapter-icon>
+        <p>A Perfect Attack or Defense is one that puts you in a better position to win. A Perfect Attack occurs on an
+          unmodified roll of 20 on your Attack roll, while a Perfect Defense is an unmodified 20 on your Defense roll,
+          but only if your final totals are still greater than you opponent’s. If not, the attack still hits for Perfect
+          Attacks and you still dodge the blow for Perfect Defenses but you don’t gain the auxiliary benefits.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfboththosekegXgbdKNg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfboththosekegXgbdKNg'"></app-bm-chapter-icon>
+        <p>If both those qualifiers are met, you gain the following benefits on top of the normal ones:</p>
+      </div>
+      <div class="anchor">
+        <div id="PerfectAttackheader" class="anchorTag"></div>
+        <h3>Perfect Attack</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='YougainafrercDwIJJGWT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YougainafrercDwIJJGWT'"></app-bm-chapter-icon>
+        <p>You gain a free automatically successful Unarmed Combat attack. If you have Advanced Training in Unarmed
+          Combat, you may roll for the additional benefit, but even on a failure, you gain the move’s base benefit.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoumayalsoSqOeGpQOrYc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoumayalsoSqOeGpQOrYc'"></app-bm-chapter-icon>
+        <p>You may also Shift with no penalty and change your Tactic.</p>
+      </div>
+      <div class="anchor">
+        <div id="PerfectDefensheader" class="anchorTag"></div>
+        <h2>Perfect Defense</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='YougainafreNJXnZICmbA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YougainafreNJXnZICmbA'"></app-bm-chapter-icon>
+        <p>You gain a free automatically successful Unarmed Combat attack. If you have Advanced Training in Unarmed
+          Combat, you may roll for the additional benefit, but even on a failure, you gain the move’s benefit.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoumayalsoSDLZBiSJHyO' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoumayalsoSDLZBiSJHyO'"></app-bm-chapter-icon>
+        <p>You may also Shift with no penalty and change your Tactic.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AdditionallyCccPuPIAJK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AdditionallyCccPuPIAJK'"></app-bm-chapter-icon>
+        <p>Additionally, you gain a chance to riposte, gaining a free full attack the next second if you’re wielding a
+          melee weapon. This attack doesn’t affect your current count.</p>
+      </div>
+      <div class="anchor">
+        <div id="NearPerfectAheader" class="anchorTag"></div>
+        <h3>Near Perfect Attacks & Defenses</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AnunmodifiedoepLviwdVP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AnunmodifiedoepLviwdVP'"></app-bm-chapter-icon>
+        <p>An unmodified roll of 19 on either Attack or Defense results in a Near Perfect Attack or Defense, where you
+          may Shift for no penalty, change your Tactic, or, for attacks, gain an extra d4! to damage, or, for defenses
+          gained a free riposte with your off-hand weapon if it’s smaller than your size.</p>
+      </div>
+      <div class="anchor">
+        <div id="DealingDamageheader" class="anchorTag"></div>
+        <h2>Dealing Damage</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='OncebothsideWwgTyeDTMk' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OncebothsideWwgTyeDTMk'"></app-bm-chapter-icon>
+        <p>Once both sides have rolled and added all modifiers, compare the totals against each other.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfthedefendezUgAKMIYTj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfthedefendezUgAKMIYTj'"></app-bm-chapter-icon>
+        <p>If the defender’s is equal to or greater than the attacker, the attack misses.</p>
+      </div>
+      <div class="anchor">
+        <div id="Parryingheader" class="anchorTag"></div>
+        <h3>Parrying</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfameleeattTDdQNnUtjl' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfameleeattTDdQNnUtjl'"></app-bm-chapter-icon>
+        <p>If a melee attack roll is within the Parry Threshold of the defender’s total, the defender may choose to
+          deflect some of the incoming attack.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheattackerrJKTljNpBqc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheattackerrJKTljNpBqc'"></app-bm-chapter-icon>
+        <p>The attacker rolls their damage and subtracts the shield or weapon’s DR and then their armor’s DR. Any
+          leftover is still done to the defender. For piercing weapons, the /d DR of the shield or weapon is tripled.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoadefendergOvguWDoQi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoadefendergOvguWDoQi'"></app-bm-chapter-icon>
+        <p>So, a defender with a Parry Threshold of 4, and a total of 10 for their defense roll vs an attack roll of 14,
+          could choose to parry the blow, taking less damage.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='HoweverifitMymTZEsPCA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HoweverifitMymTZEsPCA'"></app-bm-chapter-icon>
+        <p>However, if it’s not, the attack lands and the attacker rolls his weapon’s damage die and adds any
+          appropriate damage modifiers. The defender than subtracts their Damage Reduction and the remaining total is
+          subtracted from their Vitality and added to their list of wounds.</p>
+      </div>
+      <div class="anchor">
+        <div id="DamageReductiheader" class="anchorTag"></div>
+        <h3>Damage Reduction</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ArmorallowsyikcnnsTbsC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ArmorallowsyikcnnsTbsC'"></app-bm-chapter-icon>
+        <p>Armor allows you to reduce the amount of damage taken. This is often times shorted to DR. There are two
+          types: Static, noted by just a number, and Per Die, noted by a number /D.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='StaticsimplyEgWNQpfXfl' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'StaticsimplyEgWNQpfXfl'"></app-bm-chapter-icon>
+        <p>Static simply subtracts that number from the damage and is done.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='DsubtractstIXOuDXvQpb' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'DsubtractstIXOuDXvQpb'"></app-bm-chapter-icon>
+        <p>/D subtracts that number multiplied by the number of dice the attack is using. So, if someone is attacking
+          you with a slashing weapon (2d6!), and you have armor that gives you 4/D, you’d subtract 8 from the damage.
+        </p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='EitherwayifyilwzbBIyw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'EitherwayifyilwzbBIyw'"></app-bm-chapter-icon>
+        <p>Either way, if the attacker chooses to remain in engaged, he then adds his weapon’s Recovery to the current
+          second on the Clock. Once the Clock reaches that new number, he may attack again.</p>
+      </div>
+      <div class="anchor">
+        <div id="Breakageheader" class="anchorTag"></div>
+        <h2>Breakage</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <table class="float">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Shield & Weapon Breakage</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Type</th>
+            <th>Threshold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Polearms</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Shield & Armor</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Other Weapons</td>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='paragraphShell anchor'>
+        <div id='WhenyouparrynLIYiUINBj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenyouparrynLIYiUINBj'"></app-bm-chapter-icon>
+        <p>When you parry with a shield or weapon, or when your armor absorbs damage, if the damage after DR is greater
+          than a certain threshold, the item gains 1 Wear, which leads to a greater chance of it breaking.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfitdoublesDxEwwMWzuA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfitdoublesDxEwwMWzuA'"></app-bm-chapter-icon>
+        <p>If it doubles or triples this threshold, you gain double and triple the Wear, and so on.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='MoreonWearcdBOtIHUtfJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'MoreonWearcdBOtIHUtfJ'"></app-bm-chapter-icon>
+        <p>More on Wear can be found in <a [routerLink]='["/character-creation/6"]'>Chapter 2.6: Equipment</a>.</p>
+      </div>
+      <div class="anchor">
+        <div id="KnockBacksheader" class="anchorTag"></div>
+        <h2>Knock-Backs</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfthepreDRcRSlhXfBif' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfthepreDRcRSlhXfBif'"></app-bm-chapter-icon>
+        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 1 for every M item you're carrying,
+          the attack also moves them back 5 feet. If it’s twice the damage needed, they get knocked back 10 feet, and so
+          on.</p>
+      </div>
+      <div class="anchor">
+        <div id="RangeCombatheader" class="anchorTag"></div>
+        <h1>Ranged Combat</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="anchor">
+        <div id="RangedAttackheader" class="anchorTag"></div>
+        <h2>Ranged Attack & Defense</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='RangedattackslUhBoPcOES' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'RangedattackslUhBoPcOES'"></app-bm-chapter-icon>
+        <p>Ranged attacks and defenses function identical to melee attacks and defenses (including Flanking), only get a
+          few additional bonuses and penalties.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThefirstisttNCePHYPGg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThefirstisttNCePHYPGg'"></app-bm-chapter-icon>
+        <p>The first is that range (of course) and the second is movement. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhendefendingLzpvHAwFDU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhendefendingLzpvHAwFDU'"></app-bm-chapter-icon>
+        <p>When defending against a ranged attack, you get a +2 for each Movement Category above standing still. So, if
+          you're getting shot at, get the lead out.</p>
+      </div>
+      <div class="anchor">
+        <div id="PerfectAttackheader" class="anchorTag"></div>
+        <h3>Perfect Attacks</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='APerfectAttagOqJlbMLOw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'APerfectAttagOqJlbMLOw'"></app-bm-chapter-icon>
+        <p>A Perfect Attack is one that puts you in a better position to win. A Perfect Attack occurs on an unmodified
+          roll of 20 on your Attack roll.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyourefirisGefmCMXCH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyourefirisGefmCMXCH'"></app-bm-chapter-icon>
+        <p>If you’re firing a ranged weapon, you managed to hit a sensitive area, lowering their max movement speed by
+          one category, minimum Crawl speed.</p>
+      </div>
+      <div class="anchor">
+        <div id="NearPerfectAheader" class="anchorTag"></div>
+        <h3>Near-Perfect Attacks</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AnunmodifiedHHrVTsbKHx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AnunmodifiedHHrVTsbKHx'"></app-bm-chapter-icon>
+        <p>An unmodified roll of 19 on your Attack results in a Near Perfect Attack, giving you an extra d4! to damage.
+        </p>
+      </div>
+      <div class="anchor">
+        <div id="Coverheader" class="anchorTag"></div>
+        <h2>Cover</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CoverisanythvXsFOskpcQ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CoverisanythvXsFOskpcQ'"></app-bm-chapter-icon>
+        <p>Cover is anything that gets between you and the person trying to shoot at you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ForsolidobjepYeeWmUsrv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForsolidobjepYeeWmUsrv'"></app-bm-chapter-icon>
+        <p>For solid objects, such as walls, where it is easy to calculate how much of the person is covered, a flat
+          bonus is appropriate. For every 10% covered, you get a +2, so 25% would be a +5, 50% would be a +10 and so on.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ForpeopletrOPDhMeGFPY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForpeopletrOPDhMeGFPY'"></app-bm-chapter-icon>
+        <p>For people, tree, a moving object, or really anything that’s harder to calculate, you’ll use a dice backed on
+          the difference in size, starting at a d20. Each difference in size shrinks or increases that cover die by 1
+          size.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='CoverdiceforYEinaGhzSc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CoverdiceforYEinaGhzSc'"></app-bm-chapter-icon>
+        <p>Cover dice for most objects works the same as shields - if you’re behind cover, you add a roll of that dice
+          to your defense. If you’re actively crouching behind it, you add the max it would give you to your defense
+          plus another roll of the dice.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SotwomediumtAJkpMbrqK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SotwomediumtAJkpMbrqK'"></app-bm-chapter-icon>
+        <p>So, two medium size people standing one in front of the other would give the guy in the back d20 cover, same
+          as two small sized people. If the person in the front is small sized and the guy in the back is still medium
+          sized, the guy in the back only gains a d12 cover.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfthepersonbCXQxWYVFp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfthepersonbCXQxWYVFp'"></app-bm-chapter-icon>
+        <p>If the person is actively moving or trying not to be your cover, you can’t gain the bonus for actively
+          crouching behind them.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfyoudontmUtNmZebuuR' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyoudontmUtNmZebuuR'"></app-bm-chapter-icon>
+        <p>If you don't move, however, cover becomes more and more useless as your shooter sights in. For each shot
+          against you where you haven't moved, you either lower your effective cover percentage by 10 or shrink your
+          cover dice by 1 size, depending on whether the cover is static or not.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='NotethisalsodufBVjLjZZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NotethisalsodufBVjLjZZ'"></app-bm-chapter-icon>
+        <p>Note this also applies to shields as well, so if you don't move while using a shield, it becomes less</p>
+      </div>
+      <div class="anchor">
+        <div id="FiringIntoMeheader" class="anchorTag"></div>
+        <h2>Firing Into Melee</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IftheresanyqsCevGcHZH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IftheresanyqsCevGcHZH'"></app-bm-chapter-icon>
+        <p>If there’s any one within 5 ft of a direct line between the origin of the missile and the target, they’ll
+          have to roll the appropriate defense die vs the original attack roll to see if the missile hits them instead,
+          starting with the person closest to the archer or gunner and ending with the intended target.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AllthenormalAdpMumDoRg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AllthenormalAdpMumDoRg'"></app-bm-chapter-icon>
+        <p>All the normal rolls apply so if the missile only misses because of cover, the missile has lodged itself in
+          the cover and goes no further.</p>
+      </div>
+      <div class="anchor">
+        <div id="DealingDamageheader" class="anchorTag"></div>
+        <h2>Dealing Damage</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='DealingdamagedXsweBlbbU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'DealingdamagedXsweBlbbU'"></app-bm-chapter-icon>
+        <p>Dealing damage with a ranged weapon works almost exactly like dealing damage with a melee weapon, however,
+          you’re unable to Parry a ranged attack (that’s what Cover is for)</p>
+      </div>
+      <div class="anchor">
+        <div id="RangedMissesheader" class="anchorTag"></div>
+        <h2>Ranged Misses</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='OnamisswithQcPwAgXpnv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OnamisswithQcPwAgXpnv'"></app-bm-chapter-icon>
+        <p>On a miss with a ranged weapon, the missile doesn’t magically disappear into oblivion. There’s a good chance
+          it might hit someone else, especially if your target is locked in melee.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='InthecaseoftXXayQyjGX' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'InthecaseoftXXayQyjGX'"></app-bm-chapter-icon>
+        <p>In the case of a miss, roll a d20! and a d4. The d4 determines to which side the missile strays - an odd
+          result means it goes left, an even result means it goes right.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='Thed20deterlEaJDwXkSy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'Thed20deterlEaJDwXkSy'"></app-bm-chapter-icon>
+        <p>The d20! determines how many feet it strays from the target. Draw an imaginary line between the archer and
+          that point. Everyone within 5ft of that line needs to roll a defense vs the original attack roll, starting
+          with the person closest to the archer and ending with the furthest possible target.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='InanimateobjehEdwzoHHmZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'InanimateobjehEdwzoHHmZ'"></app-bm-chapter-icon>
+        <p>Inanimate objects may provide enough cover to be considered targets in both Firing into Combat and Ranged
+          Misses, such as a large boulder or tree. In which case, medium sized objects roll a d12!, with each size lower
+          decreasing the dice size by 2, and each size larger increasing the dice size by 2.</p>
+      </div>
+      <div class="anchor">
+        <div id="MiscCombatRheader" class="anchorTag"></div>
+        <h1>Misc. Combat Rules</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="anchor">
+        <div id="FacingFightheader" class="anchorTag"></div>
+        <h2>Facing & Fighting Multiple People</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThelikelihoodoRktUoYEwY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThelikelihoodoRktUoYEwY'"></app-bm-chapter-icon>
+        <p>The likelihood is that at some point you’ll want to be flanking or someone with want to flank you, to try and
+          gain an advantage.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='DefendingrighMXXWlvhGaC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'DefendingrighMXXWlvhGaC'"></app-bm-chapter-icon>
+        <p>Defending right in front of you is pretty easy and so brooks no penalties, however, every 45 degrees off that
+          the defender lowers their Defense dice by 1 size, with those being attacked from directly behind defend on a
+          d8! since they take advantage of a huge blind spot.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThispenaltycNCIsLlPkWG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThispenaltycNCIsLlPkWG'"></app-bm-chapter-icon>
+        <p>This penalty can be mitigated through the use of shields. Small shields allow you to defend against an
+          additional assailant, depriving them of that bonus, while Medium and Large ones allow you to defend against an
+          extra 2 and 3, respectively.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='Amaximumof8mLWDQnZQum' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'Amaximumof8mLWDQnZQum'"></app-bm-chapter-icon>
+        <p>A maximum of 8 people at a time can effectively attack person at once, assuming that they’re out in the open.
+          After that, every assailant’s attack die is lowered by 1 size per extra person.</p>
+      </div>
+      <div class="anchor">
+        <div id="Traumaheader" class="anchorTag"></div>
+        <h2>Trauma</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfsomeonedoelViWNpktac' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfsomeonedoelViWNpktac'"></app-bm-chapter-icon>
+        <p>If someone does more damage after DR than your Trauma Threshold, that triggers a Con Check vs d20! + the
+          damage dealt.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='FailuremeanscjcRdjxLfU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'FailuremeanscjcRdjxLfU'"></app-bm-chapter-icon>
+        <p>Failure means that your character has been overcome with pain to the point that he’s unable to act, leaving
+          him completely defenseless for a number of seconds equal to how much he failed by times 3. </p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="DoubleTraumaheader" class="anchorTag"></div>
+          <h5>Double Trauma</h5>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='AcharacterthPRZdPUazvW' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'AcharacterthPRZdPUazvW'"></app-bm-chapter-icon>
+          <p>A character that gets dealt their full Vitality in damage in a single blow has suffered a grievous wound -
+            the scar of which, if he survives, will be with him until the day he dies.</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='WhenthishappwwEsitlYKa' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'WhenthishappwwEsitlYKa'"></app-bm-chapter-icon>
+          <p>When this happens, the trauma is too much, and they simply die where they stand if they fail their check.
+            Even if they succeed, they’re still suffer Trauma for the next 30 seconds but gain a wicked looking scar.
+          </p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='BattlescarsaZxwkkrHZss' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'BattlescarsaZxwkkrHZss'"></app-bm-chapter-icon>
+          <p>Battle scars are marks of pride and honor. Characters who become scared gain a 3d4 Trait “Battle Scars”. If
+            they would get this Trait again, increase all dice by 1 size.</p>
+        </div>
+      </div>
+      <div class="anchor">
+        <div id="CoupDeGraceheader" class="anchorTag"></div>
+        <h2>Coup De Grace</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='AhelplesseneWljBFhwMLd' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AhelplesseneWljBFhwMLd'"></app-bm-chapter-icon>
+        <p>A helpless enemy is one completely at your mercy. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfacharacterYppTjtPuak' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfacharacterYppTjtPuak'"></app-bm-chapter-icon>
+        <p>If a character is completely helpless, either from failing a Trauma check, being bound, or deep asleep, a
+          character can kill the target instantly. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismovetaketQGUULKvjS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismovetaketQGUULKvjS'"></app-bm-chapter-icon>
+        <p>This move takes 10 seconds to complete as it takes a bit of positioning to pull off. The character’s whose
+          throat is being slit gives out a cry of pain as they expire.</p>
+      </div>
+      <div class="anchor">
+        <div id="TerrainSituheader" class="anchorTag"></div>
+        <h2>Terrain & Situational Modifiers</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='NobattlefieldpXUKJUWlTC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NobattlefieldpXUKJUWlTC'"></app-bm-chapter-icon>
+        <p>No battlefield is absolutely flat and featureless and often these features can make a difference for those
+          cunning enough to use them. This section won’t give you all the different situations you might find yourself
+          in but should give you a good basis to judge off of.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThenumbersunvENWjyqxcT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThenumbersunvENWjyqxcT'"></app-bm-chapter-icon>
+        <p>The numbers under the Attack and Defense columns are the change penalty or bonus. If there is a dice noted
+          there, you replace your d20! with that when rolling. So, standing in quicksand gives you a -8 to Defense
+          (amongst other things).</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='NotethatdefeHAwVPDJULn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NotethatdefeHAwVPDJULn'"></app-bm-chapter-icon>
+        <p>Note that defense penalties also affect ranged defenses.</p>
+      </div>
+      <div class="table-overflow">
+
+        <table class="all-centered">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="4">Terrain & Situational Modifiers</th>
+            </tr>
+            <tr class="notSticky">
+              <th>&nbsp;</th>
+              <th>Attack</th>
+              <th>Defense</th>
+              <th>Other Modifiers</th>
+            </tr>
+          </thead>
+          <tbody class="first-left fourth-left">
+            <tr>
+              <td>Attacking Around a Corner</td>
+              <td>-4</td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Balancing on Somthing</td>
+              <td> </td>
+              <td> </td>
+              <td>Acrobatics Rank round up to nearest dice size for attack and defense, max d20. If they're not trained, attacking and defending are not possible.</td>
+            </tr>
+            <tr>
+              <td>Climbing</td>
+              <td>d8!</td>
+              <td>d8!</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Enclosed Corridor</td>
+              <td colspan="2">-2 per 1 foot over 5 ft in Measure</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Flinching</td>
+              <td>d12!</td>
+              <td>d12!</td>
+              <td>Can't move above a Walk</td>
+            </tr>
+            <tr>
+              <td>Limited Visibility</td>
+              <td>*</td>
+              <td>*</td>
+              <td>See Illumination in <a [routerLink]='["/rules-reference/7"]'>Chapter 1.7: Misc. Rules</a></td>
+            </tr>
+            <tr>
+              <td>Mud</td>
+              <td> </td>
+              <td>Armor Skill Adj</td>
+              <td>Start at Stroll, Walk/Jog/Run/Spring cause 1 Damage / Sec</td>
+            </tr>
+            <tr>
+              <td>On Higher Plane</td>
+              <td> </td>
+              <td>+2</td>
+              <td>+d4! damage</td>
+            </tr>
+            <tr>
+              <td>On Lower Plane</td>
+              <td> </td>
+              <td> </td>
+              <td>-1/2 ft to Measure</td>
+            </tr>
+            <tr>
+              <td>Prone</td>
+              <td>d10!</td>
+              <td>d6!</td>
+              <td>Can only Crawl at Stroll Speed. -2 Attack dice size if wielding a Medium Size weapon or larger</td>
+            </tr>
+            <tr>
+              <td>Quicksand</td>
+              <td>-2</td>
+              <td>-8</td>
+              <td>Can't Move</td>
+            </tr>
+            <tr>
+              <td>Shooting on the Move</td>
+              <td colspan="2">-2 Dice Size / Movement Category</td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Slippery Surface</td>
+              <td>d10!</td>
+              <td>d10!</td>
+              <td>No damage from Running or Sprinting but you can only slowdown 1 Movement Category / 5 secs. Lower Knock-Back threshold by 10.</td>
+            </tr>
+            <tr>
+              <td>Sun in Eyes</td>
+              <td> </td>
+              <td> </td>
+              <td>Delay all actions by 1d4! seconds. See Bright Illumination in <a [routerLink]='["/rules-reference/7"]'>Chapter 1.7: Misc. Rules</a></td>
+            </tr>
+            <tr>
+              <td>Surprised</td>
+              <td>n/a</td>
+              <td>d8!</td>
+              <td>Can't take any aggressive actions</td>
+            </tr>
+            <tr>
+              <td>Undergrowth</td>
+              <td> </td>
+              <td> </td>
+              <td>Jogging and above requires an Acrobatics check to stay on your feet. Knock-Backs always knock you prone.</td>
+            </tr>
+            <tr>
+              <td>Uneven Footing</td>
+              <td> </td>
+              <td>-2</td>
+              <td>Lower Knock-Back threshold by 5</td>
+            </tr>
+            <tr>
+              <td>Water, Shin Deep</td>
+              <td> </td>
+              <td>d12!-Armor Skill Adj</td>
+              <td>Start at a Stroll, Jog/Run/Sprint cause 1 Damage / sec</td>
+            </tr>
+            <tr>
+              <td>Water, Waist Deep</td>
+              <td> </td>
+              <td>d12!-Armor Skill Adj * 2</td>
+              <td>Start at Stroll, Can't move above Walk. Take 1 Damage / sec Walking</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="anchor">
+        <div id="Strategiesheader" class="anchorTag"></div>
+        <h1>Strategies</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='TheserulesadtNNmJbKnsB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheserulesadtNNmJbKnsB'"></app-bm-chapter-icon>
+        <p>These rules add another layer of strategy to combat and should be implemented as soon as you have the basics
+          down.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AcombatantutrqAbRhwzEL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AcombatantutrqAbRhwzEL'"></app-bm-chapter-icon>
+        <p>A combatant utilizing these moves can only commit to one at a time, unless otherwise stated and can only
+          switch on their attack unless it says otherwise.</p>
+      </div>
+      <div class="anchor">
+        <div id="ActiveDodgingheader" class="anchorTag"></div>
+        <h2>Active Dodging</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismoverelacQndgkZBGI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismoverelacQndgkZBGI'"></app-bm-chapter-icon>
+        <p>This move relays on actively focusing on dodging against incoming attacks.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AdefendercomHAhuOVTJDp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AdefendercomHAhuOVTJDp'"></app-bm-chapter-icon>
+        <p>A defender commits to how much he wants to focus on dodging incoming attacks, both melee and ranged, choosing
+          from a bonus to his defense in the range of +1 to +5, but netting an equal penalty to his attacks (-1 to -5).
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='AdditionallyiVZtkRSyzs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AdditionallyiVZtkRSyzs'"></app-bm-chapter-icon>
+        <p>Additionally, this lowers the range for Near Perfect Defenses by 1, so you score them on a base natural 18 -
+          19. This tactic needs to be committed to for at least your full weapon Recovery. After that you may continue
+          using it and change tactics at any point.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ButfocusingormrEINDpxf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ButfocusingormrEINDpxf'"></app-bm-chapter-icon>
+        <p>But focusing on defense does slow you down, since you're zigzagging and trying to juke out your enemy, so
+          your movement is considered 1 Category lower for how far you move. So, if you're Medium sized and Active
+          Dodging while at a Run, you would move at 10 ft / sec, instead of 15. You would still be subject to the
+          damage, however, since you're still technically running.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ActiveDodgingNWuCnkzSrs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ActiveDodgingNWuCnkzSrs'"></app-bm-chapter-icon>
+        <p>Active Dodging can be combined with Retreat and Step Back, adding only the attack penalties but gaining all
+          auxiliary benefits from each (so no, the defenses don't stack).</p>
+      </div>
+      <div class="anchor">
+        <div id="BraceYourselfheader" class="anchorTag"></div>
+        <h2>Brace Yourself</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='MaybeyoulookKdwDnuLDSY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'MaybeyoulookKdwDnuLDSY'"></app-bm-chapter-icon>
+        <p>Maybe you look at your opponent and say "No, you move". You root your stance and ready yourself, sacrificing
+          some maneuverability to hold the line and get a better chance of striking first.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhileusingthkkMMwnExaL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhileusingthkkMMwnExaL'"></app-bm-chapter-icon>
+        <p>While using this Tactic, a character adds +15 to their Knock-Back Threshold and gains a +1 to their Measure,
+          however, they defend on a d12!.</p>
+      </div>
+      <div class="anchor">
+        <div id="CalledShotheader" class="anchorTag"></div>
+        <h2>Called Shot</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='BycarefullyaiasTeLfJuk' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'BycarefullyaiasTeLfJuk'"></app-bm-chapter-icon>
+        <p>By carefully aiming your shot, a character can reduce the effects of heavy armor by taking more time to
+          target gaps. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhenemployingibmQWwkYrd' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenemployingibmQWwkYrd'"></app-bm-chapter-icon>
+        <p>When employing this tactic, a character halves their effective number of damage dice (rounded up) for
+          considering /D DR, however, it takes a bit longer to set up the strike and so they increase their Recovery by
+          3 seconds.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CrushingweapoYfIMOKTJKg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CrushingweapoYfIMOKTJKg'"></app-bm-chapter-icon>
+        <p>Crushing weapons are unable to employ this tactic.</p>
+      </div>
+      <div class="anchor">
+        <div id="CarefulAimingheader" class="anchorTag"></div>
+        <h2>Careful Aiming</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='BytakingamocYqCHfyvfE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'BytakingamocYqCHfyvfE'"></app-bm-chapter-icon>
+        <p>By taking a moment or two, you can sight in with any ranged weapon, giving you a better chance to hit your
+          target, however, there are diminishing returns after a bit.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ForthefirstMvmVVFqkXW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForthefirstMvmVVFqkXW'"></app-bm-chapter-icon>
+        <p>For the first 3 seconds, you gain an increasing bonus of +1 to hit. So, the first second you’re aiming, you
+          get a +1, the next a +2 (for a total of +3), and the third you get a +3 (for a total of +6).</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AfterthatthhQeUbKMVcN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AfterthatthhQeUbKMVcN'"></app-bm-chapter-icon>
+        <p>After that, that bonus shrinks by 1 each second. So, the fourth second you get a +2 (for a total of +8) and
+          the fifth second you get a +1 (for a total of +9).</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CarefulAimingNhNzCdSvUr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CarefulAimingNhNzCdSvUr'"></app-bm-chapter-icon>
+        <p>Careful Aiming can only be performed with a ranged weapon and can only be performed when the fighter is
+          standing still. On top of this, the fighter takes Stress equal to the bonus they receive when they finally
+          make the shot.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='FurtherdelayPGiikwCyGG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'FurtherdelayPGiikwCyGG'"></app-bm-chapter-icon>
+        <p>Further delay gives you no bonuses.</p>
+      </div>
+      <div class="anchor">
+        <div id="Chargeheader" class="anchorTag"></div>
+        <h2>Charge</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='AcharactermoAyKLxIribT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AcharactermoAyKLxIribT'"></app-bm-chapter-icon>
+        <p>A character moving at least a Run can throw their full force behind a blow, knocking their opponent off their
+          guard. If the Attacker has reach, the damage for their next attack is considered doubled for the purposes of
+          determining Knock-Backs, though they defend with a d12! for half their weapon Recovery.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AchargeisaBseMmocVDU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AchargeisaBseMmocVDU'"></app-bm-chapter-icon>
+        <p>A charge is a terrifying tactic: if the blow lands, the defender takes an amount of Stress equal to how much
+          they were hit by. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IftheyreablSbrazZqvvz' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IftheyreablSbrazZqvvz'"></app-bm-chapter-icon>
+        <p>If they're able to retaliate while the attacker is defending with that d12!, the attacker also takes that
+          much Stress.</p>
+      </div>
+      <div class="anchor">
+        <div id="ChokingUponheader" class="anchorTag"></div>
+        <h2>Choking Up on Your Weapon</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhenyouvechTPJGhjBSNC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenyouvechTPJGhjBSNC'"></app-bm-chapter-icon>
+        <p>When you’ve choked up on your weapon, your weapon’s Measure is halved, and you add that number, rounded down
+          to its Recovery. Your halved Measure is considered your new Measure for determining who attacks first and what
+          Tactics can be employed on you as well.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='HoweverifanXfDOzYAPWu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HoweverifanXfDOzYAPWu'"></app-bm-chapter-icon>
+        <p>However, if an opponent is In Your Guard and you choke up on your weapon, you defend with a standard 1d20!
+          and deal full weapon damage.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoureunabletiwPCUsXjO' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoureunabletiwPCUsXjO'"></app-bm-chapter-icon>
+        <p>You’re unable to employ this tactic twice if someone again gets within your guard.</p>
+      </div>
+      <div class="anchor">
+        <div id="Feintheader" class="anchorTag"></div>
+        <h2>Feint</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhenperforminuIqtJLPifI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenperforminuIqtJLPifI'"></app-bm-chapter-icon>
+        <p>When performing this move, you (hopefully) get your enemy to commit his guard to a different location than
+          you plan on hitting.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='BeforeyourolMKSrzwAYUw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'BeforeyourolMKSrzwAYUw'"></app-bm-chapter-icon>
+        <p>Before you roll, if you declare a Feint, you receive a +5 to that Attack but receive a -3 to Defense until
+          your next attack.</p>
+      </div>
+      <div class="anchor">
+        <div id="FendOffheader" class="anchorTag"></div>
+        <h2>Fend Off</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfyourweapongkVAtciBJK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyourweapongkVAtciBJK'"></app-bm-chapter-icon>
+        <p>If your weapon's measure is at least 1 foot greater than your opponent's, you can try and fend them off. This
+          means that you may attack them freely, while they can't do the same to you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoumayonlyuGmLEaLzbuv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoumayonlyuGmLEaLzbuv'"></app-bm-chapter-icon>
+        <p>You may only use this Tactic as someone is going from Threatened to Engaged, in which case they're
+          automatically considered to be Fended Off. To full becoming engaged with you, they'll have to knock your
+          weapon aside with a regular attack that deals no damage. Should they hit, they become fully engaged and can
+          attack freely again.</p>
+      </div>
+      <div class="anchor">
+        <div id="InTheirGuardheader" class="anchorTag"></div>
+        <h2>In Their Guard</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyoureengaXSsJcwnNCZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyoureengaXSsJcwnNCZ'"></app-bm-chapter-icon>
+        <p>If you're engaged with a person and have a weapon that is at least 1 foot shorter than your opponent, you may
+          attempt to get in their guard. On a successful attack that deals no damage, the shorter weapon fighter has
+          successfully knocked his foe's weapon aside and is no fighting at extreme close range, cause them huge
+          penalties.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThelongerweaLkmSTtbWkH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThelongerweaLkmSTtbWkH'"></app-bm-chapter-icon>
+        <p>The longer weapon may only defend with a d12!. All damage dice is also reduced by one size (3d4! → 3d3!).
+          They may, in turn, employ the Choke Up on Your Weapon Tactic.</p>
+      </div>
+      <div class="anchor">
+        <div id="FlurryofBlowheader" class="anchorTag"></div>
+        <h2>Flurry of Blows</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThistacticinLOMCBCRZUH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThistacticinLOMCBCRZUH'"></app-bm-chapter-icon>
+        <p>This tactic involves releasing a rain of quick attacks that rely more on speed than accuracy or power.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhileemployinfRCibvkElY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhileemployinfRCibvkElY'"></app-bm-chapter-icon>
+        <p>While employing this tactic, you attack 3 seconds quicker, however, you suffer a -3 to Attack, your damage
+          doesn’t explode, and you gain 1 Stress for every 2 seconds you keep up your onslaught.</p>
+      </div>
+      <div class="anchor">
+        <div id="Jabheader" class="anchorTag"></div>
+        <h2>Jab</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AstrikethatRterTLkryI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AstrikethatRterTLkryI'"></app-bm-chapter-icon>
+        <p>A strike that is meant to purposely to open your opponent’s guard and get them off their balance by making
+          them shift their defense.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='TheJabattackojRPdwwsBT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheJabattackojRPdwwsBT'"></app-bm-chapter-icon>
+        <p>The Jab attack happens at half weapon Recovery (rounded up) for Piercing and Slashing weapons. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='InsteadofadDGWHuqFEZA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'InsteadofadDGWHuqFEZA'"></app-bm-chapter-icon>
+        <p>Instead of a d20!, the defender uses a d12! but on a successful hit, no damage is done, and the defender nets
+          a -1 to their next full defense against a non-jab attack. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThispenaltydaJVCJCVyWn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThispenaltydaJVCJCVyWn'"></app-bm-chapter-icon>
+        <p>This penalty doubles with each jab, however, it only lasts until the defender’s next full defense.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CrushingweapoqbneJaFWlh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CrushingweapoqbneJaFWlh'"></app-bm-chapter-icon>
+        <p>Crushing weapons may use this tactic but it’s not any faster than their regular Recovery.</p>
+      </div>
+      <div class="anchor">
+        <div id="LongGuardheader" class="anchorTag"></div>
+        <h2>Long Guard</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ByplacingyoumMgWxdUIed' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ByplacingyoumMgWxdUIed'"></app-bm-chapter-icon>
+        <p>By placing your weapon further out in front of you and trying to line the body of the weapon with the
+          defender’s eye line, this may allow a person with a short weapon the first strike.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhileusingthFdMuxubfvl' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhileusingthFdMuxubfvl'"></app-bm-chapter-icon>
+        <p>While using this tactic, you increase your weapon’s measure by 1/2 ft but you reduce your damage’s largest
+          die by 1 size.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CrushingweapoWmNNtRnIgU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CrushingweapoWmNNtRnIgU'"></app-bm-chapter-icon>
+        <p>Crushing weapons are unable to employ this tactic.</p>
+      </div>
+      <div class="anchor">
+        <div id="PowerAttackheader" class="anchorTag"></div>
+        <h2>Power Attack</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisthefiRNKQxAeuXk' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisthefiRNKQxAeuXk'"></app-bm-chapter-icon>
+        <p>This is the fighting equivalent of baseball batting your enemy, swinging with all your might.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WiththisattavzqcmVqUDC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WiththisattavzqcmVqUDC'"></app-bm-chapter-icon>
+        <p>With this attack, you receive a -3 to your Attack and next defense but your damage increases</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='PiercingweapodgycvOdpXN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'PiercingweapodgycvOdpXN'"></app-bm-chapter-icon>
+        <p>Piercing weapons increase 1 die by 1 size. Slashing weapons increase all dice by 1 size and crushing weapons
+          increase its highest die by 2 sizes.</p>
+      </div>
+      <div class="anchor">
+        <div id="Retreatheader" class="anchorTag"></div>
+        <h2>Retreat</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisadefeYstKGaSukC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisadefeYstKGaSukC'"></app-bm-chapter-icon>
+        <p>This is a defensive tactic that involves moving directly back at jog or at a 45 degrees angle from your
+          opponent’s blows at a walk.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AfteryourdeffDnVORwPnq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AfteryourdeffDnVORwPnq'"></app-bm-chapter-icon>
+        <p>After your defense roll, if you declare a Retreat, you receive a +5 to your next Defense roll but also a -5
+          to your next Attack and must continue to move back until your next attack, either at a jog, if moving directly
+          back, or at a walk, if started to move at a 45 degrees angle.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='IfyouropponelssNIgAZlf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouropponelssNIgAZlf'"></app-bm-chapter-icon>
+        <p>If your opponent is using the Flurry of Blows, Feint, or the Power Attack tactic, if they do hit, you only
+          receive half damage</p>
+      </div>
+      <div class="anchor">
+        <div id="Shiftheader" class="anchorTag"></div>
+        <h2>Shift</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoumoveatyoxxVDTRnhPo' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoumoveatyoxxVDTRnhPo'"></app-bm-chapter-icon>
+        <p>You move at your walking speed to either side of your opponent but suffer a -1 to your next Attack and
+          Defense for every 5 ft you travel before your next Attack or Defense.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='HoweverifyoAsGYBMVUOP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HoweverifyoAsGYBMVUOP'"></app-bm-chapter-icon>
+        <p>However, if you Shift with another tactic, you don’t receive this penalty and gain a +2 that can be either
+          used to increase a bonus or decrease a penalty from that tactic. You may do this freely with any Tactic except
+          Retreat and Step Back.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ShiftingisalJSVwAdbtiG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ShiftingisalJSVwAdbtiG'"></app-bm-chapter-icon>
+        <p>Shifting is also used to change Facings so if you’re engaged with an enemy and you Shift. And don’t forget
+          that you get those tasty bonuses from flanking your enemy if they don’t also Shift to face you.</p>
+      </div>
+      <div class="anchor">
+        <div id="StepBackheader" class="anchorTag"></div>
+        <h2>Step Back</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisadefeiVRlpwiaig' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisadefeiVRlpwiaig'"></app-bm-chapter-icon>
+        <p>This is a defensive tactic that involves moving directly back from your opponent’s blows at your walking
+          speed.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='BeforeyourdeqnxGiysChW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'BeforeyourdeqnxGiysChW'"></app-bm-chapter-icon>
+        <p>Before your defense roll, if you declare a Step Back, you receive a +5 to your next Defense roll but on your
+          next attack roll shrink the damage of your dice based on its type and must continue to move back at a Walking
+          speed until your next attack.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='PiercingweapoeVnhHNSbxm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'PiercingweapoeVnhHNSbxm'"></app-bm-chapter-icon>
+        <p>Piercing weapons lower 1 of their dice by 1 size. Slashing lowers all dice by 1 size and crushing lowers
+          their highest die by 2 sizes.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyouropponeQftlleVuis' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouropponeQftlleVuis'"></app-bm-chapter-icon>
+        <p>If your opponent is using the Flurry of Blows, Faint, or the Power Attack tactic, if they do hit, you only
+          receive half damage.</p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="RetreatvSteheader" class="anchorTag"></div>
+          <h5>Retreat v. Step Back</h5>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='WhiletheymayBmGUGzhLmf' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'WhiletheymayBmGUGzhLmf'"></app-bm-chapter-icon>
+          <p>While they may seem similar on the surface, these two different tactics have some key differences I thought
+            I’d point out so that you can utilize each better.</p>
+        </div>
+        <ol class='marginBottom'>
+          <li>Step Back must be declared before you roll your defense while Retreat can be declared after, meaning that
+            if you see you rolled low before employing them.</li>
+          <li>Step Back moves your character straight back, while Retreat allows you to move up to 45° to the left and
+            right, meaning that if you’re going to be backed against a wall, it’s an option to try and skirt your
+            opponent.</li>
+          <li>Retreat may be done at a jogging speed, while Step Back is always at a walk.</li>
+        </ol>
+      </div>
+      <div class="anchor">
+        <div id="StriketoBreaheader" class="anchorTag"></div>
+        <h2>Strike to Break</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThishastwopKBieEfbmFW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThishastwopKBieEfbmFW'"></app-bm-chapter-icon>
+        <p>This has two purposes: to either knock an opponent's weapon aside to delay their attack or to try and shatter
+          your opponent’s weapon/shield/armor.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThedefenderrtgwbgLMvoe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThedefenderrtgwbgLMvoe'"></app-bm-chapter-icon>
+        <p>The defender rolls a standard defense die vs the attacker’s regular attack roll.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ShouldtheattobodteHDZI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ShouldtheattobodteHDZI'"></app-bm-chapter-icon>
+        <p>Should the attack succeed, he delays the defender’s next attack by a number of seconds equal to 1 for every 2
+          full points he scored above the defender’s total.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheattackeraSSFpPKHqcy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheattackeraSSFpPKHqcy'"></app-bm-chapter-icon>
+        <p>The attacker also gains a bonus to damaging what they're aiming for: half the breakage threshold for that
+          item. If the damage is greater than triple this modified breakage threshold, the weapon automatically breaks.
+        </p>
+      </div>
+      <div class="anchor">
+        <div id="UnarmedCombatheader" class="anchorTag"></div>
+        <h1>Unarmed Combat</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='UnarmedCombatXqmEJXLINI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'UnarmedCombatXqmEJXLINI'"></app-bm-chapter-icon>
+        <p>Unarmed Combat’s primary use is to either disable or control your foe, thus winning the battle by
+          maneuvering, rather than raw damage output.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TouseanunarwOebiHhMbf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TouseanunarwOebiHhMbf'"></app-bm-chapter-icon>
+        <p>To use an unarmed attack, roll an attack on a d10!, adding your normal attack modifiers, but also adding your
+          Damage Modifier. Your opponent rolls a regular defense (including shield unless otherwise stated) but also
+          adds their Damage Modifier as well.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SizedoescounrzfSNkXhKg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SizedoescounrzfSNkXhKg'"></app-bm-chapter-icon>
+        <p>Size does count for something: the larger person, if there is one, gains a +6 for each Size Category they
+          have on their opponent.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfyouhityoySOhVIeRUK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouhityoySOhVIeRUK'"></app-bm-chapter-icon>
+        <p>If you hit, you successfully pulled off the move, dealing your unarmed damage and gaining the benefit of the
+          technique.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfthediffereTNZlOKHdmC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfthediffereTNZlOKHdmC'"></app-bm-chapter-icon>
+        <p>If the difference between the attack and defense totals were more than the target’s Vitality Size Modifier,
+          you may gain additional benefits listed in the move. If the difference is double the Target’s Vitality Size
+          Modifier, they may immediately make a second unarmed combat attack for free the same second.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyouredoinkqxlpwlqRC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouredoinkqxlpwlqRC'"></app-bm-chapter-icon>
+        <p>If you’re doing the move or defending with two hands, roll your attack on a d20!.</p>
+      </div>
+      <div class="anchor">
+        <div id="Grabheader" class="anchorTag"></div>
+        <h2>Grab</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismoveismBSFUxSxQtS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismoveismBSFUxSxQtS'"></app-bm-chapter-icon>
+        <p>This move is meant to disable or gain control of a limb or item, whether that’s their belt, their leg, or
+          their sword. The target must be declared before the roll.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AttemptingtocyPPoGHltf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AttemptingtocyPPoGHltf'"></app-bm-chapter-icon>
+        <p>Attempting to grab a shield means the target adds their shield’s unmodified Defense penalty from their roll
+          as well since a larger shield is easier to grab. Additionally, attempting to grab most parts of the body
+          involve grabbing armor, if they're wearing any. Add your target's armor's Skill Adjustment as well as
+          applicable.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheexactbonuhdAwsbKjrq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheexactbonuhdAwsbKjrq'"></app-bm-chapter-icon>
+        <p>The exact bonus will depend on the situation but here are some guidelines:</p>
+      </div>
+      <div class="anchor">
+        <div id="Weaponheader" class="anchorTag"></div>
+        <h2>Weapon</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThedefendergcyDGhfqzqP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThedefendergcyDGhfqzqP'"></app-bm-chapter-icon>
+        <p>The defender gets a free attack if the move isn’t successful but when grabbed it means the defender can no
+          longer attack.</p>
+      </div>
+      <div class="anchor">
+        <div id="Shieldheader" class="anchorTag"></div>
+        <h2>Shield</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThedefendernLopTndrPgg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThedefendernLopTndrPgg'"></app-bm-chapter-icon>
+        <p>The defender no longer gains any bonus from their shield but still has the defense and Fatigue penalties.</p>
+      </div>
+      <div class="anchor">
+        <div id="Armheader" class="anchorTag"></div>
+        <h2>Arm</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SeeWeaponifPKcvRDByEP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SeeWeaponifPKcvRDByEP'"></app-bm-chapter-icon>
+        <p>See Weapon if it’s the weapon’s arm and Shield if it’s the shield’s arm. The defender also defends on a d12
+          vs Pushes and can’t change their facing willingly.</p>
+      </div>
+      <div class="anchor">
+        <div id="Legheader" class="anchorTag"></div>
+        <h2>Leg</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='MovingabovearFpWcIwqnJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'MovingabovearFpWcIwqnJ'"></app-bm-chapter-icon>
+        <p>Moving above a crawl is impossible and moving at all can only be done after a successful opposed Str check vs
+          d20! + the grabber’s strength.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThegrabberdepuSbxciChf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThegrabberdepuSbxciChf'"></app-bm-chapter-icon>
+        <p>The grabber defends with a d8! unless they’re employing something to let them keep their distance (a lasso or
+          mancatcher, for example). The grabber only defends with a d8! against Throws/Tackles. Their defense dice is
+          lowered by 1 for all facings.</p>
+      </div>
+      <div class="anchor">
+        <div id="GrabbingtheSheader" class="anchorTag"></div>
+        <h2>Grabbing the Same Place Twice</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AsecondgrabMrtxnjapkG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AsecondgrabMrtxnjapkG'"></app-bm-chapter-icon>
+        <p>A second grab on a non-body part works as a disarm, wrenching the item free unless secured by something
+          strong, though at the very least, the thing is no longer in hand. This is also done on an additional benefit
+          from a well-executed move if the attacker wishes.</p>
+      </div>
+      <div class="anchor">
+        <div id="Pushheader" class="anchorTag"></div>
+        <h2>Push</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='BypushingyouasNHSAAyIg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'BypushingyouasNHSAAyIg'"></app-bm-chapter-icon>
+        <p>By pushing you opponent in just the right way, you can move them or shift them in the direction you wish.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='OnasuccessfuVjJtvBpcCu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OnasuccessfuVjJtvBpcCu'"></app-bm-chapter-icon>
+        <p>On a successful Push, your target changes one facing or moves 5 ft to the left, right, or directly back. You
+          may immediately Shift to follow them without penalty.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YougainanadpSOtdtWBdB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YougainanadpSOtdtWBdB'"></app-bm-chapter-icon>
+        <p>You gain an additional facing change or 5 ft of movement on a well-executed Push.</p>
+      </div>
+      <div class="anchor">
+        <div id="ThrowTackleheader" class="anchorTag"></div>
+        <h2>Throw Tackle</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismoveatteTjVuxosmmt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismoveatteTjVuxosmmt'"></app-bm-chapter-icon>
+        <p>This move attempts to throw your opponent to the ground and is easier to pull off if you go prone with them.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ForthismoveXdrcnyOjkx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForthismoveXdrcnyOjkx'"></app-bm-chapter-icon>
+        <p>For this move, you can increase the attack dice size by 1 if you’re at running speed when you Tackle them.
+          You may increase it by a further 1 if you choose to go to the ground with them, however, no matter what, if
+          you lose the struggle, you still end up on the ground.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='GettingforcedpXyCBIbHqN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'GettingforcedpXyCBIbHqN'"></app-bm-chapter-icon>
+        <p>Getting forced to the ground resets your opponent's Count and they're considered prone.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheextrabonuXKDwggsLCn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheextrabonuXKDwggsLCn'"></app-bm-chapter-icon>
+        <p>The extra bonus for this move is being able to remain standing if you so choose, throw them 5 ft or, possibly
+          disarming them if they fail a Str check vs d20! + your Str.</p>
+      </div>
+      <div class="anchor">
+        <div id="Strikeheader" class="anchorTag"></div>
+        <h2>Strike</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AstrikeisakVCJlZfutK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AstrikeisakVCJlZfutK'"></app-bm-chapter-icon>
+        <p>A strike is a punch with any part of your body or shield. It’s not really about doing damage but more about
+          throwing your opponent off.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='OnasuccessfuYfHTDYnctp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OnasuccessfuYfHTDYnctp'"></app-bm-chapter-icon>
+        <p>On a successful Strike, you delay your opponent’s next attack by 1d4 seconds, though if you’re using a shield
+          to strike, you subtract that shield’s Recovery Mod from that amount, delaying them further. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='StrikinganalkHYrDFcxbM' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'StrikinganalkHYrDFcxbM'"></app-bm-chapter-icon>
+        <p>Striking an already stunned opponent does nothing.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheextrabonuersSrmquDd' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheextrabonuersSrmquDd'"></app-bm-chapter-icon>
+        <p>The extra bonus for this move is that it increases the time to a d6!.</p>
+      </div>
+      <div class="anchor">
+        <div id="BreakFreeheader" class="anchorTag"></div>
+        <h2>Break Free</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TherewillproiQUIRzdCeu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TherewillproiQUIRzdCeu'"></app-bm-chapter-icon>
+        <p>There will probably come a time when you want to break free from a grab, pin, or choke hold.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThegrappledfqYfxeLjKuZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThegrappledfqYfxeLjKuZ'"></app-bm-chapter-icon>
+        <p>The grappled fighter can add their Rank in Escape Artist if they have the Advanced Skill: otherwise, it is
+          resolved in the normal way with success resulting in the person breaking free</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheextrabonuMuRawXFfzy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheextrabonuMuRawXFfzy'"></app-bm-chapter-icon>
+        <p>The extra bonus is that the grappled person is able to turn it around on their enemy: they get a free,
+          unarmed maneuver, however, it is always on a d12! regardless of how many hands they have free since they’re
+          still working from a disadvantage.</p>
+      </div>
+      <div class="anchor">
+        <div id="MountedCombatheader" class="anchorTag"></div>
+        <h1>Mounted Combat</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhetheryoureXRfzpYkHKH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhetheryoureXRfzpYkHKH'"></app-bm-chapter-icon>
+        <p>Whether you're playing a knight or a bounty hunter, you might find it's to your advantage to find yourself
+          something to ride on and you'll probably want to know how you can use that mount in combat, so here are some
+          rules to help you out.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='SoyourenotuxMjZSVtua' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoyourenotuxMjZSVtua'"></app-bm-chapter-icon>
+        <p>So, you’re not making constant Skill Checks all the time, Riding, in this case, is handled a little bit
+          differently. Your mount will have a Turning, Acceleration, and Deceleration stat: this tells you how long, at
+          base, to perform the corresponding action. You can lower all of these base times by up to your Riding Skill,
+          however, you can never go below 3 seconds.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoucanalsonbRsbltWIGG' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoucanalsonbRsbltWIGG'"></app-bm-chapter-icon>
+        <p>You can also never perform more than one action at a time, and you can’t change actions until the last one
+          you declared is finished since your mount has its own inertia.</p>
+      </div>
+      <div class="anchor">
+        <div id="Turningheader" class="anchorTag"></div>
+        <h2>Turning</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisthebalhXZyWGnpx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisthebalhXZyWGnpx'"></app-bm-chapter-icon>
+        <p>This is the base time it takes to turn one Facing (45 degrees). This is, however, affected by your speed,
+          adding 1 second to the base time for every Speed Category above Walking your mount is going.</p>
+      </div>
+      <div class="anchor">
+        <div id="AccelerationDheader" class="anchorTag"></div>
+        <h2>Acceleration/Deceleration</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismovesyouzxnCkbWtUY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismovesyouzxnCkbWtUY'"></app-bm-chapter-icon>
+        <p>This moves your mount up or down 1 Speed Category, respectively.</p>
+      </div>
+      <div class="anchor">
+        <div id="DoingSomethinheader" class="anchorTag"></div>
+        <h2>Doing Something Dangerous</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='YourmountmigEdypPGajcV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YourmountmigEdypPGajcV'"></app-bm-chapter-icon>
+        <p>Your mount might also be smarter than you and decide that it really doesn't want to put itself in danger.
+          This could be charging into a wall of pikes or just a wall. In this case, you’ll have to convince your mount
+          into taking the action.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThisactsexaclMtalEDwvm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisactsexaclMtalEDwvm'"></app-bm-chapter-icon>
+        <p>This acts exactly like a Morale Conflict with the rider adding his Riding Skill as an additional dice and the
+          mount adding its Bravery. Note that if the Bravery is a negative dice, it gets added to the oppositions roll.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='AndfinallytEOlSkWGRux' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AndfinallytEOlSkWGRux'"></app-bm-chapter-icon>
+        <p>And finally, the opposition will also add dice equal to how much damage if could do to the mount (not
+          including DR), though if it’s non-piercing, you’re going to half the damage dice.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SincethisisMaOqvPjfJp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SincethisisMaOqvPjfJp'"></app-bm-chapter-icon>
+        <p>Since this is an Appeal, Stress is still given out to both rider and mount.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SochargingisqDjHcCzat' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SochargingisqDjHcCzat'"></app-bm-chapter-icon>
+        <p>So, charging into a pike (3d6! Damage) would mean rolling vs a d20!+3d6!, while charging a man brandishing a
+          schiavona would be a d20!+d6! (or 2d3!, either is valid and up to you). Trying to get it to leap a chasm with
+          a 40 ft drop would also cause you to make a roll vs d20!+3d12!.</p>
+      </div>
+      <div class="anchor">
+        <div id="RiderBenefitsheader" class="anchorTag"></div>
+        <h2>Rider Benefits</h2>
+        <div class="underline-sub"></div>
+      </div>
+      
+      <table class="all-centered float first-left">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="3">Rider Benefits</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Speed</th>
+            <th>Defense Bonus</th>
+            <th>KB Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standing/Strolling</td>
+            <td>+0 (+0)</td>
+            <td>+0</td>
+          </tr>
+          <tr>
+            <td>Walking</td>
+            <td>+2 (+4)</td>
+            <td>+5</td>
+          </tr>
+          <tr>
+            <td>Jogging</td>
+            <td>+4 (+8)</td>
+            <td>+10</td>
+          </tr>
+          <tr>
+            <td>Running</td>
+            <td>+6 (+12)</td>
+            <td>+15</td>
+          </tr>
+          <tr>
+            <td>Sprinting</td>
+            <td>+8 (+16)</td>
+            <td>+20</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoifyouhavdGVDFqEnnT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoifyouhavdGVDFqEnnT'"></app-bm-chapter-icon>
+        <p>So, if you have to think further ahead in combat so that you don't run into anything, what's the point of
+          using a mount? 1) because it's awesome and 2) you get a lot of extra bonuses for doing so.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ForstartersnnMUlWdLJP' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForstartersnnMUlWdLJP'"></app-bm-chapter-icon>
+        <p>For starters, if you get +d4! to damage if your opponent isn't mounted or equalizing your height somehow, as
+          well as additional damage dice if you're using a weapon specifically meant to be used from horseback (though
+          you get this die even if you're on a camel, lizard, or what-have you), regardless of height difference.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='OntopofthisqCWpEBfWGr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OntopofthisqCWpEBfWGr'"></app-bm-chapter-icon>
+        <p>On top of this, based on the Speed you're moving, you get a bonus to your Defense and bonus to your effective
+          damage when considering Knock-Back. Should you gain a successful double Knock-Back, your opponent is trampled
+          under hoof, dealing d8! damage and allowing you to continue past them. Note that bonuses to Defense are
+          doubled against ranged attacks, which are the values in parenthesis for ease of reference.</p>
+      </div>
+      <div class="anchor">
+        <div id="RiderPenaltieheader" class="anchorTag"></div>
+        <h2>Rider Penalties</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <table class="all-centered float first-left">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="3">Rider Penalties</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Speed</th>
+            <th>Attack Die Size</th>
+            <th>Converted (Melee/Ranged)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standing/Strolling</td>
+            <td>-0/-0</td>
+            <td>d20!/d20!</td>
+          </tr>
+          <tr>
+            <td>Walking</td>
+            <td>-1/-2</td>
+            <td>d12!/d10!</td>
+          </tr>
+          <tr>
+            <td>Jogging</td>
+            <td>-2/-4</td>
+            <td>d10!/d6!</td>
+          </tr>
+          <tr>
+            <td>Running</td>
+            <td>-3/-6</td>
+            <td>d8!/0</td>
+          </tr>
+          <tr>
+            <td>Sprinting</td>
+            <td>-4/-8</td>
+            <td>d6!/-d6!</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ButofcourseuVCJKOoutj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ButofcourseuVCJKOoutj'"></app-bm-chapter-icon>
+        <p>But, of course, it isn't all good news: moving at higher speeds means that it's harder to hit things,
+          especially in ranged combat.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ForeachSpeedwttLtAqJPQ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForeachSpeedwttLtAqJPQ'"></app-bm-chapter-icon>
+        <p>For each Speed Category above Strolling, you lower your Attack Dice by 1 size for melee and 2 sizes for
+          ranged. This can bring you below a d4! and into the negative so lowering 1 size down from a d4! means you roll
+          a d0 and stepping 2 sizes down gives you a -d4! to your attack. A handy table has been provided.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='RememberthatgKlfqmWsXl' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'RememberthatgKlfqmWsXl'"></app-bm-chapter-icon>
+        <p>Remember that your Riding Skill Rank does offset this, giving you a +1 to your Attack Dice size for each
+          Rank, which can bring it up past the standard d20!.</p>
+      </div>
+      <div class="anchor">
+        <div id="Moraleheader" class="anchorTag"></div>
+        <h1>Morale</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='CombatisnotEOSpiWYSmE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CombatisnotEOSpiWYSmE'"></app-bm-chapter-icon>
+        <p>Combat is not simply about who can do the most damage the quickest. Battles, at their heart, are
+          manifestations of the fever of conflict going on between the two sides. This is why sometimes a small,
+          untrained force of zealots can overcome a larger professional army.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThiscanbereQWaqFkKgvN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThiscanbereQWaqFkKgvN'"></app-bm-chapter-icon>
+        <p>This can be represented by a Confrontation happening during the combat, or a Morale Confrontation.</p>
+      </div>
+      <div class="anchor">
+        <div id="MoraleConfronheader" class="anchorTag"></div>
+        <h2>Morale Confrontations</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AtthebeginniqkBqLCHPkb' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AtthebeginniqkBqLCHPkb'"></app-bm-chapter-icon>
+        <p>At the beginning of combat, if at least one side has a captain, a Confrontation is also started with the two
+          opposing sides are the two opposing forces (the players vs the goblins, for example).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThisrunslikeatvZadJTND' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisrunslikeatvZadJTND'"></app-bm-chapter-icon>
+        <p>This runs like a normal Confrontation (including rolling Checks for it specifically on a d12!) except the
+          company captains are in charge and get to dictate pretty much everything. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoasthebattQJNMVCLCxu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoasthebattQJNMVCLCxu'"></app-bm-chapter-icon>
+        <p>So as the battle progresses, the captains are going to run the Confrontation in parallel with it, trying to
+          swing the battlefield to their advantage.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='UnlikearegulPiCpHBYxHq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'UnlikearegulPiCpHBYxHq'"></app-bm-chapter-icon>
+        <p>Unlike a regular Confrontation, however, it is not about gaining points but about who wins or loses that
+          round.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyouwintheNTNEdsTgUU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouwintheNTNEdsTgUU'"></app-bm-chapter-icon>
+        <p>If you win the Confrontation round, the target behaves the way you want. This represents either them being
+          too panicked or not having enough information to make a good decision, or effective leadership and a clear
+          grasp of what’s going on.</p>
+      </div>
+      <div class="anchor">
+        <div id="WithaCaptainheader" class="anchorTag"></div>
+        <h2>With a Captain</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='DuringcombatSmdxznaeiC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'DuringcombatSmdxznaeiC'"></app-bm-chapter-icon>
+        <p>During combat, a captain can, at any time, state that they want a fighter (or group of fighters) to perform
+          an action or behave in a certain way.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ForinstancePIeOnGmpZV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForinstancePIeOnGmpZV'"></app-bm-chapter-icon>
+        <p>For instance, the captain might want a fighter to switch his Tactic to be more aggressive, or swap who he’s
+          aiming for.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='HecanalsodoEizPsaPtvL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HecanalsodoEizPsaPtvL'"></app-bm-chapter-icon>
+        <p>He can also do this for enemy fighters: the only exception is they can’t make them run away (which can
+          happen, but we'll talk about that a bit later).</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoforexamplgekQUtiRlD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoforexamplgekQUtiRlD'"></app-bm-chapter-icon>
+        <p>So, for example, you’re the company captain and you’re trying to convince the enemy goblin that he should try
+          and get at your company’s ranger but currently he’s making a beeline for your fighter. In that case, you can
+          use the fighter’s Characteristic “You Don’t Want to Mess with Me” to make an Appeal to get the goblin to
+          second guess himself and go after your ranger.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AcaptaincantVizfxmPzg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AcaptaincantVizfxmPzg'"></app-bm-chapter-icon>
+        <p>A captain can affect any number of fighters; however, they need to be easily “grouped”: there needs to be a
+          good reason why every fighter “targeted” would be affected by the same Appeal.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='StressisdiviHqueWLzkTg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'StressisdiviHqueWLzkTg'"></app-bm-chapter-icon>
+        <p>Stress is divided between anyone that helped with the Check as the captain sees fit.</p>
+      </div>
+      <div class="anchor">
+        <div id="FieldPromotioheader" class="anchorTag"></div>
+        <h3>Field Promotions & No Presence</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheremightbeYJUzFWcNjc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheremightbeYJUzFWcNjc'"></app-bm-chapter-icon>
+        <p>There might be the case a captain dies, and a lieutenant is suddenly promoted, however the chain of command
+          should have been determined beforehand.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='InthiscaseXyrJxoPSGs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'InthiscaseXyrJxoPSGs'"></app-bm-chapter-icon>
+        <p>In this case, subtract 1 from the original Captain’s Pre Check Modifier and use that for the lieutenants.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ItsbetterthwWBAniBJtI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ItsbetterthwWBAniBJtI'"></app-bm-chapter-icon>
+        <p>It’s better than nothing because it keeps people from just running for it and they gain less Stress but it’s
+          still not great.</p>
+      </div>
+      <div class="anchor">
+        <div id="VsaSidewithheader" class="anchorTag"></div>
+        <h2>Vs a Side with No Captain</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfonesidehaLTsTRKYyKV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfonesidehaLTsTRKYyKV'"></app-bm-chapter-icon>
+        <p>If one side has a captain but they're removed from combat for any reason (including going unconscious) with
+          no replacement, everyone on their side immediately has their Panic Threshold lowered by 1 Wound Category, so
+          keep the company captain safe!</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='AsidewithnoWYYCjyUfni' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AsidewithnoWYYCjyUfni'"></app-bm-chapter-icon>
+        <p>A side with no captain can’t actively go “on the attack”, meaning that they can no longer initiate a
+          Confrontation round but only defend against them.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IftheydontZtRQvRIayY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IftheydontZtRQvRIayY'"></app-bm-chapter-icon>
+        <p>If they don't have any applicable personal Characteristics, Skills, or Trainings, they auto fail, and gain
+          double the Stress the enemy captain takes.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoforgoblinWHTYDLyVlL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoforgoblinWHTYDLyVlL'"></app-bm-chapter-icon>
+        <p>So, for goblins, having no warfare, no Presence, or no Intellect, they would auto-fail but if you’re facing
+          an ettin and try to intimidate him based on strength, he would roll based on its strength (and maybe some
+          other things because he's a big boy who can really hurt you).</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AdditionallyFmYnKSfbjh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AdditionallyFmYnKSfbjh'"></app-bm-chapter-icon>
+        <p>Additionally, sides with no captains are now vulnerable to having their fighters break and run away.</p>
+      </div>
+      <div class="anchor">
+        <div id="RunningAwayheader" class="anchorTag"></div>
+        <h3>Running Away</h3>
+      </div>
+      
+      <table class="float marginBottom">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Panic Threshold</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Honor</th>
+            <th>Panic Threshold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Great</td>
+            <td>Never</td>
+          </tr>
+          <tr>
+            <td>High</td>
+            <td>Critical</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>Wounded</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Bloodied</td>
+          </tr>
+          <tr>
+            <td>Dishonor</td>
+            <td>Hurt</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='NormallyrunnAAgBLDQPHI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NormallyrunnAAgBLDQPHI'"></app-bm-chapter-icon>
+        <p>Normally, running away is only caused by a fighter reaching their Stress Threshold, but, with no captain, any
+          Panicked fighter can be convinced to turn tail and run, inflicting any Stress they would gain on the remaining
+          fighters.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhenafighterkegXAXMMLK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenafighterkegXAXMMLK'"></app-bm-chapter-icon>
+        <p>When a fighter becomes Panicked is based on their Honor or noted on the monster’s entry.</p>
+      </div>
+      <div class="anchor">
+        <div id="AdditionalArgheader" class="anchorTag"></div>
+        <h2>Additional Arguments</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='OntopofthatTXchgGEuZg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OntopofthatTXchgGEuZg'"></app-bm-chapter-icon>
+        <p>On top of that you’ll also have additional places you can pull from for your arguments that only really apply
+          to Morale Confrontations, such as having a seasoned commander, outnumbering the opposing side, having a common
+          Devotion to why they’re fighting and so on.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='HerearecommoMDIKermMCW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HerearecommoMDIKermMCW'"></app-bm-chapter-icon>
+        <p>Here are common things you can draw from:</p>
+      </div>
+      <div class="anchor">
+        <div id="Outnumberingtheader" class="anchorTag"></div>
+        <h3>Outnumbering the Enemy</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='EachsidecanjAlKdfcKfn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'EachsidecanjAlKdfcKfn'"></app-bm-chapter-icon>
+        <p>Each side can add their total numbers to an Appeal, thus favoring the side with the most people.</p>
+      </div>
+      <div class="anchor">
+        <div id="CatchinganEnheader" class="anchorTag"></div>
+        <h3>Catching an Enemy by Surprise</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AsideistreasyssYBGILH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AsideistreasyssYBGILH'"></app-bm-chapter-icon>
+        <p>A side is treated as having no captain until their captain’s Initiative has come up.</p>
+      </div>
+      <div class="anchor">
+        <div id="HavingYourBaheader" class="anchorTag"></div>
+        <h3>Having Your Battle Standard Up & Visible</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfyourbattleIrZopYsvEO' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyourbattleIrZopYsvEO'"></app-bm-chapter-icon>
+        <p>If your battle standard is up and visible, the party captain (or acting captain) can add their Pre Check Mod
+          to any Appeals made. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AlsoanyabilGuAZOkoXuo' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AlsoanyabilGuAZOkoXuo'"></app-bm-chapter-icon>
+        <p>Also, any abilities that the Party Captain has that effect Confrontations can also be used during this
+          Confrontation.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='OtherwiseapLsCOZbjmad' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'OtherwiseapLsCOZbjmad'"></app-bm-chapter-icon>
+        <p>Otherwise, a person will need to be able to see their captain directly to gain this benefit.</p>
+      </div>
+      <div class="anchor">
+        <div id="Devotionsheader" class="anchorTag"></div>
+        <h3>Devotions</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='NormallyDevomtORTnvBKy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NormallyDevomtORTnvBKy'"></app-bm-chapter-icon>
+        <p>Normally, Devotions would add to your points automatically but since points don’t matter, it would make them
+          useless in Morale Confrontations but, as we all know, why you fight does matter. </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfaDevotioneHStTyQsXW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfaDevotioneHStTyQsXW'"></app-bm-chapter-icon>
+        <p>If a Devotion applies to all the people being targeted that round, they add the lowest applicable Devotion to
+          their Check. </p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="WhoControlstheader" class="anchorTag"></div>
+          <h5>Who Controls the Morale</h5>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='ItmaybetheLuwtrJroFH' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'ItmaybetheLuwtrJroFH'"></app-bm-chapter-icon>
+          <p>It may be the case that the Party Leader, who should be responsible for the Morale Confrontation is also
+            your main line fighter and is already busy juggling an enemy or two.</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='YoucanhaveaHJtbETjpqc' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'YoucanhaveaHJtbETjpqc'"></app-bm-chapter-icon>
+          <p>You can have a player who runs a less combat intense character, such as the magic user or diplomat, oversee
+            the Confrontation in that case, however, only the actual Party Leader’s abilities affect the number or size
+            of those dice applied.</p>
+        </div>
+      </div>
+      <div class="anchor">
+        <div id="Confrontationsheader" class="anchorTag"></div>
+        <h2>Confrontations within Morale Confrontations</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='WhetherornotYaeaDccCIr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhetherornotYaeaDccCIr'"></app-bm-chapter-icon>
+        <p>Whether or not you have a captain, individual fighters can also initiate their own, personal Confrontations
+          with those they’re fighting.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThesearetypiloGFSiaOOL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThesearetypiloGFSiaOOL'"></app-bm-chapter-icon>
+        <p>These are typically 1 round affairs (or treated as such), and only involve the fighters’ Characteristics and
+          any situational arguments that apply.</p>
+      </div>
+      <div class="anchor">
+        <div id="EndingCombatheader" class="anchorTag"></div>
+        <h1>Ending Combat</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='CombatendswhikzQBkPygW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'CombatendswhikzQBkPygW'"></app-bm-chapter-icon>
+        <p>Combat ends when one side is incapacitated, reached a truce, or have fled the field. At that point the Clock
+          stops, and play moves back to narrative time.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='IfyouengagedLIagTQYUMf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyouengagedLIagTQYUMf'"></app-bm-chapter-icon>
+        <p>If you engaged in a Morale Confrontation, everyone on the side that won the combat gains the difference in
+          points to their Honor, regardless of whether or not their side has less. So, if the players have 3 points and
+          the goblins had 7, every player still gains 4 Honor.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThelosingsidLZpuUXAhRj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThelosingsidLZpuUXAhRj'"></app-bm-chapter-icon>
+        <p>The losing side subtracts that with the same caveats.</p>
+      </div>
+    </div>
+    <div class="sideShell">
+      <app-quick-nav [side]='side'></app-quick-nav>
+    </div>
+    <h1 class="chapterTitle">Chapter 1.3 Combat</h1>
+  </div>
+</div>
