@@ -7,13 +7,13 @@
 
   <div *ngIf="bookmarkArray.length > 0">
     <div class="bookmarkShelfHeading">
-      <h3>Ch</h3>
+      <h3> </h3>
       <h3>Body</h3>
       <div></div>
     </div>
     <div class="bookmarksShell">
-      <div *ngFor="let mark of bookmarkArray" class="bookmarkShelf" (click)="goToLink(mark.link, mark.chapter)">
-        <h3>{{mark.chapter}}</h3>
+      <div *ngFor="let mark of bookmarkArray" class="bookmarkShelf" (click)="goToLink(mark.link, mark.chapter, mark.section)">
+        <h3>{{mark.section}}.{{mark.chapter}}</h3>
         <h3>{{mark.body}}</h3>
         <i stopPropagation (click)="deleteBookmark($event, mark.id)" class="fa fa-unlink"></i>
       </div>

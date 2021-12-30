@@ -23,8 +23,13 @@ export class BmQuickNavComponent implements OnInit {
     this.chapterService.getBookmarks().subscribe(result => this.bookmarkArray = result)
   }
 
-  goToLink(route, chapter) {
-    this.router.navigate([`/chapter/${chapter}`], { queryParams: { search: route } })
+  goToLink(route, chapter, section) {
+    if (section === 1) {
+      this.router.navigate([`/rules-reference/${chapter}`], { queryParams: { search: route } })
+    } else {
+      this.router.navigate([`/character-creation/${chapter}`], { queryParams: { search: route } })
+
+    }
   }
 
   deleteBookmark(event, id) {

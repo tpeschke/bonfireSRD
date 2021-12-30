@@ -3,7 +3,6 @@ i {
     font-size: 25px;
     position: absolute;
     top: 0;
-    left: -25px;
     transform: rotate(-90deg);
     animation: .6s
 }

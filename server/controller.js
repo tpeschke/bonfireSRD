@@ -36,7 +36,7 @@ module.exports = {
         const db = req.app.get('db')
         db.get.findBookmarks(req.user.id).then(result => {
             let newResult = result.map(val => {
-                return { id: val.id, chapter: val.chapter, body: val.body, link: val.bookmarkcode }
+                return { id: val.id, chapter: val.chapter, body: val.body, link: val.bookmarkcode, section: val.section }
             })
             res.send(newResult)
         })
