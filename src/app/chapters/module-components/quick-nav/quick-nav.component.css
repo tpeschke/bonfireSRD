@@ -80,18 +80,18 @@ p:hover {
 }
 
 /* Track */
-/* ::-webkit-scrollbar-track {
-  
-} */
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(245, 245, 245, .9); 
+  background: #b45f06; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(245, 245, 245, .9); 
+  background: #b45f06; 
 }
 
 /* ======================================================= */
