@@ -232,6 +232,12 @@
         <app-bm-chapter-icon [id]="'youcannotstop'"></app-bm-chapter-icon>
         <p>You cannot stop a spell that has been shaped until it reaches its Interval.</p>
       </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifyourestackingmup' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyourestackingmup'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Stacking Different Effects & Interval</strong> If you're stacking multiple,
+          different Effects, you use the shortest Interval to determine what the Interval for the spell is.</p>
+      </div>
       <div class="anchor">
         <div id="ShapeRudimentheader" class="anchorTag"></div>
         <h1>Shape Rudiment Descrptions</h1>
@@ -256,11 +262,10 @@
         <div id='TheCircleisBGWgDqKZiH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheCircleisBGWgDqKZiH'"></app-bm-chapter-icon>
         <p>The Circle is the most basic Shape. It extends from the Origin with a Radius equal to the Base Range of the
-          Effect. Anyone within the Circle is affected by the spell. If it deals damage or inflicts Stress, this occurs
+          Effect. Anyone in the Circle is affected by the spell only as long as they stay within it. If it deals damage
+          or inflicts Stress, this occurs
           on
-          the Interval or if a person enters/re-enters the shape. If not cast far enough away, this could also include
-          the
-          weird-adept.</p>
+          the Interval or if a person enters/re-enters the shape.</p>
       </div>
       <div class="anchor">
         <div id="Chainheader" class="anchorTag"></div>
@@ -303,13 +308,31 @@
         <app-bm-chapter-icon [id]="'TheConestartljYOEPttNZ'"></app-bm-chapter-icon>
         <p>The Cone starts with its tip at the Origin and then extends in a 45-degree arch from it up to the spell’s
           Range.
-          Anyone within the Cone is affected by the spell. If it deals damage or inflicts Stress, this occurs on the
+          Anyone within the Cone is affected by the spell for as long they're in its Shape. If it deals damage or
+          inflicts Stress, this occurs on the
           Interval or if a person enters/re-enters the shape.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheConecanazijOAPmNfk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheConecanazijOAPmNfk'"></app-bm-chapter-icon>
         <p>The Cone can also be moved and shifted, rotating around its Origin, moving a facing every 3 seconds.</p>
+      </div>
+      <div class="anchor">
+        <div id="Personalheader" class="anchorTag"></div>
+        <h2>Personal</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='RAIN2DQjMkJAFEu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'RAIN2DQjMkJAFEu'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Drain</strong> 2</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismakesthepjNHnjJJCD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismakesthepjNHnjJJCD'"></app-bm-chapter-icon>
+        <p>This makes the Shape of a spell just a single individual. Starting at the Origin, it effects the first viable
+          target (deteremined by the Effect Rudiment) and then stops. The spell continues to affect that person after
+          that point, wherever they move.</p>
       </div>
       <div class="anchor">
         <div id="Salvoheader" class="anchorTag"></div>
@@ -324,19 +347,32 @@
       <div class='paragraphShell anchor'>
         <div id='TheSalvoistykwPSLxJAb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheSalvoistykwPSLxJAb'"></app-bm-chapter-icon>
-        <p>The Salvo is the spell chucked up to 3 * its base Range from the spell’s Origin. It requires a ranged attack
+        <p>The Salvo is the spell chucked up to 3 * its unmodified Range from the spell’s Origin. It requires a ranged
+          attack
           to
-          hit (though ignoring Cover). On a miss, it follows the normal ranged miss rules. Anyone that is hit, suffers
+          hit (though ignoring Cover) a single viable target. The shaper gains a bonus based on the Range Rudiment
+          they're using: +0 for Personal, +1 for Half, +3 for Full, +5 for Double.
+          Anyone that is hit, suffers
           the
-          full effects of the spell. If it deals damage or inflicts Stress, this occurs on the Interval.</p>
+          full effects of the spell for the duration of the spell. If it deals damage or inflicts Stress, this occurs on
+          the Interval.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifashieldwound' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifashieldwound'"></app-bm-chapter-icon>
+        <p>If a shield wouldn't be a viable target for the spell, the defender can use its cover value.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='onamissitfollowjis' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'onamissitfollowjis'"></app-bm-chapter-icon>
+        <p>On a miss, it follows the normal ranged miss rules.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='FromwherethehreKHJuPVU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FromwherethehreKHJuPVU'"></app-bm-chapter-icon>
-        <p>From where the Salvo's touch location is, that is where the Shape of the spell is placed. Those within the
-          Base
-          Range of the Effect of that Shape (even on a total miss) suffer the effects of the spell for half its
-          Interval.
+        <p>This Shape can be stacked with itself to fire additional Salvos that can target different targets. If
+          targeting the same
+          target, they target needs to make multiple defense rolls.
         </p>
       </div>
       <div class="anchor">
@@ -360,7 +396,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='AnyonetouchedykoFauoOSR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnyonetouchedykoFauoOSR'"></app-bm-chapter-icon>
-        <p>Anyone touched by the sphere suffers the Effects of the spell.</p>
+        <p>Anyone touched by the sphere suffers the Effects of the spell for as long as sphere is on them. If it deals
+          damage or inflicts Stress, this occurs every second the sphere is in contact with the person.</p>
       </div>
       <div class="anchor">
         <div id="Rayheader" class="anchorTag"></div>
@@ -370,22 +407,27 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN2dNCuLZGAVl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN2dNCuLZGAVl'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 2</p>
+        <p><strong class='orangeHeader'>Drain</strong> 3</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TherayisatnjgImtUfEl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TherayisatnjgImtUfEl'"></app-bm-chapter-icon>
         <p>The ray is a thin line of magic that extends from the spell’s Origin up the 10 times the spell’s Range. It
           manifests in a single instant, requiring a roll to hit, but those that it hits, suffer the full Effect of the
-          spell, though he can only try once per second, and this does eat into the Interval.</p>
+          spell for the duration of the spell.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfnoonewasswCfUTpBkD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfnoonewasswCfUTpBkD'"></app-bm-chapter-icon>
         <p>If no one was hit and the spell is still being cast, the weird-adept can manifest another ray and try again
           until
-          he hits or he decasts the spell, though he can only try once per second and this does eat into the Interval.
+          he hits or he decasts the spell, again the next second, but this does eat into the Interval.
         </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='theshapcehicayiot' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'theshapcehicayiot'"></app-bm-chapter-icon>
+        <p>The shaper can hit multiple viable targets with one Ray but he has to do so simulanteously.</p>
       </div>
       <div class="anchor">
         <div id="Wallheader" class="anchorTag"></div>
@@ -410,7 +452,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='AnyonepassingjEgKLyIskD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnyonepassingjEgKLyIskD'"></app-bm-chapter-icon>
-        <p>Anyone passing through the wall is affected by the Spell. Those that are in the wall’s way when it is cast,
+        <p>Anyone passing through the wall is affected by the Spell for the rest of the duration of the spell. Those
+          that are in the wall’s way when it is shaped,
           get a
           defense roll vs a ranged attack to get out of the way.</p>
       </div>
@@ -457,7 +500,7 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN1RwieiNTJjD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN1RwieiNTJjD'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 1</p>
+        <p><strong class='orangeHeader'>Drain</strong> 2</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesthenOVrYfJzKO' class='anchorTag'></div>
@@ -465,19 +508,19 @@
         <p>This makes the Range of a spell half its Base Range.</p>
       </div>
       <div class="anchor">
-        <div id="Personalheader" class="anchorTag"></div>
-        <h2>Personal</h2>
+        <div id="localizedheader" class="anchorTag"></div>
+        <h2>Localized</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RAIN2DQjMkJAFEu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN2DQjMkJAFEu'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 2</p>
+        <div id='localizeddraing' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'localizeddraing'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Drain</strong> 3</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesthepjNHnjJJCD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismakesthepjNHnjJJCD'"></app-bm-chapter-icon>
-        <p>This makes the Range of a spell just a single individual.</p>
+        <p>This makes the Range of the spell 5ft, regardless of the Base Range of the Effect Rudiment.</p>
       </div>
       <div class="anchor">
         <div id="OriginRudimenheader" class="anchorTag"></div>
@@ -521,6 +564,22 @@
           is considered armed.</p>
       </div>
       <div class="anchor">
+        <div id="burstHeader" class="anchorTag"></div>
+        <h2>Burst</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='burstsdraing' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'burstsdraing'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Drain</strong> 1</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismakesthefygpxFhjQW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismakesthefygpxFhjQW'"></app-bm-chapter-icon>
+        <p>This makes the Origin of the spell from 0ft up to the Base Range of the spell, although it never affects the
+          shaper.</p>
+      </div>
+      <div class="anchor">
         <div id="Nearheader" class="anchorTag"></div>
         <h2>Near</h2>
         <div class="underline-sub"></div>
@@ -528,13 +587,12 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN1WhjkURuiBI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN1WhjkURuiBI'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 1</p>
+        <p><strong class='orangeHeader'>Drain</strong> 2</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesthefygpxFhjQW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismakesthefygpxFhjQW'"></app-bm-chapter-icon>
-        <p>This makes the Origin of the spell from the Effect's Base Range to up to double the Effect’s Base Range. This
-          never affects the caster.</p>
+        <p>This makes the Origin of the spell from the Effect's Base Range to up to double the Effect’s Base Range.</p>
       </div>
       <div class="anchor">
         <div id="Farheader" class="anchorTag"></div>
@@ -1688,6 +1746,50 @@
         <app-bm-chapter-icon [id]="'TACKIncreaseqfaiZWnGyk'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> Increase the Drain by 1.</p>
       </div>
+
+      <div class="anchor">
+        <div id="Slowfallheader" class="anchorTag"></div>
+        <h2>Eiderdown</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='RADITIONCharmSoEzsSmRqR' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'RADITIONCharmSoEzsSmRqR'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Tradition</strong> Charm</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ASEDRAIN3yuBwCBTJDM' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ASEDRAIN3yuBwCBTJDM'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Base Drain</strong> 3</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ASERANGE20fXvhTdtOhUD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ASERANGE20fXvhTdtOhUD'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Base Range</strong> 20 ft</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='NTERVAL5seconkgmLpBwPr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NTERVAL5seconkgmLpBwPr'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Interval</strong> 30 Minutes</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='FFECTThischamfZTmTsHLE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'FFECTThischamfZTmTsHLE'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Effect</strong> This changes the kinetic energy of any falling person within the
+          Shape of the spell to potential energy, negatings a cumulative 50 ft of fall damage for those affected while
+          the spell is active.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='WhilethespelxCpSMOHAaA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhilethespelxCpSMOHAaA'"></app-bm-chapter-icon>
+        <p>This can be taken at once (in a large fall) or piecemeal with small falls. Once all the fall damage has been
+          negated, the spell is automatically uncast.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='TACKIncreaseqtiCJTXkQa' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TACKIncreaseqtiCJTXkQa'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the fall distance negated by 50 ft.</p>
+      </div>
       <div class="anchor">
         <div id="Flattenheader" class="anchorTag"></div>
         <h2>Flatten</h2>
@@ -1983,50 +2085,6 @@
         <app-bm-chapter-icon [id]="'TACKIncreaseotFQXERuyd'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> Increase the damage dice by 1 size. Give the person making Trauma
           Check an effective -3 to their Con.</p>
-      </div>
-      <div class="anchor">
-        <div id="Slowfallheader" class="anchorTag"></div>
-        <h2>Slowfall</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RADITIONCharmSoEzsSmRqR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RADITIONCharmSoEzsSmRqR'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Tradition</strong> Charm</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ASEDRAIN3yuBwCBTJDM' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ASEDRAIN3yuBwCBTJDM'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Drain</strong> 3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ASERANGE20fXvhTdtOhUD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ASERANGE20fXvhTdtOhUD'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Range</strong> 20 ft</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='NTERVAL5seconkgmLpBwPr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NTERVAL5seconkgmLpBwPr'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 5 seconds</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='FFECTThischamfZTmTsHLE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'FFECTThischamfZTmTsHLE'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> This changes the kinetic energy of any falling person within the
-          Shape of the spell to potential energy, slowing their fall to a leisurely pace, 5 ft / second.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhilethespelxCpSMOHAaA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhilethespelxCpSMOHAaA'"></app-bm-chapter-icon>
-        <p>While the spell is cast, targets don’t take any fall damage. Additionally, if this spell was cast but doesn’t
-          last the duration of the fall, the targets only take damage for the space they fall at full speed.</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='TACKIncreaseqtiCJTXkQa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TACKIncreaseqtiCJTXkQa'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the fall speed by 2.5 ft / second. This doesn’t affect
-          how
-          much damage is taken after the spell is released.</p>
       </div>
       <div class="anchor">
         <div id="Smokescreenheader" class="anchorTag"></div>
@@ -2430,14 +2488,6 @@
         <p>The target is in a superimposed state, being, at once, one of the phantoms and none of them. Thus, she can
           strike
           from anywhere there is a phantom</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThesephantomsDLTWyvocLG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThesephantomsDLTWyvocLG'"></app-bm-chapter-icon>
-        <p>These phantoms disappear on the following condition: the target makes an aggressive action of any kind,
-          whether
-          that’s spell shaping, shooting a bow, or striking with a weapon. Even if unsuccessful, all the phantoms
-          disappear.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AndwheneversECuipmgbAF' class='anchorTag'></div>
@@ -3154,7 +3204,7 @@
         <p><strong class='orangeHeader'>Stack</strong> The distance things fly an additional 5 ft and the d20 gets a +5.
         </p>
       </div>
-      
+
       <div class="anchor">
         <div id="Marionetteheader" class="anchorTag"></div>
         <h2>Marionette</h2>
@@ -3616,7 +3666,7 @@
       <div class='paragraphShell anchor'>
         <div id='NTERVAL3SkilHzflcfIHMQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL3SkilHzflcfIHMQ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 3 Skill Check or 6 Hours, whichever comes first</p>
+        <p><strong class='orangeHeader'>Interval</strong> 3 Skill Checks or 6 Hours, whichever comes first</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTBychannXWvZcmbwce' class='anchorTag'></div>
@@ -4657,7 +4707,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoucanalsophiZSrpvPBc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoucanalsophiZSrpvPBc'"></app-bm-chapter-icon>
-        <p>You can also purchase additional Rudiments for 15 CrP a pop.</p>
+        <p>You can also purchase additional Rudiments for 15 CrP a pop, although, if that's the case, you get to choose
+          the Rudiment.</p>
       </div>
       <div class="rudiment-shell">
         <table>
@@ -4672,16 +4723,20 @@
           </thead>
           <tbody>
             <tr>
-              <td>1 - 2</td>
+              <td>1</td>
               <td>Circle</td>
             </tr>
             <tr>
-              <td>3</td>
+              <td>2</td>
               <td>Chain</td>
             </tr>
             <tr>
-              <td>4</td>
+              <td>3</td>
               <td>Cone</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Personal</td>
             </tr>
             <tr>
               <td>5</td>
@@ -4727,7 +4782,7 @@
             </tr>
             <tr>
               <td>4</td>
-              <td>Personal</td>
+              <td>Localized</td>
             </tr>
           </tbody>
         </table>
@@ -4738,7 +4793,7 @@
               <th colspan="2">Origin Rudiments</th>
             </tr>
             <tr class="notSticky">
-              <th>Roll (d4)</th>
+              <th>Roll (d6)</th>
               <th> </th>
             </tr>
           </thead>
@@ -4753,10 +4808,14 @@
             </tr>
             <tr>
               <td>3</td>
+              <td>Burst</td>
+            </tr>
+            <tr>
+              <td>4 - 5</td>
               <td>Near</td>
             </tr>
             <tr>
-              <td>4</td>
+              <td>6</td>
               <td>Far</td>
             </tr>
           </tbody>
@@ -4949,43 +5008,43 @@
           <tbody>
             <tr>
               <td>1 - 2</td>
-              <td>Dispel Enchantment</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Flatten</td>
-            </tr>
-            <tr>
-              <td>4 - 5</td>
               <td>Detraction</td>
             </tr>
             <tr>
-              <td>6 - 7</td>
+              <td>3 - 4</td>
+              <td>Dispel Enchantment</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Eiderdown</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Flatten</td>
+            </tr>
+            <tr>
+              <td>7 - 8</td>
               <td>Hermetic Dweomer</td>
             </tr>
             <tr>
-              <td>8</td>
+              <td>9</td>
               <td>Illuminate</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>10</td>
               <td>Liminal Platform</td>
             </tr>
             <tr>
-              <td>10 - 11</td>
+              <td>11 - 12</td>
               <td>Magic Circle</td>
             </tr>
             <tr>
-              <td>12</td>
+              <td>13</td>
               <td>Shock</td>
             </tr>
             <tr>
-              <td>13</td>
-              <td>Silence</td>
-            </tr>
-            <tr>
               <td>14</td>
-              <td>Slowfall</td>
+              <td>Silence</td>
             </tr>
             <tr>
               <td>15 - 16</td>
