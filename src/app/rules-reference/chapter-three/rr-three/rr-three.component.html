@@ -70,7 +70,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ShouldsomeoneVMDMCGVQfp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ShouldsomeoneVMDMCGVQfp'"></app-bm-chapter-icon>
-        <p>Should someone attack them during this time, they are completely helpless and so their TN for defense is 1.
+        <p>Should someone attack them during this time, they are completely helpless and so their defense die is a d8!.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -166,7 +166,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisdamageisABHnqSRpPA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisdamageisABHnqSRpPA'"></app-bm-chapter-icon>
-        <p>This damage is reduced by your Endurance (or Athletics) Rank, down to a minimum of 0.</p>
+        <p>This damage is reduced by your Endurance (or Athletics) Rank, down to a minimum of 0. This is modified by your armor's Skill Adjustment penalty because sprinting in heavy armor is hard.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='YoucanpushyhJnjULGSnP' class='anchorTag'></div>
@@ -278,8 +278,7 @@
       </div>
       <div class="anchor">
         <div id="PerfectDefensheader" class="anchorTag"></div>
-        <h2>Perfect Defense</h2>
-        <div class="underline-sub"></div>
+        <h3>Perfect Defense</h3>
       </div>
       <div class='paragraphShell anchor'>
         <div id='YougainafreNJXnZICmbA' class='anchorTag'></div>
@@ -306,7 +305,7 @@
         <div id='AnunmodifiedoepLviwdVP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnunmodifiedoepLviwdVP'"></app-bm-chapter-icon>
         <p>An unmodified roll of 19 on either Attack or Defense results in a Near Perfect Attack or Defense, where you
-          may Shift for no penalty, change your Tactic, or, for attacks, gain an extra d4! to damage, or, for defenses
+          may Shift for no penalty, change your Tactic, or, for attacks, gain an extra d4! to damage (which doesn't count as additional dice for /d DR), or, for defenses
           gained a free riposte with your off-hand weapon if it’s smaller than your size.</p>
       </div>
       <div class="anchor">
@@ -482,7 +481,7 @@
         <div id='IfyourefirisGefmCMXCH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyourefirisGefmCMXCH'"></app-bm-chapter-icon>
         <p>If you’re firing a ranged weapon, you managed to hit a sensitive area, lowering their max movement speed by
-          one category, minimum Crawl speed.</p>
+          one category, minimum Crawl speed. This continues until that wound is completely healed.</p>
       </div>
       <div class="anchor">
         <div id="NearPerfectAheader" class="anchorTag"></div>
@@ -559,7 +558,7 @@
         <div id='IftheresanyqsCevGcHZH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftheresanyqsCevGcHZH'"></app-bm-chapter-icon>
         <p>If there’s any one within 5 ft of a direct line between the origin of the missile and the target, they’ll
-          have to roll the appropriate defense die vs the original attack roll to see if the missile hits them instead,
+          have to roll the appropriate defense die vs the original, unmodified attack roll to see if the missile hits them instead,
           starting with the person closest to the archer or gunner and ending with the intended target.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -600,13 +599,13 @@
         <div id='Thed20deterlEaJDwXkSy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Thed20deterlEaJDwXkSy'"></app-bm-chapter-icon>
         <p>The d20! determines how many feet it strays from the target. Draw an imaginary line between the archer and
-          that point. Everyone within 5ft of that line needs to roll a defense vs the original attack roll, starting
+          that point, extended to the edge of the battlefield. Everyone within 5ft of that line needs to roll a defense vs the original attack roll, starting
           with the person closest to the archer and ending with the furthest possible target.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='InanimateobjehEdwzoHHmZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'InanimateobjehEdwzoHHmZ'"></app-bm-chapter-icon>
-        <p>Inanimate objects may provide enough cover to be considered targets in both Firing into Combat and Ranged
+        <p>Inanimate objects may provide enough cover to be considered targets in both Firing into Melee and Ranged
           Misses, such as a large boulder or tree. In which case, medium sized objects roll a d12!, with each size lower
           decreasing the dice size by 2, and each size larger increasing the dice size by 2.</p>
       </div>
@@ -747,7 +746,7 @@
       <div class='paragraphShell anchor'>
         <div id='AdditionallyiVZtkRSyzs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallyiVZtkRSyzs'"></app-bm-chapter-icon>
-        <p>Additionally, this lowers the range for Near Perfect Defenses by 1, so you score them on a base natural 18 -
+        <p>Additionally, this increases the range for Near Perfect Defenses by 1, so you score them on a base natural 18 -
           19. This tactic needs to be committed to for at least your full weapon Recovery. After that you may continue
           using it and change tactics at any point.</p>
       </div>
@@ -762,8 +761,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ActiveDodgingNWuCnkzSrs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ActiveDodgingNWuCnkzSrs'"></app-bm-chapter-icon>
-        <p>Active Dodging can be combined with Retreat and Step Back, adding only the attack penalties but gaining all
-          auxiliary benefits from each (so no, the defenses don't stack).</p>
+        <p>Active Dodging can be combined with Retreat and Step Back, adding the auxiliary benefits and attack penalties but not the Defense bonus.</p>
       </div>
       <div class="anchor">
         <div id="CarefulAimingheader" class="anchorTag"></div>
@@ -808,7 +806,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenyouvechTPJGhjBSNC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenyouvechTPJGhjBSNC'"></app-bm-chapter-icon>
-        <p>When you’ve choked up on your weapon, your weapon’s Measure is halved, and you add that number, rounded down
+        <p>This is a strategy you will only really employ if someone Gets in Your Guard. When you’ve choked up on your weapon, your weapon’s Measure is halved, and you add that number, rounded down
           to its Recovery. Your halved Measure is considered your new Measure for determining who attacks first and what
           Tactics can be employed on you as well.</p>
       </div>
@@ -855,9 +853,9 @@
         <div id='YoumayonlyuGmLEaLzbuv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoumayonlyuGmLEaLzbuv'"></app-bm-chapter-icon>
         <p>You may only use this Tactic as someone is going from Threatened to Engaged, in which case they're
-          automatically considered to be Fended Off. To full becoming engaged with you, they'll have to knock your
+          automatically considered to be Fended Off. To become fully engaged with you, they'll have to knock your
           weapon aside with a regular attack that deals no damage. Should they hit, they become fully engaged and can
-          attack freely again.</p>
+          attack as normal, although they need to wait their full weapon Recovery.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='fenodcaniobiofe' class='anchorTag'></div>
@@ -986,7 +984,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ShiftingisalJSVwAdbtiG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ShiftingisalJSVwAdbtiG'"></app-bm-chapter-icon>
-        <p>Shifting is also used to change Facings so if you’re engaged with an enemy and you Shift. And don’t forget
+        <p>Shifting is also used to change Facings. Don’t forget
           that you get those tasty bonuses from flanking your enemy if they don’t also Shift to face you.</p>
       </div>
       <div class="anchor">

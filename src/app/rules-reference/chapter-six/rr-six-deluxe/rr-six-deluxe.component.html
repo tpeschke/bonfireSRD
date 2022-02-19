@@ -243,11 +243,6 @@
         <h1>Shape Rudiment Descrptions</h1>
         <div class="underline"></div>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='NotethatallpeTLfUQlIa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NotethatallpeTLfUQlIa'"></app-bm-chapter-icon>
-        <p>Note that all shapes glow slightly with strange luminesce, alerting people where the spell is.</p>
-      </div>
       <div class="anchor">
         <div id="Circleheader" class="anchorTag"></div>
         <h2>Circle</h2>
@@ -288,9 +283,10 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='PeoplemaybeHjxYWGXrLM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PeoplemaybeHjxYWGXrLM'"></app-bm-chapter-icon>
-        <p>People may be hit multiple times, which simply counts as the spell Stacking on them, but the weird-adept may
+        <p>People may be hit multiple times, which simply counts as the spell Stacking on them. The weird-adept may
           try
-          and redirect the spell, causing it to skip over a person, but they take Stress equal to the number of times
+          and redirect the spell, causing it to skip over a person. This means that the target is randomly deteremined
+          again, although everyone in the Shape of the spell is still an option. They take Stress equal to the number of times
           they’ve done so.</p>
       </div>
       <div class="anchor">
@@ -396,7 +392,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='AnyonetouchedykoFauoOSR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnyonetouchedykoFauoOSR'"></app-bm-chapter-icon>
-        <p>Anyone touched by the sphere suffers the Effects of the spell for as long as sphere is on them. If it deals
+        <p>Anyone within 1 ft of the sphere suffers the Effects of the spell for as long as sphere is near them. This requires no attack roll. If it deals
           damage or inflicts Stress, this occurs every second the sphere is in contact with the person.</p>
       </div>
       <div class="anchor">
@@ -412,22 +408,26 @@
       <div class='paragraphShell anchor'>
         <div id='TherayisatnjgImtUfEl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TherayisatnjgImtUfEl'"></app-bm-chapter-icon>
-        <p>The ray is a thin line of magic that extends from the spell’s Origin up the 10 times the spell’s Range. It
-          manifests in a single instant, requiring a roll to hit, but those that it hits, suffer the full Effect of the
+        <p>The ray is a thin, straight line of magic that extends from the spell’s Origin up the 5 times the spell’s
+          Range. This is modified by Range Rudiments. It
+          manifests in a single instant, requiring a roll to hit. This cannot be Parried and equipment is also part of
+          the target. Those that it hits, suffer the full Effect of the
           spell for the duration of the spell.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfnoonewasswCfUTpBkD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfnoonewasswCfUTpBkD'"></app-bm-chapter-icon>
-        <p>If no one was hit and the spell is still being cast, the weird-adept can manifest another ray and try again
-          until
-          he hits or he decasts the spell, again the next second, but this does eat into the Interval.
+        <p>If no one was hit, the weird-adept can manifest another ray on each following second until either a target is
+          hit or the spell ends.
+          Note that the Interval is always ticking; a target struck on a follow-up attempt will be affected for a
+          shorter duration than one struck on the initial attempt.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='theshapcehicayiot' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theshapcehicayiot'"></app-bm-chapter-icon>
-        <p>The shaper can hit multiple viable targets with one Ray but he has to do so simulanteously.</p>
+        <p>The shaper can hit multiple viable targets with one Ray but he has to do so simulanteously. Non-viable
+          targets, besides equipment that the targets are wearing, block the Ray or provide Cover.</p>
       </div>
       <div class="anchor">
         <div id="Wallheader" class="anchorTag"></div>
@@ -561,7 +561,10 @@
           target
           is trying to resist being touched, the weird-adept needs to make an Unarmed attack against them: the
           weird-adept
-          is considered armed.</p>
+          is considered armed. This attack cannot be Parried and any equipment is considered a viable target, forcing
+          the defender to defender on 1 dice size lower.
+          Additionally, if the shaper is hit with an attack, the spell automatically hits the attacker; they receive no
+          defense roll.</p>
       </div>
       <div class="anchor">
         <div id="burstHeader" class="anchorTag"></div>
@@ -1698,7 +1701,8 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTThismovtJATVFDRhk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTThismovtJATVFDRhk'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> This moves everyone in the Shape of the spell in the direction
+        <p><strong class='orangeHeader'>Effect</strong> This moves everyone in the Shape of the spell in a horitzonal
+          direction
           the
           weird-adept wishes. They move at 10 ft / second - so they may try to move to counteract it, though it will
           obviously be less effective.</p>
@@ -4686,7 +4690,7 @@
         <p>At 1st level and as dedicated by your Archetypes, you’ll have the opportunity to acquire new Rudiments, which
           you
           can then use to shape spells. You’ll do so by picking a Rudiment table and then rolling on it. If you roll a
-          Rudiment you already have, you may select the Rudiment on either side of it. For Effects, you roll on the
+          Rudiment you already have, you can reroll for free until a new one comes up. For Effects, you roll on the
           Effects Rudiments table and then go to the corresponding sub-table. You may spend 1 CrP to reroll any of the
           tables, even during level up.</p>
       </div>
@@ -5354,12 +5358,12 @@
         <div id='MagicspellsasxezQGijFf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'MagicspellsasxezQGijFf'"></app-bm-chapter-icon>
         <p>Magic spells are complex things with more layers than an onion, so it’s not a simple task to teach another a
-          spell you know, even if they’re using the same magic system.</p>
+          Rudiment you know, even if they’re using the same magic system.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThefirststeppqeBVhyRSg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThefirststeppqeBVhyRSg'"></app-bm-chapter-icon>
-        <p>The first step is to be taught the basic of the spells. This is an Weirdcraft Skill Check with the penalty
+        <p>The first step is to be taught the basic of the Rudiment. This is an Weirdcraft Skill Check with the penalty
           being
           set by which type of magic is doing the teaching and learning.</p>
       </div>
@@ -5379,7 +5383,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfitssuccesxFyvKpuZNh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfitssuccesxFyvKpuZNh'"></app-bm-chapter-icon>
-        <p>If it’s successful, the person has the basics and may gain that spell as part of their normal level up
+        <p>If it’s successful, the person has the basics and may gain that Rudiment as part of their normal level up
           (instead
           of rolling a random spell) or they may learn is instantly, but this takes additional work, costing them CrP to
           the tune of 25 - the learner’s Int score, as they have to devote additional time to finally cementing it in
@@ -5396,7 +5400,7 @@
         <table class="all-centered table-center">
           <thead>
             <tr class="notSticky">
-              <th colspan="6">Spell Transfer</th>
+              <th colspan="6">Rudiment Transfer</th>
             </tr>
             <tr class="notSticky">
               <th colspan="6" class="with-side-header">Learning</th>
