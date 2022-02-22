@@ -256,7 +256,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheCircleisBGWgDqKZiH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheCircleisBGWgDqKZiH'"></app-bm-chapter-icon>
-        <p>The Circle is the most basic Shape. It extends from the Origin with a Radius equal to the Base Range of the
+        <p>The Circle is the most basic Shape. It extends from the Origin with a Radius equal to the modified Range of
+          the
           Effect. Anyone in the Circle is affected by the spell only as long as they stay within it. If it deals damage
           or inflicts Stress, this occurs
           on
@@ -286,7 +287,8 @@
         <p>People may be hit multiple times, which simply counts as the spell Stacking on them. The weird-adept may
           try
           and redirect the spell, causing it to skip over a person. This means that the target is randomly deteremined
-          again, although everyone in the Shape of the spell is still an option. They take Stress equal to the number of times
+          again, although everyone in the Shape of the spell is still an option. They take Stress equal to the number of
+          times
           they’ve done so.</p>
       </div>
       <div class="anchor">
@@ -311,7 +313,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheConecanazijOAPmNfk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheConecanazijOAPmNfk'"></app-bm-chapter-icon>
-        <p>The Cone can also be moved and shifted, rotating around its Origin, moving a facing every 3 seconds.</p>
+        <p>The Cone can be rotated around its Origin, moving a facing every 3 seconds.</p>
       </div>
       <div class="anchor">
         <div id="Personalheader" class="anchorTag"></div>
@@ -343,7 +345,7 @@
       <div class='paragraphShell anchor'>
         <div id='TheSalvoistykwPSLxJAb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheSalvoistykwPSLxJAb'"></app-bm-chapter-icon>
-        <p>The Salvo is the spell chucked up to 3 * its unmodified Range from the spell’s Origin. It requires a ranged
+        <p>The Salvo is the spell chucked up to 3 * its Range from the spell’s Origin. It requires a ranged
           attack
           to
           hit (though ignoring Cover) a single viable target. The shaper gains a bonus based on the Range Rudiment
@@ -387,13 +389,16 @@
         <p>The spell takes on the shape of a 2 ft diameter sphere that flies around, coming into being at the spell’s
           Origin. While the weird-adept has complete control over the direction with only minimal effort (so it doesn’t
           affect what else he’s doing), it still has some limitations. The first is that it only goes 10 ft / second, no
-          faster, no slower, and the weird-adept may only turn it 45 degrees every 3 seconds.</p>
+          faster, no slower, and the weird-adept may only turn it 45 degrees every 3 seconds. It also travels alone the
+          ground.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AnyonetouchedykoFauoOSR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnyonetouchedykoFauoOSR'"></app-bm-chapter-icon>
-        <p>Anyone within 1 ft of the sphere suffers the Effects of the spell for as long as sphere is near them. This requires no attack roll. If it deals
-          damage or inflicts Stress, this occurs every second the sphere is in contact with the person.</p>
+      <div class='paragraphShell anchor'>
+        <div id='thsecondisoj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thsecondisoj'"></app-bm-chapter-icon>
+        <p>The second is that the sphere needs to stay in the shaper's eyeline. If the eyeline is broken for most than 1
+          second, the sphere stops. Regaining view of the sphere will give the shaper control again.
+          Otherwise, the distance at which the sphere is controls is unlimited.
+        </p>
       </div>
       <div class="anchor">
         <div id="Rayheader" class="anchorTag"></div>
@@ -408,7 +413,7 @@
       <div class='paragraphShell anchor'>
         <div id='TherayisatnjgImtUfEl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TherayisatnjgImtUfEl'"></app-bm-chapter-icon>
-        <p>The ray is a thin, straight line of magic that extends from the spell’s Origin up the 5 times the spell’s
+        <p>The ray is a thin, straight line of magic that extends from the spell’s Origin up to the spell’s
           Range. This is modified by Range Rudiments. It
           manifests in a single instant, requiring a roll to hit. This cannot be Parried and equipment is also part of
           the target. Those that it hits, suffer the full Effect of the
@@ -426,8 +431,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='theshapcehicayiot' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theshapcehicayiot'"></app-bm-chapter-icon>
-        <p>The shaper can hit multiple viable targets with one Ray but he has to do so simulanteously. Non-viable
-          targets, besides equipment that the targets are wearing, block the Ray or provide Cover.</p>
+        <p>The shaper can hit multiple viable targets with one Ray if they're in a parallel line with each other but he
+          has to do so simulanteously. Non-viable
+          targets, besides equipment that the viable targets are wearing, block the Ray or provide Cover.</p>
       </div>
       <div class="anchor">
         <div id="Wallheader" class="anchorTag"></div>
@@ -1933,23 +1939,23 @@
         <app-bm-chapter-icon [id]="'ASERANGE25fnSmrAKihpY'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Base Range</strong> 25 ft</p>
       </div>
+
       <div class='paragraphShell anchor'>
         <div id='NTERVAL15MinJYOSxAbqAQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL15MinJYOSxAbqAQ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 15 Minutes</p>
+        <p><strong class='orangeHeader'>Interval</strong> 1 Hour</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTThisbribhzizOBlhW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTThisbribhzizOBlhW'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> This brightens the entire Shape of the spell with a supernatural
-          light by 1 illumination category, shaping away darkness and shadow.</p>
+        <p><strong class='orangeHeader'>Effect</strong> This creates a sphere of light within the Shape of the spell. It
+          has Normal Illumination in a 10 ft radius and Dim Illumination up to a 10 ft radius beyond that.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaserJfYAfTfDD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaserJfYAfTfDD'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the main illumination category by 1. Every 5 ft beyond
-          the
-          Shape, lowers it back down until the illumination category matches the rest of the surroundings.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the radius of the Normal Illumination by 5 ft and the
+          Dim radius by 10 ft.</p>
       </div>
       <div class="anchor">
         <div id="LiminalPlatfoheader" class="anchorTag"></div>
@@ -3343,15 +3349,18 @@
         <app-bm-chapter-icon [id]="'FFECTAllcreaSqIOckcVaV'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> All creatures in the Shape of the spell become frictionless and
           can
-          freely slip out grapples and bonds of any kind. The weird-adept can also affect items as long as they’re not
-          directly touching a person. Blades glance off armor and shields, giving them an additional point of Parry and
+          freely slip out grapples and bonds of any kind, giving a +3 bonus where appropriate. The weird-adept can also
+          affect items.
+          Blades and shields gain an additional point of Parry, armor takes less of an impact so gains, effectively, +1
+          DR, and
           projectiles are less affected by wind resistance (as long as they’re fired from within the spell’s Shape),
-          giving them a +1 damage.</p>
+          giving them a +1 damage. Additionally, all items gain +3 to their Breakage Threshold.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreasejJJFkyLJAa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreasejJJFkyLJAa'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase Parry and/or Damage by 1.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase standard bonus by 1 and increase Breakage Threshold by
+          3.</p>
       </div>
       <div class="anchor">
         <div id="Phasingheader" class="anchorTag"></div>
@@ -3414,19 +3423,19 @@
       <div class='paragraphShell anchor'>
         <div id='NTERVAL30secrWztRfOrzN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL30secrWztRfOrzN'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 30 seconds</p>
+        <p><strong class='orangeHeader'>Interval</strong> 1 Hour</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTEquipmenxKCbvlZrJn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTEquipmenxKCbvlZrJn'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> Equipment in the Shape of the spell becomes surrounded by a
-          repairing dweomer. This ignores penalties inflicted because of equipment breaks or damage up to -1 while the
+          repairing dweomer. This ignores 3 Wear while the
           spell is active.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseUUleLJQHzT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseUUleLJQHzT'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the penalties it ignores by 1.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the amount of Wear ignored by 3.</p>
       </div>
       <div class="anchor">
         <div id="Shatterheader" class="anchorTag"></div>
@@ -3538,7 +3547,8 @@
         <app-bm-chapter-icon [id]="'FFECTThisendqxWFkEBgJO'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> This endows a wall, magical or otherwise, within the Shape of
           the
-          spell to be scaled with a Climbing Check, moving up down or sideways freely, with their feet on the wall and
+          spell to be scaled without a Climbing Check, moving up down or sideways freely, with their feet on the wall
+          and
           their body out-stretched as if standing. Other than this looking very odd, normal physics apply. Their
           movement
           is limited, however: people moving on this wall can only move up to a Crawl.</p>
@@ -3588,7 +3598,8 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseJvWAThieWU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseJvWAThieWU'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the lowest damage dice by an additional size.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the current lowest damage dice by an additional size.
+        </p>
       </div>
       <div class="anchor">
         <div id="occultismefective" class="anchorTag"></div>
@@ -3626,21 +3637,28 @@
         <p><strong class='orangeHeader'>Effect</strong> When the defined type of being enters the Shape of the spell, it
           triggers the alarm, alerting everyone in the alarm range. The default definition is “Anything Humanoid” but
           this
-          can be modified to make it more specific once.</p>
+          can be modified to make it more specific (including animals or objects). This is determined when the spell is
+          first cast.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TACKMaketheooZIKSPBxK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKMaketheooZIKSPBxK'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Make the trigger condition more specific by 1 step. If two
-          definitions contradict one another, they are both cancelled out. You can also add another trigger condition.
+        <p><strong class='orangeHeader'>Stack</strong> Make the trigger condition more specific by adding an additional
+          qualifier with an "and", "or", or "but" conjuntion. If two
+          definitions contradict one another, they are both cancelled out. You can also add another new trigger
+          condition.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ForexampleZfMvUWIJcQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForexampleZfMvUWIJcQ'"></app-bm-chapter-icon>
-        <p>For example, “Anything Orcish'' counts as 1, “Anything that’s an orc” counts as 2, and “Anything Orish or
-          Elvish”
-          counts as 2 as well.</p>
+        <p>For example, "Anything Orcish" counts as 1, "Anything that’s an orc" counts as 2 (the difference being that
+          "orcish" would catch orcs, orc zombies, half-orcs, or anything that could be described as "orcish" like an orc
+          statue or a very pig-faced person or anything made by orcs, like an orcish weapon, while "an orc" would mean
+          an orc), and "Anything Orish or
+          Elvish"
+          counts as 2 as well. Additionally, you could say "Anything with 2 legs", which counts as 1, or "Anything Large
+          and not a giant" as 2.</p>
       </div>
       <div class="anchor">
         <div id="AncestralLoreheader" class="anchorTag"></div>
@@ -3675,8 +3693,10 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTBychannXWvZcmbwce' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTBychannXWvZcmbwce'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> By channeling the link in your blood, you can summon an ancestor
-          spirit to temporarily endow you with some of their knowledge. A person within the Shape of the spell increases
+        <p><strong class='orangeHeader'>Effect</strong> By channeling the link in your blood, you can summon an
+          ancestoral
+          memory to temporarily endow you with some ancient, subconscious knowledge. A person within the Shape of the
+          spell increases
           a
           Int, Wis, or Char based Skill Check by +3. Anyone within the Shape of the spell may “steal” this bonus - it is
           first come, first serve, regardless of what the weird-adept wishes - and it can be done after they roll.</p>
@@ -3764,12 +3784,14 @@
         <app-bm-chapter-icon [id]="'FFECTThisrevrIgbtEcJmG'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> This reveals 1 magical item, glyph, or weird-adept in the Shape
           of
-          the spell, causing them to glow brightly. If there are multiple, it reveals a random one.</p>
+          the spell, causing them to glow brightly. If there are multiple, it reveals a random one. If this spell has
+          been shaped multiple times, it will skip over already revealed items.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AdditionallyKGLEubDbyq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallyKGLEubDbyq'"></app-bm-chapter-icon>
-        <p>Additionally, they’ll be able to tell if any spells were cast in the general area. Though the specifics will
+        <p>Additionally, they’ll be able to tell if any spells were shaped in the general area. Though the specifics
+          will
           be
           unknown, they’ll be able to tell the Tradition.</p>
       </div>
@@ -3851,14 +3873,14 @@
         <app-bm-chapter-icon [id]="'FFECTAllwilliqVxtscrBt'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> All willing creatures in the Shape of the spell have their
           spirits
-          pushed out of their bodies as an incorporeal semi translucent form. For the first 10 seconds, the spirit is
+          pushed out of their bodies as an incorporeal semi-translucent form. For the first 10 seconds, the spirit is
           disoriented and is unable to locate their body.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='WhiletravelingNgpRkRNbv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhiletravelingNgpRkRNbv'"></app-bm-chapter-icon>
-        <p>While traveling in this form, the person is almost transparent, requiring a Heroic level Perception Check to
-          notice something off. The spirit can travel up to 10 miles per hour, unhampered by terrain. The astral
+        <p>While traveling in this form, the person is almost transparent, requiring a Perception Check vs +d20! to
+          notice something is off. The spirit can travel up to 10 miles per hour, unhampered by terrain. The astral
           projection can’t speak or interact with the Middle Realm; simply passing through walls and objects but stopped
           by magical wards and living beings.</p>
       </div>
@@ -3872,7 +3894,7 @@
       <div class='paragraphShell anchor'>
         <div id='WhileunderthXyKNPLTWBM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhileunderthXyKNPLTWBM'"></app-bm-chapter-icon>
-        <p>While under the influence of this spell, the person’s body is completely autonomous, with the weird-adept
+        <p>While under the influence of this spell, the person’s body is in a coma, with the weird-adept
           being
           completely unaware about what’s going on with his body unless he’s killed in which case he’s trapped as spirit
           between worlds, which is a bummer.</p>
@@ -3997,7 +4019,7 @@
         <app-bm-chapter-icon [id]="'FFECTByapowdKWdnqEPQC'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> By a powerful divination, everyone in the Shape of the spell can
           gain insight into a person, place, or thing within the Shape of the spell. If it is a place, the weird-adept
-          must be there, if a thing, it must be held, and if a person, an organic portion of that person must be held
+          must be there; if a thing, it must be held; and if a person, an organic portion of that person must be held
           (skin, hair, teeth, or so on).</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -4040,7 +4062,7 @@
         <app-bm-chapter-icon [id]="'FFECTThiscomtpdzeDKehm'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> This communicates a message that can be fit into the Interval of
           spell to any area within the Shape of the Spell. Additionally, it may be left behind in an area with a trigger
-          condition that will play the message if it’s met.</p>
+          condition that will play the message if it’s met. A left-behind message lasts a year and a day.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThismessageiLbkTtrYLzl' class='anchorTag'></div>
@@ -4508,6 +4530,13 @@
           the ‘stair’ and onto the Stair.</p>
       </div>
       <div class='paragraphShell anchor'>
+        <div id='youcantraveldownonothe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youcantraveldownonothe'"></app-bm-chapter-icon>
+        <p>You can travel down the Stairs but DON'T. Sending this message was important to us. We considered ourselves
+          to be a powerful culture. The danger is still present, in your time, as it was in ours.
+          The danger is to the body, and it can kill.</p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='EveryminuteofkVwQOfTOS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EveryminuteofkVwQOfTOS'"></app-bm-chapter-icon>
         <p>Every minute on the Stair allows the weird-adept to travel d12! yards if walking, d12! miles if jogging, or
@@ -4556,14 +4585,14 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTWithintELISvvcjet' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTWithintELISvvcjet'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> Within the Shape of the spell, lower 1 dice by 1 size, down to a
-          d0,
-          which means it's down purely to skill.</p>
+        <p><strong class='orangeHeader'>Effect</strong> Within the Shape of the spell, anyone that makes a Check of any
+          kind (not just Skill)
+          is subject to a Complication.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKShrink1yuDUFqPCHY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKShrink1yuDUFqPCHY'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Shrink 1 dice an additional size.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Add an additional Complication.</p>
       </div>
       <div class="anchor">
         <div id="Mislayheader" class="anchorTag"></div>
@@ -4603,7 +4632,7 @@
         <app-bm-chapter-icon [id]="'TACKAnadditiqkLXoKiywq'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> An additional Medium item (or 3 Small Items) is affected. This
           can be
-          increased to include Large items and so on. +3 vs any type of Perception Check.</p>
+          increased to include Large items and people and so on. +3 Difficulty vs any type of Perception Check.</p>
       </div>
       <div class="anchor">
         <div id="Rebalanceheader" class="anchorTag"></div>
