@@ -19,7 +19,8 @@ export class AppComponent {
 
   checkIfLoop () {
     if (this.videoplayed < 150) {
-      document.getElementById('video-background').load();
+      let videoplayer: any = document.getElementById('video-background')
+      videoplayer.load();
       ++this.videoplayed
     }
   }
