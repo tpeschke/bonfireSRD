@@ -1,0 +1,11 @@
+.defense-img-shell {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.defense-img-shell .miscImage {
+    width: 45%;
+}

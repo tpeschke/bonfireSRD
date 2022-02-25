@@ -90,7 +90,7 @@ export default [
                 sellback: '1.25 sc'
             },
             {
-                name: 'Torch, Tallow x5',
+                name: 'Torch x5',
                 size: '5S',
                 sellback: '1 sc'
             }

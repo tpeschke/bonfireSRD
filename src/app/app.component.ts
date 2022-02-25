@@ -14,5 +14,14 @@ export class AppComponent {
   constructor(
     private notRedux: NotReduxService,
   ){}
+
+  public videoplayed = 0;
+
+  checkIfLoop () {
+    if (this.videoplayed < 150) {
+      document.getElementById('video-background').load();
+      ++this.videoplayed
+    }
+  }
   
 }

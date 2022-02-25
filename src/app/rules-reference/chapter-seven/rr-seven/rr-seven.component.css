@@ -9,6 +9,10 @@
     justify-content: space-around;
 }
 
+.miscImage img {
+    width: 50%;
+}
+
 .exhaustion-table {
     width: 400px
 }
