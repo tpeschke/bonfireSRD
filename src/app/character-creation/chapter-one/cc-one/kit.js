@@ -72,7 +72,7 @@ export default [
             {
                 name: 'Chalk, 4", Box of 20',
                 size: 'S',
-                sellback: '.05 sc'
+                sellback: '.1 sc'
             },
             {
                 name: 'Grapnel Hook',
@@ -87,7 +87,7 @@ export default [
             {
                 name: 'Spike, Iron, 12"',
                 size: 'S',
-                sellback: '1.25 sc'
+                sellback: '1.2 sc'
             },
             {
                 name: 'Torch x5',
@@ -149,12 +149,12 @@ export default [
             {
                 name: 'Bag, Small',
                 size: 'S',
-                sellback: '0.24 sc'
+                sellback: '0.2 sc'
             },
             {
                 name: 'Rations, Dairy Cow, Hay, Daily x7',
                 size: '7M',
-                sellback: '1.61 sc'
+                sellback: '1.6 sc'
             }
         ]
     },
@@ -206,7 +206,7 @@ export default [
             {
                 name: 'Hat, Very Large, Rabbit Fur*',
                 size: 'n/a',
-                sellback: '.15 sc'
+                sellback: '.2 sc'
             },
             {
                 name: 'Rations, Person, Day x3',
@@ -273,7 +273,7 @@ export default [
             {
                 name: 'Chalk, 4", Box of 20',
                 size: 'S',
-                sellback: '.05 sc'
+                sellback: '.1 sc'
             },
             {
                 name: 'Grapnel Hook',
@@ -283,7 +283,7 @@ export default [
             {
                 name: 'Spike, Iron, 12"',
                 size: 'S',
-                sellback: '1.25 sc'
+                sellback: '1.2 sc'
             },
             {
                 name: 'Bag, Medium x3',
