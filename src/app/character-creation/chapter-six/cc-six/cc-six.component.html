@@ -2267,13 +2267,13 @@
       <div class='anchor'>
         <div id='torchelanijihf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'torchelanijihf'"></app-bm-chapter-icon>
-        <h2>Torches & Laterns</h2>
+        <h2>Torches & Lanterns</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='allftiochioehece' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'allftiochioehece'"></app-bm-chapter-icon>
-        <p> All torches and laterns last for 1 hour.</p>
+        <p> All torches and Lanterns last for 1 hour.</p>
       </div>
 
       <div class="anchor">
@@ -2515,6 +2515,37 @@
           </thead>
           <tbody>
             <tr *ngFor="let content of tables.ranged">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="anchor">
+        <div id="ammunition" class="anchorTag"></div>
+      </div>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Ammunition</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.munitions">
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
@@ -3214,7 +3245,7 @@
               <td>2d4!+d3!</td>
               <td>9</td>
               <td>S</td>
-              <td>4</td>
+              <td>3</td>
               <td>Yes</td>
             </tr>
             <tr>
@@ -3223,7 +3254,7 @@
               <td>2d6!</td>
               <td>7</td>
               <td>P</td>
-              <td>4</td>
+              <td>3</td>
               <td>Yes</td>
             </tr>
             <tr class='notSticky'>
@@ -3244,7 +3275,7 @@
               <td>d12!+d8!</td>
               <td>12</td>
               <td>P</td>
-              <td>5</td>
+              <td>4</td>
               <td>Yes</td>
             </tr>
             <tr>
@@ -3262,7 +3293,7 @@
               <td>d12!+d10!</td>
               <td>13</td>
               <td>P</td>
-              <td>5</td>
+              <td>4</td>
               <td>Yes</td>
             </tr>
             <tr>
@@ -3280,7 +3311,7 @@
               <td>d10!</td>
               <td>10</td>
               <td>P</td>
-              <td>5</td>
+              <td>3</td>
               <td> </td>
             </tr>
             <tr>
@@ -3301,7 +3332,7 @@
               <td>2d10!</td>
               <td>14</td>
               <td>P</td>
-              <td>4</td>
+              <td>5</td>
               <td>Yes</td>
             </tr>
             <tr>
@@ -3319,7 +3350,7 @@
               <td>d10!+d4!</td>
               <td>18</td>
               <td>P</td>
-              <td>5</td>
+              <td>4</td>
               <td>Yes</td>
             </tr>
           </tbody>
@@ -4154,7 +4185,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponcakjDMFggtZn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcakjDMFggtZn'"></app-bm-chapter-icon>
-        <p>This weapon can be used either in melee or as the Throwing Axe. Tier 2 Melee Weapon and Ranged Weapon
+        <p>This weapon can be used either in melee or as the Throwing Knife. Tier 2 Melee Weapon and Ranged Weapon
           Advanced
           Trainings are shared</p>
       </div>
@@ -4301,7 +4332,7 @@
       <div class='paragraphShell anchor'>
         <div id='ThisweaponcaWmeojaZlzq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcaWmeojaZlzq'"></app-bm-chapter-icon>
-        <p>This weapon can be used either in melee or as the Throwing Axe. Tier 2 Melee Weapon and Ranged Weapon
+        <p>This weapon can be used either in melee or as the Throwing Knife. Tier 2 Melee Weapon and Ranged Weapon
           Advanced
           Trainings are shared</p>
       </div>

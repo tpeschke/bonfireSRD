@@ -232,7 +232,7 @@
         <app-bm-chapter-icon [id]="'youcannotstop'"></app-bm-chapter-icon>
         <p>You cannot stop a spell that has been shaped until it reaches its Interval.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='ifyourestackingmup' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyourestackingmup'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stacking Different Effects & Interval</strong> If you're stacking multiple,
@@ -289,7 +289,7 @@
           and redirect the spell, causing it to skip over a person. This means that the target is randomly deteremined
           again, although everyone in the Shape of the spell is still an option. They take Stress equal to the number of
           times
-          they’ve done so.</p>
+          they’ve redirected the Chain each time they do so.</p>
       </div>
       <div class="anchor">
         <div id="Coneheader" class="anchorTag"></div>
@@ -313,7 +313,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheConecanazijOAPmNfk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheConecanazijOAPmNfk'"></app-bm-chapter-icon>
-        <p>The Cone can be rotated around its Origin, moving a facing every 3 seconds.</p>
+        <p>The Cone can be rotated around its Origin, moving a facing every 3 seconds. This takes no effort or concentration from the Weird-Adept.</p>
       </div>
       <div class="anchor">
         <div id="Personalheader" class="anchorTag"></div>
@@ -345,7 +345,7 @@
       <div class='paragraphShell anchor'>
         <div id='TheSalvoistykwPSLxJAb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheSalvoistykwPSLxJAb'"></app-bm-chapter-icon>
-        <p>The Salvo is the spell chucked up to 3 * its Range from a point within the spell’s Origin. It requires a ranged
+        <p>The Salvo is the spell chucked up to 3 * its unmodified Range from a point within the spell’s Origin. It requires a ranged
           attack
           to
           hit (though ignoring Cover) a single viable target. The shaper gains a bonus based on the Range Rudiment
@@ -431,9 +431,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='theshapcehicayiot' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theshapcehicayiot'"></app-bm-chapter-icon>
-        <p>The shaper can hit multiple viable targets with one Ray if they're in a parallel line with each other but he
-          has to do so simulanteously. Non-viable
-          targets, besides equipment that the viable targets are wearing, block the Ray or provide Cover.</p>
+        <p>The shaper can hit multiple viable targets with one Ray if they're in line with each other but he
+          has to do so simultaneously. Non-viable
+          targets, besides equipment that the viable targets are wearing, block the Ray or provide Cover: otherwise the Ray passes right through everything else.</p>
       </div>
       <div class="anchor">
         <div id="Wallheader" class="anchorTag"></div>
@@ -448,12 +448,12 @@
       <div class='paragraphShell anchor'>
         <div id='ThewallisaCXLYZHowIi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThewallisaCXLYZHowIi'"></app-bm-chapter-icon>
-        <p>The wall is a line that starts at a point within the spell’s Origin and extends up to its Range, but also into the air and
+        <p>The wall is a 1-ft-thick line that starts at a point within the spell’s Origin and extends up to its Range, but also into the air and
           below
           the ground up to 50 ft. It also doesn’t have to be a straight line, weaving, twisting and turning, however, no
           part of it can get within 5 ft of another part. It must also be anchored to the ground. The wall cannot be
           moved
-          once placed unless it has an Aura Origin.</p>
+          once placed unless it has an Aura Origin. There is no way to increase that height or thickness.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AnyonepassingjEgKLyIskD' class='anchorTag'></div>
@@ -1545,7 +1545,7 @@
         <div id='TACKYoucanbzceFIyoApp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKYoucanbzceFIyoApp'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> You can bind an additional object. If one is destroyed, all those
-          holding a token are transported back with their tokens also destroyed.</p>
+          with a token on their person are transported back with their tokens also destroyed.</p>
       </div>
       <div class="anchor">
         <div id="Lockdownheader" class="anchorTag"></div>
@@ -1794,6 +1794,11 @@
         <app-bm-chapter-icon [id]="'WhilethespelxCpSMOHAaA'"></app-bm-chapter-icon>
         <p>This can be taken at once (in a large fall) or piecemeal with small falls. Once all the fall damage has been
           negated, the spell is automatically uncast.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='whilneomnormal' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'whilneomnormal'"></app-bm-chapter-icon>
+        <p>While normal equipment that is being worn is affected, anything that much be specifically griped to keep it on your person isn't.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseqtiCJTXkQa' class='anchorTag'></div>
@@ -2367,7 +2372,7 @@
       <div class='paragraphShell anchor'>
         <div id='ASEDRAIN2LRfsjjBaqq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ASEDRAIN2LRfsjjBaqq'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Drain</strong> 2</p>
+        <p><strong class='orangeHeader'>Base Drain</strong> 1</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ASERANGE25fHmWxeGiTBT' class='anchorTag'></div>
@@ -2382,9 +2387,8 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTWhileApYklTOTwKRV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTWhileApYklTOTwKRV'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> While Appealing to another in a Confrontation, the minimum value
-          you
-          can get on a dice is 2.</p>
+        <p><strong class='orangeHeader'>Effect</strong> While Appealing to another in a Confrontation, those in the Shape of the spell have the minimum value
+          they can get on a roll increased to 2.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseakUDDDNZMP' class='anchorTag'></div>
@@ -2835,8 +2839,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKReducethSLnUpgNOKv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKReducethSLnUpgNOKv'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Reduce the Rank of the same or another Advanced Language Skill by
-          3.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Reduce the Rank by an additional +3.</p>
       </div>
       <div class="anchor">
         <div id="Vertigoheader" class="anchorTag"></div>
@@ -3707,7 +3710,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseDySxDikugW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseDySxDikugW'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the bonus by +2.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the bonus by +3.</p>
       </div>
       <div class="anchor">
         <div id="AugurSecretheader" class="anchorTag"></div>
@@ -4107,15 +4110,15 @@
         <app-bm-chapter-icon [id]="'FFECTWhileinurSAHGgUhI'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> While in the Shape of the spell, a person suffers a total
           brainfart
-          on a given subject. This can be a single Advanced Skill, Training, or spell, as dedicated by the weird-adept
+          on a given subject. This can be a single Advanced Skill, Training, or Rudiment, as dedicated by the weird-adept
           at
-          the time of shaping. They cannot use the Advanced Skill, benefit from the Training, or cast the spell. This
+          the time of shaping. They cannot use the Advanced Skill, benefit from the Training, or use that Rudiment. This
           affects all people the same.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKWipeanotLYpyziDkhC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKWipeanotLYpyziDkhC'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Wipe another Advanced Skill, Training, or spell.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Wipe another Advanced Skill, Training, or Rudiment.</p>
       </div>
       <div class="anchor">
         <div id="Scryheader" class="anchorTag"></div>
@@ -4533,18 +4536,18 @@
           the ‘stair’ and onto the Stair.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='youcantraveldownonothe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'youcantraveldownonothe'"></app-bm-chapter-icon>
-        <p>You can travel down the Stairs but DON'T. Sending this message was important to us. We considered ourselves
-          to be a powerful culture. The danger is still present, in your time, as it was in ours.
-          The danger is to the body, and it can kill.</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='EveryminuteofkVwQOfTOS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EveryminuteofkVwQOfTOS'"></app-bm-chapter-icon>
-        <p>Every minute on the Stair allows the weird-adept to travel d12! yards if walking, d12! miles if jogging, or
+        <p>Every minute traveling on the Stair allows the weird-adept to travel d12! yards if walking, d12! miles if jogging, or
           d12!
-          days’ travel if running, rolled secretly by the GM.</p>
+          days’ travel if running, rolled secretly by the GM. The direction is determined by the weird-adept when they enter the Stair and cannot be changed after that.
+          The Stair will not place them in an area that is already occupied by anything other than air and will find the nearest safe place to put them: if the weird-adept would be end up in the middle of a mountain, they instead materialize on the ground on top of it or in a cave, or if they would end up in a wall, the instead end up on a random side of it.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='youcantraveldownonothe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youcantraveldownonothe'"></app-bm-chapter-icon>
+        <p>You can travel down the Stairs but DON'T. Sending this message was important to us. We considered ourselves to be a powerful culture. The danger is still present, in your time, as it was in ours.
+          The danger is to the body, and it can kill.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='OtherscanbePufUqBJkUG' class='anchorTag'></div>
@@ -4672,7 +4675,8 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseMTDYhBMqew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseMTDYhBMqew'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the number of dice affected by 1 or change one an additional size.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the number of dice affected by 1 or change one an additional size. If all dice have 
+          been increased, this can increase one that's already been affected.</p>
       </div>
       <div class="anchor">
         <div id="Ricochetheader" class="anchorTag"></div>
