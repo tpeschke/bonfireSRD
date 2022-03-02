@@ -149,7 +149,7 @@ export default [
             {
                 name: 'Bag, Small',
                 size: 'S',
-                sellback: '0.2 sc'
+                sellback: '5 sc'
             },
             {
                 name: 'Rations, Dairy Cow, Hay, Daily x7',
@@ -288,7 +288,7 @@ export default [
             {
                 name: 'Bag, Medium x3',
                 size: '3S',
-                sellback: '19.6 sc'
+                sellback: '19.5 sc'
             },
             {
                 name: 'Lock Picks',
