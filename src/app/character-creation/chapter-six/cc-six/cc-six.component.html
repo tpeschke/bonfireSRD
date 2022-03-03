@@ -1553,6 +1553,38 @@
         <p>Subtract Presence in cc from price/day.</p>
       </div>
 
+      
+      <div class="anchor">
+        <div id="muscialintrudments" class="anchorTag"></div>
+      </div>
+      <div class="table-overflow">
+        <table class="all-centered first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="7">Musical Instruments</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="2">Name</th>
+              <th>Size</th>
+              <th>Source</th>
+              <th>Local Market</th>
+              <th>Nearby Market</th>
+              <th>Distant City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let content of tables.intruments">
+              <td colspan="2">{{content.name}}</td>
+              <td>{{content.size}}</td>
+              <td>{{content.price}}</td>
+              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
+              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="anchor">
         <div id="poisonsandtoxins" class="anchorTag"></div>
       </div>
@@ -1849,10 +1881,28 @@
         <div id="Sizeheader" class="anchorTag"></div>
         <h3>Size </h3>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ThisindicatesluctEZCTxz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisindicatesluctEZCTxz'"></app-bm-chapter-icon>
         <p>This indicates the general size of a shield. It also determines how tough your shield is.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='shieldstwoiesie' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'shieldstwoiesie'"></app-bm-chapter-icon>
+        <p>Shields 2 sizes larger must be wielded with 2 hands and those 3 sizes greater must be wielded with 2 hands and
+          the
+          wielder gains a -2 to their Fatigue (meaning that if you would normally become Fatigued at Critical, you'd
+          instead become Fatigued at Bloodied).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='howeijvusingihie' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'howeijvusingihie'"></app-bm-chapter-icon>
+        <p>However, using a shield as a Small creature does have its benefits: increase the Cover die by 1 size. For bucklers and clothe shields, add a d4!.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifyourjioejiofelarge' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyourjioejiofelarge'"></app-bm-chapter-icon>
+        <p>If you're a Large creature, lower the Cover die by 1 size. You get no Cover from bucklers.</p>
       </div>
       <div class="anchor">
         <div id="DRheader" class="anchorTag"></div>
@@ -1885,7 +1935,8 @@
         <app-bm-chapter-icon [id]="'SomeshieldsaLrbadURSYA'"></app-bm-chapter-icon>
         <p>Some shields are balanced better than others and that allows you to deflect blows more effectively. This
           number
-          is the shield’s Parry Threshold. This is overrides by your weapon’s Parry regardless of which is higher. Parrying with a shield subjects it
+          is the shield’s Parry Threshold. This is overrides by your weapon’s Parry regardless of which is higher.
+          Parrying with a shield subjects it
           to
           the Shield Breakage rules.</p>
       </div>
@@ -2117,7 +2168,7 @@
         <div id="Bucklerheader" class="anchorTag"></div>
         <h3>Buckler </h3>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ThebucklerisijNJwPjTNE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThebucklerisijNJwPjTNE'"></app-bm-chapter-icon>
         <p>The buckler is a lightweight shield which relies more on parrying blows than outright stopping them. The
@@ -2126,17 +2177,27 @@
           while wielding two handed weapons. You receive no bonuses when doing this, but it means that if you do switch
           over to a one-handed weapon, you instantly get the buckler’s bonus.</p>
       </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thishieldjibuckler' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thishieldjibuckler'"></app-bm-chapter-icon>
+        <p>This shield is gripped instead of being strapped in: it only takes 1d4 seconds to equip.</p>
+      </div>
       <div class="anchor">
         <div id="FigureEightheader" class="anchorTag"></div>
         <h3>Figure Eight </h3>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ThisshieldisEtIbMjLRCk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisshieldisEtIbMjLRCk'"></app-bm-chapter-icon>
         <p>This shield is designed specifically for phalanx or shield wall tactics. This gives a +2 Parry and a Cover of
           d4
           to anyone fighting on either side of you. This stacks with any Parry or Cover that they have from either their
           weapon or shields.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thishieldjifighrighg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thishieldjifighrighg'"></app-bm-chapter-icon>
+        <p>This shield is gripped instead of being strapped in: it only takes 2d4 seconds to equip.</p>
       </div>
       <div class="anchor">
         <div id="Paviseheader" class="anchorTag"></div>
@@ -2165,41 +2226,15 @@
         <p>This shield was meant for hitting your opponent, trying to throw them off guard. On a natural roll of 20 on
           Defense or an Unarmed Strike, you delay your opponent’s next attack by 5 seconds. </p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='theyalsogethig' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theyalsogethig'"></app-bm-chapter-icon>
         <p>They also delay the enemy an additional d4! seconds if used to perform a strike in unarmed combat.</p>
       </div>
-
-      <div class="anchor">
-        <div id="substancesalchmeical" class="anchorTag"></div>
-      </div>
-      <div class="table-overflow">
-        <table class="all-centered first-left">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="7">Substances, Alchemical</th>
-            </tr>
-            <tr class="notSticky">
-              <th colspan="2">Name</th>
-              <th>Size</th>
-              <th>Source</th>
-              <th>Local Market</th>
-              <th>Nearby Market</th>
-              <th>Distant City</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let content of tables.alchemical">
-              <td colspan="2">{{content.name}}</td>
-              <td>{{content.size}}</td>
-              <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thishieldjiroundshioed' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thishieldjiroundshioed'"></app-bm-chapter-icon>
+        <p>This shield is gripped instead of being strapped in: it only takes 2d4 seconds to equip.</p>
       </div>
 
       <div class="anchor">
@@ -2231,6 +2266,21 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class='anchor'>
+        <div id='ropeopiuindn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ropeopiuindn'"></app-bm-chapter-icon>
+        <h2>Rope Poundage & Snapping</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='alllreopesione' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'alllreopesione'"></app-bm-chapter-icon>
+        <p> All ropes have a max poundage they can hold, noted like this: (250#). Should a rope have that much weight
+          on it at one time, it comes under strain, gaining 1 Wear every second. Should it reach 20 Wear, it
+          automatically snaps.
+        </p>
       </div>
 
       <div class="anchor">
@@ -2619,7 +2669,8 @@
       <div class='paragraphShell anchor'>
         <div id='ThisisthewepXVkfvDCpS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisisthewepXVkfvDCpS'"></app-bm-chapter-icon>
-        <p>This is the weapon’s Parry Threshold. This is overridden by your shield’s Parry if you’re using one, regardless of which is higher. </p>
+        <p>This is the weapon’s Parry Threshold. This is overridden by your shield’s Parry if you’re using one,
+          regardless of which is higher. </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AsuccessfulpbouuMEEqnP' class='anchorTag'></div>
@@ -3627,7 +3678,7 @@
           </tbody>
         </table>
 
-        
+
         <table class="all-centered">
           <thead>
             <tr class="notSticky">
@@ -3993,8 +4044,10 @@
       <div class='paragraphShell anchor'>
         <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
-        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait that the person has, which 
-          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they have been in that involves firearms.
+        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait that the
+          person has, which
+          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they
+          have been in that involves firearms.
           It is also completely
           negated if they have Basic Weapon Training in any firearm.</p>
       </div>
@@ -4064,8 +4117,10 @@
       <div class='paragraphShell anchor'>
         <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
-        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait that the person has, which 
-          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they have been in that involves firearms.
+        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait that the
+          person has, which
+          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they
+          have been in that involves firearms.
           It is also completely
           negated if they have Basic Weapon Training in any firearm.</p>
       </div>
@@ -4120,8 +4175,10 @@
       <div class='paragraphShell anchor'>
         <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
-        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait that the person has, which 
-          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they have been in that involves firearms.
+        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait that the
+          person has, which
+          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they
+          have been in that involves firearms.
           It is also completely
           negated if they have Basic Weapon Training in any firearm.</p>
       </div>
@@ -4210,9 +4267,10 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponisBHNjYMbpED' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponisBHNjYMbpED'"></app-bm-chapter-icon>
-        <p>This weapon is designed for use on horseback. When mounted, and moving above a walk, it gaints +3d8! damage.</p>
+        <p>This weapon is designed for use on horseback. When mounted, and moving above a walk, it gaints +3d8! damage.
+        </p>
       </div>
-      
+
       <div class="anchor">
         <div id="latchetcrowssbo" class="anchorTag"></div>
         <h3>Latchet Crossbow </h3>
@@ -4230,7 +4288,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='thelatchetcrowbons' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thelatchetcrowbons'"></app-bm-chapter-icon>
-        <p>The latchet crossbow packs a punch: its damage is considered to be dealt on 1 die for the purposes of /DR.</p>
+        <p>The latchet crossbow packs a punch: its damage is considered to be dealt on 1 die for the purposes of /DR.
+        </p>
       </div>
       <div class="anchor">
         <div id="LochaberAxeheader" class="anchorTag"></div>
