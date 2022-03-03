@@ -142,6 +142,433 @@
       </div>
       <div class="anchor">
         <div id="yesnotmajiojfe" class="anchorTag"></div>
+        <h3>What is the Starting Difficulty?</h3>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='platjeilwirejire' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
+        <p>Setting the difficulty is a bit of a challenge in-and-of itself so below is a table that gives you the relative difficulty based on the dice size you're selecting 
+          and the Rank of the Skill. There's also a small table that translates that into a % chance of success.</p>
+      </div>
+
+      <div class="table-overflow">
+        <table class="all-centered">
+          <thead>
+            <tr class="notSticky"> 
+              <th colspan="23">Skill Difficulty Matrix</th>
+            </tr>
+            <tr class="notSticky">
+              <th colspan="23" class="with-side-header">Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="side-header-coloring">
+              <th rowspan="20"><br><br><br><br>Difficulty</th>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="au">Auto</td>
+              <td class="au">Auto</td>
+            </tr>
+            <tr>
+              <td>d4!</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="au">Auto</td>
+            </tr>
+            <tr>
+              <td>d6!</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+            </tr>
+            <tr>
+              <td>d8!</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+            </tr>
+            <tr>
+              <td>d10!</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+            </tr>
+            <tr>
+              <td>d12!</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+            </tr>
+            <tr>
+              <td>d20!</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+              <td class="t">Trivial</td>
+              <td class="t">Trivial</td>
+            </tr>
+            <tr>
+              <td>d20!+d4!</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+              <td class="e">Easy</td>
+            </tr>
+            <tr>
+              <td>d20!+d6!</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="e">Easy</td>
+            </tr>
+            <tr>
+              <td>d20!+d8!</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+            </tr>
+            <tr>
+              <td>d20!+d10!</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+              <td class="av">Ave.</td>
+            </tr>
+            <tr>
+              <td>d20!+d12!</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="d">Diffic.</td>
+              <td class="av">Ave.</td>
+            </tr>
+            <tr>
+              <td>2d20!</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="i">Impos.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="c">Challen.</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="h">Hard</td>
+              <td class="d">Diffic.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <table class="float">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Color Key</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Color</th>
+            <th>Chance of Success</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="au">Automatic</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td class="t">Trivial</td>
+            <td>80%-99%</td>
+          </tr>
+          <tr>
+            <td class="e">Easy</td>
+            <td>70%-79%</td>
+          </tr>
+          <tr>
+            <td class="av">Average</td>
+            <td>60%-69%</td>
+          </tr>
+          <tr>
+            <td class="d">Difficult</td>
+            <td>45%-59%</td>
+          </tr>
+          <tr>
+            <td class="h">Hard</td>
+            <td>25%-44%</td>
+          </tr>
+          <tr>
+            <td class="c">Challenging</td>
+            <td>10%-24%</td>
+          </tr>
+          <tr>
+            <td class="i">Impossible</td>
+            <td>0%-9%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='paragraphShell anchor'>
+        <div id='platjeilwirejire' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
+        <p>Keep this in mind: this is the difficulty at its worst, if the players do nothing to even their odds.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='platjeilwirejire' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
+        <p>So, if determining the difficulty of climbing a wall, assume that the players are doing it freehanded with no help.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='platjeilwirejire' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
+        <p>This is because those things that would change the difficulty are already considered via the Strategies below so you don't have to consently 
+          change, consider, or modify the difficulty based on the players actions, except in one case, which is talked about in the next section.</p>
+      </div>
+      <div class="anchor">
+        <div id="yesnotmajiojfe" class="anchorTag"></div>
         <h3>Yes, No, and Maybe Skills</h3>
       </div>
       <div class='paragraphShell anchor'>

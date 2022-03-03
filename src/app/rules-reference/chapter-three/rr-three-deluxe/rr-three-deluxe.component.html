@@ -50,35 +50,119 @@
       </div>
       <div class="anchor">
         <div id="StartingInitiheader" class="anchorTag"></div>
-        <h2>Starting Initiative & Surprise</h2>
+        <h2>Initiative</h2>
         <div class="underline-sub"></div>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <table class="float">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Initiative Die</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Dice</th>
+            <th>Readiness</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>d12</td>
+            <td>Not Ready at All</td>
+          </tr>
+          <tr>
+            <td>d8</td>
+            <td>Default</td>
+          </tr>
+          <tr>
+            <td>d4</td>
+            <td>Within-the-Hour Combat</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='paragraphShell anchor'>
         <div id='EachsiderollsFbjPHlGWp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EachsiderollsFbjPHlGWp'"></app-bm-chapter-icon>
-        <p>Each side rolls an initiative die. The lower the die, the more prepared they are for the attack, though
-          typically the instigator goes on second 1. Those that know the battle is about to start (like being warned by
-          a predetermined sign) use a d4, and the completely surprised receive a d20, while everyone else typically
-          falls on a die between that.</p>
+        <p>Each side rolls an initiative die. The lower the die, the more prepared they are for the attack, with the instigator going on second 1. The initiative’s die is based on the general combat preparedness of the company, which is generally based on how likely they think danger is.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='ThosewhoseinnOJrpMFbrV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThosewhoseinnOJrpMFbrV'"></app-bm-chapter-icon>
-        <p>Those whose initiative hasn’t come up are surprised and continue to do what they were doing as if nothing is
-          wrong. They can take no other actions: they’re completely unaware of what’s going on.</p>
+        <p>The table provided gives you the extreme ends of the spectrum as well as the default but the initiative die can be anywhere in between.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class="anchor">
+        <div id="surpriseheader" class="anchorTag"></div>
+        <h3>Surprise</h3>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='ShouldsomeoneVMDMCGVQfp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ShouldsomeoneVMDMCGVQfp'"></app-bm-chapter-icon>
-        <p>Should someone attack them during this time, they are completely helpless and so their defense die is a d8!.
-        </p>
+        <p>Those whose initiative hasn't come up are surprised and, on second 1 of the combat can choose to do one of three things: contine what they’re doing, stand still (if they’re walking or jogging), or flee away from the danger.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='wheatherhitorjicho' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'wheatherhitorjicho'"></app-bm-chapter-icon>
+        <p>Whatever they choose, they have to keep doing that action until their Initiative comes up: They can take no other actions, not even to defend themselves, thus they roll their defense die on a d8!.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfthesurprisHXnjrzJyaa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfthesurprisHXnjrzJyaa'"></app-bm-chapter-icon>
-        <p>If the surprised person is hit, the pain quickly brings them into the reality of the situation, and they may
-          act 2 seconds later (or before that if their initiative was the next second).</p>
+        <p>If the surprised person is hit, the pain quickly brings them into the reality of the situation, and they may act 2 seconds later (or before that if their initiative was the next second).</p>
       </div>
+      <div class="anchor">
+        <div id="ambushheader" class="anchorTag"></div>
+        <h3>Ambushes</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='surprisehappensrea' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'surprisehappensrea'"></app-bm-chapter-icon>
+        <p>Surprise happens regardless of whether or not the danger was visible and known to the characters but in cases of ambush, where the danger is unknown until suddenly its not, the GM can call for a Listening Check, which represents characters cluing into subtle clues that the manure is about to hit the windmill.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='enchcnboon' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'enchcnboon'"></app-bm-chapter-icon>
+        <p>Each Boon gives a -2 to the Initiative roll while each Complication gives a +2 to the roll.</p>
+      </div>
+
+      <div class='paragraphShell anchor'>
+        <div id='foremapkelos' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'foremapkelos'"></app-bm-chapter-icon>
+        <p class="italic">For example; Kelso, Bran Redhand, and Dalsini the Odd are traveling through the wilderness. Kelso, being clever, asked about the route they were traveling before and got rumors that there’s been an uptick in bandit attacks in the area so the company is wary while traveling.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thiehseconid' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thiehseconid'"></app-bm-chapter-icon>
+        <p class="italic">Their second day out, they cross a bridge; unknowingly, the ambush point of the single bandit that’s been causing so much trouble. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='theyrnoeiojf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'theyrnoeiojf'"></app-bm-chapter-icon>
+        <p class="italic">They’re not taking care to be particularly quiet or stealthy as they’re traveling by road so the bandit, in his hiding place, sees them coming from awhile away. As they start to cross the bridge (Redhand in front, Kelso in back, and Dalsini in the middle), the bandit sneaks out and attacks Kelso from behind in an ambush.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thebadnitidgoes' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thebadnitidgoes'"></app-bm-chapter-icon>
+        <p class="italic">The bandit goes on count 1 with their attack since he's completely ready for them. The company would normally roll d8s since they're traveling in a generally dangerous place, however, because they're on the lookout for bandit attacks, they instead roll on d6s since, you know, they're getting attacked by a bandit.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='redhandhasie' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'redhandhasie'"></app-bm-chapter-icon>
+        <p class="italic">Redhand has a +2 Initiative Modifier but got 2 Boons on his Perception Check so, when he rolls a 1, his total is -1, so he goes on second 1. Dalsini has a +0 Initiative Modifier and got 1 Boon on his Check and his roll was 6, so he goes on second 4.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='keklsogottwo' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'keklsogottwo'"></app-bm-chapter-icon>
+        <p class="italic">Finally, Kelso got 2 Complications on his Check and with an -2 Initiative Modifier and roll of 6, he goes on second 8, although, if the bandit hits, he’ll be able to act on second 3. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='onsecononekelo' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'onsecononekelo'"></app-bm-chapter-icon>
+        <p class="italic">On second 1, Kelso stops to figure out what’s going on until his initiative, while Dalsini, being a weak weird-adept, decides he’s going to run for it, so starts running towards the other end of the bridge - away from the present danger.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='howeleapsionit' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'howeleapsionit'"></app-bm-chapter-icon>
+        <p class="italic">Redhand, however, leaps into action on second 1, drawing his sword as he rushes to his friend’s aid.</p>
+      </div>
+
       <div class="anchor">
         <div id="CombatBasicsheader" class="anchorTag"></div>
         <h1>Combat Basics</h1>
