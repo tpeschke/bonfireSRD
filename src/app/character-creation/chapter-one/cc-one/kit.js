@@ -60,8 +60,8 @@ export default [
                 sellback: '2.6 sc'
             },
             {
-                name: 'Rope, Hemp, 1/2" (250#), 100 ft',
-                size: 'M',
+                name: 'Rope, Hemp, 1/2" (250#), 50 ft x2',
+                size: '2M',
                 sellback: '26 sc'
             },
             {
@@ -266,8 +266,8 @@ export default [
                 sellback: '0.3 sc'
             },
             {
-                name: 'Rope, Hemp, 1/2" (250#), 100 ft',
-                size: 'M',
+                name: 'Rope, Hemp, 1/2" (250#), 50 ft x2',
+                size: '2M',
                 sellback: '26 sc'
             },
             {

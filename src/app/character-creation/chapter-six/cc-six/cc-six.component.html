@@ -291,13 +291,17 @@
       <div class='paragraphShell anchor'>
         <div id='YoucanhaveaUTEsEWXjrj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoucanhaveaUTEsEWXjrj'"></app-bm-chapter-icon>
-        <p>You can have additional Traits on a single weapon and/or increase the dice size of Traits you already have.
-          Increasing the power simply increases the size of the bonus dice you get.</p>
+        <p>You can have additional Traits on a single item, increase the Rank of Traits you already have and/or add new ones (as long as they make sense and start at Rank 1).</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='EverytimeyouFByBQYefnL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EverytimeyouFByBQYefnL'"></app-bm-chapter-icon>
-        <p>Every time you do so adds an extra 50% the cost of the item.</p>
+        <p>Every time you do so adds an extra 50% the cost of the item. This is compounded and is calculated using the total Ranks of all Traits, so getting a +2 .</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='sogetinghiaojice' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sogetinghiaojice'"></app-bm-chapter-icon>
+        <p class="italic">So getting a Finely Tuned (+2) Mandolin would cost 135 sc ( ( 60 * 1.5 ) * 1.5) while getting one that is Finely Tuned (+1) and Enlaid (+1) would cost the same.</p>
       </div>
       <div class="anchor">
         <div id="Wearheader" class="anchorTag"></div>
@@ -1383,9 +1387,9 @@
               <td>Coin Purse, 3"x4"</td>
               <td>*</td>
               <td>S</td>
-              <td>0.35</td>
-              <td>0.53</td>
-              <td>1.05</td>
+              <td>0.4</td>
+              <td>0.5</td>
+              <td>1</td>
               <td>2.1</td>
             </tr>
             <tr>
@@ -1769,7 +1773,7 @@
             </tr>
             <tr>
               <td>Stabling Horse, /day, w/ hay, No Grain</td>
-              <td>0.75</td>
+              <td>0.7</td>
               <td>1</td>
             </tr>
             <tr>
@@ -2173,14 +2177,23 @@
         <app-bm-chapter-icon [id]="'ThebucklerisijNJwPjTNE'"></app-bm-chapter-icon>
         <p>The buckler is a lightweight shield which relies more on parrying blows than outright stopping them. The
           buckler
-          also has the added benefit of being rather small with almost no weight, allowing it to be worn but not used
+          also has the added benefit of being rather small with almost no weight, allowing it to be held but not used
           while wielding two handed weapons. You receive no bonuses when doing this, but it means that if you do switch
           over to a one-handed weapon, you instantly get the buckler’s bonus.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='thishieldjibuckler' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thishieldjibuckler'"></app-bm-chapter-icon>
-        <p>This shield is gripped instead of being strapped in: it only takes 1d4 seconds to equip.</p>
+        <p>This shield is gripped instead of being strapped in: it only takes 1 second to ready.</p>
+      </div>
+      <div class="anchor">
+        <div id="Clotheheader" class="anchorTag"></div>
+        <h3>Clothe </h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='clothisheild' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'clothisheild'"></app-bm-chapter-icon>
+        <p>Clothe shields aren't official shields: they're improvised by wrapping a clothe (a tunic works) around the wrist.</p>
       </div>
       <div class="anchor">
         <div id="FigureEightheader" class="anchorTag"></div>
@@ -2197,7 +2210,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='thishieldjifighrighg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thishieldjifighrighg'"></app-bm-chapter-icon>
-        <p>This shield is gripped instead of being strapped in: it only takes 2d4 seconds to equip.</p>
+        <p>This shield is gripped instead of being strapped in: it only takes 2 seconds to ready.</p>
       </div>
       <div class="anchor">
         <div id="Paviseheader" class="anchorTag"></div>
@@ -2224,7 +2237,7 @@
         <div id='ThisshieldwacvHeailTlm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisshieldwacvHeailTlm'"></app-bm-chapter-icon>
         <p>This shield was meant for hitting your opponent, trying to throw them off guard. On a natural roll of 20 on
-          Defense or an Unarmed Strike, you delay your opponent’s next attack by 5 seconds. </p>
+          Defense or an Unarmed Strike, you delay your opponent’s next attack by d4!+5 seconds. </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='theyalsogethig' class='anchorTag'></div>
@@ -2234,7 +2247,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='thishieldjiroundshioed' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thishieldjiroundshioed'"></app-bm-chapter-icon>
-        <p>This shield is gripped instead of being strapped in: it only takes 2d4 seconds to equip.</p>
+        <p>This shield is gripped instead of being strapped in: it only takes 2 seconds to ready.</p>
       </div>
 
       <div class="anchor">
@@ -3147,7 +3160,7 @@
             <tr>
               <td>Bludgeon</td>
               <td>S</td>
-              <td>d10!</td>
+              <td>d8!</td>
               <td>7</td>
               <td>C</td>
               <td>0</td>
@@ -4403,13 +4416,6 @@
       <div class="anchor">
         <div id="Unarmedheader" class="anchorTag"></div>
         <h3>Unarmed </h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisisthechwmxIqOQEZA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisisthechwmxIqOQEZA'"></app-bm-chapter-icon>
-        <p>This is the character’s bare knuckles and so they pose less of a threat to those attacking with a weapon,
-          meaning
-          attackers double their weapon’s Recovery against unarmed opponents.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='OnexplosionsUaGKTypzAx' class='anchorTag'></div>

@@ -881,7 +881,7 @@
         <app-bm-chapter-icon [id]="'FFECTThehighnLoFpoUsgg'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> The higher they are, the harder they fall. This increases the
           effective fall distance within the Shape of the spell by 10 ft. Should anyone die because of a fall within the
-          Area of Effect, they burst into flames as part of their death. Note that, this counts for even the most minor
+          Shape of the spell, they burst into flames as part of their death. Note that, this counts for even the most minor
           changes in evaluation, so someone’s footing becoming uneven suddenly does the damage of a 10 ft fall.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
@@ -917,7 +917,7 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTAllcreaFlgznkEemP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTAllcreaFlgznkEemP'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> All creatures in the Area of Effect become lethargic, reducing
+        <p><strong class='orangeHeader'>Effect</strong> All creatures in the Shape of the spell become lethargic, reducing
           their
           movement speed by 2.5 ft / second.</p>
       </div>
@@ -2274,49 +2274,6 @@
         <div id='TACKIncreaseTylwRnsgFy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseTylwRnsgFy'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> Increase the damage by a d6!.</p>
-      </div>
-      <div class="anchor">
-        <div id="Webheader" class="anchorTag"></div>
-        <h2>Web</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RADITIONCharmJdCizOiZXc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RADITIONCharmJdCizOiZXc'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Tradition</strong> Charm</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ASEDRAIN1BvGCsJbQVL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ASEDRAIN1BvGCsJbQVL'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Drain</strong> 1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ASERANGE15fLUdyVaMsmt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ASERANGE15fLUdyVaMsmt'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Range</strong> 15 ft</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='NTERVAL5MinuyGOttWPjiI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NTERVAL5MinuyGOttWPjiI'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 5 Minutes</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='FFECTThiscovRSiOTZEjIV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'FFECTThiscovRSiOTZEjIV'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> This covers the Shape of the spell in a thin gossamer of sticky,
-          arcane proto-substance that is similar to spider web but is indestructible. This dweomer web restricts movement down to Strolling speed.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AnyonewishingmYhzoZewcY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnyonewishingmYhzoZewcY'"></app-bm-chapter-icon>
-        <p>Anyone wishing to move faster can make an Endurance Check vs d20! +5 for each movement category above a walk. If they fail, they can 
-          attempt another try every 5 seconds of continuous movement.
-        </p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='TACKIncreaseKvTrHJXonc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TACKIncreaseKvTrHJXonc'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the difficulty of the Strength check by +5.</p>
       </div>
       <div class="anchor">
         <div id="fakniyrfeeft" class="anchorTag"></div>
@@ -3694,7 +3651,7 @@
       <div class='paragraphShell anchor'>
         <div id='NTERVAL3SkilHzflcfIHMQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL3SkilHzflcfIHMQ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 3 Skill Checks or 6 Hours, whichever comes first</p>
+        <p><strong class='orangeHeader'>Interval</strong> 3 Skill Checks or 6 Hours, whichever comes first. Renewing the Interval for this Effect either increases the number of Skill Checks by 3 or the time window by 6 hours. The renewal happens when one of the criteria met: either running out of questions or running out of time.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTBychannXWvZcmbwce' class='anchorTag'></div>
@@ -3704,7 +3661,7 @@
           memory to temporarily endow you with some ancient, subconscious knowledge. A person within the Shape of the
           spell increases
           a
-          Int, Wis, or Char based Skill Check by +3. Anyone within the Shape of the spell may “steal” this bonus - it is
+          Int, Wis, or Pre based Skill Check by +3. Anyone within the Shape of the spell may “steal” this bonus - it is
           first come, first serve, regardless of what the weird-adept wishes - and it can be done after they roll.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
@@ -5076,40 +5033,36 @@
               <td>Hermetic Dweomer</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>9 - 10</td>
               <td>Illuminate</td>
             </tr>
             <tr>
-              <td>10</td>
+              <td>11</td>
               <td>Liminal Platform</td>
             </tr>
             <tr>
-              <td>11 - 12</td>
+              <td>12 - 14</td>
               <td>Magic Circle</td>
             </tr>
             <tr>
-              <td>13</td>
+              <td>15</td>
               <td>Shock</td>
             </tr>
             <tr>
-              <td>14</td>
+              <td>16</td>
               <td>Silence</td>
             </tr>
             <tr>
-              <td>15 - 16</td>
+              <td>17 - 18</td>
               <td>Smokescreen</td>
             </tr>
             <tr>
-              <td>17</td>
+              <td>19</td>
               <td>Telekinesis</td>
             </tr>
             <tr>
-              <td>18</td>
+              <td>20</td>
               <td>Turn</td>
-            </tr>
-            <tr>
-              <td>19 - 20</td>
-              <td>Web</td>
             </tr>
           </tbody>
         </table>
