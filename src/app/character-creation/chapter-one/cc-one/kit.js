@@ -166,7 +166,7 @@ export default [
             {
                 name: 'Gambeson*',
                 size: '*',
-                sellback: '190 sc'
+                sellback: '150 sc'
             },
             {
                 name: 'Sheathe, Small, Leather*',
@@ -266,7 +266,7 @@ export default [
                 sellback: '0.3 sc'
             },
             {
-                name: 'Rope, Cotton, 1/2" (250#), 50 ft x2',
+                name: 'Rope, Cotton, 1/2" (150#), 50 ft x3',
                 size: '3M',
                 sellback: '72 sc'
             },
@@ -298,7 +298,7 @@ export default [
         ]
     },
     {
-        name: "Basic Fighters's Kit",
+        name: "Basic Fighter's Kit",
         weight: "1M or 2M",
         cash: "1d10! sc",
         items: [
@@ -360,9 +360,9 @@ export default [
         cash: "1d4! sc",
         items: [
             {
-                name: 'Lamellar*',
+                name: 'Coat of Plates*',
                 size: 'S',
-                sellback: '190 sc'
+                sellback: '180 sc'
             },
             {
                 name: 'Scabbard*',
@@ -373,16 +373,6 @@ export default [
                 name: '1 M Weapon*',
                 size: 'S',
                 sellback: '50 sc'
-            },
-            {
-                name: 'Sheathe, Small*',
-                size: 'n/a',
-                sellback: '2.5 sc'
-            },
-            {
-                name: '1 S Weapon*',
-                size: 'n/a',
-                sellback: '15 sc'
             },
             {
                 name: 'Belt, Leather*',
@@ -400,15 +390,10 @@ export default [
                 sellback: '13 sc'
             },
             {
-                name: 'Boots, Leather*',
+                name: 'Sandals*',
                 size: 'n/a',
                 sellback: '10 sc'
-            },
-            {
-                name: 'Rations, Person, Day x3',
-                size: '3S',
-                sellback: '7.5 sc'
-            },
+            }
         ]
     },
     {
@@ -466,7 +451,7 @@ export default [
     {
         name: "Long Range Fighter's Kit",
         weight: "1M 1S or 1M",
-        cash: "3d10! sc",
+        cash: "5d20! sc",
         items: [
             {
                 name: 'Buff Coat*',
