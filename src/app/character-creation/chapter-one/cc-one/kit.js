@@ -99,7 +99,7 @@ export default [
     {
         name: "Merchant's Kit",
         weight: "n/a (1L 1S on mule)",
-        cash: "5d20! sc",
+        cash: "7d20! sc",
         items: [
             {
                 name: 'Sheathe, Small, Leather*',
@@ -160,12 +160,12 @@ export default [
     },
     {
         name: "Traveler's Kit",
-        weight: "1M 2S",
+        weight: "1M 1S",
         cash: "2d10! sc",
         items: [
             {
-                name: 'Coat of Plates*',
-                size: 'S',
+                name: 'Gambeson*',
+                size: '*',
                 sellback: '190 sc'
             },
             {
@@ -217,7 +217,7 @@ export default [
     },
     {
         name: "Thief's Kit",
-        weight: "1M",
+        weight: "2M",
         cash: "5d20! sc",
         items: [
             {
@@ -266,9 +266,9 @@ export default [
                 sellback: '0.3 sc'
             },
             {
-                name: 'Rope, Hemp, 1/2" (250#), 50 ft x2',
-                size: '2M',
-                sellback: '26 sc'
+                name: 'Rope, Cotton, 1/2" (250#), 50 ft x2',
+                size: '3M',
+                sellback: '72 sc'
             },
             {
                 name: 'Chalk, 4", Box of 20',
@@ -300,7 +300,7 @@ export default [
     {
         name: "Basic Fighters's Kit",
         weight: "1M or 2M",
-        cash: "2d20! sc",
+        cash: "1d10! sc",
         items: [
             {
                 name: 'Buff Coat*',
@@ -357,10 +357,10 @@ export default [
     {
         name: "Armor Fighter's Kit",
         weight: "1M 3S",
-        cash: "2d10! sc",
+        cash: "1d4! sc",
         items: [
             {
-                name: 'Coat of Plates*',
+                name: 'Lamellar*',
                 size: 'S',
                 sellback: '190 sc'
             },
@@ -414,7 +414,7 @@ export default [
     {
         name: "Shield Fighter's Kit",
         weight: "1L 1M 1S",
-        cash: "4d20! sc",
+        cash: "1d4! sc",
         items: [
             {
                 name: 'Heater Shield',
@@ -435,16 +435,6 @@ export default [
                 name: '1 M Weapon*',
                 size: 'S',
                 sellback: '50 sc'
-            },
-            {
-                name: 'Sheathe, Small*',
-                size: 'n/a',
-                sellback: '2.5 sc'
-            },
-            {
-                name: '1 S Weapon*',
-                size: 'n/a',
-                sellback: '15 sc'
             },
             {
                 name: 'Belt, Leather*',
@@ -476,7 +466,7 @@ export default [
     {
         name: "Long Range Fighter's Kit",
         weight: "1M 1S or 1M",
-        cash: "4d10! sc",
+        cash: "3d10! sc",
         items: [
             {
                 name: 'Buff Coat*',
@@ -543,7 +533,7 @@ export default [
     {
         name: "Blank Slate Kit",
         weight: "n/a",
-        cash: "5d20! + 275 sc",
+        cash: "2d20! + 275 sc",
         items: [
             {
                 name: 'None',
