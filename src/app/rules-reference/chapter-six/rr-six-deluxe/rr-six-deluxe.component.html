@@ -998,7 +998,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseckdtdzGWTp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseckdtdzGWTp'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase penalty to the physical stat by 1.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase penalty to the physical stat by 1. If a stat drops to 0, the person becomes incapcitated in an appropriate manner but no additional damage is done.</p>
       </div>
       <div class="anchor">
         <div id="SlowMetabolisheader" class="anchorTag"></div>
@@ -1072,7 +1072,7 @@
         <p><strong class='orangeHeader'>Effect</strong> This forces the wounds of all people within the Shape of the
           spell
           to stitch themselves together. While effective, this is an extremely painful process and is not kind to the
-          body. This heals 1d4! points of damage off a single wound of each target and inflicting that much Stress.</p>
+          body. This heals 1d4! points of damage off a single wound of each target of the shaper's choice and inflicting that much Stress.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='DoublethisdaMhMWpibGcI' class='anchorTag'></div>
@@ -1082,7 +1082,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKAddanothLBHxUBkSzB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKAddanothLBHxUBkSzB'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Add another d4!.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Add another d4!. This new d4! can apply to a different wound.</p>
       </div>
       <div class="anchor">
         <div id="callingeffectir" class="anchorTag"></div>
@@ -1119,9 +1119,10 @@
         <app-bm-chapter-icon [id]="'FFECTEveryonedFeNcTDSQr'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> Everyone within the Shape of the spell is temporarily banished
           to
-          the Astral Plane of existence until the spell is released. Those that are banished have a sense of what is
+          the Astral Plane of existence until the spell is released or they exit the shape. Those that are banished have a sense of what is
           going
-          on in the Middle Realm, though they are unable to interact with it at all.</p>
+          on in the Middle Realm, though they are unable to interact with it at all. When the spell ends, those banished return to the spot 
+        that they disappeared from.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='CalledcreaturvwEqLpckia' class='anchorTag'></div>
@@ -1672,6 +1673,53 @@
         <div id='TACKRerollancCeQtvHKXg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKRerollancCeQtvHKXg'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> Reroll an additional dice.</p>
+      </div>
+      <div class="anchor">
+        <div id="Turnheader" class="anchorTag"></div>
+        <h2>Turn</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='RADITIONCharmZPrxlVjOoV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'RADITIONCharmZPrxlVjOoV'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Tradition</strong> Charm</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ASEDRAIN2hCwnMaIrFt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ASEDRAIN2hCwnMaIrFt'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Base Drain</strong> 2</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ASERANGE50fiXIlTrFWdn' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ASERANGE50fiXIlTrFWdn'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Base Range</strong> 50 ft</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='NTERVAL10SecLIpoufFiUi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'NTERVAL10SecLIpoufFiUi'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Interval</strong> 10 Seconds</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='FFECTBymeanskqqACdFeiE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'FFECTBymeanskqqACdFeiE'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Effect</strong> By means of magical force, the weird-adept is able to turn aside
+          Undead, Elementals, and Demons, keeping them at a distance. Any Demons, Elemental or Undead inside the Shape
+          of
+          the spell flees at full speed until they’re out of it. Those inside it are invisible to them while the spell
+          is
+          active. Taking aggressive actions of any kind (including attacking, shaping, or insulting their mother) doesn't break this effect 
+          and the Undead, Elementals, and Demons are considered unarmed if in combat.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='UndeadElemenhDBlKJKUYa' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'UndeadElemenhDBlKJKUYa'"></app-bm-chapter-icon>
+        <p>Undead, Elementals, and Demons that are trapped and unable to flee, for any reason, begin to tear their own flesh as the
+          mind-numbing pain floods their systems, dealing them d6! damage every second.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='TACKIncreaseTylwRnsgFy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TACKIncreaseTylwRnsgFy'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Stack</strong> Increase the damage by a d6!.</p>
       </div>
       <div class="anchor">
         <div id="cakkubgeffectuve" class="anchorTag"></div>
@@ -2226,53 +2274,7 @@
         <app-bm-chapter-icon [id]="'TACKIncreaseBgsuZSCLkJ'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> Increase the Base Range by 5 ft.</p>
       </div>
-      <div class="anchor">
-        <div id="Turnheader" class="anchorTag"></div>
-        <h2>Turn</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RADITIONCharmZPrxlVjOoV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RADITIONCharmZPrxlVjOoV'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Tradition</strong> Charm</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ASEDRAIN2hCwnMaIrFt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ASEDRAIN2hCwnMaIrFt'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Drain</strong> 2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ASERANGE50fiXIlTrFWdn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ASERANGE50fiXIlTrFWdn'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Range</strong> 50 ft</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='NTERVAL10SecLIpoufFiUi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NTERVAL10SecLIpoufFiUi'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 10 Seconds</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='FFECTBymeanskqqACdFeiE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'FFECTBymeanskqqACdFeiE'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> By means of magical force, the weird-adept is able to turn aside
-          Undead, Elementals, and Demons, keeping them at a distance. Any Demons, Elemental or Undead inside the Shape
-          of
-          the spell flees at full speed until they’re out of it. Those inside it are invisible to them while the spell
-          is
-          active. Taking aggressive actions of any kind (including attacking, shaping, or insulting their mother) doesn't break this effect 
-          and the Undead, Elementals, and Demons are considered unarmed if in combat.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='UndeadElemenhDBlKJKUYa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'UndeadElemenhDBlKJKUYa'"></app-bm-chapter-icon>
-        <p>Undead, Elementals, and Demons that are trapped and unable to flee, for any reason, begin to tear their own flesh as the
-          mind-numbing pain floods their systems, dealing them d6! damage every second.</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='TACKIncreaseTylwRnsgFy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TACKIncreaseTylwRnsgFy'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase the damage by a d6!.</p>
-      </div>
+      
       <div class="anchor">
         <div id="fakniyrfeeft" class="anchorTag"></div>
         <h1>Glamour Effect Rudiments Descriptions</h1>
@@ -4959,44 +4961,48 @@
               <td>Banish</td>
             </tr>
             <tr>
-              <td>2 - 3</td>
+              <td>2</td>
               <td>Bind Elemental Heart</td>
             </tr>
             <tr>
-              <td>4</td>
+              <td>3</td>
               <td>Break Summoning</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td>4</td>
               <td>Corpse Tongue</td>
             </tr>
             <tr>
-              <td>6</td>
+              <td>5</td>
               <td>Dominate</td>
             </tr>
             <tr>
-              <td>7</td>
+              <td>6</td>
               <td>Essence Link</td>
             </tr>
             <tr>
-              <td>8</td>
+              <td>7</td>
               <td>Force Bind Spirit</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>8</td>
               <td>Hookgate</td>
             </tr>
             <tr>
-              <td>10</td>
+              <td>9</td>
               <td>Lockdown</td>
             </tr>
             <tr>
-              <td>11</td>
+              <td>10</td>
               <td>Phantombinding</td>
             </tr>
             <tr>
-              <td>12</td>
+              <td>11</td>
               <td>Touch of the Otherworld</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Turn</td>
             </tr>
           </tbody>
         </table>
@@ -5037,32 +5043,28 @@
               <td>Illuminate</td>
             </tr>
             <tr>
-              <td>11</td>
+              <td>11 - 12</td>
               <td>Liminal Platform</td>
             </tr>
             <tr>
-              <td>12 - 14</td>
+              <td>13 - 15</td>
               <td>Magic Circle</td>
             </tr>
             <tr>
-              <td>15</td>
+              <td>16</td>
               <td>Shock</td>
             </tr>
             <tr>
-              <td>16</td>
+              <td>17</td>
               <td>Silence</td>
             </tr>
             <tr>
-              <td>17 - 18</td>
+              <td>18 - 19</td>
               <td>Smokescreen</td>
             </tr>
             <tr>
-              <td>19</td>
-              <td>Telekinesis</td>
-            </tr>
-            <tr>
               <td>20</td>
-              <td>Turn</td>
+              <td>Telekinesis</td>
             </tr>
           </tbody>
         </table>

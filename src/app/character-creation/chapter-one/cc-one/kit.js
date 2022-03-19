@@ -92,7 +92,7 @@ export default [
             {
                 name: 'Torch x5',
                 size: '5S',
-                sellback: '1 sc'
+                sellback: '2 sc'
             }
         ]
     },

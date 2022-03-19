@@ -174,6 +174,20 @@
           slaughter them like animals.</p>
       </div>
       <div class="anchor">
+        <div id="racialheader" class="anchorTag"></div>
+        <h3>Racial Temperament</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='racesinfoboninfe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'racesinfoboninfe'"></app-bm-chapter-icon>
+        <p>Races in Bonfire has a natural temperament to which they lean which causes them to behavior different than other species. This is called the "Racial Temperament".</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='wheniyouioue' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'wheniyouioue'"></app-bm-chapter-icon>
+        <p>When your Racial Temperament applies in a Confrontation, you add a free roll of your Honor Dice to the Check.</p>
+      </div>
+      <div class="anchor">
         <div id="PlayingitOutheader" class="anchorTag"></div>
         <h1>Playing it Out</h1>
         <div class="underline"></div>
@@ -272,7 +286,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='PresentingorCNhFmcxZVS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PresentingorCNhFmcxZVS'"></app-bm-chapter-icon>
-        <p>Presenting or countering with Evidence gives you 2 points, regardless of what the other person does.</p>
+        <p>If you present Evidence that gets countered, neither side gets points.</p>
       </div>
       <div class="anchor">
         <div id="Appealsheader" class="anchorTag"></div>
@@ -301,12 +315,14 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfdefendingaivyzDudkuV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfdefendingaivyzDudkuV'"></app-bm-chapter-icon>
-        <p>If defending against Evidence with an Appeal, you get 2 points, but you gain d4! Stress.</p>
+        <p>If defending against Evidence with an Appeal, nobody gets points, but you gain d4! Stress. This is better than Conceding but it's still not ideal.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfbothsidesIjMfmMxiuu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfbothsidesIjMfmMxiuu'"></app-bm-chapter-icon>
-        <p>If both sides Appeal, the winner of the Check gets 1 point, the loser gets nothing, and both get d4! Stress.
+        <p>If both sides Appeal, the winner of the Check gets 2 points, the loser gets nothing, and both get d4! Stress, unless the 
+          winner beat the losers total by more than 5, in which case only the loser gets the Stress. The winner also gets an additional 
+          point for every 5 above that.
         </p>
       </div>
       <div class="anchor">
@@ -471,7 +487,7 @@
       <div class="pairs marginBottom">
         <div class="pair">
           <p>Preferred</p>
-          <p>+3 points to convince</p>
+          <p>+2 points to convince</p>
         </div>
         <div class="pair">
           <p>Like</p>
@@ -487,7 +503,7 @@
         </div>
         <div class="pair">
           <p>Hate</p>
-          <p>-3 point when trying to convince</p>
+          <p>-2 point when trying to convince</p>
         </div>
       </div>
       <div class='paragraphShell anchor'>
@@ -513,9 +529,10 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='DevotionsarenUGxZlxHGH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DevotionsarenUGxZlxHGH'"></app-bm-chapter-icon>
-        <p>Devotions are a more powerful driving force than other Characteristics, meaning that, if a Devotion applies,
+        <p>Devotions are a more powerful driving force than other Characteristics, meaning that, if any Devotions apply,
           you
-          automatically subtract or add 1 point for every point you have in it, depending on the circumstances. So, if you approach a blood enemy, trying to
+          automatically subtract or add 1 point for every point you have in them, depending on the circumstances. This is normally at the start of 
+          of a Confrontation but it can sometimes apply mid-Confrontation. This also doesn't stop you from using it in an Appeal later on. So, if you approach a blood enemy, trying to
           convince him to help you, even if you’re being entirely reasonable, it’ll be much harder to do so. On the flip side, convincing a good friend will be much easier.</p>
       </div>
       <div class="anchor">
@@ -597,14 +614,24 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfitturnsouCjlMpqCfNc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfitturnsouCjlMpqCfNc'"></app-bm-chapter-icon>
-        <p>If it turns out that the other person does still have more to say, the Confrontation continues, with that person gaining 1
-          point.
-        </p>
+        <p>A couple of things can happen here.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfitturnsouCjlMpqCfNc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfitturnsouCjlMpqCfNc'"></app-bm-chapter-icon>
+        <p>If the other person has favorable disposition to the person pushing and they still have more to say, the Confrontation continues, with that person gaining 1
+          point.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfitturnsouCjlMpqCfNc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfitturnsouCjlMpqCfNc'"></app-bm-chapter-icon>
+        <p>If the other person doesn't disposition to the person pushing and they still have more to say, the otherside is considered to have Conceding every remaining 
+          argument that the other person has. The Confrontation ends and points are totalled.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfhoweveriYydZrubwRn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfhoweveriYydZrubwRn'"></app-bm-chapter-icon>
-        <p>If, however, it turns out that the pushed person does, in fact, have no more to say, than the Confrontation
+        <p>If, however, it turns out that the pushed person does, in fact, have no more to say, regardless of their dispoition towards the other person, than the Confrontation
           ends
           and it’s time to compare point totals.</p>
       </div>
