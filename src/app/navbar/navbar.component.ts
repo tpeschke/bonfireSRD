@@ -120,7 +120,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       case 11:
         return 'Flaws';
       case 12:
-        return 'Skills & Training';
+        return 'Skills';
       case 13:
         return 'Equipment';
       case 14:
