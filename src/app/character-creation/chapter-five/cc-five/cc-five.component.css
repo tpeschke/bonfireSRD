@@ -35,3 +35,9 @@
     margin-bottom: 15px;
     align-items: baseline;
 }
+
+
+.combat-skill-suites-header th {
+    background-color: #990000 !important;
+    text-align: center !important;
+}
