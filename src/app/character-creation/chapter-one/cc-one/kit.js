@@ -217,7 +217,7 @@ export default [
     },
     {
         name: "Thief's Kit",
-        weight: "2M",
+        weight: "1L",
         cash: "5d20! sc",
         items: [
             {
@@ -267,7 +267,7 @@ export default [
             },
             {
                 name: 'Rope, Cotton, 1/2" (150#), 50 ft x3',
-                size: '3M',
+                size: '1L',
                 sellback: '72 sc'
             },
             {

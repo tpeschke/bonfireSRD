@@ -595,8 +595,7 @@
       <div class='paragraphShell anchor'>
         <div id='ThismeansthalamJypdFij' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismeansthalamJypdFij'"></app-bm-chapter-icon>
-        <p>This means that you’re within 5 feet + your opponent’s weapon’s measure. From here, if you move faster than a
-          Jog and if they’re within half their weapon Recovery, they can attack you.</p>
+        <p>This means that you’re within 5 feet + your opponent’s weapon’s measure. From here, if you move faster than a Jog and/or if they’re within half their weapon Recovery, they can attack you.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyougofromxyzpTNsZyO' class='anchorTag'></div>
@@ -613,6 +612,11 @@
         <app-bm-chapter-icon [id]="'YouveclosedTzZPOfXxsG'"></app-bm-chapter-icon>
         <p>You’ve closed the distance and can actually make an attack. The person with the highest weapon measure
           attacks first. If both weapons are exactly the same measure, the attacks happen simultaneously.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ifyioumoveiom' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyioumoveiom'"></app-bm-chapter-icon>
+        <p>If you move from being Engaged to being Threatened, for any reason, and the other person is within half their weapon's Recovery, they get a free attack on you.</p>
       </div>
       <div class="anchor">
         <div id="MeleeCombatheader" class="anchorTag"></div>
@@ -696,6 +700,22 @@
           may Shift for no penalty, change your Tactic, or, for attacks, gain an extra d4! to damage (which doesn't
           count as additional dice for /d DR), or, for defenses
           gained a free riposte with your off-hand weapon if it’s smaller than your size or a sidearm.</p>
+      </div>
+      <div class="anchor">
+        <div id="fumblesniojhear" class="anchorTag"></div>
+        <h3>Fumbles</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='nothiefjeiwolc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nothiefjeiwolc'"></app-bm-chapter-icon>
+        <p>On the flip side, rolling an unmodified 1 on your Attack of Defense roll results in a 'fumble', with your opponent getting a free attack on the next second 
+          that doesn't reset their next attack.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='ubewiomcewj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ubewiomcewj'"></app-bm-chapter-icon>
+        <p>Fumbling when your opponent gets a Perfect Attack or Defense results in the normal bonuses and the free attack while both sides rolling a fumble results in the person 
+          with the highest total getting their way (so, if the attacker has the highest total, they hit) but no free attack for either.</p>
       </div>
       <div class="anchor">
         <div id="DealingDamageheader" class="anchorTag"></div>
@@ -986,6 +1006,16 @@
         <p>If the ranged attack was a miss, see the Ranged Misses section below.</p>
       </div>
       <div class="anchor">
+        <div id="shootinoniogjiofew" class="anchorTag"></div>
+        <h2>Shooting on the Move</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='itiofjeiowpop' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'itiofjeiowpop'"></app-bm-chapter-icon>
+        <p>It is possible for ranged weapons to be fired while the person is moving but the Attack roll is reduced by 2 dice sizes for every Movement Category so even going at a Stroll results in rolling the attack on a d10!.</p>
+      </div>
+      <div class="anchor">
         <div id="DealingDamageheader" class="anchorTag"></div>
         <h2>Dealing Damage</h2>
         <div class="underline-sub"></div>
@@ -1249,11 +1279,6 @@
               <td>Can't Move</td>
             </tr>
             <tr>
-              <td>Shooting on the Move</td>
-              <td colspan="2">-2 Dice Size / Movement Category</td>
-              <td> </td>
-            </tr>
-            <tr>
               <td>Slippery Surface</td>
               <td>d10!</td>
               <td>d10!</td>
@@ -1441,21 +1466,26 @@
       <div class='paragraphShell anchor'>
         <div id='AcharactermoAyKLxIribT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AcharactermoAyKLxIribT'"></app-bm-chapter-icon>
-        <p>A character moving at least a Run can throw their full force behind a blow, knocking their opponent off their
-          guard. If the Attacker has reach, the damage for their next attack is considered doubled for the purposes of
-          determining Knock-Backs, though they defend with a d12! for half their weapon Recovery.</p>
+        <p>A character using this Strategy must be moving at least a Run to throw their full force behind the below.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AchargeisaBseMmocVDU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AchargeisaBseMmocVDU'"></app-bm-chapter-icon>
         <p>A charge is a terrifying tactic: if the blow lands, the defender takes an amount of Stress equal to how much
-          they were hit by. </p>
+          pre-DR damage they rolled and that damage is considered doubled for the purposes of
+          determining Knock-Backs.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='hiofjioefwjiofew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'hiofjioefwjiofew'"></app-bm-chapter-icon>
+        <p>However, if the defender is able to land an attack before the attacker when they initially become engaged, the charge is broken 
+          and the attacker takes Stress equal to the pre-DR damage.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IftheyreablSbrazZqvvz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftheyreablSbrazZqvvz'"></app-bm-chapter-icon>
-        <p>If anyone is able to retaliate while the attacker is defending with that d12!, the attacker also takes that
-          much Stress but they only take this Stress on the first hit after the charge.</p>
+        <p>Either way, the attacker then defend with a d12! for half their weapon's modified Recovery. If anyone is able to retaliate while the attacker is defending with that d12!, the attacker also takes that
+          d4! Stress.</p>
       </div>
       <div class="anchor">
         <div id="ChokingUponheader" class="anchorTag"></div>
@@ -1562,7 +1592,7 @@
       <div class='paragraphShell marginBottom   anchor'>
         <div id='thiosjiosteage' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thiosjiosteage'"></app-bm-chapter-icon>
-        <p>This Strategy can be used with any other.</p>
+        <p>This Strategy can be used with any other Strategy except Power Attack.</p>
       </div>
       <div class="anchor">
         <div id="InTheirGuardheader" class="anchorTag"></div>
@@ -1580,7 +1610,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThelongerweaLkmSTtbWkH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThelongerweaLkmSTtbWkH'"></app-bm-chapter-icon>
-        <p>The longer weapon may only defend with a d12!. All damage dice is also reduced by one size (3d4! → 3d3!).
+        <p>The longer weapon defends on a dice 1 size smaller against all attacked made against them and all damage dice is also reduced by one size (3d4! → 3d3!)
+          on all attacks they make.
           They may, in turn, employ the Choke Up on Your Weapon Tactic.</p>
       </div>
       <div class="anchor">
@@ -1698,7 +1729,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='AfteryourdeffDnVORwPnq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AfteryourdeffDnVORwPnq'"></app-bm-chapter-icon>
-        <p>After your defense roll, if you declare a Retreat, you receive a +5 to your next Defense roll but also a -5
+        <p>After your defense roll, if you declare a Retreat, you receive a +5 on that Defense roll but also a -5
           to your next Attack and must continue to move back until your next attack, either at a jog, if moving directly
           back, or at a walk, if started to move at a 45 degrees angle.</p>
       </div>
@@ -1746,9 +1777,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='BeforeyourdeqnxGiysChW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'BeforeyourdeqnxGiysChW'"></app-bm-chapter-icon>
-        <p>Before your defense roll, if you declare a Step Back, you receive a +5 to your next Defense roll but on your
-          next attack roll shrink the damage of your dice based on its type and must continue to move back at a Walking
-          speed until your next attack.</p>
+        <p>Before your defense roll, if you declare a Step Back, you receive a +5 to your next Defense roll but you move your 
+          Walking speed backwards for 1 second and you shrink your next attack's damage dice based on your weapon's type.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='PiercingweapoeVnhHNSbxm' class='anchorTag'></div>
