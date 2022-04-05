@@ -95,7 +95,7 @@
       <div class='paragraphShell anchor'>
         <div id='ShouldsomeoneVMDMCGVQfp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ShouldsomeoneVMDMCGVQfp'"></app-bm-chapter-icon>
-        <p>Those whose initiative hasn't come up are surprised and, on second 1 of the combat can choose to do one of three things: contine what they’re doing, stand still (if they’re walking or jogging), or flee away from the danger.</p>
+        <p>Those whose initiative hasn't come up are surprised and, on second 1 of the combat can choose to do one of three things: contine what they’re doing, stand still (if they’re not going faster than a Jog), or flee away from the danger (if there is a clear escape route, otherwise, this isn't an option).</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='wheatherhitorjicho' class='anchorTag'></div>
@@ -216,11 +216,11 @@
         <tbody>
           <tr>
             <td>Retrieve a Shield</td>
-            <td>1d6! seconds + 1d6! per size above Small</td>
+            <td>1d6! seconds + 1d6! per shield size above Small</td>
           </tr>
           <tr>
             <td>Ready a Shield</td>
-            <td>1d4! seconds + 1d4! per size above Small</td>
+            <td>1d4! seconds + 1d4! per shield size above Small</td>
           </tr>
           <tr>
             <td>Remove Shield</td>
@@ -306,7 +306,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ApersonmaymZayPJDOjrq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ApersonmaymZayPJDOjrq'"></app-bm-chapter-icon>
-        <p>A person may move up 1 movement category or down 2 in a second.</p>
+        <p>A person may move up 2 movement categories, starting at a Walk, or down 2 in a second.</p>
       </div>
       <div class="table-overflow">
         <table class="all-centered">
@@ -356,7 +356,8 @@
       <div class='paragraphShell anchor'>
         <div id='YoucanpushyhJnjULGSnP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoucanpushyhJnjULGSnP'"></app-bm-chapter-icon>
-        <p>You can push your character as hard as you'd like, continuing to take damage until they die from fatigue but
+        <p>You can push your character as hard as you'd like, continuing to take damage until they die from fatigue, or are forced 
+          to stop due to failing a Trauma Check, but
           if you take damage from Running or Sprinting and you stop, you can't Run or Sprint again until you've waited
           10 seconds for every time your damage dice was increased.</p>
       </div>
@@ -409,7 +410,11 @@
         <div id='YouveclosedTzZPOfXxsG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YouveclosedTzZPOfXxsG'"></app-bm-chapter-icon>
         <p>You’ve closed the distance and can actually make an attack. The person with the highest weapon measure
-          attacks first. If both weapons are exactly the same measure, the attacks happen simultaneously.</p>
+          attacks first. If both weapons are exactly the same measure, the attacks happen simultaneously. Note that this
+          is only for the first attack:
+          if subsequent attacks happen on the same second, they happen simultaneously, meaning that two people with
+          different measure, attacking on the same second, can kill each other
+          at the same time.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifyioumoveiom' class='anchorTag'></div>
@@ -497,7 +502,7 @@
         <p>An unmodified roll of 19 on either Attack or Defense results in a Near Perfect Attack or Defense, where you
           may Shift for no penalty, change your Tactic, or, for attacks, gain an extra d4! to damage (which doesn't
           count as additional dice for /d DR), or, for defenses
-          gained a free riposte with your off-hand weapon if it’s smaller than your size or a sidearm.</p>
+          gained a free riposte with your off-hand weapon if it’s smaller than your size or a sidearm or an unarmed attack if you have at least 1 hand free.</p>
       </div>
       <div class="anchor">
         <div id="fumblesniojhear" class="anchorTag"></div>
@@ -643,7 +648,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfthepreDRcRSlhXfBif' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfthepreDRcRSlhXfBif'"></app-bm-chapter-icon>
-        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 1 for every M item you're carrying,
+        <p>If the pre-DR damage is higher than your enemy’s Vitality Size Modifier + 1 for every M worth of items you're carrying,
           the attack also moves them back 5 feet. If it’s twice the damage needed, they get knocked back 10 feet, and so
           on.</p>
       </div>
@@ -1102,13 +1107,23 @@
         <p>If your weapon's measure is at least 1 foot greater than your opponent's, you can try and fend them off. This
           means that you may attack them freely, while they can't do the same to you.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='YoumayonlyuGmLEaLzbuv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoumayonlyuGmLEaLzbuv'"></app-bm-chapter-icon>
         <p>You may only use this Tactic as someone is going from Threatened to Engaged, in which case they're
-          automatically considered to be Fended Off, however you forfeit that attack. To become fully engaged with you, they'll have to knock your
+          automatically considered to be Fending Off, however you forfeit that attack. To become fully engaged with you, they'll have to knock your
           weapon aside with a regular attack that deals no damage. Should they hit, they become fully engaged and can
           attack as normal, although they need to wait their full weapon Recovery.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='succuecijoke' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'succuecijoke'"></app-bm-chapter-icon>
+        <p>Successfully fending someone off keeps them from physically getting close to you: keeping you engaged with them but keeping them only threatening you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='youcaniojife' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youcaniojife'"></app-bm-chapter-icon>
+        <p>You can fend off multiple people, however, they have to all be in front of you (up to 90 deg off center).</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='fenodcaniobiofe' class='anchorTag'></div>
@@ -1155,7 +1170,7 @@
         <div id='InsteadofadDGWHuqFEZA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'InsteadofadDGWHuqFEZA'"></app-bm-chapter-icon>
         <p>Instead of a d20!, the defender uses a d12! but on a successful hit, no damage is done, and the defender nets
-          a -1 to their next full defense against a non-jab attack. </p>
+          a -1 to their next defense against a non-jab attack. </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThispenaltydaJVCJCVyWn' class='anchorTag'></div>
@@ -1225,15 +1240,15 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoumoveatyoxxVDTRnhPo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoumoveatyoxxVDTRnhPo'"></app-bm-chapter-icon>
-        <p>You move at your walking speed to either side of your opponent but suffer a -1 to your next Attack and
+        <p>While Engaged, you move at your walking speed to either side of your opponent but suffer a -1 to your next Attack and
           Defense for every 5 ft you travel before your next Attack or Defense.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='HoweverifyoAsGYBMVUOP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'HoweverifyoAsGYBMVUOP'"></app-bm-chapter-icon>
-        <p>However, if you Shift with another tactic, you don’t receive this penalty and gain a +2 that can be either
-          used to increase a bonus or decrease a penalty from that tactic. You may do this freely with any Tactic except
-          Retreat and Step Back.</p>
+        <p>However, if you Shift the same second you use another, compatible Strategy, you don’t receive this penalty and gain a +2 that can be either
+          used to increase a bonus or decrease a penalty from the other Strategy. You may do this freely with any Strategy except
+          any that already require movement (such as Retreat, or Step Back).</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ShiftingisalJSVwAdbtiG' class='anchorTag'></div>
