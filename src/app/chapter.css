@@ -15,6 +15,10 @@ h3 {
     letter-spacing: 2px;
 }
 
+.center {
+    margin: 0 auto;
+}
+
 .sidebarShell h5 {
     font-family: "umbria";
     color: #b45f06;
