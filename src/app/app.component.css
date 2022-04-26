@@ -48,6 +48,26 @@
     z-index: -100;
 }
 
+.edge-banner {
+    position: absolute;
+    top: 23px;
+    right: -59px;
+    width: 250px;
+    height: 25px;
+    background: red;
+    transform: rotate(45deg);
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edge-banner p {
+    color: white;
+    font-family: "umbria";
+    margin: 0;
+}
+
 @media (max-width: 650px) { 
     .footHolder a {
         font-size: 13px;

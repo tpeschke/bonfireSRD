@@ -121,6 +121,7 @@ p {
 .homeLeftShell {
   background: white;
   width: 475px;
+  overflow: hidden;
 }
 
 .homeTitleShell {
@@ -169,6 +170,27 @@ p {
 
 .homeItemSub {
   font-size: 13px;
+}
+
+
+.edge-banner {
+  position: absolute;
+  top: -1px;
+  left: -80px;
+  width: 250px;
+  height: 25px;
+  background: red;
+  transform: rotate(334deg);
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.edge-banner p {
+  color: white;
+  font-family: "umbria";
+  margin: 0;
 }
 
 @media (max-width: 770px) {
