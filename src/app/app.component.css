@@ -63,9 +63,24 @@
 }
 
 .edge-banner p {
-    color: white;
+    color: whitesmoke;
     font-family: "umbria";
     margin: 0;
+}
+
+.comment-bubble {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: #b45f06;
+    border-radius: 50px;
+    transition: .6s;
+}
+
+.comment-bubble:hover {
+    background-color: #990000;
 }
 
 @media (max-width: 650px) { 
