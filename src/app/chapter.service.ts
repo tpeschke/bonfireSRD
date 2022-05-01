@@ -20,7 +20,7 @@ export class ChapterService {
   constructor(
     private http: HttpClient,
     private toastr: ToastrService
-  ) {}
+  ) { }
 
   public login: boolean | string = false
   public patreon = null;
@@ -94,6 +94,13 @@ export class ChapterService {
     return this.http.get(local.endpointBase + '/trait')
       .pipe(
         catchError(this.handleError('get trait', []))
+      )
+  }
+
+  getCombatEquipment(): any {
+    return this.http.get(local.endpointBase + '/combat-equipment')
+      .pipe(
+        catchError(this.handleError('get combat equipment', []))
       )
   }
 

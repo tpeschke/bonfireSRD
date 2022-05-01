@@ -1,5 +1,6 @@
 const axios = require('axios')
     , { redirect, patreonSecret, patreonId, patreonRefresh, patreonAuth, patreonAccess } = require('./serv-config')
+    , combatEquipment = require('./combat')
 
 module.exports = {
     search: (req, res) => {
@@ -68,5 +69,65 @@ module.exports = {
                 res.send(newResult)
             })
         })
-    }
+    },
+    getAllEquipment: (req, res) => {
+        res.send(combatEquipment)
+    },
+    getArmor: (req, res) => {
+        res.send(combatEquipment.armor)
+    },
+    getShields: (req, res) => {
+        res.send(combatEquipment.shields)
+    },
+    getWeapons: (req, res) => {
+        let { type = '' } = req.params
+
+        if (type.toUpperCase() === "RANGED") {
+            let weapons = [
+                ...combatEquipment.weapons.thrown,
+                ...combatEquipment.weapons.mechanical,
+                ...combatEquipment.weapons.firearms
+            ]
+
+            weapons = weapons.map(weapon => {
+                for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                    if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                        return {...weapon, range: combatEquipment.weapons.ranges[i].range}
+                    }
+                }
+            })
+            res.send(weapons)
+        } else if (type.toUpperCase() === "MELEE") {
+            res.send([
+                ...combatEquipment.weapons.axes,
+                ...combatEquipment.weapons.polearms,
+                ...combatEquipment.weapons.sidearms,
+                ...combatEquipment.weapons.swords,
+                ...combatEquipment.weapons.trauma
+            ])
+        } else {
+            let weapons = [
+                ...combatEquipment.weapons.thrown,
+                ...combatEquipment.weapons.mechanical,
+                ...combatEquipment.weapons.firearms
+            ]
+
+            weapons = weapons.map(weapon => {
+                for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                    if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                        return {...weapon, range: combatEquipment.weapons.ranges[i].range}
+                    }
+                }
+            })
+
+            res.send([
+                ...weapons,
+                ...combatEquipment.weapons.axes,
+                ...combatEquipment.weapons.polearms,
+                ...combatEquipment.weapons.sidearms,
+                ...combatEquipment.weapons.swords,
+                ...combatEquipment.weapons.trauma
+            ])
+        }
+    },
 }

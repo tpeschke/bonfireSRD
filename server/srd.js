@@ -45,6 +45,12 @@ passport.use(new Auth0Strategy({
     }).catch(e => console.log(e))
 }))
 
+app.get('/combat-equipment', ctrl.getAllEquipment)
+app.get('/getArmor', ctrl.getArmor)
+app.get('/getShields', ctrl.getShields)
+app.get('/getWeapons/:type', ctrl.getWeapons)
+app.get('/getWeapons', ctrl.getWeapons)
+
 app.use(fakeAuth)
 
 app.get('/auth', passport.authenticate('auth0'));

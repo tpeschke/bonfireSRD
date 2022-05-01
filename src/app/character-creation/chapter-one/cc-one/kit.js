@@ -164,9 +164,9 @@ export default [
         cash: "2d10! sc",
         items: [
             {
-                name: 'Gambeson*',
+                name: 'Buff Coat*',
                 size: '*',
-                sellback: '150 sc'
+                sellback: '130 sc'
             },
             {
                 name: 'Sheathe, Small, Leather*',
@@ -303,9 +303,9 @@ export default [
         cash: "1d10! sc",
         items: [
             {
-                name: 'Buff Coat*',
+                name: 'Gambeson*',
                 size: 'n/a',
-                sellback: '100 sc'
+                sellback: '90 sc'
             },
             {
                 name: 'Scabbard*',
@@ -360,9 +360,9 @@ export default [
         cash: "1d4! sc",
         items: [
             {
-                name: 'Coat of Plates*',
+                name: 'Leather*',
                 size: 'S',
-                sellback: '180 sc'
+                sellback: '190 sc'
             },
             {
                 name: 'Scabbard*',
@@ -454,9 +454,9 @@ export default [
         cash: "5d20! sc",
         items: [
             {
-                name: 'Buff Coat*',
+                name: 'Gambeson*',
                 size: 'n/a',
-                sellback: '100 sc'
+                sellback: '90 sc'
             },
             {
                 name: 'Scabbard*',
