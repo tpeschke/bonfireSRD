@@ -108,7 +108,7 @@ module.exports = {
             parry: 5,
             cover: '1',
             flanks: 2,
-            fatigueigue: -4,
+            fatigue: -4,
             bonus: 'Yes'
         },
         {
@@ -118,7 +118,7 @@ module.exports = {
             parry: 5,
             cover: '0',
             flanks: 2,
-            fatigueigue: 0,
+            fatigue: 0,
             bonus: ''
         },
         {
@@ -128,7 +128,7 @@ module.exports = {
             parry: 12,
             cover: 'd6!+4',
             flanks: 3,
-            fatigueigue: -3,
+            fatigue: -3,
             bonus: 'Yes'
         },
         {
@@ -138,7 +138,7 @@ module.exports = {
             parry: 15,
             cover: 'd8!+4',
             flanks: 3,
-            fatigueigue: -2,
+            fatigue: -2,
             bonus: ''
         },
         {
@@ -148,7 +148,7 @@ module.exports = {
             parry: 9,
             cover: 'd8!+7',
             flanks: 3,
-            fatigueigue: -1,
+            fatigue: -1,
             bonus: ''
         },
         {
@@ -158,7 +158,7 @@ module.exports = {
             parry: 14,
             cover: '2d6!+8',
             flanks: 4,
-            fatigueigue: -2,
+            fatigue: -2,
             bonus: ''
         },
         {
@@ -168,7 +168,7 @@ module.exports = {
             parry: 0,
             cover: 'd20!+8',
             flanks: 1,
-            fatigueigue: -5,
+            fatigue: -5,
             bonus: 'Yes'
         },
         {
@@ -178,7 +178,7 @@ module.exports = {
             parry: 11,
             cover: 'd12!+6',
             flanks: 3,
-            fatigueigue: -3,
+            fatigue: -3,
             bonus: 'Yes'
         },
         {
@@ -188,7 +188,7 @@ module.exports = {
             parry: 18,
             cover: '2d8!+10',
             flanks: 3,
-            fatigueigue: -2,
+            fatigue: -2,
             bonus: ''
         }
     ],
