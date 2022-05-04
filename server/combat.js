@@ -109,7 +109,8 @@ module.exports = {
             cover: '1',
             flanks: 2,
             fatigue: -4,
-            bonus: 'Yes'
+            bonus: 'Yes',
+            size: 'S'
         },
         {
             name: 'Clothe',
@@ -119,7 +120,8 @@ module.exports = {
             cover: '0',
             flanks: 2,
             fatigue: 0,
-            bonus: ''
+            bonus: '',
+            size: 'S'
         },
         {
             name: 'Figure Eight',
@@ -129,7 +131,8 @@ module.exports = {
             cover: 'd6!+4',
             flanks: 3,
             fatigue: -3,
-            bonus: 'Yes'
+            bonus: 'Yes',
+            size: 'M'
         },
         {
             name: 'Heater',
@@ -139,7 +142,8 @@ module.exports = {
             cover: 'd8!+4',
             flanks: 3,
             fatigue: -2,
-            bonus: ''
+            bonus: '',
+            size: 'M'
         },
         {
             name: 'Hoplon',
@@ -149,7 +153,8 @@ module.exports = {
             cover: 'd8!+7',
             flanks: 3,
             fatigue: -1,
-            bonus: ''
+            bonus: '',
+            size: 'M'
         },
         {
             name: 'Kite',
@@ -159,7 +164,8 @@ module.exports = {
             cover: '2d6!+8',
             flanks: 4,
             fatigue: -2,
-            bonus: ''
+            bonus: '',
+            size: 'L'
         },
         {
             name: 'Pavise',
@@ -169,7 +175,8 @@ module.exports = {
             cover: 'd20!+8',
             flanks: 1,
             fatigue: -5,
-            bonus: 'Yes'
+            bonus: 'Yes',
+            size: 'L'
         },
         {
             name: 'Round',
@@ -179,7 +186,8 @@ module.exports = {
             cover: 'd12!+6',
             flanks: 3,
             fatigue: -3,
-            bonus: 'Yes'
+            bonus: 'Yes',
+            size: 'M'
         },
         {
             name: 'Tower',
@@ -189,7 +197,8 @@ module.exports = {
             cover: '2d8!+10',
             flanks: 3,
             fatigue: -2,
-            bonus: ''
+            bonus: '',
+            size: 'L'
         }
     ],
     weapons: {
