@@ -773,7 +773,7 @@ module.exports = {
             },
             {
                 name: 'Composite Bow',
-                size: 'M*',
+                size: 'M',
                 dam: 'd12!+d8!',
                 rec: 12,
                 type: 'P',

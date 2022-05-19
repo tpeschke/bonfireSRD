@@ -14,17 +14,19 @@ import { LogonComponent } from './logon/logon.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
 import { BookmarkingModule } from './bookmarking/Bookmarking.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     NavbarComponent,
     HomeComponent,
     SearchComponent,
     PrivacyPolicyComponent,
     LogonComponent,
-    FormatSearchPipe
-  ],
+    FormatSearchPipe,
+      AboutComponent
+   ],
   imports: [
     HttpClientModule,
     BrowserModule,

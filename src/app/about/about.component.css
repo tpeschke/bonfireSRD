@@ -1,0 +1,42 @@
+.innerShell, .chapterShell, .backColor {
+    width: 100%;
+}
+
+.backTexture {
+    width: 100%;
+    background-size: contain;
+}
+
+h2 {
+    position: unset;
+    color: #222;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: "umbria";
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #b45f06;
+    padding: 5px 15px 0px 15px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+strong {
+    font-family: "ancient";
+    color: #222;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+ul {
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}

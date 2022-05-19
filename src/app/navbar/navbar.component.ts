@@ -44,7 +44,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0
 
-        if (p.url !== '/search' && p.url !== '/') {
+        if (p.url !== '/search' && p.url !== '/' && p.url !== '/privacypolicy' && p.url !== '/about') {
           let segmentedUrl = p.url.split('/')
           let route = +segmentedUrl[2].split('?')[0]
           let base = segmentedUrl[1]
