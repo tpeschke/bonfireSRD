@@ -13,8 +13,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { LogonComponent } from './logon/logon.component';
 import { FormatSearchPipe } from './format-search.pipe';
 
-import { BookmarkingModule } from './bookmarking/Bookmarking.module';
 import { AboutComponent } from './about/about.component';
+import { BookmarkingModule } from './bookmarking/bookmarking.module';
 
 @NgModule({
   declarations: [	
