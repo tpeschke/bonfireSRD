@@ -205,6 +205,32 @@
         <p>Unless proven otherwise, the GM should assume the characters are carrying their max Carry if they pick up
           something new while out adventuring.</p>
       </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="dragjiofewh" class="anchorTag"></div>
+          <h5>Drag</h5>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='inifewjiojfeiow' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'inifewjiojfeiow'"></app-bm-chapter-icon>
+          <p>Instead of trying to carry something, a character can always drag it behind them, which is much easier.</p>
+        </div>
+        <div class='paragraphShell marginBottom anchor'>
+          <div id='incaioskeioe' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'incaioskeioe'"></app-bm-chapter-icon>
+          <p>In this case, a person can drag 3 times what they can Carry, but this is a straight multiplication.</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='apokpokpfew' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'apokpokpfew'"></app-bm-chapter-icon>
+          <p>So, a person who can carry 1L can drag 3L; a person who can carry 2M can drag 6M.</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='hiojiojio' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'hiojiojio'"></app-bm-chapter-icon>
+          <p>However, regardless of how much they're dragging, they cannot move above a Walk and going over their drag limit once, dropped them to a max of Stroll. Going over twice prevents them from moving at all.</p>
+        </div>
+      </div>
       <div class="anchor">
         <div id="Currencyheader" class="anchorTag"></div>
         <h1>Currency</h1>
@@ -1802,7 +1828,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifyourjioejiofelarge' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyourjioejiofelarge'"></app-bm-chapter-icon>
-        <p>If you're a Large creature, lower the Cover die by 1 size. You get no Cover from bucklers.</p>
+        <p>If you're a Large creature, lower the Cover die by 1 size..</p>
       </div>
       <div class="anchor">
         <div id="DRheader" class="anchorTag"></div>
@@ -1863,15 +1889,6 @@
           found in <a [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>.</p>
       </div>
       <div class="anchor">
-        <div id="Weightheader" class="anchorTag"></div>
-        <h3>Weight </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisishowheFakYPIGjMg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisishowheFakYPIGjMg'"></app-bm-chapter-icon>
-        <p>This is how heavy your shield is for your Carry.</p>
-      </div>
-      <div class="anchor">
         <div id="Fatigueheader" class="anchorTag"></div>
         <h3>Fatigue </h3>
       </div>
@@ -1906,6 +1923,7 @@
               </tr>
               <tr class="notSticky">
                 <th>Name</th>
+                <th>Size</th>
                 <th>DR</th>
                 <th>Def</th>
                 <th>Parry</th>
@@ -1918,6 +1936,7 @@
             <tbody>
               <tr *ngFor="let content of shields">
                 <td>{{content.name}}</td>
+                <td>{{content.size}}</td>
                 <td>{{content.dr}}</td>
                 <td>{{content.def}}</td>
                 <td>{{content.parry}}</td>

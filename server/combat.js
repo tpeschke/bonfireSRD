@@ -2,6 +2,7 @@ module.exports = {
     armor: [
         {
             name: 'Buff Coat',
+            size: 'S',
             dr: '2',
             def: 0,
             init: 0,
@@ -11,6 +12,7 @@ module.exports = {
         },
         {
             name: 'Gambeson',
+            size: 'S',
             dr: '3',
             def: 0,
             init: 0,
@@ -20,6 +22,7 @@ module.exports = {
         },
         {
             name: 'Leather',
+            size: 'S',
             dr: '4',
             def: -1,
             init: 1,
@@ -29,6 +32,7 @@ module.exports = {
         },
         {
             name: 'Coat of Plates',
+            size: 'M',
             dr: '2/d',
             def: -4,
             init: 0,
@@ -38,6 +42,7 @@ module.exports = {
         },
         {
             name: 'Lamellar',
+            size: 'M',
             dr: '3/d',
             def: -4,
             init: 5,
@@ -47,6 +52,7 @@ module.exports = {
         },
         {
             name: 'Brigandine',
+            size: 'M',
             dr: '3/d',
             def: -5,
             init: 5,
@@ -56,6 +62,7 @@ module.exports = {
         },
         {
             name: 'Laminar (Banded Mail)',
+            size: 'M',
             dr: '3/d',
             def: 0,
             init: 5,
@@ -65,6 +72,7 @@ module.exports = {
         },
         {
             name: 'Chainmail',
+            size: 'M',
             dr: '3/d',
             def: -3,
             init: 3,
@@ -74,6 +82,7 @@ module.exports = {
         },
         {
             name: 'Plated Mail',
+            size: 'L',
             dr: '2/d + 6',
             def: -6,
             init: 6,
@@ -83,6 +92,7 @@ module.exports = {
         },
         {
             name: 'Scale',
+            size: 'L',
             dr: '4/d + 2',
             def: -8,
             init: 7,
@@ -92,6 +102,7 @@ module.exports = {
         },
         {
             name: 'Full Plate',
+            size: 'L',
             dr: '6/d + 7',
             def: -10,
             init: 10,
