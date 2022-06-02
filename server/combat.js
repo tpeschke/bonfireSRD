@@ -802,7 +802,7 @@ module.exports = {
             },
             {
                 name: 'Latchet Crossbow',
-                size: 'M*',
+                size: 'M',
                 dam: 'd12!+d10!',
                 rec: 13,
                 type: 'P',
