@@ -494,8 +494,8 @@
       <div class='paragraphShell anchor'>
         <div id='WithonehandIiRttEWgoY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WithonehandIiRttEWgoY'"></app-bm-chapter-icon>
-        <p>With one hand free, the character can focus a bit more on their defense. They double their Parry from
-          their Weapon and Skill Ranks, however this doesn't double the bonus to DR and breakage bonus.</p>
+        <p>With one hand free, the character can focus a bit more on their defense. They gain +4 Parry and
+          gain an additional bonus equal to half their Parry Adv Skill Ranks with that weapon, however this doesn't double the bonus to DR and breakage bonus.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WithonehandIiRttEWgoY' class='anchorTag'></div>
@@ -799,7 +799,7 @@
       <div class='paragraphShell anchor'>
         <div id='IfameleeattTDdQNnUtjl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfameleeattTDdQNnUtjl'"></app-bm-chapter-icon>
-        <p>If a melee attack roll is within the Parry Threshold of the defender’s total, the defender may choose to
+        <p>If a melee attack roll is within the Parry Threshold of the defender’s total and they're not surprised, the defender may choose to
           deflect some of the incoming attack.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -1814,12 +1814,17 @@
         <p>This is a defensive tactic that involves moving directly back at jog or at a 45 degrees angle from your
           opponent’s blows at a walk.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='AfteryourdeffDnVORwPnq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AfteryourdeffDnVORwPnq'"></app-bm-chapter-icon>
         <p>After your defense roll, if you declare a Retreat, you receive a +5 on that Defense roll but also a -5
-          to your next Attack and must continue to move back until your next attack, either at a jog, if moving directly
+          to your next Attack and but you move backwards for 1 second, either at a jog, if moving directly
           back, or at a walk, if started to move at a 45 degrees angle.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ifyouioofew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyouioofew'"></app-bm-chapter-icon>
+        <p>If you perform this Strategy multiple times between attacks, you gain an additional -2 for each time you do so.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='IfyouropponelssNIgAZlf' class='anchorTag'></div>
@@ -1878,6 +1883,11 @@
         <p>You also shrink your next attack's damage dice based on your weapon's type; Piercing weapons lowers their
           largest dice by 1 size. Slashing lowers all dice by 1 size and crushing lowers
           their highest die by 2 sizes.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='iofjieow' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'iofjieow'"></app-bm-chapter-icon>
+        <p>If you perform this Strategy multiple times between attacks, you only shrink 1 dice of your choice 1 size for each time you do so.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyouropponeQftlleVuis' class='anchorTag'></div>
@@ -1956,8 +1966,8 @@
       <div class='paragraphShell anchor'>
         <div id='IfyouhityoySOhVIeRUK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyouhityoySOhVIeRUK'"></app-bm-chapter-icon>
-        <p>If you hit, you successfully pulled off the move, dealing your unarmed damage and gaining the benefit of the
-          technique.</p>
+        <p>If you hit and weren't parried, you successfully pulled off the move, dealing your unarmed damage and gaining the benefit of the
+          technique. If you were parried, the attack counts as a miss.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfthediffereTNZlOKHdmC' class='anchorTag'></div>
