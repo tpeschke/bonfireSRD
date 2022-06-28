@@ -50,6 +50,8 @@ app.get('/getArmor', ctrl.getArmor)
 app.get('/getShields', ctrl.getShields)
 app.get('/getWeapons/:type', ctrl.getWeapons)
 app.get('/getWeapons', ctrl.getWeapons)
+app.get('/getGroupedWeapons/:type', ctrl.getGroupedWeapons)
+app.get('/getGroupedWeapons', ctrl.getGroupedWeapons)
 
 app.use(fakeAuth)
 

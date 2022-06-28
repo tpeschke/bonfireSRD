@@ -356,7 +356,7 @@ export default [
     },
     {
         name: "Armor Fighter's Kit",
-        weight: "1M 3S",
+        weight: "2S",
         cash: "1d4! sc",
         items: [
             {

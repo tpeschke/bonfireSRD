@@ -79,6 +79,122 @@ module.exports = {
     getShields: (req, res) => {
         res.send(combatEquipment.shields)
     },
+    getGroupedWeapons: (req, res) => {
+        let { type = '' } = req.params
+
+        if (type.toUpperCase() === "RANGED") {
+            let weapons = [
+                {
+                    label: 'Thrown',
+                    weapons: combatEquipment.weapons.thrown.map(weapon => {
+                        for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                            if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                                return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
+                            }
+                        }
+                    })
+                },
+                {
+                    label: 'Mechanical',
+                    weapons: combatEquipment.weapons.mechanical.map(weapon => {
+                        for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                            if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                                return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
+                            }
+                        }
+                    })
+                },
+                {
+                    label: 'Firearms',
+                    weapons: combatEquipment.weapons.firearms.map(weapon => {
+                        for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                            if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                                return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
+                            }
+                        }
+                    })
+                }
+            ]
+
+            res.send(weapons)
+        } else if (type.toUpperCase() === "MELEE") {
+            res.send([
+                {
+                    label: 'Axes',
+                    weapons: combatEquipment.weapons.axes
+                },
+                {
+                    label: 'Polearms',
+                    weapons: combatEquipment.weapons.polearms
+                },
+                {
+                    label: 'Sidearms',
+                    weapons: combatEquipment.weapons.sidearms
+                },
+                {
+                    label: 'Swords',
+                    weapons: combatEquipment.weapons.swords
+                },
+                {
+                    label: 'Trauma',
+                    weapons: combatEquipment.weapons.trauma
+                }
+            ])
+        } else {
+            res.send([
+                {
+                    label: 'Axes',
+                    weapons: combatEquipment.weapons.axes
+                },
+                {
+                    label: 'Firearms',
+                    weapons: combatEquipment.weapons.firearms.map(weapon => {
+                        for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                            if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                                return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
+                            }
+                        }
+                    })
+                },
+                {
+                    label: 'Mechanical',
+                    weapons: combatEquipment.weapons.mechanical.map(weapon => {
+                        for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                            if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                                return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
+                            }
+                        }
+                    })
+                },
+                {
+                    label: 'Polearms',
+                    weapons: combatEquipment.weapons.polearms
+                },
+                {
+                    label: 'Sidearms',
+                    weapons: combatEquipment.weapons.sidearms
+                },
+                {
+                    label: 'Swords',
+                    weapons: combatEquipment.weapons.swords
+                },
+                {
+                    label: 'Thrown',
+                    weapons: combatEquipment.weapons.thrown.map(weapon => {
+                        for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
+                            if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
+                                return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
+                            }
+                        }
+                    })
+                },
+                {
+                    label: 'Trauma',
+                    weapons: combatEquipment.weapons.trauma
+                }
+            ])
+        }
+    },
     getWeapons: (req, res) => {
         let { type = '' } = req.params
 
@@ -92,7 +208,7 @@ module.exports = {
             weapons = weapons.map(weapon => {
                 for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
                     if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
-                        return {...weapon, range: combatEquipment.weapons.ranges[i].range}
+                        return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
                     }
                 }
             })
@@ -115,7 +231,7 @@ module.exports = {
             weapons = weapons.map(weapon => {
                 for (let i = 0; i < combatEquipment.weapons.ranges.length; i++) {
                     if (combatEquipment.weapons.ranges[i].name.toUpperCase() === weapon.name.toUpperCase()) {
-                        return {...weapon, range: combatEquipment.weapons.ranges[i].range}
+                        return { ...weapon, range: combatEquipment.weapons.ranges[i].range }
                     }
                 }
             })
