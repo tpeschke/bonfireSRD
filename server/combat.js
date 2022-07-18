@@ -327,6 +327,16 @@ module.exports = {
                 bonus: 'Yes',
             },
             {
+                name: 'Javelin',
+                size: 'M',
+                dam: 'd8!',
+                rec: 7,
+                type: 'P',
+                parry: 0,
+                measure: 5,
+                bonus: ' ',
+            },
+            {
                 name: 'Lance',
                 size: 'L',
                 dam: '1d8!',
