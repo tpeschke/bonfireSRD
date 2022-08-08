@@ -240,7 +240,8 @@
         <div class='paragraphShell anchor marginBottom'>
           <div id='hiojiojio' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'hiojiojio'"></app-bm-chapter-icon>
-          <p>However, regardless of how much they're dragging, they cannot move above a Walk and going over their drag limit once, dropped them to a max of Stroll. Going over twice prevents them from moving at all.</p>
+          <p>However, regardless of how much they're dragging, they cannot move above a Walk and going over their drag
+            limit once, dropped them to a max of Stroll. Going over twice prevents them from moving at all.</p>
         </div>
       </div>
       <div class="anchor">
@@ -2543,7 +2544,7 @@
               <td>{{weapon.type}}</td>
               <td>{{weapon.parry}}</td>
               <td>{{weapon.measure}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
             <tr class="notSticky">
               <th colspan="8">Polearms</th>
@@ -2556,7 +2557,7 @@
               <td>{{weapon.type}}</td>
               <td>{{weapon.parry}}</td>
               <td>{{weapon.measure}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
             <tr class="notSticky">
               <th colspan="8">Sidearms</th>
@@ -2569,7 +2570,7 @@
               <td>{{weapon.type}}</td>
               <td>{{weapon.parry}}</td>
               <td>{{weapon.measure}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
             <tr class="notSticky">
               <th colspan="8">Swords</th>
@@ -2582,7 +2583,7 @@
               <td>{{weapon.type}}</td>
               <td>{{weapon.parry}}</td>
               <td>{{weapon.measure}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
             <tr class="notSticky">
               <th colspan="8">Trauma</th>
@@ -2595,7 +2596,7 @@
               <td>{{weapon.type}}</td>
               <td>{{weapon.parry}}</td>
               <td>{{weapon.measure}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
           </tbody>
         </table>
@@ -2631,7 +2632,7 @@
               <td>{{weapon.rec}}</td>
               <td>{{weapon.type}}</td>
               <td>{{weapon.minrec}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
             <tr class='notSticky'>
               <th colspan="7">Mechanical</th>
@@ -2643,7 +2644,7 @@
               <td>{{weapon.rec}}</td>
               <td>{{weapon.type}}</td>
               <td>{{weapon.minrec}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
             <tr class='notSticky'>
               <th colspan="7">Firearms</th>
@@ -2655,7 +2656,7 @@
               <td>{{weapon.rec}}</td>
               <td>{{weapon.type}}</td>
               <td>{{weapon.minrec}}</td>
-              <td>{{weapon.bonus}}</td>
+              <td>{{weapon.bonus ? 'Yes' : ''}}</td>
             </tr>
           </tbody>
         </table>
@@ -2712,39 +2713,36 @@
         <div class="underline-sub"></div>
       </div>
       <div class="anchor">
+        <div id="Ahlspiessheader" class="anchorTag"></div>
+        <h3>Ahlspiess</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thieswqkwkopkwq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thieswqkwkopkwq'"></app-bm-chapter-icon>
+        <p>This weapon deals d6! damage on a sucessful jab.</p>
+      </div>
+      <div class="anchor">
         <div id="ArmingSwordheader" class="anchorTag"></div>
         <h3>Arming Sword </h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WheneveryousDkhUxicnXh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WheneveryousDkhUxicnXh'"></app-bm-chapter-icon>
-        <p>Whenever you successfully parry with your arming sword, you deal an automatic d4! damage (no DR) to the enemy that attacked you.</p>
-      </div>
-      <div class="anchor">
-        <div id="Bardicheheader" class="anchorTag"></div>
-        <h3>Bardiche </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponcacGoMZAQnqo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponcacGoMZAQnqo'"></app-bm-chapter-icon>
-        <p>This weapon can be braced for a charge. It takes 3 seconds to do so and deals double damage to charging foes
-          if
-          you hit.</p>
+        <p>Add this weapon's Parry to your Shield's Parry.</p>
       </div>
       <div class="anchor">
         <div id="Bellybowheader" class="anchorTag"></div>
         <h3>Bellybow </h3>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='AllthisweapouOvStXDtvw' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AllthisweapouOvStXDtvw'"></app-bm-chapter-icon>
-        <p>All this weapon’s damage is counted as if it were on 1 dice for /D armor.</p>
+        <div id='ThisweaponcacGoMZAQnqo' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisweaponcacGoMZAQnqo'"></app-bm-chapter-icon>
+        <p>This weapon must be loaded two-handed regardless of size.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='RecoveryAdvanNRDfAgeBQK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RecoveryAdvanNRDfAgeBQK'"></app-bm-chapter-icon>
-        <p>Recovery Advanced Skills for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus
-          instead of 1.</p>
+        <div id='steadjifojeiojew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'steadjifojeiojew'"></app-bm-chapter-icon>
+        <p>Steading this weapon against a stand doubles bonuses to Attack from Skills.</p>
       </div>
       <div class="anchor">
         <div id="Billheader" class="anchorTag"></div>
@@ -2765,13 +2763,23 @@
         <p>Damage with this weapon is effectively doubled for Trauma checks.</p>
       </div>
       <div class="anchor">
+        <div id="BrassKnucklesheader" class="anchorTag"></div>
+        <h3>Brass Knuckles </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='DamagewiththMAKTsNLbbm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'DamagewiththMAKTsNLbbm'"></app-bm-chapter-icon>
+        <p>While using this weapon, you can perform all Unarmed moves except Grab and Strikes gain a +10 to Attack Roll.
+        </p>
+      </div>
+      <div class="anchor">
         <div id="CompositeBowheader" class="anchorTag"></div>
         <h3>Composite Bow </h3>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThisistheonkKhSyZvqbI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisistheonkKhSyZvqbI'"></app-bm-chapter-icon>
-        <p>This mechanical ranged weapon may be used from horseback.</p>
+        <p>This weapon can be used from horseback.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponrewwxfENySPu' class='anchorTag'></div>
@@ -2779,30 +2787,27 @@
         <p>This weapon requires two hands regardless of size.</p>
       </div>
       <div class="anchor">
-        <div id="CourtSwordheader" class="anchorTag"></div>
-        <h3>Court Sword </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhenrollingdoVdplraAFu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenrollingdoVdplraAFu'"></app-bm-chapter-icon>
-        <p>When rolling damage, reroll the lowest die. It’s doesn’t explode.</p>
-      </div>
-      <div class="anchor">
         <div id="Crossbowheader" class="anchorTag"></div>
         <h3>Crossbow </h3>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='IfyousteadyKBGxGkCWMh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfyousteadyKBGxGkCWMh'"></app-bm-chapter-icon>
-        <p>If you steady this weapon against the ground or a stand, you may double your Attack bonus from Skills with
-          this
-          weapon.</p>
+        <div id='WhenrollingdoVdplraAFu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenrollingdoVdplraAFu'"></app-bm-chapter-icon>
+        <p>This weapon must be loaded two-handed regardless of size.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='RecoveryAdvanEurnJqBRNp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RecoveryAdvanEurnJqBRNp'"></app-bm-chapter-icon>
-        <p>Recovery Advanced Skills for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus
-          instead of 1.</p>
+        <div id='crossbonwsteaindg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'crossbonwsteaindg'"></app-bm-chapter-icon>
+        <p>Steading this weapon against the ground or a stand doubles bonuses to Attack from Skills.</p>
+      </div>
+      <div class="anchor">
+        <div id="Crossbowheader" class="anchorTag"></div>
+        <h3>Dusck </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='IfyousteadyKBGxGkCWMh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'IfyousteadyKBGxGkCWMh'"></app-bm-chapter-icon>
+        <p>Parrying with this weapon gives you 3/D DR instead of 2/D.</p>
       </div>
       <div class="anchor">
         <div id="Hdaggerheader" class="anchorTag"></div>
@@ -2820,41 +2825,65 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenwieldingyZoDJpHleE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenwieldingyZoDJpHleE'"></app-bm-chapter-icon>
-        <p>When wielding this weapon two handed, damage from it is effectively dealt on 1 die.</p>
+        <p>Damage dice for this weapon are effectively halved, rounded up, vs /DR.</p>
+      </div>
+      <div class="anchor">
+        <div id="Falchionheader" class="anchorTag"></div>
+        <h3>Falchion </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='wheweaeajiojviojveiw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'wheweaeajiojviojveiw'"></app-bm-chapter-icon>
+        <p>When used two-handedly, you gain a +6 damage instead.</p>
       </div>
       <div class="anchor">
         <div id="FireLanceheader" class="anchorTag"></div>
         <h3>Fire Lance </h3>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='ThisweaponswSiogYxlTJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponswSiogYxlTJ'"></app-bm-chapter-icon>
-        <p>This weapon’s loud noise causes everyone to duck. Everyone within its range flinches for a number of seconds
-          equal to 1 of the d10s, determined beforehand (see Terrain and Situational Factors section of <a
-            [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>). This
-          includes the gunner as well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
-        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait or every Rank they
-          have in any Firearm-based Weapon Advanced Skill that the
-          person has, which
-          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they
-          have been in that involves firearms.
-          It is also completely
-          negated if they have any Advanced Skills in any firearm.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfseveralfiraAdCwqpfWr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfseveralfiraAdCwqpfWr'"></app-bm-chapter-icon>
-        <p>If several firearms have gone off on the same second, you take the highest delay rolled. Additionally, those
-          already stunned by a firearm when another goes off are unaffected by that firearm's delay.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
         <div id='ThisisasingiUvkrkvYGT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisisasingiUvkrkvYGT'"></app-bm-chapter-icon>
-        <p>This is a single use weapon.</p>
+        <p>This weapon causes flinching equal to the highest damage dice rolled within it's range. See the Flinching Sidebar for more info.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='firelanicethiocaing' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'firelanicethiocaing'"></app-bm-chapter-icon>
+        <p>This weapon always gains 1 Wear on use.</p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="flinchingheading" class="anchorTag"></div>
+          <h5>Flinching</h5>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='ThisweaponswSiogYxlTJ' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'ThisweaponswSiogYxlTJ'"></app-bm-chapter-icon>
+          <p>This weapon’s loud noise causes everyone to duck. Everyone within its flinching range flinches for a number of
+            seconds as noted by the weapon, (see Terrain and Situational Factors section of <a
+              [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>). This
+            includes the gunner as well.</p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
+          <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait or every
+            Rank
+            they
+            have in any Firearm-based Weapon Advanced Skill that the
+            person has, which
+            they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat
+            they
+            have been in that involves firearms.
+            It is also completely
+            negated if they have any Advanced Skills in any firearm.</p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='IfseveralfiraAdCwqpfWr' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'IfseveralfiraAdCwqpfWr'"></app-bm-chapter-icon>
+          <p>If several firearms have gone off on the same second, you take the highest delay rolled. Additionally,
+            those
+            already stunned by a firearm when another goes off are unaffected by that firearm's delay.</p>
+        </div>
       </div>
       <div class="anchor">
         <div id="Guisarmeheader" class="anchorTag"></div>
@@ -2886,47 +2915,14 @@
           weapon.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RecoveryAdvanFwplkUAkHg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RecoveryAdvanFwplkUAkHg'"></app-bm-chapter-icon>
-        <p>Recovery Advanced Skills for this weapon remove 1.5 seconds (rounded down) off their Recovery per bonus
-          instead of 1.</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='ThisweaponalUFRltVLCYz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponalUFRltVLCYz'"></app-bm-chapter-icon>
-        <p>This weapon also comes with a drop-down pole that takes 5 seconds to deploy or stow away.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisweaponserjGFguOmV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponserjGFguOmV'"></app-bm-chapter-icon>
-        <p>This weapon’s loud noise causes everyone to duck. Everyone within the first two range categories of this
-          weapon
-          flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain and
-          Situational Factors section of <a [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>). If they’re
-          still surprised, they can act after those seconds are
-          over. This includes the gunner as well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
-        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait or every Rank they
-          have in any Firearm-based Weapon Advanced Skill that the
-          person has, which
-          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they
-          have been in that involves firearms.
-          It is also completely
-          negated if they have any Advanced Skills in any firearm.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfseveralfirCAJWEEwCWX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfseveralfirCAJWEEwCWX'"></app-bm-chapter-icon>
-        <p>If several firearms have gone off on the same second, you take the highest delay rolled. Additionally, those
-          already stunned by a firearm when another goes off are unaffected by that firearm's delay.</p>
+        <p>This weapon causes flinching equal to the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponBaXywhmuqbGa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponBaXywhmuqbGa'"></app-bm-chapter-icon>
-        <p>This weapon Backfires (see sidebar).</p>
+        <p>This weapon Backfires. See the Back Firing sidebar for more info.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -2952,68 +2948,36 @@
         </div>
       </div>
       <div class="anchor">
-        <div id="Handgonneheader" class="anchorTag"></div>
-        <h3>Handgonne </h3>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisweaponsfOkPsWyUmy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponsfOkPsWyUmy'"></app-bm-chapter-icon>
-        <p>This weapon’s loud noise causes everyone to duck. Everyone within the first two range categories of this
-          weapon
-          flinches for a number of seconds equal to what the smaller of its two damage dice rolls (see Terrain and
-          Situational Factors section of <a [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>). If they’re
-          still surprised, they can act after those seconds are
-          over. This includes the gunner as well.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThispenaltyiCmIGDElbzu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThispenaltyiCmIGDElbzu'"></app-bm-chapter-icon>
-        <p>This penalty is lowered by 1 for every Rank of the "Immune to being stunned by firearms" Trait or every Rank they
-          have in any Firearm-based Weapon Advanced Skill that the
-          person has, which
-          they can either invest or buy like a normal Trait or get for free: they gain 1 Rank in it for each combat they
-          have been in that involves firearms.
-          It is also completely
-          negated if they have any Advanced Skills in any firearm.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfseveralfirhkXiNCnAfJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfseveralfirhkXiNCnAfJ'"></app-bm-chapter-icon>
-        <p>If several firearms have gone off on the same second, you take the highest delay rolled. Additionally, those
-          already stunned by a firearm when another goes off are unaffected by that firearm's delay.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponBasMQMwjsdFc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponBasMQMwjsdFc'"></app-bm-chapter-icon>
-        <p>This weapon Backfires (see sidebar).</p>
-      </div>
-      <div class="anchor">
         <div id="Handaxeheader" class="anchorTag"></div>
         <h3>Handaxe </h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponcaUfopLcdnwr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcaUfopLcdnwr'"></app-bm-chapter-icon>
-        <p>This weapon can be used either in melee or as the throwing axe. All applicable Advanced Melee Weapon Skills
-          apply to the throwing axe as well, taking whichever is highest.</p>
+        <p>This can be used in melee or as a throwing axe. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>
       </div>
       <div class="anchor">
-        <div id="HorsemansPickheader" class="anchorTag"></div>
-        <h3>Horsemans Pick </h3>
+        <div id="Handgonneheader" class="anchorTag"></div>
+        <h3>Handgonne </h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThisweaponsfOkPsWyUmy' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisweaponsfOkPsWyUmy'"></app-bm-chapter-icon>
+        <p>This weapon causes flinching equal to the d4! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponisnqwTpmdBWb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponisnqwTpmdBWb'"></app-bm-chapter-icon>
-        <p>This weapon is designed for use on horseback; it gains a +d8! to damage.</p>
+        <div id='ThisweaponBasMQMwjsdFc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisweaponBasMQMwjsdFc'"></app-bm-chapter-icon>
+        <p>This weapon Backfires. See the Back Firing sidebar for more info.</p>
       </div>
       <div class="anchor">
         <div id="Javelinheadermeleee" class="anchorTag"></div>
         <h3>Javelin, Melee </h3>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='thisoiocwiojicew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thisoiocwiojicew'"></app-bm-chapter-icon>
-        <p>This weapon isn't meant to be used in melee unless under the most dire of circumstances: Ranged and Melee weapon Skills don't transfer between using it in ranged or melee.</p>
+        <p>This can be used in melee or as a thrown javelin. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>
       </div>
       <div class="anchor">
         <div id="Javelinheader" class="anchorTag"></div>
@@ -3022,21 +2986,17 @@
       <div class='paragraphShell anchor'>
         <div id='IfthisweaponDcqlowwiRl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfthisweaponDcqlowwiRl'"></app-bm-chapter-icon>
-        <p>When thrown, if this weapon strikes a shield. and its damage is greater than the shield’s DR, the javelin has gotten
-          lodged in
-          the shield’s surface.</p>
+        <p>This can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two. </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TheDefendermyrwYLVpVkZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheDefendermyrwYLVpVkZ'"></app-bm-chapter-icon>
-        <p>The Defender must either spend 2d6! seconds pulling it out or defend with a dice size 1 size smaller for as
-          long as he
-          continues to use the shield.</p>
+        <p>On a shield hit, if damage is greater than the shield's DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out..</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='UnlikeotherrNKjBMUySsQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'UnlikeotherrNKjBMUySsQ'"></app-bm-chapter-icon>
-        <p>Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
+        <p>Add your Damage Modifier from Strength to this weapon.</p>
       </div>
       <div class="anchor">
         <div id="Knifeheader" class="anchorTag"></div>
@@ -3045,8 +3005,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponcakjDMFggtZn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcakjDMFggtZn'"></app-bm-chapter-icon>
-        <p>This weapon can be used either in melee or as the throwing knife. All applicable Advanced Melee Weapon Skills
-          apply to the throwing knife as well, taking whichever is highest.</p>
+        <p>This can be used in melee or as a throwing knife. All applicable Adv. Weapon Skills apply to both, taking the highest of the two</p>
       </div>
       <div class="anchor">
         <div id="Koncerzheader" class="anchorTag"></div>
@@ -3085,33 +3044,30 @@
       <div class='paragraphShell anchor'>
         <div id='thelatchetcrowbons' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thelatchetcrowbons'"></app-bm-chapter-icon>
-        <p>The latchet crossbow needs to be reloaded with both hands but can be fired one-handed without penalty.</p>
+        <p>This weapon must be loaded two-handed regardless of size.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='thelatchetcrowbons' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thelatchetcrowbons'"></app-bm-chapter-icon>
-        <p>The latchet crossbow packs a punch: its damage is considered to be dealt on 1 die for the purposes of /DR.
-        </p>
+        <p>Steading this weapon against anything doubles bonuses to Attack from Skills</p>
       </div>
       <div class="anchor">
-        <div id="LochaberAxeheader" class="anchorTag"></div>
-        <h3>Lochaber Axe </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponcavIEuHAKbgY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponcavIEuHAKbgY'"></app-bm-chapter-icon>
-        <p>This weapon can be braced for a charge. It takes 3 seconds to do so and deals double damage to charging foes
-          if
-          you hit.</p>
-      </div>
-      <div class="anchor">
-        <div id="Lucerneheader" class="anchorTag"></div>
-        <h3>Lucerne </h3>
+        <div id="Longbowheader" class="anchorTag"></div>
+        <h3>Longbow </h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThiscountsasOwZnjcneOJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThiscountsasOwZnjcneOJ'"></app-bm-chapter-icon>
-        <p>This weapon deals 1 Wear to the enemy's weapon, armor, or shield on a successful hit that deals more than 10 damage on (including Advanced Skills).</p>
+        <p>This weapon requires two hands regardless of size.</p>
+      </div>
+      <div class="anchor">
+        <div id="MilitaryForkheader" class="anchorTag"></div>
+        <h3>Military Fork </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='whilejusinogiojejio' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'whilejusinogiojejio'"></app-bm-chapter-icon>
+        <p>While using this weapon, you can perform the Grab & Throw Unarmed moves as if 1 handed.</p>
       </div>
       <div class="anchor">
         <div id="PeasantsFlaiheader" class="anchorTag"></div>
@@ -3120,7 +3076,34 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponcaMjcmPyRuEu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcaMjcmPyRuEu'"></app-bm-chapter-icon>
-        <p>This weapon can get around guards more effectively. While attacking someone, reduce their Parry by 4.</p>
+        <p>Attacks against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>
+      </div>
+      <div class="anchor">
+        <div id="Rapierheader" class="anchorTag"></div>
+        <h3>Rapier </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='rapifwheniojfioe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'rapifwheniojfioe'"></app-bm-chapter-icon>
+        <p>When in Long Guard, increase Measure by +2 ft instead.</p>
+      </div>
+      <div class="anchor">
+        <div id="Scourgeheader" class="anchorTag"></div>
+        <h3>Scourge </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='scouragejiojwjioq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'scouragejiojwjioq'"></app-bm-chapter-icon>
+        <p>Attacks against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>
+      </div>
+      <div class="anchor">
+        <div id="Sovnyaheader" class="anchorTag"></div>
+        <h3>Sovnya </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='sovunyaijojfew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sovunyaijojfew'"></app-bm-chapter-icon>
+        <p>This weapon is designed for use on horseback; it gains a +d8! to damage.</p>
       </div>
       <div class="anchor">
         <div id="ThrowingAxeheader" class="anchorTag"></div>
@@ -3129,57 +3112,12 @@
       <div class='paragraphShell anchor'>
         <div id='ThisweaponcatkrjCLcHyw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcatkrjCLcHyw'"></app-bm-chapter-icon>
-        <p>This weapon can either be thrown or used in melee as the handaxe. All applicable Advanced Ranged Weapon
-          Skills apply to the handaxe as well, taking whichever is highest.</p>
+        <p>This can be used at ranged or as a handaxe in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfthisweapondrDyvQXOee' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfthisweapondrDyvQXOee'"></app-bm-chapter-icon>
-        <p>If this weapon strikes a shield and its damage is greater than the shield’s DR, the axe has gotten lodged in
-          the
-          shield’s surface. The Defender must either spend 2d6! seconds pulling it out or defend with a dice size 1 size
-          smaller.</p>
-      </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='UnlikeotherrOKGLppqaIp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'UnlikeotherrOKGLppqaIp'"></app-bm-chapter-icon>
-        <p>Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
-      </div>
-      <div class="anchor">
-        <div id="Scourgeheader" class="anchorTag"></div>
-        <h3>Scourge </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponcackQBnvdhMu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponcackQBnvdhMu'"></app-bm-chapter-icon>
-        <p>This weapon can get around guards more effectively. While attacking someone, reduce their Parry by 4.</p>
-      </div>
-      <div class="anchor">
-        <div id="Sabreheader" class="anchorTag"></div>
-        <h3>Sabre </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponissQzXGuoKSs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponissQzXGuoKSs'"></app-bm-chapter-icon>
-        <p>This weapon is designed for use on horseback; it gains a +d8! to damage.</p>
-      </div>
-      <div class="anchor">
-        <div id="Schiavonaheader" class="anchorTag"></div>
-        <h3>Schiavona </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponisjQCTjkVmWH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponisjQCTjkVmWH'"></app-bm-chapter-icon>
-        <p>This weapon is designed for use on horseback; it gains a +d8! to damage.</p>
-      </div>
-      <div class="anchor">
-        <div id="Sovnyaheader" class="anchorTag"></div>
-        <h3>Sovnya </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponisVToSHcrFfj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponisVToSHcrFfj'"></app-bm-chapter-icon>
-        <p>This weapon is designed for use on horseback; it gains a +d8! to damage.</p>
+        <p>Add your Damage Modifier from Strength to this weapon.</p>
       </div>
       <div class="anchor">
         <div id="ThrowingKnifeheader" class="anchorTag"></div>
@@ -3188,13 +3126,12 @@
       <div class='paragraphShell anchor'>
         <div id='ThisweaponcaWmeojaZlzq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcaWmeojaZlzq'"></app-bm-chapter-icon>
-        <p>This weapon can either be thrown or used in melee as the knife. All applicable Advanced Ranged Weapon Skills
-          apply to the knife as well, taking whichever is highest.</p>
+        <p>This can be used at ranged or as a knife in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='UnlikeotherrxxjUPxUXfn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'UnlikeotherrxxjUPxUXfn'"></app-bm-chapter-icon>
-        <p>Unlike other ranged weapons, you add your Damage Modifier from Strength to your damage.</p>
+        <p>Add your Damage Modifier from Strength to this weapon.</p>
       </div>
       <div class="anchor">
         <div id="Unarmedheader" class="anchorTag"></div>
@@ -3212,34 +3149,45 @@
           Skills.</p>
       </div>
       <div class="anchor">
-        <div id="Warbowheader" class="anchorTag"></div>
-        <h3>Warbow </h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisweaponmuXdlPelAQLe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisweaponmuXdlPelAQLe'"></app-bm-chapter-icon>
-        <p>This weapon must be used from a prone position, bracing the body of the bow with your legs. It takes 10
-          second -
-          your armor's skill adjustment (so heaver armor makes it so you take longer to get up) to get up, but only 3
-          seconds to drop prone.</p>
-      </div>
-      <div class="anchor">
         <div id="WarFlailheader" class="anchorTag"></div>
         <h3>War Flail </h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisweaponcaspRoKkJKBM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponcaspRoKkJKBM'"></app-bm-chapter-icon>
-        <p>This weapon can get around guards more effectively. While attacking someone, reduce their Parry by 4.</p>
+        <p>Attacks against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>
+      </div>
+      <div class="anchor">
+        <div id="Warscytheheader" class="anchorTag"></div>
+        <h3>War-scythe</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='attackakioakiod' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'attackakioakiod'"></app-bm-chapter-icon>
+        <p>Attacks also count against 2 adjacent targets, dealing 3d3! damage on hit instead.</p>
+      </div>
+      <div class="anchor">
+        <div id="Warbowheader" class="anchorTag"></div>
+        <h3>Warbow </h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisweaponmuXdlPelAQLe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisweaponmuXdlPelAQLe'"></app-bm-chapter-icon>
+        <p>This weapon must be fired from the prone position, regardless of size, bracing the body of the bow with your legs.</p>
       </div>
       <div class="anchor">
         <div id="Zweihanderheader" class="anchorTag"></div>
         <h3>Zweihander </h3>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='ThisweaponisolxFQSVhkZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisweaponisolxFQSVhkZ'"></app-bm-chapter-icon>
-        <p>This weapon is built for area control. This weapon's damage is doubled for considering Knock-Backs.</p>
+        <p>Attacks also count against 2 adjacent targets, dealing 3d3! damage on hit instead. +10 to Knock-backs</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thisweapoiovjieowjev' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thisweapoiovjieowjev'"></app-bm-chapter-icon>
+        <p>This weapon gives a +10 to Knock-backs.</p>
       </div>
     </div>
     <div class="sideShell">
