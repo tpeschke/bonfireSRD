@@ -120,7 +120,8 @@ module.exports = {
             cover: '1',
             flanks: 2,
             fatigue: -4,
-            bonus: 'Yes',
+            bonus: 'Takes 1 second to ready. Can be held with other weapons.',
+            bonusLong: '<p>The buckler takes 1 second to ready.</p><br><p>The Buckler can also be held but not used while wielding two handed weapons. You receive no bonuses when doing this, but it means that if you do switch over to a one-handed weapon, you instantly get the buckler’s bonus.</p>',
             size: 'S'
         },
         {
@@ -142,7 +143,8 @@ module.exports = {
             cover: 'd6!+4',
             flanks: 3,
             fatigue: -3,
-            bonus: 'Yes',
+            bonus: 'Adjacent allies get +2 Parry & d4! Cover. Takes 2 seconds to ready.',
+            bonusLong: '<p>The Figure Eight shield gives +2 Parry & d4! Cover to adjacent allies.</p><br><p>The Figure Eight shield takes 2 seconds to ready.</p>',
             size: 'M'
         },
         {
@@ -186,7 +188,8 @@ module.exports = {
             cover: 'd20!+8',
             flanks: 1,
             fatigue: -5,
-            bonus: 'Yes',
+            bonus: 'Has a kick stand to set it up.',
+            bonusLong: '<p>The Pavise can be set up using a kick stand in the back, giving anyone crouching behind it basically complete cover and allowing that person the ability to steady their weapon on it.</p>',
             size: 'L'
         },
         {
@@ -197,7 +200,8 @@ module.exports = {
             cover: 'd12!+6',
             flanks: 3,
             fatigue: -3,
-            bonus: 'Yes',
+            bonus: 'Nat 20 or Strike, delay target\'s atk by d4!+5 sec. Readies in 2 secs.',
+            bonusLong: '<p>With the Round Shield, on a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next attack by d4!+5 seconds.</p><br><p>They also delay the enemy an additional d4! seconds if used to perform a strike in unarmed combat.</p><br><p>The Round shield is readied in 2 seconds.</p>',
             size: 'M'
         },
         {
@@ -243,6 +247,7 @@ module.exports = {
                 parry: 0,
                 measure: 1,
                 bonus: 'Can be thrown.',
+                bonusLong: '<p>The Handaxe can be used in melee or as a throwing axe. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>'
             },
             {
                 name: 'Horsemans Pick',
@@ -275,6 +280,7 @@ module.exports = {
                 parry: 0,
                 measure: 6,
                 bonus: 'Jab deals d6! damage.',
+                bonusLong: '<p>The Ahlspiess deals d6! damage on a sucessful jab.</p>'
             },
             {
                 name: 'Bill',
@@ -285,6 +291,7 @@ module.exports = {
                 parry: 0,
                 measure: 8,
                 bonus: 'Dam x2 for Knock Backs vs mounted.',
+                bonusLong: '<p>Damage with the Bill is effectively doubled for Knock-Backs vs mounted defenders.</p>'
             },
             {
                 name: 'Glaive',
@@ -305,6 +312,7 @@ module.exports = {
                 parry: 0,
                 measure: 7.5,
                 bonus: 'Dam x2 for Knock Backs vs mounted.',
+                bonusLong: '<p>Damage with the Guisarme is effectively doubled for Knock-Backs vs mounted defenders.</p>'
             },
             {
                 name: 'Halberd',
@@ -315,6 +323,7 @@ module.exports = {
                 parry: 0,
                 measure: 5,
                 bonus: 'Can be used as Piercing.',
+                bonusLong: '<p>The Halberd can be used as either a Slashing or Piercing weapon. You can only switch after each attack.</p>'
             },
             {
                 name: 'Halberd',
@@ -325,6 +334,7 @@ module.exports = {
                 parry: 0,
                 measure: 5,
                 bonus: 'Can be used as Slashing.',
+                bonusLong: '<p>The Halberd can be used as either a Slashing or Piercing weapon. You can only switch after each attack.</p>'
             },
             {
                 name: 'Javelin',
@@ -335,6 +345,7 @@ module.exports = {
                 parry: 0,
                 measure: 4.25,
                 bonus: 'Can be thrown.',
+                bonusLong: '<p>This can be used in melee or as a thrown javelin. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>'
             },
             {
                 name: 'Lance',
@@ -345,6 +356,7 @@ module.exports = {
                 parry: 0,
                 measure: 10,
                 bonus: 'When mounted, +3d8! dam. Can be used 1 handed mounted.',
+                bonusLong: '<p>When mounted, the Lance can be wielded 1 handed without penalty.</p><br><p>The Lance is designed for use on horseback. When mounted, and moving above a walk, it gains +3d8! damage.</p>'
             },
             {
                 name: 'Lucerne',
@@ -365,6 +377,7 @@ module.exports = {
                 parry: 0,
                 measure: 6.75,
                 bonus: 'Can be used to grab and thrown as 1 handed.',
+                bonusLong: '<p>While using the Military Fork, you can perform the Grab & Throw Unarmed moves as if 1 handed.</p>'
             },
             {
                 name: 'Pike',
@@ -415,6 +428,7 @@ module.exports = {
                 parry: 0,
                 measure: 6.5,
                 bonus: 'When mounted, +d8! damage.',
+                bonusLong: '<p>The Sovnya is designed for use on horseback; it gains a +d8! to damage.</p>'
             },
             {
                 name: 'Voulge',
@@ -435,6 +449,7 @@ module.exports = {
                 parry: 0,
                 measure: 6.25,
                 bonus: 'Also attacks 2 adjacent targets, dealing 3d3! damage on hit.',
+                bonusLong: '<p>Attacks with the War-scythe also count against 2 adjacent targets, dealing 3d3! damage on hit instead.</p>'
             },
         ],
         sidearms: [
@@ -447,6 +462,7 @@ module.exports = {
                 parry: 2,
                 measure: 0,
                 bonus: 'Can do all unarmed moves but Grab. Strikes +10.',
+                bonusLong: '<p>While using Brass Knuckles, you can perform all Unarmed moves except Grab and Strikes gain a +10 to Attack Roll.</p>'
             },
             {
                 name: 'Cinquedea',
@@ -467,6 +483,7 @@ module.exports = {
                 parry: 2,
                 measure: 1,
                 bonus: 'Can be used as Piercing.',
+                bonusLong: '<p>Daggers can be used as either a Slashing or Piercing weapon. You can only switch after each attack.</p>'
             },
             {
                 name: 'Dagger',
@@ -477,6 +494,7 @@ module.exports = {
                 parry: 2,
                 measure: 1,
                 bonus: 'Can be used as Slashing.',
+                bonusLong: '<p>Daggers can be used as either a Slashing or Piercing weapon. You can only switch after each attack.</p>'
             },
             {
                 name: 'Dusack',
@@ -487,6 +505,7 @@ module.exports = {
                 parry: 2,
                 measure: 2.5,
                 bonus: 'Parry gives 3/D DR.',
+                bonusLong: '<p>Parrying with the Dusack gives you 3/D DR instead of 2/D.</p>'
             },
             {
                 name: 'Katzbalger',
@@ -507,6 +526,7 @@ module.exports = {
                 parry: 0,
                 measure: 0.75,
                 bonus: 'Can be thrown.',
+                bonusLong: '<p>Knives can be used in melee or as a throwing knife. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p>'
             },
             {
                 name: 'Scourge',
@@ -517,6 +537,7 @@ module.exports = {
                 parry: 0,
                 measure: 2,
                 bonus: 'Against Shields, +8 Atk; Against weapons w/ Parry, +4 Atk.',
+                bonusLong: '<p>Attacks with the Scourge against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
             },
             {
                 name: 'Stiletto',
@@ -539,6 +560,7 @@ module.exports = {
                 parry: 2,
                 measure: 2.5,
                 bonus: 'Add weapon\'s Parry to Shield\'s Parry.',
+                bonusLong: '<p>Add the Arming Sword\'s Parry to your Shield\'s Parry.</p>'
             },
             {
                 name: 'Court Sword',
@@ -559,6 +581,7 @@ module.exports = {
                 parry: 0,
                 measure: 3.5,
                 bonus: 'Half damage dice for /D DR.',
+                bonusLong: '<p>Damage dice for the Estoc are effectively halved, rounded up, vs /DR.</p>'
             },
             {
                 name: 'Executioner\'s Sword',
@@ -579,6 +602,7 @@ module.exports = {
                 parry: 0,
                 measure: 3,
                 bonus: 'When used 2-handed, +6 damage instead.',
+                bonusLong: '<p>When used two-handedly, the Falchion gains a +6 damage instead.</p>'
             },
             {
                 name: 'Koncerz',
@@ -589,6 +613,7 @@ module.exports = {
                 parry: 2,
                 measure: 5.25,
                 bonus: 'When mounted, +1d8! dam.',
+                bonusLong: '<p>The Koncerz is designed for use on horseback; it gains a +d8! to damage.</p>'
             },
             {
                 name: 'Longsword',
@@ -649,6 +674,7 @@ module.exports = {
                 parry: 0,
                 measure: 7,
                 bonus: 'Also atks 2 adj. targets, dealing 3d3! damage on hit. +10 to Knock-Backs.',
+                bonusLong: '<p>Attacks with the Zweihander also counts against 2 adjacent targets, dealing 3d3! damage on hit instead.</p><br><p>The Zweihander gives a +10 to Knock-backs.</p>'
             },
         ],
         trauma: [
@@ -671,6 +697,7 @@ module.exports = {
                 parry: 0,
                 measure: 2.25,
                 bonus: 'Dam * 2 for Trauma.',
+                bonusLong: '<p>Damage with the Bludgeon is effectively doubled for Trauma checks.</p>'
             },
             {
                 name: 'Club',
@@ -731,6 +758,7 @@ module.exports = {
                 parry: 0,
                 measure: 4,
                 bonus: 'Against Shields, +8 Atk; Against weapons w/ Parry, +4 Atk.',
+                bonusLong: '<p>Attacks with the Peasant\'s Flail against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
             },
             {
                 name: 'Quarterstaff',
@@ -750,7 +778,8 @@ module.exports = {
                 type: 'C',
                 parry: 0,
                 measure: 0,
-                bonus: 'Can performed unarmed moves.',
+                bonus: 'Can performed unarmed moves. -2 on explosions.',
+                bonusLong: '<p>On explosions, the additional dice are at a -2, instead of the standard -1.</p><br><p>Unarmed attacks aren\'t treated as Trauma weapons for the sake of the Melee Weapon Suite or its Advanced Skills.</p>'
             },
             {
                 name: 'War Flail',
@@ -761,6 +790,7 @@ module.exports = {
                 parry: 0,
                 measure: 4,
                 bonus: 'Against Shields, +8 Atk; Against weapons w/ Parry, +4 Atk.',
+                bonusLong: '<p>Attacks with the War Flail against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
             },
             {
                 name: 'War Hammer',
@@ -782,6 +812,7 @@ module.exports = {
                 type: 'P',
                 minrec: 4,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
+                bonusLong: '<p>The Javelin can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Javelin.</p>'
             },
             {
                 name: 'Throwing Axe',
@@ -791,6 +822,7 @@ module.exports = {
                 type: 'S',
                 minrec: 3,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
+                bonusLong: '<p>Throwing Axes can be used at ranged or as a handaxe in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>Add your Damage Modifier from Strength to the Throwing Axe.</p>'
             },
             {
                 name: 'Throwing Knife',
@@ -800,6 +832,7 @@ module.exports = {
                 type: 'P',
                 minrec: 3,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
+                bonusLong: '<p>Throwing Knife can be used at ranged or as a knife in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>Add your Damage Modifier from Strength to the Throwing Knife.</p>'
             },
         ],
         mechanical: [
@@ -811,6 +844,7 @@ module.exports = {
                 type: 'P',
                 minrec: 5,
                 bonus: 'Always 2-handed reload & used 2-handed. Steading weapon x2 Atk Skill Rank.',
+                bonusLong: '<p>The Bellybow must be loaded two-handed regardless of size.</p><br><p>Steading the Bellybow against a stand doubles bonuses to Attack from Skills.</p>'
             },
             {
                 name: 'Composite Bow',
@@ -820,6 +854,7 @@ module.exports = {
                 type: 'P',
                 minrec: 4,
                 bonus: 'Can be used mounted. Always 2-handed reload & used 2-handed.',
+                bonusLong: '<p>The Composite Bow can be used from horseback.</p><br><p>The Composite Bow requires two hands regardless of size.</p>'
             },
             {
                 name: 'Crossbow',
@@ -829,6 +864,7 @@ module.exports = {
                 type: 'P',
                 minrec: 5,
                 bonus: 'Always 2-handed reload & used 2-handed. Steading weapon x2 Atk Skill Rank.',
+                bonusLong: '<p>The Crossbow must be loaded two-handed regardless of size.</p><br><p>Steading the Crossbow against the ground or a stand doubles bonuses to Attack from Skills.</p>'
             },
             {
                 name: 'Latchet Crossbow',
@@ -838,6 +874,7 @@ module.exports = {
                 type: 'P',
                 minrec: 4,
                 bonus: 'Always 2-handed reload. Steading weapon x2 Atk Skill Rank.',
+                bonusLong: '<p>The Latchet Crossbow may be used from horseback.</p><br><p>The Latchet Crossbow must be loaded two-handed regardless of size.</p><br><p>Steading the Latchet Crossbow against anything doubles bonuses to Attack from Skills</p>'
             },
             {
                 name: 'Longbow',
@@ -847,6 +884,7 @@ module.exports = {
                 type: 'P',
                 minrec: 5,
                 bonus: 'Always 2-handed reload & used 2-handed.',
+                bonusLong: '<p>The Longbow requires two hands regardless of size.</p>'
             },
             {
                 name: 'Sling',
@@ -865,6 +903,7 @@ module.exports = {
                 type: 'P',
                 minrec: 5,
                 bonus: 'Must be fired from prone.',
+                bonusLong: '<p>The Warbow must be fired from the prone position, regardless of size, bracing the body of the bow with your legs.</p>'
             },
         ],
         firearms: [
@@ -876,6 +915,7 @@ module.exports = {
                 type: 'C',
                 minrec: 5,
                 bonus: 'Causing Flinching. Gains 1 Wear on Atk.',
+                bonusLong: '<p>The Fire Lance causes flinching equal to the highest damage dice rolled within it\'s range. See the Flinching Sidebar for more info.</p><br><p>The Fire Lance always gains 1 Wear on use.</p>'
             },
             {
                 name: 'Hakenbuchse',
@@ -885,6 +925,7 @@ module.exports = {
                 type: 'C',
                 minrec: 5,
                 bonus: 'Causing Flinching. Backfires.',
+                bonusLong: '<p>If you steady the Hakenbuchse against the ground or a stand, you may double your Attack bonus from Skills with this weapon.</p><br><p>The Hakenbuchse causes flinching equal to the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p><br><p>The Hakenbuchse causes flinching equal to the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p>'
             },
             {
                 name: 'Handgonne',
@@ -894,6 +935,7 @@ module.exports = {
                 type: 'C',
                 minrec: 4,
                 bonus: 'Causing Flinching. Backfires.',
+                bonusLong: '<p>Handgonne causes flinching equal to the d4! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p><br><p>The Handgonne Backfires.</p>'
             },
         ],
         ranges: [
