@@ -449,7 +449,7 @@ module.exports = {
                 parry: 0,
                 measure: 6.25,
                 bonus: 'Also attacks 2 adjacent targets, dealing 3d3! damage on hit.',
-                bonusLong: '<p>Attacks with the War-scythe also count against 2 adjacent targets, dealing 3d3! damage on hit instead.</p>'
+                bonusLong: '<p>Attacks with the War-scythe also count against 2 adjacent targets, dealing an unmodified (no Str, Skills, Descriptions) 3d3! damage on hit instead.</p>'
             },
         ],
         sidearms: [
@@ -674,7 +674,7 @@ module.exports = {
                 parry: 0,
                 measure: 7,
                 bonus: 'Also atks 2 adj. targets, dealing 3d3! damage on hit. +10 to Knock-Backs.',
-                bonusLong: '<p>Attacks with the Zweihander also counts against 2 adjacent targets, dealing 3d3! damage on hit instead.</p><br><p>The Zweihander gives a +10 to Knock-backs.</p>'
+                bonusLong: '<p>Attacks with the Zweihander also counts against 2 adjacent targets, dealing an unmodified (no Str, Skills, Descriptions) 3d3! damage on hit instead.</p><br><p>The Zweihander gives a +10 to Knock-backs.</p>'
             },
         ],
         trauma: [
@@ -817,7 +817,7 @@ module.exports = {
             {
                 name: 'Throwing Axe',
                 size: 'S',
-                dam: '4d3!!',
+                dam: '4d3!',
                 rec: 9,
                 type: 'S',
                 minrec: 3,
