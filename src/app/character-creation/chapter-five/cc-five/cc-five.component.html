@@ -213,12 +213,12 @@
       <div class='paragraphShell anchor'>
         <div id='SkillSuitescShEonylHEH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SkillSuitescShEonylHEH'"></app-bm-chapter-icon>
-        <p>Skill Suites cost their Base Cost + (Current Rank * 10).</p>
+        <p>Skill Suites cost their Base Cost - your full Int stat + (Current Rank * 10).</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyoureUntrXVBLqdxoTJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyoureUntrXVBLqdxoTJ'"></app-bm-chapter-icon>
-        <p>If you’re Untrained in that Skill Suite, “Current Rank”, the cost is just Base Cost.</p>
+        <p>If you’re Untrained in that Skill Suite, “Current Rank”, the cost is just Base Cost - your full Int stat.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdvancedSkillvfEYnVTuGG' class='anchorTag'></div>
@@ -625,7 +625,7 @@
           <tbody class="dark-side-header">
             <tr class="notSticky">
               <th>Athletics</th>
-              <th>20</th>
+              <th>30</th>
               <th>Str/Con</th>
             </tr>
             <tr>
@@ -675,7 +675,7 @@
             </tr>
             <tr class="notSticky">
               <th>Lore</th>
-              <th>20</th>
+              <th>30</th>
               <th>Int</th>
             </tr>
             <tr>
@@ -730,7 +730,7 @@
             </tr>
             <tr class="notSticky">
               <th>Streetwise</th>
-              <th>20</th>
+              <th>30</th>
               <th>Will/Pre</th>
             </tr>
             <tr>
@@ -780,7 +780,7 @@
             </tr>
             <tr class="notSticky">
               <th>Strategy</th>
-              <th>20</th>
+              <th>30</th>
               <th>Will/Pre</th>
             </tr>
             <tr>
@@ -830,7 +830,7 @@
             </tr>
             <tr class="notSticky">
               <th>Survival</th>
-              <th>20</th>
+              <th>30</th>
               <th>Con/Will</th>
             </tr>
             <tr>
@@ -902,7 +902,7 @@
           <tbody class="dark-side-header">
             <tr class="notSticky">
               <th>Trades</th>
-              <th>20</th>
+              <th>30</th>
               <th>Dex/Int</th>
             </tr>
             <tr>
@@ -957,7 +957,7 @@
             </tr>
             <tr class="notSticky">
               <th>Weirdcraft</th>
-              <th>30</th>
+              <th>40</th>
               <th>Int/Will</th>
             </tr>
             <tr>
@@ -1000,7 +1000,7 @@
             </tr>
             <tr class="notSticky">
               <th>Armor</th>
-              <th>30</th>
+              <th>40</th>
               <th>*</th>
             </tr>
             <tr>
@@ -1025,7 +1025,7 @@
             </tr>
             <tr class="notSticky">
               <th>Melee Weapons</th>
-              <th>30</th>
+              <th>40</th>
               <th>*</th>
             </tr>
             <tr>
@@ -1050,7 +1050,7 @@
             </tr>
             <tr class="notSticky">
               <th>Ranged Weapons</th>
-              <th>30</th>
+              <th>40</th>
               <th>*</th>
             </tr>
             <tr>
@@ -1070,7 +1070,7 @@
             </tr>
             <tr class="notSticky">
               <th>Shields</th>
-              <th>30</th>
+              <th>40</th>
               <th>*</th>
             </tr>
             <tr>
@@ -1090,7 +1090,7 @@
             </tr>
             <tr class="notSticky">
               <th>Unarmed</th>
-              <th>30</th>
+              <th>40</th>
               <th>*</th>
             </tr>
             <tr>
@@ -1124,7 +1124,7 @@
       <div class='paragraphShell anchor'>
         <div id='athlcost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'athlcost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 20</p>
+        <p><strong>Base Cost</strong> 30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='athlstat' class='anchorTag'></div>
@@ -1486,7 +1486,7 @@
       <div class='paragraphShell anchor'>
         <div id='lorecost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'lorecost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 20</p>
+        <p><strong>Base Cost</strong> 30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='lorestat' class='anchorTag'></div>
@@ -1895,7 +1895,7 @@
       <div class='paragraphShell anchor'>
         <div id='streetcost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'streetcost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 20</p>
+        <p><strong>Base Cost</strong> 30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='streetstat' class='anchorTag'></div>
@@ -2320,7 +2320,7 @@
       <div class='paragraphShell anchor'>
         <div id='suvivecost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'suvivecost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 20</p>
+        <p><strong>Base Cost</strong> 30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='suvivestat' class='anchorTag'></div>
@@ -2739,7 +2739,7 @@
       <div class='paragraphShell anchor'>
         <div id='tacticcost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'tacticcost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 20</p>
+        <p><strong>Base Cost</strong> 30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='tacticstat' class='anchorTag'></div>
@@ -3225,7 +3225,7 @@
       <div class='paragraphShell anchor'>
         <div id='tradecost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'tradecost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 20</p>
+        <p><strong>Base Cost</strong> 30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='tradestat' class='anchorTag'></div>
@@ -3548,7 +3548,7 @@
       <div class='paragraphShell anchor'>
         <div id='weirdcost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'weirdcost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 30</p>
+        <p><strong>Base Cost</strong> 40</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='weirdstat' class='anchorTag'></div>
@@ -3633,7 +3633,7 @@
       <div class='paragraphShell anchor'>
         <div id='bascjioejiofear' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'bascjioejiofear'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 30</p>
+        <p><strong>Base Cost</strong> 40</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='statearmorinofe' class='anchorTag'></div>
@@ -3708,7 +3708,7 @@
       <div class='paragraphShell anchor'>
         <div id='meleeskilefji' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'meleeskilefji'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 30</p>
+        <p><strong>Base Cost</strong> 40</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='meeleestatejiofe' class='anchorTag'></div>
@@ -3826,7 +3826,7 @@
       <div class='paragraphShell anchor'>
         <div id='rangesbasecost' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'rangesbasecost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 30</p>
+        <p><strong>Base Cost</strong> 40</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='rangebstateji' class='anchorTag'></div>
@@ -3894,7 +3894,7 @@
       <div class='paragraphShell anchor'>
         <div id='shieljidskile' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'shieljidskile'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 30</p>
+        <p><strong>Base Cost</strong> 40</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='shiedklsratatejiofe' class='anchorTag'></div>
@@ -3966,7 +3966,7 @@
       <div class='paragraphShell anchor'>
         <div id='unarjioskilbase' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'unarjioskilbase'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 30</p>
+        <p><strong>Base Cost</strong> 40</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='unaruemdstatejio' class='anchorTag'></div>
