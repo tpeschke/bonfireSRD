@@ -412,7 +412,7 @@ module.exports = {
             {
                 name: 'Short Spear',
                 size: 'M',
-                dam: '2d8',
+                dam: '2d8!',
                 rec: 7,
                 type: 'P',
                 parry: 0,
