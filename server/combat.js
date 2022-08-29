@@ -716,7 +716,7 @@ module.exports = {
                 rec: 8,
                 type: 'P',
                 parry: 0,
-                measure: 6Faint ,
+                measure: 6,
                 bonus: false,
             },
             {
