@@ -1,0 +1,15 @@
+.limp-tables-shell {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-wrap: wrap;
+    float: right;
+    width: 40%;
+}
+
+@media (max-width: 770px) { 
+    .limp-tables-shell {
+        float: unset;
+        width: 100%;
+    }
+}
