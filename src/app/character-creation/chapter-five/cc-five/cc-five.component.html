@@ -3623,7 +3623,43 @@
         <p>The first bonus that having an Advanced Weirdcraft Skill gives you is that it gives you further insight into
           a
           particular Weird Tradition, allowing you to detect it better. For more information on what each Tradition
-          specializes in, head over to <a [routerLink]='["/rules-reference/6"]'>Chapter 1.6: The Weird</a>.</p>
+          specializes in, head over to <a [routerLink]='["/rules-reference/6"]'>Chapter 1.6: The Weird</a> but here is a small synopsis of each:</p>
+      </div>
+      
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='skillanimnaimios' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'skillanimnaimios'"></app-bm-chapter-icon>
+        <p><strong>Animism </strong>This Tradition focuses on the manipulation of the body, forcing it to endure beyond its normal limits and making it into a weapon.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='callingskili' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'callingskili'"></app-bm-chapter-icon>
+        <p><strong>Calling </strong>This Tradition focuses on the Realms beyond the Middle one we’re so fond of. It involves the summoning of demons, elementals, and spirits.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='skilcharmi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'skilcharmi'"></app-bm-chapter-icon>
+        <p><strong>Charm </strong>This focuses on the manifestation of the Weird in its raw and primal form. This allows the Weird to interact with our world in a more physical way.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='skillfamouhjoir' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'skillfamouhjoir'"></app-bm-chapter-icon>
+        <p><strong>Glamour </strong>This Tradition focuses on the manipulation of the senses, tricking the brain into seeing what the weird-adept wants you to see.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='skilintevestiohtioe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'skilintevestiohtioe'"></app-bm-chapter-icon>
+        <p><strong>Investiture </strong>This focuses on inanimate objects and either imbuing them with power or manifesting the latent potential that is already in them.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='skillcoulioitojs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'skillcoulioitojs'"></app-bm-chapter-icon>
+        <p><strong>Occultism </strong>This Tradition focuses on the hidden world and opening of the third mind: the divination of knowledge and the unseen.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='skillsortioajigoe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'skillsortioajigoe'"></app-bm-chapter-icon>
+        <p><strong>Sortilege </strong>This Tradition focuses on fate, chance, and probability: more specifically, it focuses on messing with it so that things go in your favor.</p>
       </div>
       <div class="anchor">
         <div id="ArmorSkillSuheader" class="anchorTag"></div>
@@ -3769,10 +3805,15 @@
         <app-bm-chapter-icon [id]="'DamageThisSkaOKGVaNDsa'"></app-bm-chapter-icon>
         <p><strong>Damage</strong> This Skill allows you to kill your enemies faster and gives you a bonus to damage based on your Rank and the weapon you're using.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='curshionivoew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'curshionivoew'"></app-bm-chapter-icon>
-        <p>Crushing weapons gain a +1 per 1 Rank; Slashing weapons gain +d4! damage per 2 Ranks, rounded up; Piercing weapons gain a +d8! per 4 Ranks, rounded up. Note that these additional dice do add to the dice number for /D DR.</p>
+        <p>Crushing weapons gain a +1 per 1 Rank; For Slashing and piercing weapons, you start at a +d3! damage and increase it by 1 dice per Rank above that, however slashing is capped at a +d4! and piercing is capped at a +d8!. Once you hit that cap, additional Ranks start the process over, adding another d3! and then increasing it. Note that these additional dice do add to the dice number for /D DR.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='curshionivoew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'curshionivoew'"></app-bm-chapter-icon>
+        <p class="italic">So, if you have a Rank 5 in a slashing weapon, you're going to add +d3!+2d4! to your damage with that weapon. If you have Rank 5 with a piercing weapon, you instead add a +d3!+d8! instead.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='RecoveryThisfTgbaPIuEI' class='anchorTag'></div>
@@ -3875,10 +3916,15 @@
         <app-bm-chapter-icon [id]="'oieowijofjeiwojfew'"></app-bm-chapter-icon>
         <p><strong>Damage</strong> This Skill allows you to kill your enemies faster and gives you a bonus to damage based on your Rank and the weapon you're using.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='qqaiwojiwo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'qqaiwojiwo'"></app-bm-chapter-icon>
-        <p>Crushing weapons gain a +1 per 1 Rank; Slashing weapons gain +d4! damage per 2 Ranks, rounded up; Piercing weapons gain a +d8! per 4 Ranks, rounded up. Note that these additional dice do add to the dice number for /D DR.</p>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='rewijoijoew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'rewijoijoew'"></app-bm-chapter-icon>
+        <p>Crushing weapons gain a +1 per 1 Rank; For Slashing and piercing weapons, you start at a +d3! damage and increase it by 1 dice per Rank above that, however slashing is capped at a +d4! and piercing is capped at a +d8!. Once you hit that cap, additional Ranks start the process over, adding another d3! and then increasing it. Note that these additional dice do add to the dice number for /D DR.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='awiojwqiojwq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'awiojwqiojwq'"></app-bm-chapter-icon>
+        <p class="italic">So, if you have a Rank 5 in a slashing weapon, you're going to add +d3!+2d4! to your damage with that weapon. If you have Rank 5 with a piercing weapon, you instead add a +d3!+d8! instead.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='RecoveryThisjvYRsEAxXC' class='anchorTag'></div>
