@@ -674,7 +674,7 @@ module.exports = {
                 parry: 0,
                 measure: 7,
                 bonus: 'Also atks 2 adj. targets, dealing 3d3! damage on hit. +10 to Knock-Backs.',
-                bonusLong: '<p>Attacks with the Zweihander also counts against 2 adjacent targets, dealing an unmodified (no Str, Skills, Descriptions) 3d3! damage on hit instead.</p><br><p>The Zweihander gives a +10 to Knock-backs (including adjacent targets effected by the pervious ability)B.</p>'
+                bonusLong: '<p>Attacks with the Zweihander also counts against 2 adjacent targets, dealing an unmodified (no Str, Skills, Descriptions) 3d3! damage on hit instead.</p><br><p>The Zweihander gives a +10 to Knock-backs (including adjacent targets effected by the previous ability).</p>'
             },
         ],
         trauma: [

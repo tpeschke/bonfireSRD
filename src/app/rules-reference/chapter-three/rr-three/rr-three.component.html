@@ -641,12 +641,17 @@
         <app-bm-chapter-icon [id]="'StaticsimplyEgWNQpfXfl'"></app-bm-chapter-icon>
         <p>Static simply subtracts that number from the damage and is done.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='DsubtractstIXOuDXvQpb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DsubtractstIXOuDXvQpb'"></app-bm-chapter-icon>
-        <p>/D subtracts that number multiplied by the number of dice the attack is using. So, if someone is attacking
-          you with a slashing weapon (2d6!), and you have armor that gives you 4/D, you’d subtract 8 from the damage.
+        <p>/D subtracts that number from each dice but can't bring any individual dice below 0, however, any extra DR is removed from the Str Damage Mod. So, if someone is attacking
+          you with a slashing weapon (2d6!) with a +2 Str Damage Mod, and you have armor that gives you 4/D, and you roll a 5 and a 3. you do 2 damage.
         </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='whenyouiorejiok' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'whenyouiorejiok'"></app-bm-chapter-icon>
+        <p>When you roll, your GM will tell you if the DR is /D, they'll tell you what it is so you can quickly do the math.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='EitherwayifyilwzbBIyw' class='anchorTag'></div>
@@ -1060,26 +1065,25 @@
         <h2>Firing Into Melee</h2>
         <div class="underline-sub"></div>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WheneveryouwOKxpZtDXLo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WheneveryouwOKxpZtDXLo'"></app-bm-chapter-icon>
-        <p>Whenever you would hit with a ranged attack, if there are any creatures within 5 ft of the line of fire,
-          treat
-          each interposing creature as providing Cover and check each in order to see if they were hit instead.</p>
-      </div>
       <div class='paragraphShell anchor'>
         <div id='StartingatthzqFVEUfRbw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'StartingatthzqFVEUfRbw'"></app-bm-chapter-icon>
-        <p>Starting at the person closest to the archer or gunner, roll their Cover value as normal; if adding that
-          value to
-          the original target’s defense roll would make the attack miss, the new target makes a Defense roll against the
-          original attack to determine if they hit the new target instead.</p>
+        <p>Starting at the person closest to the archer or gunner, roll their Cover dice but subtract that person's Defense modifiers and subtract any Cover that is unique to them (such as a shield's Cover). This has a minimum of zero.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='thiojiocew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thiojiocew'"></app-bm-chapter-icon>
+        <p>This total is added to the original target's Defense, just like normal Cover. If the person's Cover is enough to turn a hit into a miss, the attack hints them instead of the target in which case you roll damage against them; they don't get a defense roll.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IftheywerenhihgsZzbKD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftheywerenhihgsZzbKD'"></app-bm-chapter-icon>
-        <p>If they were not hit, don't resolve using the normal Range Miss rules; move to the next person giving Cover
-          and resolve in the same manner</p>
+        <p>If they were not hit, then move to the next person giving Cover and resolve in the same manner.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='ifthieownicoew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifthieownicoew'"></app-bm-chapter-icon>
+        <p>If the next person in line would also gain Cover from the previous possibly targets, add their Cover rolls to the total as well. If not, just add the new person's Cover roll to the target's Defense.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='iftherejiocjeioec' class='anchorTag'></div>
