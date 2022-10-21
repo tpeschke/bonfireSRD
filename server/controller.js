@@ -29,9 +29,13 @@ module.exports = {
                     })
             })
     },
-    getRandomTrait: (req, res) => {
+    getRandomConviction: (req, res) => {
         const db = req.app.get('db')
-        db.get.randomTrait().then(result => res.send(result))
+        db.get.randomConvic().then(result => res.send(result))
+    },
+    getRandomDescription: (req, res) => {
+        const db = req.app.get('db')
+        db.get.randomDescript().then(result => res.send(result))
     },
     getBookmarks: (req, res) => {
         const db = req.app.get('db')

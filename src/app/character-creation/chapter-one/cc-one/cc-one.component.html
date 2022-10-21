@@ -2027,9 +2027,15 @@
             often
             serve as a jumping off point for your imagination.</p>
         </div>
-        <div class="resultHolder">
-          <h2>{{trait | titlecase}}</h2>
-          <button class="generateButton" (click)="getTrait()">Generate!</button>
+        <div class="result-shell">
+          <div class="resultHolder">
+            <h2>{{conviction | titlecase}}</h2>
+            <button class="generateButton" (click)="getConviction()">Generate Conviction!</button>
+          </div>
+          <div class="resultHolder">
+            <h2>{{description | titlecase}}</h2>
+            <button class="generateButton" (click)="getDescription()">Generate Description!</button>
+          </div>
         </div>
       </div>
 
@@ -2625,10 +2631,11 @@
         <div id='ThisismorefOEhzHBzTUL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisismorefOEhzHBzTUL'"></app-bm-chapter-icon>
         <p>Now is the time to record any Skills you obtained free from your Archetype
-          choice, as well as Archetype Abilities. Weird-Adepts will need to go to the Acquiring  Rudiments sidebar in <a
-          [routerLink]='["/character-creation/2"]'>Chapter 2.2: Archetypes</a> to roll up their Rudiments. They 
-        might also find it helpful to open the SRD in another tab and go to <a
-        [routerLink]='["/rules-reference/6"]'>Chapter 1.6: The Weird</a> so they can easily reference that information.</p>
+          choice, as well as Archetype Abilities. Weird-Adepts will need to go to the Acquiring Rudiments sidebar in <a
+            [routerLink]='["/character-creation/2"]'>Chapter 2.2: Archetypes</a> to roll up their Rudiments. They
+          might also find it helpful to open the SRD in another tab and go to <a
+            [routerLink]='["/rules-reference/6"]'>Chapter 1.6: The Weird</a> so they can easily reference that
+          information.</p>
       </div>
       <div class="anchor">
         <div id="ExampleheaderyxMSxYwFAQ" class="anchorTag"></div>
@@ -2668,7 +2675,7 @@
           character;
           I’m going to pick Glamour.</p>
       </div>
-      
+
       <div class="anchor">
         <div id="Step12Transheader" class="anchorTag"></div>
         <h1>Step 12: Transfer to Character Sheet</h1>

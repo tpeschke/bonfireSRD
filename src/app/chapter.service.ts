@@ -90,10 +90,18 @@ export class ChapterService {
       )
   }
 
-  getTrait(): any {
-    return this.http.get(local.endpointBase + '/trait')
+
+  getConviction(): any {
+    return this.http.get(local.endpointBase + '/conviction')
       .pipe(
-        catchError(this.handleError('get trait', []))
+        catchError(this.handleError('get conviction', []))
+      )
+  }
+
+  getDescription(): any {
+    return this.http.get(local.endpointBase + '/description')
+      .pipe(
+        catchError(this.handleError('get description', []))
       )
   }
 
