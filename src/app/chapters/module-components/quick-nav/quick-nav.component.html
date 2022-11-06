@@ -10,4 +10,12 @@
 
     <button class="toTopButton" (click)="scrollToTop()">🜂 To Top</button>
   </div>
+
+</div>
+
+
+<div class="mobile-quick-nav-shell">
+  <div class="mobile-quick-nav-button" [ngClass]="{'bottomPositionShown' : !bottomPositionShown }" (click)="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
 </div>

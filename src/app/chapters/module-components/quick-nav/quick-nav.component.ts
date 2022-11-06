@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-quick-nav',
@@ -6,12 +6,23 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./quick-nav.component.css']
 })
 export class QuickNavComponent implements OnInit {
-
   @Input() side: any;
 
   constructor() { }
 
+  public bottomPositionShown = true;
+
   ngOnInit() { }
+
+  @HostListener('document:scroll', ['$event'])
+
+  handleScroll(e: any): void {
+    if (e.target.documentElement.scrollTop > 560) {
+      this.bottomPositionShown = false;
+    } else {
+      this.bottomPositionShown = true;
+    }
+  }
 
   scrollToTop() {
     document.body.scrollTop = 0;
