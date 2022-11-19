@@ -63,11 +63,11 @@ table {
     text-align: center;
 }
 
-.all-centered thead tr:nth-child(1) th {
-    /* text-align: left; */
+.all-centered thead tr:nth-child(1) th, .all-centered tbody tr td:nth-child(1), .all-centered tbody tr th:nth-child(1) {
+    text-align: left;
 }
 
-thead tr:nth-child(2) th, tbody tr th {
+thead tr:nth-child(n+2) th, tbody tr th {
     background-color: #222;
     font-size: 13px;
 }
