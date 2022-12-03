@@ -83,6 +83,18 @@
     background-color: #b45f06;
 }
 
+
+@media (max-width: 770px) {
+    .footHolder {
+        min-height: 125px;
+        align-items: self-start;
+    }
+
+    .footHolder a {
+        margin-top: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .edge-banner {
         display: none;

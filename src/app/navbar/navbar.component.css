@@ -143,6 +143,7 @@ p {
   padding: 25px;
   position: fixed;
   z-index: 1;
+  bottom: 0px;
 }
 
 .homeIcon {

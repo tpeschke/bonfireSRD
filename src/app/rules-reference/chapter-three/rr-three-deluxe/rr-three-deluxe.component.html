@@ -1274,57 +1274,26 @@
         <h2>Cover</h2>
         <div class="underline-sub"></div>
       </div>
+      
       <div class='paragraphShell anchor marginBottom'>
         <div id='CoverisanythvXsFOskpcQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'CoverisanythvXsFOskpcQ'"></app-bm-chapter-icon>
         <p>Cover is anything that gets between you and the person trying to shoot at you.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor '>
         <div id='ForsolidobjepYeeWmUsrv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForsolidobjepYeeWmUsrv'"></app-bm-chapter-icon>
-        <p>For solid objects, such as walls, where it is easy to calculate how much of the person is covered, a flat
-          bonus is appropriate. For every 10% covered, you get a +2, so 25% would be a +5, 50% would be a +10 and so on.
-        </p>
+        <p>For every 5% of the target covered, you get a +1. So, 25% would be a +5, 50% would be a +10 and so on. At 100% covered, you can rule that no roll is needed: the attack simply misses.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='ForpeopletrOPDhMeGFPY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForpeopletrOPDhMeGFPY'"></app-bm-chapter-icon>
-        <p>For people, tree, a moving object, or really anything that’s harder to calculate, you’ll use a dice backed on
-          the difference in size, starting at a d20. Each difference in size shrinks or increases that cover die by 1
-          size.</p>
+        <p>For people or monsters, start at 50% cover (+10). Each difference in size shrinks or increases that cover buy 15% (+/- 3).</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='CoverdiceforYEinaGhzSc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'CoverdiceforYEinaGhzSc'"></app-bm-chapter-icon>
-        <p>Cover dice for most objects works the same as shields - if you’re behind cover, you add a roll of that dice
-          to your defense. If you’re actively crouching behind it, you add the max it would give you to your defense
-          plus another roll of the dice.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='SotwomediumtAJkpMbrqK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SotwomediumtAJkpMbrqK'"></app-bm-chapter-icon>
-        <p>So, two medium size people standing one in front of the other would give the guy in the back d20 cover, same
-          as two small sized people. If the person in the front is small sized and the guy in the back is still medium
-          sized, the guy in the back only gains a d12 cover.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='IfthepersonbCXQxWYVFp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfthepersonbCXQxWYVFp'"></app-bm-chapter-icon>
-        <p>If the person is actively moving or trying not to be your cover, you can’t gain the bonus for actively
-          crouching behind them.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfyoudontmUtNmZebuuR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfyoudontmUtNmZebuuR'"></app-bm-chapter-icon>
-        <p>If you don't move, however, cover becomes more and more useless as your shooter sights in. For each shot
-          against you where you haven't moved, you either lower your effective cover percentage by 10 or shrink your
-          cover dice by 1 size, depending on whether the cover is static or not.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='NotethisalsodufBVjLjZZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NotethisalsodufBVjLjZZ'"></app-bm-chapter-icon>
-        <p>Note this also applies to shields as well, so if you don't move while using a shield, it becomes less and
-          less useful.</p>
+        <p>If you’re crouching behind cover, you double the bonus but are limited to Crawling or Strolling. If the bonus goes above +20, you’re considered completely covered and all attacks automatically miss.</p>
       </div>
       <div class="anchor">
         <div id="FiringIntoMeheader" class="anchorTag"></div>
@@ -2627,9 +2596,8 @@
         <app-bm-chapter-icon [id]="'TouseanunarwOebiHhMbf'"></app-bm-chapter-icon>
         <p>To use an unarmed attack, roll an attack on a dice size 2 sizes smaller (normally, a d10!), adding your
           normal attack modifiers, but also adding your
-          Damage Modifier. Your opponent rolls a regular defense (including shield unless otherwise stated) but also
-          adds their Damage Modifier as well, regardless of whether they're armed or not. They don't add their shield's
-          Parry but may add their weapon's, even if wielding a shield.</p>
+          Damage Modifier. Your opponent rolls a regular defense (including parry unless otherwise stated) but also
+          adds their Damage Modifier as well, regardless of whether they're armed or not.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IfyouhityoySOhVIeRUK' class='anchorTag'></div>
@@ -2645,7 +2613,7 @@
           you may gain additional benefits listed in the move (called a "well-executed" move). If the difference is
           double the Target’s Vitality Size
           Modifier, either they can the well-executed version of the move or they may immediately make a second unarmed
-          combat attack for free the same second.</p>
+          combat attack for free the same second. Triple means that you get both.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyouredoinkqxlpwlqRC' class='anchorTag'></div>
@@ -2685,7 +2653,7 @@
         <div id='ThedefendergcyDGhfqzqP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThedefendergcyDGhfqzqP'"></app-bm-chapter-icon>
         <p>The defender gets a free attack if the move isn’t successful but when grabbed it means the defender can no
-          longer attack.</p>
+          longer attack. The defender doesn't get to add their weapon's Parry to their roll, if applicable.</p>
       </div>
       <div class="anchor">
         <div id="Shieldheader" class="anchorTag"></div>
@@ -2694,7 +2662,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThedefendernLopTndrPgg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThedefendernLopTndrPgg'"></app-bm-chapter-icon>
-        <p>The defender no longer gains any bonus from their shield but still has the defense and Fatigue penalties.</p>
+        <p>The defender doesn't get to add their shield's Parry (but can add their weapon's) to their roll and, if hit, they no longer gain any bonus from their shield but still have the defense and Fatigue penalties.</p>
       </div>
       <div class="anchor">
         <div id="Armheader" class="anchorTag"></div>
@@ -2737,6 +2705,11 @@
           strong, though at the very least, the thing is no longer in hand. This is also done on an additional benefit
           from a well-executed move if the attacker wishes.</p>
       </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='grabyoumajioe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'grabyoumajioe'"></app-bm-chapter-icon>
+        <p>You may also deal unarmed damage on a well-executed version of the move, ignoring non-natural DR.</p>
+      </div>
       <div class="anchor">
         <div id="Pushheader" class="anchorTag"></div>
         <h2>Push</h2>
@@ -2760,7 +2733,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='YougainanadpSOtdtWBdB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YougainanadpSOtdtWBdB'"></app-bm-chapter-icon>
-        <p>You gain an additional facing change or 5 ft of movement on a well-executed Push.</p>
+        <p>You gain an additional facing change, gain 5 ft of movement, or deal normal unarmed damage (no non-natural DR) on a well-executed Push.</p>
       </div>
       <div class="anchor">
         <div id="ThrowTackleheader" class="anchorTag"></div>
@@ -2792,8 +2765,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheextrabonuXKDwggsLCn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheextrabonuXKDwggsLCn'"></app-bm-chapter-icon>
-        <p>The extra bonus for this move is being able to remain standing if you so choose, throw them 5 ft or, possibly
-          disarming them if they fail a Str check vs d20! + your Str.</p>
+        <p>The extra bonus for this move is being able to remain standing if you so choose, throw them 5 ft or possibly
+          disarming them if they fail a Str check vs d20! + your Str, or deal normal unarmed damage (no non-natural DR).</p>
       </div>
       <div class="anchor">
         <div id="Strikeheader" class="anchorTag"></div>
@@ -2830,7 +2803,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheextrabonuersSrmquDd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheextrabonuersSrmquDd'"></app-bm-chapter-icon>
-        <p>The extra bonus for this move is that it increases the time to a d6!.</p>
+        <p>The extra bonus for this move is that it increases the time to a d6! or deal normal unarmed damage (no non-natural DR).</p>
       </div>
       <div class="anchor">
         <div id="BreakFreeheader" class="anchorTag"></div>
@@ -2857,7 +2830,7 @@
         <app-bm-chapter-icon [id]="'TheextrabonuMuRawXFfzy'"></app-bm-chapter-icon>
         <p>The extra bonus is that the grappled person is able to turn it around on their enemy: they get a free,
           unarmed maneuver, however, it is always on a d12! regardless of how many hands they have free since they’re
-          still working from a disadvantage.</p>
+          still working from a disadvantage or the grappled person can deal normal unarmed damage (no non-natural DR).</p>
       </div>
       <div class="anchor">
         <div id="MountedCombatheader" class="anchorTag"></div>
