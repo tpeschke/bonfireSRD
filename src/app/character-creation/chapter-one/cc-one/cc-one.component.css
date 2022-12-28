@@ -37,3 +37,9 @@
 .generateButton:hover {
     background: #222;
 }
+
+@media (max-width: 426px) {
+    .result-shell {
+        flex-direction: column;
+    }
+}
