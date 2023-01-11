@@ -1,0 +1,9 @@
+.reading-the-fates {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .reading-the-fates{
+      width: 100%
+    }
+  }
