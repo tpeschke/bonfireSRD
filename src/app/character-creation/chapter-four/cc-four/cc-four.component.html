@@ -38,7 +38,8 @@
         <div class='paragraphShell anchor'>
           <div id='youiofwjiojveiowew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
-          <p>If you're not sure what your Flaw's Severity should be, you can just roll a d3 and use that for your Severity. That will work for most Flaws, except for Missing Eye.</p>
+          <p>If you're not sure what your Flaw's Severity should be, you can just roll a d3 and use that for your
+            Severity. That will work for most Flaws, except for Missing Eye.</p>
         </div>
       </div>
       <div class="anchor">
@@ -49,7 +50,8 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='fewjciewojcioejwiocjew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'fewjciewojcioejwiocjew'"></app-bm-chapter-icon>
-        <p>Flaws can sometimes be applied to a Check, sometimes as a bonus and sometimes as a penatly. Either way, you'll need 
+        <p>Flaws can sometimes be applied to a Check, sometimes as a bonus and sometimes as a penatly. Either way,
+          you'll need
           to know what its Rank is.</p>
       </div>
 
@@ -66,12 +68,13 @@
         <div class='paragraphShell marginBottom anchor'>
           <div id='defesfjieojse' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'defesfjieojse'"></app-bm-chapter-icon>
-          <p class="italic">Deaf (3)      4</p>
+          <p class="italic">Deaf (3) 4</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='tehioejfiwojiofewj' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'tehioejfiwojiofewj'"></app-bm-chapter-icon>
-          <p>The number in parentheses is the Severity and the number to the side is the Rank, in case it comes up in a Confrontation.</p>
+          <p>The number in parentheses is the Severity and the number to the side is the Rank, in case it comes up in a
+            Confrontation.</p>
         </div>
       </div>
       <div class="anchor">
@@ -121,7 +124,7 @@
         <div class="underline-sub"></div>
       </div>
 
-      <table class="float all-center first-left">
+      <table *ngIf="flawTables" class="float all-center first-left">
         <thead>
           <tr class="notSticky">
             <th colspan="2">Flaw Table</th>
@@ -132,20 +135,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1 - 2</td>
-            <td>Background</td>
-          </tr>
-          <tr>
-            <td>3 - 4</td>
-            <td>Mental</td>
-          </tr>
-          <tr>
-            <td>5 - 6</td>
-            <td>Physical</td>
+          <tr *ngFor="let table of flawTables.flawTables">
+            <td>{{table.weight > 1 ? (table.currentTotal + 1) + ' - ' + (table.currentTotal + table.weight) :
+              table.currentTotal}}</td>
+            <td>{{table.tableName}}</td>
           </tr>
         </tbody>
       </table>
+
       <div class='paragraphShell anchor marginBottom'>
         <div id='RollonthefoPbVjMukELb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RollonthefoPbVjMukELb'"></app-bm-chapter-icon>
@@ -180,7 +177,7 @@
           free.</p>
       </div>
 
-      <div class="multiple-tables-shell">
+      <div *ngIf="flawTables" class="multiple-tables-shell">
         <table class="float all-center first-left" id="backgroundTable">
           <thead>
             <tr class="notSticky">
@@ -195,143 +192,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1 - 2</td>
-              <td>Atheist</td>
-              <td>7</td>
-              <td>7</td>
-              <td>12</td>
-            </tr>
-            <tr>
-              <td>3 - 9</td>
-              <td>Bastard</td>
-              <td>17</td>
-              <td>10</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>10 - 14</td>
-              <td>Epileptic</td>
-              <td>13</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>15 - 18</td>
-              <td>Debtor</td>
-              <td>7</td>
-              <td>7</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>19 - 25</td>
-              <td>Excommunicated</td>
-              <td>10</td>
-              <td>7</td>
-              <td>12</td>
-            </tr>
-            <tr>
-              <td>26 - 34</td>
-              <td>Fated</td>
-              <td>23</td>
-              <td>10</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>35 - 38</td>
-              <td>Feral</td>
-              <td>13</td>
-              <td>7</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>39 - 50</td>
-              <td>Half-Life</td>
-              <td>50</td>
-              <td>13</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>51 - 59</td>
-              <td>Haunted</td>
-              <td>20</td>
-              <td>13</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>60 - 64</td>
-              <td>Idiot Savant</td>
-              <td>13</td>
-              <td>7</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>65 - 66</td>
-              <td>Inbred</td>
-              <td>7</td>
-              <td>3</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>67 - 75</td>
-              <td>Monotheist</td>
-              <td>10</td>
-              <td>7</td>
-              <td>12</td>
-            </tr>
-            <tr>
-              <td>76 - 80</td>
-              <td>Mule</td>
-              <td>10</td>
-              <td>7</td>
-              <td>24</td>
-            </tr>
-            <tr>
-              <td>81 - 82</td>
-              <td>Orphan</td>
-              <td>10</td>
-              <td>10</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>83 - 84</td>
-              <td>Poor</td>
-              <td>10</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>85 - 86</td>
-              <td>Refugee</td>
-              <td>20</td>
-              <td>0</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>87 - 92</td>
-              <td>Survivor's Guilt</td>
-              <td>15</td>
-              <td>10</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>93 - 96</td>
-              <td>Thrall</td>
-              <td>17</td>
-              <td>10</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>97 - 100</td>
-              <td>Vow of Poverty</td>
-              <td>23</td>
-              <td>7</td>
-              <td>19</td>
+            <tr *ngFor="let flaw of flawTables.background">
+              <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
+                flaw.currentTotal}}</td>
+              <td>{{flaw.flaw}}</td>
+              <td>{{flaw.bonus}}</td>
+              <td>{{flaw.severity}}</td>
+              <td>{{flaw.cap}}</td>
             </tr>
           </tbody>
         </table>
 
-        <table class="float all-center first-left" id="mentalTable">
+        <table *ngIf="flawTables" class="float all-center first-left" id="mentalTable">
           <thead>
             <tr class="notSticky">
               <th colspan="5">Mental Flaws</th>
@@ -345,73 +217,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1 - 11</td>
-              <td>Addict</td>
-              <td>19</td>
-              <td>5</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>12 - 21</td>
-              <td>Craven</td>
-              <td>13</td>
-              <td>10</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>22 - 34</td>
-              <td>Hypochondriac</td>
-              <td>10</td>
-              <td>7</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>35 - 47</td>
-              <td>Impatient</td>
-              <td>10</td>
-              <td>7</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>48 - 58</td>
-              <td>Neurotic</td>
-              <td>13</td>
-              <td>7</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>59 - 71</td>
-              <td>Phobia</td>
-              <td>10</td>
-              <td>7</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>72 - 81</td>
-              <td>Sensitive</td>
-              <td>13</td>
-              <td>10</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>82 - 94</td>
-              <td>Slow-Witted</td>
-              <td>10</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>95 - 100</td>
-              <td>Vexed</td>
-              <td>17</td>
-              <td>20</td>
-              <td>2</td>
+            <tr *ngFor="let flaw of flawTables.mental">
+              <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
+                flaw.currentTotal}}</td>
+              <td>{{flaw.flaw}}</td>
+              <td>{{flaw.bonus}}</td>
+              <td>{{flaw.severity}}</td>
+              <td>{{flaw.cap}}</td>
             </tr>
           </tbody>
         </table>
 
-        <table class="float all-center first-left" id="physicalTable">
+        <table *ngIf="flawTables" class="float all-center first-left" id="physicalTable">
           <thead>
             <tr class="notSticky">
               <th colspan="5">Physical Flaws</th>
@@ -425,226 +242,49 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1 - 6</td>
-              <td>Ageusia</td>
-              <td>7</td>
-              <td>3</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>7 - 11</td>
-              <td>Allergy, Food</td>
-              <td>10</td>
-              <td>3</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>12 - 16</td>
-              <td>Allergy, Misc</td>
-              <td>10</td>
-              <td>3</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>17 - 19</td>
-              <td>Asthmatic</td>
-              <td>13</td>
-              <td>10</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>20 - 21</td>
-              <td>Blind</td>
-              <td>17</td>
-              <td>10</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>22 - 25</td>
-              <td>Burn Scars</td>
-              <td>*</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>26 - 28</td>
-              <td>Deaf</td>
-              <td>10</td>
-              <td>10</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>29</td>
-              <td>Deranged</td>
-              <td>33</td>
-              <td>17</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>30 - 33</td>
-              <td>Glutton</td>
-              <td>10</td>
-              <td>7</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>34 - 36</td>
-              <td>Hemophilic</td>
-              <td>13</td>
-              <td>10</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>37 - 38</td>
-              <td>Hyperopia</td>
-              <td>17</td>
-              <td>13</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>39 - 42</td>
-              <td>Impotent</td>
-              <td>10</td>
-              <td>7</td>
-              <td>19</td>
-            </tr>
-            <tr>
-              <td>43 - 47</td>
-              <td>Infirm</td>
-              <td>7</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>48 - 49</td>
-              <td>Insomniac</td>
-              <td>20</td>
-              <td>10</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>50 - 55</td>
-              <td>Irritable Bowels</td>
-              <td>7</td>
-              <td>3</td>
-              <td>n/a</td>
-            </tr>
-            <tr>
-              <td>56 - 60</td>
-              <td>Labyrinthitis</td>
-              <td>10</td>
-              <td>3</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>61 - 62</td>
-              <td>Limp</td>
-              <td>13</td>
-              <td>13</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>63</td>
-              <td>Missing Arm</td>
-              <td>30</td>
-              <td>36</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>64 - 68</td>
-              <td>Missing Digit</td>
-              <td>7</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>69 - 71</td>
-              <td>Missing Ear</td>
-              <td>13</td>
-              <td>10</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>72</td>
-              <td>Missing Eye</td>
-              <td>20</td>
-              <td>33</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>73</td>
-              <td>Missing Hand</td>
-              <td>20</td>
-              <td>33</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>74</td>
-              <td>Missing Leg</td>
-              <td>26</td>
-              <td>33</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>75 - 78</td>
-              <td>Missing Teeth</td>
-              <td>10</td>
-              <td>7</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>79 - 81</td>
-              <td>Mute</td>
-              <td>13</td>
-              <td>10</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>82 - 84</td>
-              <td>Myopia</td>
-              <td>13</td>
-              <td>10</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>85 - 87</td>
-              <td>No Depth Perception</td>
-              <td>13</td>
-              <td>10</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>88 - 90</td>
-              <td>Shaky Hands</td>
-              <td>13</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>91 - 93</td>
-              <td>Stutter</td>
-              <td>13</td>
-              <td>10</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>94 - 97</td>
-              <td>Trick Knee</td>
-              <td>10</td>
-              <td>7</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>98 - 100</td>
-              <td>Weak</td>
-              <td>13</td>
-              <td>10</td>
-              <td>4</td>
+            <tr *ngFor="let flaw of flawTables.physical">
+              <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
+                flaw.currentTotal + 1}}</td>
+              <td>{{flaw.flaw}}</td>
+              <td>{{flaw.bonus}}</td>
+              <td>{{flaw.severity}}</td>
+              <td>{{flaw.cap}}</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="randomflawroller" class="anchorTag"></div>
+          <h5>Random Flaw Roller</h5>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='youiofwjiojveiowew' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
+          <p>If you don't have dice at the ready, you can always get a random flaw by pushing the button below:</p>
+        </div>
+        <div *ngIf="!flaw" class="result-shell">
+          <button class="generateButton" (click)="getRandomFlaw()">Get Me a Random Flaw!</button>
+        </div>
+        <div *ngIf="flaw" class="result-shell">
+          <div class="resultHolder">
+            <p>Parent Table: </p>
+            <h2 (click)="getNewParentTable()">{{flaw.parentTable.tableName}} <i class="fa-solid fa-rotate-right"></i></h2>
+          </div>
+          <div class="resultHolder">
+            <p>Flaw: </p>
+            <h2 (click)="getNewFlaw()">{{flaw.flaw.flaw}} <i class="fa-solid fa-rotate-right"></i></h2>
+          </div>
+        </div>
+        <div *ngIf="rerollCount > 0" class="result-shell">
+          <p>Reroll Count: {{rerollCount}}</p>
+        </div>
+        <div *ngIf="flaw" class="result-shell">
+          <button class="generateButton" (click)="getRandomFlaw()">Get Me Another!</button>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="CherryPickingheader" class="anchorTag"></div>
         <h2>Cherry Picking Flaws</h2>
@@ -743,19 +383,23 @@
       <div class='paragraphShell anchor'>
         <div id='thsicharaceregge' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thsicharaceregge'"></app-bm-chapter-icon>
-        <p>This character is unable to control themselves around a particular substance or finds it hard to keep themselves from performing a particular action.
+        <p>This character is unable to control themselves around a particular substance or finds it hard to keep
+          themselves from performing a particular action.
           This is most commonly true when they're Stress and then find it's the only way to truly relax.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='gainshajilfjeile' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'gainshajilfjeile'"></app-bm-chapter-icon>
-        <p>This character gains half the Relaxation from things not related to their addiction until they satisfy it in some way.</p>
+        <p>This character gains half the Relaxation from things not related to their addiction until they satisfy it in
+          some way.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='shoidiovjew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'shoidiovjew'"></app-bm-chapter-icon>
-        <p>Should they come across an opportunity to indulge, they'll need to succeed at a Confrontation Check against this Flaw to resist. Indulging in this way doesn't heal Stress or give Relaxation and might come with other problems (such as a loss of cash, time, or brain power, or chance of disease or fatherhood).</p>
+        <p>Should they come across an opportunity to indulge, they'll need to succeed at a Confrontation Check against
+          this Flaw to resist. Indulging in this way doesn't heal Stress or give Relaxation and might come with other
+          problems (such as a loss of cash, time, or brain power, or chance of disease or fatherhood).</p>
       </div>
       <div class="anchor">
         <div id="AgeusiaheaderTAnuTNHiNf" class="anchorTag"></div>
@@ -1111,7 +755,8 @@
       <div class='paragraphShell anchor'>
         <div id='AttheendofgsAsFVYoqn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AttheendofgsAsFVYoqn'"></app-bm-chapter-icon>
-        <p>At the end of each session, the bastard reduces the amount of Integrity gained by 1 for every point of Severity.
+        <p>At the end of each session, the bastard reduces the amount of Integrity gained by 1 for every point of
+          Severity.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -1169,7 +814,7 @@
         <h2>Burn Scars</h2>
         <div class="underline-sub"></div>
       </div>
-      
+
       <table class="float all-center first-left">
         <thead>
           <tr class="notSticky">
@@ -1686,14 +1331,16 @@
       <div class='paragraphShell anchor'>
         <div id='AfterthatpoiVNMotvVQpP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AfterthatpoiVNMotvVQpP'"></app-bm-chapter-icon>
-        <p>After that point, whenever the character takes damage and/or Stress, they gain an additional damage and/or Stress equal to how many sessions have passed since
+        <p>After that point, whenever the character takes damage and/or Stress, they gain an additional damage and/or
+          Stress equal to how many sessions have passed since
           the
           deadline.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IftheresultXhhPJNRCpx' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftheresultXhhPJNRCpx'"></app-bm-chapter-icon>
-        <p>If the result of the roll was negative, that represents the number of ‘sessions’ that have already passed for that
+        <p>If the result of the roll was negative, that represents the number of ‘sessions’ that have already passed for
+          that
           character.
         </p>
       </div>
@@ -1874,7 +1521,8 @@
         <app-bm-chapter-icon [id]="'UnfortunatelyOCghnkHXMg'"></app-bm-chapter-icon>
         <p>Unfortunately, decades, if not centuries, in the grave have made the ancestor more than a bit senile. Even if
           the
-          character is able to obtain Full of Integrity, the ancestor doesn’t care; what it really wants is for the character to
+          character is able to obtain Full of Integrity, the ancestor doesn’t care; what it really wants is for the
+          character to
           sacrifice themselves in a heroic way or perform suicide.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -1891,7 +1539,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisFlawmayJeTfIZBNMs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisFlawmayJeTfIZBNMs'"></app-bm-chapter-icon>
-        <p>This Flaw may be paid off for half cost if the character has lasted 2 sessions with Full Integrity, however it
+        <p>This Flaw may be paid off for half cost if the character has lasted 2 sessions with Full Integrity, however
+          it
           goes
           back up to full price if they slip out of Full Integrity later.</p>
       </div>
@@ -2185,7 +1834,7 @@
         <div id='ReducetheHonTeEvyoSqrx' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ReducetheHonTeEvyoSqrx'"></app-bm-chapter-icon>
         <p>Reduce the Integrity cap of this character by 1 for every point of Severity. They also don’t receive the free
-          Grit 
+          Grit
           Die for hitting their max Integrity.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -2424,7 +2073,7 @@
             </tr>
           </tbody>
         </table>
-  
+
         <table class="float all-center first-left">
           <thead>
             <tr class="notSticky">
@@ -2923,7 +2572,8 @@
       <div class='paragraphShell anchor'>
         <div id='ReducetheHonHqkbNynIEb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ReducetheHonHqkbNynIEb'"></app-bm-chapter-icon>
-        <p>Reduce the Integrity cap of this character by 1 for every point of Severity and they also don’t receive the free
+        <p>Reduce the Integrity cap of this character by 1 for every point of Severity and they also don’t receive the
+          free
           Grit Die for hitting their max Integrity. </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -3553,7 +3203,7 @@
         <app-bm-chapter-icon [id]="'CharacterswitPbVcTjFEYG'"></app-bm-chapter-icon>
         <p>Characters with this Flaw cannot be Weird-Adept Archetypes that require speech of any kind.</p>
       </div>
-      
+
       <div class="anchor">
         <div id="surviviorgudioejheader" class="anchorTag"></div>
         <h2>Survivor's Guilt</h2>
@@ -3582,14 +3232,16 @@
       <div class='paragraphShell anchor'>
         <div id='thishciaohiove' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thishciaohiove'"></app-bm-chapter-icon>
-        <p>This character has suffered some past trauma where they were one of a few to survivor a horrible tragedy and so carry around survivor's guilt because of it.
+        <p>This character has suffered some past trauma where they were one of a few to survivor a horrible tragedy and
+          so carry around survivor's guilt because of it.
           Now, when they go through similar experiences, they relive that trauma.
         </p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='whenscampaioj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'whenscampaioj'"></app-bm-chapter-icon>
-        <p>When a companion of this character dies, suffers a mental break, or goes unconscious, they take Stress equal to this Flaw's Severity.</p>
+        <p>When a companion of this character dies, suffers a mental break, or goes unconscious, they take Stress equal
+          to this Flaw's Severity.</p>
       </div>
       <div class="anchor">
         <div id="ThrallheaderBZnUOEIBsw" class="anchorTag"></div>
@@ -3677,8 +3329,8 @@
           resume normal movement.</p>
       </div>
       <div class="anchor">
-        <div id="VexedheaderKKwTFqXyyt" class="anchorTag"></div>
-        <h2>Vexed</h2>
+        <div id="VexableheaderKKwTFqXyyt" class="anchorTag"></div>
+        <h2>Vexable</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>

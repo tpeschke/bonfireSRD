@@ -7,9 +7,54 @@
     width: 40%;
 }
 
+.result-shell {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.result-shell p {
+    text-indent: 0;
+}
+
+.result-shell i {
+    color: #b45f06;
+    font-size: 13px;
+    transition: .6s;
+}
+
+.result-shell i:hover {
+    color: #222
+}
+
+
+.resultHolder {
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.generateButton {
+    background: #b45f06;
+    color: whitesmoke;
+    width: 200px;
+    position: inherit;
+    border-radius: 25px;
+    transition: .6s;
+}
+
+.generateButton:hover {
+    background: #222;
+}
+
 @media (max-width: 770px) { 
     .limp-tables-shell {
         float: unset;
         width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    .result-shell {
+        flex-direction: column;
     }
 }

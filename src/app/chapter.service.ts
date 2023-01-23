@@ -112,6 +112,34 @@ export class ChapterService {
       )
   }
 
+  getAllFlawTables(): any {
+    return this.http.get(local.endpointBase + '/getFlawTables')
+      .pipe(
+        catchError(this.handleError('get all flaw tables', []))
+      )
+  }
+
+  getRandomFlaw(): any {
+    return this.http.get(local.endpointBase + '/getRandomFlaw')
+      .pipe(
+        catchError(this.handleError('get random flaw', []))
+      )
+  }
+
+  getNewParentTable(roll): any {
+    return this.http.get(local.endpointBase + '/getNewParentTable/' + roll)
+    .pipe(
+      catchError(this.handleError('get new parent table', []))
+    )
+  }
+
+  getNewFlaw(parentTable): any {
+    return this.http.get(local.endpointBase + '/getNewFlaw/' + parentTable)
+    .pipe(
+      catchError(this.handleError('get new flaw with parent table', []))
+    )
+  }
+
   getName(id: number): string {
     switch (id) {
       case 1:
