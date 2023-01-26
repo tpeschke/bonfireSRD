@@ -21,7 +21,11 @@ const flawTables = {
             bonus: 7,
             severity: 7,
             cap: 12,
-            currentTotal: 0
+            currentTotal: 0,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 7,
@@ -29,7 +33,11 @@ const flawTables = {
             bonus: 17,
             severity: 10,
             cap: 5,
-            currentTotal: 2
+            currentTotal: 2,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 5,
@@ -37,7 +45,11 @@ const flawTables = {
             bonus: 13,
             severity: 7,
             cap: 10,
-            currentTotal: 9
+            currentTotal: 9,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 4,
@@ -45,7 +57,11 @@ const flawTables = {
             bonus: 7,
             severity: 7,
             cap: 5,
-            currentTotal: 14
+            currentTotal: 14,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 7,
@@ -53,7 +69,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 12,
-            currentTotal: 18
+            currentTotal: 18,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 9,
@@ -61,7 +81,11 @@ const flawTables = {
             bonus: 23,
             severity: 10,
             cap: 20,
-            currentTotal: 25
+            currentTotal: 25,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 4,
@@ -69,7 +93,11 @@ const flawTables = {
             bonus: 13,
             severity: 7,
             cap: 5,
-            currentTotal: 34
+            currentTotal: 34,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 12,
@@ -77,7 +105,11 @@ const flawTables = {
             bonus: 50,
             severity: 13,
             cap: 4,
-            currentTotal: 38
+            currentTotal: 38,
+            rank: {
+                base: 3.5,
+                per: 1.5
+            }
         },
         {
             weight: 9,
@@ -85,7 +117,11 @@ const flawTables = {
             bonus: 20,
             severity: 13,
             cap: 5,
-            currentTotal: 50
+            currentTotal: 50,
+            rank: {
+                base: .5,
+                per: 1.5
+            }
         },
         {
             weight: 5,
@@ -93,7 +129,11 @@ const flawTables = {
             bonus: 13,
             severity: 7,
             cap: 5,
-            currentTotal: 59
+            currentTotal: 59,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 2,
@@ -101,7 +141,11 @@ const flawTables = {
             bonus: 7,
             severity: 3,
             cap: 10,
-            currentTotal: 64
+            currentTotal: 64,
+            rank: {
+                base: .67,
+                per: .33
+            }
         },
         {
             weight: 9,
@@ -109,7 +153,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 12,
-            currentTotal: 66
+            currentTotal: 66,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 5,
@@ -117,7 +165,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 24,
-            currentTotal: 75
+            currentTotal: 75,
+            rank: {
+                base: 1,
+                per: .5
+            }
         },
         {
             weight: 2,
@@ -125,7 +177,11 @@ const flawTables = {
             bonus: 10,
             severity: 10,
             cap: 20,
-            currentTotal: 80
+            currentTotal: 80,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 2,
@@ -133,7 +189,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 10,
-            currentTotal: 82
+            currentTotal: 82,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 2,
@@ -141,7 +201,11 @@ const flawTables = {
             bonus: 20,
             severity: 0,
             cap: 1,
-            currentTotal: 84
+            currentTotal: 84,
+            rank: {
+                base: 2,
+                per: 0
+            }
         },
         {
             weight: 6,
@@ -149,7 +213,11 @@ const flawTables = {
             bonus: 15,
             severity: 10,
             cap: 10,
-            currentTotal: 86
+            currentTotal: 86,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 4,
@@ -157,7 +225,11 @@ const flawTables = {
             bonus: 17,
             severity: 10,
             cap: 10,
-            currentTotal: 92
+            currentTotal: 92,
+            rank: {
+                base: 1.25,
+                per: .75
+            }
         },
         {
             weight: 4,
@@ -165,7 +237,11 @@ const flawTables = {
             bonus: 23,
             severity: 7,
             cap: 19,
-            currentTotal: 96
+            currentTotal: 96,
+            rank: {
+                base: 1.5,
+                per: .5
+            }
         }
     ],
     mental: [
@@ -175,7 +251,11 @@ const flawTables = {
             bonus: 19,
             severity: 5,
             cap: 10,
-            currentTotal: 0
+            currentTotal: 0,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 10,
@@ -183,7 +263,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 4,
-            currentTotal: 11
+            currentTotal: 11,
+            rank: {
+                base: 0,
+                per: 1.5
+            }
         },
         {
             weight: 13,
@@ -191,7 +275,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 'n/a',
-            currentTotal: 21
+            currentTotal: 21,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 13,
@@ -199,7 +287,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 5,
-            currentTotal: 34
+            currentTotal: 34,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 11,
@@ -207,7 +299,11 @@ const flawTables = {
             bonus: 13,
             severity: 7,
             cap: 'n/a',
-            currentTotal: 47
+            currentTotal: 47,
+            rank: {
+                base: 1,
+                per: .5
+            }
         },
         {
             weight: 13,
@@ -215,7 +311,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 'n/a',
-            currentTotal: 58
+            currentTotal: 58,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 10,
@@ -223,7 +323,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 10,
-            currentTotal: 71
+            currentTotal: 71,
+            rank: {
+                base: .5,
+                per: 1
+            }
         },
         {
             weight: 13,
@@ -231,7 +335,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 10,
-            currentTotal: 81
+            currentTotal: 81,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 6,
@@ -239,7 +347,11 @@ const flawTables = {
             bonus: 17,
             severity: 20,
             cap: 2,
-            currentTotal: 94
+            currentTotal: 94,
+            rank: {
+                base: 0,
+                per: 2
+            }
         }
     ],
     physical: [
@@ -249,7 +361,11 @@ const flawTables = {
             bonus: 7,
             severity: 3,
             cap: 10,
-            currentTotal: 0
+            currentTotal: 0,
+            rank: {
+                base: .67,
+                per: .33
+            }
         },
         {
             weight: 5,
@@ -257,7 +373,11 @@ const flawTables = {
             bonus: 10,
             severity: 3,
             cap: 'n/a',
-            currentTotal: 6
+            currentTotal: 6,
+            rank: {
+                base: .67,
+                per: .33
+            }
         },
         {
             weight: 5,
@@ -265,7 +385,11 @@ const flawTables = {
             bonus: 10,
             severity: 3,
             cap: 'n/a',
-            currentTotal: 11
+            currentTotal: 11,
+            rank: {
+                base: .67,
+                per: .33
+            }
         },
         {
             weight: 3,
@@ -273,7 +397,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 'n/a',
-            currentTotal: 16
+            currentTotal: 16,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 2,
@@ -281,7 +409,11 @@ const flawTables = {
             bonus: 17,
             severity: 10,
             cap: 6,
-            currentTotal: 19
+            currentTotal: 19,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 4,
@@ -289,7 +421,50 @@ const flawTables = {
             bonus: '*',
             severity: '*',
             cap: '*',
-            currentTotal: 21
+            currentTotal: 21,
+            subtable: [
+                {
+                    weight: 1,
+                    specific: 'Head',
+                    bonus: 10,
+                    severity: 7,
+                    cap: 5,
+                    rank: {
+                        base: .5,
+                        per: .5
+                    }
+                },{
+                    weight: 1,
+                    specific: 'Body',
+                    bonus: 17,
+                    severity: 10,
+                    cap: 10,
+                    rank: {
+                        base: 1,
+                        per: 1
+                    }
+                },{
+                    weight: 1,
+                    specific: 'Arms & Hands',
+                    bonus: 10,
+                    severity: 10,
+                    cap: 10,
+                    rank: {
+                        base: 0,
+                        per: 1
+                    }
+                },{
+                    weight: 1,
+                    specific: 'Legs',
+                    bonus: 17,
+                    severity: 10,
+                    cap: 5,
+                    rank: {
+                        base: 1,
+                        per: 1
+                    }
+                }
+            ]
         },
         {
             weight: 3,
@@ -297,7 +472,11 @@ const flawTables = {
             bonus: 10,
             severity: 10,
             cap: 6,
-            currentTotal: 25
+            currentTotal: 25,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 1,
@@ -305,7 +484,11 @@ const flawTables = {
             bonus: 33,
             severity: 17,
             cap: 10,
-            currentTotal: 28
+            currentTotal: 28,
+            rank: {
+                base: 1.5,
+                per: 1.5
+            }
         },
         {
             weight: 4,
@@ -313,7 +496,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 'n/a',
-            currentTotal: 29
+            currentTotal: 29,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 3,
@@ -321,7 +508,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 5,
-            currentTotal: 33
+            currentTotal: 33,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 2,
@@ -329,7 +520,11 @@ const flawTables = {
             bonus: 17,
             severity: 13,
             cap: 6,
-            currentTotal: 36
+            currentTotal: 36,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 4,
@@ -337,7 +532,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 19,
-            currentTotal: 38
+            currentTotal: 38,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 5,
@@ -345,7 +544,11 @@ const flawTables = {
             bonus: 7,
             severity: 7,
             cap: 10,
-            currentTotal: 42
+            currentTotal: 42,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 2,
@@ -353,7 +556,11 @@ const flawTables = {
             bonus: 20,
             severity: 10,
             cap: 10,
-            currentTotal: 47
+            currentTotal: 47,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 6,
@@ -361,7 +568,11 @@ const flawTables = {
             bonus: 7,
             severity: 3,
             cap: 'n/a',
-            currentTotal: 49
+            currentTotal: 49,
+            rank: {
+                base: 0,
+                per: .33
+            }
         },
         {
             weight: 5,
@@ -369,7 +580,11 @@ const flawTables = {
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 55
+            currentTotal: 55,
+            rank: {
+                base: .67,
+                per: .33
+            }
         },
         {
             weight: 2,
@@ -377,7 +592,11 @@ const flawTables = {
             bonus: 13,
             severity: 13,
             cap: 4,
-            currentTotal: 60
+            currentTotal: 60,
+            rank: {
+                base: 0,
+                per: 1.5
+            }
         },
         {
             weight: 1,
@@ -385,7 +604,11 @@ const flawTables = {
             bonus: 30,
             severity: 36,
             cap: 2,
-            currentTotal: 62
+            currentTotal: 62,
+            rank: {
+                base: 1,
+                per: 3
+            }
         },
         {
             weight: 5,
@@ -393,7 +616,11 @@ const flawTables = {
             bonus: 7,
             severity: 7,
             cap: 10,
-            currentTotal: 63
+            currentTotal: 63,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 3,
@@ -401,7 +628,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 10,
-            currentTotal: 68
+            currentTotal: 68,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 1,
@@ -409,7 +640,11 @@ const flawTables = {
             bonus: 20,
             severity: 33,
             cap: 2,
-            currentTotal: 71
+            currentTotal: 71,
+            rank: {
+                base: 0,
+                per: 3
+            }
         },
         {
             weight: 1,
@@ -417,7 +652,11 @@ const flawTables = {
             bonus: 20,
             severity: 33,
             cap: 2,
-            currentTotal: 72
+            currentTotal: 72,
+            rank: {
+                base: 0,
+                per: 3
+            }
         },
         {
             weight: 1,
@@ -425,7 +664,11 @@ const flawTables = {
             bonus: 26,
             severity: 33,
             cap: 2,
-            currentTotal: 73
+            currentTotal: 73,
+            rank: {
+                base: 0,
+                per: 3
+            }
         },
         {
             weight: 4,
@@ -433,7 +676,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 4,
-            currentTotal: 74
+            currentTotal: 74,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 3,
@@ -441,7 +688,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 6,
-            currentTotal: 78
+            currentTotal: 78,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 3,
@@ -449,7 +700,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 6,
-            currentTotal: 81
+            currentTotal: 81,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 3,
@@ -457,7 +712,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 6,
-            currentTotal: 84
+            currentTotal: 84,
+            rank: {
+                base: 1,
+                per: 1
+            }
         },
         {
             weight: 3,
@@ -465,7 +724,11 @@ const flawTables = {
             bonus: 13,
             severity: 7,
             cap: 10,
-            currentTotal: 87
+            currentTotal: 87,
+            rank: {
+                base: .5,
+                per: .5
+            }
         },
         {
             weight: 3,
@@ -473,7 +736,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 6,
-            currentTotal: 90
+            currentTotal: 90,
+            rank: {
+                base: 0,
+                per: 1
+            }
         },
         {
             weight: 4,
@@ -481,7 +748,11 @@ const flawTables = {
             bonus: 10,
             severity: 7,
             cap: 10,
-            currentTotal: 93
+            currentTotal: 93,
+            rank: {
+                base: 0,
+                per: .5
+            }
         },
         {
             weight: 3,
@@ -489,7 +760,11 @@ const flawTables = {
             bonus: 13,
             severity: 10,
             cap: 4,
-            currentTotal: 97
+            currentTotal: 97,
+            rank: {
+                base: 0,
+                per: .75
+            }
         }
     ]
 }
@@ -500,6 +775,19 @@ let flawFunctions = {
     },
     getRandomFlaw: (req, res) => {
         res.send(flawFunctions.rollForFlaw())
+    },
+    getMultipleRandomFlaw: (req, res) => {
+        let { number = 1 } = req.params
+        if (number < 0) {
+            number = 1
+        } else if (number > 25) {
+            number = 25
+        }
+        let flawArray = []
+        for (let i = 0; i < number; i++) {
+            flawArray.push(flawFunctions.rollForFlaw())
+        }
+        res.send(flawArray)
     },
     getNewParentTable: (req, res) => {
         const flawTable = flawFunctions.rollOnTable(6, 'flawTables')
@@ -526,13 +814,27 @@ let flawFunctions = {
 
         return flawFunctions.getFlawFromRoll(roll, tableName)
     },
+    rollOnTableDynamic: (tableArray) => {
+        const roll = Math.floor(Math.random() * (tableArray.length))
+
+        return tableArray[roll]
+    },
     getFlawFromRoll: (roll, tableName) => {
         let total = 0
         for (let i = 0; i < flawTables[tableName].length; i++) {
             total += flawTables[tableName][i].weight
             if (total >= roll) {
-                flawTables[tableName][i].roll = roll
-                return flawTables[tableName][i]
+                let flaw = flawTables[tableName][i]
+                flaw.roll = roll
+                if (flaw.subtable && flaw.subtable.length > 0) {
+                    let subtableResults = flawFunctions.rollOnTableDynamic(flaw.subtable)
+                    flaw = {...flaw, ...subtableResults}
+                    delete flaw.subtable
+                    if (flaw.specific) {
+                        flaw.flaw = `${flaw.flaw} (${flaw.specific})`
+                    }
+                }
+                return flaw
             }
         }
     },
