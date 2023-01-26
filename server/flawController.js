@@ -831,7 +831,7 @@ let flawFunctions = {
                     flaw = {...flaw, ...subtableResults}
                     delete flaw.subtable
                     if (flaw.specific) {
-                        flaw.flaw = `${flaw.flaw} (${flaw.specific})`
+                        flaw.flaw = `${flaw.flaw} - ${flaw.specific}`
                     }
                 }
                 return flaw
