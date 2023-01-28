@@ -25,7 +25,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'AtheistheaderFNPQHnTYgv'
         },
         {
             weight: 7,
@@ -37,7 +38,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'BastardheaderifVeGdkeSu'
         },
         {
             weight: 5,
@@ -49,7 +51,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'EpilepticheaderSkNaTOGvZe'
         },
         {
             weight: 4,
@@ -61,7 +64,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'DebtorheaderJElCNbPgHi'
         },
         {
             weight: 7,
@@ -73,7 +77,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'ExcommunicatedheaderSAHScjZyzT'
         },
         {
             weight: 9,
@@ -85,7 +90,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'FatedheaderugesVAJvHm'
         },
         {
             weight: 4,
@@ -97,7 +103,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'FeralheaderYbTzzFWdEL'
         },
         {
             weight: 12,
@@ -109,7 +116,8 @@ const flawTables = {
             rank: {
                 base: 3.5,
                 per: 1.5
-            }
+            },
+            jump: 'HalflifeheaderxXKZSCXvpm'
         },
         {
             weight: 9,
@@ -121,7 +129,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: 1.5
-            }
+            },
+            jump: 'HauntedheaderWIDVEGhzyD'
         },
         {
             weight: 5,
@@ -133,7 +142,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'IdiotSavantheaderCIOoOIjoNI'
         },
         {
             weight: 2,
@@ -145,7 +155,8 @@ const flawTables = {
             rank: {
                 base: .67,
                 per: .33
-            }
+            },
+            jump: 'InbredheaderCLxfbrofoK'
         },
         {
             weight: 9,
@@ -157,7 +168,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'MonotheistheaderAScHQRVdII'
         },
         {
             weight: 5,
@@ -169,7 +181,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: .5
-            }
+            },
+            jump: 'MuleheaderTOMugOYXOS'
         },
         {
             weight: 2,
@@ -181,7 +194,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            jump: 'OrphanheaderVdWAdEZcQr'
         },
         {
             weight: 2,
@@ -193,7 +207,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'PoorheaderErbkkhCjwR'
         },
         {
             weight: 2,
@@ -205,7 +220,8 @@ const flawTables = {
             rank: {
                 base: 2,
                 per: 0
-            }
+            },
+            jump: 'RefugeeheaderAkSpgtlWeb'
         },
         {
             weight: 6,
@@ -217,7 +233,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'surviviorgudioejheader'
         },
         {
             weight: 4,
@@ -229,7 +246,8 @@ const flawTables = {
             rank: {
                 base: 1.25,
                 per: .75
-            }
+            },
+            jump: 'ThrallheaderBZnUOEIBsw'
         },
         {
             weight: 4,
@@ -241,7 +259,8 @@ const flawTables = {
             rank: {
                 base: 1.5,
                 per: .5
-            }
+            },
+            jump: 'VowOfPovertyheaderShVWpymbpH'
         }
     ],
     mental: [
@@ -255,7 +274,33 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            subtable: [
+                {
+                    weight: 1,
+                    specific: 'Gambling'
+                },
+                {
+                    weight: 1,
+                    specific: 'Shopping'
+                },
+                {
+                    weight: 1,
+                    specific: 'Drinking'
+                },
+                {
+                    weight: 1,
+                    specific: 'Narcotics'
+                },
+                {
+                    weight: 1,
+                    specific: 'Sex'
+                },
+                {
+                    weight: 1,
+                    specific: 'Adrenaline'
+                },
+            ]
         },
         {
             weight: 10,
@@ -315,7 +360,89 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            subtable: [
+                {
+                    weight: 1,
+                    specific: 'Animals'
+                },
+                {
+                    weight: 1,
+                    specific: 'Tight Spaces'
+                },
+                {
+                    weight: 1,
+                    specific: 'Combat'
+                },
+                {
+                    weight: 1,
+                    specific: 'Commitment'
+                },
+                {
+                    weight: 1,
+                    specific: 'Confrontations'
+                },
+                {
+                    weight: 1,
+                    specific: 'The Weird'
+                },
+                {
+                    weight: 1,
+                    specific: 'Religion'
+                },
+                {
+                    weight: 1,
+                    specific: 'Plague'
+                },
+                {
+                    weight: 1,
+                    specific: 'The Dead'
+                },
+                {
+                    weight: 1,
+                    specific: 'The Opposite Gender'
+                },
+                {
+                    weight: 1,
+                    specific: 'Heights'
+                },
+                {
+                    weight: 1,
+                    specific: 'The Dark'
+                },
+                {
+                    weight: 1,
+                    specific: 'A Monster or Monster Type'
+                },
+                {
+                    weight: 1,
+                    specific: 'Spiders'
+                },
+                {
+                    weight: 1,
+                    specific: 'Snakes'
+                },
+                {
+                    weight: 1,
+                    specific: 'Open Spaces'
+                },
+                {
+                    weight: 1,
+                    specific: 'Crowded Spaces'
+                },
+                {
+                    weight: 1,
+                    specific: 'Failure'
+                },
+                {
+                    weight: 1,
+                    specific: 'Authority Figures'
+                },
+                {
+                    weight: 1,
+                    specific: 'Pain'
+                },
+            ]
         },
         {
             weight: 10,
@@ -377,7 +504,41 @@ const flawTables = {
             rank: {
                 base: .67,
                 per: .33
-            }
+            },
+            subtable: [
+                {
+                    weight: 1,
+                    specific: 'Shellfish'
+                },
+                {
+                    weight: 1,
+                    specific: 'Eggs'
+                },
+                {
+                    weight: 1,
+                    specific: 'Peanut'
+                },
+                {
+                    weight: 1,
+                    specific: 'Mulk'
+                },
+                {
+                    weight: 1,
+                    specific: 'Soy'
+                },
+                {
+                    weight: 1,
+                    specific: 'Wheat'
+                },
+                {
+                    weight: 1,
+                    specific: 'Tree Nut'
+                },
+                {
+                    weight: 1,
+                    specific: 'Fish'
+                },
+            ]
         },
         {
             weight: 5,
@@ -389,7 +550,25 @@ const flawTables = {
             rank: {
                 base: .67,
                 per: .33
-            }
+            },
+            subtable: [
+                {
+                    weight: 1,
+                    specific: 'Pollen'
+                },
+                {
+                    weight: 1,
+                    specific: 'Dust/Mold'
+                },
+                {
+                    weight: 1,
+                    specific: 'Animal Dander'
+                },
+                {
+                    weight: 1,
+                    specific: 'Insects'
+                },
+            ]
         },
         {
             weight: 3,
@@ -433,7 +612,7 @@ const flawTables = {
                         base: .5,
                         per: .5
                     }
-                },{
+                }, {
                     weight: 1,
                     specific: 'Body',
                     bonus: 17,
@@ -443,7 +622,7 @@ const flawTables = {
                         base: 1,
                         per: 1
                     }
-                },{
+                }, {
                     weight: 1,
                     specific: 'Arms & Hands',
                     bonus: 10,
@@ -453,7 +632,7 @@ const flawTables = {
                         base: 0,
                         per: 1
                     }
-                },{
+                }, {
                     weight: 1,
                     specific: 'Legs',
                     bonus: 17,
@@ -828,7 +1007,7 @@ let flawFunctions = {
                 flaw.roll = roll
                 if (flaw.subtable && flaw.subtable.length > 0) {
                     let subtableResults = flawFunctions.rollOnTableDynamic(flaw.subtable)
-                    flaw = {...flaw, ...subtableResults}
+                    flaw = { ...flaw, ...subtableResults }
                     delete flaw.subtable
                     if (flaw.specific) {
                         flaw.flaw = `${flaw.flaw} - ${flaw.specific}`
