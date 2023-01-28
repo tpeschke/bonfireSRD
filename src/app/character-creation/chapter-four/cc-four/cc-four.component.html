@@ -276,6 +276,11 @@
             <p>Flaw: </p>
             <h2 (click)="getNewFlaw()">{{flaw.flaw.flaw}} <i class="fa-solid fa-rotate-right"></i></h2>
           </div>
+          <div class="resultHolder jump-icon">
+            <div (click)="scrollToFlaw()">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
         </div>
         <div *ngIf="rerollCount > 0" class="result-shell">
           <p>Reroll Count: {{rerollCount}}</p>

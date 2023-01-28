@@ -35,4 +35,9 @@ export class CcFourComponent implements OnInit {
     this.chapterService.getNewFlaw(this.flaw.parentTable.table).subscribe(result => this.flaw = result)
   }
 
+  scrollToFlaw() {
+    let el = document.getElementById(this.flaw.flaw.jump)
+    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+  }
+
 }

@@ -300,7 +300,8 @@ const flawTables = {
                     weight: 1,
                     specific: 'Adrenaline'
                 },
-            ]
+            ],
+            jump: 'Addictheading'
         },
         {
             weight: 10,
@@ -312,7 +313,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1.5
-            }
+            },
+            jump: 'CravenheaderHHxpaSPJUd'
         },
         {
             weight: 13,
@@ -324,7 +326,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'HypochondriacheadernkQTCyMAjA'
         },
         {
             weight: 13,
@@ -336,7 +339,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'ImpatientheaderMlEfueUjgy'
         },
         {
             weight: 11,
@@ -348,7 +352,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: .5
-            }
+            },
+            jump: 'NeuroticheadergZsMEePyPl'
         },
         {
             weight: 13,
@@ -442,7 +447,8 @@ const flawTables = {
                     weight: 1,
                     specific: 'Pain'
                 },
-            ]
+            ],
+            jump: 'PhobiaheaderQQhvnCtRSg'
         },
         {
             weight: 10,
@@ -454,7 +460,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: 1
-            }
+            },
+            jump: 'SensitiveheaderJdvTOwHLwF'
         },
         {
             weight: 13,
@@ -466,7 +473,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'SlowwittedheaderjicjkCYWOg'
         },
         {
             weight: 6,
@@ -478,7 +486,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 2
-            }
+            },
+            jump: 'VexableheaderKKwTFqXyyt'
         }
     ],
     physical: [
@@ -492,7 +501,8 @@ const flawTables = {
             rank: {
                 base: .67,
                 per: .33
-            }
+            },
+            jump: 'AgeusiaheaderTAnuTNHiNf'
         },
         {
             weight: 5,
@@ -505,6 +515,7 @@ const flawTables = {
                 base: .67,
                 per: .33
             },
+            jump: 'AllergyFoodheaderFNDbwfuMWn',
             subtable: [
                 {
                     weight: 1,
@@ -551,6 +562,7 @@ const flawTables = {
                 base: .67,
                 per: .33
             },
+            jump: 'AllergyMischeaderPWgmApUIzR',
             subtable: [
                 {
                     weight: 1,
@@ -580,7 +592,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            jump: 'AsthmaticheaderLWuGlnQCuN'
         },
         {
             weight: 2,
@@ -592,7 +605,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'BlindheaderejFzjQYqhm'
         },
         {
             weight: 4,
@@ -601,6 +615,7 @@ const flawTables = {
             severity: '*',
             cap: '*',
             currentTotal: 21,
+            jump: 'BurnScarsheaderURPQmidRJb',
             subtable: [
                 {
                     weight: 1,
@@ -655,7 +670,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            jump: 'DeafheaderQjLmdfFCwk'
         },
         {
             weight: 1,
@@ -667,7 +683,8 @@ const flawTables = {
             rank: {
                 base: 1.5,
                 per: 1.5
-            }
+            },
+            jump: 'DerangedheaderRidffUYgEQ'
         },
         {
             weight: 4,
@@ -679,7 +696,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'GluttonheaderqiKXJOqLSg'
         },
         {
             weight: 3,
@@ -691,7 +709,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            jump: 'HemophilicheaderibLCRovJZE'
         },
         {
             weight: 2,
@@ -703,7 +722,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'HyperopiaheadervltxPyYqjG'
         },
         {
             weight: 4,
@@ -715,7 +735,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'ImpotentheaderfYzBcyBwWW'
         },
         {
             weight: 5,
@@ -727,7 +748,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'InfirmheaderbevIgDJeBP'
         },
         {
             weight: 2,
@@ -739,7 +761,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'InsomniacheaderIBVWLnZXkc'
         },
         {
             weight: 6,
@@ -751,7 +774,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: .33
-            }
+            },
+            jump: 'IrritableBoweheaderMBapbikkBu'
         },
         {
             weight: 5,
@@ -763,7 +787,8 @@ const flawTables = {
             rank: {
                 base: .67,
                 per: .33
-            }
+            },
+            jump: 'LabyrinthitisheaderfWjrwFnmrQ'
         },
         {
             weight: 2,
@@ -775,7 +800,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1.5
-            }
+            },
+            jump: 'LimpheaderaYmDjKsaBX'
         },
         {
             weight: 1,
@@ -787,7 +813,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 3
-            }
+            },
+            jump: 'MissingArmheaderJfhIRtVhkL'
         },
         {
             weight: 5,
@@ -799,7 +826,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'MissingDigitheaderIpfwrRQDCk'
         },
         {
             weight: 3,
@@ -811,7 +839,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'MissingEarheaderiEeAvwgBRu'
         },
         {
             weight: 1,
@@ -823,7 +852,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 3
-            }
+            },
+            jump: 'MissingEyeheaderhLRHlECmrB'
         },
         {
             weight: 1,
@@ -835,7 +865,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 3
-            }
+            },
+            jump: 'MissingHandheaderWbmnYxxVvK'
         },
         {
             weight: 1,
@@ -847,7 +878,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 3
-            }
+            },
+            jump: 'MissingLegheaderZUSKsYDxbp'
         },
         {
             weight: 4,
@@ -859,7 +891,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'MissingTeethheaderiauDXpJazw'
         },
         {
             weight: 3,
@@ -871,7 +904,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            jump: 'MuteheadernvyjQWspKK'
         },
         {
             weight: 3,
@@ -883,7 +917,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'MyopiaheaderdmimYbkqOx'
         },
         {
             weight: 3,
@@ -895,7 +930,8 @@ const flawTables = {
             rank: {
                 base: 1,
                 per: 1
-            }
+            },
+            jump: 'NoDepthPerceheaderaJIstRgCCR'
         },
         {
             weight: 3,
@@ -907,7 +943,8 @@ const flawTables = {
             rank: {
                 base: .5,
                 per: .5
-            }
+            },
+            jump: 'ShakyHandsheadergZnORfJQKB'
         },
         {
             weight: 3,
@@ -919,7 +956,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: 1
-            }
+            },
+            jump: 'StutterheadergeuOgVIFdt'
         },
         {
             weight: 4,
@@ -931,7 +969,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: .5
-            }
+            },
+            jump: 'TrickKneeheaderBXNWdwjymP'
         },
         {
             weight: 3,
@@ -943,7 +982,8 @@ const flawTables = {
             rank: {
                 base: 0,
                 per: .75
-            }
+            },
+            jump: 'WeakheaderzFoQvxiCsX'
         }
     ]
 }

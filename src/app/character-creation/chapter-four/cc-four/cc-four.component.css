@@ -29,8 +29,37 @@
 
 .resultHolder {
     margin: 10px auto;
-    width: 50%;
+    width: 45%;
     text-align: center;
+}
+
+.resultHolder+.jump-icon {
+    width: 10%;
+}
+
+.jump-icon {
+    display: flex;
+    align-items: center;
+}
+
+.jump-icon div {
+    height: 35px;
+    width: 35px;
+    background-color: #b45f06;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+
+.jump-icon div i {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.jump-icon div:hover {
+    background-color: #222;
 }
 
 .generateButton {
