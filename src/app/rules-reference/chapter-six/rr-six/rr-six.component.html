@@ -1762,9 +1762,10 @@
         <div id='FFECTBymeanskqqACdFeiE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTBymeanskqqACdFeiE'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> By means of magical force, the weird-adept is able to turn aside
-          Undead, Elementals, and Demons, keeping them at a distance. Any Demons, Elemental or Undead inside the Shape
+          Undead, Elementals, and Demons, keeping them at a distance. Any Elemental or unintelligent Undead inside the Shape
           of
-          the spell flees at full speed until they’re out of it. Those inside it are invisible to them while the spell
+          the spell flees at full speed until they’re out of it. Demons and intelligent undead can choose to stay (or be forced to, in the case of demons). 
+          Non-elemental, demon, or undead inside the shape of the spell are invisible to them while the spell
           is
           active. Taking aggressive actions of any kind (including attacking, shaping, or insulting their mother)
           doesn't break this effect
@@ -1773,9 +1774,8 @@
       <div class='paragraphShell anchor'>
         <div id='UndeadElemenhDBlKJKUYa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'UndeadElemenhDBlKJKUYa'"></app-bm-chapter-icon>
-        <p>Undead, Elementals, and Demons that are unable to move at a Sprint (or Gallop, if mounted) for any reason,
-          they begin to tear their own flesh as the
-          mind-numbing pain floods their systems, dealing themselves 1d6! damage every second. Targets are also
+        <p>Undead, Elementals, and Demons that are unable (or unwilling) to move at a Sprint (or Gallop, if mounted) for any reason,
+          begin to burn with weirding flame, dealing themselves 1d6! damage every second. Targets are also
           intuitively aware of where the center of the spell is and will do everything in their power to move away from
           it.</p>
       </div>
@@ -2441,14 +2441,14 @@
       <div class='paragraphShell anchor'>
         <div id='NTERVAL30SecbwMTTjFQFa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL30SecbwMTTjFQFa'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 30 Seconds</p>
+        <p><strong class='orangeHeader'>Interval</strong> 10 Seconds</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTAnywithdeBbiMqyxk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTAnywithdeBbiMqyxk'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> Any within the Shape of the spell becomes disoriented and is
           delayed
-          1 Second as they get their bearings.</p>
+          1 Second as they get their bearings. At the Interval, if the spell is kept up, they're delayed again.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseuazNIfCKdu' class='anchorTag'></div>
@@ -2519,7 +2519,7 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTThisspefGUWuIbDZf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTThisspefGUWuIbDZf'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> This spell creates 1d4 phantoms of everyone within the Shape of
+        <p><strong class='orangeHeader'>Effect</strong> This spell creates 1d4 phantoms for each person within the Shape of
           the
           spell. These phantoms appear within 5 ft of the person and move in sync with them, following them.</p>
       </div>
@@ -3115,17 +3115,17 @@
       <div class='paragraphShell anchor'>
         <div id='NTERVAL5SecodZcSVzeTBQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL5SecodZcSVzeTBQ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 5 Seconds</p>
+        <p><strong class='orangeHeader'>Interval</strong> 10 Seconds</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTTheweirlylNdaSIop' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTTheweirlylNdaSIop'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> The weird-adept imbues a small object with potential, that lets
           out
-          a sudden flash of light in the Shape of the spell. Blinded and startled by the flashbang, creatures in the
+          a sudden flash of light in the Shape of the spell when it is shaped and at the Interval, if kept up. Blinded and startled by the flashbang, creatures in the
           Shape
           of the spell reroll their Initiative on a d4 and then adding the current second on the Clock and initiative
-          modifier. Everyone that is affected is considered surprise with all associated penalties until their
+          modifier. Everyone that is affected is considered surprised with all associated penalties until their
           initiative
           comes up again.</p>
       </div>
@@ -3239,12 +3239,13 @@
           ft
           in a random direction. Those that are held remain held only if their wielders succeed at a Strength Check vs
           d20
-          for Small items and d20 - 15 for Medium items.</p>
+          for Small items and d20 - 15 for Medium items. Affected ranged attacks (attacks going off the second that the spell is shaped 
+        or at its Interval, if kept up, and are crossing through the shape of the spell) gain a -5 to hit.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKThedistaCTVChqDPQd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKThedistaCTVChqDPQd'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> The distance things fly an additional 5 ft and the d20 gets a +5.
+        <p><strong class='orangeHeader'>Stack</strong> The distance things fly an additional 5 ft and the d20 gets a +5. Affected ranged attacks gain another -5 to hit.
         </p>
       </div>
 
@@ -3383,7 +3384,7 @@
         <p><strong class='orangeHeader'>Effect</strong>A chosen non-lead, non-organic object within the Shape of the
           spell
           becomes ethereal, allowing people to pass through it, though only at Crawling speed. Those caught in an object
-          when the spell ends are shunted back to where they ended but are otherwise unharmed.</p>
+          when the spell ends are shunted back to where they entered but are otherwise unharmed.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreasezdyFBYDVWB' class='anchorTag'></div>
@@ -3421,7 +3422,7 @@
         <app-bm-chapter-icon [id]="'FFECTEquipmenxKCbvlZrJn'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> Equipment in the Shape of the spell becomes surrounded by a
           reinforceing dweomer. This ignores 3 Wear while the
-          spell is active.</p>
+          spell is active and double their Breakage Threshold.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseUUleLJQHzT' class='anchorTag'></div>
@@ -3457,7 +3458,8 @@
         <div id='FFECTOneitemENMkjJJBqc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTOneitemENMkjJJBqc'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> One item on each person within the Shape of the spell becomes
-          weaker, now giving the carrier a -1 to all metrics it affects as it bends the item out of shape temporarily.
+          weaker, now giving the carrier a -1 to all metrics it affects as it bends the item out of shape, although this 
+          only lasts for as long as the spell is active.
           The
           weird-adept determines which items are affected but they must be in use.</p>
       </div>
@@ -3466,7 +3468,8 @@
         <app-bm-chapter-icon [id]="'TACKIncreaseFaOlciZaSM'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Stack</strong> Increase the penalty by 1, Should that penalty become greater
           than -
-          10, the item simply shatters under the arcane grip.</p>
+          10, the item simply shatters under the arcane grip. Superior equipment subtracts their applicable bonuses from this Threshold (making it 
+        harder to simply shatter, and magic items have to get to double it (-20).</p>
       </div>
       <div class="anchor">
         <div id="MysticalSandiheader" class="anchorTag"></div>
@@ -3503,13 +3506,12 @@
           Blades and shields gain an additional point of Parry, armor takes less of an impact so gains, effectively, +1
           DR, and
           projectiles are less affected by wind resistance (as long as they’re fired from within the spell’s Shape),
-          giving them a +1 damage. Additionally, all items gain +3 to their Breakage Threshold.</p>
+          giving them a +1 damage.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreasejJJFkyLJAa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreasejJJFkyLJAa'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Stack</strong> Increase standard bonus by 1 and increase Breakage Threshold by
-          3.</p>
+        <p><strong class='orangeHeader'>Stack</strong> Increase standard bonus by 1. Every 3 Stacks, increase the benefits to shields, armor, and applicable weapons by +1.</p>
       </div>
       <div class="anchor">
         <div id="Strobeheader" class="anchorTag"></div>
@@ -3542,7 +3544,7 @@
         <p><strong class='orangeHeader'>Effect</strong> The weird-adept launches a ball of Bright strobing light that
           makes
           everything in and on the other side of the Shape of the spell hard to track. Ranged attacks, or spells that
-          require a ranged attack, made into the flashbanged area or at targets behind them have their dice sizes
+          require a ranged attack, made into the strobe area or at targets behind them have their dice sizes
           reduced
           by 1.</p>
       </div>
@@ -3583,14 +3585,9 @@
           the
           spell to be scaled without a Climbing Check, moving up down or sideways freely, with their feet on the wall
           and
-          their body out-stretched as if standing. Other than this looking very odd, normal physics apply. Their
+          their body out-stretched as if standing. Other than having to move in this fashion and this looking very odd, normal physics apply. Their
           movement
-          is limited, however: people moving on this wall can only move up to a Crawl.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='CrawlingonadzBmhNrWie' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'CrawlingonadzBmhNrWie'"></app-bm-chapter-icon>
-        <p>Crawling on a magic wall doesn’t cause its spell to be cast on that person.</p>
+          is limited, however: people moving on this wall can only move at a Crawling Speed.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseKmWdcCyjVO' class='anchorTag'></div>
@@ -3625,9 +3622,9 @@
       <div class='paragraphShell anchor'>
         <div id='FFECTAllweapDMOiKGNwtI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTAllweapDMOiKGNwtI'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> All weapons within the Shape of the spell have their lowest
+        <p><strong class='orangeHeader'>Effect</strong> All weapons within the Shape of the spell have one of their lowest
           damage
-          dice increased by 1.</p>
+          dice increased by 1 size.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseJvWAThieWU' class='anchorTag'></div>
