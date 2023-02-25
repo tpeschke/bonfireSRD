@@ -812,7 +812,7 @@ module.exports = {
                 type: 'P',
                 minrec: 4,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
-                bonusLong: '<p>The Javelin can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Javelin.</p>'
+                bonusLong: '<p>The Javelin can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Javelin.</p><br><p>This weapon can be drawn and readied on the move but the wielder needs to be standing still to aim without penalties.</p>'
             },
             {
                 name: 'Throwing Axe',
@@ -822,7 +822,7 @@ module.exports = {
                 type: 'S',
                 minrec: 3,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
-                bonusLong: '<p>Throwing Axes can be used at ranged or as a handaxe in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the axe is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Throwing Axe.</p>'
+                bonusLong: '<p>Throwing Axes can be used at ranged or as a handaxe in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the axe is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Throwing Axe.</p><br><p>This weapon can be drawn and readied on the move but the wielder needs to be standing still to aim without penalties.</p>'
             },
             {
                 name: 'Throwing Knife',
@@ -832,7 +832,7 @@ module.exports = {
                 type: 'P',
                 minrec: 3,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
-                bonusLong: '<p>Throwing Knife can be used at ranged or as a knife in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>Add your Damage Modifier from Strength to the Throwing Knife.</p>'
+                bonusLong: '<p>Throwing Knife can be used at ranged or as a knife in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>Add your Damage Modifier from Strength to the Throwing Knife.</p><br><p>This weapon can be drawn and readied on the move but the wielder needs to be standing still to aim without penalties.</p>'
             },
         ],
         mechanical: [

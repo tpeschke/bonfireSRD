@@ -334,7 +334,7 @@ const flawTables = {
             flaw: 'Impatient',
             bonus: 10,
             severity: 7,
-            cap: 5,
+            cap: 10,
             currentTotal: 34,
             rank: {
                 base: .5,
