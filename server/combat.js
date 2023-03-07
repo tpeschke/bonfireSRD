@@ -454,15 +454,15 @@ module.exports = {
         ],
         sidearms: [
             {
-                name: 'Brass Knuckles',
-                size: 'C',
+                name: 'Bludgeon',
+                size: 'S',
                 dam: '1d8!',
-                rec: 5,
-                type: 'S',
-                parry: 2,
-                measure: 0,
-                bonus: 'Can do all unarmed moves but Grab. Strikes +10.',
-                bonusLong: '<p>While using Brass Knuckles, you can perform all Unarmed moves except Grab and Strikes gain a +10 to Attack Roll.</p>'
+                rec: 7,
+                type: 'C',
+                parry: 0,
+                measure: 2.25,
+                bonus: 'Dam * 2 for Trauma.',
+                bonusLong: '<p>Damage with the Bludgeon is effectively doubled for Trauma checks.</p>'
             },
             {
                 name: 'Cinquedea',
@@ -689,15 +689,15 @@ module.exports = {
                 bonus: false,
             },
             {
-                name: 'Bludgeon',
-                size: 'S',
+                name: 'Brass Knuckles',
+                size: 'C',
                 dam: '1d8!',
-                rec: 7,
-                type: 'C',
-                parry: 0,
-                measure: 2.25,
-                bonus: 'Dam * 2 for Trauma.',
-                bonusLong: '<p>Damage with the Bludgeon is effectively doubled for Trauma checks.</p>'
+                rec: 5,
+                type: 'S',
+                parry: 2,
+                measure: 0,
+                bonus: 'Can do all unarmed moves but Grab. Strikes +10.',
+                bonusLong: '<p>While using Brass Knuckles, you can perform all Unarmed moves except Grab and Strikes gain a +10 to Attack Roll.</p>'
             },
             {
                 name: 'Club',
