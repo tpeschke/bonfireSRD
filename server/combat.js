@@ -697,7 +697,7 @@ module.exports = {
                 parry: 2,
                 measure: 0,
                 bonus: 'Can do all unarmed moves but Grab. Strikes +10.',
-                bonusLong: '<p>While using Brass Knuckles, you can perform all Unarmed moves except Grab and Strikes gain a +10 to Attack Roll.</p>'
+                bonusLong: '<p>While using Brass Knuckles you can’t Grab or Throw but can Push, Tackle, and Strike. Strikes gain +5 to Effectiveness.</p>'
             },
             {
                 name: 'Club',
