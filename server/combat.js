@@ -239,6 +239,16 @@ module.exports = {
                 bonus: false,
             },
             {
+                name: 'Dane Axe',
+                size: 'H',
+                dam: '5d6!',
+                rec: 23,
+                type: 'S',
+                parry: 0,
+                measure: 6.5,
+                bonus: false,
+            },
+            {
                 name: 'Handaxe',
                 size: 'S',
                 dam: '3d4!',
