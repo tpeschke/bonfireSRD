@@ -10,7 +10,7 @@ export default [
                 sellback: '7.5 sc'
             },
             {
-                name: '2 S Weapons*',
+                name: '2 S Melee Weapons*',
                 size: 'n/a',
                 sellback: '30 sc'
             },
@@ -107,7 +107,7 @@ export default [
                 sellback: '2.5 sc'
             },
             {
-                name: '1 S Weapon*',
+                name: '1 S Melee Weapon*',
                 size: 'n/a',
                 sellback: '15 sc'
             },
@@ -174,7 +174,7 @@ export default [
                 sellback: '2.5 sc'
             },
             {
-                name: '1 S Weapons*',
+                name: '1 S Melee Weapons*',
                 size: 'n/a',
                 sellback: '15 sc'
             },
@@ -226,7 +226,7 @@ export default [
                 sellback: '5 sc'
             },
             {
-                name: '2 S Weapons*',
+                name: '2 S Melee Weapons*',
                 size: 'n/a',
                 sellback: '30 sc'
             },
@@ -313,7 +313,7 @@ export default [
                 sellback: '5 sc'
             },
             {
-                name: '1 L Weapon or 1 M Weapon & 3 Thrown Ranged Weapons*',
+                name: '1 L Melee Weapon or 1 M Melee Weapon & 3 Thrown Ranged Weapons*',
                 size: 'M or n/a',
                 sellback: '100 sc'
             },
@@ -370,7 +370,7 @@ export default [
                 sellback: '5 sc'
             },
             {
-                name: '1 M Weapon*',
+                name: '1 M Melee Weapon*',
                 size: 'S',
                 sellback: '50 sc'
             },
@@ -417,7 +417,7 @@ export default [
                 sellback: '5 sc'
             },
             {
-                name: '1 M Weapon*',
+                name: '1 M Melee Weapon*',
                 size: 'S',
                 sellback: '50 sc'
             },
@@ -474,7 +474,7 @@ export default [
                 sellback: '2.5 sc'
             },
             {
-                name: '1 S Weapon*',
+                name: '1 S Melee Weapon*',
                 size: 'n/a',
                 sellback: '15 sc'
             },
