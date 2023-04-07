@@ -451,7 +451,7 @@ const flawTables = {
             jump: 'PhobiaheaderQQhvnCtRSg'
         },
         {
-            weight: 10,
+            weight: 9,
             flaw: 'Sensitive',
             bonus: 3,
             severity: 10,
@@ -464,12 +464,25 @@ const flawTables = {
             jump: 'SensitiveheaderJdvTOwHLwF'
         },
         {
-            weight: 13,
+            weight: 7,
+            flaw: 'Self-Conscious',
+            bonus: 5,
+            severity: 5,
+            cap: 10,
+            currentTotal: 80,
+            rank: {
+                base: .5,
+                per: .5
+            },
+            jump: 'SlowwittedheaderjicjkCYWOg'
+        },
+        {
+            weight: 7,
             flaw: 'Slow-Witted',
             bonus: 3,
             severity: 7,
             cap: 10,
-            currentTotal: 81,
+            currentTotal: 87,
             rank: {
                 base: .5,
                 per: .5
