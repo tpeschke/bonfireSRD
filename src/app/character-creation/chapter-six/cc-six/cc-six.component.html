@@ -2512,7 +2512,7 @@
       <div class="anchor">
         <div id="meleeweaponstats" class="anchorTag"></div>
       </div>
-      <div class="table-overflow">
+      <div class="melee-weapon-stats-table">
         <table class="all-centered first-left">
           <thead>
             <tr class="notSticky">
@@ -2546,6 +2546,16 @@
             <tr class="notSticky">
               <th colspan="8">Polearms</th>
             </tr>
+            <tr class="melee-weapon-sub-header">
+              <th>Name</th>
+              <th>Size</th>
+              <th>Damage</th>
+              <th>Recovery</th>
+              <th>Dam Type</th>
+              <th>Parry</th>
+              <th>Measure</th>
+              <th>Bonus</th>
+            </tr>
             <tr *ngFor="let weapon of polearms">
               <td>{{weapon.name}}</td>
               <td>{{weapon.size}}</td>
@@ -2558,6 +2568,16 @@
             </tr>
             <tr class="notSticky">
               <th colspan="8">Sidearms</th>
+            </tr>
+            <tr class="melee-weapon-sub-header">
+              <th>Name</th>
+              <th>Size</th>
+              <th>Damage</th>
+              <th>Recovery</th>
+              <th>Dam Type</th>
+              <th>Parry</th>
+              <th>Measure</th>
+              <th>Bonus</th>
             </tr>
             <tr *ngFor="let weapon of sidearms">
               <td>{{weapon.name}}</td>
@@ -2572,6 +2592,16 @@
             <tr class="notSticky">
               <th colspan="8">Swords</th>
             </tr>
+            <tr class="melee-weapon-sub-header">
+              <th>Name</th>
+              <th>Size</th>
+              <th>Damage</th>
+              <th>Recovery</th>
+              <th>Dam Type</th>
+              <th>Parry</th>
+              <th>Measure</th>
+              <th>Bonus</th>
+            </tr>
             <tr *ngFor="let weapon of swords">
               <td>{{weapon.name}}</td>
               <td>{{weapon.size}}</td>
@@ -2584,6 +2614,16 @@
             </tr>
             <tr class="notSticky">
               <th colspan="8">Trauma</th>
+            </tr>
+            <tr class="melee-weapon-sub-header">
+              <th>Name</th>
+              <th>Size</th>
+              <th>Damage</th>
+              <th>Recovery</th>
+              <th>Dam Type</th>
+              <th>Parry</th>
+              <th>Measure</th>
+              <th>Bonus</th>
             </tr>
             <tr *ngFor="let weapon of trauma">
               <td>{{weapon.name}}</td>

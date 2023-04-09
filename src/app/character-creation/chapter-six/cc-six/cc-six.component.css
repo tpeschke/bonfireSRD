@@ -1,0 +1,32 @@
+.melee-weapon-stats-table {
+    margin-bottom: 15px;
+}
+
+.melee-weapon-stats-table thead tr:nth-child(2) {
+    position: sticky;
+    top: 103px
+}
+
+.melee-weapon-sub-header {
+    display: none;
+}
+
+.melee-weapon-sub-header th {
+    background: black !important;
+}
+
+@media (max-width: 558px) {
+    .melee-weapon-stats-table {
+        overflow-x: auto;
+    }
+
+    .melee-weapon-sub-header {
+        display: table-row;
+    }
+}
+
+@media (max-width: 770px) {
+    .melee-weapon-stats-table thead tr:nth-child(2) {
+        top: 0
+    }
+ }

@@ -186,7 +186,7 @@ li {
     }
 
     th {
-        top: 75px;
+        top: 0px;
     }
 
     .table-overflow tr th {
