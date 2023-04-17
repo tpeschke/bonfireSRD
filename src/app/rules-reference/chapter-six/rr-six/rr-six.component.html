@@ -137,17 +137,6 @@
         <p>This is the shape that the spell shows up in. This can be a circle, cone, or wall, for example.</p>
       </div>
       <div class="anchor">
-        <div id="Rangeheader" class="anchorTag"></div>
-        <h3>Range</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisdependsokxwsvzHvcE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisdependsokxwsvzHvcE'"></app-bm-chapter-icon>
-        <p>This depends on the Shape of the spell but generally it’s the reach of the spell: how long is the cone or how
-          far
-          can you launch a salvo shaped spell.</p>
-      </div>
-      <div class="anchor">
         <div id="Originheader" class="anchorTag"></div>
         <h3>Origin</h3>
       </div>
@@ -211,15 +200,14 @@
       <div class='paragraphShell anchor'>
         <div id='howeverifyouhave' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'howeverifyouhave'"></app-bm-chapter-icon>
-        <p>However, if you have SP left over at the end of that Interval, you can keep the spell up. Again subtracting
-          the Drain
-          from the number of SP you have.
+        <p>However, if you have SP left over at the end of that Interval, you can keep the spell up. 
+          This time, you only subtract the Effect's Drain * the spell's Order from your remaining Drain.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifyouhavesomespbut' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyouhavesomespbut'"></app-bm-chapter-icon>
-        <p>If you have at least 1 SP when the Interval comes up but don't have enough to cover the entire Drain cost,
+        <p>If you have at least 1 SP when the Interval comes up but don't have enough to cover the new Drain cost,
           you can
           continue to keep the spell up for 1 more Interval if you take the amount of SP you're missing * spell's Order
           in Stress. This
@@ -230,7 +218,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifyouchoicehiou' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyouchoicehiou'"></app-bm-chapter-icon>
-        <p>If you choose to stop the spell at the Interval, any left over SP are lost.</p>
+        <p>If you choose to stop the spell at the Interval, any leftover SP are lost.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='youcannotstop' class='anchorTag'></div>
@@ -249,6 +237,19 @@
           Additionally, stacking adds an additional 1d4! Drain, rolled when you first shape the spell and at its
           Interval (which replaced the first roll). For each
           additional Effect you add, increase this die by 1 size.</p>
+      </div>
+      
+      <div class="anchor">
+        <div id="chagnigniorahio" class="anchorTag"></div>
+        <h3>Changing Range</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='itshiojeiwofew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'itshiojeiwofew'"></app-bm-chapter-icon>
+        <p>It is possible to change the Range of a spell: you can either double it or reduce it to 5 ft. 
+          In either case, you need to double the total Drain of the spell, including what you have to pay at the Interval. 
+          One a change has been modified (or not modified), it cannot be changed for the duration of the spell.
+        </p>
       </div>
 
       <div class='sidebarShell marginBottom'>
@@ -480,11 +481,6 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RAIN2VvxGrKwYuW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN2VvxGrKwYuW'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 2</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='AsEffectRudiSyASKFAHuY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AsEffectRudiSyASKFAHuY'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Resistance</strong> As Effect Rudiment</p>
@@ -493,7 +489,7 @@
         <div id='TheCircleisBGWgDqKZiH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheCircleisBGWgDqKZiH'"></app-bm-chapter-icon>
         <p>The Circle is the most basic Shape. It extends from a point within the Origin with a Radius equal to the
-          modified Range of
+          Range of
           the
           Effect. Anyone in the Circle is affected by the spell only as long as they stay within it. If it deals damage
           or inflicts Stress, this occurs
@@ -506,11 +502,6 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RAIN0rJwBgHfuqQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN0rJwBgHfuqQ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 0</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='MentaltorediraHISoWxZo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'MentaltorediraHISoWxZo'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Resistance</strong> Mental to redirect or as Effect Rudiment</p>
@@ -521,12 +512,12 @@
         <p>This is the most primal Shape a spell can come in. The weird-adept casts the spell and it chooses 1 viable,
           random target within the Range of the Spell. After half the spell’s Interval, it then leaps to the next.
           Anyone
-          hit by the spell suffers its Effects for the entire time the spell is cast.</p>
+          hit by the spell suffers its Effects for the entire time the spell is cast. If there is only 1 viable target, it doesn't jump until there's a second.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='PeoplemaybeHjxYWGXrLM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PeoplemaybeHjxYWGXrLM'"></app-bm-chapter-icon>
-        <p>People may be hit multiple times, which simply counts as the spell Stacking on them. The weird-adept may
+        <p>People may be hit multiple times, which simply counts as the spell increasing the Order of the spell for that person (so a person hit with a 2nd Order Spell twice now counts as being affected by a 4th Order version of that spell). The weird-adept may
           try
           and redirect the spell, causing it to skip over a person. This means that the target is randomly deteremined
           again, although everyone in the Shape of the spell is still an option. They take Stress equal to the number of
@@ -545,11 +536,6 @@
         <div id="Coneheader" class="anchorTag"></div>
         <h2>Cone</h2>
         <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RAIN3XfiBKcxkBj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN3XfiBKcxkBj'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 3</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AsEffectRudipoGuZwtTkc' class='anchorTag'></div>
@@ -578,11 +564,6 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RAIN2DQjMkJAFEu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN2DQjMkJAFEu'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 2</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='AsEffectRudixsFaAyoalk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AsEffectRudixsFaAyoalk'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Resistance</strong> As Effect Rudiment</p>
@@ -601,25 +582,18 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RAIN5reCYNSqpSy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN5reCYNSqpSy'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 5</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='DodgeqJEdRYEsbc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DodgeqJEdRYEsbc'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Resistance</strong> Dodge</p>
+        <p><strong class='orangeHeader'>Resistance</strong> Dodge or as Effect Rudiment</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TheSalvoistykwPSLxJAb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheSalvoistykwPSLxJAb'"></app-bm-chapter-icon>
-        <p>The Salvo is the spell chucked up to 3 * its unmodified Range from a point within the spell’s Origin. It
+        <p>The Salvo is the spell chucked up to 3 * its Range from a point within the spell’s Origin. It
           requires a ranged
           attack
           to
-          hit (though ignoring Cover) a single viable target. The shaper gains a bonus based on the Range Rudiment
-          they're using: +0 for Personal, +1 for Half, +3 for Full, +5 for Double.
-          Anyone that is hit, suffers
+          hit (though ignoring Cover) a single viable target. Anyone that is hit, suffers
           the
           full effects of the spell for the duration of the spell. If it deals damage or inflicts Stress, this occurs on
           the Interval.</p>
@@ -637,9 +611,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='FromwherethehreKHJuPVU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FromwherethehreKHJuPVU'"></app-bm-chapter-icon>
-        <p>This Shape can be stacked with itself to fire additional Salvos that can target different targets. If
-          targeting the same
-          target, they target needs to make multiple defense rolls.
+        <p>This Shape can create additional Salvos that can hit different viable targets. In this case, your considered to be 
+          Multitasking - so you divide the dice between any/all viable targets. You can create a number of salvos up to the 
+          number of viable targets you could possibly hit.
         </p>
       </div>
       <div class="anchor">
@@ -648,14 +622,9 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='RAIN5sXUjQOUVDN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN5sXUjQOUVDN'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 5</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='DodgeorasEfbircdJyNWz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DodgeorasEfbircdJyNWz'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Resistance</strong> Dodge or as Effect Rudiment</p>
+        <p><strong class='orangeHeader'>Resistance</strong> Dodge</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThespelltakeVjkAjJJKqp' class='anchorTag'></div>
@@ -664,10 +633,10 @@
           the spell’s
           Origin. While the weird-adept has complete control over the direction with only minimal effort (so it doesn’t
           affect what else he’s doing), it still has some limitations. The first is that it only goes 10 ft / second, no
-          faster, no slower, and the weird-adept may only turn it 45 degrees every 3 seconds. It also travels alone the
-          ground.</p>
+          faster, no slower, and the weird-adept may only turn it 45 degrees every 3 seconds. It also travels along the
+          ground. The Sphere can pass through anything that air can pass through.</p>
       </div>
-      <div class='paragraphShell marginBottom anchor'>
+      <div class='paragraphShell anchor'>
         <div id='thsecondisoj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'thsecondisoj'"></app-bm-chapter-icon>
         <p>The second is that the sphere needs to stay in the shaper's eyeline. If the eyeline is broken for most than 1
@@ -675,15 +644,17 @@
           Otherwise, the distance at which the sphere is controls is unlimited.
         </p>
       </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='howevwehiothioew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'howevwehiothioew'"></app-bm-chapter-icon>
+        <p>However, those struck with the Sphere (those who don't dodge out of the way) the first time, are affected by the spell, forfeiting 
+          their ability to resist in other ways, for the rest of the spell's life. Further hits with the Sphere don't do anything else.
+        </p>
+      </div>
       <div class="anchor">
         <div id="Rayheader" class="anchorTag"></div>
         <h2>Ray</h2>
         <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RAIN2dNCuLZGAVl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN2dNCuLZGAVl'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 3</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='DodgeHtIHqRdRSG' class='anchorTag'></div>
@@ -695,7 +666,7 @@
         <app-bm-chapter-icon [id]="'TherayisatnjgImtUfEl'"></app-bm-chapter-icon>
         <p>The ray is a thin, straight line of magic that extends from a point within the spell’s Origin up to the
           spell’s
-          Range. This is modified by Range Rudiments. It
+          Range. It
           manifests in a single instant, requiring a roll to hit. This cannot be Parried and equipment is also part of
           the target. Those that it hits, suffer the full Effect of the
           spell for the duration of the spell.</p>
@@ -721,11 +692,6 @@
         <div id="Wallheader" class="anchorTag"></div>
         <h2>Wall</h2>
         <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RAIN2egKYgoMPdq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN2egKYgoMPdq'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='DodgeinitialllHWeRrebtf' class='anchorTag'></div>
@@ -756,71 +722,6 @@
           defense roll vs a ranged attack to get out of the way.</p>
       </div>
       <div class="anchor">
-        <div id="RangeRudimentheader" class="anchorTag"></div>
-        <h1>Range Rudiment Descriptions</h1>
-        <div class="underline"></div>
-      </div>
-      <div class="anchor">
-        <div id="Doubleheader" class="anchorTag"></div>
-        <h2>Double</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RAIN1xaBWhVLhdZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN1xaBWhVLhdZ'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 1</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThismakestheVzNVXeFZoE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismakestheVzNVXeFZoE'"></app-bm-chapter-icon>
-        <p>This makes the Range of a spell twice its Base Range.</p>
-      </div>
-      <div class="anchor">
-        <div id="Fullheader" class="anchorTag"></div>
-        <h2>Full</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RAIN0bQgeGdhXXq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN0bQgeGdhXXq'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 0</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThismakestheYpIROSYyEQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismakestheYpIROSYyEQ'"></app-bm-chapter-icon>
-        <p>This makes the Range of a spell just its Base Range.</p>
-      </div>
-      <div class="anchor">
-        <div id="Halfheader" class="anchorTag"></div>
-        <h2>Half</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RAIN1RwieiNTJjD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RAIN1RwieiNTJjD'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 1</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThismakesthenOVrYfJzKO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismakesthenOVrYfJzKO'"></app-bm-chapter-icon>
-        <p>This makes the Range of a spell half its Base Range.</p>
-      </div>
-      <div class="anchor">
-        <div id="localizedheader" class="anchorTag"></div>
-        <h2>Localized</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='localizeddraing' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'localizeddraing'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThismakesthepjNHnjJJCD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismakesthepjNHnjJJCD'"></app-bm-chapter-icon>
-        <p>This makes the Range of the spell 5ft, regardless of the Base Range of the Effect Rudiment.</p>
-      </div>
-      <div class="anchor">
         <div id="OriginRudimenheader" class="anchorTag"></div>
         <h1>Origin Rudiment Descriptions</h1>
         <div class="underline"></div>
@@ -833,7 +734,7 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN5xtBxLgLmNW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN5xtBxLgLmNW'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 5</p>
+        <p><strong class='orangeHeader'>Drain</strong> 10</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesitnxULSqHjTq' class='anchorTag'></div>
@@ -850,7 +751,7 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN2WABYFDGDzd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN2WABYFDGDzd'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 2</p>
+        <p><strong class='orangeHeader'>Drain</strong> 6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThismakesitgkkBJPpuwx' class='anchorTag'></div>
@@ -882,12 +783,12 @@
       <div class='paragraphShell anchor'>
         <div id='burstsdraing' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'burstsdraing'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 1</p>
+        <p><strong class='orangeHeader'>Drain</strong> 5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesthefygpxFhjQW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismakesthefygpxFhjQW'"></app-bm-chapter-icon>
-        <p>This makes the Origin of the spell from 0ft up to the Base Range of the spell, although it never affects the
+        <p>This makes the Origin of the spell from 0 ft up to the Base Range of the spell, although it never affects the
           shaper.</p>
       </div>
       <div class="anchor">
@@ -898,7 +799,7 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN1WhjkURuiBI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN1WhjkURuiBI'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 1</p>
+        <p><strong class='orangeHeader'>Drain</strong> 5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesthefygpxFhjQW' class='anchorTag'></div>
@@ -913,7 +814,7 @@
       <div class='paragraphShell anchor'>
         <div id='RAIN3wnrLTUydsf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RAIN3wnrLTUydsf'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Drain</strong> 3</p>
+        <p><strong class='orangeHeader'>Drain</strong> 7</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakestheTTinJMumJI' class='anchorTag'></div>
@@ -2396,7 +2297,7 @@
       <div class='paragraphShell anchor'>
         <div id='ASEDRAIN2KhboUUDlGm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ASEDRAIN2KhboUUDlGm'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Drain</strong> 2</p>
+        <p><strong class='orangeHeader'>Base Drain</strong> 5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ASERANGE5ftEugppPHifG' class='anchorTag'></div>
