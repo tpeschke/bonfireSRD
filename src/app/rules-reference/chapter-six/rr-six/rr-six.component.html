@@ -571,9 +571,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismakesthepjNHnjJJCD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismakesthepjNHnjJJCD'"></app-bm-chapter-icon>
-        <p>This makes the Shape of a spell just a single individual. Starting at a point within the Origin, it effects
+        <p>This makes the Shape of a spell just a single individual. Starting at a point within the Origin, it affects
           the first viable
-          target (deteremined by the Effect Rudiment) and then stops. The spell continues to affect that person after
+          target (determined by the Effect Rudiment) and then stops. If there are multiple viable targets that could all be first, roll randomly to determine which is affected. The spell continues to affect that person after
           that point, wherever they move.</p>
       </div>
       <div class="anchor">
@@ -591,7 +591,7 @@
         <app-bm-chapter-icon [id]="'TheSalvoistykwPSLxJAb'"></app-bm-chapter-icon>
         <p>The Salvo is the spell chucked up to 3 * its Range from a point within the spell’s Origin. It
           requires a ranged
-          attack
+          attack or Mathematics Check
           to
           hit (though ignoring Cover) a single viable target. Anyone that is hit, suffers
           the
@@ -615,6 +615,24 @@
           Multitasking - so you divide the dice between any/all viable targets. You can create a number of salvos up to the 
           number of viable targets you could possibly hit.
         </p>
+      </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="salivjeiow" class="anchorTag"></div>
+          <h5>Salvo & Ray Ranged Attack Skill</h5>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='fhewiofhieow' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'fhewiofhieow'"></app-bm-chapter-icon>
+          <p>While they're not weapons, both of these Shapes require a roll to hit, and it is something that Weird-Adepts can get better at.</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='opkopkpok' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'opkopkpok'"></app-bm-chapter-icon>
+          <p>These to-hit rolls can either be a Mathematics Check or they can be a ranged attack, using the Ranged Skill Suite or the Ranged Attack (Salvo or Ray) Advanced Skill.
+            This is Advanced Skill works just like any other.
+          </p>
+        </div>
       </div>
       <div class="anchor">
         <div id="Sphereheader" class="anchorTag"></div>
@@ -667,7 +685,7 @@
         <p>The ray is a thin, straight line of magic that extends from a point within the spell’s Origin up to the
           spell’s
           Range. It
-          manifests in a single instant, requiring a roll to hit. This cannot be Parried and equipment is also part of
+          manifests in a single instant, requiring a ranged attack or Mathematics Check to hit. This cannot be Parried and equipment is also part of
           the target. Those that it hits, suffer the full Effect of the
           spell for the duration of the spell.</p>
       </div>
@@ -707,7 +725,7 @@
         <p>The wall is a 1-ft-thick line that starts at a point within the spell’s Origin and extends up to its Range,
           but also into the air and
           below
-          the ground up to 50 ft. It also doesn’t have to be a straight line, weaving, twisting and turning, however, no
+          the ground up to the spell's Base Range. It also doesn’t have to be a straight line, weaving, twisting and turning, however, no
           part of it can get within 5 ft of another part. It must also be anchored to the ground. The wall cannot be
           moved
           once placed unless it has an Aura Origin. There is no way to increase that height or thickness.</p>
@@ -2114,8 +2132,7 @@
           forced to, in the case of demons).
           Non-elemental, demon, or undead inside the shape of the spell are invisible to them while the spell
           is
-          active. Taking aggressive actions of any kind (including attacking, shaping, or insulting their mother) breaks
-          this effect for that person (including the invisibility).</p>
+          active. A person that takes aggressive actions of any kind (including attacking, shaping, or insulting their mother) is no longer invisible to the affected creatures.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='UndeadElemenhDBlKJKUYa' class='anchorTag'></div>
@@ -2445,6 +2462,14 @@
           It
           has Normal Illumination within the Shape of the and Dim Illumination up to 10 ft beyond that.</p>
       </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifthisojvioewjiow' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifthisojvioewjiow'"></app-bm-chapter-icon>
+        <p>If this spell is Personal shape, it only effects one person, causing them to glow. Any actions they take and any actions 
+          that hit them (such as an enemy attacking them) are done as if they were at Normal Illuminate, regardless of what the natural light 
+          level is.
+        </p>
+      </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaserJfYAfTfDD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaserJfYAfTfDD'"></app-bm-chapter-icon>
@@ -2487,7 +2512,7 @@
         <app-bm-chapter-icon [id]="'FFECTThisshaSULGOoznit'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> This shapes magic into a spectral platform that allows the mage
           to
-          dump his excess baggage on it. It happily follows its summoner around until it dematerializes, holding up to 1
+          dump his excess baggage on it. It happily follows its summoner at distance of 1 to 10 ft (as the summoner desires) until it dematerializes, holding up to 1
           Medium item.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -2974,10 +2999,16 @@
           being the number of phantoms that person has left. Should they actually hit the person, all the phantoms
           disappear. If the blow does land on a phantom, only that phantom disappears.</p>
       </div>
+      <div class='paragraphShell anchor'>
+        <div id='AndwheneversECuipmgbAF' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AndwheneversECuipmgbAF'"></app-bm-chapter-icon>
+        <p>At the Interval, the summoner can choose to reroll the number of phantoms but they must accept the results of the reroll, possibly gaining more and replacing those that were lost but also possibly being 
+          left with fewer than before.</p>
+      </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreaseFfUQvRkxqn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreaseFfUQvRkxqn'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>+Order</strong> Increase the number of phantoms created by 1 dice size.</p>
+        <p><strong class='orangeHeader'>+Order</strong> Increase the number of phantoms by +1.</p>
       </div>
       <div class="anchor">
         <div id="InflictDoubtheader" class="anchorTag"></div>
@@ -4077,7 +4108,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKIncreasejJJFkyLJAa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKIncreasejJJFkyLJAa'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>+Order</strong> Increase standard bonus by 1. Every 3 Stacks, increase the
+        <p><strong class='orangeHeader'>+Order</strong> Increase standard bonus by 1. Every 3 Orders, increase the
           benefits to shields, armor, and applicable weapons by +1.</p>
       </div>
       <div class="anchor">
@@ -4244,7 +4275,7 @@
       <div class='paragraphShell anchor'>
         <div id='ASERANGETrigSPOqAkWTQP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ASERANGETrigSPOqAkWTQP'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Base Range</strong> Trigger 50 ft, Alarm 25 ft, modified separately</p>
+        <p><strong class='orangeHeader'>Base Range</strong> Trigger 50 ft, Alarm 25 ft, doubled separately</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='NTERVAL3HourcJHToEuzmG' class='anchorTag'></div>
@@ -4561,7 +4592,7 @@
         <div id='TACKThespiriUnFVYDnJdv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKThespiriUnFVYDnJdv'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>+Order</strong> The spirit travels faster, increasing its speed by 10 miles per
-          hour or you can pass through 1 barrier (Weird or mundane) per Stack.
+          hour or you can pass through 1 barrier (Weird or mundane) per Order.
         </p>
       </div>
       <div class="anchor">
@@ -5289,7 +5320,7 @@
         <app-bm-chapter-icon [id]="'atehieniodfjioe'"></app-bm-chapter-icon>
         <p>At the end of each Interval the weird-adept may choose to exit the stairs or keep going. Once they leave the
           Stair, the GM reveals how far they’ve traveled and the weird-adept can adjust that based on how many times
-          they Stacked the Effect.</p>
+          they've increased the Order.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='thetsarijwililile' class='anchorTag'></div>
@@ -5322,7 +5353,7 @@
         <div id='TACKYougainEMWPoiUgSe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKYougainEMWPoiUgSe'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>+Order</strong> You gain more control over where you end up: modify the travel
-          distance rolled by up to 1 in either direction. Each additional Stack adds a +1 to that maximum.</p>
+          distance rolled by up to 1 in either direction. Each additional Order adds a +1 to that maximum.</p>
       </div>
       <div class="anchor">
         <div id="InflictBadLuheader" class="anchorTag"></div>

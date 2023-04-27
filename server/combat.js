@@ -706,8 +706,8 @@ module.exports = {
                 type: 'S',
                 parry: 2,
                 measure: 0,
-                bonus: 'Can do all unarmed moves but Grab. Strikes +10.',
-                bonusLong: '<p>While using Brass Knuckles you can’t Grab or Throw but can Push, Tackle, and Strike. Strikes gain +5 to Effectiveness.</p>'
+                bonus: 'Can do all unarmed moves but Grab. Strikes +5.',
+                bonusLong: '<p>While using Brass Knuckles you can’t Grab or Throw but can Push, Tackle, and Strike. Strikes gain +5 to Effectiveness.</p><br><p>This weapon\'s damage isn\'t modified by Strength\'s damage modifier.</p>'
             },
             {
                 name: 'Club',
@@ -789,7 +789,7 @@ module.exports = {
                 parry: 0,
                 measure: 0,
                 bonus: 'Can performed unarmed moves. -1 on explosions.',
-                bonusLong: '<p>On explosions, the additional dice are at a -1.</p><br><p>Unarmed attacks aren\'t treated as Trauma weapons for the sake of the Melee Weapon Suite or its Advanced Skills.</p>'
+                bonusLong: '<p>On explosions, the additional dice are at a -1.</p><br><p>Unarmed attacks aren\'t treated as Trauma weapons for the sake of the Melee Weapon Suite or its Advanced Skills.</p><br><p>Unarmed damage isn\'t modified by Strength\'s damage modifier.</p>'
             },
             {
                 name: 'War Flail',
