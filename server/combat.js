@@ -547,7 +547,7 @@ module.exports = {
                 parry: 0,
                 measure: 2,
                 bonus: 'Against Shields, +8 Atk; Against weapons w/ Parry, +4 Atk.',
-                bonusLong: '<p>Attacks with the Scourge against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
+                bonusLong: '<p>Attacks with the Scourge against shields or weapons with base Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
             },
             {
                 name: 'Stiletto',
@@ -768,7 +768,7 @@ module.exports = {
                 parry: 0,
                 measure: 4,
                 bonus: 'Against Shields, +8 Atk; Against weapons w/ Parry, +4 Atk.',
-                bonusLong: '<p>Attacks with the Peasant\'s Flail against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
+                bonusLong: '<p>Attacks with the Peasant\'s Flail against shields or weapons with base Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
             },
             {
                 name: 'Quarterstaff',
@@ -800,7 +800,7 @@ module.exports = {
                 parry: 0,
                 measure: 4,
                 bonus: 'Against Shields, +8 Atk; Against weapons w/ Parry, +4 Atk.',
-                bonusLong: '<p>Attacks with the War Flail against shields or weapons with normal Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
+                bonusLong: '<p>Attacks with the War Flail against shields or weapons with base Parry, gain +4 Atk vs weapons, +8 vs Shields.</p>'
             },
             {
                 name: 'War Hammer',
