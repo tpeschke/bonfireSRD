@@ -114,7 +114,7 @@ module.exports = {
     shields: [
         {
             name: 'Buckler',
-            dr: '6/d + 4',
+            dr: '5/d + 4',
             def: -1,
             parry: 5,
             cover: '+1 (+2)',
@@ -137,7 +137,7 @@ module.exports = {
         },
         {
             name: 'Figure Eight',
-            dr: '4/d + 4',
+            dr: '3/d + 4',
             def: -4,
             parry: 12,
             cover: '+6 (+11)',
@@ -149,7 +149,7 @@ module.exports = {
         },
         {
             name: 'Heater',
-            dr: '3/d + 6',
+            dr: '2/d + 6',
             def: -6,
             parry: 15,
             cover: '+9 (+14)',
@@ -160,7 +160,7 @@ module.exports = {
         },
         {
             name: 'Hoplon',
-            dr: '4/d + 4',
+            dr: '3/d + 4',
             def: -3,
             parry: 9,
             cover: '+9 (+15)',
@@ -171,7 +171,7 @@ module.exports = {
         },
         {
             name: 'Kite',
-            dr: '3/d + 2',
+            dr: '2/d + 2',
             def: -8,
             parry: 14,
             cover: '+10 (+18)',
@@ -182,7 +182,7 @@ module.exports = {
         },
         {
             name: 'Pavise',
-            dr: '4/d + 2',
+            dr: '3/d + 2',
             def: -8,
             parry: 0,
             cover: '+10 (*)',
@@ -194,7 +194,7 @@ module.exports = {
         },
         {
             name: 'Round',
-            dr: '3/d + 2',
+            dr: '2/d + 2',
             def: -4,
             parry: 11,
             cover: '+10 (+17)',
@@ -206,7 +206,7 @@ module.exports = {
         },
         {
             name: 'Tower',
-            dr: '2/d + 1',
+            dr: '1/d + 1',
             def: -10,
             parry: 18,
             cover: '+15 (*)',
