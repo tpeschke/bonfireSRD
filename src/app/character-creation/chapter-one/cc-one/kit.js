@@ -403,7 +403,7 @@ export default [
         items: [
             {
                 name: 'Heater Shield',
-                size: 'L',
+                size: 'M',
                 sellback: '60 sc'
             },
             {

@@ -200,8 +200,8 @@ module.exports = {
             cover: '+10 (+17)',
             flanks: 3,
             fatigue: -3,
-            bonus: 'Nat 20 or Strike, delay target\'s atk by d4!+5 sec. Readies in 2 secs.',
-            bonusLong: '<p>With the Round Shield, on a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next attack by d4!+5 seconds.</p><br><p>They also delay the enemy an additional d4! seconds if used to perform a strike in unarmed combat.</p><br><p>The Round shield is readied in 2 seconds.</p>',
+            bonus: 'Nat 20 or Strike, delay target\'s atk by 5 sec. Readies in 2 secs.',
+            bonusLong: '<p>With the Round Shield, on a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next attack by 5 seconds.</p><br><p>They also delay the enemy an additional 5 seconds if used to perform a strike in unarmed combat.</p><br><p>The Round shield is readied in 2 seconds.</p>',
             size: 'M'
         },
         {
@@ -700,10 +700,10 @@ module.exports = {
             },
             {
                 name: 'Brass Knuckles',
-                size: 'C',
+                size: 'S',
                 dam: '1d8!',
-                rec: 5,
-                type: 'S',
+                rec: 8,
+                type: 'C',
                 parry: 2,
                 measure: 0,
                 bonus: 'Can do all unarmed moves but Grab. Strikes +5.',

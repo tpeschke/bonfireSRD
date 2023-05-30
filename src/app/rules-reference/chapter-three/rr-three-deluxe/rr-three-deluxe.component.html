@@ -308,11 +308,11 @@
             </tr>
             <tr>
               <td>Prone to Kneeling/Sitting</td>
-              <td>2d4! seconds - Armor Skill Adjustment Penalty </td>
+              <td>1d4! seconds + Armor Skill Adjustment Penalty </td>
             </tr>
             <tr>
               <td>Kneeling/Sitting to Standing</td>
-              <td>1d4! seconds - Armor Skill Adjustment Penalty </td>
+              <td>Armor Skill Adjustment Penalty, min 1 </td>
             </tr>
             <tr>
               <td>Unstop Container</td>
@@ -750,14 +750,13 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='youjioshuihfe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youjioshuihfe'"></app-bm-chapter-icon>
-        <p>You're Surprised when you become Engaged, you're unable to attack back and, once you leave surprise, you must
+        <p>If you're Surprised when you become Engaged, you're unable to attack back and, once you leave surprise, you must
           wait your weapon's Recovery before attacking.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifyioumoveiom' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyioumoveiom'"></app-bm-chapter-icon>
-        <p>If you move from being Engaged to being Threatened, for any reason, and the other person is within half their
-          weapon's Recovery, they get a free attack on you.</p>
+        <p>If you move from being Engaged to being Threatened while moving faster than a Walk, you're using the Flee Tactic.</p>
       </div>
       <div class="anchor">
         <div id="MeleeCombatheader" class="anchorTag"></div>
@@ -816,12 +815,6 @@
         <p>You gain a chance to riposte, gaining a free full attack the next second if you’re wielding a
           melee weapon. This attack doesn’t affect your current count.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyCccPuPIAJK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyCccPuPIAJK'"></app-bm-chapter-icon>
-        <p>Additionally, you gain a chance to riposte, gaining a free full attack the next second if you’re wielding a
-          melee weapon. This attack doesn’t affect your current count.</p>
-      </div>
       <div class="anchor">
         <div id="NearPerfectAheader" class="anchorTag"></div>
         <h3>Near Perfect Attacks & Defenses</h3>
@@ -830,10 +823,10 @@
         <div id='AnunmodifiedoepLviwdVP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnunmodifiedoepLviwdVP'"></app-bm-chapter-icon>
         <p>An unmodified roll of 19 on either Attack or Defense results in a Near Perfect Attack or Defense, where you
-          may Shift for no penalty, change your Tactic, or, for attacks, gain an extra d4! to damage (which doesn't
+          may Shift for no penalty (or Shift twice that second if you were doing so already) and, for attacks, gain an extra d4! to damage (which doesn't
           count as additional dice for /d DR), or, for defenses
-          gained a free riposte with your off-hand weapon if it’s smaller than your size or a sidearm or an unarmed
-          attack if you have at least 1 hand free.</p>
+          gained a free riposte with your off-hand weapon if it’s smaller than your Size, an unarmed
+          attack if you have at least 1 hand free, a sidearm, or a shield.</p>
       </div>
       <div class="anchor">
         <div id="fumblesniojhear" class="anchorTag"></div>
@@ -955,15 +948,15 @@
         <tbody>
           <tr>
             <td>Polearms</td>
-            <td>20</td>
+            <td>10</td>
           </tr>
           <tr>
             <td>Shield & Armor</td>
-            <td>30</td>
+            <td>20</td>
           </tr>
           <tr>
             <td>Other Weapons</td>
-            <td>40</td>
+            <td>30</td>
           </tr>
         </tbody>
       </table>
@@ -1098,20 +1091,10 @@
         <table class="all-centered">
           <thead>
             <tr class="notSticky">
-              <th colspan="14">Ranged Break Down</th>
+              <th colspan="4">Ranged Break Down (Thrown)</th>
             </tr>
             <tr class="notSticky">
               <th> </th>
-              <th>Bellybow</th>
-              <th>Composite Bow</th>
-              <th>Crossbow</th>
-              <th>Latchet Crossbow</th>
-              <th>Fire Lance</th>
-              <th>Hakenbuchse</th>
-              <th>Handgonne</th>
-              <th>Longbow</th>
-              <th>Sling</th>
-              <th>Warbow</th>
               <th>javelin</th>
               <th>Throwing Ax</th>
               <th>Throwing Knife</th>
@@ -1121,63 +1104,11 @@
             <tr>
               <th>Missile Retrieval</th>
               <td>3</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>5</td>
-              <td>5</td>
-              <td>3</td>
-              <td>1</td>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
               <td>2</td>
               <td>1</td>
-            </tr>
-            <tr>
-              <th>Fuse</th>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td>4</td>
-              <td>4</td>
-              <td>4</td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <th>Loading</th>
-              <td>2</td>
-              <td>2</td>
-              <td>2</td>
-              <td>2</td>
-              <td> </td>
-              <td>18</td>
-              <td>6</td>
-              <td>4</td>
-              <td>1</td>
-              <td>2</td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
             </tr>
             <tr>
               <th>Draw</th>
-              <td>25</td>
-              <td>4</td>
-              <td>17</td>
-              <td>9</td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-              <td>4</td>
-              <td>1</td>
-              <td>4</td>
               <td>2</td>
               <td>2</td>
               <td>1</td>
@@ -1187,9 +1118,72 @@
               <td>4</td>
               <td>4</td>
               <td>4</td>
+            </tr>
+            <tr>
+              <th>Firing</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Total</th>
+              <td>10</td>
+              <td>9</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-overflow">
+        <table class="all-centered">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="8">Ranged Break Down (Mechanical)</th>
+            </tr>
+            <tr class="notSticky">
+              <th> </th>
+              <th>Bellybow</th>
+              <th>Composite Bow</th>
+              <th>Crossbow</th>
+              <th>Latchet Crossbow</th>
+              <th>Longbow</th>
+              <th>Sling</th>
+              <th>Warbow</th>
+            </tr>
+          </thead>
+          <tbody class="dark-side-header">
+            <tr>
+              <th>Missile Retrieval</th>
+              <td>3</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>Loading</th>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
               <td>4</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>Draw</th>
+              <td>25</td>
               <td>4</td>
+              <td>17</td>
+              <td>9</td>
               <td>4</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Aim</th>
               <td>4</td>
               <td>4</td>
               <td>4</td>
@@ -1207,12 +1201,6 @@
               <td>1</td>
               <td>1</td>
               <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
             </tr>
             <tr>
               <th>Total</th>
@@ -1221,14 +1209,61 @@
               <td>25</td>
               <td>13</td>
               <td>14</td>
+              <td>10</td>
+              <td>14</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-overflow">
+        <table class="all-centered">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="4">Ranged Break Down (Firearms)</th>
+            </tr>
+            <tr class="notSticky">
+              <th> </th>
+              <th>Fire Lance</th>
+              <th>Hakenbuchse</th>
+              <th>Handgonne</th>
+            </tr>
+          </thead>
+          <tbody class="dark-side-header">
+            <tr>
+              <th>Missile Retrieval</th>
+              <td>5</td>
+              <td>5</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>Fuse</th>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Loading</th>
+              <td> </td>
+              <td>16</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <th>Aim</th>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Firing</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Total</th>
+              <td>14</td>
               <td>30</td>
               <td>18</td>
-              <td>14</td>
-              <td>10</td>
-              <td>14</td>
-              <td>10</td>
-              <td>9</td>
-              <td>7</td>
             </tr>
           </tbody>
         </table>
@@ -2122,7 +2157,7 @@
         <div id='pHoweveryouokVXXrpweuy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'pHoweveryouokVXXrpweuy'"></app-bm-chapter-icon>
         <p>However, you open yourself up to an attack. If you have any foes who are within half of their weapon recovery
-          they may make a free attack against you. </p>
+          they may make a attack against you but it does reset their weapon count. </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='NotebecauseVWtLXuJlyP' class='anchorTag'></div>
@@ -3113,17 +3148,11 @@
         <p>Using a shield while performing this move gives you a bonus to your Attack roll: +10 for Small and Medium
           shields, +5 for Large shields. Its Recovery matches your normal unarmed Recovery.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='OnasuccessfuYfHTDYnctp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OnasuccessfuYfHTDYnctp'"></app-bm-chapter-icon>
-        <p>On a successful Strike, you delay your opponent’s next attack by a number of seconds equal to your unmodified
-          damage roll.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='StrikinganalkHYrDFcxbM' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'StrikinganalkHYrDFcxbM'"></app-bm-chapter-icon>
-        <p>Striking an already stunned opponent does nothing.</p>
-      </div>
+        <p>On a successful Strike, you delay your opponent's next attack by 1d4! seconds. Striking an already stunned opponent doesn't delay them further.</p>
+      </div> 
       <div class="anchor">
         <div id="strikewjiojvew" class="anchorTag"></div>
         <h3>Well-Executed Bonus</h3>
@@ -3131,8 +3160,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheextrabonuersSrmquDd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheextrabonuersSrmquDd'"></app-bm-chapter-icon>
-        <p>The extra bonus for this move is that it increases the time to a d6! or deal normal unarmed damage (no
-          non-natural DR).</p>
+        <p>The extra bonus for this move is that you increase the delay time by a dice size (normally going from a d4! to a d6!) or deal an additional dice of unarmed damage (d4! for while unarmed, d8! while using brass knuckles).</p>
       </div>
       <div class="anchor">
         <div id="BreakFreeheader" class="anchorTag"></div>
@@ -3158,8 +3186,7 @@
         <div id='TheextrabonuMuRawXFfzy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheextrabonuMuRawXFfzy'"></app-bm-chapter-icon>
         <p>The extra bonus is that the grappled person is able to turn it around on their enemy: they get a free,
-          unarmed maneuver, however, it is always on a d12! regardless of how many hands they have free since they’re
-          still working from a disadvantage or the grappled person can deal normal unarmed damage (no non-natural DR).
+          unarmed maneuver or the grappled person can deal normal unarmed damage (no non-natural DR).
         </p>
       </div>
       <div class="anchor">
