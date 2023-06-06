@@ -71,8 +71,8 @@
         <app-bm-chapter-icon [id]="'SymptomsareweVNzasuAiT'"></app-bm-chapter-icon>
         <p><strong>Symptoms</strong> are what the poison attacks. This could be one of the character’s Stat Scores,
           their Stress, their
-          Fatigue Threshold or any combination of these choices. If no specific damage is noted, this means that it only 
-        inflicts 1 damage to that thing.</p>
+          Fatigue Threshold or any combination of these choices. If no specific damage is noted, this means that it only
+          inflicts 1 damage to that thing.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IfonethechafzAgmwqzLU' class='anchorTag'></div>
@@ -101,7 +101,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='OnceallthedlneEpxIMbh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OnceallthedlneEpxIMbh'"></app-bm-chapter-icon>
-        <p>Once all the Lethality dice have been removed (this doesn't include the d12!), the Confrontation is over, and the person begins to recover: healing
+        <p>Once all the Lethality dice have been removed (this doesn't include the d12!), the Confrontation is over, and
+          the person begins to recover: healing
           Stress
           and Vitality as normal and healing 1 point of Stat damage per day.</p>
       </div>
@@ -276,7 +277,8 @@
       <div class='paragraphShell anchor'>
         <div id='InmeleecombaPiRSfKKAVN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'InmeleecombaPiRSfKKAVN'"></app-bm-chapter-icon>
-        <p>In melee combat, those in dim-lighting defend and attack with a dice size 1 size smaller and using ranged weapons is even more
+        <p>In melee combat, those in dim-lighting defend and attack with a dice size 1 size smaller and using ranged
+          weapons is even more
           of
           challenge. However, if you insist, you’ll be attacking with a dice size 4 sizes smaller (normally, a d6!).</p>
       </div>
@@ -305,7 +307,8 @@
       <div class='paragraphShell anchor'>
         <div id='CombatbecomesUcutGYzZQE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'CombatbecomesUcutGYzZQE'"></app-bm-chapter-icon>
-        <p>Combat becomes difficult as anyone in darkness defends and attacks with a dice size 4 sizes smaller (normally, a d6!) And ranged combat is right
+        <p>Combat becomes difficult as anyone in darkness defends and attacks with a dice size 4 sizes smaller
+          (normally, a d6!) And ranged combat is right
           out,
           but, if you insist, you’ll be attacking with a dice size 5 sizes smaller (normally, a d4!).</p>
       </div>
@@ -554,6 +557,214 @@
         <p>If the amount drained is more than the score, the person becomes appropriately incapacitated, but not dead,
           until
           the Stat Score damage is healed.</p>
+      </div>
+      <div class="anchor">
+        <div id="WeatherEffectheader" class="anchorTag"></div>
+        <h1>Weather Effects</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='HoweveryoutrXpYFIuHWmc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'HoweveryoutrXpYFIuHWmc'"></app-bm-chapter-icon>
+        <p>However you track your weather, through connected tables or a hex flower, what’s the point if it doesn’t
+          affect
+          gameplay.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='TheideabehinWSsgTSOyhr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheideabehinWSsgTSOyhr'"></app-bm-chapter-icon>
+        <p>The idea behind these things is to change circumstances in such a way that the players are forced to consider
+          other options and tactics to their approaches - they have to adapt. Beyond something delaying travel, they
+          shift
+          the paradigm in new and interesting ways.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='YoullnoticeSzcsJeNRHZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoullnoticeSzcsJeNRHZ'"></app-bm-chapter-icon>
+        <p>You’ll notice that each table has a baseline and then a modifier to make it more extreme. This is so that you
+          have something to go off of but also a way to scale them up. So, you have a version of cold you can use on a
+          chilly day and still have the ability to use the same penalties but to a larger degree for the arctic.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThisisindicacJkTRueoQJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThisisindicacJkTRueoQJ'"></app-bm-chapter-icon>
+        <p>This is indicated via a number next to the effect. So “Cold 1” is the base penalties while “Cold 3” is the
+          base
+          penalties plus twice the modifier.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ItsalsolikeTFfvHxEXGH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ItsalsolikeTFfvHxEXGH'"></app-bm-chapter-icon>
+        <p>It’s also likely that there will be two or more weather effects, such it being both windy and rainy. In these
+          cases, the effects stack. Note that these should also be modified by the Terrain and Situation Effects section
+          in <a [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>.</p>
+      </div>
+      <div class="weather-effects-shell">
+        <table class="first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="2">Cold</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Base</th>
+              <th>Modifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Don’t heal Stress</td>
+              <td>Take 1 Stress per hour</td>
+            </tr>
+            <tr>
+              <td>Take 1 damage an hour on 1 wound</td>
+              <td>+1 damage</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="2">Hot</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Base</th>
+              <th>Modifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+1 to Fatigue</td>
+              <td>+1 to Fatigue</td>
+            </tr>
+            <tr>
+              <td>Take 1 damage, 0 if wearing no armor</td>
+              <td>+1 damage up the absolute value of your Adj Skill Penalty. 
+                After 8 damage, everyone gains +1 damage regardless of armor.</td>
+            </tr>
+            <tr>
+              <td>+d4! damage when run or sprint</td>
+              <td>+1 dice size</td>
+            </tr>
+            <tr>
+              <td>Take 1 Stress per hour spent in sun</td>
+              <td>+1 Stress</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="2">Misty</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Base</th>
+              <th>Modifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Seeing beyond 100 ft is impossible</td>
+              <td>Lower sight range 10 ft.</td>
+            </tr>
+            <tr>
+              <td>-3 to visual and/or auditory checks</td>
+              <td>-3 to visual and/or auditory checks</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="2">Overcast</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Base</th>
+              <th>Modifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lower Illumination 1 step</td>
+              <td>Lower another step</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="2">Rain</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Base</th>
+              <th>Modifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>-2 per range category</td>
+              <td>-2 per range category</td>
+            </tr>
+            <tr>
+              <td>-4 to visual and/or auditory checks</td>
+              <td>-4 to visual and/or auditory checks</td>
+            </tr>
+            <tr>
+              <td>+30 minutes of travel for every hour of travel</td>
+              <td>+30 minutes</td>
+            </tr>
+            <tr>
+              <td>Firearms take 5 extra seconds to fire as the brand keeps getting soaked and must be relit</td>
+              <td>+3 extra seconds</td>
+            </tr>
+            <tr>
+              <td>Every hour in the rain reduces the attack die of bows and crossbows by 1 dice until their strings are replaced</td>
+              <td>Reduce time by 15 minutes</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="first-left">
+          <thead>
+            <tr class="notSticky">
+              <th colspan="2">Windy</th>
+            </tr>
+            <tr class="notSticky">
+              <th>Base</th>
+              <th>Modifier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Audible communication is limited to 40 ft away, even when yelling</td>
+              <td>Lower communication range by 5 ft</td>
+            </tr>
+            <tr>
+              <td>-3 per range category</td>
+              <td>-3 per range category</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="anchor">
+        <div id="ReducingPenalheaderIEDwxOZyeJ" class="anchorTag"></div>
+        <h2>Reducing Penalties</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='SomepenaltiesWcIepbeVwD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SomepenaltiesWcIepbeVwD'"></app-bm-chapter-icon>
+        <p>Some penalties can be reduced or eliminated via the proper clothing.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='EachMediumofbxljGPXWCM' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'EachMediumofbxljGPXWCM'"></app-bm-chapter-icon>
+        <p>Each Medium of the proper clothing reduces the weather effects by 1 for damage and Stress.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='SoifitsColUeaKeBYBU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'SoifitsColUeaKeBYBU'"></app-bm-chapter-icon>
+        <p class="italic">So, if it’s Cold 1 outside, wearing a fur coat would eliminate any of the cold penalties but so would wearing
+          a
+          wool hat, wool gloves, and a second shirt.</p>
       </div>
     </div>
     <div class="sideShell">

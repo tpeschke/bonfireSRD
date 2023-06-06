@@ -20,3 +20,25 @@
 .sizing-table {
     width: 350px;
 }
+
+.weather-effects-shell {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.weather-effects-shell table {
+    height: 100%;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.weather-effects-shell table tr th, .weather-effects-shell table tr td {
+    width: 50%
+}
+
+@media (max-width: 550px) { 
+    .weather-effects-shell table {
+        width: 100%;
+    }
+}
