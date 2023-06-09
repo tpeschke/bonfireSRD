@@ -321,7 +321,7 @@ const flawTables = {
             flaw: 'Hypochondriac',
             bonus: 3,
             severity: 7,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 21,
             rank: {
                 base: .5,
@@ -347,7 +347,7 @@ const flawTables = {
             flaw: 'Neurotic',
             bonus: 6,
             severity: 7,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 47,
             rank: {
                 base: 1,
@@ -360,7 +360,7 @@ const flawTables = {
             flaw: 'Phobia',
             bonus: 3,
             severity: 7,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 58,
             rank: {
                 base: .5,
@@ -522,7 +522,7 @@ const flawTables = {
             flaw: 'Allergy, Food',
             bonus: 7,
             severity: 3,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 6,
             rank: {
                 base: .67,
@@ -569,7 +569,7 @@ const flawTables = {
             flaw: 'Allergy, Misc',
             bonus: 7,
             severity: 3,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 11,
             rank: {
                 base: .67,
@@ -600,7 +600,7 @@ const flawTables = {
             flaw: 'Asthmatic',
             bonus: 3,
             severity: 10,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 16,
             rank: {
                 base: 0,
@@ -704,7 +704,7 @@ const flawTables = {
             flaw: 'Glutton',
             bonus: 3,
             severity: 7,
-            cap: 'n/a',
+            cap: 10,
             currentTotal: 29,
             rank: {
                 base: .5,
@@ -782,7 +782,7 @@ const flawTables = {
             flaw: 'Irritable Bowels',
             bonus: 4,
             severity: 3,
-            cap: 'n/a',
+            cap: 5,
             currentTotal: 49,
             rank: {
                 base: 0,
