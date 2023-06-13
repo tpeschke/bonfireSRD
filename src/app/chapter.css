@@ -136,6 +136,14 @@ ol {
     width: 75%;
 }
 
+.min-weapon-speed-pairs {
+    width: 100%;
+}
+
+.min-weapon-speed-pairs p {
+    text-indent: 0;
+}
+
 .pair {
     display: flex;
     justify-content: space-between;
