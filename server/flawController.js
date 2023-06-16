@@ -6,7 +6,11 @@ const flawTables = {
             table: 'background',
             currentTotal: 0
         },
-        { weight: 2, tableName: 'Mental', table: 'mental', currentTotal: 2 },
+        { 
+            weight: 2, 
+            tableName: 'Mental', 
+            table: 'mental', 
+            currentTotal: 2 },
         {
             weight: 2,
             tableName: 'Physical',
@@ -18,8 +22,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Atheist',
-            bonus: 0,
-            severity: 7,
+            bonus: 7,
+            severity: 3,
             cap: 12,
             currentTotal: 0,
             rank: {
@@ -31,8 +35,8 @@ const flawTables = {
         {
             weight: 7,
             flaw: 'Bastard',
-            bonus: 7,
-            severity: 10,
+            bonus: 17,
+            severity: 5,
             cap: 5,
             currentTotal: 2,
             rank: {
@@ -44,8 +48,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Epileptic',
-            bonus: 6,
-            severity: 7,
+            bonus: 13,
+            severity: 3,
             cap: 10,
             currentTotal: 9,
             rank: {
@@ -57,8 +61,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Debtor',
-            bonus: 0,
-            severity: 7,
+            bonus: 7,
+            severity: 3,
             cap: 5,
             currentTotal: 14,
             rank: {
@@ -70,8 +74,8 @@ const flawTables = {
         {
             weight: 7,
             flaw: 'Excommunicated',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 12,
             currentTotal: 18,
             rank: {
@@ -83,8 +87,8 @@ const flawTables = {
         {
             weight: 9,
             flaw: 'Fated',
-            bonus: 13,
-            severity: 10,
+            bonus: 23,
+            severity: 5,
             cap: 20,
             currentTotal: 25,
             rank: {
@@ -96,8 +100,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Feral',
-            bonus: 6,
-            severity: 7,
+            bonus: 13,
+            severity: 4,
             cap: 5,
             currentTotal: 34,
             rank: {
@@ -109,8 +113,8 @@ const flawTables = {
         {
             weight: 12,
             flaw: 'Half-Life',
-            bonus: 37,
-            severity: 13,
+            bonus: 50,
+            severity: 7,
             cap: 4,
             currentTotal: 38,
             rank: {
@@ -122,8 +126,8 @@ const flawTables = {
         {
             weight: 9,
             flaw: 'Haunted',
-            bonus: 7,
-            severity: 13,
+            bonus: 20,
+            severity: 6,
             cap: 5,
             currentTotal: 50,
             rank: {
@@ -135,8 +139,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Idiot Savant',
-            bonus: 6,
-            severity: 7,
+            bonus: 13,
+            severity: 3,
             cap: 5,
             currentTotal: 59,
             rank: {
@@ -148,8 +152,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Inbred',
-            bonus: 4,
-            severity: 3,
+            bonus: 7,
+            severity: 1,
             cap: 10,
             currentTotal: 64,
             rank: {
@@ -161,8 +165,8 @@ const flawTables = {
         {
             weight: 9,
             flaw: 'Monotheist',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 12,
             currentTotal: 66,
             rank: {
@@ -174,8 +178,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Mule',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 24,
             currentTotal: 75,
             rank: {
@@ -187,8 +191,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Orphan',
-            bonus: 0,
-            severity: 10,
+            bonus: 10,
+            severity: 5,
             cap: 20,
             currentTotal: 80,
             rank: {
@@ -200,8 +204,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Poor',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 82,
             rank: {
@@ -226,8 +230,8 @@ const flawTables = {
         {
             weight: 6,
             flaw: "Survivor's Guilt",
-            bonus: 5,
-            severity: 10,
+            bonus: 15,
+            severity: 5,
             cap: 10,
             currentTotal: 86,
             rank: {
@@ -239,8 +243,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Thrall',
-            bonus: 7,
-            severity: 10,
+            bonus: 17,
+            severity: 5,
             cap: 10,
             currentTotal: 92,
             rank: {
@@ -252,8 +256,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Vow of Poverty',
-            bonus: 16,
-            severity: 7,
+            bonus: 23,
+            severity: 3,
             cap: 19,
             currentTotal: 96,
             rank: {
@@ -267,8 +271,8 @@ const flawTables = {
         {
             weight: 11,
             flaw: 'Addict',
-            bonus: 14,
-            severity: 5,
+            bonus: 19,
+            severity: 2,
             cap: 10,
             currentTotal: 0,
             rank: {
@@ -306,8 +310,8 @@ const flawTables = {
         {
             weight: 10,
             flaw: 'Craven',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 4,
             currentTotal: 11,
             rank: {
@@ -319,8 +323,8 @@ const flawTables = {
         {
             weight: 13,
             flaw: 'Hypochondriac',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 21,
             rank: {
@@ -332,8 +336,8 @@ const flawTables = {
         {
             weight: 13,
             flaw: 'Impatient',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 34,
             rank: {
@@ -345,8 +349,8 @@ const flawTables = {
         {
             weight: 11,
             flaw: 'Neurotic',
-            bonus: 6,
-            severity: 7,
+            bonus: 13,
+            severity: 3,
             cap: 10,
             currentTotal: 47,
             rank: {
@@ -358,8 +362,8 @@ const flawTables = {
         {
             weight: 13,
             flaw: 'Phobia',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 58,
             rank: {
@@ -453,8 +457,8 @@ const flawTables = {
         {
             weight: 9,
             flaw: 'Sensitive',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 10,
             currentTotal: 71,
             rank: {
@@ -466,8 +470,8 @@ const flawTables = {
         {
             weight: 7,
             flaw: 'Self-Conscious',
-            bonus: 5,
-            severity: 5,
+            bonus: 10,
+            severity: 2,
             cap: 10,
             currentTotal: 80,
             rank: {
@@ -479,8 +483,8 @@ const flawTables = {
         {
             weight: 7,
             flaw: 'Slow-Witted',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 87,
             rank: {
@@ -492,8 +496,8 @@ const flawTables = {
         {
             weight: 6,
             flaw: 'Vexable',
-            bonus: 3,
-            severity: 20,
+            bonus: 13,
+            severity: 10,
             cap: 2,
             currentTotal: 94,
             rank: {
@@ -507,8 +511,8 @@ const flawTables = {
         {
             weight: 6,
             flaw: 'Ageusia',
-            bonus: 4,
-            severity: 3,
+            bonus: 7,
+            severity: 1,
             cap: 10,
             currentTotal: 0,
             rank: {
@@ -520,8 +524,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Allergy, Food',
-            bonus: 7,
-            severity: 3,
+            bonus: 10,
+            severity: 1,
             cap: 10,
             currentTotal: 6,
             rank: {
@@ -567,8 +571,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Allergy, Misc',
-            bonus: 7,
-            severity: 3,
+            bonus: 10,
+            severity: 1,
             cap: 10,
             currentTotal: 11,
             rank: {
@@ -598,8 +602,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Asthmatic',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 10,
             currentTotal: 16,
             rank: {
@@ -611,8 +615,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Blind',
-            bonus: 7,
-            severity: 10,
+            bonus: 17,
+            severity: 5,
             cap: 6,
             currentTotal: 19,
             rank: {
@@ -633,8 +637,8 @@ const flawTables = {
                 {
                     weight: 1,
                     specific: 'Head',
-                    bonus: 3,
-                    severity: 7,
+                    bonus: 10,
+                    severity: 3,
                     cap: 5,
                     rank: {
                         base: .5,
@@ -643,8 +647,8 @@ const flawTables = {
                 }, {
                     weight: 1,
                     specific: 'Body',
-                    bonus: 7,
-                    severity: 10,
+                    bonus: 17,
+                    severity: 5,
                     cap: 10,
                     rank: {
                         base: 1,
@@ -653,8 +657,8 @@ const flawTables = {
                 }, {
                     weight: 1,
                     specific: 'Arms & Hands',
-                    bonus: 0,
-                    severity: 10,
+                    bonus: 10,
+                    severity: 5,
                     cap: 10,
                     rank: {
                         base: 0,
@@ -663,8 +667,8 @@ const flawTables = {
                 }, {
                     weight: 1,
                     specific: 'Legs',
-                    bonus: 7,
-                    severity: 10,
+                    bonus: 17,
+                    severity: 5,
                     cap: 5,
                     rank: {
                         base: 1,
@@ -676,8 +680,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Deaf',
-            bonus: 0,
-            severity: 10,
+            bonus: 10,
+            severity: 5,
             cap: 6,
             currentTotal: 25,
             rank: {
@@ -689,8 +693,8 @@ const flawTables = {
         {
             weight: 1,
             flaw: 'Deranged',
-            bonus: 16,
-            severity: 17,
+            bonus: 33,
+            severity: 8,
             cap: 10,
             currentTotal: 28,
             rank: {
@@ -702,8 +706,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Glutton',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 29,
             rank: {
@@ -715,8 +719,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Hemophilic',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 5,
             currentTotal: 33,
             rank: {
@@ -728,8 +732,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Hyperopia',
-            bonus: 4,
-            severity: 13,
+            bonus: 16,
+            severity: 6,
             cap: 6,
             currentTotal: 36,
             rank: {
@@ -741,8 +745,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Impotent',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 19,
             currentTotal: 38,
             rank: {
@@ -754,8 +758,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Infirm',
-            bonus: 0,
-            severity: 7,
+            bonus: 7,
+            severity: 3,
             cap: 10,
             currentTotal: 42,
             rank: {
@@ -767,8 +771,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Insomniac',
-            bonus: 10,
-            severity: 10,
+            bonus: 20,
+            severity: 5,
             cap: 10,
             currentTotal: 47,
             rank: {
@@ -780,8 +784,8 @@ const flawTables = {
         {
             weight: 6,
             flaw: 'Irritable Bowels',
-            bonus: 4,
-            severity: 3,
+            bonus: 7,
+            severity: 1,
             cap: 5,
             currentTotal: 49,
             rank: {
@@ -793,8 +797,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Labyrinthitis',
-            bonus: 7,
-            severity: 3,
+            bonus: 10,
+            severity: 1,
             cap: 10,
             currentTotal: 55,
             rank: {
@@ -806,8 +810,8 @@ const flawTables = {
         {
             weight: 2,
             flaw: 'Limp',
-            bonus: 0,
-            severity: 13,
+            bonus: 13,
+            severity: 6,
             cap: 4,
             currentTotal: 60,
             rank: {
@@ -819,8 +823,8 @@ const flawTables = {
         {
             weight: 1,
             flaw: 'Missing Arm',
-            bonus: 0,
-            severity: 36,
+            bonus: 36,
+            severity: 18,
             cap: 2,
             currentTotal: 62,
             rank: {
@@ -832,8 +836,8 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Missing Digit',
-            bonus: 0,
-            severity: 7,
+            bonus: 7,
+            severity: 3,
             cap: 10,
             currentTotal: 63,
             rank: {
@@ -845,8 +849,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Missing Ear',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 10,
             currentTotal: 68,
             rank: {
@@ -858,8 +862,8 @@ const flawTables = {
         {
             weight: 1,
             flaw: 'Missing Eye',
-            bonus: 0,
-            severity: 33,
+            bonus: 33,
+            severity: 16,
             cap: 2,
             currentTotal: 71,
             rank: {
@@ -871,8 +875,8 @@ const flawTables = {
         {
             weight: 1,
             flaw: 'Missing Hand',
-            bonus: 0,
-            severity: 33,
+            bonus: 33,
+            severity: 16,
             cap: 2,
             currentTotal: 72,
             rank: {
@@ -884,8 +888,8 @@ const flawTables = {
         {
             weight: 1,
             flaw: 'Missing Leg',
-            bonus: 0,
-            severity: 33,
+            bonus: 33,
+            severity: 16,
             cap: 2,
             currentTotal: 73,
             rank: {
@@ -897,8 +901,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Missing Teeth',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 4,
             cap: 4,
             currentTotal: 74,
             rank: {
@@ -910,8 +914,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Mute',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 6,
             currentTotal: 78,
             rank: {
@@ -923,8 +927,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Myopia',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 6,
             currentTotal: 81,
             rank: {
@@ -936,8 +940,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'No Depth Perception',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 6,
             currentTotal: 84,
             rank: {
@@ -949,8 +953,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Shaky Hands',
-            bonus: 6,
-            severity: 7,
+            bonus: 9,
+            severity: 3,
             cap: 10,
             currentTotal: 87,
             rank: {
@@ -962,8 +966,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Stutter',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 6,
             currentTotal: 90,
             rank: {
@@ -975,8 +979,8 @@ const flawTables = {
         {
             weight: 4,
             flaw: 'Trick Knee',
-            bonus: 3,
-            severity: 7,
+            bonus: 10,
+            severity: 3,
             cap: 10,
             currentTotal: 93,
             rank: {
@@ -988,8 +992,8 @@ const flawTables = {
         {
             weight: 3,
             flaw: 'Weak',
-            bonus: 3,
-            severity: 10,
+            bonus: 13,
+            severity: 5,
             cap: 4,
             currentTotal: 97,
             rank: {
