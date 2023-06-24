@@ -13,6 +13,7 @@ export default {
         ],
         mounts: [{ name: 'Camel, Bachrian', size: null, price: 180 },
         { name: 'Camel, Dromedary', size: null, price: 180 },
+        { name: 'Goat, Riding', size: null, price: 125 },
         { name: 'Horse, Courser', size: null, price: 250 },
         { name: 'Horse, Destrier', size: null, price: 350 },
         { name: 'Horse, Palfrey', size: null, price: 175 },

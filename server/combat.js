@@ -720,6 +720,16 @@ module.exports = {
                 bonus: false,
             },
             {
+                name: 'Gauntlet',
+                size: 'S',
+                dam: '1d6!',
+                rec: 5,
+                type: 'C',
+                parry: 0,
+                measure: 0,
+                bonus: false
+            },
+            {
                 name: 'Goedendag',
                 size: 'L',
                 dam: '2d8!',
