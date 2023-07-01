@@ -165,8 +165,8 @@ const flawTables = {
         {
             weight: 9,
             flaw: 'Monotheist',
-            bonus: 10,
-            severity: 3,
+            bonus: 5,
+            severity: 1,
             cap: 12,
             currentTotal: 66,
             rank: {
@@ -269,7 +269,7 @@ const flawTables = {
     ],
     mental: [
         {
-            weight: 11,
+            weight: 10,
             flaw: 'Addict',
             bonus: 19,
             severity: 2,
@@ -308,12 +308,12 @@ const flawTables = {
             jump: 'Addictheading'
         },
         {
-            weight: 10,
+            weight: 9,
             flaw: 'Craven',
             bonus: 13,
             severity: 5,
             cap: 4,
-            currentTotal: 11,
+            currentTotal: 10,
             rank: {
                 base: 0,
                 per: 1.5
@@ -321,12 +321,12 @@ const flawTables = {
             jump: 'CravenheaderHHxpaSPJUd'
         },
         {
-            weight: 13,
+            weight: 12,
             flaw: 'Hypochondriac',
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 21,
+            currentTotal: 19,
             rank: {
                 base: .5,
                 per: .5
@@ -334,12 +334,12 @@ const flawTables = {
             jump: 'HypochondriacheadernkQTCyMAjA'
         },
         {
-            weight: 13,
+            weight: 12,
             flaw: 'Impatient',
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 34,
+            currentTotal: 31,
             rank: {
                 base: .5,
                 per: .5
@@ -347,12 +347,25 @@ const flawTables = {
             jump: 'ImpatientheaderMlEfueUjgy'
         },
         {
-            weight: 11,
+            weight: 12,
+            flaw: 'Lemming',
+            bonus: 5,
+            severity: 3,
+            cap: 10,
+            currentTotal: 43,
+            rank: {
+                base: .5,
+                per: .5
+            },
+            jump: 'lemmingheahrioe'
+        },
+        {
+            weight: 10,
             flaw: 'Neurotic',
             bonus: 13,
             severity: 3,
             cap: 10,
-            currentTotal: 47,
+            currentTotal: 55,
             rank: {
                 base: 1,
                 per: .5
@@ -360,12 +373,12 @@ const flawTables = {
             jump: 'NeuroticheadergZsMEePyPl'
         },
         {
-            weight: 13,
+            weight: 12,
             flaw: 'Phobia',
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 58,
+            currentTotal: 65,
             rank: {
                 base: .5,
                 per: .5
@@ -455,12 +468,12 @@ const flawTables = {
             jump: 'PhobiaheaderQQhvnCtRSg'
         },
         {
-            weight: 9,
+            weight: 7,
             flaw: 'Sensitive',
             bonus: 13,
             severity: 5,
             cap: 10,
-            currentTotal: 71,
+            currentTotal: 77,
             rank: {
                 base: .5,
                 per: 1
@@ -468,25 +481,12 @@ const flawTables = {
             jump: 'SensitiveheaderJdvTOwHLwF'
         },
         {
-            weight: 7,
+            weight: 5,
             flaw: 'Self-Conscious',
             bonus: 10,
             severity: 2,
             cap: 10,
-            currentTotal: 80,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'SlowwittedheaderjicjkCYWOg'
-        },
-        {
-            weight: 7,
-            flaw: 'Slow-Witted',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 87,
+            currentTotal: 84,
             rank: {
                 base: .5,
                 per: .5
@@ -495,11 +495,24 @@ const flawTables = {
         },
         {
             weight: 6,
+            flaw: 'Slow-Witted',
+            bonus: 10,
+            severity: 3,
+            cap: 10,
+            currentTotal: 89,
+            rank: {
+                base: .5,
+                per: .5
+            },
+            jump: 'SlowwittedheaderjicjkCYWOg'
+        },
+        {
+            weight: 5,
             flaw: 'Vexable',
             bonus: 13,
             severity: 10,
             cap: 2,
-            currentTotal: 94,
+            currentTotal: 95,
             rank: {
                 base: 0,
                 per: 2
@@ -834,7 +847,7 @@ const flawTables = {
             jump: 'MissingArmheaderJfhIRtVhkL'
         },
         {
-            weight: 5,
+            weight: 3,
             flaw: 'Missing Digit',
             bonus: 7,
             severity: 3,
@@ -852,7 +865,7 @@ const flawTables = {
             bonus: 13,
             severity: 5,
             cap: 10,
-            currentTotal: 68,
+            currentTotal: 66,
             rank: {
                 base: 1,
                 per: 1
@@ -865,7 +878,7 @@ const flawTables = {
             bonus: 33,
             severity: 16,
             cap: 2,
-            currentTotal: 71,
+            currentTotal: 69,
             rank: {
                 base: 0,
                 per: 3
@@ -878,7 +891,7 @@ const flawTables = {
             bonus: 33,
             severity: 16,
             cap: 2,
-            currentTotal: 72,
+            currentTotal: 70,
             rank: {
                 base: 0,
                 per: 3
@@ -891,7 +904,7 @@ const flawTables = {
             bonus: 33,
             severity: 16,
             cap: 2,
-            currentTotal: 73,
+            currentTotal: 71,
             rank: {
                 base: 0,
                 per: 3
@@ -904,7 +917,7 @@ const flawTables = {
             bonus: 10,
             severity: 4,
             cap: 4,
-            currentTotal: 74,
+            currentTotal: 72,
             rank: {
                 base: .5,
                 per: .5
@@ -917,7 +930,7 @@ const flawTables = {
             bonus: 13,
             severity: 5,
             cap: 6,
-            currentTotal: 78,
+            currentTotal: 76,
             rank: {
                 base: 0,
                 per: 1
@@ -930,7 +943,7 @@ const flawTables = {
             bonus: 13,
             severity: 5,
             cap: 6,
-            currentTotal: 81,
+            currentTotal: 79,
             rank: {
                 base: 1,
                 per: 1
@@ -943,7 +956,7 @@ const flawTables = {
             bonus: 13,
             severity: 5,
             cap: 6,
-            currentTotal: 84,
+            currentTotal: 82,
             rank: {
                 base: 1,
                 per: 1
@@ -951,12 +964,12 @@ const flawTables = {
             jump: 'NoDepthPerceheaderaJIstRgCCR'
         },
         {
-            weight: 3,
+            weight: 4,
             flaw: 'Shaky Hands',
             bonus: 9,
             severity: 3,
             cap: 10,
-            currentTotal: 87,
+            currentTotal: 85,
             rank: {
                 base: .5,
                 per: .5
@@ -969,7 +982,7 @@ const flawTables = {
             bonus: 13,
             severity: 5,
             cap: 6,
-            currentTotal: 90,
+            currentTotal: 89,
             rank: {
                 base: 0,
                 per: 1
@@ -982,7 +995,7 @@ const flawTables = {
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 93,
+            currentTotal: 92,
             rank: {
                 base: 0,
                 per: .5
@@ -990,17 +1003,43 @@ const flawTables = {
             jump: 'TrickKneeheaderBXNWdwjymP'
         },
         {
-            weight: 3,
+            weight: 2,
             flaw: 'Weak',
             bonus: 13,
             severity: 5,
             cap: 4,
-            currentTotal: 97,
+            currentTotal: 96,
             rank: {
                 base: 0,
                 per: .75
             },
             jump: 'WeakheaderzFoQvxiCsX'
+        },
+        {
+            weight: 1,
+            flaw: 'Weird Resistant',
+            bonus: 3,
+            severity: 1,
+            cap: 15,
+            currentTotal: 98,
+            rank: {
+                base: 0,
+                per: .75
+            },
+            jump: 'weirdresjiojtioew'
+        },
+        {
+            weight: 1,
+            flaw: 'Weird Vulnerable',
+            bonus: 3,
+            severity: 1,
+            cap: 15,
+            currentTotal: 99,
+            rank: {
+                base: 0,
+                per: .75
+            },
+            jump: 'werjiojdiovejwio'
         }
     ]
 }
