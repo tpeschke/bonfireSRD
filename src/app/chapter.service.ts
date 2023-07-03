@@ -105,6 +105,13 @@ export class ChapterService {
       )
   }
 
+  getDevotion(): any {
+    return this.http.get(local.endpointBase + '/getRandomDevotion')
+      .pipe(
+        catchError(this.handleError('get devotion', []))
+      )
+  }
+
   getCombatEquipment(): any {
     return this.http.get(local.endpointBase + '/combat-equipment')
       .pipe(

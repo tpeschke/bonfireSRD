@@ -17,6 +17,7 @@
 .result-shell {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .resultHolder {

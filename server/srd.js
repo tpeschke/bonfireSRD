@@ -56,6 +56,7 @@ app.get('/getGroupedWeapons', ctrl.getGroupedWeapons)
 
 app.get('/getRandomFlaw', flawCtrl.getRandomFlaw)
 app.get('/getRandomFlaw/:number', flawCtrl.getMultipleRandomFlaw)
+app.get('/getRandomDevotion', ctrl.getRandomDevotion)
 app.get('/getFlawTables', flawCtrl.getFlawTables)
 app.get('/getNewParentTable/:roll', flawCtrl.getNewParentTable)
 app.get('/getNewFlaw/:parentTable', flawCtrl.getNewFlaw)

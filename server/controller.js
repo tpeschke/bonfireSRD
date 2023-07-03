@@ -199,6 +199,11 @@ module.exports = {
             ])
         }
     },
+    getRandomDevotion: (req, res) => {
+        const db = req.app.get('db')
+
+        db.get.randomDevotion().then(result => res.send(result))
+    },
     getWeapons: (req, res) => {
         let { type = '' } = req.params
 
