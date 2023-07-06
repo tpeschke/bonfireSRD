@@ -1136,10 +1136,11 @@
         <table class="all-centered first-left">
           <thead>
             <tr class="notSticky">
-              <th colspan="7">Beverages</th>
+              <th colspan="8">Beverages</th>
             </tr>
             <tr class="notSticky">
               <th colspan="2">Name</th>
+              <th>Strength</th>
               <th>Size</th>
               <th>Source</th>
               <th>Local Market</th>
@@ -1150,6 +1151,7 @@
           <tbody>
             <tr *ngFor="let content of tables.beverages">
               <td colspan="2">{{content.name}}</td>
+              <td>{{content.strength}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
               <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
@@ -1158,6 +1160,32 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="anchor">
+        <div id="effectsfjiofjiofjew" class="anchorTag"></div>
+        <h2>Effects of Drunkenness</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ObviouslyasfQQWFeBtHD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ObviouslyasfQQWFeBtHD'"></app-bm-chapter-icon>
+        <p>Medieval and Renaissance alcohol was a lot weaker than the stuff we have today but it could get your drunk, which did have some perks.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ObviouslyasfQQWFeBtHD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ObviouslyasfQQWFeBtHD'"></app-bm-chapter-icon>
+        <p>There are 5 stages to drunkenness: Buzzed, Drunk, Sloshed, Browned Out, and Blacked out. Each stage gives you +2 to any Relaxation 
+          you gain and a +4 to any Morale Checks and any Checks you make to Resist Mental Spell Effects
+          you make, however, it also lowers all other Checks by 1 dice size and increases the Ranks for any Flaws by +2 as well.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ObviouslyasfQQWFeBtHD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ObviouslyasfQQWFeBtHD'"></app-bm-chapter-icon>
+        <p>How quickly you can get drunk is based on your tolerance and your Size. For every pint dunk, roll a Resistance (Alcohol) Check vs d20 + (the alchol's strength * the number of points you've had).
+          If you're Small for Knock-Backs, you roll this Check on a d12!. If you fail, you move up a stage. Every 2 Complications moves you up an additional stage.
+           3 - 4 bears for Drunk, 5 - 6 for Browned Out.</p>
       </div>
 
       <div class="anchor">
@@ -3150,6 +3178,26 @@
         <div id='whilejusinogiojejio' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'whilejusinogiojejio'"></app-bm-chapter-icon>
         <p>While using this weapon, you can perform the Grab & Throw Unarmed moves as if 1 handed.</p>
+      </div>
+      
+      <div class="anchor">
+        <div id="molotovcockstaile" class="anchorTag"></div>
+        <h3>Molotov Cocktail </h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifhtioj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifhtioj'"></app-bm-chapter-icon>
+        <p>If the target is soft (a human, pillow, dirt, etc.), you need to roll max damage to break the bottle. If the target is hard (stone, brick, etc.), you need to roll above a 1 on damage to break the bottle.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifiothibreak' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifiothibreak'"></app-bm-chapter-icon>
+        <p>If it breaks, the target is lit on fire. Fire damage is 1d6! unless you hit by more than 10, in which case it is 2d6!. If the damage explodes, you add the d6! to the damage. If a damage dice rolls a ‘1’, you remove it.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='onarjiotjaioc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'onarjiotjaioc'"></app-bm-chapter-icon>
+        <p>On an Attack roll of 1, you light yourself on fire, regardless of anything else.</p>
       </div>
       <div class="anchor">
         <div id="PeasantsFlaiheader" class="anchorTag"></div>
