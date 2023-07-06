@@ -2,8 +2,16 @@
     <div class="navOverlay" [ngClass]="{'fullBackground' : !marginBack }"></div>
 
     <div class="topNav">
-        <a class="selectChapter" (click)="setChapter()" routerLink="">Home</a>
-        <a class="selectChapter" (click)="setChapter()" routerLink="search">Search</a>
+        <div>
+            <img (click)="setChapter()" routerLink="" src="../../assets/images/white.png" alt="loading">
+        </div>
+        <div class="topNavIcons">
+            <a (click)="setChapter()" routerLink=""><i class="fa-sharp fa-solid fa-house"></i></a>
+            <p>|</p>
+            <a (click)="setChapter()" routerLink="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+            <p *ngIf="loggedIn">|</p>
+            <a *ngIf="loggedIn" href={{loginEndpoint}}><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
+        </div>
     </div>
     <div class="middleNav">
         <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="rules-reference/1" (mouseover)="viewChapter('Basic Mechanics')"
@@ -66,7 +74,7 @@
     <div *ngIf="ham" class="navSelectShell">
         <h1 class="navX" (click)="openHam()">X</h1>
         <a [ngClass]="{'active': reset === ''}" routerLink="../"
-            (mouseout)="resetChapter()" (click)="setChapter()">Home</a>
+            (mouseout)="resetChapter()" (click)="setChapter()"><i class="fa-sharp fa-solid fa-house"></i></a>
         <a [ngClass]="{'active': reset === 'Basic Mechanics'}" routerLink="rules-reference/1"
             (mouseout)="resetChapter()" (click)="setChapter(1)">1.1 Basic Mechanics</a>
         <a [ngClass]="{'active': reset === 'Confrontations'}" routerLink="rules-reference/2"
@@ -100,5 +108,7 @@
 </div>
 
 <div class="loadingIcon" *ngIf="loadIcon">
-    <img src="../../assets/images/icon.png" alt="loading">
+    <div>
+        <img src="../../assets/images/icon.png" alt="loading">
+    </div>
 </div>

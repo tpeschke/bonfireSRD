@@ -30,6 +30,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   public height = 0
   public login = ''
   public loadIcon = false
+  public loggedIn = this.chapterService.login
 
   ngOnInit() {
     this.chapterService.checkPatreon().subscribe().unsubscribe()

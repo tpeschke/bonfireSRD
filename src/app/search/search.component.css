@@ -93,6 +93,6 @@ input {
 
 @media (max-width: 770px) {
   .outerShell {
-    margin-top: 85px;
+    margin-top: 0px;
   }
 }

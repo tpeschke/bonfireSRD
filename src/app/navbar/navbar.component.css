@@ -3,6 +3,7 @@
 .loadingIcon img {
   width: 150px;
   height: 150px;
+  margin-top: 11px;
 }
 
 a {
@@ -99,7 +100,43 @@ p {
 .topNav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.topNav img {
+  max-width: 190px;
+  margin: 5px 34px 0;
+}
+
+.topNavIcons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin: 0 25px;
+}
+
+.topNavIcons p {
+  margin: 0 5px
+}
+
+.loadingIcon {
+  width: 250px;
+  height: 250px;
+  animation: fade 1.5s ease-out infinite;
+  animation-direction: alternate;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loadingIcon div {
+  background-color: whitesmoke;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .middleNav {
@@ -237,12 +274,4 @@ p {
   100% {
     opacity: 0;
   }
-}
-
-.loadingIcon {
-  width: 150px;
-  height: 100%;
-  animation: fade .6s ease-out infinite;
-  animation-direction: alternate;
-  margin: 100px auto;
 }
