@@ -835,16 +835,6 @@ module.exports = {
                 bonusLong: '<p>The Javelin can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Javelin.</p><br><p>This weapon can be drawn and readied on the move but the wielder needs to be standing still to aim without penalties.</p>'
             },
             {
-                name: 'Molotov Cocktail',
-                size: 'S',
-                dam: '1d4!',
-                rec: 10,
-                type: 'C',
-                minrec: 4,
-                bonus: 'Chance of catching on fire.',
-                bonusLong: '<p>If the target is soft (a human, pillow, dirt, etc.), you need to roll max damage to break the bottle. If the target is hard (stone, brick, etc.), you need to roll above a 1 on damage to break the bottle.</p><br><p>If it breaks, the target is lit on fire. Fire damage is 1d6! unless you hit by more than 10, in which case it is 2d6!. If the damage explodes, you add the d6! to the damage. If a damage dice rolls a ‘1’, you remove it.</p><br><p>On an Attack roll of 1, you light yourself on fire, regardless of anything else.</p>'
-            },
-            {
                 name: 'Throwing Axe',
                 size: 'S',
                 dam: '4d3!',
@@ -933,7 +923,7 @@ module.exports = {
                 type: 'P',
                 minrec: 5,
                 bonus: 'Must be fired from prone.',
-                bonusLong: '<p>The Warbow must be fired from the prone position, regardless of size, bracing the body of the bow with your legs.</p>'
+                bonusLong: '<p>The Warbow must be fired from the prone position, regardless of size, bracing the body of the bow with your legs. This lowers your Attack Check by 1 dice size.</p>'
             },
         ],
         firearms: [
@@ -966,6 +956,16 @@ module.exports = {
                 minrec: 4,
                 bonus: 'Causing Flinching. Backfires.',
                 bonusLong: '<p>Handgonne causes flinching equal to the d4! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p><br><p>The Handgonne Backfires.</p>'
+            },
+            {
+                name: 'Molotov Cocktail',
+                size: 'S',
+                dam: '1d4!',
+                rec: 10,
+                type: 'C',
+                minrec: 4,
+                bonus: 'Chance of catching on fire.',
+                bonusLong: '<p>If the target is soft (a human, pillow, dirt, etc.), you need to roll max damage to break the bottle. If the target is hard (stone, brick, etc.), you need to roll above a 1 on damage to break the bottle.</p><br><p>If it breaks, the target is lit on fire. Fire damage is 1d6! unless you hit by more than 10, in which case it is 2d6!. If the damage explodes, you add the d6! to the damage and inflict 1 Wear to any clothing, Light and Medium armor, and wooden shields and weapons. If a damage dice rolls a ‘1’, you remove it.</p><br><p>On an Attack roll of 1, you light yourself on fire, regardless of anything else.</p>'
             },
         ],
         ranges: [
