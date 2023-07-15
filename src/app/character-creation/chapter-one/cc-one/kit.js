@@ -308,7 +308,7 @@ export default [
                 sellback: '90 sc'
             },
             {
-                name: 'Scabbard*',
+                name: 'Sheathe (M or H, depending on what weapon is chosen)*',
                 size: 'n/a',
                 sellback: '5 sc'
             },
@@ -365,7 +365,7 @@ export default [
                 sellback: '190 sc'
             },
             {
-                name: 'Scabbard*',
+                name: 'Sheathe (M)*',
                 size: 'n/a',
                 sellback: '5 sc'
             },
@@ -412,7 +412,7 @@ export default [
                 sellback: '100 sc'
             },
             {
-                name: 'Scabbard*',
+                name: 'Sheathe (M)*',
                 size: 'n/a',
                 sellback: '5 sc'
             },
@@ -459,7 +459,7 @@ export default [
                 sellback: '90 sc'
             },
             {
-                name: 'Scabbard*',
+                name: 'Sheathe (M)*',
                 size: 'n/a',
                 sellback: '5 sc'
             },
@@ -469,7 +469,7 @@ export default [
                 sellback: '50 sc'
             },
             {
-                name: 'Sheathe, Small*',
+                name: 'Sheathe (S)*',
                 size: 'n/a',
                 sellback: '2.5 sc'
             },

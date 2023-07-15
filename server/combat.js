@@ -918,12 +918,12 @@ module.exports = {
             {
                 name: 'Warbow',
                 size: 'H',
-                dam: '2d12!',
+                dam: '1d20!+d12!',
                 rec: 14,
                 type: 'P',
                 minrec: 5,
-                bonus: 'Must be fired from prone.',
-                bonusLong: '<p>The Warbow must be fired from the prone position, regardless of size, bracing the body of the bow with your legs. This lowers your Attack Check by 1 dice size.</p>'
+                bonus: 'Must be fired from prone. -2 to Atk * target\'s Movement Cat.',
+                bonusLong: '<p>The Warbow must be fired from the prone position, regardless of size, bracing the body of the bow with your legs.</p><br><p>The attacker gains a -2 to Atk for every Movement Category above a stand still the target is moving. This stacks with the normal movement defense bonus.</p>'
             },
         ],
         firearms: [
@@ -1023,7 +1023,7 @@ module.exports = {
             },
             {
                 name: 'Warbow',
-                range: 500
+                range: 60
             },
         ]
     }
