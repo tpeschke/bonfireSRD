@@ -45,4 +45,15 @@ export class CcSixComponent implements OnInit {
       })
   }
 
+  calculatePrice = (price, disctance, size) => {
+    const finalPrice: any = (price * (size ? this.multi[disctance][size] : this.multi[disctance].M)).toFixed(1)
+    if (isNaN(finalPrice)) {
+      return '*'
+    }
+    if (finalPrice.charAt(finalPrice.length - 1) === '0') {
+      return finalPrice.substring(0, finalPrice.length -2)
+    }
+    return finalPrice
+  }
+
 }

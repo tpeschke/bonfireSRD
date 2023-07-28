@@ -564,9 +564,9 @@
               <td>{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -594,9 +594,9 @@
               <td>{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -805,9 +805,9 @@
               <td>{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -948,9 +948,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -979,9 +979,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1153,9 +1153,9 @@
               <td>{{content.strength}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1210,9 +1210,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1241,9 +1241,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1272,9 +1272,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1599,9 +1599,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1630,9 +1630,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -1926,9 +1926,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2110,7 +2110,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='clothisheild' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'clothisheild'"></app-bm-chapter-icon>
-        <p>Clothe shields aren't official shields: they're improvised by wrapping a clothe (a tunic works) around the
+        <p>Clothe shields aren't official shields: they're improvised by wrapping a clothe (a tunic works or any M-sized piece of clothing or fabric works) around the
           wrist.</p>
       </div>
       <div class="anchor">
@@ -2190,9 +2190,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2236,9 +2236,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2279,9 +2279,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2312,9 +2312,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2343,9 +2343,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2374,9 +2374,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2405,9 +2405,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2436,9 +2436,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2467,9 +2467,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2498,9 +2498,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
@@ -2529,9 +2529,9 @@
               <td colspan="2">{{content.name}}</td>
               <td>{{content.size}}</td>
               <td>{{content.price}}</td>
-              <td>{{(content.price * (content.size ? multi.local[content.size] : multi.local.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.nearby[content.size] : multi.nearby.M)).toFixed(1)}}</td>
-              <td>{{(content.price * (content.size ? multi.distant[content.size] : multi.distant.M)).toFixed(1)}}</td>
+              <td>{{calculatePrice(content.price, 'local', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'nearby', content.size)}}</td>
+              <td>{{calculatePrice(content.price, 'distant', content.size)}}</td>
             </tr>
           </tbody>
         </table>
