@@ -1,4 +1,7 @@
 .sidebar-width {
-    width: 350px;
+    width: 50%;
 }
 
+img {
+    max-width: 48%;
+}
