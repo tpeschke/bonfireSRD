@@ -29,7 +29,7 @@ h1 {
   color: #990000;
   font-weight: 700;
   font-size: 11pt;
-  font-family: "umbria";
+  font-family: "hamlet";
   border-bottom: 2px #222 solid;
   margin-bottom: 5px;
   padding-bottom: 5px;
@@ -174,7 +174,7 @@ p:hover {
   h1 {
     max-width: 250px;
     margin: 0 auto;
-    font-family: "umbria";
+    font-family: "hamlet";
   }
 
   .mobile-quick-nav-shell {

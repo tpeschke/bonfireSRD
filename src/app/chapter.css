@@ -4,7 +4,7 @@ h2 {
     padding: 5px 15px 5px 15px;
     margin-bottom: 0;
     font-size: 15px;
-    font-family: "umbria";
+    font-family: "hamlet";
     letter-spacing: 1px;
 }
 
@@ -20,7 +20,7 @@ h3 {
 }
 
 .sidebarShell h5 {
-    font-family: "umbria";
+    font-family: "hamlet";
     color: #b45f06;
     padding: 0 0 10px;
     font-size: 15px;

@@ -10,8 +10,8 @@
   src: url('./assets/jancient.ttf') format("truetype");
 }
 @font-face {
-  font-family: 'umbria';
-  src: url('./assets/Baldur.ttf') format("truetype");
+  font-family: 'hamlet';
+  src: url('./assets/Hamletornot.ttf') format("truetype");
 }
 
 html,
@@ -429,7 +429,7 @@ h1 {
   color: #990000;
   font-weight: 700;
   font-size: 14pt;
-  font-family: "umbria";
+  font-family: "hamlet";
   padding: 5px 15px 5px 15px;
   letter-spacing: 1px;
 }
@@ -437,7 +437,7 @@ h1 {
 .sidebarTitle {
   position: inherit;
   color: #b45f06;
-  font-family: "umbria";
+  font-family: "hamlet";
 }
 
 h2 {
