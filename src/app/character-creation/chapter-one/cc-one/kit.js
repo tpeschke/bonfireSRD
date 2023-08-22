@@ -398,7 +398,7 @@ export default [
     },
     {
         name: "Shield Fighter's Kit",
-        weight: "1L 1M 1S",
+        weight: "2M 1S",
         cash: "1d4! sc",
         items: [
             {

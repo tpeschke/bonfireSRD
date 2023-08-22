@@ -269,7 +269,7 @@ const flawTables = {
     ],
     mental: [
         {
-            weight: 10,
+            weight: 5,
             flaw: 'Addict',
             bonus: 19,
             severity: 2,
@@ -308,12 +308,12 @@ const flawTables = {
             jump: 'Addictheading'
         },
         {
-            weight: 9,
+            weight: 5,
             flaw: 'Craven',
             bonus: 13,
             severity: 5,
             cap: 4,
-            currentTotal: 10,
+            currentTotal: 5,
             rank: {
                 base: 0,
                 per: 1.5
@@ -321,12 +321,12 @@ const flawTables = {
             jump: 'CravenheaderHHxpaSPJUd'
         },
         {
-            weight: 12,
+            weight: 7,
             flaw: 'Hypochondriac',
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 19,
+            currentTotal: 10,
             rank: {
                 base: .5,
                 per: .5
@@ -334,12 +334,12 @@ const flawTables = {
             jump: 'HypochondriacheadernkQTCyMAjA'
         },
         {
-            weight: 12,
+            weight: 7,
             flaw: 'Impatient',
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 31,
+            currentTotal: 17,
             rank: {
                 base: .5,
                 per: .5
@@ -347,12 +347,12 @@ const flawTables = {
             jump: 'ImpatientheaderMlEfueUjgy'
         },
         {
-            weight: 12,
+            weight: 23,
             flaw: 'Lemming',
             bonus: 5,
             severity: 3,
             cap: 10,
-            currentTotal: 43,
+            currentTotal: 24,
             rank: {
                 base: .5,
                 per: .5
@@ -360,12 +360,12 @@ const flawTables = {
             jump: 'lemmingheahrioe'
         },
         {
-            weight: 10,
+            weight: 6,
             flaw: 'Neurotic',
             bonus: 13,
             severity: 3,
             cap: 10,
-            currentTotal: 55,
+            currentTotal: 47,
             rank: {
                 base: 1,
                 per: .5
@@ -374,6 +374,19 @@ const flawTables = {
         },
         {
             weight: 12,
+            flaw: 'Pacifist',
+            bonus: 10,
+            severity: 5,
+            cap: 10,
+            currentTotal: 53,
+            rank: {
+                base: 1,
+                per: 1
+            },
+            jump: 'pacificfjiotheadeing'
+        },
+        {
+            weight: 7,
             flaw: 'Phobia',
             bonus: 10,
             severity: 3,
@@ -468,12 +481,12 @@ const flawTables = {
             jump: 'PhobiaheaderQQhvnCtRSg'
         },
         {
-            weight: 7,
+            weight: 5,
             flaw: 'Sensitive',
             bonus: 13,
             severity: 5,
             cap: 10,
-            currentTotal: 77,
+            currentTotal: 72,
             rank: {
                 base: .5,
                 per: 1
@@ -481,12 +494,12 @@ const flawTables = {
             jump: 'SensitiveheaderJdvTOwHLwF'
         },
         {
-            weight: 5,
+            weight: 15,
             flaw: 'Self-Conscious',
             bonus: 10,
             severity: 2,
             cap: 10,
-            currentTotal: 84,
+            currentTotal: 77,
             rank: {
                 base: .5,
                 per: .5
@@ -499,7 +512,7 @@ const flawTables = {
             bonus: 10,
             severity: 3,
             cap: 10,
-            currentTotal: 89,
+            currentTotal: 92,
             rank: {
                 base: .5,
                 per: .5
@@ -507,12 +520,12 @@ const flawTables = {
             jump: 'SlowwittedheaderjicjkCYWOg'
         },
         {
-            weight: 5,
+            weight: 2,
             flaw: 'Vexable',
             bonus: 13,
             severity: 10,
             cap: 2,
-            currentTotal: 95,
+            currentTotal: 97,
             rank: {
                 base: 0,
                 per: 2
