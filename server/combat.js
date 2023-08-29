@@ -262,7 +262,7 @@ module.exports = {
             {
                 name: 'Horsemans Pick',
                 size: 'M',
-                dam: '2d12!+d3!',
+                dam: 'd12!+d6!',
                 rec: 9,
                 type: 'P',
                 parry: 0,
