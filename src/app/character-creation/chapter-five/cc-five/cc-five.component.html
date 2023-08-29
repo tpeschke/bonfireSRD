@@ -277,7 +277,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='AnAorSxwOuvadRRs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnAorSxwOuvadRRs'"></app-bm-chapter-icon>
-        <p>An (A) or (S) means that these abilities will be affected by your Armor and/or Shield if you're wearing them.
+        <p>An (A), (S), or (W) means that these abilities will be affected by your Armor, Shield, and/or Weapon if you're wearing them.
         </p>
       </div>
 
@@ -296,23 +296,33 @@
         <app-bm-chapter-icon [id]="'InitiativeInczmUZjFGHw'"></app-bm-chapter-icon>
         <p><strong>Initiative (Init)</strong>: Dex Mod + Will Mod + A</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
+      <div class='paragraphShell anchor'>
         <div id='DamageDamStmliqhvzaoi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DamageDamStmliqhvzaoi'"></app-bm-chapter-icon>
-        <p><strong>Damage (Dam)</strong>: Str Mod</p>
+        <p><strong>Damage (Dam)</strong>: W + Str Mod</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='recoveiorjioajiofje' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'recoveiorjioajiofje'"></app-bm-chapter-icon>
+        <p><strong>Recovery (Rec) (Melee & Bows)</strong>: W + Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down + A</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='recoveiorjioajiofjeeefjioj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'recoveiorjioajiofjeeefjioj'"></app-bm-chapter-icon>
+        <p><strong>Recovery (Rec) (Everything else)</strong>: W + A</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoullalsohadOmHrElwUS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoullalsohadOmHrElwUS'"></app-bm-chapter-icon>
-        <p>You'll also have Parry and Recovery, which are both based on the weapon you used but Parry may be replaced by
-          your shield's Parry while your Recovery will be affected by your Armor.</p>
+        <p>You'll also have Parry, which are both based on the weapon you used but Parry may be replaced by
+          your shield's Parry.</p>
       </div>
 
       <div class="table-overflow">
         <table class="all-centered first-left table-center marginBottom">
           <thead>
             <tr class="notSticky">
-              <th colspan="8">Combat Skills Check Mods</th>
+              <th colspan="9">Combat Skills Check Mods</th>
             </tr>
             <tr class="notSticky">
               <th>Stat</th>
@@ -323,6 +333,7 @@
               <th>Will Def</th>
               <th>Will Init</th>
               <th>Str Dam</th>
+              <th>Str Rec</th>
             </tr>
           </thead>
           <tbody>
@@ -335,6 +346,7 @@
               <td>-4</td>
               <td>5</td>
               <td>-4</td>
+              <td>1.5</td>
             </tr>
             <tr>
               <td>2</td>
@@ -345,6 +357,7 @@
               <td>-3</td>
               <td>4</td>
               <td>-3</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>3</td>
@@ -355,6 +368,7 @@
               <td>-3</td>
               <td>3</td>
               <td>-3</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>4</td>
@@ -365,6 +379,7 @@
               <td>-3</td>
               <td>3</td>
               <td>-3</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>5</td>
@@ -375,6 +390,7 @@
               <td>-2</td>
               <td>2</td>
               <td>-2</td>
+              <td>.5</td>
             </tr>
             <tr>
               <td>6</td>
@@ -385,6 +401,7 @@
               <td>-2</td>
               <td>2</td>
               <td>-2</td>
+              <td>.5</td>
             </tr>
             <tr>
               <td>7</td>
@@ -395,6 +412,7 @@
               <td>-1</td>
               <td>1</td>
               <td>-1</td>
+              <td>.5</td>
             </tr>
             <tr>
               <td>8</td>
@@ -405,6 +423,7 @@
               <td>-1</td>
               <td>1</td>
               <td>-1</td>
+              <td>0</td>
             </tr>
             <tr>
               <td>9</td>
@@ -415,9 +434,11 @@
               <td>-1</td>
               <td>1</td>
               <td>-1</td>
+              <td>0</td>
             </tr>
             <tr>
               <td>10</td>
+              <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
@@ -435,6 +456,7 @@
               <td>1</td>
               <td>0</td>
               <td>1</td>
+              <td>0</td>
             </tr>
             <tr>
               <td>12</td>
@@ -445,6 +467,7 @@
               <td>1</td>
               <td>0</td>
               <td>1</td>
+              <td>-.5</td>
             </tr>
             <tr>
               <td>13</td>
@@ -455,6 +478,7 @@
               <td>1</td>
               <td>0</td>
               <td>1</td>
+              <td>-.5</td>
             </tr>
             <tr>
               <td>14</td>
@@ -465,6 +489,7 @@
               <td>2</td>
               <td>0</td>
               <td>2</td>
+              <td>-.5</td>
             </tr>
             <tr>
               <td>15</td>
@@ -475,6 +500,7 @@
               <td>2</td>
               <td>-1</td>
               <td>2</td>
+              <td>-.5</td>
             </tr>
             <tr>
               <td>16</td>
@@ -485,6 +511,7 @@
               <td>2</td>
               <td>-1</td>
               <td>2</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>17</td>
@@ -495,6 +522,7 @@
               <td>3</td>
               <td>-2</td>
               <td>3</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>18</td>
@@ -505,6 +533,7 @@
               <td>3</td>
               <td>-2</td>
               <td>3</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>19</td>
@@ -515,6 +544,7 @@
               <td>3</td>
               <td>-3</td>
               <td>3</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>20</td>
@@ -525,6 +555,7 @@
               <td>4</td>
               <td>-4</td>
               <td>4</td>
+              <td>-1.5</td>
             </tr>
             <tr>
               <td>21</td>
@@ -535,6 +566,7 @@
               <td>5</td>
               <td>-4</td>
               <td>4</td>
+              <td>-1.5</td>
             </tr>
             <tr>
               <td>22</td>
@@ -545,6 +577,7 @@
               <td>5</td>
               <td>-5</td>
               <td>4</td>
+              <td>-1.5</td>
             </tr>
             <tr>
               <td>23</td>
@@ -555,6 +588,7 @@
               <td>5</td>
               <td>-5</td>
               <td>5</td>
+              <td>-2</td>
             </tr>
           </tbody>
         </table>
