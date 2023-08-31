@@ -5,3 +5,18 @@
 img {
     max-width: 48%;
 }
+
+.sidebarShell img {
+    display: none;
+}
+
+@media (max-width: 770px) {  
+    img {
+        display: none;
+    }
+
+    .sidebarShell img {
+        display: unset;
+        float: right;
+    }
+}

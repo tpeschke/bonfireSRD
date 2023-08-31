@@ -509,7 +509,7 @@ p {
 .chartShell {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  max-width: 80%;
   font-family: "ancient";
   font-size: 17px;
   margin-bottom: 2px;
