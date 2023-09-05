@@ -37,7 +37,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='becausetheseare' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'becausetheseare'"></app-bm-chapter-icon>
-        <p>Because these are new terms, here is a high level overview: Challenges > Obstacles > Checks, where Challenges are a conceptual framework made up of 1 or more Obstacles and Obstacles are tools that interact with 1 or more Checks.</p>
+        <p>Because these are new terms, here is a high level overview: Challenges > Obstacles > Checks, where Challenges
+          are a conceptual framework made up of 1 or more Obstacles and Obstacles are tools that interact with 1 or more
+          Checks.</p>
       </div>
       <div class="anchor">
         <div id="Objectivesheader" class="anchorTag"></div>
@@ -103,8 +105,10 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='additnoeiocie' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'additnoeiocie'"></app-bm-chapter-icon>
-        <p>Additionally, Obstacles can be made obsolete by player planning or choice; they can be optional, granting an extra bonus but 
-          not actually being required to reach the Objective of a Challenge; they can be replaced based on how the players are tackling things; and they can be player-initiated with 
+        <p>Additionally, Obstacles can be made obsolete by player planning or choice; they can be optional, granting an
+          extra bonus but
+          not actually being required to reach the Objective of a Challenge; they can be replaced based on how the
+          players are tackling things; and they can be player-initiated with
           the players decided to take on extra Obstacle to perhaps gain a boon or solve a problem.
         </p>
       </div>
@@ -120,11 +124,12 @@
         <app-bm-chapter-icon [id]="'OritcouldjutBSkXsStgD'"></app-bm-chapter-icon>
         <p>Or it could just result in another Obstacle. It all depends on the focus of the game.</p>
       </div>
-      
+
       <div class='paragraphShell anchor marginBottom'>
         <div id='atthendjiotjge' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'atthendjiotjge'"></app-bm-chapter-icon>
-        <p>At the end of the day, it's important to remember that Obstacles are tool for the GM to use to help arbitrate things and 
+        <p>At the end of the day, it's important to remember that Obstacles are tool for the GM to use to help arbitrate
+          things and
           to provide a consistent and common-sense way of the players interacting with the world.
         </p>
       </div>
@@ -147,176 +152,89 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>Setting the difficulty is a bit of a challenge in-and-of itself so below is a table that gives you the ranges of dice and static modifiers you should use based on the Rank or description of the person attempting the Obstacle.</p>
+        <p>Setting the difficulty is a bit of a challenge in-and-of itself so below is a table that gives you the ranges
+          of dice and static modifiers you should use based on the Rank or description of the person attempting the
+          Obstacle.</p>
       </div>
 
-      <table class="all-centered">
-        <thead>
-          <tr>
-            <th colspan="7">Difficulty by Description & Rank</th>
-          </tr>
-          <tr>
-            <th></th>
-            <th></th>
-            <th colspan="5">Difficulty Modifier</th>
-          </tr>
-          <tr>
-            <th>Description</th>
-            <th>Rank</th>
-            <th>Routine</th>
-            <th>Easy</th>
-            <th>Ave</th>
-            <th>Hard</th>
-            <th>Challeng.</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Novice</td>
-            <td>0 - 4</td>
-            <td class="diff-mod-border">-10 (-d20)</td>
-            <td>-5 (-d10)</td>
-            <td>+0</td>
-            <td>+5 (+d10)</td>
-            <td>+10 (+d20)</td>
-          </tr>
-          <tr>
-            <td>Journeyman</td>
-            <td>5 - 9</td>
-            <td class="diff-mod-border">-5 (-d10)</td>
-            <td>+0</td>
-            <td>+5 (+d10)</td>
-            <td>+10 (+d20)</td>
-            <td>+15 (+d10+d20)</td>
-          </tr>
-          <tr>
-            <td>Expert</td>
-            <td>10 - 14</td>
-            <td class="diff-mod-border">+0</td>
-            <td>+5 (+d10)</td>
-            <td>+10 (+d20)</td>
-            <td>+15 (+d10+d20)</td>
-            <td>+20 (+2d20)</td>
-          </tr>
-          <tr>
-            <td>Master</td>
-            <td>15 - 19</td>
-            <td class="diff-mod-border">+5 (+d10)</td>
-            <td>+10 (+d10)</td>
-            <td>+15 (+d10+d20)</td>
-            <td>+20 (+2d20)</td>
-            <td>+25 (+1d10+2d20)</td>
-          </tr>
-          <tr>
-            <td>Grandmaster</td>
-            <td>20</td>
-            <td class="diff-mod-border">+10 (+d20)</td>
-            <td>+15 (+d10+d20)</td>
-            <td>+20 (+2d20)</td>
-            <td>+25 (+1d10+2d20)</td>
-            <td>+30 (+3d20)</td>
-          </tr>
-        </tbody>
-        <tr>
-          <th colspan="2" class="formula-header">Formula</th>
-          <th class="formula-header">-10 + Rank</th>
-          <th class="formula-header">-5 + Rank</th>
-          <th class="formula-header">+ Rank</th>
-          <th class="formula-header">+5 + Rank</th>
-          <th class="formula-header">+10 + Rank</th>
-        </tr>
-      </table>
-
-      <!-- <div class="table-overflow">
+      <div class="table-overflow">
         <table class="all-centered">
           <thead>
-            <tr class="notSticky"> 
-              <th colspan="23">Skill Difficulty Matrix</th>
+            <tr>
+              <th colspan="7">Difficulty by Description & Rank</th>
             </tr>
-            <tr class="notSticky">
-              <th colspan="23" class="with-side-header">Rank</th>
+            <tr>
+              <th></th>
+              <th></th>
+              <th colspan="5">Difficulty Modifier</th>
+            </tr>
+            <tr>
+              <th>Description</th>
+              <th>Rank</th>
+              <th>Routine</th>
+              <th>Easy</th>
+              <th>Ave</th>
+              <th>Hard</th>
+              <th>Challeng.</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="side-header-coloring">
-              <th rowspan="20"><br><br><br><br>Difficulty</th>
+            <tr>
+              <td>Novice</td>
+              <td>0 - 4</td>
+              <td class="diff-mod-border">-10 (-d20)</td>
+              <td>-5 (-d10)</td>
+              <td>+0</td>
+              <td>+5 (+d10)</td>
+              <td>+10 (+d20)</td>
             </tr>
             <tr>
-              <td>&nbsp;</td>
-              <td>0</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
-              <td>16</td>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
+              <td>Journeyman</td>
+              <td>5 - 9</td>
+              <td class="diff-mod-border">-5 (-d10)</td>
+              <td>+0</td>
+              <td>+5 (+d10)</td>
+              <td>+10 (+d20)</td>
+              <td>+15 (+d10+d20)</td>
             </tr>
-            <tr *ngFor="let row of skillMatrix">
-              <td *ngFor="let entry of row" class="{{entry}}">{{entry}}</td>
+            <tr>
+              <td>Expert</td>
+              <td>10 - 14</td>
+              <td class="diff-mod-border">+0</td>
+              <td>+5 (+d10)</td>
+              <td>+10 (+d20)</td>
+              <td>+15 (+d10+d20)</td>
+              <td>+20 (+2d20)</td>
+            </tr>
+            <tr>
+              <td>Master</td>
+              <td>15 - 19</td>
+              <td class="diff-mod-border">+5 (+d10)</td>
+              <td>+10 (+d10)</td>
+              <td>+15 (+d10+d20)</td>
+              <td>+20 (+2d20)</td>
+              <td>+25 (+1d10+2d20)</td>
+            </tr>
+            <tr>
+              <td>Grandmaster</td>
+              <td>20</td>
+              <td class="diff-mod-border">+10 (+d20)</td>
+              <td>+15 (+d10+d20)</td>
+              <td>+20 (+2d20)</td>
+              <td>+25 (+1d10+2d20)</td>
+              <td>+30 (+3d20)</td>
             </tr>
           </tbody>
+          <tr>
+            <th colspan="2" class="formula-header">Formula</th>
+            <th class="formula-header">-10 + Rank</th>
+            <th class="formula-header">-5 + Rank</th>
+            <th class="formula-header">+ Rank</th>
+            <th class="formula-header">+5 + Rank</th>
+            <th class="formula-header">+10 + Rank</th>
+          </tr>
         </table>
       </div>
-
-      <table class="float">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="2">Color Key</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Color</th>
-            <th>Chance of Success</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="Auto">Automatic</td>
-            <td>100%</td>
-          </tr>
-          <tr>
-            <td class="Trivial">Trivial</td>
-            <td>80%-99%</td>
-          </tr>
-          <tr>
-            <td class="Easy">Easy</td>
-            <td>70%-79%</td>
-          </tr>
-          <tr>
-            <td class="Ave">Average</td>
-            <td>60%-69%</td>
-          </tr>
-          <tr>
-            <td class="Diffic">Difficult</td>
-            <td>45%-59%</td>
-          </tr>
-          <tr>
-            <td class="Hard">Hard</td>
-            <td>25%-44%</td>
-          </tr>
-          <tr>
-            <td class="Challen">Challenging</td>
-            <td>10%-24%</td>
-          </tr>
-          <tr>
-            <td class="Impos">Impossible</td>
-            <td>0%-9%</td>
-          </tr>
-        </tbody>
-      </table> -->
 
       <div class='paragraphShell anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
@@ -326,13 +244,16 @@
       <div class='paragraphShell anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>So, if determining the difficulty of climbing a wall, assume that the players are doing it freehanded with no help.</p>
+        <p>So, if determining the difficulty of climbing a wall, assume that the players are doing it freehanded with no
+          help.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>This is because those things that would change the difficulty are already considered via the Tactics below so you don't have to consently 
-          change, consider, or modify the difficulty based on the players actions, except in one case, which is talked about in the next section.</p>
+        <p>This is because those things that would change the difficulty are already considered via the Tactics below so
+          you don't have to consently
+          change, consider, or modify the difficulty based on the players actions, except in one case, which is talked
+          about in the next section.</p>
       </div>
       <div class="anchor">
         <div id="yesnotmajiojfe" class="anchorTag"></div>
@@ -341,29 +262,33 @@
       <div class='paragraphShell anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>Players will use Skills to try and overcome the Obstacle and, when arbitrating, just be aware that there are 
+        <p>Players will use Skills to try and overcome the Obstacle and, when arbitrating, just be aware that there are
           Yes, No, and Maybe Skills.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='yesskillsare' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'yesskillsare'"></app-bm-chapter-icon>
-        <p>Yes Skills are Skills that 100% apply to the Obstacle. For instance, Mathematics when trying to cheat a person 
+        <p>Yes Skills are Skills that 100% apply to the Obstacle. For instance, Mathematics when trying to cheat a
+          person
           with some complicated formulas or Move Silently when trying to sneak behind a guard.
         </p>
       </div>
       <div class='paragraphShell anchor '>
         <div id='noskillsare' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'noskillsare'"></app-bm-chapter-icon>
-        <p>No Skills are Skills that don't apply and will never apply. As much as you might want it, History isn't going to 
+        <p>No Skills are Skills that don't apply and will never apply. As much as you might want it, History isn't going
+          to
           get you up that wall and Monster Craft won't help you understand woman.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='finalimaky' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'finalimaky'"></app-bm-chapter-icon>
-        <p>Finally, Maybe Skills are Skills that could apply depending on how the player approaches it. This is often a player 
-          not having the perfect Skill for it but might have something that could apply, like using Acrobatics to climb a wall 
+        <p>Finally, Maybe Skills are Skills that could apply depending on how the player approaches it. This is often a
+          player
+          not having the perfect Skill for it but might have something that could apply, like using Acrobatics to climb
+          a wall
           instead of Climbing.
         </p>
       </div>
@@ -402,15 +327,18 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ComplicationsNjEosyQQsW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ComplicationsNjEosyQQsW'"></app-bm-chapter-icon>
-        <p>Complications represent narrative challenges that change the circumstances or something bad that happens that doesn't 
-          directly stop the players from getting over the Obstacle or resetting to the start, such as the guard hearing something, or you leaving a clue behind that
+        <p>Complications represent narrative challenges that change the circumstances or something bad that happens that
+          doesn't
+          directly stop the players from getting over the Obstacle or resetting to the start, such as the guard hearing
+          something, or you leaving a clue behind that
           might give someone a heads up that you're there.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenanObstachOkYEhBeUK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenanObstachOkYEhBeUK'"></app-bm-chapter-icon>
         <p>When an Obstacle gets more Complications than its Failure Threshold, it hard fails. Hard failures are when
-          something majorly bad actually happens. This can either be something that prevents you from getting what you want entirely 
+          something majorly bad actually happens. This can either be something that prevents you from getting what you
+          want entirely
           forcing you to try a different tact (you're discovered by the guards),
           something that resets you to the beginning of an Obstacle (you fall off the wall and landing on the ground)
           or something that puts you in a much worse position (your lock picks getting worn down).
@@ -466,14 +394,16 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='allthatrisrequui' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'allthatrisrequui'"></app-bm-chapter-icon>
-        <p>All that is required to overcome an Obstacle is 1 successful Check, although clever players who can think their way around a problem 
+        <p>All that is required to overcome an Obstacle is 1 successful Check, although clever players who can think
+          their way around a problem
           can, of course, bypass an Obstacle in a different way.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='gmsmightfindit' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'gmsmightfindit'"></app-bm-chapter-icon>
-        <p>GMs might find it useful to break Obstacles up into Skill Challenges based on the level of granularity they're looking for in their game.</p>
+        <p>GMs might find it useful to break Obstacles up into Skill Challenges based on the level of granularity
+          they're looking for in their game.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='forinstihiofyuiou' class='anchorTag'></div>
@@ -483,25 +413,33 @@
       <div class='paragraphShell anchor'>
         <div id='theifishiothijfoe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theifishiothijfoe'"></app-bm-chapter-icon>
-        <p class="italic">The first is if the cliff isn't a major part of story: she wants to represent the difficulty of climbing the cliff but doesn't want to spend a lot of time on it.
-          In this case, she'll just have a single Obstacle, "The Cliff", that she assigns a Difficulty to and has the players make Checks against.
+        <p class="italic">The first is if the cliff isn't a major part of story: she wants to represent the difficulty
+          of climbing the cliff but doesn't want to spend a lot of time on it.
+          In this case, she'll just have a single Obstacle, "The Cliff", that she assigns a Difficulty to and has the
+          players make Checks against.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='theisecnoidisfhi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theisecnoidisfhi'"></app-bm-chapter-icon>
-        <p class="italic">The second is if the cliff is a big part of the game (perhaps it's a metaphor for one of the players). In this case, she's break it into Obstacles based on the different sections 
-          the players will have to climb: a long stretch (not hard so it's more a test of endurance), an overhang (a particularly difficult bit), a part where the players need to jump from 
+        <p class="italic">The second is if the cliff is a big part of the game (perhaps it's a metaphor for one of the
+          players). In this case, she's break it into Obstacles based on the different sections
+          the players will have to climb: a long stretch (not hard so it's more a test of endurance), an overhang (a
+          particularly difficult bit), a part where the players need to jump from
           one handhold to another (not difficult but very little margin for error).
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='shcanthience' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'shcanthience'"></app-bm-chapter-icon>
-        <p class="italic">She can then, from there, figure out difficulty and maybe some unique Complications and Fail states based on the Skills and equipment the players use as well as things about that 
-          particular Obstacle. For instance, Complications and Failure on the long stretch might result in damage from fatigue or scares, resulting in Stress rather than falling, while failing on the 
-          overhang results in another Obstacle, "Catching the Following Character", that can be attempted by only players below that character. Additionally, the jump might cause a Complication where the 
-          player falls but the rope catches, leaving the player dangling away from the cliff face: they're unable to grab ahold of a hold on the cliff but could possible swing themselves back or 
+        <p class="italic">She can then, from there, figure out difficulty and maybe some unique Complications and Fail
+          states based on the Skills and equipment the players use as well as things about that
+          particular Obstacle. For instance, Complications and Failure on the long stretch might result in damage from
+          fatigue or scares, resulting in Stress rather than falling, while failing on the
+          overhang results in another Obstacle, "Catching the Following Character", that can be attempted by only
+          players below that character. Additionally, the jump might cause a Complication where the
+          player falls but the rope catches, leaving the player dangling away from the cliff face: they're unable to
+          grab ahold of a hold on the cliff but could possible swing themselves back or
           climb up their rope, a harder but doable alternative.
         </p>
       </div>
@@ -546,8 +484,8 @@
         <div id='ItisassumedeKfzQsvEpg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ItisassumedeKfzQsvEpg'"></app-bm-chapter-icon>
         <p>It is assumed that, during a Challenge, a character is working their hardest to win, therefore, every Check,
-          whether successful or not, causes d4! Stress unless it was the GM who specifically called for it. They can 
-        choose to instead inflict a Complication on you instead.</p>
+          whether successful or not, causes d4! Stress unless it was the GM who specifically called for it. They can
+          choose to instead inflict a Complication on you instead.</p>
       </div>
       <div class="anchor">
         <div id="stresvveioje" class="anchorTag"></div>
@@ -556,8 +494,10 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='advenioviow' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'advenioviow'"></app-bm-chapter-icon>
-        <p>Adventuring is stressful work which is why Stress dice from Checks explode as a default but, if you can't rationalize why a character 
-          is getting 13 Stress from an action when the dice explode 3 times, feel free to limit it to 4 or, in some cases, handwave it away, even if the character didn't sweat it.
+        <p>Adventuring is stressful work which is why Stress dice from Checks explode as a default but, if you can't
+          rationalize why a character
+          is getting 13 Stress from an action when the dice explode 3 times, feel free to limit it to 4 or, in some
+          cases, handwave it away, even if the character didn't sweat it.
         </p>
       </div>
       <div class="anchor">
@@ -627,25 +567,29 @@
       <div class='paragraphShell anchor'>
         <div id='AssetshavetwRMlKNEObig' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AssetshavetwRMlKNEObig'"></app-bm-chapter-icon>
-        <p>Assets have two stats: their <strong>Knowledge</strong> and their <strong>Organization</strong>. Basically, how much they know and how easy
+        <p>Assets have two stats: their <strong>Knowledge</strong> and their <strong>Organization</strong>. Basically,
+          how much they know and how easy
           that
           knowledge is to get.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='EachofthesetaYXieEash' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EachofthesetaYXieEash'"></app-bm-chapter-icon>
-        <p>Each of these is given a qualifier of either <strong>Poor</strong>, <strong>Average</strong>, or <strong>Good</strong>.</p>
+        <p>Each of these is given a qualifier of either <strong>Poor</strong>, <strong>Average</strong>, or
+          <strong>Good</strong>.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ForKnowledgenYzAdVdwTz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForKnowledgenYzAdVdwTz'"></app-bm-chapter-icon>
-        <p>For Knowledge, Poor represents 1 free Preparation (talked about below), Average 2 free Preps, and Good 3 free Preps while for Organization Poor is d4! Weeks, Average is
+        <p>For Knowledge, Poor represents 1 free Preparation (talked about below), Average 2 free Preps, and Good 3 free
+          Preps while for Organization Poor is d4! Weeks, Average is
           d4! Days, and Good is d4! Hours.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='Spending1uniTrNZejKyCl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Spending1uniTrNZejKyCl'"></app-bm-chapter-icon>
-        <p>Spending sufficient time with an Asset (as determined by their Organization) allows you to gain that number of free Preps related to Skills that Asset knows/contains.</p>
+        <p>Spending sufficient time with an Asset (as determined by their Organization) allows you to gain that number
+          of free Preps related to Skills that Asset knows/contains.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThatbonuscanSmkzTeelgz' class='anchorTag'></div>
@@ -687,9 +631,11 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='CharactersgetaCYQKRuzeB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'CharactersgetaCYQKRuzeB'"></app-bm-chapter-icon>
-        <p>Characters get a number of starting contact points based on their Presence with the expectation they'll gain more
+        <p>Characters get a number of starting contact points based on their Presence with the expectation they'll gain
+          more
           as
-          they adventure, but these starting contact points can prove useful as they can be redeemed at any time and defined
+          they adventure, but these starting contact points can prove useful as they can be redeemed at any time and
+          defined
           on
           the spot.</p>
       </div>
@@ -698,7 +644,8 @@
         <app-bm-chapter-icon [id]="'SoiftheplafLJRmoDZPo'"></app-bm-chapter-icon>
         <p>So, if the players need, for example, access to a monastery’s library, one of the players can remember that
           one
-          of his buddies is actually a monk there and might be able to help, redeeming one or more of his contact points.</p>
+          of his buddies is actually a monk there and might be able to help, redeeming one or more of his contact
+          points.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AfterthatofjohoSCLiHX' class='anchorTag'></div>
@@ -709,14 +656,16 @@
         <div id='HowacontacteCivmYalnr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'HowacontacteCivmYalnr'"></app-bm-chapter-icon>
         <p>How a contact helps is largely determined by the circumstances of why they were redeemed but the GM should
-           consider them Assets starting with Poor Knowledge and Organization. A player can increase that
-          when they redeem their initial contact point by sacrificing additional contact points, raising their Knowledge and/or Organization on a one-for-one
+          consider them Assets starting with Poor Knowledge and Organization. A player can increase that
+          when they redeem their initial contact point by sacrificing additional contact points, raising their Knowledge
+          and/or Organization on a one-for-one
           basis.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='SoacharactexsOjkdklTz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoacharactexsOjkdklTz'"></app-bm-chapter-icon>
-        <p class="italic">So, a character with 3 unredeemed contacts can bring one in as a smuggler buddy who knows a lot about the
+        <p class="italic">So, a character with 3 unredeemed contacts can bring one in as a smuggler buddy who knows a
+          lot about the
           local
           underworld, which would normally only cost him 1 of his contacts, but, instead, he sacrifices his 2 remaining
           ones to increase his smuggler buddy's Knowledge to Good. He can't redeem any more contacts but at least his
@@ -730,9 +679,12 @@
         <div class='paragraphShell anchor'>
           <div id='regradjiojeiojwc' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'regradjiojeiojwc'"></app-bm-chapter-icon>
-          <p>Regardless of how much they may like a character, contacts aren't followers. This is partly to do with the fact 
-            that they have their own lives, goals, and things to do and so can't spent extended periods of time helping others.
-            They'll help where they can but don't expect them to drop everything they're doing to complete a task that you can't.
+          <p>Regardless of how much they may like a character, contacts aren't followers. This is partly to do with the
+            fact
+            that they have their own lives, goals, and things to do and so can't spent extended periods of time helping
+            others.
+            They'll help where they can but don't expect them to drop everything they're doing to complete a task that
+            you can't.
           </p>
         </div>
       </div>
@@ -760,9 +712,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThefirstscendfLyjyEnDp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThefirstscendfLyjyEnDp'"></app-bm-chapter-icon>
-        <p>The first scene is roleplayed in detail because the players are looking for details 
+        <p>The first scene is roleplayed in detail because the players are looking for details
           while the second is handwaved because there’s nothing specific that the
-          player will learn that will help them but there are things that the character will learn that will help them. 
+          player will learn that will help them but there are things that the character will learn that will help them.
           Additionally, the first scene could also give the players a Prep for
           their Monstercraft roll for remembering additional things about the beast.</p>
       </div>
@@ -781,12 +733,14 @@
         <div class='paragraphShell anchor marginBottom'>
           <div id='ifchaiojicoejicew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ifchaiojicoejicew'"></app-bm-chapter-icon>
-          <p>If a character has 1 - 5 Ranks in a Skill, they're considered to have a Knowledge of Poor (1 Prep); 6 - 10 Ranks, Average Knowledge (2 Preps); Rank >10, Good Knowledge (3 Preps).</p>
+          <p>If a character has 1 - 5 Ranks in a Skill, they're considered to have a Knowledge of Poor (1 Prep); 6 - 10
+            Ranks, Average Knowledge (2 Preps); Rank >10, Good Knowledge (3 Preps).</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
           <div id='Iftheyhave3UXGfyUtVdy' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'Iftheyhave3UXGfyUtVdy'"></app-bm-chapter-icon>
-          <p>Total the Ranks in Characteristics that relate to teaching, communication, and organization; if less than 3 they’re considered Poor; 4 - 6 to
+          <p>Total the Ranks in Characteristics that relate to teaching, communication, and organization; if less than 3
+            they’re considered Poor; 4 - 6 to
             makes them Average; greater than 6, Good.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
@@ -797,7 +751,7 @@
             bonus as well, even if they don't spend a full hour+ planning.</p>
         </div>
       </div>
-      
+
       <div class="anchor">
         <div id="Giveabootstheader" class="anchorTag"></div>
         <h2>Give a Boost</h2>
@@ -806,22 +760,24 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='evenify8ouiojd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'evenify8ouiojd'"></app-bm-chapter-icon>
-        <p>Even if you don't know how to do something, you can still help out by giving someone a boost. If the player can describe 
+        <p>Even if you don't know how to do something, you can still help out by giving someone a boost. If the player
+          can describe
           how their character helps without using a skill, they can give a +2 to another person's Check.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='forexmpalioe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'forexmpalioe'"></app-bm-chapter-icon>
-        <p class="italic">For example, you can give another character a boost up a wall to aid them on their Climbing Check.
+        <p class="italic">For example, you can give another character a boost up a wall to aid them on their Climbing
+          Check.
           Or you can clear books away that another character is finished with to help them study.
         </p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='youvanoijoicojew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youvanoijoicojew'"></app-bm-chapter-icon>
-        <p>You're considered Multitasking (with a d10! devoted to the boosting) and roll a d12! for Initiative. 
-          You might also be subject to any Complications or Failures of the Check 
+        <p>You're considered Multitasking (with a d10! devoted to the boosting) and roll a d12! for Initiative.
+          You might also be subject to any Complications or Failures of the Check
           if it makes sense.
         </p>
       </div>
@@ -847,13 +803,16 @@
         <div id='OnaSkillCheMCgsxJAsWu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OnaSkillCheMCgsxJAsWu'"></app-bm-chapter-icon>
         <p>On a Skill Check, you add an extra d6! + the Rank of any applicable Descriptions the equipment might have. If
-          there are multiple pieces of equipment, you increase the dice size by 1 per piece and add their Descriptions as
-          well. More on equipment Descriptions is found in <a [routerLink]='["/character-creation/6"]'>Chapter 2.6: Equipment</a>.</p>
+          there are multiple pieces of equipment, you increase the dice size by 1 per piece and add their Descriptions
+          as
+          well. More on equipment Descriptions is found in <a [routerLink]='["/character-creation/6"]'>Chapter 2.6:
+            Equipment</a>.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifqkopfkoepw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifqkopfkoepw'"></app-bm-chapter-icon>
-        <p>If the equipment doesn't really suite the purpose you're using it for, like trying to pry open a door with a weapon, you apply a d4! instead, although the same
+        <p>If the equipment doesn't really suite the purpose you're using it for, like trying to pry open a door with a
+          weapon, you apply a d4! instead, although the same
           rules apply for stacking pieces of equipment.
         </p>
       </div>
@@ -862,7 +821,8 @@
         <app-bm-chapter-icon [id]="'RedeemingthisfkAfgTRrCg'"></app-bm-chapter-icon>
         <p>Redeeming this bonus causes the tool degrades, giving it (and any other equipment you use) 1 Wear, whether
           you
-          succeed or not. More on Wear can be found in <a [routerLink]='["/character-creation/6"]'>Chapter 2.6: Equipment</a>.</p>
+          succeed or not. More on Wear can be found in <a [routerLink]='["/character-creation/6"]'>Chapter 2.6:
+            Equipment</a>.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -888,15 +848,18 @@
         <div class='paragraphShell anchor'>
           <div id='theresiojidfjiofew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'theresiojidfjiofew'"></app-bm-chapter-icon>
-          <p>There is a difference between using equipment to help you take on an Obstacle and using equipment to get around an Obstacle and nowhere is that better 
+          <p>There is a difference between using equipment to help you take on an Obstacle and using equipment to get
+            around an Obstacle and nowhere is that better
             demonstrated than with the rope.
           </p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
           <div id='raropkokopfe' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'raropkokopfe'"></app-bm-chapter-icon>
-          <p>A rope can be used to scale a cliff but it can also be scaled instead of the cliff. In the former case, it acts just like normal equipment, giving you a reroll, and in the 
-            latter case, you replace the cliff Obstacle with the rope Obstacle, which may or may not be better and may or may not come with its own problems.
+          <p>A rope can be used to scale a cliff but it can also be scaled instead of the cliff. In the former case, it
+            acts just like normal equipment, giving you a reroll, and in the
+            latter case, you replace the cliff Obstacle with the rope Obstacle, which may or may not be better and may
+            or may not come with its own problems.
           </p>
         </div>
       </div>
@@ -916,34 +879,42 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyouhaveanyHQQFmMulC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyouhaveanyHQQFmMulC'"></app-bm-chapter-icon>
-        <p>If you have another Advanced Skill that you think might help you, you can add it as a bonus, however, the GM rolls a d4! for Stress for each Skill you add, and you take Stress equal to the highest result from among those. This can't be reduced by Not Sweating It.</p>
+        <p>If you have another Advanced Skill that you think might help you, you can add it as a bonus, however, the GM
+          rolls a d4! for Stress for each Skill you add, and you take Stress equal to the highest result from among
+          those. This can't be reduced by Not Sweating It.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='othercansalijofew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'othercansalijofew'"></app-bm-chapter-icon>
-        <p>Others can also apply their Advanced Skills to your roll with the same penalty, assuming they're in contact with you and can give you a helping hand.</p>
+        <p>Others can also apply their Advanced Skills to your roll with the same penalty, assuming they're in contact
+          with you and can give you a helping hand.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='addingthieowjiocjew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'addingthieowjiocjew'"></app-bm-chapter-icon>
-        <p>Adding the same Advanced Skill multiple times has diminishing returns: each time this happens, you can a -1 to the Check, which can bring the total below 0. So, the first person to add 
+        <p>Adding the same Advanced Skill multiple times has diminishing returns: each time this happens, you can a -1
+          to the Check, which can bring the total below 0. So, the first person to add
           the same Skill gains a -1, the second person gains a -2, the third a -3, for a total, in this case, of -6.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='youcaniojisocje' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youcaniojisocje'"></app-bm-chapter-icon>
-        <p>You can use Skill Suites while Helping Out, however you only add 1 Skill Suite and you only add half its Rank. Additionally, you can't add any Skill Suites that are related to another Skills that are being added. The penalties remain the same.</p>
+        <p>You can use Skill Suites while Helping Out, however you only add 1 Skill Suite and you only add half its
+          Rank. Additionally, you can't add any Skill Suites that are related to another Skills that are being added.
+          The penalties remain the same.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='souiouviojecw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'souiouviojecw'"></app-bm-chapter-icon>
-        <p class="italic">So, if you're making a History Check and someone is adding their Appraisal Skill, nobody can add their Lore or Trades Skill Suites to the Check.</p>
+        <p class="italic">So, if you're making a History Check and someone is adding their Appraisal Skill, nobody can
+          add their Lore or Trades Skill Suites to the Check.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThismayseemzYOkbYJKpb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismayseemzYOkbYJKpb'"></app-bm-chapter-icon>
         <p>This may seem like it is nearly identical to Preparation, and they are very close. The difference is that
-          Preparation is a general thing that applies to a Skill Check you’re going to make in the future, while Helping Out 
+          Preparation is a general thing that applies to a Skill Check you’re going to make in the future, while Helping
+          Out
           is in the moment and is specific to the scenario. You can use both at the same time, since the
           help
           Skill gives a bonus and Preparation gives a reroll.</p>
@@ -961,7 +932,7 @@
             willing to take that Stress add their Rank to help out.</p>
         </div>
       </div>
-      
+
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
           <div id="HelpingOthersheader" class="anchorTag"></div>
@@ -970,17 +941,21 @@
         <div class='paragraphShell anchor'>
           <div id='ItfeelsgoodNVoJCRplQg' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ItfeelsgoodNVoJCRplQg'"></app-bm-chapter-icon>
-          <p>Weirdcraft Skills can be great for helping out - a small cantrip can push you over the edge - but there are somethings to note.</p>
+          <p>Weirdcraft Skills can be great for helping out - a small cantrip can push you over the edge - but there are
+            somethings to note.</p>
         </div>
         <div class='paragraphShell marginBottom anchor'>
           <div id='theifjsiojet' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'theifjsiojet'"></app-bm-chapter-icon>
-          <p>The first is that, for non-Weirdcraft things, they can't be used as the main skill - they can only be used to Help Out.</p>
+          <p>The first is that, for non-Weirdcraft things, they can't be used as the main skill - they can only be used
+            to Help Out.</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='soifyiouiovew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'soifyiouiovew'"></app-bm-chapter-icon>
-          <p class="italic">So, if you have to Move Silently but are untrained and have a -2 stat mod, if you the Animism Skill at Rank 5, you use a cantrip to coat your feet with fur but you still have to roll on a d12! and you get a total of +3, on top of the extra stress.</p>
+          <p class="italic">So, if you have to Move Silently but are untrained and have a -2 stat mod, if you the
+            Animism Skill at Rank 5, you use a cantrip to coat your feet with fur but you still have to roll on a d12!
+            and you get a total of +3, on top of the extra stress.</p>
         </div>
       </div>
       <div class="anchor">
@@ -1055,7 +1030,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenyouredeeMIiPVWYbEs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenyouredeeMIiPVWYbEs'"></app-bm-chapter-icon>
-        <p>When you redeem Preparation that you’ve readied, you can reroll the Obstacle's d20, taking the worse of the two
+        <p>When you redeem Preparation that you’ve readied, you can reroll the Obstacle's d20, taking the worse of the
+          two
           results.</p>
       </div>
       <div class='sidebarShell marginBottom'>
@@ -1097,7 +1073,9 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='somethiongjiovew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyoureinanHXrIVDzBZ'"></app-bm-chapter-icon>
-        <p>Sometimes you have a Skill that kind of works but it's not the perfect Skill for that situation: in that case, you can make the Check using the kind-of Skill instead of the usual skill, but getting an extra d4! Stress. This Stress can't be reduced by Not Sweating It nor can it be reduced in any way via Boons.</p>
+        <p>Sometimes you have a Skill that kind of works but it's not the perfect Skill for that situation: in that
+          case, you can make the Check using the kind-of Skill instead of the usual skill, but getting an extra d4!
+          Stress. This Stress can't be reduced by Not Sweating It nor can it be reduced in any way via Boons.</p>
       </div>
       <div class="anchor">
         <div id="RushingItheader" class="anchorTag"></div>
@@ -1125,8 +1103,10 @@
       <div class='paragraphShell anchor'>
         <div id='somcehtiojiovejiwojve' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'somcehtiojiovejiwojve'"></app-bm-chapter-icon>
-        <p>Sometimes just having another pair of eyes on a project can give you insight. If you did fail a Check but didn't fail the Obstacle with an ally watching, 
-          discussing what you did wrong with them gives you a free Prep on that Obstacle the next time you attempt it. Discussing it takes 
+        <p>Sometimes just having another pair of eyes on a project can give you insight. If you did fail a Check but
+          didn't fail the Obstacle with an ally watching,
+          discussing what you did wrong with them gives you a free Prep on that Obstacle the next time you attempt it.
+          Discussing it takes
           30 minutes - both people's Int scores.
         </p>
       </div>
