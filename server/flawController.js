@@ -1065,11 +1065,12 @@ let flawFunctions = {
         res.send(flawFunctions.rollForFlaw())
     },
     getMultipleRandomFlaw: (req, res) => {
+        const limit = 100
         let { number = 1 } = req.params
         if (number < 0) {
             number = 1
-        } else if (number > 25) {
-            number = 25
+        } else if (number > limit) {
+            number = limit
         }
         let flawArray = []
         for (let i = 0; i < number; i++) {
