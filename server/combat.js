@@ -289,8 +289,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 6,
-                bonus: 'Jab deals d6! damage.',
-                bonusLong: '<p>The Ahlspiess deals d6! damage on a sucessful jab.</p>'
+                bonus: 'Jab deals d6! damage & can Brace for Charge',
+                bonusLong: '<p>The Ahlspiess deals d6! damage on a sucessful jab.</p><br><p>This weapon can also Brace for Charge.</p>'
             },
             {
                 name: 'Bill',
@@ -321,8 +321,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 7.5,
-                bonus: 'Dam x2 for Knock Backs vs mounted.',
-                bonusLong: '<p>Damage with the Guisarme is effectively doubled for Knock-Backs vs mounted defenders.</p>'
+                bonus: 'Dam x2 for Knock Backs vs mounted & can Brace for Charge',
+                bonusLong: '<p>Damage with the Guisarme is effectively doubled for Knock-Backs vs mounted defenders.</p><br><p>This weapon can also Brace for Charge.</p>'
             },
             {
                 name: 'Halberd',
@@ -343,8 +343,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 5,
-                bonus: 'Can be used as Slashing.',
-                bonusLong: '<p>The Halberd can be used as either a Slashing or Piercing weapon. You can only switch after each attack.</p>'
+                bonus: 'Can be used as Slashing & can Brace for Charge',
+                bonusLong: '<p>The Halberd can be used as either a Slashing or Piercing weapon. You can only switch after each attack.</p><br><p>This weapon can also Brace for Charge.</p>'
             },
             {
                 name: 'Javelin',
@@ -365,8 +365,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 10,
-                bonus: 'When mounted, +3d8! dam. Can be used 1 handed mounted.',
-                bonusLong: '<p>When mounted, the Lance can be wielded 1 handed without penalty.</p><br><p>The Lance is designed for use on horseback. When mounted, and moving above a walk, it gains +3d8! damage.</p>'
+                bonus: 'When mounted, +3d8! dam. Can be used 1 handed mounted & can Brace for Charge',
+                bonusLong: '<p>When mounted, the Lance can be wielded 1 handed without penalty.</p><br><p>The Lance is designed for use on horseback. When mounted, and moving above a walk, it gains +3d8! damage.</p><br><p>This weapon can also Brace for Charge.</p>'
             },
             {
                 name: 'Lucerne',
@@ -386,8 +386,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 6.75,
-                bonus: 'Can be used to grab and thrown as 1 handed.',
-                bonusLong: '<p>While using the Military Fork, you can perform the Grab & Throw Unarmed moves as if 1 handed.</p>'
+                bonus: 'Can be used to grab and thrown as 1 handed & can Brace for Charge',
+                bonusLong: '<p>While using the Military Fork, you can perform the Grab & Throw Unarmed moves as if 1 handed.</p><br><p>This weapon can also Brace for Charge.</p>'
             },
             {
                 name: 'Pike',
@@ -397,7 +397,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 13,
-                bonus: false,
+                bonus: 'Can Brace for Charge',
+                bonusLong: '<p>This weapon can Brace for Charge.</p>'
             },
             {
                 name: 'Planson',
@@ -417,7 +418,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 7.25,
-                bonus: false,
+                bonus: 'Can Brace for Charge',
+                bonusLong: '<p>This weapon can Brace for Charge.</p>'
             },
             {
                 name: 'Short Spear',
@@ -448,7 +450,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 8,
-                bonus: false,
+                bonus: 'Can Brace for Charge',
+                bonusLong: '<p>This weapon can Brace for Charge.</p>'
             },
             {
                 name: 'War-scythe',
@@ -965,7 +968,7 @@ module.exports = {
                 type: 'C',
                 minrec: 4,
                 bonus: 'Chance of catching on fire.',
-                bonusLong: '<p>If the target is soft (a human, pillow, dirt, etc.), you need to roll max damage to break the bottle. If the target is hard (stone, brick, etc.), you need to roll above a 1 on damage to break the bottle.</p><br><p>If it breaks, the target is lit on fire. Fire damage is 1d6! unless you hit by more than 10, in which case it is 2d6!. If the damage explodes, you add the d6! to the damage and inflict 1 Wear to any clothing, Light and Medium armor, and wooden shields and weapons. If a damage dice rolls a ‘1’, you remove it.</p><br><p>On an Attack roll of 1, you light yourself on fire, regardless of anything else.</p>'
+                bonusLong: '<p>If the target is soft (a human, pillow, dirt, etc.), you need to roll max damage to break the bottle. If the target is hard (stone, brick, etc.), you need to roll above a 1 on damage to break the bottle.</p><br><p>If it breaks, the target is lit on fire. Fire damage is 1d6!, unless you hit by more than 10 in which case it is 2d6!, every 10 seconds. If the damage explodes, you add the d6! to the damage and inflict 1 Wear to any clothing, Light and Medium armor, and wooden shields and weapons. If a damage dice rolls a ‘1’, you remove it.</p><br><p>On an Attack roll of 1, you light yourself on fire, regardless of anything else.</p>'
             },
         ],
         ranges: [

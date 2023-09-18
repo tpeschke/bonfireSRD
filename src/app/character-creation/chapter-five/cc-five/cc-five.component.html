@@ -118,39 +118,39 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td>-4</td>
+            <td>-6</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>-3</td>
+            <td>-5</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>-3</td>
+            <td>-4</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>-2</td>
+            <td>-3</td>
           </tr>
           <tr>
             <td>5</td>
-            <td>-2</td>
+            <td>-3</td>
           </tr>
           <tr>
             <td>6</td>
-            <td>-1</td>
+            <td>-2</td>
           </tr>
           <tr>
             <td>7</td>
-            <td>-1</td>
+            <td>-2</td>
           </tr>
           <tr>
             <td>8</td>
-            <td>0</td>
+            <td>-1</td>
           </tr>
           <tr>
             <td>9</td>
-            <td>0</td>
+            <td>-1</td>
           </tr>
           <tr>
             <td>10</td>
@@ -158,55 +158,55 @@
           </tr>
           <tr>
             <td>11</td>
-            <td>0</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>12</td>
-            <td>0</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>13</td>
-            <td>1</td>
+            <td>2</td>
           </tr>
           <tr>
             <td>14</td>
-            <td>1</td>
+            <td>2</td>
           </tr>
           <tr>
             <td>15</td>
-            <td>1</td>
+            <td>3</td>
           </tr>
           <tr>
             <td>16</td>
-            <td>2</td>
+            <td>3</td>
           </tr>
           <tr>
             <td>17</td>
-            <td>2</td>
+            <td>3</td>
           </tr>
           <tr>
             <td>18</td>
-            <td>2</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>19</td>
-            <td>2</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>20</td>
-            <td>3</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>21</td>
-            <td>3</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>22</td>
-            <td>3</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>23</td>
-            <td>4</td>
+            <td>6</td>
           </tr>
         </tbody>
       </table>
@@ -274,12 +274,6 @@
         <app-bm-chapter-icon [id]="'InsteadoftakMyrQTmNeRA'"></app-bm-chapter-icon>
         <p>Instead of taking the highest stat, you’re going to refer to the following formulas and table below.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AnAorSxwOuvadRRs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnAorSxwOuvadRRs'"></app-bm-chapter-icon>
-        <p>An (A), (S), or (W) means that these abilities will be affected by your Armor, Shield, and/or Weapon if you're wearing them.
-        </p>
-      </div>
 
       <div class='paragraphShell anchor'>
         <div id='AttackAtkDFcZpAbuBwK' class='anchorTag'></div>
@@ -289,27 +283,27 @@
       <div class='paragraphShell anchor'>
         <div id='DefenseDefXnmSAzXFjk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DefenseDefXnmSAzXFjk'"></app-bm-chapter-icon>
-        <p><strong>Defense (Def)</strong>: Dex Mod + Will Mod + A + S</p>
+        <p><strong>Defense (Def)</strong>: Dex Mod + Will Mod + Armor Def Mod + Shield Def Mod</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='InitiativeInczmUZjFGHw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'InitiativeInczmUZjFGHw'"></app-bm-chapter-icon>
-        <p><strong>Initiative (Init)</strong>: Dex Mod + Will Mod + A</p>
+        <p><strong>Initiative (Init)</strong>: Dex Mod + Will Mod + Armor Init Mod</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='DamageDamStmliqhvzaoi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DamageDamStmliqhvzaoi'"></app-bm-chapter-icon>
-        <p><strong>Damage (Dam)</strong>: W + Str Mod</p>
+        <p><strong>Damage (Dam)</strong>: Weapon Damage + Str Mod</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='recoveiorjioajiofje' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'recoveiorjioajiofje'"></app-bm-chapter-icon>
-        <p><strong>Recovery (Rec) (Melee & Bows)</strong>: W + Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down + A</p>
+        <p><strong>Recovery (Rec) (Melee & Bows)</strong>: Weapon Recovery + Armor Rec Mod - Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='recoveiorjioajiofjeeefjioj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'recoveiorjioajiofjeeefjioj'"></app-bm-chapter-icon>
-        <p><strong>Recovery (Rec) (Everything else)</strong>: W + A</p>
+        <p><strong>Recovery (Rec) (Everything else)</strong>: Weapon Recovery + Armor Rec Mod</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoullalsohadOmHrElwUS' class='anchorTag'></div>
@@ -343,8 +337,8 @@
               <td>-3</td>
               <td>3</td>
               <td>-6</td>
-              <td>-5</td>
-              <td>5</td>
+              <td>-6</td>
+              <td>6</td>
               <td>-5</td>
               <td>1.5</td>
             </tr>
@@ -354,7 +348,7 @@
               <td>-2</td>
               <td>2</td>
               <td>-5</td>
-              <td>-4</td>
+              <td>-5</td>
               <td>5</td>
               <td>-4</td>
               <td>1</td>
@@ -397,9 +391,9 @@
               <td>-1</td>
               <td>-1</td>
               <td>1</td>
-              <td>-2</td>
-              <td>-2</td>
-              <td>2</td>
+              <td>-1</td>
+              <td>-1</td>
+              <td>1</td>
               <td>-2</td>
               <td>.5</td>
             </tr>
@@ -408,9 +402,9 @@
               <td>-1</td>
               <td>-1</td>
               <td>1</td>
-              <td>-2</td>
-              <td>-1</td>
-              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
               <td>-2</td>
               <td>.5</td>
             </tr>
@@ -419,8 +413,8 @@
               <td>0</td>
               <td>0</td>
               <td>0</td>
-              <td>-1</td>
-              <td>-1</td>
+              <td>0</td>
+              <td>0</td>
               <td>1</td>
               <td>-1</td>
               <td>0</td>
@@ -430,9 +424,9 @@
               <td>0</td>
               <td>0</td>
               <td>0</td>
-              <td>-1</td>
-              <td>-1</td>
-              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
               <td>-1</td>
               <td>0</td>
             </tr>
