@@ -3,162 +3,92 @@
     <div class="backTexture"></div>
     <div class="backColor"></div>
     <div class="chapterShell">
-      <div class="anchor">
-        <div id="Flawsheader" class="anchorTag"></div>
-        <h1>Flaws</h1>
-        <div class="underline"></div>
-      </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='EverypersonhBXeyRZuUxV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EverypersonhBXeyRZuUxV'"></app-bm-chapter-icon>
-        <p>Every person has flaws; markers of an eventful life, good or bad. Oftentimes they’re artifacts of a hard
-          life, like a soldier who is missing an arm.</p>
+        <p>Every person has things that carry with them; markers of an eventful life, good or bad. Oftentimes they’re artifacts of a hard life, like a soldier who is missing an arm, while other times it’s something under the skin:</p>
       </div>
       <div class="anchor">
-        <div id="FlawSeverityheader" class="anchorTag"></div>
-        <h2>Flaw Severity</h2>
-        <div class="underline-sub"></div>
+        <div id="burdenexplainheader" class="anchorTag"></div>
+        <h3>Burdens</h3>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='AllFlawshaveLPuWuiwOQd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AllFlawshaveLPuWuiwOQd'"></app-bm-chapter-icon>
-        <p>Flaws have a Severity that denotes how serious they are.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='whahtiojfiewojicoew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'whahtiojfiewojicoew'"></app-bm-chapter-icon>
-        <p>What this specifically means will be unique to the Flaw as some are worse than others just as a base line
-          (hence the variable CrP bonuses).</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='allfalwijoijw' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'allfalwijoijw'"></app-bm-chapter-icon>
-        <p>All Flaws start at Severity 1 but you can choose to increase them as much as you want, up to the Severity Cap, at the time of rolling or picking.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='NotethatsomeSfLYMIVWPx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'NotethatsomeSfLYMIVWPx'"></app-bm-chapter-icon>
-        <p>Note that some Flaws have a Severity cap (you can only get so blind, afterall), which is noted.</p>
-      </div>
-      <div class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="unsureofhiotjiofew" class="anchorTag"></div>
-          <h5>Unsure of the Severity?</h5>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='youiofwjiojveiowew' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
-          <p>If you're not sure what your Flaw's Severity should be, you can just roll a d3 and use that for your
-            Severity. That will work for most Flaws, except for Missing Eye.</p>
-        </div>
+        <p>Burdens largely represent things that are outside of the character’s control that are emotional or related to a character’s backstory, like being an orphan or being Fated. These can only be gained during character creation and will give you unique penalties and roleplaying opportunities in play.</p>
       </div>
       <div class="anchor">
+        <div id="injuryexplainheader" class="anchorTag"></div>
+        <h3>Injuries</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='injurejioejs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'injurejioejs'"></app-bm-chapter-icon>
+        <p>Injuries represent physical scars that your character has. Perhaps they lost a leg in a childhood accident, or an eye in battle, or perhaps they were just born epileptic. These will give you unique penalties.</p>
+      </div>
+      
+      <div class="anchor">
         <div id="flawcrpbouns" class="anchorTag"></div>
-        <h2>Flaw CrP Bonus</h2>
+        <h2>CrP Bonus</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='alljfiowjiofew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'alljfiowjiofew'"></app-bm-chapter-icon>
-        <p>All Flaws give you CrP that you can turn around and use to make your character stronger in other ways. The total bonus is Base Crp + (Severity * Per Severity). If you 
-          increase a Flaw's Severity later, you gain the difference. So, taking the Fated Flaw at Severity 3 gives you 43 CrP ( 13 + (10 * 3) ). Increasing it up to 5 later gives you an additional  20 CrP.
+        <p>All Burdens & Injuries give you CrP that you can turn around and use to make your character stronger in other ways. The total bonus is Base Crp + (Rank * Per Rank). If you 
+          increase its Ranks later in character creation, you gain the difference. So, taking the Fated Burden at Rank 3 gives you 43 CrP ( 13 + (10 * 3) ). Increasing it up to 5 later gives you an additional 20 CrP.
         </p>
       </div>
       <div class="anchor">
         <div id="flarwranksevejioret" class="anchorTag"></div>
-        <h2>Flaw Rank</h2>
+        <h2>Rank</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='fewjciewojcioejwiocjew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'fewjciewojcioejwiocjew'"></app-bm-chapter-icon>
-        <p>Flaws can sometimes be applied to a Check, sometimes as a bonus and sometimes as a penatly. Either way,
+        <p>Burdens & Injuries can sometimes be applied to a Check, sometimes as a bonus and sometimes as a penatly. Either way,
           you'll need
-          to know what its Rank is.</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='ifyouivowjioew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifyouivowjioew'"></app-bm-chapter-icon>
-        <p class="italic">So, if you have the Ageusia Flaw at Severity 4, its Rank would be 2 since you round up ( .67 + ( 4 * .33 ) ).</p>
-      </div>
-
-      <div class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="recordinogeiwjfioew" class="anchorTag"></div>
-          <h5>Recording Flaws</h5>
-        </div>
-        <div class='paragraphShell marginBottom anchor'>
-          <div id='whenioejwiojcew' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'whenioejwiojcew'"></app-bm-chapter-icon>
-          <p>When recording Flaws on your character sheet, you'll typically want to do it like so:</p>
-        </div>
-        <div class='paragraphShell marginBottom anchor'>
-          <div id='defesfjieojse' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'defesfjieojse'"></app-bm-chapter-icon>
-          <p class="italic">Deaf (3) 4</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='tehioejfiwojiofewj' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'tehioejfiwojiofewj'"></app-bm-chapter-icon>
-          <p>The number in parentheses is the Severity and the number to the side is the Rank, in case it comes up in a
-            Confrontation.</p>
-        </div>
-      </div>
-      <div class="anchor">
-        <div id="roleplayingoutflaws" class="anchorTag"></div>
-        <h2>Roleplaying Out Flaws</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='flawsnevergiveyoupersmiions' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'flawsnevergiveyoupersmiions'"></app-bm-chapter-icon>
-        <p>Flaws never give you permission to cross lines or make people uncomfortable, whatever side of the screen
-          you're on.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='onthieflcipsidhe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'onthieflcipsidhe'"></app-bm-chapter-icon>
-        <p>On the flip side, don't take Flaws that you would be, on some level, uncomfortable roleplaying out. If you
-          have any doubt, discuss with your GM and other players before the game starts and, if you're still unsure,
-          spend the CrP to reroll.</p>
+          to know what its Rank is, which is added or removed from a Check.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
-          <div id="flawconifijoew" class="anchorTag"></div>
-          <h5>Conflicting Flaws</h5>
+          <div id="unsureofhiotjiofew" class="anchorTag"></div>
+          <h5>Unsure of the Rank?</h5>
         </div>
         <div class='paragraphShell anchor'>
-          <div id='itjioawwqq' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'itjioawwqq'"></app-bm-chapter-icon>
-          <p>It is perfectly fine to have conflicting Flaws because people are like that sometimes.</p>
+          <div id='youiofwjiojveiowew' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
+          <p>If you're not sure what your Burden or Injury's Rank should be, you can just roll a d3 and use that for your
+            Rank. That will work in most cases, except for Missing Eye.</p>
         </div>
       </div>
       <div class="anchor">
         <div id="StartingFlawsheader" class="anchorTag"></div>
-        <h1>Starting Flaws</h1>
+        <h1>Starting Burdens & Injuries</h1>
         <div class="underline"></div>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='TherearetwoovJrcYfAnn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TherearetwoovJrcYfAnn'"></app-bm-chapter-icon>
-        <p>There are two ways to select Flaws: Rolling and Cherry Picking. Rolling gives you more CrP per Flaw but
+        <p>There are two ways to select Burdens & Injuries: Rolling and Cherry Picking. Rolling gives you more CrP per Burdens or Injuries but
           Cherry
           Picking gives you more control. You must commit to one: you cannot start by rolling and then Cherry Pick.
         You cannot choose to do both and choose the one you like more, either - once you start down the path, you're on it.</p>
       </div>
       <div class="anchor">
         <div id="RollingFlawsheadertFXqMObzjo" class="anchorTag"></div>
-        <h2>Rolling Flaws</h2>
+        <h2>Rolling</h2>
         <div class="underline-sub"></div>
       </div>
 
       <table *ngIf="flawTables" class="float all-center first-left">
         <thead>
           <tr class="notSticky">
-            <th colspan="2">Flaw Table</th>
+            <th colspan="2">Burden or Injury?</th>
           </tr>
           <tr class="notSticky">
-            <th>Roll (d6)</th>
+            <th>Roll (d4)</th>
             <th>Table</th>
           </tr>
         </thead>
@@ -174,119 +104,47 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='RollonthefoPbVjMukELb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'RollonthefoPbVjMukELb'"></app-bm-chapter-icon>
-        <p>Roll on the following Flaw Table and then on the corresponding table.</p>
+        <p>Roll on the following Burden or Injury? Table and then on the corresponding table.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='YoucanspendVpmXVNGxMV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoucanspendVpmXVNGxMV'"></app-bm-chapter-icon>
-        <p>You can spend 1 CrP to reroll at any time for either table but once you’ve committed to rolling for a Flaw,
+        <p>You can spend 1 CrP to reroll at any time for either table but once you’ve committed to rolling,
           you
           have to roll.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='EachFlawafteuWofOCbjvJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EachFlawafteuWofOCbjvJ'"></app-bm-chapter-icon>
-        <p>Each Flaw after the first loses 3 CrP of its value per previous Flaw to a minimum of 0 CrP received. So, the
+        <p>Each Burden & Injuries after the first loses 5 CrP of its value per previous Burden and Injury to a minimum of 0 CrP received. So, the
           3rd
-          Flaw you roll will be at a -6 CrP.</p>
+          Burden or Injury you roll will be at a -10 CrP.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyourollthbjhIbGgwFV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyourollthbjhIbGgwFV'"></app-bm-chapter-icon>
-        <p>If you roll the same Flaws twice, you have to increase its Severity by at least 1. You may choose to further
-          increase its Severity at this time as normal. If you’ve already reached the cap of that Flaw, you reroll for
+        <p>If you roll the same Burden or Injury twice, you have to increase its Rank by at least 1. You may choose to further
+          increase its Rank at this time as normal. If you’ve already reached its cap, you reroll for
           free.</p>
       </div>
-
+      
       <div *ngIf="flawTables" class="multiple-tables-shell">
-        <table class="float all-center first-left" id="backgroundTable">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="5">Background Flaws</th>
-            </tr>
-            <tr>
-              <th>Roll (d100)</th>
-              <th>Name</th>
-              <th>CrP Base</th>
-              <th>Per Severity</th>
-              <th>Severity Cap</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let flaw of flawTables.background">
-              <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
-                flaw.currentTotal}}</td>
-              <td>{{flaw.flaw}}</td>
-              <td>{{flaw.bonus}}</td>
-              <td>{{flaw.severity}}</td>
-              <td>{{flaw.cap}}</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table *ngIf="flawTables" class="float all-center first-left" id="mentalTable">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="5">Mental Flaws</th>
-            </tr>
-            <tr>
-              <th>Roll (d100)</th>
-              <th>Name</th>
-              <th>CrP Base</th>
-              <th>Per Severity</th>
-              <th>Severity Cap</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let flaw of flawTables.mental">
-              <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
-                flaw.currentTotal}}</td>
-              <td>{{flaw.flaw}}</td>
-              <td>{{flaw.bonus}}</td>
-              <td>{{flaw.severity}}</td>
-              <td>{{flaw.cap}}</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table *ngIf="flawTables" class="float all-center first-left" id="physicalTable">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="5">Physical Flaws</th>
-            </tr>
-            <tr>
-              <th>Roll (d100)</th>
-              <th>Name</th>
-              <th>CrP Base</th>
-              <th>Per Severity</th>
-              <th>Severity Cap</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let flaw of flawTables.physical">
-              <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
-                flaw.currentTotal + 1}}</td>
-              <td>{{flaw.flaw}}</td>
-              <td>{{flaw.bonus}}</td>
-              <td>{{flaw.severity}}</td>
-              <td>{{flaw.cap}}</td>
-            </tr>
-          </tbody>
-        </table>
+        <lib-burdenAndInjuriesTable [label]="'Burdens'" [flawTable]="flawTables.burdens"></lib-burdenAndInjuriesTable>
+        <lib-burdenAndInjuriesTable [label]="'Injuries'" [flawTable]="flawTables.injuries"></lib-burdenAndInjuriesTable>
       </div>
 
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
           <div id="randomflawroller" class="anchorTag"></div>
-          <h5>Random Flaw Roller</h5>
+          <h5>Random Roller</h5>
         </div>
         <div class='paragraphShell anchor'>
           <div id='youiofwjiojveiowew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
-          <p>If you don't have dice at the ready, you can always get a random flaw by pushing the button below:</p>
+          <p>If you don't have dice at the ready, you can always get a random Injury or Burden by pushing the button below:</p>
         </div>
         <div *ngIf="!flaw" class="result-shell">
-          <button class="generateButton" (click)="getRandomFlaw()">Get Me a Random Flaw!</button>
+          <button class="generateButton" (click)="getRandomFlaw()">Get Me a Random Burden or Injury!</button>
         </div>
         <div *ngIf="flaw" class="result-shell">
           <div class="resultHolder">
@@ -294,7 +152,7 @@
             <h2 (click)="getNewParentTable()">{{flaw.parentTable.tableName}} <i class="fa-solid fa-rotate-right"></i></h2>
           </div>
           <div class="resultHolder">
-            <p>Flaw: </p>
+            <p>Result: </p>
             <h2 (click)="getNewFlaw()">{{flaw.flaw.flaw}} <i class="fa-solid fa-rotate-right"></i></h2>
           </div>
           <div class="resultHolder jump-icon">
@@ -313,109 +171,27 @@
 
       <div class="anchor">
         <div id="CherryPickingheader" class="anchorTag"></div>
-        <h2>Cherry Picking Flaws</h2>
+        <h2>Cherry Picking</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FortheroleplYiyDISFCYu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FortheroleplYiyDISFCYu'"></app-bm-chapter-icon>
-        <p>For the roleplayers among us with a specific character idea in mind, you may Cherry Pick your Flaws.</p>
+        <p>For the roleplayers among us with a specific character idea in mind, you may Cherry Pick your Burdens and Injuries.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='EachFlawafteElQjHxXDWO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EachFlawafteElQjHxXDWO'"></app-bm-chapter-icon>
-        <p>Each Flaw after the first loses 6 CrP of its value per Flaw to a minimum of 0 CrP received. So, the 3rd Flaw
+        <p>Each Burden and Injuries after the first loses 10 CrP of its value to a minimum of 0 CrP received. So, the 3rd Burden or Injury
           you
-          pick will be at a -12 CrP.</p>
+          pick will be at a -20 CrP.</p>
       </div>
       <div class="anchor">
         <div id="FlawDescriptiheader" class="anchorTag"></div>
-        <h1>Flaw Descriptions</h1>
+        <h1>Effects</h1>
         <div class="underline"></div>
       </div>
-      <div class="anchor">
-        <div id="Addictheading" class="anchorTag"></div>
-        <h2>Addict</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <table class="float all-center first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="2">Addiction Table</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Roll (d6)</th>
-            <th>Addiction</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Gambling</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Shopping</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Drinking</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Narcotics</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Sex</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Adrenaline</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class='paragraphShell anchor'>
-        <div id='addichiojce' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'addichiojce'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>19</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='addictpersete' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'addictpersete'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='addictserrevejio' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'addictserrevejio'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='addcitranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'addcitranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thsicharaceregge' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thsicharaceregge'"></app-bm-chapter-icon>
-        <p>This character is unable to control themselves around a particular substance or finds it hard to keep
-          themselves from performing a particular action.
-          This is most commonly true when they're Stress and then find it's the only way to truly relax.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='gainshajilfjeile' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'gainshajilfjeile'"></app-bm-chapter-icon>
-        <p>This character gains half the Relaxation from things not related to their addiction until they satisfy it in
-          some way.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='shoidiovjew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'shoidiovjew'"></app-bm-chapter-icon>
-        <p>Should they come across an opportunity to indulge, they'll need to succeed at a Confrontation Check against
-          this Flaw to resist. Indulging in this way doesn't heal Stress or give Relaxation and might come with other
-          problems (such as a loss of cash, time, or brain power, or chance of disease or fatherhood).</p>
-      </div>
+      
       <div class="anchor">
         <div id="AgeusiaheaderTAnuTNHiNf" class="anchorTag"></div>
         <h2>Ageusia</h2>
@@ -424,22 +200,17 @@
       <div class='paragraphShell anchor'>
         <div id='10IhcSKGTzCG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10IhcSKGTzCG'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
+        <p><strong>CrP Base </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='5hdxHbZWLPv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5hdxHbZWLPv'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor '>
         <div id='10tWEvqkRHmt' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10tWEvqkRHmt'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ageusiarank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ageusiarank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.67 + .33 per Severity, rounded up</p>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThismeansthaJgxsxLaWIU' class='anchorTag'></div>
@@ -450,7 +221,7 @@
         <div id='WhilefairlymFYqmUCKmdP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhilefairlymFYqmUCKmdP'"></app-bm-chapter-icon>
         <p>While fairly minor, it means that this character won’t heal Stress from food the same way that others will:
-          subtract this Flaw’s Severity from the Relaxation you would get from a meal to a minimum of 0.</p>
+          subtract this Injury's Rank from the Relaxation you would get from a meal to a minimum of 0.</p>
       </div>
       <div class="anchor">
         <div id="AllergyFoodheaderFNDbwfuMWn" class="anchorTag"></div>
@@ -505,22 +276,17 @@
       <div class='paragraphShell anchor'>
         <div id='15QNmrkOwRTL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15QNmrkOwRTL'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='5nhdnEanmjH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5nhdnEanmjH'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='naMnpvLqcquQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'naMnpvLqcquQ'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='foodalergyrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'foodalergyrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.67 + .33 per Severity, round up</p>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterVPgzlIfHqW' class='anchorTag'></div>
@@ -537,20 +303,20 @@
       <div class='paragraphShell anchor'>
         <div id='ItstreatedaDhuTxzzkrd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ItstreatedaDhuTxzzkrd'"></app-bm-chapter-icon>
-        <p>It’s treated as 3d3!/1 Min/Con. Add an additional 1d3! per Severity to the Lethality .</p>
+        <p>It’s treated as 3d3!/1 Min/Con. Add an additional 1d3! per Rank to the Lethality .</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='PlayerswhodoyrajyPdaqJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PlayerswhodoyrajyPdaqJ'"></app-bm-chapter-icon>
         <p>Players who don’t call out that they’re looking for their allergen when eating new or strange food have a 5%
-          chance of eating it before they realize it’s there, thus triggering this Flaw.</p>
+          chance of eating it before they realize it’s there, thus triggering this Burden.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisFlawcankqjLTFTqdh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisFlawcankqjLTFTqdh'"></app-bm-chapter-icon>
-        <p>This Flaw can be taken multiple times for different allergens, each counted as their own separate Flaw with
+        <p>This Burden can be taken multiple times for different allergens, each counted as their own separate Burden with
           its
-          own Severity.</p>
+          own Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoucanofcoegHZFodUkd' class='anchorTag'></div>
@@ -596,22 +362,17 @@
       <div class='paragraphShell anchor'>
         <div id='15AXrrawbzVI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15AXrrawbzVI'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='5goGNAKQPsT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5goGNAKQPsT'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='nakYUeTVucMT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'nakYUeTVucMT'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='miscalelrgrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'miscalelrgrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.67 + .33 per Severity, round up</p>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterrynoHmHMWW' class='anchorTag'></div>
@@ -630,7 +391,7 @@
       <div class='paragraphShell anchor'>
         <div id='ForairborneaIVYDRNlxcH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForairborneaIVYDRNlxcH'"></app-bm-chapter-icon>
-        <p>For airborne allergen , it’s 3d12!/1 Hour/1 Stress. It deals an additional Stress per Severity.</p>
+        <p>For airborne allergen , it’s 3d12!/1 Hour/1 Stress. It deals an additional Stress per Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IftheallergexAHnPCKInX' class='anchorTag'></div>
@@ -640,9 +401,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisFlawcanTUzxDdbEZA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisFlawcanTUzxDdbEZA'"></app-bm-chapter-icon>
-        <p>This Flaw can be taken multiple times for different allergens, each counted as their own separate Flaw with
+        <p>This Burden can be taken multiple times for different allergens, each counted as their own separate Burden with
           its
-          own Severity.</p>
+          own Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoucanofcoveaNUAIGdG' class='anchorTag'></div>
@@ -659,22 +420,17 @@
       <div class='paragraphShell anchor'>
         <div id='20WUUwXkXZed' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20WUUwXkXZed'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15eDpVhOOVXt' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15eDpVhOOVXt'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='naHxDzgntLsk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'naHxDzgntLsk'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='asthematiranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'asthematiranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterKjJXBHRlKw' class='anchorTag'></div>
@@ -686,52 +442,12 @@
         <div id='AnytimeyoutaXusnYHuSUp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AnytimeyoutaXusnYHuSUp'"></app-bm-chapter-icon>
         <p>Anytime you take damage or Stress from fatigue (for example, from an Athletics Check or from running or
-          sprinting), you take an additional amount of damage equal to your Severity.</p>
+          sprinting), you take an additional amount of damage equal to your Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyoujusttobJtblQIMha' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyoujusttobJtblQIMha'"></app-bm-chapter-icon>
         <p>If you just took Stress, you still take this damage.</p>
-      </div>
-      <div class="anchor">
-        <div id="AtheistheaderFNPQHnTYgv" class="anchorTag"></div>
-        <h2>Atheist</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10bwZDyNHJfA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10bwZDyNHJfA'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10iBlICgdMFJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10iBlICgdMFJ'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='12CkzkqgwBsi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'12CkzkqgwBsi'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>12</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='athesisranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'athesisranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThewayofthevUQCSJHoIo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThewayofthevUQCSJHoIo'"></app-bm-chapter-icon>
-        <p>The way of the divine is a mysterious path, and it is possible for someone to mistake it for no path at all.
-          Some
-          refuse to believe that intelligent higher powers exist and so forfeit some of the blessings while others find
-          worshiping such beings laughable, like giving reverence to the biggest bully on the block.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='EitherwaywhdsWocNwbBj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'EitherwaywhdsWocNwbBj'"></app-bm-chapter-icon>
-        <p>Either way, when spending Favor Dice or having Favor Dice spent on them for a beneficial reason, they reduce
-          each
-          dice roll by this Flaw’s Severity.</p>
       </div>
       <div class="anchor">
         <div id="BastardheaderifVeGdkeSu" class="anchorTag"></div>
@@ -741,22 +457,17 @@
       <div class='paragraphShell anchor'>
         <div id='25YCQPssjxmM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25YCQPssjxmM'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>17</p>
+        <p><strong>CrP Base </strong>25</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15rRHggsXGfY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15rRHggsXGfY'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
+        <p><strong>Per Rank </strong>7</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='5yMCTiltCJd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5yMCTiltCJd'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='bastardrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'bastardrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <p><strong>Rank Cap </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='BeingabastarALWbOWXkms' class='anchorTag'></div>
@@ -771,14 +482,14 @@
         <div id='AttheendofgsAsFVYoqn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AttheendofgsAsFVYoqn'"></app-bm-chapter-icon>
         <p>At the end of each session, the bastard reduces the amount of Integrity gained by 1 for every point of
-          Severity.
+          Rank.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdditionallydFSgwNrzfs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallydFSgwNrzfs'"></app-bm-chapter-icon>
         <p>Additionally, they often get less than their full siblings: when selecting kits, remove 30 sc of starting
-          equipment and/or starting cash per point of Severity, rounded down.</p>
+          equipment and/or starting cash per point of Rank, rounded down.</p>
       </div>
       <div class="anchor">
         <div id="BlindheaderejFzjQYqhm" class="anchorTag"></div>
@@ -788,22 +499,17 @@
       <div class='paragraphShell anchor'>
         <div id='25CdNZIGvuMz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25CdNZIGvuMz'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>17</p>
+        <p><strong>CrP Base </strong>25</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15HNQkbriqtX' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15HNQkbriqtX'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='6BoehwMvJss' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'6BoehwMvJss'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='blindrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'blindrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterviXaVnclGi' class='anchorTag'></div>
@@ -816,13 +522,13 @@
         <div id='InmeleecombacugRbfYkAg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'InmeleecombacugRbfYkAg'"></app-bm-chapter-icon>
         <p>In melee combat or when making Checks that involve sight, they roll a dice shrunk a number of sizes equal to
-          their Severity.</p>
+          their Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AndrangedcomLElHsWhyLf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AndrangedcomLElHsWhyLf'"></app-bm-chapter-icon>
         <p>And ranged combat is right out, however, if you insist, you’ll be attacking and defending with dice shrunk a
-          number of sizes equal to twice their Severity, so enjoy your fumbles, you stubborn bastard.</p>
+          number of sizes equal to twice their Rank, so enjoy your fumbles, you stubborn bastard.</p>
       </div>
       <div class="anchor">
         <div id="BurnScarsheaderURPQmidRJb" class="anchorTag"></div>
@@ -867,12 +573,12 @@
       <div class='paragraphShell anchor'>
         <div id='fPKxeyzmWU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'fPKxeyzmWU'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>*</p>
+        <p><strong>Per Rank </strong>*</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='naUUKDBrkyRW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'naUUKDBrkyRW'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>*</p>
+        <p><strong>Rank Cap </strong>*</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterOHYuniKYjs' class='anchorTag'></div>
@@ -887,9 +593,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisFlawcanwmEmttMqGL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisFlawcanwmEmttMqGL'"></app-bm-chapter-icon>
-        <p>This Flaw can be taken multiple times with each location counting as a new Flaw. If you already have a burn
+        <p>This Injury can be taken multiple times with each location counting as a new Injury. If you already have a burn
           in a
-          location, you may increase its Severity as per usual or spend a CrP to reroll.</p>
+          location, you may increase its Rank as per usual or spend a CrP to reroll.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -903,34 +609,24 @@
         <div class='paragraphShell anchor'>
           <div id='15oPRNNZohfN' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15oPRNNZohfN'"></app-bm-chapter-icon>
-          <p><strong>CrP Base </strong>10</p>
+          <p><strong>CrP Base </strong>15</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='10gAJzZkhscE' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'10gAJzZkhscE'"></app-bm-chapter-icon>
-          <p><strong>Per Severity </strong>3</p>
+          <p><strong>Per Rank </strong>4</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='headscjioewjioe' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'headscjioewjioe'"></app-bm-chapter-icon>
-          <p><strong>Severity Cap </strong>5</p>
+          <p><strong>Rank Cap </strong>5</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
-          <div id='burscalicoahead' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'burscalicoahead'"></app-bm-chapter-icon>
-          <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-        </div>
-        <div class='paragraphShell anchor'>
           <div id='ThislocationblfrcLnmHk' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ThislocationblfrcLnmHk'"></app-bm-chapter-icon>
           <p>This location makes the person hard to look at but can also create issues with communication. When needing
             to
-            make a Language Check, this character receives a penalty equal to this Flaw’s Severity.</p>
-        </div>
-        <div class='paragraphShell anchor marginBottom'>
-          <div id='WhenusedinaeoIpEpZsHj' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'WhenusedinaeoIpEpZsHj'"></app-bm-chapter-icon>
-          <p>When used in a Confrontation, this Flaw adds its full Severity either as a bonus or as a penalty.</p>
+            make a Language Check, this character receives a penalty equal to this Injury Rank.</p>
         </div>
         <div class="anchor">
           <div id="BodyheadervqZCQhLUES" class="anchorTag"></div>
@@ -939,41 +635,36 @@
         <div class='paragraphShell anchor'>
           <div id='20ThsQXOYkfC' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'20ThsQXOYkfC'"></app-bm-chapter-icon>
-          <p><strong>CrP Base </strong>17</p>
+          <p><strong>CrP Base </strong>25</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='15vpqzsnWnJT' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15vpqzsnWnJT'"></app-bm-chapter-icon>
-          <p><strong>Per Severity </strong>5</p>
+          <p><strong>Per Rank </strong>8</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='bodjfjeiojiewf' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'bodjfjeiojiewf'"></app-bm-chapter-icon>
-          <p><strong>Severity Cap </strong>10</p>
-        </div>
-        <div class='paragraphShell anchor marginBottom'>
-          <div id='bodyscarank' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'bodyscarank'"></app-bm-chapter-icon>
-          <p><strong>Rank </strong>1 + 1 per Severity</p>
+          <p><strong>Rank Cap </strong>10</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='BurnsonthebygVOIUIHok' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'BurnsonthebygVOIUIHok'"></app-bm-chapter-icon>
-          <p>Burns on the body might seem minor but actually, depending on the Severity, they can inhibit sweat
+          <p>Burns on the body might seem minor but actually, depending on the Rank, they can inhibit sweat
             production
             which means that the character is unable to regulate their body temperature effectively.</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='WhenRunningoWkvmmognrZ' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'WhenRunningoWkvmmognrZ'"></app-bm-chapter-icon>
-          <p>When Running or Sprinting, lower the time between taking damage by 1 for each point of Severity to a
+          <p>When Running or Sprinting, lower the time between taking damage by 1 for each point of Rank to a
             minimum
             of 1.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
           <div id='ThecharacterUbgkovWPJU' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ThecharacterUbgkovWPJU'"></app-bm-chapter-icon>
-          <p>The character is also considered 5 degrees warmer or colder for each point of Severity in harsh weather.
+          <p>The character is also considered 5 degrees warmer or colder for each point of Rank in harsh weather.
           </p>
         </div>
         <div class="anchor">
@@ -983,22 +674,17 @@
         <div class='paragraphShell anchor'>
           <div id='15PqCiccaytt' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15PqCiccaytt'"></app-bm-chapter-icon>
-          <p><strong>CrP Base </strong>10</p>
+          <p><strong>CrP Base </strong>15</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='15sOIccaRCcE' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15sOIccaRCcE'"></app-bm-chapter-icon>
-          <p><strong>Per Severity </strong>5</p>
+          <p><strong>Per Rank </strong>8</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='armhandscewjiojew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'armhandscewjiojew'"></app-bm-chapter-icon>
-          <p><strong>Severity Cap </strong>10</p>
-        </div>
-        <div class='paragraphShell anchor marginBottom'>
-          <div id='armshandhranks' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'armshandhranks'"></app-bm-chapter-icon>
-          <p><strong>Rank </strong>1 per Severity</p>
+          <p><strong>Rank Cap </strong>10</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='ThearmsandhHBMnVjoezK' class='anchorTag'></div>
@@ -1008,13 +694,13 @@
         <div class='paragraphShell anchor'>
           <div id='ThecharacterMmFiRGGlAM' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ThecharacterMmFiRGGlAM'"></app-bm-chapter-icon>
-          <p>The character increases their Recovery with all weapons by 1 for every 3 points of Severity.</p>
+          <p>The character increases their Recovery with all weapons by 1 for every 3 points of Rank.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
           <div id='OntopofthatrhkUGEcHsO' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'OntopofthatrhkUGEcHsO'"></app-bm-chapter-icon>
           <p>On top of that, when trying to perform Checks that require manual dexterity, they gain a penalty equal to
-            their Severity.</p>
+            their Rank.</p>
         </div>
         <div class="anchor">
           <div id="LegsheaderdVForazIdo" class="anchorTag"></div>
@@ -1023,22 +709,17 @@
         <div class='paragraphShell anchor'>
           <div id='20nWxyRbZINw' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'20nWxyRbZINw'"></app-bm-chapter-icon>
-          <p><strong>CrP Base </strong>17</p>
+          <p><strong>CrP Base </strong>25</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='15eyFGRNQXab' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15eyFGRNQXab'"></app-bm-chapter-icon>
-          <p><strong>Per Severity </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='lefewjiovjeiwo' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'lefewjiovjeiwo'"></app-bm-chapter-icon>
-          <p><strong>Severity Cap </strong>5</p>
+          <p><strong>Per Rank </strong>8</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
-          <div id='legsrankscar' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'legsrankscar'"></app-bm-chapter-icon>
-          <p><strong>Rank </strong>1 + 1 per Severity</p>
+          <div id='lefewjiovjeiwo' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'lefewjiovjeiwo'"></app-bm-chapter-icon>
+          <p><strong>Rank Cap </strong>5</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='ThislocationPDlTWEcIvF' class='anchorTag'></div>
@@ -1048,45 +729,10 @@
         <div class='paragraphShell anchor marginBottom'>
           <div id='ThischaracterhXzCxDOTmc' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ThischaracterhXzCxDOTmc'"></app-bm-chapter-icon>
-          <p>This character takes 1 extra second per point of Severity to move up or down a Movement Category.</p>
+          <p>This character takes 1 extra second per point of Rank to move up or down a Movement Category.</p>
         </div>
       </div>
-      <div class="anchor">
-        <div id="CravenheaderHHxpaSPJUd" class="anchorTag"></div>
-        <h2>Craven</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='20EXUOIaaMYe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20EXUOIaaMYe'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15aoSCMjRcpi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15aoSCMjRcpi'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='4pcHvKFZNsr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4pcHvKFZNsr'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='caravearankani' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'caravearankani'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1.5 per Severity, round up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterReYGKpZVKJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterReYGKpZVKJ'"></app-bm-chapter-icon>
-        <p>This character has problems keeping their panic under control when the going gets tough.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ForeverypoinZtvPdkHbSA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ForeverypoinZtvPdkHbSA'"></app-bm-chapter-icon>
-        <p>For every point of Severity, lower the character’s starting Panic Threshold by 1 step. Nothing can be done to
-          reverse this except buying this Flaw down.</p>
-      </div>
+      
       <div class="anchor">
         <div id="DeafheaderQjLmdfFCwk" class="anchorTag"></div>
         <h2>Deaf</h2>
@@ -1095,22 +741,17 @@
       <div class='paragraphShell anchor'>
         <div id='15RfBVuXPKEy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15RfBVuXPKEy'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15hxEBeazNse' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15hxEBeazNse'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='6PlqsVulEjN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6PlqsVulEjN'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='deafranksji' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'deafranksji'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
+        <div id='6PlqsVulEjN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'6PlqsVulEjN'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterdRxUEeiQAT' class='anchorTag'></div>
@@ -1122,14 +763,14 @@
       <div class='paragraphShell anchor'>
         <div id='ThismeansthavYVqyMClRE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismeansthavYVqyMClRE'"></app-bm-chapter-icon>
-        <p>This means that, for Checks involving sound, they shrink their dice 1 size for every point of Severity.</p>
+        <p>This means that, for Checks involving sound, they shrink their dice 1 size for every point of Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdditionallyJxzpYIAIkz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallyJxzpYIAIkz'"></app-bm-chapter-icon>
         <p>Additionally, they’re much slower to react: if they can’t see a threat, they increase their Initiative Dice
           by 1
-          for every point of Severity.</p>
+          for every point of Rank.</p>
       </div>
       <div class="anchor">
         <div id="DebtorheaderJElCNbPgHi" class="anchorTag"></div>
@@ -1139,22 +780,17 @@
       <div class='paragraphShell anchor'>
         <div id='10jgpYjBveCj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10jgpYjBveCj'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
+        <p><strong>CrP Base </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10OAWjugLPOx' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10OAWjugLPOx'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='nafkRhFLHgYS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nafkRhFLHgYS'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='debtorranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'debtorranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='nafkRhFLHgYS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nafkRhFLHgYS'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterAbNfVYHeHT' class='anchorTag'></div>
@@ -1164,7 +800,7 @@
       <div class='paragraphShell anchor'>
         <div id='TheystartwitPnsEgzWjyK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheystartwitPnsEgzWjyK'"></app-bm-chapter-icon>
-        <p>They start with 100 sc of debt for every point of Severity. He can sell off as much of their initial
+        <p>They start with 100 sc of debt for every point of Rank. He can sell off as much of their initial
           equipment as
           they’d like to help pay this off but they're also no longer allowed to cash CrP in for sc at Step 10.</p>
       </div>
@@ -1173,7 +809,7 @@
         <app-bm-chapter-icon [id]="'IftheydontlSGyTixtci'"></app-bm-chapter-icon>
         <p>If they don’t make payments on it, they may find themselves on the bad end of the law or the loan shark they
           borrowed from but, at the very least, it’s a black mark against them and so they lose Integrity equal to their
-          Severity at the end of every session unless they paid off some of the debt.</p>
+          Rank at the end of every session unless they paid off some of the debt.</p>
       </div>
       <div class="anchor">
         <div id="DerangedheaderRidffUYgEQ" class="anchorTag"></div>
@@ -1183,22 +819,17 @@
       <div class='paragraphShell anchor'>
         <div id='50CEHwrxoWWL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50CEHwrxoWWL'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>33</p>
+        <p><strong>CrP Base </strong>50</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='25oIRnscxYAa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25oIRnscxYAa'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>8</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10sgrfvOxJsf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10sgrfvOxJsf'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>12</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='derangeranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'derangeranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1.5 + 1.5 per Severity, rounded up</p>
+        <div id='10sgrfvOxJsf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10sgrfvOxJsf'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThereareholecPvFSndeXO' class='anchorTag'></div>
@@ -1219,7 +850,7 @@
         <app-bm-chapter-icon [id]="'OncehesrecoEXonJbkWAr'"></app-bm-chapter-icon>
         <p>Once he’s recovered (dropped his Stress back down below his Willpower), he suffers a permanent reduction to
           his
-          Willpower equal to this Flaw’s Severity.</p>
+          Willpower equal to this Injury's Rank.</p>
       </div>
       <div class="anchor">
         <div id="EpilepticheaderSkNaTOGvZe" class="anchorTag"></div>
@@ -1229,22 +860,17 @@
       <div class='paragraphShell anchor'>
         <div id='20fJeDHhvoNs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20fJeDHhvoNs'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10tgYqUcQeRD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10tgYqUcQeRD'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10XiMmonVCmH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10XiMmonVCmH'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='eplieptiopcrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'eplieptiopcrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='10XiMmonVCmH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10XiMmonVCmH'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SomethingisnAOsDXOSNLm' class='anchorTag'></div>
@@ -1258,7 +884,7 @@
         <app-bm-chapter-icon [id]="'WhensomethingDYepakSqVR'"></app-bm-chapter-icon>
         <p>When something triggers a Trauma check for the character, or their Stress reaches above their Int score, roll
           a
-          d20 + this Flaw’s Severity; if the result is above your character’s Con stat, they have a seizure, during
+          d20 + this Injury's Rank; if the result is above your character’s Con stat, they have a seizure, during
           which
           they’re completely helpless for the next 1d3 minutes.</p>
       </div>
@@ -1270,22 +896,17 @@
       <div class='paragraphShell anchor'>
         <div id='15WDDBvwldbT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15WDDBvwldbT'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10WoGzUahWzY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10WoGzUahWzY'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='12kGceSxudlj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'12kGceSxudlj'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>12</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='excommuntranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'excommuntranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='12kGceSxudlj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'12kGceSxudlj'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>12</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterbWMkpRezKu' class='anchorTag'></div>
@@ -1298,12 +919,12 @@
         <div id='WhenspendingxxQMROFyPP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenspendingxxQMROFyPP'"></app-bm-chapter-icon>
         <p>When spending Favor Dice or having Favor Dice spent on them for a beneficial reason relating to a single
-          Covenant, they reduce each dice roll by this Flaw’s Severity.</p>
+          Covenant, they reduce each dice roll by this Burden's Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfFavorisbeGNjjmPAaoF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfFavorisbeGNjjmPAaoF'"></app-bm-chapter-icon>
-        <p>If Favor is being spent on them in a baleful way, the result is instead increased by this Flaw’s Severity.
+        <p>If Favor is being spent on them in a baleful way, the result is instead increased by this Burden's Rank.
         </p>
       </div>
       <div class="anchor">
@@ -1314,22 +935,17 @@
       <div class='paragraphShell anchor'>
         <div id='35IxDnPivwEd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'35IxDnPivwEd'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>23</p>
+        <p><strong>CrP Base </strong>35</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15BqASDdlZkM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15BqASDdlZkM'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='8fhrUyMglsK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8fhrUyMglsK'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>8</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='faterranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'faterranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <div id='8fhrUyMglsK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'8fhrUyMglsK'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>8</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='CertaincharacFnAFcaPQTB' class='anchorTag'></div>
@@ -1340,7 +956,7 @@
       <div class='paragraphShell anchor'>
         <div id='AtcreationtaHbITtgSqK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtcreationtaHbITtgSqK'"></app-bm-chapter-icon>
-        <p>At creation, the GM rolls 1d8! - the Flaw’s Severity. This is the number of sessions the character has before
+        <p>At creation, the GM rolls 1d8! - the Burden's Rank. This is the number of sessions the character has before
           Fate begins to sharpen her shears. </p>
       </div>
       <div class='paragraphShell anchor'>
@@ -1367,22 +983,17 @@
       <div class='paragraphShell anchor'>
         <div id='20LbCcLQAebK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20LbCcLQAebK'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10ZcURVawaiv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10ZcURVawaiv'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naofqlKumDIV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naofqlKumDIV'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
+        <p><strong>Per Rank </strong>6</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='ferlranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ferlranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='naofqlKumDIV' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'naofqlKumDIV'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThewildanduBOszvULYDl' class='anchorTag'></div>
@@ -1395,55 +1006,8 @@
         <div id='FeralcharacteyAYBRduaNo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FeralcharacteyAYBRduaNo'"></app-bm-chapter-icon>
         <p>Feral characters still receive any free skills from their Archetype but increase the cost of all
-          non-Athletics, Survival, and Combat Skill Suites by this Flaw’s Severity * 10 and all non-Athletics, Survival, Combat Advanced Skills by
-          this Flaw’s Severity.</p>
-      </div>
-      <div class="anchor">
-        <div id="GluttonheaderqiKXJOqLSg" class="anchorTag"></div>
-        <h2>Glutton</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15hYLkdLfrMK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15hYLkdLfrMK'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10IQsoMiOBRd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10IQsoMiOBRd'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naKGEyIWiXOY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naKGEyIWiXOY'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='gluttonranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'gluttonranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracternOhThEQmPZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracternOhThEQmPZ'"></app-bm-chapter-icon>
-        <p>This character needs food more than normal or, at least, they feel like they do.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='RationingandvmuBouXuGA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'RationingandvmuBouXuGA'"></app-bm-chapter-icon>
-        <p>Rationing and Going Without food deals double the Stress and damage + 1 damage and Stress per Severity.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='HavingthenoreSwyNiWuvc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'HavingthenoreSwyNiWuvc'"></app-bm-chapter-icon>
-        <p>Having the normal amount of food deals 1d6! / 2 damage and 1d6! / 2 Stress + 1 damage and Stress per 2 points
-          of
-          Severity (rounded up).</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='OnlybydoubliGqCiwwxjpy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'OnlybydoubliGqCiwwxjpy'"></app-bm-chapter-icon>
-        <p>Only by doubling the normal amount of food do they avoid any damage and Stress.</p>
+          non-Athletics, Survival, and Combat Skill Suites by this Burden's Rank * 10 and all non-Athletics, Survival, Combat Advanced Skills by
+          this Burden's Rank.</p>
       </div>
       <div class="anchor">
         <div id="HalflifeheaderxXKZSCXvpm" class="anchorTag"></div>
@@ -1453,22 +1017,17 @@
       <div class='paragraphShell anchor'>
         <div id='75SZvimtSyoh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'75SZvimtSyoh'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>50</p>
+        <p><strong>CrP Base </strong>75</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='20JEpWVbyKhD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20JEpWVbyKhD'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='4hOCVaEtnGI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4hOCVaEtnGI'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>4</p>
+        <p><strong>Per Rank </strong>12</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='haflranklfrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'haflranklfrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>3.5 + 1.5 per Severity, rounded up</p>
+        <div id='4hOCVaEtnGI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'4hOCVaEtnGI'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>4</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterNAxDXtUUdC' class='anchorTag'></div>
@@ -1478,7 +1037,7 @@
       <div class='paragraphShell anchor'>
         <div id='ThischaracterZaFIgEgMzQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterZaFIgEgMzQ'"></app-bm-chapter-icon>
-        <p>This character is affected by the Force Bind Spirit spell, though the Duration is set to 1d4! - Severity
+        <p>This character is affected by the Force Bind Spirit spell, though the Duration is set to 1d4! - Rank
           (minimum
           1) years and a day, with all the benefits and drawbacks.</p>
       </div>
@@ -1497,22 +1056,17 @@
       <div class='paragraphShell anchor'>
         <div id='30forrRUUGgj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30forrRUUGgj'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>20</p>
+        <p><strong>CrP Base </strong>30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='20dLSpkTTMkv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20dLSpkTTMkv'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='nawEjDDOGquK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nawEjDDOGquK'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
+        <p><strong>Per Rank </strong>10</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='hauntrranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'hauntrranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + 1.5 per Severity, rounded up</p>
+        <div id='nawEjDDOGquK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nawEjDDOGquK'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='MostcommonlyDCyBttcjpG' class='anchorTag'></div>
@@ -1542,21 +1096,13 @@
       <div class='paragraphShell anchor'>
         <div id='ThischaractercExPoDVCQa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaractercExPoDVCQa'"></app-bm-chapter-icon>
-        <p>This character reduces the amount of Stress healed Taking a Breather by this Flaw’s Severity and reduces the
-          Relaxation that others would by its Severity, both to a minimum of 0.</p>
+        <p>This character reduces the amount of Stress healed Taking a Breather by this Burden's Rank and reduces the
+          Relaxation that others would by its Rank, both to a minimum of 0.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FinallytheyLCtDFihpxa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FinallytheyLCtDFihpxa'"></app-bm-chapter-icon>
         <p>Finally, they lose 1 Integrity at the end of every session.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisFlawmayJeTfIZBNMs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisFlawmayJeTfIZBNMs'"></app-bm-chapter-icon>
-        <p>This Flaw may be paid off for half cost if the character has lasted 2 sessions with Full Integrity, however
-          it
-          goes
-          back up to full price if they slip out of Full Integrity later.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -1594,22 +1140,17 @@
       <div class='paragraphShell anchor'>
         <div id='20shFGuPBNMk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20shFGuPBNMk'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15HEfdlryUiI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15HEfdlryUiI'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='nauHYGpTBRYs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nauHYGpTBRYs'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='hemophiranrnak' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'hemophiranrnak'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
+        <div id='nauHYGpTBRYs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nauHYGpTBRYs'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TheseguyslovwHuirwvkyt' class='anchorTag'></div>
@@ -1620,7 +1161,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheytakeaddiSMWTnPDQXS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheytakeaddiSMWTnPDQXS'"></app-bm-chapter-icon>
-        <p>They take additional damage equal to their Severity every time they’re wounded although this doesn’t count
+        <p>They take additional damage equal to their Rank every time they’re wounded although this doesn’t count
           towards Trauma or Knock-Backs.</p>
       </div>
       <div class="anchor">
@@ -1631,22 +1172,17 @@
       <div class='paragraphShell anchor'>
         <div id='25ihPGCgJuAb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25ihPGCgJuAb'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>17</p>
+        <p><strong>CrP Base </strong>25</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='20OUqOjrspcF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20OUqOjrspcF'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='6BBJxcEHwoI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6BBJxcEHwoI'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
+        <p><strong>Per Rank </strong>10</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='hpyeropiarank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'hpyeropiarank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity, rounded up</p>
+        <div id='6BBJxcEHwoI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'6BBJxcEHwoI'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThisisthefaIXHMoMCJym' class='anchorTag'></div>
@@ -1660,53 +1196,9 @@
         <app-bm-chapter-icon [id]="'InmeleecombaGRmHmCzSZP'"></app-bm-chapter-icon>
         <p>In melee combat or when making Checks that involve seeing things close to the character, they roll a dice
           shrunk
-          a number of sizes equal to their Severity.</p>
+          a number of sizes equal to their Rank.</p>
       </div>
-      <div class="anchor">
-        <div id="HypochondriacheadernkQTCyMAjA" class="anchorTag"></div>
-        <h2>Hypochondriac</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15OVYTKZPUbh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15OVYTKZPUbh'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10LRfuBxYTej' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10LRfuBxYTej'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naukoyGUSOkk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naukoyGUSOkk'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='hyojprankra' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'hyojprankra'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterJTxiQndOVv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterJTxiQndOVv'"></app-bm-chapter-icon>
-        <p>This character lets the idea of disease and dying really go to their head.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenpoisonedipsvodnjMb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenpoisonedipsvodnjMb'"></app-bm-chapter-icon>
-        <p>When poisoned or sick, they also gain Stress equal to the Flaw’s Severity at the same Speed as the poison or
-          disease.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyMiEHPrjLer' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyMiEHPrjLer'"></app-bm-chapter-icon>
-        <p>Additionally, the threat of disease or poison can be frightening for them and they take Stress equal to half
-          this
-          Flaw’s Severity whenever a disease or poison’s symptoms are mentioned to them as they start to feel like
-          they’re
-          already suffering from it.</p>
-      </div>
+      
       <div class="anchor">
         <div id="IdiotSavantheaderCIOoOIjoNI" class="anchorTag"></div>
         <h2>Idiot Savant</h2>
@@ -1715,22 +1207,17 @@
       <div class='paragraphShell anchor'>
         <div id='20FxDpUYVoCy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20FxDpUYVoCy'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10QvsNwGAKfj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10QvsNwGAKfj'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naVvqydnMrKB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naVvqydnMrKB'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
+        <p><strong>Per Rank </strong>3</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='idiotrsavrtrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'idiotrsavrtrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='naVvqydnMrKB' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'naVvqydnMrKB'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterIxmFjcSviu' class='anchorTag'></div>
@@ -1742,9 +1229,9 @@
       <div class='paragraphShell anchor'>
         <div id='ThischaracterkdjGNNckPa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterkdjGNNckPa'"></app-bm-chapter-icon>
-        <p>This character picks a Skill Suite; all other Skill Suites have their cost increased by the Flaw’s Severity *
+        <p>This character picks a Skill Suite; all other Skill Suites have their cost increased by the Burden's Rank *
           10
-          and all Advanced Skills’ costs increased by the Flaw’s Severity.</p>
+          and all Advanced Skills’ costs increased by the Burden's Rank.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AdditionallyFAUKiMoUkL' class='anchorTag'></div>
@@ -1756,107 +1243,15 @@
       <div class='paragraphShell anchor'>
         <div id='ThechosenSkiHmrActLsdb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThechosenSkiHmrActLsdb'"></app-bm-chapter-icon>
-        <p>The chosen Skill Suite has its cost reduced by the Flaw’s Severity * 5 and all of its Advanced Skills’ costs
-          reduced by the Flaw’s Severity.</p>
+        <p>The chosen Skill Suite has its cost reduced by the Burden's Rank * 5 and all of its Advanced Skills’ costs
+          reduced by the Burden's Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YougetnobonwWLqucaMQr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YougetnobonwWLqucaMQr'"></app-bm-chapter-icon>
         <p>You get no bonus for Skill Suites and Advanced Skills received for free.</p>
       </div>
-      <div class="anchor">
-        <div id="ImpatientheaderMlEfueUjgy" class="anchorTag"></div>
-        <h2>Impatient</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15rTdtlOdanQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15rTdtlOdanQ'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='110QYqNPwiouW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'110QYqNPwiouW'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naFLwuWTmkrT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naFLwuWTmkrT'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='importanitrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'importanitrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TimeisthemoxNbEeRLojd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TimeisthemoxNbEeRLojd'"></app-bm-chapter-icon>
-        <p>Time is the most precious resource of all and this character is the only one who seems to get that.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfaConfrontaUFFDDNcGgU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfaConfrontaUFFDDNcGgU'"></app-bm-chapter-icon>
-        <p>If a Confrontation lasts longer than 5 - (this Flaw’s Severity) Argument-based Checks, the character starts receiving
-          increasing
-          amounts of Stress. An 'Argument-based' is any Check that is specifically made to make or counter an Argument. It doesn't include 
-        auxiliary Checks, such as an Intuition Check to confirm suspicions about what's going on.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisstartsatwkzJtroRYf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisstartsatwkzJtroRYf'"></app-bm-chapter-icon>
-        <p>This starts at a d4! but
-          increases by 1 dice size for each time another Argument-based Check is made.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='IftheSeveritIxZWwjDMQu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheSeveritIxZWwjDMQu'"></app-bm-chapter-icon>
-        <p>If the Severity is greater than 5, it increases that starting d4! for every point of Severity above that.</p>
-      </div>
-      <div class="anchor">
-        <div id="ImpotentheaderfYzBcyBwWW" class="anchorTag"></div>
-        <h2>Impotent</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15SOTZCZkQvx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15SOTZCZkQvx'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10KTdINYsTOt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10KTdINYsTOt'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='19BpSVAHhLyv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'19BpSVAHhLyv'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>19</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='impotentranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'impotentranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfthischaracWYsHiBhtGV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfthischaracWYsHiBhtGV'"></app-bm-chapter-icon>
-        <p>If this character was a tree, he’d have particularly softwood, if you know what I mean. His lack of
-          confidence in
-          his abilities in the bedroom tends to affect the other parts of his life, often snowballing; </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ReducetheHonTeEvyoSqrx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ReducetheHonTeEvyoSqrx'"></app-bm-chapter-icon>
-        <p>Reduce the Integrity cap of this character by 1 for every point of Severity. They also don’t receive the free
-          Grit
-          Die for hitting their max Integrity.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AtmaxSeverittraDzHAPRw' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtmaxSeverittraDzHAPRw'"></app-bm-chapter-icon>
-        <p>At max Severity, the character is unable to perform because the tree has been pruned: they’re a eunuch.</p>
-      </div>
+      
       <div class="anchor">
         <div id="InbredheaderCLxfbrofoK" class="anchorTag"></div>
         <h2>Inbred</h2>
@@ -1865,22 +1260,17 @@
       <div class='paragraphShell anchor'>
         <div id='10YmZXDHvXWe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10YmZXDHvXWe'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
+        <p><strong>CrP Base </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='5HcuorTMMwI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5HcuorTMMwI'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10xTFmpQnchZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10xTFmpQnchZ'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='inbredranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'inbredranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.67 + .33 per Severity, rounded up</p>
+        <div id='10xTFmpQnchZ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10xTFmpQnchZ'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='OftenacurseFeJWvleLDT' class='anchorTag'></div>
@@ -1894,7 +1284,7 @@
         <app-bm-chapter-icon [id]="'TypicallythivhSkPjPiia'"></app-bm-chapter-icon>
         <p>Typically, this is pretty mild for the most part, but it means that, when you increase this
           character’s
-          Intellect, Presence, or Willpower, you’re going to add the Flaw's Severity to the cost.</p>
+          Intellect, Presence, or Willpower, you’re going to add the Burden's Rank to the cost.</p>
       </div>
       <div class="anchor">
         <div id="InfirmheaderbevIgDJeBP" class="anchorTag"></div>
@@ -1904,22 +1294,17 @@
       <div class='paragraphShell anchor'>
         <div id='10eMtIavseYI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10eMtIavseYI'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
+        <p><strong>CrP Base </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10vBCOttwwGH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10vBCOttwwGH'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10tNqyelPTpp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10tNqyelPTpp'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='infirmarankrna' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'infirmarankrna'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='10tNqyelPTpp' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10tNqyelPTpp'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracteriKKcYeiaTk' class='anchorTag'></div>
@@ -1929,7 +1314,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenmakingaxTaApAhCDe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenmakingaxTaApAhCDe'"></app-bm-chapter-icon>
-        <p>When making a Check vs either, reduce your roll by the Flaw’s Severity.</p>
+        <p>When making a Check vs either, reduce your roll by the Injury's Rank.</p>
       </div>
       <div class="anchor">
         <div id="InsomniacheaderIBVWLnZXkc" class="anchorTag"></div>
@@ -1939,22 +1324,17 @@
       <div class='paragraphShell anchor'>
         <div id='30plyjNHpmIM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30plyjNHpmIM'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>20</p>
+        <p><strong>CrP Base </strong>30</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15uZBdMHfeaf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15uZBdMHfeaf'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naevorVrGUlS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naevorVrGUlS'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='imsomniaranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'imsomniaranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <div id='naevorVrGUlS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'naevorVrGUlS'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaractermiKnSHNhqd' class='anchorTag'></div>
@@ -1964,51 +1344,12 @@
       <div class='paragraphShell anchor'>
         <div id='ApersonrequiFELddYESav' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ApersonrequiFELddYESav'"></app-bm-chapter-icon>
-        <p>A person requires an additional number of hours of sleep each day equal to this Flaw’s Severity.</p>
+        <p>A person requires an additional number of hours of sleep each day equal to this Injury's Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IftheydontJBzewjfDam' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftheydontJBzewjfDam'"></app-bm-chapter-icon>
         <p>If they don’t reach this number, they’re considered to be Rationing their sleep.</p>
-      </div>
-      <div class="anchor">
-        <div id="IrritableBoweheaderMBapbikkBu" class="anchorTag"></div>
-        <h2>Irritable Bowels</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10cgcougZXpY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10cgcougZXpY'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='5yluRvZauMB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'5yluRvZauMB'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='namyikkzVrNU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'namyikkzVrNU'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='irritablnrownl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'irritablnrownl'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.33 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='SomethingabouuEFLBiAkVv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SomethingabouuEFLBiAkVv'"></app-bm-chapter-icon>
-        <p>Something about this character’s guts are off and that can make processing food hard on
-          them.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhenyoueatnSrhfgsJZAQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenyoueatnSrhfgsJZAQ'"></app-bm-chapter-icon>
-        <p>When you eat any food, you take damage equal to this
-          Flaw’s
-          Severity but you can reduce this by 1 for each additional sc you spend on the meal. This doesn't increase the Relaxation of the meal.</p>
       </div>
       <div class="anchor">
         <div id="LabyrinthitisheaderfWjrwFnmrQ" class="anchorTag"></div>
@@ -2018,22 +1359,17 @@
       <div class='paragraphShell anchor'>
         <div id='15KdRSMKNltp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15KdRSMKNltp'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='5VSzYcgeTwD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5VSzYcgeTwD'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='nafJBopGzjwh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nafJBopGzjwh'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='lirabriojrrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'lirabriojrrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.67 + .33 per Severity, rounded up</p>
+        <div id='nafJBopGzjwh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nafJBopGzjwh'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TheressomethSNyOjKxtUY' class='anchorTag'></div>
@@ -2044,7 +1380,7 @@
       <div class='paragraphShell anchor'>
         <div id='WhenmakinganzDoTbswGcR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenmakinganzDoTbswGcR'"></app-bm-chapter-icon>
-        <p>When making any Checks that involve balancing, they receive a penalty equal to their Severity.</p>
+        <p>When making any Checks that involve balancing, they receive a penalty equal to their Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdditionallyoXkgQKBoYg' class='anchorTag'></div>
@@ -2053,38 +1389,7 @@
           the
           Check’s dice by 1 size.</p>
       </div>
-      <div class="anchor">
-        <div id="lemmingheahrioe" class="anchorTag"></div>
-        <h2>Lemming </h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='lemmingejio' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'lemmingejio'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='lememingperseve' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'lememingperseve'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='lemmingsevercap' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'lemmingsevercap'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='lemmingrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'lemmingrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='ifthallthierojioew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifthallthierojioew'"></app-bm-chapter-icon>
-        <p>If all their friends were jumping off a bridge, this character would leap without looking. When in a Confrontation, if this character 
-          is on the side with the fewest people, they receive this Flaw's Severity as a penalty to all their Checks.
-        </p>
-      </div>
+      
       <div class="anchor">
         <div id="LimpheaderaYmDjKsaBX" class="anchorTag"></div>
         <h2>Limp</h2>
@@ -2104,19 +1409,19 @@
           <tbody>
             <tr>
               <td>Walking</td>
-              <td>Severity</td>
+              <td>Rank</td>
             </tr>
             <tr>
               <td>Jogging</td>
-              <td>Severity * 2</td>
+              <td>Rank * 2</td>
             </tr>
             <tr>
               <td>Running</td>
-              <td>Severity * 3</td>
+              <td>Rank * 3</td>
             </tr>
             <tr>
               <td>Sprinting</td>
-              <td>Severity * 4</td>
+              <td>Rank * 4</td>
             </tr>
           </tbody>
         </table>
@@ -2150,22 +1455,17 @@
       <div class='paragraphShell anchor'>
         <div id='20xUxXFxyvQt' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20xUxXFxyvQt'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='20hheADnaBWb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20hheADnaBWb'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='4KCoxXvZtcJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4KCoxXvZtcJ'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>4</p>
+        <p><strong>Per Rank </strong>10</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='limnpnorpao' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'limnpnorpao'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1.5 per Severity, rounded up</p>
+        <div id='4KCoxXvZtcJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'4KCoxXvZtcJ'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>4</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SomethingisnZsvDYpMdep' class='anchorTag'></div>
@@ -2192,41 +1492,36 @@
       <div class='paragraphShell anchor'>
         <div id='45ipKCnTTSss' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'45ipKCnTTSss'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>26</p>
+        <p><strong>CrP Base </strong>55</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='55UdUNVrJZtT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'55UdUNVrJZtT'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>18</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='2FtHQsviDTN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2FtHQsviDTN'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>2</p>
+        <p><strong>Per Rank </strong>30</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missingarmrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missingarmrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 3 per Severity</p>
+        <div id='2FtHQsviDTN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'2FtHQsviDTN'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='MostlikelythsfwEUFdBeU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'MostlikelythsfwEUFdBeU'"></app-bm-chapter-icon>
         <p>Most likely this is the result of some terrible accident or horrific war wound, though some people are born
           with
-          an arm missing. Either way, this Flaw represents the arm being gone above the elbow.</p>
+          an arm missing. Either way, this Injury represents the arm being gone above the elbow.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThefirstlevewbGbiTZMlf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThefirstlevewbGbiTZMlf'"></app-bm-chapter-icon>
-        <p>The first level of Severity means that the character is unable to wield two-handed weapons, employ bows or
+        <p>The first level of Rank means that the character is unable to wield two-handed weapons, employ bows or
           crossbows, or anything else that needs two hands so they can only use the 1-Handed Weapon with Free Hand or 2
           Hands Free Weapon Styles.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThenextlevelrqPegWVVMu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThenextlevelrqPegWVVMu'"></app-bm-chapter-icon>
-        <p>The next level of Severity prevents the character from using any weapons, and makes them unable to cast
+        <p>The next level of Rank prevents the character from using any weapons, and makes them unable to cast
           spells
           with Somatic components</p>
       </div>
@@ -2238,27 +1533,22 @@
       <div class='paragraphShell anchor'>
         <div id='10UsUrZJOFXj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10UsUrZJOFXj'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>7</p>
+        <p><strong>CrP Base </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10LIjToLHNvh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10LIjToLHNvh'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10FPxXGcPzot' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10FPxXGcPzot'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missighindirrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missighindirrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='10FPxXGcPzot' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10FPxXGcPzot'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='EachSeverityNjiwmUJyms' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'EachSeverityNjiwmUJyms'"></app-bm-chapter-icon>
-        <p>Each Severity of this Flaw represents another finger missing from one or both hands of the character (roll
+        <div id='EachRankNjiwmUJyms' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'EachRankNjiwmUJyms'"></app-bm-chapter-icon>
+        <p>Each Rank of this Injury represents another finger missing from one or both hands of the character (roll
           randomly to determine which fingers).</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -2266,7 +1556,7 @@
         <app-bm-chapter-icon [id]="'WhenperforminviDvqBXROP'"></app-bm-chapter-icon>
         <p>When performing Checks that require fine manual dexterity (sowing, tying rope, lock picking), the Check takes
           a
-          penalty equal to this Flaw’s Severity.</p>
+          penalty equal to this Injury's Rank.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IfallthefinlfvlYVAtqS' class='anchorTag'></div>
@@ -2294,22 +1584,17 @@
       <div class='paragraphShell anchor'>
         <div id='20xgdbhwLQgI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20xgdbhwLQgI'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15SyTJhVOUyR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15SyTJhVOUyR'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10nRJcejHYPj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10nRJcejHYPj'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missingearrrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missingearrrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <div id='10nRJcejHYPj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10nRJcejHYPj'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='WhileitwontoguQrLNkFA' class='anchorTag'></div>
@@ -2320,14 +1605,14 @@
       <div class='paragraphShell anchor'>
         <div id='ThismeansthabTNIDCkfJW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismeansthabTNIDCkfJW'"></app-bm-chapter-icon>
-        <p>This means that, for Checks involving sound, they take a penalty equal to this Flaw’s Severity.</p>
+        <p>This means that, for Checks involving sound, they take a penalty equal to this Injury’s Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdditionallyuAeFKMcbIN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallyuAeFKMcbIN'"></app-bm-chapter-icon>
         <p>Additionally, they’re much slower to react: if they can’t see a threat, they increase their Initiative by 1
           for
-          every point of Severity. </p>
+          every point of Rank. </p>
       </div>
       <div class="anchor">
         <div id="MissingEyeheaderhLRHlECmrB" class="anchorTag"></div>
@@ -2337,22 +1622,17 @@
       <div class='paragraphShell anchor'>
         <div id='30COWsyofyOK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30COWsyofyOK'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>33</p>
+        <p><strong>CrP Base </strong>50</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='50pLMKXbAtQT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50pLMKXbAtQT'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>16</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='2smIeUDpEPh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2smIeUDpEPh'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>2</p>
+        <p><strong>Per Rank </strong>20</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missinreyerank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missinreyerank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>3 per Severity</p>
+        <div id='2smIeUDpEPh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'2smIeUDpEPh'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='YoucanimaginNjcketowgS' class='anchorTag'></div>
@@ -2363,7 +1643,7 @@
       <div class='paragraphShell anchor'>
         <div id='ThefirstSeveBfrhNGRQfy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThefirstSeveBfrhNGRQfy'"></app-bm-chapter-icon>
-        <p>The first Severity means that the character automatically attacks second when engaging in melee, even if his
+        <p>The first Rank means that the character automatically attacks second when engaging in melee, even if his
           weapon has the greater reach and everything is counted as two range categories further for ranged weaponry.
         </p>
       </div>
@@ -2375,7 +1655,7 @@
       <div class='paragraphShell anchor'>
         <div id='ThesecondSevKTaqiWuJEP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThesecondSevKTaqiWuJEP'"></app-bm-chapter-icon>
-        <p>The second Severity means that the character has lost both eyes.</p>
+        <p>The second Rank means that the character has lost both eyes.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='InmeleecombaDQMEqoUrcd' class='anchorTag'></div>
@@ -2396,34 +1676,29 @@
       <div class='paragraphShell anchor'>
         <div id='30NMbBGXrRPY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30NMbBGXrRPY'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>33</p>
+        <p><strong>CrP Base </strong>50</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='50nUqTfrorzH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50nUqTfrorzH'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>16</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='2dzdpSPbHnS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2dzdpSPbHnS'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>2</p>
+        <p><strong>Per Rank </strong>20</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missinghranrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missinghranrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>3 per Severity</p>
+        <div id='2dzdpSPbHnS' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'2dzdpSPbHnS'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThisFlawmeanrwEBaxHFNM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisFlawmeanrwEBaxHFNM'"></app-bm-chapter-icon>
-        <p>This Flaw means that the character has lost part of one or both of their arms below the elbow and so they
+        <p>This Injury means that the character has lost part of one or both of their arms below the elbow and so they
           have
           some level of articulation.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThefirstSevegdUIBRSpau' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThefirstSevegdUIBRSpau'"></app-bm-chapter-icon>
-        <p>The first Severity means that the character is unable to wield two-handed weapons except crossbows and
+        <p>The first Rank means that the character is unable to wield two-handed weapons except crossbows and
           firearms,
           although they reduce their attack dice by 1 size unless steading them (on top of the normal penalties).</p>
       </div>
@@ -2435,7 +1710,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='AtthesecondiPqEicEDBZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtthesecondiPqEicEDBZ'"></app-bm-chapter-icon>
-        <p>At the second Severity, they’re unable to use any weapons or perform any Check that requires fingers.</p>
+        <p>At the second Rank, they’re unable to use any weapons or perform any Check that requires fingers.</p>
       </div>
       <div class="anchor">
         <div id="MissingLegheaderZUSKsYDxbp" class="anchorTag"></div>
@@ -2445,22 +1720,17 @@
       <div class='paragraphShell anchor'>
         <div id='40ZwWaqxcelV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'40ZwWaqxcelV'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>33</p>
+        <p><strong>CrP Base </strong>50</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='50RQOZrUjiRQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50RQOZrUjiRQ'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>16</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='2CzHghfQAEE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2CzHghfQAEE'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>2</p>
+        <p><strong>Per Rank </strong>20</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missinglegtrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missinglegtrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>3 per Severity, rounded up</p>
+        <div id='2CzHghfQAEE' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'2CzHghfQAEE'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>2</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='MissingaleggvZsRWFpZK' class='anchorTag'></div>
@@ -2470,7 +1740,7 @@
       <div class='paragraphShell anchor'>
         <div id='AtthefirstSMiSefmdNeJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtthefirstSMiSefmdNeJ'"></app-bm-chapter-icon>
-        <p>At the first Severity, without some kind of peg leg, you're limited to Crawling or Walking but you
+        <p>At the first Rank, without some kind of peg leg, you're limited to Crawling or Walking but you
           take
           damage as if you're Sprinting.</p>
       </div>
@@ -2482,7 +1752,7 @@
       <div class='paragraphShell anchor'>
         <div id='AtthesecondaAAWGRYCmr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtthesecondaAAWGRYCmr'"></app-bm-chapter-icon>
-        <p>At the second Severity, even with some sort of rolling platform to seat yourself on, you're only able to move
+        <p>At the second Rank, even with some sort of rolling platform to seat yourself on, you're only able to move
           up
           to a Jog but you take damage when doing so as if you're Running. </p>
       </div>
@@ -2499,22 +1769,17 @@
       <div class='paragraphShell anchor'>
         <div id='15pdMFimaJzG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pdMFimaJzG'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10UsgAzWFeJl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10UsgAzWFeJl'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='4SZoEAGMZrD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4SZoEAGMZrD'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>4</p>
+        <p><strong>Per Rank </strong>6</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='missingreethrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'missingreethrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='4SZoEAGMZrD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'4SZoEAGMZrD'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>4</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AfewteethmiYgQbAzBjRW' class='anchorTag'></div>
@@ -2526,7 +1791,7 @@
         <app-bm-chapter-icon [id]="'AttheveryleugtzJHenEb'"></app-bm-chapter-icon>
         <p>At the very least, you have to be careful to eat softer foods, resulting in meals being more expensive;
           increase
-          the price of food per day by 1 sc for each point of Severity. This includes rations.</p>
+          the price of food per day by 1 sc for each point of Rank. This includes rations.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IftheyreScakBgruigBXu' class='anchorTag'></div>
@@ -2543,46 +1808,7 @@
         <div id='MissingteethEZOuxKjEvA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'MissingteethEZOuxKjEvA'"></app-bm-chapter-icon>
         <p>Missing teeth can also make some words harder to say. When needing to make a Language Check, this character
-          receives a penalty equal to this Flaw’s Severity.</p>
-      </div>
-      <div class="anchor">
-        <div id="MonotheistheaderAScHQRVdII" class="anchorTag"></div>
-        <h2>Monotheist</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15JNVckynTlq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15JNVckynTlq'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10qsTArAuUcl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10qsTArAuUcl'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='12fhwcghCwKi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'12fhwcghCwKi'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>12</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='mionithrieojrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'mionithrieojrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ForthischaraXulNXfoSEv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ForthischaraXulNXfoSEv'"></app-bm-chapter-icon>
-        <p>For this character, there is only one true god, and all other divines are false deities or the work of
-          devils.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhenspendingxxNmqAYjXE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenspendingxxNmqAYjXE'"></app-bm-chapter-icon>
-        <p>When spending Favor Dice or having Favor Dice spent on them for a beneficial reason, if it is not a miracle
-          from
-          their Divine, they reduce each dice roll by this Flaw’s Severity.</p>
+          receives a penalty equal to this Injury's Rank.</p>
       </div>
       <div class="anchor">
         <div id="MuleheaderTOMugOYXOS" class="anchorTag"></div>
@@ -2592,22 +1818,17 @@
       <div class='paragraphShell anchor'>
         <div id='15HjAUxYeYKc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15HjAUxYeYKc'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10clCgyVDbSu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10clCgyVDbSu'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='naCNwbkJPUGQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'naCNwbkJPUGQ'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>24</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='mulerankl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'mulerankl'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + .5 per Severity, rounded up</p>
+        <p><strong>Rank Cap </strong>24</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='WhiletheymayyYBkMyXwIf' class='anchorTag'></div>
@@ -2619,7 +1840,7 @@
       <div class='paragraphShell anchor'>
         <div id='ReducetheHonHqkbNynIEb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ReducetheHonHqkbNynIEb'"></app-bm-chapter-icon>
-        <p>Reduce the Integrity cap of this character by 1 for every point of Severity and they also don’t receive the
+        <p>Reduce the Integrity cap of this character by 1 for every point of Rank and they also don’t receive the
           free
           Grit Die for hitting their max Integrity. </p>
       </div>
@@ -2636,46 +1857,41 @@
       <div class='paragraphShell anchor'>
         <div id='20QxDVJEaefA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20QxDVJEaefA'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15UGjxrEUyoU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15UGjxrEUyoU'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='6EzQpxjEcLJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6EzQpxjEcLJ'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='muteranksl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'muteranksl'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
+        <div id='6EzQpxjEcLJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'6EzQpxjEcLJ'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThiscouldbeZRmNqDWdst' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThiscouldbeZRmNqDWdst'"></app-bm-chapter-icon>
         <p>This could be a natural birth defect or the result of someone cutting out the character’s tongue: either way,
           at
-          lower Severity, the character has trouble articulating sounds and, at higher Severity, making vocal sounds at all.
+          lower Rank, the character has trouble articulating sounds and, at higher Rank, making vocal sounds at all.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='WhenmakingChfZMpdthasU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenmakingChfZMpdthasU'"></app-bm-chapter-icon>
-        <p>When making Checks that involve making verbal sound, reduce that Check dice by 1 for every point of Severity.
+        <p>When making Checks that involve making verbal sound, reduce that Check dice by 1 for every point of Rank.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AtmaxSeveritUuOygLjKFB' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtmaxSeveritUuOygLjKFB'"></app-bm-chapter-icon>
-        <p>At max Severity, the character is unable to make any sound at all.</p>
+        <p>At max Rank, the character is unable to make any sound at all.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='CharacterswitmskmpMuUAH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'CharacterswitmskmpMuUAH'"></app-bm-chapter-icon>
-        <p>Characters with this Flaw cannot be Weird-Adept Archetypes that require speech of any kind.</p>
+        <p>Characters with this Injury cannot be Weird-Adept Archetypes that require speech of any kind.</p>
       </div>
       <div class="anchor">
         <div id="MyopiaheaderdmimYbkqOx" class="anchorTag"></div>
@@ -2685,22 +1901,17 @@
       <div class='paragraphShell anchor'>
         <div id='20iCPtLiiiWa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20iCPtLiiiWa'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15QJKXJTjAwd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15QJKXJTjAwd'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='6nGkeinhgyi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6nGkeinhgyi'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='myoparanks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'myoparanks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <div id='6nGkeinhgyi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'6nGkeinhgyi'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThisisthefapreucbGfpn' class='anchorTag'></div>
@@ -2714,43 +1925,9 @@
         <app-bm-chapter-icon [id]="'InrangedcombCqrtPweOuG'"></app-bm-chapter-icon>
         <p>In ranged combat or when making Checks that involve seeing things far away from the character, they roll a
           dice
-          shrunk a number of sizes equal to their Severity.</p>
+          shrunk a number of sizes equal to their Rank.</p>
       </div>
-      <div class="anchor">
-        <div id="NeuroticheadergZsMEePyPl" class="anchorTag"></div>
-        <h2>Neurotic</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='20SiNkWZZPrc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20SiNkWZZPrc'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10xMxfQHcEOI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10xMxfQHcEOI'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naXMRovOIhTf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naXMRovOIhTf'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='neuriotiocra' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'neuriotiocra'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterhhknLSZjSr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterhhknLSZjSr'"></app-bm-chapter-icon>
-        <p>This character has issues dealing with stress.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='TheytakeanayXlEWBhqLl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheytakeanayXlEWBhqLl'"></app-bm-chapter-icon>
-        <p>They take an additional Stress equal to their Severity every time they’re inflicted with Stress.</p>
-      </div>
+      
       <div class="anchor">
         <div id="NoDepthPerceheaderaJIstRgCCR" class="anchorTag"></div>
         <h2>No Depth Perception</h2>
@@ -2759,22 +1936,17 @@
       <div class='paragraphShell anchor'>
         <div id='20PaVBgyHLbD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20PaVBgyHLbD'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>16</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15EzpHFQhkNN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15EzpHFQhkNN'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='6wmYOyzIjES' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6wmYOyzIjES'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='nodepthjioreperjo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nodepthjioreperjo'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
+        <div id='6wmYOyzIjES' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'6wmYOyzIjES'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterMDJyBIkweL' class='anchorTag'></div>
@@ -2784,14 +1956,14 @@
       <div class='paragraphShell anchor'>
         <div id='ThischaracterBHRTKjjUSS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterBHRTKjjUSS'"></app-bm-chapter-icon>
-        <p>This character’s Measure is treated as 1 ft shorter for every point of Severity and everything is counted as
+        <p>This character’s Measure is treated as 1 ft shorter for every point of Rank and everything is counted as
           1
-          range category further for ranged weaponry for every point of Severity.</p>
+          range category further for ranged weaponry for every point of Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdditionallyWPPTTLXbtJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallyWPPTTLXbtJ'"></app-bm-chapter-icon>
-        <p>Additionally, they shrink their dice size by 1 for every point of Severity for Checks involving estimating
+        <p>Additionally, they shrink their dice size by 1 for every point of Rank for Checks involving estimating
           distances.</p>
       </div>
       <div class="anchor">
@@ -2802,22 +1974,17 @@
       <div class='paragraphShell anchor'>
         <div id='15cnSuXPKBsi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15cnSuXPKBsi'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15bZvfFIKMle' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15bZvfFIKMle'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='20zNuTrduprA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20zNuTrduprA'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>20</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='oprhanrankf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'oprhanrankf'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
+        <div id='20zNuTrduprA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'20zNuTrduprA'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='OrphansarethjNEDJwiCVi' class='anchorTag'></div>
@@ -2829,7 +1996,7 @@
       <div class='paragraphShell anchor'>
         <div id='ReducetheHonOVoBCeoxFW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ReducetheHonOVoBCeoxFW'"></app-bm-chapter-icon>
-        <p>Reduce the Integrity cap of this character by 1 for every point of Severity but gain a discount to either the
+        <p>Reduce the Integrity cap of this character by 1 for every point of Rank but gain a discount to either the
           Streetwise or Trades Skill Suites.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -2843,182 +2010,10 @@
         <app-bm-chapter-icon [id]="'AdditionallyFIheLFtNTT'"></app-bm-chapter-icon>
         <p>Additionally, orphans often don’t have the resources of others and, when selecting their starting equipment,
           they
-          remove 1 item per 3 points of Severity, rounded up. If selecting the “Blank Slate Kit” they lose 30 sc per
-          Severity instead.</p>
+          remove 1 item per 3 points of Rank, rounded up. If selecting the “Blank Slate Kit” they lose 30 sc per
+          Rank instead.</p>
       </div>
-      <div class="anchor">
-        <div id="pacificfjiotheadeing" class="anchorTag"></div>
-        <h2>Pacifist </h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='pacifbase' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'pacifbase'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='pacifpersav' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'pacifpersav'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='pacfiseverityc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'pacfiseverityc'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>20</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='pacifisranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'pacifisranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='ofrewihojsiojes' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ofrewihojsiojes'"></app-bm-chapter-icon>
-        <p>This character foreswears hurting others for any reason and finds the idea of violence repulsive. Whenever they roll an attack that could inflict damage, they gain Stress equal to Severity. If they're intent is to non-lethally subdue someone, via unarmed attacks, for example, they take half stress (rounded down) per attack as it's still a form of violence.</p>
-      </div>
-      <div class="anchor">
-        <div id="PhobiaheaderQQhvnCtRSg" class="anchorTag"></div>
-        <h2>Phobia</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <table class="float all-center first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="2">Phobias Table</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Roll (d20)</th>
-            <th>Phobia</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Animals</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Tight Spaces</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Combat</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Commitment</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Confrontations</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>The Weird</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Religion</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>Plague</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>The Dead</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>The Opposite Gender</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Heights</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>The Dark</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>A Monster or Monster Type</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Spiders</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Snakes</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>Open Spaces</td>
-          </tr>
-          <tr>
-            <td>17</td>
-            <td>Crowded Spaces</td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>Failure</td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td>Authority Figures</td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>Pain</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class='paragraphShell anchor'>
-        <div id='15YvOVsFzjQZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15YvOVsFzjQZ'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10xRWLiHwGLQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10xRWLiHwGLQ'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naqHmQzVbXfo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naqHmQzVbXfo'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='phobiranklra' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'phobiranklra'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterUChQWnlibV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterUChQWnlibV'"></app-bm-chapter-icon>
-        <p>This character is unnaturally afraid of something, beyond all reason and ration.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenfacedwitKmlEEyCIQn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenfacedwitKmlEEyCIQn'"></app-bm-chapter-icon>
-        <p>When faced with their phobia, they gain Stress equal to their phobia’s Severity for each time they have to
-          interact with it (which is normally represented by some kind of Check).</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisFlawcankhWqqIMcOd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisFlawcankhWqqIMcOd'"></app-bm-chapter-icon>
-        <p>This Flaw can be taken multiple times for different Phobias, each counted as their own separate Flaw with its
-          own
-          Severity.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='YoucanofcoPKkKHkAIVd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'YoucanofcoPKkKHkAIVd'"></app-bm-chapter-icon>
-        <p>You can, of course, choose whatever fear you feel fits your character, but we’ve provided a table you can use
-          to
-          generate one for you.</p>
-      </div>
+      
       <div class="anchor">
         <div id="PoorheaderErbkkhCjwR" class="anchorTag"></div>
         <h2>Poor</h2>
@@ -3027,22 +2022,17 @@
       <div class='paragraphShell anchor'>
         <div id='15egxLGjETHG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15egxLGjETHG'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10xUJgBTbDDH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10xUJgBTbDDH'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10yGhCnFlPeU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10yGhCnFlPeU'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='poorranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'poorranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='10yGhCnFlPeU' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10yGhCnFlPeU'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SomecharacterfiGPsnKsvZ' class='anchorTag'></div>
@@ -3052,7 +2042,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenselectingqOaXiFAUqN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenselectingqOaXiFAUqN'"></app-bm-chapter-icon>
-        <p>When selecting equipment, remove 45 sc worth of equipment and/or starting cash per Severity instead.</p>
+        <p>When selecting equipment, remove 45 sc worth of equipment and/or starting cash per Rank instead.</p>
       </div>
       <div class="anchor">
         <div id="RefugeeheaderAkSpgtlWeb" class="anchorTag"></div>
@@ -3062,22 +2052,17 @@
       <div class='paragraphShell anchor'>
         <div id='30BIPZiVsdwr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30BIPZiVsdwr'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>20</p>
+        <p><strong>CrP Base </strong>25</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='0mrQLQvioXL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'0mrQLQvioXL'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>0</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='1fmXdqXdyMI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'1fmXdqXdyMI'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>1</p>
+        <p><strong>Per Rank </strong>0</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='reruererankl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'reruererankl'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>2</p>
+        <div id='1fmXdqXdyMI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'1fmXdqXdyMI'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>1</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FleeingfromtjJLSEhwqLr' class='anchorTag'></div>
@@ -3100,77 +2085,7 @@
           fleeing
           to costs double as they had to learn it under stressful circumstances.</p>
       </div>
-      <div class="anchor">
-        <div id="selcoinvdieovjiwo" class="anchorTag"></div>
-        <h2>Self-Conscious</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='seckioewciocew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15wftCnVEcVz'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='sejiocewsever' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'sejiocewsever'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='secejsioefjica' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'secejsioefjica'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='csecesjiojc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'csecesjiojc'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='chioajcioejwiofew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'chioajcioejwiofew'"></app-bm-chapter-icon>
-        <p>Characters with this Flaw have a hard time being in the limelight due to thinking they have some obvious flaw.
-          Which they do - their self consciousness. Whenever they make a Check where people are watching them (whether that's a 
-          Confrontation Check where they're the main talker or if they're making a Skill Check while their companions look on), they receive
-          Stress equal to this Flaw's Severity.
-        </p>
-      </div>
-      <div class="anchor">
-        <div id="SensitiveheaderJdvTOwHLwF" class="anchorTag"></div>
-        <h2>Sensitive</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='20cQoyAzNjbf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20cQoyAzNjbf'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15OlfQfrOkuZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15OlfQfrOkuZ'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naCRtmVfuVYV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naCRtmVfuVYV'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='sensetiojvrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'sensetiojvrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + 1 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThingsjustgeMusHFVvInW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThingsjustgeMusHFVvInW'"></app-bm-chapter-icon>
-        <p>Things just get to this character more than others.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhentheygainUdStzpTlEC' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhentheygainUdStzpTlEC'"></app-bm-chapter-icon>
-        <p>When they gain Stress during a Confrontation, they take an additional amount of Stress equal to their
-          Severity.
-        </p>
-      </div>
+            
       <div class="anchor">
         <div id="ShakyHandsheadergZnORfJQKB" class="anchorTag"></div>
         <h2>Shaky Hands</h2>
@@ -3179,22 +2094,17 @@
       <div class='paragraphShell anchor'>
         <div id='20iiCJvGImau' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20iiCJvGImau'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15bUqqPudRkS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15bUqqPudRkS'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naRwNXpnKrxC' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naRwNXpnKrxC'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='shakheyrahrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'shakheyrahrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
+        <div id='naRwNXpnKrxC' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'naRwNXpnKrxC'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracterOlMpecMGOt' class='anchorTag'></div>
@@ -3204,13 +2114,13 @@
       <div class='paragraphShell anchor'>
         <div id='WhenfiringraDwkDjtdBTO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenfiringraDwkDjtdBTO'"></app-bm-chapter-icon>
-        <p>When firing ranged weapons, they increase their Recovery by the Severity of this Flaw.</p>
+        <p>When firing ranged weapons, they increase their Recovery by the Rank of this Injury.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AdditionallylOrvHwIiPY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallylOrvHwIiPY'"></app-bm-chapter-icon>
         <p>Additionally, when doing anything that requires fine movement with their hands and fingers they can either
-          increase the time equal to their Severity or take a penalty equal to their Severity.</p>
+          increase the time equal to their Rank or take a penalty equal to their Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThespecificsSppPsjXXfS' class='anchorTag'></div>
@@ -3219,51 +2129,7 @@
           GM.
         </p>
       </div>
-      <div class="anchor">
-        <div id="SlowwittedheaderjicjkCYWOg" class="anchorTag"></div>
-        <h2>Slow-witted</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15wftCnVEcVz' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15wftCnVEcVz'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10noFoushRSM' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10noFoushRSM'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naiBMJJhjbZU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naiBMJJhjbZU'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='slowritjeiotjera' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'slowritjeiotjera'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 + .5 per Severity, rounded up</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaractermSquSqlxZN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaractermSquSqlxZN'"></app-bm-chapter-icon>
-        <p>This character takes a little longer than others to think through things. This Flaw doesn’t dictate how smart
-          a
-          person is, simply how fast they think.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenmakinganfrhXrMqJDK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenmakinganfrhXrMqJDK'"></app-bm-chapter-icon>
-        <p>When making an Int- or Pre-base Check, they can either increase the time equal to their Severity or take a
-          penalty equal to their Severity.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThespecificsCNcmLpQtqK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThespecificsCNcmLpQtqK'"></app-bm-chapter-icon>
-        <p>The specifics of the time increase are determined by how long the task usually takes and are left up to the
-          GM.
-        </p>
-      </div>
+      
       <div class="anchor">
         <div id="StutterheadergeuOgVIFdt" class="anchorTag"></div>
         <h2>Stutter</h2>
@@ -3272,22 +2138,17 @@
       <div class='paragraphShell anchor'>
         <div id='20kXGLgjnCVM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20kXGLgjnCVM'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15IYDdmGUQKY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15IYDdmGUQKY'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='6EmOEjGsoqh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6EmOEjGsoqh'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>6</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='stutterranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'stutterranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 per Severity</p>
+        <div id='6EmOEjGsoqh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'6EmOEjGsoqh'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>6</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaracteryFffOYILuN' class='anchorTag'></div>
@@ -3307,53 +2168,14 @@
         <app-bm-chapter-icon [id]="'AdditionallyLAeLimdKFN'"></app-bm-chapter-icon>
         <p>Additionally, anytime you need to make a Language Check to be understood while speaking, reduce the Check die
           by
-          1 size per point of Severity.</p>
+          1 size per point of Rank.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='CharacterswitPbVcTjFEYG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'CharacterswitPbVcTjFEYG'"></app-bm-chapter-icon>
-        <p>Characters with this Flaw cannot be Weird-Adept Archetypes that require speech of any kind.</p>
+        <p>Characters with this Injury cannot be Weird-Adept Archetypes that require speech of any kind.</p>
       </div>
 
-      <div class="anchor">
-        <div id="surviviorgudioejheader" class="anchorTag"></div>
-        <h2>Survivor's Guilt</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='surgjiroec' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'surgjiroec'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>15</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='sruvrarjioe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'sruvrarjioe'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='sguseverjioty' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'sguseverjioty'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='shgrnkanio' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'shgrnkanio'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1 + 1 per Severity</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='thishciaohiove' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'thishciaohiove'"></app-bm-chapter-icon>
-        <p>This character has suffered some past trauma where they were one of a few to survivor a horrible tragedy and
-          so carry around survivor's guilt because of it.
-          Now, when they go through similar experiences, they relive that trauma.
-        </p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='whenscampaioj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'whenscampaioj'"></app-bm-chapter-icon>
-        <p>When a companion of this character dies, suffers a mental break, or goes unconscious, they take Stress equal
-          to this Flaw's Severity.</p>
-      </div>
       <div class="anchor">
         <div id="ThrallheaderBZnUOEIBsw" class="anchorTag"></div>
         <h2>Thrall</h2>
@@ -3362,22 +2184,17 @@
       <div class='paragraphShell anchor'>
         <div id='25ZIUqzxKgCh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25ZIUqzxKgCh'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>17</p>
+        <p><strong>CrP Base </strong>25</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15LYmyVzLqAo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15LYmyVzLqAo'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naPQNXXRCriH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naPQNXXRCriH'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='threaltrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'threaltrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1.25 + .75 per Severity, rounded up</p>
+        <div id='naPQNXXRCriH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'naPQNXXRCriH'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThrallsarethMSClTaJZrs' class='anchorTag'></div>
@@ -3389,16 +2206,16 @@
       <div class='paragraphShell anchor'>
         <div id='WhenselectingIxCAMxrQuO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenselectingIxCAMxrQuO'"></app-bm-chapter-icon>
-        <p>When selecting equipment, thralls remove 10 sc per point of Severity of the character’s choice and start with
+        <p>When selecting equipment, thralls remove 10 sc per point of Rank of the character’s choice and start with
           no
-          extra starting cash. If selecting the “Blank Slate Kit” they lose 30 sc per Severity instead.</p>
+          extra starting cash. If selecting the “Blank Slate Kit” they lose 30 sc per Rank instead.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='AdditionallyYGghcaecQJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AdditionallyYGghcaecQJ'"></app-bm-chapter-icon>
         <p>Additionally, they have to overcome their cultivated respect/fear for those of a higher social caste: they
           gain
-          the Devotion “Afraid of/Respects/Is Subservient to (pick one at first level) those in a High Social Caste” equal to their Severity.</p>
+          the Devotion “Afraid of/Respects/Is Subservient to (pick one at first level) those in a High Social Caste” equal to their Rank.</p>
       </div>
       <div class="anchor">
         <div id="TrickKneeheaderBXNWdwjymP" class="anchorTag"></div>
@@ -3408,22 +2225,17 @@
       <div class='paragraphShell anchor'>
         <div id='15yXuWtypych' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15yXuWtypych'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>10</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10emaIPOpCqJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10emaIPOpCqJ'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='nawGhtveAOGe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nawGhtveAOGe'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>10</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='trickrnkesesrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'trickrnkesesrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.5 per Severity, rounded up</p>
+        <div id='nawGhtveAOGe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nawGhtveAOGe'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>10</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SomethingabousSTMfTfxuS' class='anchorTag'></div>
@@ -3435,50 +2247,11 @@
         <app-bm-chapter-icon [id]="'WhenRunningoeWUdAdRuKL'"></app-bm-chapter-icon>
         <p>When Running or Sprinting, if the character gets above a 4 on their unmodified damage roll their knee gives
           out,
-          forcing them to limp at Crawling speed for a number of seconds equal to this Flaw’s Severity before they
+          forcing them to limp at Crawling speed for a number of seconds equal to this Injury's Rank before they
           can
           resume normal movement.</p>
       </div>
-      <div class="anchor">
-        <div id="VexableheaderKKwTFqXyyt" class="anchorTag"></div>
-        <h2>Vexable</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='25JiPGEDhPXz' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'25JiPGEDhPXz'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>23</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='30qohXxPeCth' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'30qohXxPeCth'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='2HGfiYQEjnG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2HGfiYQEjnG'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='vesxreranoi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'vesxreranoi'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>2 per Severity</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterXrWZlDFMxU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterXrWZlDFMxU'"></app-bm-chapter-icon>
-        <p>This character finds it hard to keep their stress under control and things can quickly escalate for them.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterxUgEwyvOXn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterxUgEwyvOXn'"></app-bm-chapter-icon>
-        <p>This character’s Stress explodes on 1 value lower for each point of Severity they have in this Flaw.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='SoiftheyhaKfVlvARuoI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SoiftheyhaKfVlvARuoI'"></app-bm-chapter-icon>
-        <p>So, if they have Severity 1 and they roll a d4! for their Stress, that dice explodes on a 4 and 3.</p>
-      </div>
+      
       <div class="anchor">
         <div id="VowOfPovertyheaderShVWpymbpH" class="anchorTag"></div>
         <h2>Vow Of Poverty</h2>
@@ -3487,22 +2260,17 @@
       <div class='paragraphShell anchor'>
         <div id='35YuaPREguCI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'35YuaPREguCI'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>23</p>
+        <p><strong>CrP Base </strong>35</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='10CebyQBShNn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10CebyQBShNn'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='19cLLQeJFKoJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'19cLLQeJFKoJ'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>19</p>
+        <p><strong>Per Rank </strong>5</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='vowofpeopritorank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'vowofpeopritorank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>1.5 + .5 per Severity, rounded up</p>
+        <div id='19cLLQeJFKoJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'19cLLQeJFKoJ'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>19</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='TheMiddleReaIqsrYUgyrX' class='anchorTag'></div>
@@ -3513,7 +2281,7 @@
       <div class='paragraphShell anchor'>
         <div id='AtanytimetvPDiQjbaoe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtanytimetvPDiQjbaoe'"></app-bm-chapter-icon>
-        <p>At any time, they can only keep a max of 200 sc - 10 sc per Severity worth of cash, goods, or equipment on
+        <p>At any time, they can only keep a max of 200 sc - 10 sc per Rank worth of cash, goods, or equipment on
           them
           for their use.</p>
       </div>
@@ -3525,7 +2293,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisvowisrewzCbEwHdxq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisvowisrewzCbEwHdxq'"></app-bm-chapter-icon>
-        <p>This vow is rewarded though: their Max Favor is increased by 1, regardless of Severity.</p>
+        <p>This vow is rewarded though: their Max Favor is increased by 1, regardless of Rank.</p>
       </div>
       <div class="anchor">
         <div id="WeakheaderzFoQvxiCsX" class="anchorTag"></div>
@@ -3535,22 +2303,17 @@
       <div class='paragraphShell anchor'>
         <div id='20KiFdvssfiL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20KiFdvssfiL'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>13</p>
+        <p><strong>CrP Base </strong>20</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='15MzOIDpxbwq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15MzOIDpxbwq'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='19kFpWUsgnDK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'19kFpWUsgnDK'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>4</p>
+        <p><strong>Per Rank </strong>8</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='weakranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weakranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.75 per Severity, rounded up</p>
+        <div id='19kFpWUsgnDK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'19kFpWUsgnDK'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>4</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThischaractersukoVxIcOZ' class='anchorTag'></div>
@@ -3562,9 +2325,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ForeverypoinbbqgJWYFkY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForeverypoinbbqgJWYFkY'"></app-bm-chapter-icon>
-        <p>For every point of Severity, lower the character’s starting Fatigue Threshold by 1 step. Nothing can be done
-          to
-          reverse this except buying this Flaw down.</p>
+        <p>For every point of Rank, lower the character’s starting Fatigue Threshold by 1 step.</p>
       </div>
       <div class="anchor">
         <div id="weirdresjiojtioew" class="anchorTag"></div>
@@ -3574,35 +2335,30 @@
       <div class='paragraphShell anchor'>
         <div id='werresjioejciow' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'werresjioejciow'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>3</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='weridresrsever' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'weridresrsever'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='weridseverjiot' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weridseverjiot'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>15</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='weirdranks' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weirdranks'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.75 per Severity, rounded up</p>
+        <div id='weridseverjiot' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'weridseverjiot'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='forwahiotheiover' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'forwahiotheiover'"></app-bm-chapter-icon>
         <p>For whatever reason, the Weird seems to bonus off this character. When resisting a spell, this character 
-          gains this Flaw's Severity to their Check, however must always resist, even if the 
+          gains this Burden's Rank to their Check, however must always resist with a d20!, even if the 
           spell would be beneficial to them.
         </p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='youcannothtakoeiijos' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youcannothtakoeiijos'"></app-bm-chapter-icon>
-        <p>You cannot take this Flaw if you're a Weird-Adept of any kind or if you already have the Weird Vulnerable Flaw.
+        <p>You cannot take this Burden if you're a Weird-Adept of any kind or if you already have the Weird Vulnerable Burden.
         </p>
       </div>
       <div class="anchor">
@@ -3613,40 +2369,35 @@
       <div class='paragraphShell anchor'>
         <div id='werjioejwiovrcrp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'werjioejwiovrcrp'"></app-bm-chapter-icon>
-        <p><strong>CrP Base </strong>3</p>
+        <p><strong>CrP Base </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='wiredvulnerable' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'wiredvulnerable'"></app-bm-chapter-icon>
-        <p><strong>Per Severity </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='werijdvulnesever' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'werijdvulnesever'"></app-bm-chapter-icon>
-        <p><strong>Severity Cap </strong>15</p>
+        <p><strong>Per Rank </strong>2</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='weirdjioveulerrank' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weirdjioveulerrank'"></app-bm-chapter-icon>
-        <p><strong>Rank </strong>.75 per Severity, rounded up</p>
+        <div id='werijdvulnesever' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'werijdvulnesever'"></app-bm-chapter-icon>
+        <p><strong>Rank Cap </strong>15</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='weridseticksthijg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'weridseticksthijg'"></app-bm-chapter-icon>
         <p>For whatever reason, the Weird seems to stick to this character. When resisting a spell, this character 
-          gains this Flaw's Severity as a penalty to their Check.
+          gains this Burden's Rank as a penalty to their Check.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='youviaoniotr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youviaoniotr'"></app-bm-chapter-icon>
-        <p>You cannot take this Flaw if you already have the Weird Resistant Flaw.
+        <p>You cannot take this Burden if you already have the Weird Resistant Burden.
         </p>
       </div>
     </div>
     <div class="sideShell">
       <app-quick-nav [side]='side'></app-quick-nav>
     </div>
-    <h1 class="chapterTitle">Chapter 2.4 Flaws</h1>
+    <h1 class="chapterTitle">Chapter 2.4 Burdens & Injuries</h1>
   </div>
 </div>

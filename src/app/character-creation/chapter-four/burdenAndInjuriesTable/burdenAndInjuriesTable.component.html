@@ -1,0 +1,24 @@
+<table class="float all-center first-left" id="backgroundTable">
+  <thead>
+    <tr class="notSticky">
+      <th colspan="5">{{label}}</th>
+    </tr>
+    <tr>
+      <th>Roll (d100)</th>
+      <th>Name</th>
+      <th>CrP Base</th>
+      <th>Per Rank</th>
+      <th>Rank Cap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let flaw of flawTable">
+      <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
+        flaw.currentTotal + 1}}</td>
+      <td>{{flaw.flaw}}</td>
+      <td>{{flaw.bonus}}</td>
+      <td>{{flaw.severity}}</td>
+      <td>{{flaw.cap}}</td>
+    </tr>
+  </tbody>
+</table>

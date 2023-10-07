@@ -158,7 +158,7 @@ export class ChapterService {
       case 4:
         return 'Archetypes';
       case 5:
-        return 'Flaws';
+        return 'Burdens & Injuries';
       case 6:
         return 'Character Vitals';
       case 7:

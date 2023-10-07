@@ -2,562 +2,23 @@ const flawTables = {
     flawTables: [
         {
             weight: 2,
-            tableName: 'Background',
-            table: 'background',
+            tableName: 'Burdens',
+            table: 'burdens',
             currentTotal: 0
         },
         { 
             weight: 2, 
-            tableName: 'Mental', 
-            table: 'mental', 
+            tableName: 'Injuries', 
+            table: 'injuries', 
             currentTotal: 2 },
-        {
-            weight: 2,
-            tableName: 'Physical',
-            table: 'physical',
-            currentTotal: 4
-        }
     ],
-    background: [
-        {
-            weight: 2,
-            flaw: 'Atheist',
-            bonus: 7,
-            severity: 3,
-            cap: 12,
-            currentTotal: 0,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'AtheistheaderFNPQHnTYgv'
-        },
-        {
-            weight: 7,
-            flaw: 'Bastard',
-            bonus: 17,
-            severity: 5,
-            cap: 5,
-            currentTotal: 2,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'BastardheaderifVeGdkeSu'
-        },
-        {
-            weight: 5,
-            flaw: 'Epileptic',
-            bonus: 13,
-            severity: 3,
-            cap: 10,
-            currentTotal: 9,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'EpilepticheaderSkNaTOGvZe'
-        },
-        {
-            weight: 4,
-            flaw: 'Debtor',
-            bonus: 7,
-            severity: 3,
-            cap: 5,
-            currentTotal: 14,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'DebtorheaderJElCNbPgHi'
-        },
-        {
-            weight: 7,
-            flaw: 'Excommunicated',
-            bonus: 10,
-            severity: 3,
-            cap: 12,
-            currentTotal: 18,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'ExcommunicatedheaderSAHScjZyzT'
-        },
-        {
-            weight: 9,
-            flaw: 'Fated',
-            bonus: 23,
-            severity: 5,
-            cap: 20,
-            currentTotal: 25,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'FatedheaderugesVAJvHm'
-        },
-        {
-            weight: 4,
-            flaw: 'Feral',
-            bonus: 13,
-            severity: 4,
-            cap: 5,
-            currentTotal: 34,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'FeralheaderYbTzzFWdEL'
-        },
-        {
-            weight: 12,
-            flaw: 'Half-Life',
-            bonus: 50,
-            severity: 7,
-            cap: 4,
-            currentTotal: 38,
-            rank: {
-                base: 3.5,
-                per: 1.5
-            },
-            jump: 'HalflifeheaderxXKZSCXvpm'
-        },
-        {
-            weight: 9,
-            flaw: 'Haunted',
-            bonus: 20,
-            severity: 6,
-            cap: 5,
-            currentTotal: 50,
-            rank: {
-                base: .5,
-                per: 1.5
-            },
-            jump: 'HauntedheaderWIDVEGhzyD'
-        },
-        {
-            weight: 5,
-            flaw: 'Idiot Savant',
-            bonus: 13,
-            severity: 3,
-            cap: 5,
-            currentTotal: 59,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'IdiotSavantheaderCIOoOIjoNI'
-        },
-        {
-            weight: 2,
-            flaw: 'Inbred',
-            bonus: 7,
-            severity: 1,
-            cap: 10,
-            currentTotal: 64,
-            rank: {
-                base: .67,
-                per: .33
-            },
-            jump: 'InbredheaderCLxfbrofoK'
-        },
-        {
-            weight: 9,
-            flaw: 'Monotheist',
-            bonus: 5,
-            severity: 1,
-            cap: 12,
-            currentTotal: 66,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'MonotheistheaderAScHQRVdII'
-        },
-        {
-            weight: 5,
-            flaw: 'Mule',
-            bonus: 10,
-            severity: 3,
-            cap: 24,
-            currentTotal: 75,
-            rank: {
-                base: 1,
-                per: .5
-            },
-            jump: 'MuleheaderTOMugOYXOS'
-        },
-        {
-            weight: 2,
-            flaw: 'Orphan',
-            bonus: 10,
-            severity: 5,
-            cap: 20,
-            currentTotal: 80,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            jump: 'OrphanheaderVdWAdEZcQr'
-        },
-        {
-            weight: 2,
-            flaw: 'Poor',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 82,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'PoorheaderErbkkhCjwR'
-        },
-        {
-            weight: 2,
-            flaw: 'Refugee',
-            bonus: 20,
-            severity: 0,
-            cap: 1,
-            currentTotal: 84,
-            rank: {
-                base: 2,
-                per: 0
-            },
-            jump: 'RefugeeheaderAkSpgtlWeb'
-        },
-        {
-            weight: 6,
-            flaw: "Survivor's Guilt",
-            bonus: 15,
-            severity: 5,
-            cap: 10,
-            currentTotal: 86,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'surviviorgudioejheader'
-        },
-        {
-            weight: 4,
-            flaw: 'Thrall',
-            bonus: 17,
-            severity: 5,
-            cap: 10,
-            currentTotal: 92,
-            rank: {
-                base: 1.25,
-                per: .75
-            },
-            jump: 'ThrallheaderBZnUOEIBsw'
-        },
-        {
-            weight: 4,
-            flaw: 'Vow of Poverty',
-            bonus: 23,
-            severity: 3,
-            cap: 19,
-            currentTotal: 96,
-            rank: {
-                base: 1.5,
-                per: .5
-            },
-            jump: 'VowOfPovertyheaderShVWpymbpH'
-        }
-    ],
-    mental: [
-        {
-            weight: 5,
-            flaw: 'Addict',
-            bonus: 19,
-            severity: 2,
-            cap: 10,
-            currentTotal: 0,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            subtable: [
-                {
-                    weight: 1,
-                    specific: 'Gambling'
-                },
-                {
-                    weight: 1,
-                    specific: 'Shopping'
-                },
-                {
-                    weight: 1,
-                    specific: 'Drinking'
-                },
-                {
-                    weight: 1,
-                    specific: 'Narcotics'
-                },
-                {
-                    weight: 1,
-                    specific: 'Sex'
-                },
-                {
-                    weight: 1,
-                    specific: 'Adrenaline'
-                },
-            ],
-            jump: 'Addictheading'
-        },
-        {
-            weight: 5,
-            flaw: 'Craven',
-            bonus: 13,
-            severity: 5,
-            cap: 4,
-            currentTotal: 5,
-            rank: {
-                base: 0,
-                per: 1.5
-            },
-            jump: 'CravenheaderHHxpaSPJUd'
-        },
-        {
-            weight: 7,
-            flaw: 'Hypochondriac',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 10,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'HypochondriacheadernkQTCyMAjA'
-        },
-        {
-            weight: 7,
-            flaw: 'Impatient',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 17,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'ImpatientheaderMlEfueUjgy'
-        },
-        {
-            weight: 23,
-            flaw: 'Lemming',
-            bonus: 5,
-            severity: 3,
-            cap: 10,
-            currentTotal: 24,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'lemmingheahrioe'
-        },
-        {
-            weight: 6,
-            flaw: 'Neurotic',
-            bonus: 13,
-            severity: 3,
-            cap: 10,
-            currentTotal: 47,
-            rank: {
-                base: 1,
-                per: .5
-            },
-            jump: 'NeuroticheadergZsMEePyPl'
-        },
-        {
-            weight: 12,
-            flaw: 'Pacifist',
-            bonus: 10,
-            severity: 5,
-            cap: 10,
-            currentTotal: 53,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'pacificfjiotheadeing'
-        },
-        {
-            weight: 7,
-            flaw: 'Phobia',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 65,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            subtable: [
-                {
-                    weight: 1,
-                    specific: 'Animals'
-                },
-                {
-                    weight: 1,
-                    specific: 'Tight Spaces'
-                },
-                {
-                    weight: 1,
-                    specific: 'Combat'
-                },
-                {
-                    weight: 1,
-                    specific: 'Commitment'
-                },
-                {
-                    weight: 1,
-                    specific: 'Confrontations'
-                },
-                {
-                    weight: 1,
-                    specific: 'The Weird'
-                },
-                {
-                    weight: 1,
-                    specific: 'Religion'
-                },
-                {
-                    weight: 1,
-                    specific: 'Plague'
-                },
-                {
-                    weight: 1,
-                    specific: 'The Dead'
-                },
-                {
-                    weight: 1,
-                    specific: 'The Opposite Gender'
-                },
-                {
-                    weight: 1,
-                    specific: 'Heights'
-                },
-                {
-                    weight: 1,
-                    specific: 'The Dark'
-                },
-                {
-                    weight: 1,
-                    specific: 'A Monster or Monster Type'
-                },
-                {
-                    weight: 1,
-                    specific: 'Spiders'
-                },
-                {
-                    weight: 1,
-                    specific: 'Snakes'
-                },
-                {
-                    weight: 1,
-                    specific: 'Open Spaces'
-                },
-                {
-                    weight: 1,
-                    specific: 'Crowded Spaces'
-                },
-                {
-                    weight: 1,
-                    specific: 'Failure'
-                },
-                {
-                    weight: 1,
-                    specific: 'Authority Figures'
-                },
-                {
-                    weight: 1,
-                    specific: 'Pain'
-                },
-            ],
-            jump: 'PhobiaheaderQQhvnCtRSg'
-        },
-        {
-            weight: 5,
-            flaw: 'Sensitive',
-            bonus: 13,
-            severity: 5,
-            cap: 10,
-            currentTotal: 72,
-            rank: {
-                base: .5,
-                per: 1
-            },
-            jump: 'SensitiveheaderJdvTOwHLwF'
-        },
-        {
-            weight: 15,
-            flaw: 'Self-Conscious',
-            bonus: 10,
-            severity: 2,
-            cap: 10,
-            currentTotal: 77,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'SlowwittedheaderjicjkCYWOg'
-        },
-        {
-            weight: 6,
-            flaw: 'Slow-Witted',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 92,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'SlowwittedheaderjicjkCYWOg'
-        },
-        {
-            weight: 2,
-            flaw: 'Vexable',
-            bonus: 13,
-            severity: 10,
-            cap: 2,
-            currentTotal: 97,
-            rank: {
-                base: 0,
-                per: 2
-            },
-            jump: 'VexableheaderKKwTFqXyyt'
-        }
-    ],
-    physical: [
-        {
-            weight: 6,
-            flaw: 'Ageusia',
-            bonus: 7,
-            severity: 1,
-            cap: 10,
-            currentTotal: 0,
-            rank: {
-                base: .67,
-                per: .33
-            },
-            jump: 'AgeusiaheaderTAnuTNHiNf'
-        },
+    burdens: [
         {
             weight: 5,
             flaw: 'Allergy, Food',
-            bonus: 10,
-            severity: 1,
+            bonus: 15,
+            severity: 2,
             cap: 10,
-            currentTotal: 6,
-            rank: {
-                base: .67,
-                per: .33
-            },
             jump: 'AllergyFoodheaderFNDbwfuMWn',
             subtable: [
                 {
@@ -597,14 +58,9 @@ const flawTables = {
         {
             weight: 5,
             flaw: 'Allergy, Misc',
-            bonus: 10,
-            severity: 1,
+            bonus: 15,
+            severity: 2,
             cap: 10,
-            currentTotal: 11,
-            rank: {
-                base: .67,
-                per: .33
-            },
             jump: 'AllergyMischeaderPWgmApUIzR',
             subtable: [
                 {
@@ -626,434 +82,666 @@ const flawTables = {
             ]
         },
         {
-            weight: 3,
-            flaw: 'Asthmatic',
-            bonus: 13,
+            weight: 7,
+            flaw: 'Bastard',
+            bonus: 25,
+            severity: 7,
+            cap: 5,
+            jump: 'BastardheaderifVeGdkeSu'
+        },
+        {
+            weight: 7,
+            flaw: 'Debtor',
+            bonus: 10,
             severity: 5,
-            cap: 10,
-            currentTotal: 16,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            jump: 'AsthmaticheaderLWuGlnQCuN'
+            cap: 5,
+            jump: 'DebtorheaderJElCNbPgHi'
         },
         {
             weight: 2,
-            flaw: 'Blind',
-            bonus: 17,
-            severity: 5,
-            cap: 6,
-            currentTotal: 19,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'BlindheaderejFzjQYqhm'
-        },
-        {
-            weight: 4,
-            flaw: 'Burn Scars',
-            bonus: '*',
-            severity: '*',
-            cap: '*',
-            currentTotal: 21,
-            jump: 'BurnScarsheaderURPQmidRJb',
-            subtable: [
-                {
-                    weight: 1,
-                    specific: 'Head',
-                    bonus: 10,
-                    severity: 3,
-                    cap: 5,
-                    rank: {
-                        base: .5,
-                        per: .5
-                    }
-                }, {
-                    weight: 1,
-                    specific: 'Body',
-                    bonus: 17,
-                    severity: 5,
-                    cap: 10,
-                    rank: {
-                        base: 1,
-                        per: 1
-                    }
-                }, {
-                    weight: 1,
-                    specific: 'Arms & Hands',
-                    bonus: 10,
-                    severity: 5,
-                    cap: 10,
-                    rank: {
-                        base: 0,
-                        per: 1
-                    }
-                }, {
-                    weight: 1,
-                    specific: 'Legs',
-                    bonus: 17,
-                    severity: 5,
-                    cap: 5,
-                    rank: {
-                        base: 1,
-                        per: 1
-                    }
-                }
-            ]
-        },
-        {
-            weight: 3,
-            flaw: 'Deaf',
-            bonus: 10,
-            severity: 5,
-            cap: 6,
-            currentTotal: 25,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            jump: 'DeafheaderQjLmdfFCwk'
-        },
-        {
-            weight: 1,
             flaw: 'Deranged',
-            bonus: 33,
-            severity: 8,
+            bonus: 50,
+            severity: 12,
             cap: 10,
-            currentTotal: 28,
-            rank: {
-                base: 1.5,
-                per: 1.5
-            },
             jump: 'DerangedheaderRidffUYgEQ'
         },
         {
-            weight: 4,
-            flaw: 'Glutton',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 29,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'GluttonheaderqiKXJOqLSg'
-        },
-        {
-            weight: 3,
-            flaw: 'Hemophilic',
-            bonus: 13,
+            weight: 7,
+            flaw: 'Excommunicated',
+            bonus: 15,
             severity: 5,
-            cap: 5,
-            currentTotal: 33,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            jump: 'HemophilicheaderibLCRovJZE'
+            cap: 12,
+            jump: 'ExcommunicatedheaderSAHScjZyzT'
         },
         {
-            weight: 2,
-            flaw: 'Hyperopia',
-            bonus: 16,
-            severity: 6,
-            cap: 6,
-            currentTotal: 36,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'HyperopiaheadervltxPyYqjG'
+            weight: 9,
+            flaw: 'Fated',
+            bonus: 35,
+            severity: 8,
+            cap: 20,
+            jump: 'FatedheaderugesVAJvHm'
         },
         {
             weight: 4,
-            flaw: 'Impotent',
-            bonus: 10,
-            severity: 3,
-            cap: 19,
-            currentTotal: 38,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'ImpotentheaderfYzBcyBwWW'
-        },
-        {
-            weight: 5,
-            flaw: 'Infirm',
-            bonus: 7,
-            severity: 3,
-            cap: 10,
-            currentTotal: 42,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'InfirmheaderbevIgDJeBP'
-        },
-        {
-            weight: 2,
-            flaw: 'Insomniac',
+            flaw: 'Feral',
             bonus: 20,
-            severity: 5,
-            cap: 10,
-            currentTotal: 47,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'InsomniacheaderIBVWLnZXkc'
+            severity: 6,
+            cap: 5,
+            jump: 'FeralheaderYbTzzFWdEL'
         },
         {
-            weight: 6,
-            flaw: 'Irritable Bowels',
-            bonus: 7,
-            severity: 1,
+            weight: 12,
+            flaw: 'Half-Life',
+            bonus: 75,
+            severity: 12,
+            cap: 4,
+            jump: 'HalflifeheaderxXKZSCXvpm'
+        },
+        {
+            weight: 9,
+            flaw: 'Haunted',
+            bonus: 30,
+            severity: 10,
             cap: 5,
-            currentTotal: 49,
-            rank: {
-                base: 0,
-                per: .33
-            },
-            jump: 'IrritableBoweheaderMBapbikkBu'
+            jump: 'HauntedheaderWIDVEGhzyD'
         },
         {
             weight: 5,
-            flaw: 'Labyrinthitis',
+            flaw: 'Idiot Savant',
+            bonus: 15,
+            severity: 3,
+            cap: 5,
+            jump: 'IdiotSavantheaderCIOoOIjoNI'
+        },
+        {
+            weight: 3,
+            flaw: 'Inbred',
             bonus: 10,
-            severity: 1,
+            severity: 2,
             cap: 10,
-            currentTotal: 55,
-            rank: {
-                base: .67,
-                per: .33
-            },
-            jump: 'LabyrinthitisheaderfWjrwFnmrQ'
+            jump: 'InbredheaderCLxfbrofoK'
+        },
+        {
+            weight: 7,
+            flaw: 'Mule',
+            bonus: 15,
+            severity: 5,
+            cap: 24,
+            jump: 'MuleheaderTOMugOYXOS'
+        },
+        {
+            weight: 3,
+            flaw: 'Orphan',
+            bonus: 15,
+            severity: 8,
+            cap: 20,
+            jump: 'OrphanheaderVdWAdEZcQr'
+        },
+        {
+            weight: 4,
+            flaw: 'Poor',
+            bonus: 15,
+            severity: 5,
+            cap: 10,
+            jump: 'PoorheaderErbkkhCjwR'
         },
         {
             weight: 2,
-            flaw: 'Limp',
-            bonus: 13,
-            severity: 6,
-            cap: 4,
-            currentTotal: 60,
-            rank: {
-                base: 0,
-                per: 1.5
-            },
-            jump: 'LimpheaderaYmDjKsaBX'
-        },
-        {
-            weight: 1,
-            flaw: 'Missing Arm',
-            bonus: 36,
-            severity: 18,
-            cap: 2,
-            currentTotal: 62,
-            rank: {
-                base: 1,
-                per: 3
-            },
-            jump: 'MissingArmheaderJfhIRtVhkL'
-        },
-        {
-            weight: 3,
-            flaw: 'Missing Digit',
-            bonus: 7,
-            severity: 3,
-            cap: 10,
-            currentTotal: 63,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'MissingDigitheaderIpfwrRQDCk'
-        },
-        {
-            weight: 3,
-            flaw: 'Missing Ear',
-            bonus: 13,
-            severity: 5,
-            cap: 10,
-            currentTotal: 66,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'MissingEarheaderiEeAvwgBRu'
-        },
-        {
-            weight: 1,
-            flaw: 'Missing Eye',
-            bonus: 33,
-            severity: 16,
-            cap: 2,
-            currentTotal: 69,
-            rank: {
-                base: 0,
-                per: 3
-            },
-            jump: 'MissingEyeheaderhLRHlECmrB'
-        },
-        {
-            weight: 1,
-            flaw: 'Missing Hand',
-            bonus: 33,
-            severity: 16,
-            cap: 2,
-            currentTotal: 70,
-            rank: {
-                base: 0,
-                per: 3
-            },
-            jump: 'MissingHandheaderWbmnYxxVvK'
-        },
-        {
-            weight: 1,
-            flaw: 'Missing Leg',
-            bonus: 33,
-            severity: 16,
-            cap: 2,
-            currentTotal: 71,
-            rank: {
-                base: 0,
-                per: 3
-            },
-            jump: 'MissingLegheaderZUSKsYDxbp'
+            flaw: 'Refugee',
+            bonus: 25,
+            severity: 0,
+            cap: 1,
+            jump: 'RefugeeheaderAkSpgtlWeb'
         },
         {
             weight: 4,
-            flaw: 'Missing Teeth',
-            bonus: 10,
-            severity: 4,
-            cap: 4,
-            currentTotal: 72,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'MissingTeethheaderiauDXpJazw'
-        },
-        {
-            weight: 3,
-            flaw: 'Mute',
-            bonus: 13,
-            severity: 5,
-            cap: 6,
-            currentTotal: 76,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            jump: 'MuteheadernvyjQWspKK'
-        },
-        {
-            weight: 3,
-            flaw: 'Myopia',
-            bonus: 13,
-            severity: 5,
-            cap: 6,
-            currentTotal: 79,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'MyopiaheaderdmimYbkqOx'
-        },
-        {
-            weight: 3,
-            flaw: 'No Depth Perception',
-            bonus: 13,
-            severity: 5,
-            cap: 6,
-            currentTotal: 82,
-            rank: {
-                base: 1,
-                per: 1
-            },
-            jump: 'NoDepthPerceheaderaJIstRgCCR'
-        },
-        {
-            weight: 4,
-            flaw: 'Shaky Hands',
-            bonus: 9,
-            severity: 3,
+            flaw: 'Thrall',
+            bonus: 25,
+            severity: 8,
             cap: 10,
-            currentTotal: 85,
-            rank: {
-                base: .5,
-                per: .5
-            },
-            jump: 'ShakyHandsheadergZnORfJQKB'
+            jump: 'ThrallheaderBZnUOEIBsw'
         },
         {
             weight: 3,
-            flaw: 'Stutter',
-            bonus: 13,
+            flaw: 'Vow of Poverty',
+            bonus: 35,
             severity: 5,
-            cap: 6,
-            currentTotal: 89,
-            rank: {
-                base: 0,
-                per: 1
-            },
-            jump: 'StutterheadergeuOgVIFdt'
-        },
-        {
-            weight: 4,
-            flaw: 'Trick Knee',
-            bonus: 10,
-            severity: 3,
-            cap: 10,
-            currentTotal: 92,
-            rank: {
-                base: 0,
-                per: .5
-            },
-            jump: 'TrickKneeheaderBXNWdwjymP'
-        },
-        {
-            weight: 2,
-            flaw: 'Weak',
-            bonus: 13,
-            severity: 5,
-            cap: 4,
-            currentTotal: 96,
-            rank: {
-                base: 0,
-                per: .75
-            },
-            jump: 'WeakheaderzFoQvxiCsX'
-        },
+            cap: 19,
+            jump: 'VowOfPovertyheaderShVWpymbpH'
+        }, 
         {
             weight: 1,
             flaw: 'Weird Resistant',
-            bonus: 3,
-            severity: 1,
+            bonus: 15,
+            severity: 2,
             cap: 15,
-            currentTotal: 98,
-            rank: {
-                base: 0,
-                per: .75
-            },
             jump: 'weirdresjiojtioew'
         },
         {
             weight: 1,
             flaw: 'Weird Vulnerable',
-            bonus: 3,
-            severity: 1,
+            bonus: 15,
+            severity: 2,
             cap: 15,
-            currentTotal: 99,
-            rank: {
-                base: 0,
-                per: .75
-            },
             jump: 'werjiojdiovejwio'
         }
+    ],
+    // mental: [
+    //     {
+    //         weight: 6,
+    //         flaw: "Survivor's Guilt",
+    //         bonus: 15,
+    //         severity: 5,
+    //         cap: 10,
+    //         currentTotal: 86,
+    //         rank: {
+    //             base: 1,
+    //             per: 1
+    //         },
+    //         jump: 'surviviorgudioejheader'
+    //     },
+    //     {
+    //         weight: 5,
+    //         flaw: 'Addict',
+    //         bonus: 19,
+    //         severity: 2,
+    //         cap: 10,
+    //         currentTotal: 0,
+    //         rank: {
+    //             base: 0,
+    //             per: 1
+    //         },
+    //         subtable: [
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Gambling'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Shopping'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Drinking'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Narcotics'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Sex'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Adrenaline'
+    //             },
+    //         ],
+    //         jump: 'Addictheading'
+    //     },
+    //     {
+    //         weight: 5,
+    //         flaw: 'Craven',
+    //         bonus: 13,
+    //         severity: 5,
+    //         cap: 4,
+    //         currentTotal: 5,
+    //         rank: {
+    //             base: 0,
+    //             per: 1.5
+    //         },
+    //         jump: 'CravenheaderHHxpaSPJUd'
+    //     },
+    //     {
+    //         weight: 7,
+    //         flaw: 'Hypochondriac',
+    //         bonus: 10,
+    //         severity: 3,
+    //         cap: 10,
+    //         currentTotal: 10,
+    //         rank: {
+    //             base: .5,
+    //             per: .5
+    //         },
+    //         jump: 'HypochondriacheadernkQTCyMAjA'
+    //     },
+    //     {
+    //         weight: 7,
+    //         flaw: 'Impatient',
+    //         bonus: 10,
+    //         severity: 3,
+    //         cap: 10,
+    //         currentTotal: 17,
+    //         rank: {
+    //             base: .5,
+    //             per: .5
+    //         },
+    //         jump: 'ImpatientheaderMlEfueUjgy'
+    //     },
+    //     {
+    //         weight: 23,
+    //         flaw: 'Lemming',
+    //         bonus: 5,
+    //         severity: 3,
+    //         cap: 10,
+    //         currentTotal: 24,
+    //         rank: {
+    //             base: .5,
+    //             per: .5
+    //         },
+    //         jump: 'lemmingheahrioe'
+    //     },
+    //     {
+    //         weight: 6,
+    //         flaw: 'Neurotic',
+    //         bonus: 13,
+    //         severity: 3,
+    //         cap: 10,
+    //         currentTotal: 47,
+    //         rank: {
+    //             base: 1,
+    //             per: .5
+    //         },
+    //         jump: 'NeuroticheadergZsMEePyPl'
+    //     },
+    //     {
+    //         weight: 12,
+    //         flaw: 'Pacifist',
+    //         bonus: 10,
+    //         severity: 5,
+    //         cap: 10,
+    //         currentTotal: 53,
+    //         rank: {
+    //             base: 1,
+    //             per: 1
+    //         },
+    //         jump: 'pacificfjiotheadeing'
+    //     },
+    //     {
+    //         weight: 7,
+    //         flaw: 'Phobia',
+    //         bonus: 10,
+    //         severity: 3,
+    //         cap: 10,
+    //         currentTotal: 65,
+    //         rank: {
+    //             base: .5,
+    //             per: .5
+    //         },
+    //         subtable: [
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Animals'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Tight Spaces'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Combat'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Commitment'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Confrontations'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'The Weird'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Religion'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Plague'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'The Dead'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'The Opposite Gender'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Heights'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'The Dark'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'A Monster or Monster Type'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Spiders'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Snakes'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Open Spaces'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Crowded Spaces'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Failure'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Authority Figures'
+    //             },
+    //             {
+    //                 weight: 1,
+    //                 specific: 'Pain'
+    //             },
+    //         ],
+    //         jump: 'PhobiaheaderQQhvnCtRSg'
+    //     },
+    //     {
+    //         weight: 5,
+    //         flaw: 'Sensitive',
+    //         bonus: 13,
+    //         severity: 5,
+    //         cap: 10,
+    //         currentTotal: 72,
+    //         rank: {
+    //             base: .5,
+    //             per: 1
+    //         },
+    //         jump: 'SensitiveheaderJdvTOwHLwF'
+    //     },
+    //     {
+    //         weight: 15,
+    //         flaw: 'Self-Conscious',
+    //         bonus: 10,
+    //         severity: 2,
+    //         cap: 10,
+    //         currentTotal: 77,
+    //         rank: {
+    //             base: .5,
+    //             per: .5
+    //         },
+    //         jump: 'SlowwittedheaderjicjkCYWOg'
+    //     },
+    //     {
+    //         weight: 6,
+    //         flaw: 'Slow-Witted',
+    //         bonus: 10,
+    //         severity: 3,
+    //         cap: 10,
+    //         currentTotal: 92,
+    //         rank: {
+    //             base: .5,
+    //             per: .5
+    //         },
+    //         jump: 'SlowwittedheaderjicjkCYWOg'
+    //     },
+    //     {
+    //         weight: 2,
+    //         flaw: 'Vexable',
+    //         bonus: 13,
+    //         severity: 10,
+    //         cap: 2,
+    //         currentTotal: 97,
+    //         rank: {
+    //             base: 0,
+    //             per: 2
+    //         },
+    //         jump: 'VexableheaderKKwTFqXyyt'
+    //     }
+    // ],
+    injuries: [
+        {
+            weight: 5,
+            flaw: 'Ageusia',
+            bonus: 10,
+            severity: 2,
+            cap: 10,
+            jump: 'AgeusiaheaderTAnuTNHiNf'
+        },
+        
+        {
+            weight: 4,
+            flaw: 'Asthmatic',
+            bonus: 20,
+            severity: 8,
+            cap: 10,
+            jump: 'AsthmaticheaderLWuGlnQCuN'
+        },
+        {
+            weight: 3,
+            flaw: 'Blind',
+            bonus: 25,
+            severity: 8,
+            cap: 6,
+            jump: 'BlindheaderejFzjQYqhm'
+        },
+        {
+            weight: 5,
+            flaw: 'Burn Scars',
+            bonus: '*',
+            severity: '*',
+            cap: '*',
+            jump: 'BurnScarsheaderURPQmidRJb',
+            subtable: [
+                {
+                    weight: 1,
+                    specific: 'Head',
+                    bonus: 15,
+                    severity: 5,
+                    cap: 5,
+                }, {
+                    weight: 1,
+                    specific: 'Body',
+                    bonus: 25,
+                    severity: 8,
+                    cap: 10
+                }, {
+                    weight: 1,
+                    specific: 'Arms & Hands',
+                    bonus: 15,
+                    severity: 8,
+                    cap: 10
+                }, {
+                    weight: 1,
+                    specific: 'Legs',
+                    bonus: 25,
+                    severity: 8,
+                    cap: 5
+                }
+            ]
+        },
+        {
+            weight: 4,
+            flaw: 'Deaf',
+            bonus: 15,
+            severity: 8,
+            cap: 6,
+            jump: 'DeafheaderQjLmdfFCwk'
+        },
+        {
+            weight: 6,
+            flaw: 'Epileptic',
+            bonus: 20,
+            severity: 5,
+            cap: 10,
+            jump: 'EpilepticheaderSkNaTOGvZe'
+        },
+        {
+            weight: 4,
+            flaw: 'Hemophilic',
+            bonus: 20,
+            severity: 8,
+            cap: 5,
+            jump: 'HemophilicheaderibLCRovJZE'
+        },
+        {
+            weight: 3,
+            flaw: 'Hyperopia',
+            bonus: 25,
+            severity: 10,
+            cap: 6,
+            jump: 'HyperopiaheadervltxPyYqjG'
+        },
+        {
+            weight: 6,
+            flaw: 'Infirm',
+            bonus: 10,
+            severity: 5,
+            cap: 10,
+            jump: 'InfirmheaderbevIgDJeBP'
+        },
+        {
+            weight: 3,
+            flaw: 'Insomniac',
+            bonus: 30,
+            severity: 8,
+            cap: 10,
+            jump: 'InsomniacheaderIBVWLnZXkc'
+        },
+        {
+            weight: 6,
+            flaw: 'Labyrinthitis',
+            bonus: 15,
+            severity: 2,
+            cap: 10,
+            jump: 'LabyrinthitisheaderfWjrwFnmrQ'
+        },
+        {
+            weight: 3,
+            flaw: 'Limp',
+            bonus: 20,
+            severity: 10,
+            cap: 4,
+            jump: 'LimpheaderaYmDjKsaBX'
+        },
+        {
+            weight: 2,
+            flaw: 'Missing Arm',
+            bonus: 55,
+            severity: 30,
+            cap: 2,
+            jump: 'MissingArmheaderJfhIRtVhkL'
+        },
+        {
+            weight: 4,
+            flaw: 'Missing Digit',
+            bonus: 10,
+            severity: 5,
+            cap: 10,
+            jump: 'MissingDigitheaderIpfwrRQDCk'
+        },
+        {
+            weight: 4,
+            flaw: 'Missing Ear',
+            bonus: 20,
+            severity: 8,
+            cap: 10,
+            jump: 'MissingEarheaderiEeAvwgBRu'
+        },
+        {
+            weight: 2,
+            flaw: 'Missing Eye',
+            bonus: 50,
+            severity: 25,
+            cap: 2,
+            jump: 'MissingEyeheaderhLRHlECmrB'
+        },
+        {
+            weight: 2,
+            flaw: 'Missing Hand',
+            bonus: 50,
+            severity: 20,
+            cap: 2,
+            jump: 'MissingHandheaderWbmnYxxVvK'
+        },
+        {
+            weight: 2,
+            flaw: 'Missing Leg',
+            bonus: 50,
+            severity: 20,
+            cap: 2,
+            jump: 'MissingLegheaderZUSKsYDxbp'
+        },
+        {
+            weight: 5,
+            flaw: 'Missing Teeth',
+            bonus: 15,
+            severity: 6,
+            cap: 4,
+            jump: 'MissingTeethheaderiauDXpJazw'
+        },
+        {
+            weight: 4,
+            flaw: 'Mute',
+            bonus: 20,
+            severity: 8,
+            cap: 6,
+            jump: 'MuteheadernvyjQWspKK'
+        },
+        {
+            weight: 4,
+            flaw: 'Myopia',
+            bonus: 20,
+            severity: 8,
+            cap: 6,
+            jump: 'MyopiaheaderdmimYbkqOx'
+        },
+        {
+            weight: 4,
+            flaw: 'No Depth Perception',
+            bonus: 20,
+            severity: 8,
+            cap: 6,
+            jump: 'NoDepthPerceheaderaJIstRgCCR'
+        },
+        {
+            weight: 5,
+            flaw: 'Shaky Hands',
+            bonus: 15,
+            severity: 5,
+            cap: 10,
+            jump: 'ShakyHandsheadergZnORfJQKB'
+        },
+        {
+            weight: 3,
+            flaw: 'Stutter',
+            bonus: 20,
+            severity: 8,
+            cap: 6,
+            jump: 'StutterheadergeuOgVIFdt'
+        },
+        {
+            weight: 5,
+            flaw: 'Trick Knee',
+            bonus: 15,
+            severity: 5,
+            cap: 10,
+            jump: 'TrickKneeheaderBXNWdwjymP'
+        },
+        {
+            weight: 2,
+            flaw: 'Weak',
+            bonus: 20,
+            severity: 8,
+            cap: 4,
+            jump: 'WeakheaderzFoQvxiCsX'
+        },
     ]
 }
 
@@ -1079,21 +767,21 @@ let flawFunctions = {
         res.send(flawArray)
     },
     getNewParentTable: (req, res) => {
-        const flawTable = flawFunctions.rollOnTable(6, 'flawTables')
+        const flawTable = flawFunctions.rollOnTable(4, 'flawTables')
         let { roll = 1 } = req.params
         const flaw = flawFunctions.getFlawFromRoll(+roll, flawTable.table)
 
         res.send({ flaw, parentTable: flawTable })
     },
     getNewFlaw: (req, res) => {
-        let { parentTable = 'background' } = req.params
+        let { parentTable = 'burdens' } = req.params
         const flawTable = flawFunctions.getParentTableInfoFromName(parentTable)
         const flaw = flawFunctions.rollOnTable(100, parentTable)
 
         res.send({ flaw, parentTable: flawTable })
     },
     rollForFlaw: () => {
-        const flawTable = flawFunctions.rollOnTable(6, 'flawTables')
+        const flawTable = flawFunctions.rollOnTable(4, 'flawTables')
         const flaw = flawFunctions.rollOnTable(100, flawTable.table)
 
         return { flaw, parentTable: flawTable }
