@@ -168,6 +168,7 @@ p {
   justify-content: space-around;
   margin: 0 auto;
   text-indent: 0;
+  letter-spacing: 2px;
 }
 
 .mobileShell {

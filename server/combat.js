@@ -952,7 +952,7 @@ module.exports = {
             },
             {
                 name: 'Handgonne',
-                size: 'M',
+                size: 'L',
                 dam: '1d8!+1d3!',
                 rec: 18,
                 type: 'C',
