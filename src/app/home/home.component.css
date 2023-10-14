@@ -34,21 +34,15 @@
   width: 40%;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes growPadding {
-  from {padding-top: 0;}
-  to {padding-top: 34px;}
+  flex-direction: column;
 }
 
 .patron-list-div p {
   color: whitesmoke;
   font-size: 20px;
+  margin: 0;
 }
 
 .discord-shell {

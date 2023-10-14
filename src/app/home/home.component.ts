@@ -24,9 +24,39 @@ export class HomeComponent implements OnInit {
 
     this.chapterService.getPatrons().subscribe(patrons => {
       this.patronArray = patrons
-      if (this.patronArray.length > 1) {
-        setInterval(this.rotatePatrons, 1000)
+      var id = null;
+      var pos = 0;
+      const scrollUp = () => {
+        var elem = document.getElementById("patron-list");
+        clearInterval(id);
+        id = setInterval(frame, 10);
+        function frame() {
+          if (pos == elem.offsetHeight - 107) {
+            clearInterval(id);
+            scrollDown()
+          } else {
+            pos++;
+            elem.style.marginTop = pos + 'px';
+          }
+        }
       }
+
+      const scrollDown = () => {
+        var elem = document.getElementById("patron-list");
+        clearInterval(id);
+        id = setInterval(frame, 10);
+        function frame() {
+          if (pos == (elem.offsetHeight * -1) + 107) {
+            clearInterval(id);
+            scrollUp()
+          } else {
+            pos--;
+            elem.style.marginTop = pos + 'px';
+          }
+        }
+      }
+
+      scrollUp()
     })
   }
 
