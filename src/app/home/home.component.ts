@@ -15,11 +15,24 @@ export class HomeComponent implements OnInit {
   ) { }
 
   public patreon = this.chapterService.patreon
+  public patronArray = []
 
   ngOnInit() {
     if (!this.patreon) {
       this.chapterService.checkPatreon().subscribe(patreon => this.patreon = patreon)
     }
+
+    this.chapterService.getPatrons().subscribe(patrons => {
+      this.patronArray = patrons
+      if (this.patronArray.length > 1) {
+        setInterval(this.rotatePatrons, 1000)
+      }
+    })
+  }
+
+  rotatePatrons = () => {
+    const patron = this.patronArray.pop()
+    this.patronArray.unshift(patron)
   }
 
 } 

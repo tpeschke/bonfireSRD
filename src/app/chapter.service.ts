@@ -68,6 +68,13 @@ export class ChapterService {
       )
   }
 
+  getPatrons(): any {
+    return this.http.get(local.endpointBase + '/getPatrons')
+    .pipe(
+      catchError(this.handleError('patron array update', []))
+    )
+  }
+
   getBookmarks(): Observable<any> {
     return this.http.get<any[]>(local.endpointBase + '/bm')
       .pipe(

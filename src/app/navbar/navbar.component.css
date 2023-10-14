@@ -53,6 +53,10 @@ p {
   transition: 0.6s;
 }
 
+.navBar img, .mobile img {
+  cursor: pointer;
+}
+
 .noMargin {
   margin-top: 0;
 }

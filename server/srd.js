@@ -54,6 +54,8 @@ app.get('/getWeapons', ctrl.getWeapons)
 app.get('/getGroupedWeapons/:type', ctrl.getGroupedWeapons)
 app.get('/getGroupedWeapons', ctrl.getGroupedWeapons)
 
+app.get('/getPatrons', ctrl.getPatreons)
+
 app.get('/getRandomFlaw', flawCtrl.getRandomFlaw)
 app.get('/getRandomFlaw/:number', flawCtrl.getMultipleRandomFlaw)
 app.get('/getRandomDevotion', ctrl.getRandomDevotion)
