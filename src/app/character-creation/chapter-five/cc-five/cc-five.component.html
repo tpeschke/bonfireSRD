@@ -675,11 +675,6 @@
               <th>Str/Con</th>
             </tr>
             <tr>
-              <td>Tumbling</td>
-              <td>7</td>
-              <td>Dex</td>
-            </tr>
-            <tr>
               <td>Climbing</td>
               <td>7</td>
               <td>Str</td>
@@ -718,6 +713,11 @@
               <td>Swimming</td>
               <td>5</td>
               <td>Str/Con</td>
+            </tr>
+            <tr>
+              <td>Tumbling</td>
+              <td>7</td>
+              <td>Dex</td>
             </tr>
             <tr>
               <td>Vandalism</td>
@@ -1189,66 +1189,6 @@
         </p>
       </div>
       <div class="anchor">
-        <div id="ACROBATICSheader" class="anchorTag"></div>
-        <h3>Tumbling </h3>
-      </div>
-      <table class="float all-center first-left">
-        <thead>
-          <tr class="notSticky">
-            <th colspan="2">Check to Not Slow Down</th>
-          </tr>
-          <tr class="notSticky">
-            <th>Speed</th>
-            <th>Difficulty</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Walking</td>
-            <td>+d4!</td>
-          </tr>
-          <tr>
-            <td>Jog</td>
-            <td>+d8!</td>
-          </tr>
-          <tr>
-            <td>Run</td>
-            <td>+d12!</td>
-          </tr>
-          <tr>
-            <td>Sprint</td>
-            <td>+d20!+d4!</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class='paragraphShell anchor'>
-        <div id='acrocost' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'acrocost'"></app-bm-chapter-icon>
-        <p><strong>Base Cost</strong> 7</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='acrostat' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'acrostat'"></app-bm-chapter-icon>
-        <p><strong>Stats</strong> Dex</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThiscoversyocfDMiXlLAq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThiscoversyocfDMiXlLAq'"></app-bm-chapter-icon>
-        <p>This covers your character's ability to stretch their body, do flips, and turn cartwheels. This allows the
-          character to vault fences without slowing down or roll to avoid falling damage.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ReferencetheXRZdgzsvJW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ReferencetheXRZdgzsvJW'"></app-bm-chapter-icon>
-        <p>Reference the Check to Not Slow Down table to calculate the base Difficulty to, well, not slow down when you
-          encounter an obstacle.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ToreducefallBFjLIfFvzg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ToreducefallBFjLIfFvzg'"></app-bm-chapter-icon>
-        <p>To reduce falling damage, remove 10 ft from the effective fall distance for every Boon you get.</p>
-      </div>
-      <div class="anchor">
         <div id="CLIMBINGheader" class="anchorTag"></div>
         <h3>Climbing </h3>
       </div>
@@ -1533,6 +1473,66 @@
           in, though simply trying to float on your back and letting the current take you gives you a +d8! to your roll,
           though it is risky because you could get pulled into an aquifer or get pulled over a waterfall but that’s the
           chance you take.</p>
+      </div>
+      <div class="anchor">
+        <div id="ACROBATICSheader" class="anchorTag"></div>
+        <h3>Tumbling </h3>
+      </div>
+      <table class="float all-center first-left">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Check to Not Slow Down</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Speed</th>
+            <th>Difficulty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Walking</td>
+            <td>+d4!</td>
+          </tr>
+          <tr>
+            <td>Jog</td>
+            <td>+d8!</td>
+          </tr>
+          <tr>
+            <td>Run</td>
+            <td>+d12!</td>
+          </tr>
+          <tr>
+            <td>Sprint</td>
+            <td>+d20!+d4!</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='paragraphShell anchor'>
+        <div id='acrocost' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'acrocost'"></app-bm-chapter-icon>
+        <p><strong>Base Cost</strong> 7</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='acrostat' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'acrostat'"></app-bm-chapter-icon>
+        <p><strong>Stats</strong> Dex</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ThiscoversyocfDMiXlLAq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThiscoversyocfDMiXlLAq'"></app-bm-chapter-icon>
+        <p>This covers your character's ability to stretch their body, do flips, and turn cartwheels. This allows the
+          character to vault fences without slowing down or roll to avoid falling damage.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ReferencetheXRZdgzsvJW' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ReferencetheXRZdgzsvJW'"></app-bm-chapter-icon>
+        <p>Reference the Check to Not Slow Down table to calculate the base Difficulty to, well, not slow down when you
+          encounter an obstacle.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ToreducefallBFjLIfFvzg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ToreducefallBFjLIfFvzg'"></app-bm-chapter-icon>
+        <p>To reduce falling damage, remove 10 ft from the effective fall distance for every Boon you get.</p>
       </div>
       <div class="anchor">
         <div id="vandlismheader" class="anchorTag"></div>

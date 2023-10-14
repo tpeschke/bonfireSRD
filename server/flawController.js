@@ -214,7 +214,7 @@ const flawTables = {
             flaw: 'Weird Resistant',
             bonus: 15,
             severity: 2,
-            cap: 15,
+            cap: 12,
             jump: 'weirdresjiojtioew'
         },
         {
