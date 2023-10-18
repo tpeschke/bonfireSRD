@@ -510,7 +510,7 @@ const flawTables = {
             weight: 5,
             flaw: 'Ageusia',
             bonus: 10,
-            severity: 2,
+            severity: 4,
             cap: 10,
             jump: 'AgeusiaheaderTAnuTNHiNf'
         },
@@ -519,7 +519,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Asthmatic',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 10,
             jump: 'AsthmaticheaderLWuGlnQCuN'
         },
@@ -527,7 +527,7 @@ const flawTables = {
             weight: 3,
             flaw: 'Blind',
             bonus: 25,
-            severity: 8,
+            severity: 16,
             cap: 6,
             jump: 'BlindheaderejFzjQYqhm'
         },
@@ -543,25 +543,25 @@ const flawTables = {
                     weight: 1,
                     specific: 'Head',
                     bonus: 15,
-                    severity: 5,
+                    severity: 10,
                     cap: 5,
                 }, {
                     weight: 1,
                     specific: 'Body',
                     bonus: 25,
-                    severity: 8,
+                    severity: 16,
                     cap: 10
                 }, {
                     weight: 1,
                     specific: 'Arms & Hands',
                     bonus: 15,
-                    severity: 8,
+                    severity: 16,
                     cap: 10
                 }, {
                     weight: 1,
                     specific: 'Legs',
                     bonus: 25,
-                    severity: 8,
+                    severity: 16,
                     cap: 5
                 }
             ]
@@ -570,7 +570,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Deaf',
             bonus: 15,
-            severity: 8,
+            severity: 16,
             cap: 6,
             jump: 'DeafheaderQjLmdfFCwk'
         },
@@ -578,7 +578,7 @@ const flawTables = {
             weight: 6,
             flaw: 'Epileptic',
             bonus: 20,
-            severity: 5,
+            severity: 1,
             cap: 10,
             jump: 'EpilepticheaderSkNaTOGvZe'
         },
@@ -586,7 +586,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Hemophilic',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 5,
             jump: 'HemophilicheaderibLCRovJZE'
         },
@@ -594,7 +594,7 @@ const flawTables = {
             weight: 3,
             flaw: 'Hyperopia',
             bonus: 25,
-            severity: 10,
+            severity: 20,
             cap: 6,
             jump: 'HyperopiaheadervltxPyYqjG'
         },
@@ -602,7 +602,7 @@ const flawTables = {
             weight: 6,
             flaw: 'Infirm',
             bonus: 10,
-            severity: 5,
+            severity: 10,
             cap: 10,
             jump: 'InfirmheaderbevIgDJeBP'
         },
@@ -610,7 +610,7 @@ const flawTables = {
             weight: 3,
             flaw: 'Insomniac',
             bonus: 30,
-            severity: 8,
+            severity: 16,
             cap: 10,
             jump: 'InsomniacheaderIBVWLnZXkc'
         },
@@ -618,7 +618,7 @@ const flawTables = {
             weight: 6,
             flaw: 'Labyrinthitis',
             bonus: 15,
-            severity: 2,
+            severity: 4,
             cap: 10,
             jump: 'LabyrinthitisheaderfWjrwFnmrQ'
         },
@@ -626,7 +626,7 @@ const flawTables = {
             weight: 3,
             flaw: 'Limp',
             bonus: 20,
-            severity: 10,
+            severity: 20,
             cap: 4,
             jump: 'LimpheaderaYmDjKsaBX'
         },
@@ -634,7 +634,7 @@ const flawTables = {
             weight: 2,
             flaw: 'Missing Arm',
             bonus: 55,
-            severity: 30,
+            severity: 60,
             cap: 2,
             jump: 'MissingArmheaderJfhIRtVhkL'
         },
@@ -642,7 +642,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Missing Digit',
             bonus: 10,
-            severity: 5,
+            severity: 10,
             cap: 10,
             jump: 'MissingDigitheaderIpfwrRQDCk'
         },
@@ -650,7 +650,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Missing Ear',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 10,
             jump: 'MissingEarheaderiEeAvwgBRu'
         },
@@ -658,7 +658,7 @@ const flawTables = {
             weight: 2,
             flaw: 'Missing Eye',
             bonus: 50,
-            severity: 25,
+            severity: 50,
             cap: 2,
             jump: 'MissingEyeheaderhLRHlECmrB'
         },
@@ -666,7 +666,7 @@ const flawTables = {
             weight: 2,
             flaw: 'Missing Hand',
             bonus: 50,
-            severity: 20,
+            severity: 40,
             cap: 2,
             jump: 'MissingHandheaderWbmnYxxVvK'
         },
@@ -674,7 +674,7 @@ const flawTables = {
             weight: 2,
             flaw: 'Missing Leg',
             bonus: 50,
-            severity: 20,
+            severity: 40,
             cap: 2,
             jump: 'MissingLegheaderZUSKsYDxbp'
         },
@@ -682,7 +682,7 @@ const flawTables = {
             weight: 5,
             flaw: 'Missing Teeth',
             bonus: 15,
-            severity: 6,
+            severity: 12,
             cap: 4,
             jump: 'MissingTeethheaderiauDXpJazw'
         },
@@ -690,7 +690,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Mute',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 6,
             jump: 'MuteheadernvyjQWspKK'
         },
@@ -698,7 +698,7 @@ const flawTables = {
             weight: 4,
             flaw: 'Myopia',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 6,
             jump: 'MyopiaheaderdmimYbkqOx'
         },
@@ -706,7 +706,7 @@ const flawTables = {
             weight: 4,
             flaw: 'No Depth Perception',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 6,
             jump: 'NoDepthPerceheaderaJIstRgCCR'
         },
@@ -714,7 +714,7 @@ const flawTables = {
             weight: 5,
             flaw: 'Shaky Hands',
             bonus: 15,
-            severity: 5,
+            severity: 10,
             cap: 10,
             jump: 'ShakyHandsheadergZnORfJQKB'
         },
@@ -722,7 +722,7 @@ const flawTables = {
             weight: 3,
             flaw: 'Stutter',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 6,
             jump: 'StutterheadergeuOgVIFdt'
         },
@@ -730,7 +730,7 @@ const flawTables = {
             weight: 5,
             flaw: 'Trick Knee',
             bonus: 15,
-            severity: 5,
+            severity: 10,
             cap: 10,
             jump: 'TrickKneeheaderBXNWdwjymP'
         },
@@ -738,7 +738,7 @@ const flawTables = {
             weight: 2,
             flaw: 'Weak',
             bonus: 20,
-            severity: 8,
+            severity: 16,
             cap: 4,
             jump: 'WeakheaderzFoQvxiCsX'
         },
