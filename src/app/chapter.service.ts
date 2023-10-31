@@ -119,6 +119,13 @@ export class ChapterService {
       )
   }
 
+  getFlaw(): any {
+    return this.http.get(local.endpointBase + '/getRandomFlaw')
+      .pipe(
+        catchError(this.handleError('get flaw', []))
+      )
+  }
+
   getCombatEquipment(): any {
     return this.http.get(local.endpointBase + '/combat-equipment')
       .pipe(

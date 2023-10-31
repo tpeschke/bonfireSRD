@@ -222,6 +222,11 @@ module.exports = {
 
         db.get.randomDevotion().then(result => res.send(result))
     },
+    getRandomFlaw: (req, res) => {
+        const db = req.app.get('db')
+
+        db.get.randomFlaw().then(result => res.send(result))
+    },
     getWeapons: (req, res) => {
         let { type = '' } = req.params
 
