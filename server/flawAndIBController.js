@@ -1,5 +1,5 @@
-const flawTables = {
-    flawTables: [
+const ibTables = {
+    ibTables: [
         {
             weight: 2,
             tableName: 'Burdens',
@@ -15,7 +15,7 @@ const flawTables = {
     burdens: [
         {
             weight: 5,
-            flaw: 'Allergy, Food',
+            ib: 'Allergy, Food',
             bonus: 15,
             severity: 2,
             cap: 10,
@@ -57,7 +57,7 @@ const flawTables = {
         },
         {
             weight: 5,
-            flaw: 'Allergy, Misc',
+            ib: 'Allergy, Misc',
             bonus: 15,
             severity: 2,
             cap: 10,
@@ -83,7 +83,7 @@ const flawTables = {
         },
         {
             weight: 7,
-            flaw: 'Bastard',
+            ib: 'Bastard',
             bonus: 25,
             severity: 7,
             cap: 5,
@@ -91,7 +91,7 @@ const flawTables = {
         },
         {
             weight: 7,
-            flaw: 'Debtor',
+            ib: 'Debtor',
             bonus: 10,
             severity: 5,
             cap: 5,
@@ -99,7 +99,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Deranged',
+            ib: 'Deranged',
             bonus: 50,
             severity: 12,
             cap: 10,
@@ -107,7 +107,7 @@ const flawTables = {
         },
         {
             weight: 7,
-            flaw: 'Excommunicated',
+            ib: 'Excommunicated',
             bonus: 15,
             severity: 5,
             cap: 12,
@@ -115,7 +115,7 @@ const flawTables = {
         },
         {
             weight: 9,
-            flaw: 'Fated',
+            ib: 'Fated',
             bonus: 35,
             severity: 8,
             cap: 20,
@@ -123,7 +123,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Feral',
+            ib: 'Feral',
             bonus: 20,
             severity: 6,
             cap: 5,
@@ -131,7 +131,7 @@ const flawTables = {
         },
         {
             weight: 12,
-            flaw: 'Half-Life',
+            ib: 'Half-Life',
             bonus: 75,
             severity: 12,
             cap: 4,
@@ -139,7 +139,7 @@ const flawTables = {
         },
         {
             weight: 9,
-            flaw: 'Haunted',
+            ib: 'Haunted',
             bonus: 30,
             severity: 10,
             cap: 5,
@@ -147,7 +147,7 @@ const flawTables = {
         },
         {
             weight: 5,
-            flaw: 'Idiot Savant',
+            ib: 'Idiot Savant',
             bonus: 15,
             severity: 3,
             cap: 5,
@@ -155,7 +155,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Inbred',
+            ib: 'Inbred',
             bonus: 10,
             severity: 2,
             cap: 10,
@@ -163,7 +163,7 @@ const flawTables = {
         },
         {
             weight: 7,
-            flaw: 'Mule',
+            ib: 'Mule',
             bonus: 15,
             severity: 5,
             cap: 24,
@@ -171,7 +171,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Orphan',
+            ib: 'Orphan',
             bonus: 15,
             severity: 8,
             cap: 20,
@@ -179,7 +179,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Poor',
+            ib: 'Poor',
             bonus: 15,
             severity: 5,
             cap: 10,
@@ -187,7 +187,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Refugee',
+            ib: 'Refugee',
             bonus: 25,
             severity: 0,
             cap: 1,
@@ -195,7 +195,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Thrall',
+            ib: 'Thrall',
             bonus: 25,
             severity: 8,
             cap: 10,
@@ -203,7 +203,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Vow of Poverty',
+            ib: 'Vow of Poverty',
             bonus: 35,
             severity: 5,
             cap: 19,
@@ -211,7 +211,7 @@ const flawTables = {
         }, 
         {
             weight: 1,
-            flaw: 'Weird Resistant',
+            ib: 'Weird Resistant',
             bonus: 15,
             severity: 2,
             cap: 12,
@@ -219,7 +219,7 @@ const flawTables = {
         },
         {
             weight: 1,
-            flaw: 'Weird Vulnerable',
+            ib: 'Weird Vulnerable',
             bonus: 15,
             severity: 2,
             cap: 15,
@@ -229,7 +229,7 @@ const flawTables = {
     // mental: [
     //     {
     //         weight: 6,
-    //         flaw: "Survivor's Guilt",
+    //         ib: "Survivor's Guilt",
     //         bonus: 15,
     //         severity: 5,
     //         cap: 10,
@@ -242,7 +242,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 5,
-    //         flaw: 'Addict',
+    //         ib: 'Addict',
     //         bonus: 19,
     //         severity: 2,
     //         cap: 10,
@@ -281,7 +281,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 5,
-    //         flaw: 'Craven',
+    //         ib: 'Craven',
     //         bonus: 13,
     //         severity: 5,
     //         cap: 4,
@@ -294,7 +294,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 7,
-    //         flaw: 'Hypochondriac',
+    //         ib: 'Hypochondriac',
     //         bonus: 10,
     //         severity: 3,
     //         cap: 10,
@@ -307,7 +307,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 7,
-    //         flaw: 'Impatient',
+    //         ib: 'Impatient',
     //         bonus: 10,
     //         severity: 3,
     //         cap: 10,
@@ -320,7 +320,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 23,
-    //         flaw: 'Lemming',
+    //         ib: 'Lemming',
     //         bonus: 5,
     //         severity: 3,
     //         cap: 10,
@@ -333,7 +333,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 6,
-    //         flaw: 'Neurotic',
+    //         ib: 'Neurotic',
     //         bonus: 13,
     //         severity: 3,
     //         cap: 10,
@@ -346,7 +346,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 12,
-    //         flaw: 'Pacifist',
+    //         ib: 'Pacifist',
     //         bonus: 10,
     //         severity: 5,
     //         cap: 10,
@@ -359,7 +359,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 7,
-    //         flaw: 'Phobia',
+    //         ib: 'Phobia',
     //         bonus: 10,
     //         severity: 3,
     //         cap: 10,
@@ -454,7 +454,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 5,
-    //         flaw: 'Sensitive',
+    //         ib: 'Sensitive',
     //         bonus: 13,
     //         severity: 5,
     //         cap: 10,
@@ -467,7 +467,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 15,
-    //         flaw: 'Self-Conscious',
+    //         ib: 'Self-Conscious',
     //         bonus: 10,
     //         severity: 2,
     //         cap: 10,
@@ -480,7 +480,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 6,
-    //         flaw: 'Slow-Witted',
+    //         ib: 'Slow-Witted',
     //         bonus: 10,
     //         severity: 3,
     //         cap: 10,
@@ -493,7 +493,7 @@ const flawTables = {
     //     },
     //     {
     //         weight: 2,
-    //         flaw: 'Vexable',
+    //         ib: 'Vexable',
     //         bonus: 13,
     //         severity: 10,
     //         cap: 2,
@@ -508,7 +508,7 @@ const flawTables = {
     injuries: [
         {
             weight: 5,
-            flaw: 'Ageusia',
+            ib: 'Ageusia',
             bonus: 10,
             severity: 4,
             cap: 10,
@@ -517,7 +517,7 @@ const flawTables = {
         
         {
             weight: 4,
-            flaw: 'Asthmatic',
+            ib: 'Asthmatic',
             bonus: 20,
             severity: 16,
             cap: 10,
@@ -525,7 +525,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Blind',
+            ib: 'Blind',
             bonus: 25,
             severity: 16,
             cap: 6,
@@ -533,7 +533,7 @@ const flawTables = {
         },
         {
             weight: 5,
-            flaw: 'Burn Scars',
+            ib: 'Burn Scars',
             bonus: '*',
             severity: '*',
             cap: '*',
@@ -568,7 +568,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Deaf',
+            ib: 'Deaf',
             bonus: 15,
             severity: 16,
             cap: 6,
@@ -576,7 +576,7 @@ const flawTables = {
         },
         {
             weight: 6,
-            flaw: 'Epileptic',
+            ib: 'Epileptic',
             bonus: 20,
             severity: 1,
             cap: 10,
@@ -584,7 +584,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Hemophilic',
+            ib: 'Hemophilic',
             bonus: 20,
             severity: 16,
             cap: 5,
@@ -592,7 +592,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Hyperopia',
+            ib: 'Hyperopia',
             bonus: 25,
             severity: 20,
             cap: 6,
@@ -600,7 +600,7 @@ const flawTables = {
         },
         {
             weight: 6,
-            flaw: 'Infirm',
+            ib: 'Infirm',
             bonus: 10,
             severity: 10,
             cap: 10,
@@ -608,7 +608,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Insomniac',
+            ib: 'Insomniac',
             bonus: 30,
             severity: 16,
             cap: 10,
@@ -616,7 +616,7 @@ const flawTables = {
         },
         {
             weight: 6,
-            flaw: 'Labyrinthitis',
+            ib: 'Labyrinthitis',
             bonus: 15,
             severity: 4,
             cap: 10,
@@ -624,7 +624,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Limp',
+            ib: 'Limp',
             bonus: 20,
             severity: 20,
             cap: 4,
@@ -632,7 +632,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Missing Arm',
+            ib: 'Missing Arm',
             bonus: 55,
             severity: 60,
             cap: 2,
@@ -640,7 +640,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Missing Digit',
+            ib: 'Missing Digit',
             bonus: 10,
             severity: 10,
             cap: 10,
@@ -648,7 +648,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Missing Ear',
+            ib: 'Missing Ear',
             bonus: 20,
             severity: 16,
             cap: 10,
@@ -656,7 +656,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Missing Eye',
+            ib: 'Missing Eye',
             bonus: 50,
             severity: 50,
             cap: 2,
@@ -664,7 +664,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Missing Hand',
+            ib: 'Missing Hand',
             bonus: 50,
             severity: 40,
             cap: 2,
@@ -672,7 +672,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Missing Leg',
+            ib: 'Missing Leg',
             bonus: 50,
             severity: 40,
             cap: 2,
@@ -680,7 +680,7 @@ const flawTables = {
         },
         {
             weight: 5,
-            flaw: 'Missing Teeth',
+            ib: 'Missing Teeth',
             bonus: 15,
             severity: 12,
             cap: 4,
@@ -688,7 +688,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Mute',
+            ib: 'Mute',
             bonus: 20,
             severity: 16,
             cap: 6,
@@ -696,7 +696,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'Myopia',
+            ib: 'Myopia',
             bonus: 20,
             severity: 16,
             cap: 6,
@@ -704,7 +704,7 @@ const flawTables = {
         },
         {
             weight: 4,
-            flaw: 'No Depth Perception',
+            ib: 'No Depth Perception',
             bonus: 20,
             severity: 16,
             cap: 6,
@@ -712,7 +712,7 @@ const flawTables = {
         },
         {
             weight: 5,
-            flaw: 'Shaky Hands',
+            ib: 'Shaky Hands',
             bonus: 15,
             severity: 10,
             cap: 10,
@@ -720,7 +720,7 @@ const flawTables = {
         },
         {
             weight: 3,
-            flaw: 'Stutter',
+            ib: 'Stutter',
             bonus: 20,
             severity: 16,
             cap: 6,
@@ -728,7 +728,7 @@ const flawTables = {
         },
         {
             weight: 5,
-            flaw: 'Trick Knee',
+            ib: 'Trick Knee',
             bonus: 15,
             severity: 10,
             cap: 10,
@@ -736,7 +736,7 @@ const flawTables = {
         },
         {
             weight: 2,
-            flaw: 'Weak',
+            ib: 'Weak',
             bonus: 20,
             severity: 16,
             cap: 4,
@@ -745,14 +745,14 @@ const flawTables = {
     ]
 }
 
-let flawFunctions = {
-    getFlawTables: (req, res) => {
-        res.send(flawTables)
+let ibFunctions = {
+    getIBTables: (req, res) => {
+        res.send(ibTables)
     },
-    getRandomFlaw: (req, res) => {
-        res.send(flawFunctions.rollForFlaw())
+    getRandomIB: (req, res) => {
+        res.send(ibFunctions.rollForIB())
     },
-    getMultipleRandomFlaw: (req, res) => {
+    getMultipleRandomIB: (req, res) => {
         const limit = 100
         let { number = 1 } = req.params
         if (number < 0) {
@@ -760,68 +760,68 @@ let flawFunctions = {
         } else if (number > limit) {
             number = limit
         }
-        let flawArray = []
+        let ibArray = []
         for (let i = 0; i < number; i++) {
-            flawArray.push(flawFunctions.rollForFlaw())
+            ibArray.push(ibFunctions.rollForIB())
         }
-        res.send(flawArray)
+        res.send(ibArray)
     },
     getNewParentTable: (req, res) => {
-        const flawTable = flawFunctions.rollOnTable(4, 'flawTables')
+        const ibTable = ibFunctions.rollOnTable(4, 'ibTables')
         let { roll = 1 } = req.params
-        const flaw = flawFunctions.getFlawFromRoll(+roll, flawTable.table)
+        const ib = ibFunctions.getIBFromRoll(+roll, ibTable.table)
 
-        res.send({ flaw, parentTable: flawTable })
+        res.send({ ib, parentTable: ibTable })
     },
-    getNewFlaw: (req, res) => {
+    getNewIB: (req, res) => {
         let { parentTable = 'burdens' } = req.params
-        const flawTable = flawFunctions.getParentTableInfoFromName(parentTable)
-        const flaw = flawFunctions.rollOnTable(100, parentTable)
+        const ibTable = ibFunctions.getParentTableInfoFromName(parentTable)
+        const ib = ibFunctions.rollOnTable(100, parentTable)
 
-        res.send({ flaw, parentTable: flawTable })
+        res.send({ ib, parentTable: ibTable })
     },
-    rollForFlaw: () => {
-        const flawTable = flawFunctions.rollOnTable(4, 'flawTables')
-        const flaw = flawFunctions.rollOnTable(100, flawTable.table)
+    rollForIB: () => {
+        const ibTable = ibFunctions.rollOnTable(4, 'ibTables')
+        const ib = ibFunctions.rollOnTable(100, ibTable.table)
 
-        return { flaw, parentTable: flawTable }
+        return { ib, parentTable: ibTable }
     },
     rollOnTable: (max, tableName) => {
         const roll = Math.floor(Math.random() * (max) + 1)
 
-        return flawFunctions.getFlawFromRoll(roll, tableName)
+        return ibFunctions.getIBFromRoll(roll, tableName)
     },
     rollOnTableDynamic: (tableArray) => {
         const roll = Math.floor(Math.random() * (tableArray.length))
 
         return tableArray[roll]
     },
-    getFlawFromRoll: (roll, tableName) => {
+    getIBFromRoll: (roll, tableName) => {
         let total = 0
-        for (let i = 0; i < flawTables[tableName].length; i++) {
-            total += flawTables[tableName][i].weight
+        for (let i = 0; i < ibTables[tableName].length; i++) {
+            total += ibTables[tableName][i].weight
             if (total >= roll) {
-                let flaw = flawTables[tableName][i]
-                flaw.roll = roll
-                if (flaw.subtable && flaw.subtable.length > 0) {
-                    let subtableResults = flawFunctions.rollOnTableDynamic(flaw.subtable)
-                    flaw = { ...flaw, ...subtableResults }
-                    delete flaw.subtable
-                    if (flaw.specific) {
-                        flaw.flaw = `${flaw.flaw} - ${flaw.specific}`
+                let ib = ibTables[tableName][i]
+                ib.roll = roll
+                if (ib.subtable && ib.subtable.length > 0) {
+                    let subtableResults = ibFunctions.rollOnTableDynamic(ib.subtable)
+                    ib = { ...ib, ...subtableResults }
+                    delete ib.subtable
+                    if (ib.specific) {
+                        ib.ib = `${ib.ib} - ${ib.specific}`
                     }
                 }
-                return flaw
+                return ib
             }
         }
     },
     getParentTableInfoFromName: (tableName) => {
-        for (let i = 0; i < flawTables.flawTables.length; i++) {
-            if (flawTables.flawTables[i].table === tableName) {
-                return flawTables.flawTables[i]
+        for (let i = 0; i < ibTables.ibTables.length; i++) {
+            if (ibTables.ibTables[i].table === tableName) {
+                return ibTables.ibTables[i]
             }
         }
     }
 }
 
-module.exports = flawFunctions
+module.exports = ibFunctions

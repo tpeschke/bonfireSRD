@@ -126,15 +126,15 @@ export class ChapterService {
       )
   }
 
-  getAllFlawTables(): any {
-    return this.http.get(local.endpointBase + '/getFlawTables')
+  getAllIBTables(): any {
+    return this.http.get(local.endpointBase + '/getIBTables')
       .pipe(
         catchError(this.handleError('get all flaw tables', []))
       )
   }
 
-  getRandomFlaw(): any {
-    return this.http.get(local.endpointBase + '/getRandomFlaw')
+  getRandomIB(): any {
+    return this.http.get(local.endpointBase + '/getRandomIB')
       .pipe(
         catchError(this.handleError('get random flaw', []))
       )
@@ -147,8 +147,8 @@ export class ChapterService {
     )
   }
 
-  getNewFlaw(parentTable): any {
-    return this.http.get(local.endpointBase + '/getNewFlaw/' + parentTable)
+  getNewIB(parentTable): any {
+    return this.http.get(local.endpointBase + '/getNewIB/' + parentTable)
     .pipe(
       catchError(this.handleError('get new flaw with parent table', []))
     )

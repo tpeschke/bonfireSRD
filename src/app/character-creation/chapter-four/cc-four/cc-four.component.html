@@ -143,20 +143,20 @@
           <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
           <p>If you don't have dice at the ready, you can always get a random Injury or Burden by pushing the button below:</p>
         </div>
-        <div *ngIf="!flaw" class="result-shell">
-          <button class="generateButton" (click)="getRandomFlaw()">Get Me a Random Burden or Injury!</button>
+        <div *ngIf="!ib" class="result-shell">
+          <button class="generateButton" (click)="getRandomIB()">Get Me a Random Burden or Injury!</button>
         </div>
-        <div *ngIf="flaw" class="result-shell">
+        <div *ngIf="ib" class="result-shell">
           <div class="resultHolder">
             <p>Parent Table: </p>
-            <h2 (click)="getNewParentTable()">{{flaw.parentTable.tableName}} <i class="fa-solid fa-rotate-right"></i></h2>
+            <h2 (click)="getNewParentTable()">{{ib.parentTable.tableName}} <i class="fa-solid fa-rotate-right"></i></h2>
           </div>
           <div class="resultHolder">
             <p>Result: </p>
-            <h2 (click)="getNewFlaw()">{{flaw.flaw.flaw}} <i class="fa-solid fa-rotate-right"></i></h2>
+            <h2 (click)="getNewIB()">{{ib.ib.ib}} <i class="fa-solid fa-rotate-right"></i></h2>
           </div>
           <div class="resultHolder jump-icon">
-            <div (click)="scrollToFlaw()">
+            <div (click)="scrollToIB()">
               <i class="fa-solid fa-arrow-down"></i>
             </div>
           </div>
@@ -164,8 +164,8 @@
         <div *ngIf="rerollCount > 0" class="result-shell">
           <p>Reroll Count: {{rerollCount}}</p>
         </div>
-        <div *ngIf="flaw" class="result-shell">
-          <button class="generateButton" (click)="getRandomFlaw()">Get Me Another!</button>
+        <div *ngIf="ib" class="result-shell">
+          <button class="generateButton" (click)="getRandomIB()">Get Me Another!</button>
         </div>
       </div>
 

@@ -130,3 +130,8 @@ create table SRDtraits (
     id serial primary key,
     trait text
 )
+
+create table srdflaws (
+    id serial primary key,
+    title varchar(250)
+)
