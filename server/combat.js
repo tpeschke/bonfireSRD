@@ -835,7 +835,7 @@ module.exports = {
                 type: 'P',
                 minrec: 4,
                 bonus: 'Can be used in melee. Apply Str Dam Mod.',
-                bonusLong: '<p>The Javelin can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, if damage is greater than the shield\'s DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Javelin.</p><br><p>This weapon can be drawn and readied on the move but the wielder needs to be standing still to aim without penalties.</p>'
+                bonusLong: '<p>The Javelin can be used at ranged or as a javelin in melee. All applicable Adv. Weapon Skills apply to both, taking the highest of the two.</p><br><p>On a shield hit, Roll damage only to determine effect: if it\'s greater than the shield\'s DR, the javelin is lodged in the shield. Defender defends on 1 dice smaller until they drop the shield or spend 2d6! seconds pull it out.</p><br><p>Add your Damage Modifier from Strength to the Javelin.</p><br><p>This weapon can be drawn and readied on the move but the wielder needs to be standing still to aim without penalties.</p>'
             },
             {
                 name: 'Throwing Axe',
