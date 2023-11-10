@@ -227,6 +227,18 @@ module.exports = {
 
         db.get.randomFlaw().then(result => res.send(result))
     },
+    getRandomFlaws: (req, res) => {
+        const db = req.app.get('db')
+        const limit = 100
+        let { number = 1 } = req.params
+        if (number < 0) {
+            number = 1
+        } else if (number > limit) {
+            number = limit
+        }
+
+        db.get.randomFlaws(number).then(result => res.send(result))
+    },
     getWeapons: (req, res) => {
         let { type = '' } = req.params
 
