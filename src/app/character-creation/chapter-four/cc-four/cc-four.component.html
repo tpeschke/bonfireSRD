@@ -82,7 +82,7 @@
         <div class="underline-sub"></div>
       </div>
 
-      <table *ngIf="flawTables" class="float all-center first-left">
+      <table *ngIf="ibTables" class="float all-center first-left">
         <thead>
           <tr class="notSticky">
             <th colspan="2">Burden or Injury?</th>
@@ -93,7 +93,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let table of flawTables.flawTables">
+          <tr *ngFor="let table of ibTables.ibTables">
             <td>{{table.weight > 1 ? (table.currentTotal + 1) + ' - ' + (table.currentTotal + table.weight) :
               table.currentTotal}}</td>
             <td>{{table.tableName}}</td>
@@ -128,9 +128,9 @@
           free.</p>
       </div>
       
-      <div *ngIf="flawTables" class="multiple-tables-shell">
-        <lib-burdenAndInjuriesTable [label]="'Burdens'" [flawTable]="flawTables.burdens"></lib-burdenAndInjuriesTable>
-        <lib-burdenAndInjuriesTable [label]="'Injuries'" [flawTable]="flawTables.injuries"></lib-burdenAndInjuriesTable>
+      <div *ngIf="ibTables" class="multiple-tables-shell">
+        <lib-burdenAndInjuriesTable [label]="'Burdens'" [ibTable]="ibTables.burdens"></lib-burdenAndInjuriesTable>
+        <lib-burdenAndInjuriesTable [label]="'Injuries'" [ibTable]="ibTables.injuries"></lib-burdenAndInjuriesTable>
       </div>
 
       <div class='sidebarShell marginBottom'>

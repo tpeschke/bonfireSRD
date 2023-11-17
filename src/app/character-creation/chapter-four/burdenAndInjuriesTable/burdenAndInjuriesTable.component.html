@@ -12,13 +12,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let flaw of flawTable">
-      <td>{{flaw.weight > 1 ? (flaw.currentTotal + 1) + ' - ' + (flaw.currentTotal + flaw.weight) :
-        flaw.currentTotal + 1}}</td>
-      <td>{{flaw.flaw}}</td>
-      <td>{{flaw.bonus}}</td>
-      <td>{{flaw.severity}}</td>
-      <td>{{flaw.cap}}</td>
+    <tr *ngFor="let ib of ibTable">
+      <td>{{ib.weight > 1 ? (ib.currentTotal + 1) + ' - ' + (ib.currentTotal + ib.weight) :
+        ib.currentTotal + 1}}</td>
+      <td>{{ib.ib}}</td>
+      <td>{{ib.bonus}}</td>
+      <td>{{ib.severity}}</td>
+      <td>{{ib.cap}}</td>
     </tr>
   </tbody>
 </table>
