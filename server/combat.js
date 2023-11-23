@@ -902,7 +902,7 @@ module.exports = {
             {
                 name: 'Longbow',
                 size: 'L',
-                dam: 'd10+d8!',
+                dam: 'd10!+d8!',
                 rec: 14,
                 type: 'P',
                 minrec: 5,
