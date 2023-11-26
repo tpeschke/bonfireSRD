@@ -7,6 +7,7 @@ import { CcThreeComponent } from './cc-three/cc-three.component';
 import { CcThreeDeluxeComponent } from './cc-three-deluxe/cc-three-deluxe.component';
 import { BasicGuardService } from 'src/app/chapters/basic-guard.service';
 import { AdvGuardService } from 'src/app/chapters/adv-guard.service';
+import { WeirdTableComponent } from './weirdTable/weirdTable.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
   }];
 
 @NgModule({
-  declarations: [CcThreeComponent, CcThreeDeluxeComponent],
+  declarations: [CcThreeComponent, CcThreeDeluxeComponent, WeirdTableComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

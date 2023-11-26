@@ -1,0 +1,18 @@
+<table class="float all-center first-left">
+  <thead>
+    <tr class="notSticky">
+      <th colspan="2">{{label}}</th>
+    </tr>
+    <tr>
+      <th>Roll (d{{weirdTable.max}})</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of weirdTable.rows">
+      <td>{{row.weight > 1 ? (row.currentTotal + 1) + ' - ' + (row.currentTotal + row.weight) :
+        row.currentTotal + 1}}</td>
+      <td>{{row.rudiment}}</td>
+    </tr>
+  </tbody>
+</table>

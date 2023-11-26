@@ -840,7 +840,7 @@
         <app-bm-chapter-icon [id]="'NoneSnolCVTMzV'"></app-bm-chapter-icon>
         <p>None</p>
       </div>
-      
+
       <div class='sidebarShell marginBottom'>
         <h5 class='sidebarTitle'>Weird-Adept Double Down</h5>
         <div class='anchor'>
@@ -932,131 +932,9 @@
             the Rudiment.</p>
         </div>
         <div class="rudiment-shell">
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Shape Rudiments</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d8)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Circle</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Chain</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Cone</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Personal</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Salvo</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Sphere</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Ray</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Wall</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Origin Rudiments</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d6)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Aura</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Touch</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Burst</td>
-              </tr>
-              <tr>
-                <td>4 - 5</td>
-                <td>Near</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Far</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Effects Rudiments</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d8)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Animism</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Calling</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Charm</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Glamour</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Investiture</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Occult</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Sortilege</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Reroll</td>
-              </tr>
-            </tbody>
-          </table>
+          <lib-weirdTable *ngIf="weirdTables.shapeTable" [label]="'Shapes'" [weirdTable]="weirdTables.shapeTable"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.originTable" [label]="'Origins'" [weirdTable]="weirdTables.originTable"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.traditionTable" [label]="'Traditions'" [weirdTable]="weirdTables.traditionTable"></lib-weirdTable>
         </div>
         <div class='paragraphShell anchor marginBottom'>
           <div id='RollonthistcQypNKYXXb' class='anchorTag'></div>
@@ -1068,471 +946,13 @@
             rolling on any table you have training in.</p>
         </div>
         <div class="rudiment-shell">
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Animism Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d12)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Animate Corpse</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Bestial Sight</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Corpse Hide</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Endow with Power</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Haste</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>High Jump</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Icarian Flight</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Leadfeet</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Outcry</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Sap Power</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Slow Metabolism</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>Stitch Flesh</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Calling Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d12)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Banish</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Bind Elemental Heart</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Break Summoning</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Corpse Tongue</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Dominate</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Essence Link</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Force Bind Spirit</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Hookgate</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Lockdown</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Phantombinding</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Touch of the Otherworld</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>Turn</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Charm Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d20)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1 - 2</td>
-                <td>Detraction</td>
-              </tr>
-              <tr>
-                <td>3 - 4</td>
-                <td>Dispel Enchantment</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Eiderdown</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Flatten</td>
-              </tr>
-              <tr>
-                <td>7 - 8</td>
-                <td>Hermetic Dweomer</td>
-              </tr>
-              <tr>
-                <td>9 - 10</td>
-                <td>Illuminate</td>
-              </tr>
-              <tr>
-                <td>11 - 12</td>
-                <td>Liminal Platform</td>
-              </tr>
-              <tr>
-                <td>13 - 15</td>
-                <td>Magic Circle</td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>Shock</td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td>Silence</td>
-              </tr>
-              <tr>
-                <td>18 - 19</td>
-                <td>Smokescreen</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>Telekinesis</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Glamour Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d20)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Alto Scream</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Charismatic Glamour</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Darkness</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Discombobulate</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Doppelganger</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Inflict Doubt</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Mask of Zal</td>
-              </tr>
-              <tr>
-                <td>8 - 10</td>
-                <td>Mimic</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Myopic Curse</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>Perfume</td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>Pseudo Spell</td>
-              </tr>
-              <tr>
-                <td>12 - 14</td>
-                <td>Reorient</td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>Shroud of Innocence</td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>Twist Tongue</td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td>Vertigo</td>
-              </tr>
-              <tr>
-                <td>18 - 20</td>
-                <td>Visual Illusion</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Investiture Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d20)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Bar Portal</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Binding Glyph</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Burden</td>
-              </tr>
-              <tr>
-                <td>4 - 5</td>
-                <td>Flash Bang</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Ironhide</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Kinetic Burst</td>
-              </tr>
-              <tr>
-                <td>8 - 9</td>
-                <td>Marionette</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Mystic Mark</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Phasing</td>
-              </tr>
-              <tr>
-                <td>12 - 13</td>
-                <td>Reinforce</td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>Smoothing</td>
-              </tr>
-              <tr>
-                <td>15 - 16</td>
-                <td>Strobe</td>
-              </tr>
-              <tr>
-                <td>17 - 18</td>
-                <td>Weaken</td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td>Weaponsharp</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>Wall Walk</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Occultism Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d20)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Alarm</td>
-              </tr>
-              <tr>
-                <td>2 - 3</td>
-                <td>Ancestral Lore</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Augur Secret</td>
-              </tr>
-              <tr>
-                <td>5 - 6</td>
-                <td>Detect Magic</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Divine Object</td>
-              </tr>
-              <tr>
-                <td>8 - 9</td>
-                <td>Dream Stride</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Hindsight</td>
-              </tr>
-              <tr>
-                <td>11 - 12</td>
-                <td>Invoke Belligerence</td>
-              </tr>
-              <tr>
-                <td>13 - 14</td>
-                <td>Lore Mysterium</td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>Messsage</td>
-              </tr>
-              <tr>
-                <td>16 - 17</td>
-                <td>Mind Wipe</td>
-              </tr>
-              <tr>
-                <td>18</td>
-                <td>Scry</td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td>Strengthen Ymir</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>Tongues</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table>
-            <thead>
-              <tr class="notSticky">
-                <th colspan="2">Sortilege Effects</th>
-              </tr>
-              <tr class="notSticky">
-                <th>Roll (d12)</th>
-                <th> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Arcane Vortex</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Bind to the Average</td>
-              </tr>
-              <tr>
-                <td>3 - 4</td>
-                <td>Fate Well</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Fortify Luck</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Heroic Moment</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Hex</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Improbable Stair</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Inflict Bad Luck</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Mislay</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Rebalance</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>Ricochet</td>
-              </tr>
-            </tbody>
-          </table>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Animism Effects'" [weirdTable]="weirdTables.effectsTables.Animism"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Calling Effects'" [weirdTable]="weirdTables.effectsTables.Calling"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Charm Effects'" [weirdTable]="weirdTables.effectsTables.Charm"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Glamour Effects'" [weirdTable]="weirdTables.effectsTables.Glamour"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Investiture Effects'" [weirdTable]="weirdTables.effectsTables.Investiture"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Occultism Effects'" [weirdTable]="weirdTables.effectsTables.Occultism"></lib-weirdTable>
+          <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Sortilege Effects'" [weirdTable]="weirdTables.effectsTables.Sortilege"></lib-weirdTable>
         </div>
       </div>
 
@@ -2200,7 +1620,8 @@
         <div id='4IllaoRcFth' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'4IllaoRcFth'"></app-bm-chapter-icon>
         <p>For example, a first-level, human Ranger can choose Crawling, Walking, Jogging, Running, Sprinting. If
-          he chooses Walking, his Walk becomes 7.5 ft / second (because it is +2.5 since Walk is 0 Movement Categories above
+          he chooses Walking, his Walk becomes 7.5 ft / second (because it is +2.5 since Walk is 0 Movement Categories
+          above
           Walk). At level 3, he can choose Crawling, Jogging, Running, or Sprinting, but not Walking. If he
           chooses Running, his Running speed becomes 20 ft / second (since Running is 2 Categories above Walk, adding
           that base +5).</p>
@@ -3516,7 +2937,8 @@
         <app-bm-chapter-icon [id]="'4QtguRHfSyM'"></app-bm-chapter-icon>
         <p><strong class="optional">*</strong><strong>Buddy System</strong> Soldiers fight as a unit, moving and acting
           as one where possible. When an adjacent ally switches Tactics, the Soldier may immediately switch to that
-          Tactic as well. On top of this, they, and adjacent allies, also receive a bonus to their Trauma Threshold equal to the
+          Tactic as well. On top of this, they, and adjacent allies, also receive a bonus to their Trauma Threshold
+          equal to the
           Soldier’s level.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -3530,8 +2952,9 @@
       <div class='paragraphShell anchor'>
         <div id='soldreddisc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'soldreddisc'"></app-bm-chapter-icon>
-        <p><strong class='optional'>*</strong><strong>Discipline & Control </strong>Through training, a Soldier is 
-          able to keep their head under stressful circumstances. At every level, including the first, the Soldier permanently increases their
+        <p><strong class='optional'>*</strong><strong>Discipline & Control </strong>Through training, a Soldier is
+          able to keep their head under stressful circumstances. At every level, including the first, the Soldier
+          permanently increases their
           Stress
           Threshold by 1.</p>
       </div>
@@ -3551,8 +2974,10 @@
         <div id='soidlamaritadept' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'soidlamaritadept'"></app-bm-chapter-icon>
         <p><strong>Soldier's Martial Adept </strong>This character has a knack for combat. All
-          Advanced Armor & Shield Skills have their cost reduced by 2 CrP. They also gain a 20% discount to all Armor & Shield Skill
-          Suites. This stacks with other Martial Adepts.  This can't be taken as part of the Human's Skillful ability.</p>
+          Advanced Armor & Shield Skills have their cost reduced by 2 CrP. They also gain a 20% discount to all Armor &
+          Shield Skill
+          Suites. This stacks with other Martial Adepts. This can't be taken as part of the Human's Skillful ability.
+        </p>
       </div>
       <div class='anchor'>
         <div id='4hgVCFWvTggjq' class='anchorTag'></div>
@@ -3726,9 +3151,10 @@
       <div class='paragraphShell anchor'>
         <div id='4pRJkRLaHhNm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'4pRJkRLaHhNm'"></app-bm-chapter-icon>
-        <p><strong class="optional">*</strong><strong>Run 'em Ragged</strong> A Thug knows how to drive a point home: either with their 
-          words or their weapon. Whenever they deal damage to their enemy, they inflict 1d4! Stress. If they win 
-        an Appeal, they inflict an additional 1d4! Stress. This is increased by +1 every 3rd level.</p>
+        <p><strong class="optional">*</strong><strong>Run 'em Ragged</strong> A Thug knows how to drive a point home:
+          either with their
+          words or their weapon. Whenever they deal damage to their enemy, they inflict 1d4! Stress. If they win
+          an Appeal, they inflict an additional 1d4! Stress. This is increased by +1 every 3rd level.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='4paxBVWfZtcG' class='anchorTag'></div>
@@ -3740,7 +3166,8 @@
       <div class='paragraphShell anchor'>
         <div id='4pIAeEntpOTk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'4pIAeEntpOTk'"></app-bm-chapter-icon>
-        <p class="italic"> Example, a level 5 Thug with a knife (3 dice) vs Brigandine (2/D), would reduce the enemy’s DR to
+        <p class="italic"> Example, a level 5 Thug with a knife (3 dice) vs Brigandine (2/D), would reduce the enemy’s
+          DR to
           3 (6 total DR - 3 from Precision Attack), while one using a club (1 dice) would reduce it to 1 (4 total DR - 3
           from Precision Attack).</p>
       </div>
@@ -4035,7 +3462,8 @@
           into their order, the Ashcaller is gifted with the bone(s) of one of their
           Ancestors and tasked with honoring their legacy. This is often a minor ancestor
           so this bone doesn’t start as a Relic but may become one as a result of play.
-          This bones serve to anchor the Ashcaller in their faith; When the bones are brought into a Confrontation that relates question their faith or going
+          This bones serve to anchor the Ashcaller in their faith; When the bones are brought into a Confrontation that
+          relates question their faith or going
           against their cult's tenets, they receive their Grit Dice
           instead of the standard d6!.
         </p>
@@ -4112,8 +3540,10 @@
       <div class='paragraphShell anchor'>
         <div id='byspendinganhourdi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'byspendinganhourdi'"></app-bm-chapter-icon>
-        <p>Anytime they can spend 8 hours of time, staring at the bones, they’re able to summon spirits and use them as an Asset for a Skill Check.
-          After spending the 8 hours, they gain 1 Prep that they can use on any Skill Check. The Ashcaller increases the number of preps by 1
+        <p>Anytime they can spend 8 hours of time, staring at the bones, they’re able to summon spirits and use them as
+          an Asset for a Skill Check.
+          After spending the 8 hours, they gain 1 Prep that they can use on any Skill Check. The Ashcaller increases the
+          number of preps by 1
           every 3 levels after the first.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -5667,7 +5097,8 @@
         <div id='4xUbxPUNtiT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'4xUbxPUNtiT'"></app-bm-chapter-icon>
         <p><strong class="optional">*</strong><strong>Law Of Averages </strong>The Symbolist is a pillar of certainty in
-          a sea of chaos. Any once per Check, the Symbolist can bring the results 1 point towards the average. This can negate perfect attacks and defenses as well as
+          a sea of chaos. Any once per Check, the Symbolist can bring the results 1 point towards the average. This can
+          negate perfect attacks and defenses as well as
           fumbles.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -6583,13 +6014,14 @@
         <div id='ThosethattryqNzZsYYtmc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThosethattryqNzZsYYtmc'"></app-bm-chapter-icon>
         <p><strong>Provoke </strong>There is just something about the Knave that gets under people's skin.
-        When you inflict or increase the Rank of an Emotional State, increase it by your level as well.</p>
+          When you inflict or increase the Rank of an Emotional State, increase it by your level as well.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='WhenyouwrestuOvhBSswmC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenyouwrestuOvhBSswmC'"></app-bm-chapter-icon>
         <p><strong>Wrestling With a Pig </strong>When you wrestle with a pig, you both get muddy but the pig loves it.
-          When someone inflicts or increases an Emotional State on you, you may inflict or increase an Emotional State on them.</p>
+          When someone inflicts or increases an Emotional State on you, you may inflict or increase an Emotional State
+          on them.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='WhileotherssAQtiCjXCjP' class='anchorTag'></div>
@@ -6603,9 +6035,11 @@
       <div class='paragraphShell anchor'>
         <div id='AsaKnavegroJMTwgKkAbN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AsaKnavegroJMTwgKkAbN'"></app-bm-chapter-icon>
-        <p><strong class='optional'>*</strong><strong>Show No Weakness</strong>There is something predatory about the Knave, 
-          a thing that makes showing weakness stressful. Whenever an enemy around the Knave rolls below average on their d20! for a Check,
-         they take 1d4! Stress regardless of the outcome.</p>
+        <p><strong class='optional'>*</strong><strong>Show No Weakness</strong>There is something predatory about the
+          Knave,
+          a thing that makes showing weakness stressful. Whenever an enemy around the Knave rolls below average on their
+          d20! for a Check,
+          they take 1d4! Stress regardless of the outcome.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AsaKnavegronXvvGGWtHy' class='anchorTag'></div>
@@ -8219,7 +7653,8 @@
         <app-bm-chapter-icon [id]="'4dOcxnxskGo'"></app-bm-chapter-icon>
         <p>Sourcerers can continue to Manifest for as long
           as they want, however, this power comes with a price. Being a conduit of the
-          unworldly saps their life and, if they stop manifest (whether to store their SPs or when they finally shape their spell), they take
+          unworldly saps their life and, if they stop manifest (whether to store their SPs or when they finally shape
+          their spell), they take
           damage equal to that pool. This is all on one Wound but different periods of Manifest are different Wounds.
           During the manifestation, this drainage of the lifeforce is evident to people watching
           as the Sourcerer's body becomes more shrivaled and sickly, even before the damage is dealt.

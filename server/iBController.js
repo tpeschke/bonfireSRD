@@ -1,4 +1,4 @@
-const ibTables = {
+let ibTables = {
     ibTables: [
         {
             weight: 2,
@@ -745,7 +745,7 @@ const ibTables = {
     ]
 }
 
-let ibFunctions = {
+const ibFunctions = {
     getIBTables: (req, res) => {
         res.send(ibTables)
     },

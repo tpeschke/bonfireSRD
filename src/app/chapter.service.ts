@@ -140,6 +140,13 @@ export class ChapterService {
       )
   }
 
+  getAllWeirdTables(): any {
+    return this.http.get(local.endpointBase + '/getWeirdTables')
+    .pipe(
+      catchError(this.handleError('get all Weird tables', []))
+    )
+  }
+
   getRandomIB(): any {
     return this.http.get(local.endpointBase + '/getRandomIB')
       .pipe(
