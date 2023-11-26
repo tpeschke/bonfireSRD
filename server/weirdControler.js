@@ -536,7 +536,7 @@ const weirdFunctions = {
         }
         const effect = weirdFunctions.getRudimentFromRoll(weirdTables.effectsTables[tradition]).rudiment
         
-        return {...spell, tradition, effect}
+        return {...spell, tradition, effect, name: nameTheScroll(spell.origin, effect, spell.shape), tooltip: createTooltip(spell, effect, tradition)}
     },
     getRudimentFromRoll: (table) => {
         const roll = Math.floor(Math.random() * (table.max) + 1)
@@ -548,6 +548,28 @@ const weirdFunctions = {
             }
         }
     },
+}
+
+function nameTheScroll(origin, effect, shape) {
+    if (origin === 'Touch' || origin === 'Burst') {
+        return `Scroll of ${origin}ing, ${shape} ${effect}`
+    } else if (origin === 'Near' || origin === 'Far') {
+        return `Scroll of ${origin} ${shape} of ${effect}`
+    } else {
+        return `Scroll of ${ingTheEffect(effect)} ${origin} in a ${shape}`
+    }
+}
+
+function ingTheEffect(effect) {
+    if (effect[effect.length -1] === 'e') {
+        return effect.slice(0, effect.length-1) + 'ing'
+    } else {
+        return effect + 'ing'
+    }
+}
+
+function createTooltip(spell, effect, tradition) {
+    return `${spell.origin} | ${spell.shape} | ${effect} (${tradition})`
 }
 
 module.exports = weirdFunctions
