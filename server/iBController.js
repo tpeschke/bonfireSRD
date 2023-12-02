@@ -148,8 +148,8 @@ let ibTables = {
         {
             weight: 5,
             ib: 'Idiot Savant',
-            bonus: 15,
-            severity: 3,
+            bonus: 30,
+            severity: 12,
             cap: 5,
             jump: 'IdiotSavantheaderCIOoOIjoNI'
         },
