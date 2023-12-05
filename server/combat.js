@@ -267,7 +267,8 @@ module.exports = {
                 type: 'P',
                 parry: 0,
                 measure: 2,
-                bonus: false,
+                bonus: 'On Parry, damage isn\'t 0\'ed',
+                bonusLong: '<p>When Parried, the Horsemans Pick\'s damage isn\'t reduced to 0 like other Piercing weapons.</p>'
             },
             {
                 name: 'Lochaber Axe',
