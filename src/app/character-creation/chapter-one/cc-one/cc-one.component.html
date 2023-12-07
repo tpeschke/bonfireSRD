@@ -1819,138 +1819,114 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThestartingnfydJxZDMNL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThestartingnfydJxZDMNL'"></app-bm-chapter-icon>
-        <p>The starting number of Convictions your character starts with is based on their Int and their starting Rank is determined by your Pre 
-          with the first Conviction using the "First Rank" column on the table below and each subsequent Rank getting a cumulative -1 (so, if your 
-          first Rank is 4, your third Rank will by 1). This can't take a Rank below 0.
+        <p>The starting number of Convictions your character starts with is based on their Int. Your highest Conviction 
+          starts at Rank 3 and each subsequent Rank gets a cumulative -1 (so, since your 
+          first Rank is 3, your third Rank will by 1 (-2)). This can't take a Rank below 0.
         </p>
       </div>
 
       <table class="marginBottom all-centered first-left table-center">
         <thead>
           <tr class="notSticky">
-            <th colspan="3">Starting Convictions</th>
+            <th colspan="2">Starting Convictions</th>
           </tr>
           <tr class="notSticky">
             <th>Stat</th>
             <th># of Convictions (Int)</th>
-            <th>First Rank (Pre)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
             <td>1</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>2</td>
             <td>2</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>3</td>
             <td>2</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>4</td>
             <td>3</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>5</td>
             <td>3</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>6</td>
             <td>3</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>7</td>
             <td>4</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>8</td>
             <td>4</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>9</td>
             <td>4</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>10</td>
             <td>4</td>
-            <td>0</td>
           </tr>
           <tr>
             <td>11</td>
             <td>4</td>
-            <td>1</td>
           </tr>
           <tr>
             <td>12</td>
             <td>4</td>
-            <td>1</td>
           </tr>
           <tr>
             <td>13</td>
             <td>4</td>
-            <td>1</td>
           </tr>
           <tr>
             <td>14</td>
             <td>5</td>
-            <td>2</td>
           </tr>
           <tr>
             <td>15</td>
             <td>5</td>
-            <td>2</td>
           </tr>
           <tr>
             <td>16</td>
             <td>5</td>
-            <td>2</td>
           </tr>
           <tr>
             <td>17</td>
             <td>6</td>
-            <td>3</td>
           </tr>
           <tr>
             <td>18</td>
             <td>6</td>
-            <td>3</td>
           </tr>
           <tr>
             <td>19</td>
             <td>7</td>
-            <td>4</td>
           </tr>
           <tr>
             <td>20</td>
             <td>7</td>
-            <td>4</td>
           </tr>
           <tr>
             <td>21</td>
             <td>8</td>
-            <td>5</td>
           </tr>
           <tr>
             <td>22</td>
             <td>8</td>
-            <td>5</td>
           </tr>
           <tr>
             <td>23</td>
             <td>8</td>
-            <td>6</td>
           </tr>
         </tbody>
       </table>
@@ -2050,7 +2026,7 @@
       <div class='paragraphShell anchor'>
         <div id='ThischaracteraIrvDSgskm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracteraIrvDSgskm'"></app-bm-chapter-icon>
-        <p class="italic">This character gets 4 Convictions due to their 13 Int and the first Rank is 1 due to 12 Pre.
+        <p class="italic">This character gets 4 Convictions due to their 13 Int and the first Rank starts at 3.
         </p>
       </div>
       <div class='paragraphShell anchor'>
@@ -2061,22 +2037,22 @@
       <div class='paragraphShell anchor'>
         <div id='Trait1RankJawaxbJyOm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Trait1RankJawaxbJyOm'"></app-bm-chapter-icon>
-        <p class="italic">Conviction 1: Rank 1</p>
+        <p class="italic">Conviction 1: Rank 3</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='Trait2RankcKkEfBDnDU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Trait2RankcKkEfBDnDU'"></app-bm-chapter-icon>
-        <p class="italic">Conviction 2: Rank 0 (1 - 1)</p>
+        <p class="italic">Conviction 2: Rank 2 (3 - 1)</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='Trait3RankJQhSbjxaTd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Trait3RankJQhSbjxaTd'"></app-bm-chapter-icon>
-        <p class="italic">Conviction 3: Rank 0 (1 - 2, min 0)</p>
+        <p class="italic">Conviction 3: Rank 1 (3 - 2, min 0)</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='Trait4RanknIFsjWCmMW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Trait4RanknIFsjWCmMW'"></app-bm-chapter-icon>
-        <p class="italic">Conviction 4: Rank 0 (1 - 3, min 0)</p>
+        <p class="italic">Conviction 4: Rank 0 (3 - 3, min 0)</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IwanttofiguoQmIfhDtzQ' class='anchorTag'></div>
@@ -2244,14 +2220,13 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='DescriptionsaICXJLVjzjm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DescriptionsaICXJLVjzjm'"></app-bm-chapter-icon>
-        <p>Descriptions are weak and you’ll tend to have only a few but they aren’t Stressful to use, which makes them
-          very
-          versatile and able to give you a quick boost.</p>
+        <p>Descriptions are ineffective on their own: they won't add to the raw numbers of your Check but will give you 
+          Boons that can be spent on getting points (even if you fail), alleviating and/or inflicting Stress, and/or inflicting Emotional States.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='YoustartwithPfUhHgkTRQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YoustartwithPfUhHgkTRQ'"></app-bm-chapter-icon>
-        <p>You start with 3 Descriptions starting at Ranks 5, 4, and 3, respectively.</p>
+        <p>You start with 3 Descriptions starting at Ranks 3, 2, and 1, respectively.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThehighestRaFBiAGYppam' class='anchorTag'></div>
