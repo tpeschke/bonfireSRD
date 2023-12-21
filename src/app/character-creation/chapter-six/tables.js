@@ -23,6 +23,7 @@ export default {
         { name: 'Lizard, Pack', size: null, price: 150 },
         { name: 'Lizard, Riding', size: null, price: 250 },
         { name: 'Mule', size: null, price: 90 },
+        { name: 'Reindeer', size: null, price: 175 },
         ],
         barding: [{ name: 'Brigandine', size: null, price: 560 },
         { name: 'Padded', size: null, price: 200 },

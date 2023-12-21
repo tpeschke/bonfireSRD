@@ -169,13 +169,52 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='EffectsarealSrmGbplCkW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EffectsarealSrmGbplCkW'"></app-bm-chapter-icon>
-        <p>Each Effect within a spell always stacks with itself - you cannot cast a spell with e.g. three 1st-Order
-          Detraction Effects, only one 3rd-Order Detraction Effect.</p>
+        <p>Overlapping spells with the same Effect default to the highest Order, unless 
+          the spells were shaped by different Weird-Adepts, in which case, their Orders add together.
+        So, if you shape two Magic Circles at Orders 3 and 4, where they intersect counts as a 4th Order 
+      Magic Circle. If, however, you have a buddy help you out and shape one, where they intersect count as a 7th Order 
+    Magic Circle.</p>
       </div>
       <div class="anchor">
         <div id="ShapingaSpelheader" class="anchorTag"></div>
         <h2>Shaping a Spell</h2>
         <div class="underline-sub"></div>
+      </div>
+      <div class="anchor">
+        <div id="steponeheader" class="anchorTag"></div>
+        <h3>Step 1</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AspellmanifenGeCnYHCbJ' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AspellmanifenGeCnYHCbJ'"></app-bm-chapter-icon>
+        <p>The moment your Weird-Adept starts to shape a spell, it begins to manifest in the world. 
+          A spell manifests physically in two different ways: the first is when the Weird-Adept is gathering their
+          spell points and the second is when the spell is actually active on the field. Both are largely informed by the type
+          of Weird-Adept and their way of spell shaping but, they're all unpleasant to be in (this inflicts no Stress 
+          but even the blind will sense the spell and animals will try to escape it).
+          Once a spell is active on the field, it continues to be
+          visible - whether it’s a Circle, a Sphere, a Cone, or a Wall. The only real exception to this is Chain where
+          you can see where it has leapt to but not necessarily who its next target is.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ForidentifyinyOOUvlnCDs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForidentifyinyOOUvlnCDs'"></app-bm-chapter-icon>
+        <p><strong>The first thing a Weird-Adept must do is select their Shape Rudiment, which 
+          appears on the field.</strong> You cannot 
+          start collecting SPs until that takes place. After which, you can select and exchange the other Rudiments 
+        but the Shape stays the same. The spell cannot move from where the Weird-Adept placed it relative to themselves 
+        until it is fully shaped.
+        (So, if they move while shaping, the Shape stays in the same relative location, but, otherwise, it stays in its location).</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ForidentifyinyOOUvlnCDs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForidentifyinyOOUvlnCDs'"></app-bm-chapter-icon>
+        <p>For identifying monster spells, modify the Check by the monster's rarity difficulty.</p>
+      </div>
+
+      <div class="anchor">
+        <div id="drainheader" class="anchorTag"></div>
+        <h3>Drain</h3>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='EachofaspelSvuGbYkQvB' class='anchorTag'></div>
@@ -277,26 +316,6 @@
             is always a buyer for them.
           </p>
         </div>
-      </div>
-      <div class="anchor">
-        <div id="ManifestationheaderqqZmoZHxma" class="anchorTag"></div>
-        <h3>Manifestation</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AspellmanifenGeCnYHCbJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AspellmanifenGeCnYHCbJ'"></app-bm-chapter-icon>
-        <p>A spell manifests physically in two different ways: the first is when the Weird-Adept is gathering their
-          spell
-          points and the second is when the spell is actually active on the field. Both are largely informed by the type
-          of Weird-Adept and their way of spell shaping but, once a spell is active on the field, it continues to be
-          visible - whether it’s a Circle, a Sphere, a Cone, or a Wall. The only real exception to this is Chain where
-          you
-          can see where it has leapt to but not necessarily who its next target is.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ForidentifyinyOOUvlnCDs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ForidentifyinyOOUvlnCDs'"></app-bm-chapter-icon>
-        <p>For identifying monster spells, modify the Check by the monster's rarity difficulty.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -1842,21 +1861,13 @@
         <app-bm-chapter-icon [id]="'FFECTBysheerGbKJeYgiot'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> By sheer force of will, the Caller binds the escaped spirit to
           its
-          body, forcing a horrible bastardization of life.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisaffectsaGmRqRbhwlw' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisaffectsaGmRqRbhwlw'"></app-bm-chapter-icon>
-        <p>This affects all the dead bodies in the Shape of the spell, regardless of how long it’s been dead for. This
-          can
-          bring
-          them back as a skeleton or zombie based on how much meat is left, although it can't bind a spirit whose body
-          has completely decayed.</p>
+          body, forcing a horrible bastardization of life. This affects all the dead bodies in the Shape of the spell, regardless of how long it’s been dead for,
+          as long as there is still a body.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThebodycontizpqPfqAWhs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThebodycontizpqPfqAWhs'"></app-bm-chapter-icon>
-        <p>The body continues to deteriorate, however. Figure out the total number of Intervals the spell is going to
+        <p>Even bound, the body continues to deteriorate, however. Figure out the total number of Intervals the spell is going to
           have (assuming the Weird-Adept doesn’t prematurely end it): after 25% of that time has elapsed, the victim now
           dies when they would become Critical and their Base Fatigue is lowered by 1 step. After 50% of that time has
           elapsed, the victim now dies when they would become Wounded and their Base Fatigue is lowered by another step.
@@ -1868,18 +1879,21 @@
         <p>This bound spirit is stunted in many ways, as its mind and body still rots away. The bound spirit starts at
           its
           full Vitality but is unable to heal wounds by natural, magic, or divine means. Additionally, they heal Stress
-          at half the rate. They’re also unable to gain Experience or level and their Integrity can go no higher than 6.
+          at half the rate. They’re also unable to gain CrP or level and their Integrity can go no higher than 6.
         </p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ButitsnotaBmVIfSoaBj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ButitsnotaBmVIfSoaBj'"></app-bm-chapter-icon>
-        <p>But it’s not all bad: the bound spirit is immune to the effects of Fatigue.</p>
+        <p>But it’s not all bad: the bound spirit is mostly autonomous, with all 
+          the knowledge and personality it had when it died, but gains "Bound to the Master's Will" Devotion starting 
+          at Rank 4. The bound spirit is also immune to the effects of Fatigue.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKSlowtheLRPwqZpgvV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKSlowtheLRPwqZpgvV'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>+Order</strong> Slow the deterioration by 1.</p>
+        <p><strong class='orangeHeader'>+Order</strong> Slow the deterioration by 1 and increase the "Bound to the Master's Will" Devotion 
+          by 4 Ranks.</p>
       </div>
       <div class="anchor">
         <div id="Hookgateheader" class="anchorTag"></div>
@@ -4896,7 +4910,8 @@
           to be mentally transported away - allowing them to see a place up to 1 day’s travel away, but losing touch
           with
           their surroundings, unless they specifically stay mentally around their bodies. This also gives them magical
-          sight, allowing them to see things as they are, detecting all illusions.</p>
+          sight, allowing them to see things as they are, detecting all illusions. The manifestation of the spell 
+          affects those in the scrying slumber; not the location the scriers are viewing.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKTravelanxesSPoAtHa' class='anchorTag'></div>
