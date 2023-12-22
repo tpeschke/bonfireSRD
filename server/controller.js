@@ -1,6 +1,9 @@
 const axios = require('axios')
     , { redirect, patreonSecret, patreonId, patreonRefresh, patreonAuth, patreonAccess } = require('./serv-config')
     , combatEquipment = require('./combat')
+    , { sendErrorForwardNoFile, checkForContentTypeBeforeSending } = require('./helpers')
+
+const sendErrorForward = sendErrorForwardNoFile('main controller')
 
 function shuffle(array) {
     let currentIndex = array.length, randomIndex;
@@ -26,12 +29,12 @@ module.exports = {
 
         if (req.user && req.user.patreon) {
             db.get.advsearch(req.body.search).then(result => {
-                res.send(result)
-            })
+                checkForContentTypeBeforeSending(res, result)
+            }).catch(e => sendErrorForward('adv search', e, res))
         } else {
             db.get.search(req.body.search).then(result => {
-                res.send(result)
-            })
+                checkForContentTypeBeforeSending(res, result)
+            }).catch(e => sendErrorForward('basic search', e, res))
         }
     },
     handleOAuthRedirectRequest: (req, res) => {
@@ -43,25 +46,25 @@ module.exports = {
                     .then(account => {
                         db.update.patreon(account.data.included[0].attributes.amount_cents / 100, req.user.id)
                         req.user.patreon = account.data.included[0].attributes.amount_cents / 100
-                        res.send(`${req.user.patreon}`)
-                    })
-            })
+                        checkForContentTypeBeforeSending(res, `${req.user.patreon}`)
+                    }).catch(e => sendErrorForward('patreon', e, res))
+            }).catch(e => sendErrorForward('auth redirect', e, res))
     },
     getRandomConviction: (req, res) => {
         const db = req.app.get('db')
-        db.get.randomConvic().then(result => res.send(result))
+        db.get.randomConvic().then(result => checkForContentTypeBeforeSending(res, result)).catch(e => sendErrorForward('rando convic', e, res))
     },
     getRandomDescription: (req, res) => {
         const db = req.app.get('db')
-        db.get.randomDescript().then(result => res.send(result))
+        db.get.randomDescript().then(result => checkForContentTypeBeforeSending(res, result)).catch(e => sendErrorForward('rando descript', e, res))
     },
     getBookmarks: (req, res) => {
         const db = req.app.get('db')
         db.get.findBookmarks(req.user.id).then(result => {
             let newResult = result.map(val => {
                 return { id: val.id, chapter: val.chapter, body: val.body, link: val.bookmarkcode, section: val.section }
-            })
-            res.send(newResult)
+            }).catch(e => sendErrorForward('find bookmarks', e, res))
+            checkForContentTypeBeforeSending(res, newResult)
         })
     },
     addBookmark: (req, res) => {
@@ -72,11 +75,11 @@ module.exports = {
             db.countbookmarks(req.user.id).then(count => {
                 if (+count[0].count < req.user.patreon * 5) {
                     // add bookmark
-                    db.post.bookmarks(req.user.id, req.body.code).then(result => res.send('Bookmark added.'))
+                    db.post.bookmarks(req.user.id, req.body.code).then(result => checkForContentTypeBeforeSending(res, 'Bookmark added.')).catch(e => sendErrorForward('add bookmark', e, res))
                 } else {
                     res.status(403).send('You need to upgrade your Patreon tier to add more bookmarks.')
                 }
-            })
+            }).catch(e => sendErrorForward('count bookmarks', e, res))
         } else {
             res.status(401).send('You need to be a Patreon to use bookmarks.')
         }
@@ -88,18 +91,18 @@ module.exports = {
                 let newResult = result.map(val => {
                     return { id: val.id, chapter: val.chapter, body: val.body, link: val.bookmarkcode }
                 })
-                res.send(newResult)
-            })
-        })
+                checkForContentTypeBeforeSending(res, newResult)
+            }).catch(e => sendErrorForward('find bookmark 2', e, res))
+        }).catch(e => sendErrorForward('delete bookmark', e, res))
     },
     getAllEquipment: (req, res) => {
-        res.send(combatEquipment)
+        checkForContentTypeBeforeSending(res, combatEquipment)
     },
     getArmor: (req, res) => {
-        res.send(combatEquipment.armor)
+        checkForContentTypeBeforeSending(res, combatEquipment.armor)
     },
     getShields: (req, res) => {
-        res.send(combatEquipment.shields)
+        checkForContentTypeBeforeSending(res, combatEquipment.shields)
     },
     getGroupedWeapons: (req, res) => {
         let { type = '' } = req.params
@@ -138,9 +141,9 @@ module.exports = {
                 }
             ]
 
-            res.send(weapons)
+            checkForContentTypeBeforeSending(res, weapons)
         } else if (type.toUpperCase() === "MELEE") {
-            res.send([
+            checkForContentTypeBeforeSending(res, [
                 {
                     label: 'Axes',
                     weapons: combatEquipment.weapons.axes
@@ -163,7 +166,7 @@ module.exports = {
                 }
             ])
         } else {
-            res.send([
+            checkForContentTypeBeforeSending(res, [
                 {
                     label: 'Axes',
                     weapons: combatEquipment.weapons.axes
@@ -220,12 +223,12 @@ module.exports = {
     getRandomDevotion: (req, res) => {
         const db = req.app.get('db')
 
-        db.get.randomDevotion().then(result => res.send(result))
+        db.get.randomDevotion().then(result => checkForContentTypeBeforeSending(res, result)).catch(e => sendErrorForward('rando devotion', e, res))
     },
     getRandomFlaw: (req, res) => {
         const db = req.app.get('db')
 
-        db.get.randomFlaw().then(result => res.send(result))
+        db.get.randomFlaw().then(result => checkForContentTypeBeforeSending(res, result)).catch(e => sendErrorForward('rando flaw', e, res))
     },
     getRandomFlaws: (req, res) => {
         const db = req.app.get('db')
@@ -237,7 +240,7 @@ module.exports = {
             number = limit
         }
 
-        db.get.randomFlaws(number).then(result => res.send(result))
+        db.get.randomFlaws(number).then(result => checkForContentTypeBeforeSending(res, result)).catch(e => sendErrorForward('rando flaws', e, res))
     },
     getWeapons: (req, res) => {
         let { type = '' } = req.params
@@ -256,9 +259,9 @@ module.exports = {
                     }
                 }
             })
-            res.send(weapons)
+            checkForContentTypeBeforeSending(res, weapons)
         } else if (type.toUpperCase() === "MELEE") {
-            res.send([
+            checkForContentTypeBeforeSending(res, [
                 ...combatEquipment.weapons.axes,
                 ...combatEquipment.weapons.polearms,
                 ...combatEquipment.weapons.sidearms,
@@ -280,7 +283,7 @@ module.exports = {
                 }
             })
 
-            res.send([
+            checkForContentTypeBeforeSending(res, [
                 ...weapons,
                 ...combatEquipment.weapons.axes,
                 ...combatEquipment.weapons.polearms,
@@ -309,7 +312,7 @@ module.exports = {
                 }
             })
 
-            res.send(shuffle(patronArray))
-        })
+            checkForContentTypeBeforeSending(res, shuffle(patronArray))
+        }).catch(e => sendErrorForward('get patreons', e, res))
     }
 }
