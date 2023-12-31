@@ -432,16 +432,12 @@ const weirdTables = {
                     rudiment: 'Lore Mysterium'
                 },
                 {
-                    weight: 1,
+                    weight: 2,
                     rudiment: 'Message'
                 },
                 {
                     weight: 2,
                     rudiment: 'Mind Wipe'
-                },
-                {
-                    weight: 1,
-                    rudiment: 'Scry'
                 },
                 {
                     weight: 1,

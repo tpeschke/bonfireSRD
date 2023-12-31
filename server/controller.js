@@ -63,9 +63,9 @@ module.exports = {
         db.get.findBookmarks(req.user.id).then(result => {
             let newResult = result.map(val => {
                 return { id: val.id, chapter: val.chapter, body: val.body, link: val.bookmarkcode, section: val.section }
-            }).catch(e => sendErrorForward('find bookmarks', e, res))
+            })
             checkForContentTypeBeforeSending(res, newResult)
-        })
+        }).catch(e => checkForContentTypeBeforeSending('find bookmarks', e, res))
     },
     addBookmark: (req, res) => {
         const db = req.app.get('db')
