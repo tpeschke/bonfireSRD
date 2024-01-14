@@ -32,7 +32,7 @@ export class ChapterService {
       } else if (error.status === 403) {
         this.toastr.warning('', `${error.error}`)
       } else if (error.status === 401) {
-        this.toastr.error('', `${error.error}`);
+        this.toastr.error('', `${error.error}`, { disableTimeOut: true });
       }
       return of(result as T)
     }
