@@ -298,17 +298,9 @@ module.exports = {
 
         let patronArray = []
         db.get.patrons().then(results => {
-            results.forEach(({ username, patreon }) => {
-                if (username.includes('@')) {
-                    username = username.split('@')[0]
-                }
-
-                if (username === 'Katie Oaks') {
-                    patronArray.push(username)
-                } else {
-                    for (let i = 0; i < patreon; i++) {
-                        patronArray.push(username)
-                    }
+            results.forEach(({ name, patreon }) => {
+                for (let i = 0; i < patreon; i++) {
+                    patronArray.push(name)
                 }
             })
 

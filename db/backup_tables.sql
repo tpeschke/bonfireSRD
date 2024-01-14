@@ -135,3 +135,8 @@ create table srdflaws (
     id serial primary key,
     title varchar(250)
 )
+
+create table patrons (
+    name varchar(200),
+    patreon int
+)
