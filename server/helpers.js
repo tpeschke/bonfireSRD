@@ -9,7 +9,7 @@ const helperObjects = {
         }
     },
     checkForContentTypeBeforeSending: (res, package) => {
-        if (!res.get("content-type")) {
+        if (res && !res.get("content-type")) {
             res.send(package)
         }
     },
