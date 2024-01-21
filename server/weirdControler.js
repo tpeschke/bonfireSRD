@@ -339,12 +339,12 @@ const weirdTables = {
                     rudiment: 'Binding Glyph'
                 },
                 {
-                    weight: 1,
-                    rudiment: 'Burden'
+                    weight: 2,
+                    rudiment: 'Blinding Light'
                 },
                 {
-                    weight: 2,
-                    rudiment: 'Flash Bang'
+                    weight: 1,
+                    rudiment: 'Burden'
                 },
                 {
                     weight: 1,
