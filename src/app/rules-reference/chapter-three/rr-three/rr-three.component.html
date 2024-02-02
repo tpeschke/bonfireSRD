@@ -391,40 +391,13 @@
         <div id='WhilefortheHoxdJUbEuZ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhilefortheHoxdJUbEuZ'"></app-bm-chapter-icon>
         <p>While, for the most part, you’ll be using your common sense to determine how long things will take, to unify
-          at least one thing, movement rates are given below.</p>
+          at least one thing, movement rates are given for each race in the <a
+          [routerLink]='["/character-creation/2"]'>Chapter 2.2: Races</a> or in the monster's entry.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ApersonmaymZayPJDOjrq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ApersonmaymZayPJDOjrq'"></app-bm-chapter-icon>
         <p>A person may move up 2 movement categories, starting at a Walk, or down 2 in a second.</p>
-      </div>
-      <div class="table-overflow">
-        <table class="all-centered center">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="5">Movement</th>
-            </tr>
-            <tr class="notSticky">
-              <th colspan="5">Speed</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Crawl</td>
-              <td>Walk</td>
-              <td>Jog</td>
-              <td>Run</td>
-              <td>Sprint</td>
-            </tr>
-            <tr>
-              <td>2.5 ft / sec</td>
-              <td>5 ft / sec</td>
-              <td>10 ft / sec</td>
-              <td>15 ft / sec</td>
-              <td>20 ft / sec</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
       <div class='paragraphShell anchor'>
         <div id='Forevery10sfqIGGcHHRB' class='anchorTag'></div>
@@ -564,64 +537,23 @@
           Attacks and you still dodge the blow for Perfect Defenses but you don’t gain the auxiliary benefits.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='IfboththosekegXgbdKNg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfboththosekegXgbdKNg'"></app-bm-chapter-icon>
-        <p>If both those qualifiers are met, you gain the following benefits on top of the normal ones:</p>
-      </div>
-      <div class="anchor">
-        <div id="PerfectAttackheader" class="anchorTag"></div>
-        <h3>Perfect Attack</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
         <div id='YougainafrercDwIJJGWT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YougainafrercDwIJJGWT'"></app-bm-chapter-icon>
-        <p>You gain a free automatically successful, well-executed, Unarmed Combat attack. If you have Ranks in the
-          Unarmed
-          Skill Suite or any of its Advanced Skills, you may roll for the additional benefit, although, even on fumble,
-          this doesn't affect the normal bonus for delievering a perfect attack.</p>
-      </div>
-      <div class="anchor">
-        <div id="PerfectDefensheader" class="anchorTag"></div>
-        <h3>Perfect Defense</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyCccPuPIAJK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyCccPuPIAJK'"></app-bm-chapter-icon>
-        <p>You gain a chance to riposte, gaining a free full attack the next second if you’re wielding a
-          melee weapon. This attack doesn’t affect your current count.</p>
-      </div>
-      <div class="anchor">
-        <div id="NearPerfectAheader" class="anchorTag"></div>
-        <h3>Near Perfect Attacks & Defenses</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AnunmodifiedoepLviwdVP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnunmodifiedoepLviwdVP'"></app-bm-chapter-icon>
-        <p>An unmodified roll of 19 on either Attack or Defense results in a Near Perfect Attack or Defense, where you
-          may Shift for no penalty (or Shift twice that second if you were doing so already) and, for attacks, gain an extra d4! to damage (which doesn't
-          count as additional dice for /d DR), or, for defenses
-          gained a free riposte with your off-hand weapon if it’s smaller than your Size, a sidearm, or shield, or an unarmed
-          attack if you have at least 1 hand free.</p>
+        <p>If both those qualifiers are met, you gain a free automatically successful, well-executed, Unarmed Combat attack. 
+          If you have Ranks in the Unarmed
+          Skill Suite or any of its Advanced Skills, you may roll for the chance of additional benefits, although, even on fumble,
+          this doesn't affect the normal bonus for delivering  a perfect attack or defense.</p>
       </div>
       <div class="anchor">
         <div id="fumblesniojhear" class="anchorTag"></div>
         <h3>Fumbles</h3>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='nothiefjeiwolc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'nothiefjeiwolc'"></app-bm-chapter-icon>
-        <p>On the flip side, rolling an unmodified 1 on your Attack or Defense roll, whose total is also lower than your
-          opponent's, results in a 'fumble', with your
-          opponent getting a free attack on the next second
-          that doesn't reset their next attack.</p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='ubewiomcewj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ubewiomcewj'"></app-bm-chapter-icon>
-        <p>Fumbling when your opponent gets a Perfect Attack or Defense results in the normal bonuses and the free
-          attack while both sides rolling a fumble results in the person
-          with the highest total getting their way (so, if the attacker has the highest total, they hit) but no free
-          attack for either.</p>
+        <p>On the flip side, rolling an unmodified 1 on your Attack or Defense Check, whose total is also lower than your
+          opponent's, results in a 'fumble', with your shield or amor (if not using a shield) on a defense and 
+          your weapon on an attack, getting 1 Wear, although your equipment could just break due to previous Wear.</p>
       </div>
       <div class="anchor">
         <div id="DealingDamageheader" class="anchorTag"></div>
@@ -900,9 +832,9 @@
             </tr>
             <tr>
               <th>Draw</th>
+              <td>3</td>
+              <td>3</td>
               <td>2</td>
-              <td>2</td>
-              <td>1</td>
             </tr>
             <tr>
               <th>Aim</th>
@@ -918,10 +850,10 @@
             </tr>
             <tr>
               <th>Total</th>
+              <td>11</td>
+              <td>11</td>
               <td>10</td>
-              <td>10</td>
-              <td>9</td>
-              <td>7</td>
+              <td>8</td>
             </tr>
           </tbody>
         </table>
@@ -966,13 +898,13 @@
             </tr>
             <tr>
               <th>Draw</th>
-              <td>25</td>
-              <td>4</td>
-              <td>17</td>
-              <td>9</td>
-              <td>4</td>
-              <td>1</td>
-              <td>4</td>
+              <td>26</td>
+              <td>5</td>
+              <td>18</td>
+              <td>10</td>
+              <td>5</td>
+              <td>2</td>
+              <td>5</td>
             </tr>
             <tr>
               <th>Aim</th>
@@ -996,13 +928,13 @@
             </tr>
             <tr>
               <th>Total</th>
-              <td>35</td>
-              <td>12</td>
-              <td>25</td>
+              <td>36</td>
               <td>13</td>
+              <td>26</td>
               <td>14</td>
-              <td>10</td>
-              <td>14</td>
+              <td>15</td>
+              <td>11</td>
+              <td>15</td>
             </tr>
           </tbody>
         </table>
@@ -1024,10 +956,10 @@
           <tbody class="dark-side-header">
             <tr>
               <th>Missile Retrieval</th>
-              <td>5</td>
-              <td>5</td>
-              <td>3</td>
-              <td>3</td>
+              <td>6</td>
+              <td>6</td>
+              <td>4</td>
+              <td>4</td>
             </tr>
             <tr>
               <th>Fuse</th>
@@ -1059,10 +991,10 @@
             </tr>
             <tr>
               <th>Total</th>
-              <td>14</td>
-              <td>30</td>
-              <td>18</td>
-              <td>12</td>
+              <td>15</td>
+              <td>31</td>
+              <td>19</td>
+              <td>13</td>
             </tr>
           </tbody>
         </table>
@@ -1106,16 +1038,6 @@
         <app-bm-chapter-icon [id]="'IfyourefirisGefmCMXCH'"></app-bm-chapter-icon>
         <p>If you’re firing a ranged weapon, you managed to hit a sensitive area, lowering their max movement speed by
           one category, minimum Crawl speed. This continues until that wound is completely healed.</p>
-      </div>
-      <div class="anchor">
-        <div id="NearPerfectAheader" class="anchorTag"></div>
-        <h3>Near-Perfect Attacks</h3>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AnunmodifiedHHrVTsbKHx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnunmodifiedHHrVTsbKHx'"></app-bm-chapter-icon>
-        <p>An unmodified roll of 19 on your Attack results in a Near Perfect Attack, giving you an extra d4! to damage.
-        </p>
       </div>
       <div class="anchor">
         <div id="Coverheader" class="anchorTag"></div>
@@ -1698,7 +1620,7 @@
       <div class='paragraphShell anchor'>
         <div id='pOnasuccessfuAqVHAoTEIA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'pOnasuccessfuAqVHAoTEIA'"></app-bm-chapter-icon>
-        <p>On a successful attack, the shorter weapon combatant has successfully knocked his foe's weapon aside and is
+        <p>On a successful attack, with the defender defending on 1 dice size smaller (usually a d12!), the shorter weapon combatant has successfully knocked his foe's weapon aside and is
           now
           fighting at extreme close range, causing them huge penalties.</p>
       </div>

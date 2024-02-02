@@ -228,9 +228,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='YourestillaUhMbLHGiXE' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'YourestillaUhMbLHGiXE'"></app-bm-chapter-icon>
-        <p>You’re still able to purchase Ranks in Advanced Skills in that Skill Suite, with the initial purchase just
-          being
-          the Base Cost and putting that Skill at Rank 0, but it does mean you can roll the Check on a d20!.</p>
+        <p>You’re still able to purchase Ranks in Advanced Skills in Skill Suites you're Untrained in, with the initial purchase just being the Base Cost and putting that Skill at Rank 0, but it does mean you can roll the Check on a d20!.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ifyouhavehiaoniy' class='anchorTag'></div>
@@ -293,17 +291,22 @@
       <div class='paragraphShell anchor'>
         <div id='DamageDamStmliqhvzaoi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DamageDamStmliqhvzaoi'"></app-bm-chapter-icon>
-        <p><strong>Damage (Dam)</strong>: Weapon Damage + Str Mod</p>
+        <p><strong>Damage (Dam) [Melee & Thrown]</strong>: Weapon Damage + Str Mod</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='damagejiorjeiwojfioew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'damagejiorjeiwojfioew'"></app-bm-chapter-icon>
+        <p><strong>Damage (Dam) [Everything Else]</strong>: Weapon Damage</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='recoveiorjioajiofje' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'recoveiorjioajiofje'"></app-bm-chapter-icon>
-        <p><strong>Recovery (Rec) (Melee & Bows)</strong>: Weapon Recovery + Armor Rec Mod - Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down</p>
+        <p><strong>Recovery (Rec) [Melee & Bows]</strong>: Weapon Recovery + Armor Rec Mod - Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='recoveiorjioajiofjeeefjioj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'recoveiorjioajiofjeeefjioj'"></app-bm-chapter-icon>
-        <p><strong>Recovery (Rec) (Everything else)</strong>: Weapon Recovery + Armor Rec Mod</p>
+        <p><strong>Recovery (Rec) [Everything else]</strong>: Weapon Recovery + Armor Rec Mod</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoullalsohadOmHrElwUS' class='anchorTag'></div>
@@ -2632,7 +2635,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='hutnisiocalodi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'hutnisiocalodi'"></app-bm-chapter-icon>
-        <p>Hunting is also used to harvest Reagents from dead animals and monsters which can be sold or used to increase
+        <p>Hunting is also used to harvest Pleroma from dead animals and monsters which can be sold or used to increase
           your spell power.</p>
       </div>
       <div class="anchor">
@@ -3516,7 +3519,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='isojiofealls' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'isojiofealls'"></app-bm-chapter-icon>
-        <p>This Skill Suite is also used to identify Reagents from dead animals and monsters which can be sold or used
+        <p>This Skill Suite is also used to identify Pleroma from dead animals and monsters which can be sold or used
           to increase your spell power.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -3777,23 +3780,23 @@
         <div class="min-weapon-speed-pairs">
           <div class="pair">
             <p>All Piercing Weapons</p>
-            <p>2 Seconds</p>
-          </div>
-          <div class="pair">
-            <p>Small Slashing Weapons</p>
             <p>3 Seconds</p>
           </div>
           <div class="pair">
-            <p>Medium Slashing & Small Crushing Weapons</p>
+            <p>Small Slashing Weapons</p>
             <p>4 Seconds</p>
           </div>
           <div class="pair">
-            <p>Large Slashing & Medium Crushing Weapons</p>
+            <p>Medium Slashing & Small Crushing Weapons</p>
             <p>5 Seconds</p>
           </div>
           <div class="pair">
-            <p>Large Crushing Weapons</p>
+            <p>Large Slashing & Medium Crushing Weapons</p>
             <p>6 Seconds</p>
+          </div>
+          <div class="pair">
+            <p>Large Crushing Weapons</p>
+            <p>7 Seconds</p>
           </div>
           <div class="pair">
             <p>Ranged Weapons</p>
