@@ -17,7 +17,7 @@ let ibTables = {
             weight: 5,
             ib: 'Allergy, Food',
             bonus: 15,
-            severity: 2,
+            severity: 4,
             cap: 10,
             jump: 'AllergyFoodheaderFNDbwfuMWn',
             subtable: [
@@ -59,7 +59,7 @@ let ibTables = {
             weight: 5,
             ib: 'Allergy, Misc',
             bonus: 15,
-            severity: 2,
+            severity: 4,
             cap: 10,
             jump: 'AllergyMischeaderPWgmApUIzR',
             subtable: [
