@@ -175,7 +175,7 @@ export class ChapterService {
       case 2:
         return 'Stat Scores';
       case 3:
-        return 'Races';
+        return 'Ancestries';
       case 4:
         return 'Archetypes';
       case 5:

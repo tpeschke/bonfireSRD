@@ -115,7 +115,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       case 8:
         return 'Step-by-Step Overview';
       case 9:
-        return 'Races';
+        return 'Ancestries';
       case 10:
         return 'Archetypes';
       case 11:
