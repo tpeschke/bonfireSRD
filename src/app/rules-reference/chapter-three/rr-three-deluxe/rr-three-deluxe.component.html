@@ -509,17 +509,14 @@
       <div class='paragraphShell anchor'>
         <div id='IfattackingwglqpEgHULf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfattackingwglqpEgHULf'"></app-bm-chapter-icon>
-        <p>When duel-wielding, you're going to Multitask between attacking and defending. Information on that is found in <a
+        <p>When dual-wielding, you're going to Multitask between attacking and defending. Information on that is found in <a
             [routerLink]='["/rules-reference/1"]'>Chapter 1.1: Basic Mechanics</a> but there are some further things to note.
         </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='theseconidthiojfew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theseconidthiojfew'"></app-bm-chapter-icon>
-        <p>When you make an attack with off-hand weapon, it's going to be 3 sizes smaller than
-          the last attack die of your primary hand. If this would bring the attack die below a d0, you don't get an
-          attack with it, however you do get a +4 to your Parry and
-          gain an additional bonus equal to half their Parry Adv Skill Ranks with the off-hand weapon, if the off-hand weapon is Small or a sidearm.</p>
+        <p>When you make an attack with an off-hand weapon, it's going to be 3 sizes smaller than the last attack die of your primary hand. If this would bring the attack die below a d0, you don't get an attack with it, but gain some additional bonuses (noted below).</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='sofyoujfioejwiofe' class='anchorTag'></div>
@@ -535,32 +532,14 @@
           arming sword (main hand), you roll a d12!. When you attack with your court sword (off hand), you roll a d6! (d12! - 3 dice sizes).
         </p>
       </div>
-      <div class='paragraphShell marginBottom anchor'>
+      <div class='paragraphShell anchor'>
         <div id='youriojfiojfeiwo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youriojfiojfeiwo'"></app-bm-chapter-icon>
         <p>Your off-hand attacks are always a number of seconds equal to its unmodified Recovery after the primary makes
           its attacks but they can't attack faster than that weapon speed so having a stiletto (rec 5) in your main hand 
           and a dane axe (rec 23) in your off-hand still means you can only attack a maximum of every 23 seconds with the axe.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='ifyo8uioanioe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifyo8uioanioe'"></app-bm-chapter-icon>
-        <p>If your off-hand weapon is smaller than your main-hand weapon or if it's a sidearm, use its Parry (modified
-          as normal) instead.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ontjopjiooew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ontjopjiooew'"></app-bm-chapter-icon>
-        <p>On top of this, if the off-hand weapon is Small, on a Perfect Attack with your main hand.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ifyouojofhioislar' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ifyouojofhioislar'"></app-bm-chapter-icon>
-        <p>If your off-hand weapon is larger than your main-hand weapon or they're the same size, your Parry value drops
-          to 0 and reduce your defense dice by an additional 2 sizes.</p>
-      </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell marginBottom anchor'>
         <div id='youiojcioajiocwa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youiojcioajiocwa'"></app-bm-chapter-icon>
         <p>You can only switch Tactics and dice around on your primary attack.</p>
@@ -571,6 +550,31 @@
         <p>You can attack with both on your first attack but only if 1) the enemy unable to defend themselves for some
           reason, like being surprised or tied up and 2) you're not trying to make a surgical strike (backstabing,
           called shot, etc.).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ontjopjiooew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ontjopjiooew'"></app-bm-chapter-icon>
+        <p>If the off-hand weapon is Small or a sidearm, on a Perfect Attack with your main hand, you automatically add your off-hand weapon's damage to the total damage (counting the extra damage dice), instead of the unarmed attack.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ifyouojofhioislar' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyouojofhioislar'"></app-bm-chapter-icon>
+        <p>If your off-hand weapon’s size is the same or larger than the main weapon’s size, your base Parry value drops to 0 and you reduce your base defense dice by an additional 2 sizes.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ifyo8uioanioe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyo8uioanioe'"></app-bm-chapter-icon>
+        <p><strong>When not attacking with your off-hand weapon</strong>, you’re going to use only your off-hand’s Parry (don’t add your two weapons’ Parry together) but also gain a +4 to that Parry.</p>
+      </div>
+      <div class='paragraphShell marginBottom anchor'>
+        <div id='ifyouroffjicoejio' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifyouroffjicoejio'"></app-bm-chapter-icon>
+        <p>If your off-hand weapon is smaller than your main-hand weapon or if it's a sidearm, you also gain an additional bonus equal to half your off-hand’s Parry Advanced Skill Ranks.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='soifyouhaveiojrejio' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'soifyouhaveiojrejio'"></app-bm-chapter-icon>
+        <p class="italic">So, if you have a rapier (Parry 6) in your main hand and a court sword (Parry 4) in your off, you would have a base Parry of +8 (4 from the courtsword and and +4 from the bonus). If you also have 4 Ranks in Parry with court swords, you would have a total of +14 (+8 base, + 4 from Ranks, + 2 from the half-Rank bonus).</p>
       </div>
       <div class="anchor">
         <div id="2Handing1Haheader" class="anchorTag"></div>
@@ -3531,7 +3535,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='NormallyrunnAAgBLDQPHI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NormallyrunnAAgBLDQPHI'"></app-bm-chapter-icon>
-        <p>Normally, running away is only caused by a combatant reaching their Stress Threshold, but, with no captain,
+        <p>Normally, running away is only caused by a combatant reaching their Nerve, but, with no captain,
           any
           Panicked or Fatigued combatant can be convinced to turn tail and run, inflicting any Stress they would gain on
           the
