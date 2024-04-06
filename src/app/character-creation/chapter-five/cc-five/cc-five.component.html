@@ -255,6 +255,26 @@
         <app-bm-chapter-icon [id]="'IfthereismoLYOdbjtnzQ'"></app-bm-chapter-icon>
         <p>If there is more than more than 1 Stat listed, for Skill Suite, use the lowest and, for Advanced Skills, use the highest.</p>
       </div>
+      <div class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="noniofiewojicoew" class="anchorTag"></div>
+          <h5>Non-Check Check Mods & Bonuses</h5>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='mostskilisjioj' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'mostskilisjioj'"></app-bm-chapter-icon>
+          <p>Most Skills also have a non-Check bonus (like Quarter Mastering) that you automatically get.
+            Where these refer to "Rank", also add the applicable Check Mod to it to determine Bonuses.
+          </p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='foryouiojiojve' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'foryouiojiojve'"></app-bm-chapter-icon>
+          <p>So, for Endurance, your "Rank" is actually your Rank + your Check Mod and, for Combat Style, your bonus is equal 
+            to ( Rank + Check Mod ) / 2.
+          </p>
+        </div>
+      </div>
       <div class="anchor">
         <div id="CombatCheckMheader" class="anchorTag"></div>
         <h2>Combat Check Mods</h2>
@@ -301,7 +321,7 @@
       <div class='paragraphShell anchor'>
         <div id='recoveiorjioajiofje' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'recoveiorjioajiofje'"></app-bm-chapter-icon>
-        <p><strong>Recovery (Rec) [Melee & Bows]</strong>: Weapon Recovery + Armor Rec Mod - Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down</p>
+        <p><strong>Recovery (Rec) [Melee & Bows]</strong>: Weapon Recovery + Armor Rec Mod + Str Mod * weapon size (1 for S, 2 for M, 3 for L, 4 for H), rounded down</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='recoveiorjioajiofjeeefjioj' class='anchorTag'></div>
@@ -1248,9 +1268,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThroughtrainipTFGoiMyIm' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThroughtrainipTFGoiMyIm'"></app-bm-chapter-icon>
-        <p>Through training, a character can push his body past the limits of his base physical ability. The Rank and Stat Mod of
-          this
-          Skill serves as DR against the damage you take while Running or Sprinting, although specifics are given in the
+        <p>Through training, a character can push his body past the limits of his base physical ability. The Rank serves as DR against the damage you take while Running or Sprinting, although specifics are given in the
           Actions section of <a [routerLink]='["/rules-reference/3"]'>Chapter 1.3: Combat</a>.</p>
       </div>
       <div class="anchor">
@@ -2849,16 +2867,14 @@
       <div class='paragraphShell anchor'>
         <div id='IfthesituatiWDmLlwAbVj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfthesituatiWDmLlwAbVj'"></app-bm-chapter-icon>
-        <p>If the situation is applicable, the character receives a +1 to that metric for every 2 Ranks of that Skill
-          he’s
-          obtained.</p>
+        <p>If the situation is applicable, the character receives a +1 to that metric for every 2 Ranks he has.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='SoacharactewpLPacpYdS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoacharactewpLPacpYdS'"></app-bm-chapter-icon>
-        <p>So, a character with the Combat Skill (forest fighting, attack) at 5 who gets into a fight in a forest gets a +2
+        <p>So, a character with the Combat Skill (forest fighting, attack) at 5 with a +1 from Con who gets into a fight in a forest gets a +3
           to
-          attack.</p>
+          attack ( ( 5 + 1 ) / 2 ).</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='HavingahighyAGkEuuOAP' class='anchorTag'></div>
@@ -2949,7 +2965,7 @@
         <div id='TheresanartMceObQOmXd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheresanartMceObQOmXd'"></app-bm-chapter-icon>
         <p>There’s an art to packing and making sure that everyone is well fed and prepared. A quartermaster
-           adds 1S for each Rank he has in this Skill.
+           adds 1S for each Rank he has in this Skill, so 3 Ranks with a +2 from Int would result in a +1M 1S to your Carry.
           This also applies to any person he packs for.</p>
       </div>
       

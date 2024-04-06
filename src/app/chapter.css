@@ -85,6 +85,10 @@ tbody tr:nth-child(even) {
     background-color: lightgrey;
 }
 
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
 th, td {
     padding: 4px 7px;
 }

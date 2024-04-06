@@ -642,7 +642,7 @@
           requires a ranged
           attack or Mathematics Check
           to
-          hit (though both types ignore Cover) a single viable target. Anyone that is hit, suffers
+          hit (though both types ignore non-shield Cover) a single viable target. Anyone that is hit, suffers
           the
           full effects of the spell for the duration of the spell. If it deals damage or inflicts Stress, this occurs on
           the Interval.</p>
@@ -662,9 +662,8 @@
         <app-bm-chapter-icon [id]="'FromwherethehreKHJuPVU'"></app-bm-chapter-icon>
         <p>This Shape can create additional Salvos that can hit different viable targets. In this case, your considered
           to be
-          Multitasking - so you divide the dice between any/all viable targets. You can create a number of salvos up to
-          the
-          number of viable targets you could possibly hit.
+          Multitasking - so you divide the dice between any/all viable targets. You create a single salvo got each target you
+          want to hit.
         </p>
       </div>
       <div class='sidebarShell marginBottom'>
@@ -1002,7 +1001,7 @@
           but also ways of sensing the current
           physical space that don't actually involve the eyes. So you can give someone echolocation or tremur sense but
           not a dog's sense
-          of smell where they can detect if someone was there in the past.</p>
+          of smell where they can detect if someone was there in the past. This special vision is limited to within 15 ft.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='tehwiofejwiojcew' class='anchorTag'></div>
@@ -1012,7 +1011,7 @@
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKEitherinfcdHGrRBYK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TACKEitherinfcdHGrRBYK'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>+Order</strong> Either increase the Base Range by 15 ft or you may exclude a
+        <p><strong class='orangeHeader'>+Order</strong> Either increase the limit of the vision by another 15 ft or you may exclude a
           person
           in the Shape of the spell or gain another type of special vision.</p>
       </div>
@@ -3164,7 +3163,8 @@
         <p><strong class='orangeHeader'>Effect</strong> Those inside the Shape of the spell can mutate their physical
           appearance by change 1 thing. This doesn’t affect actual stats, i.e., changing yourself to look more muscular
           doesn’t actually make you more muscular. This gives you a physical Description starting at Rank 1 or increases
-          one you already have by 1. This spell is not visible when active (but is still visible while it's being
+          one you already have by 1 or lowers one you already have. This can add to, or subtract from, one you already have. 
+          This spell is not visible when active (but is still visible while it's being
           shaped).</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
@@ -3695,7 +3695,7 @@
       <div class='paragraphShell anchor'>
         <div id='OnaconditionCObPbNtfIA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OnaconditionCObPbNtfIA'"></app-bm-chapter-icon>
-        <p>On a condition indicated when the weird-adept first casts the spell the bound spell goes off as if cast from
+        <p>On a condition indicated when the weird-adept first casts the spell the bound spell instantly goes off as if cast from
           the
           item in question.</p>
       </div>
@@ -3998,7 +3998,7 @@
       <div class='paragraphShell anchor'>
         <div id='OntopofthisLWfmRdTuvO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OntopofthisLWfmRdTuvO'"></app-bm-chapter-icon>
-        <p>On top of this, any attempt to magically conceal the object or person from the weird-adept doesn’t work.</p>
+        <p>On top of this, any attempt to magically conceal the object from the weird-adept doesn’t work.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKThiscanhJDdnmJkLu' class='anchorTag'></div>
@@ -4308,12 +4308,15 @@
       <div class='paragraphShell anchor'>
         <div id='NTERVAL3AttaJgqqKbGWwU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'NTERVAL3AttaJgqqKbGWwU'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Interval</strong> 3 Attacks or 6 Hours, whichever comes first</p>
+        <p><strong class='orangeHeader'>Interval</strong> 3 Attacks or 6 Hours, whichever comes first. Renewing the
+          Interval for this Effect either increases the number of Attacks by 3 or the time window by 6 hours. The
+          renewal happens when one of the criteria met: either running out of attacks or running out of time.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='FFECTAllweapDMOiKGNwtI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTAllweapDMOiKGNwtI'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Effect</strong> All weapons within the Shape of the spell gain a +1 to damage.
+        <p><strong class='orangeHeader'>Effect</strong> All weapons within the Shape of the spell are temporarily enchanted with the same 
+          dweomer. The first 3 attacks, performed by any of the weapons, gain a +1 to damage.
         </p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
@@ -5234,7 +5237,8 @@
         <div id='FFECTAnyoneweJcqzfAHRb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTAnyoneweJcqzfAHRb'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> Anyone within the Shape of the spell gains a +2 to all rolls for
-          each Wound Category they’ve dropped but, at the end of the spell, they take damage equal to their bonus.</p>
+          each Wound Category they’ve dropped but, at the end of the spell, they take damage equal to their total bonus. So,
+        being in Critical when the spell ends would deal 8 damage (+2 * 4).</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKThebonushboSCjkWPH' class='anchorTag'></div>
