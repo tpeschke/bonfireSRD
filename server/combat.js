@@ -876,7 +876,7 @@ module.exports = {
                 dam: '3d6!',
                 rec: 13,
                 type: 'P',
-                minrec: 4,
+                minrec: 5,
                 bonus: 'Can be used mounted. Always 2-handed reload & used 2-handed.',
                 bonusLong: '<p>The Composite Bow can be used from horseback.</p><br><p>The Composite Bow requires two hands regardless of size.</p>'
             },
@@ -896,7 +896,7 @@ module.exports = {
                 dam: '1d6!+1d3!',
                 rec: 14,
                 type: 'P',
-                minrec: 4,
+                minrec: 5,
                 bonus: 'Always 2-handed reload. Steading weapon roll damage twice, take the highest.',
                 bonusLong: '<p>The Latchet Crossbow may be used from horseback.</p><br><p>The Latchet Crossbow must be loaded two-handed regardless of size.</p><br><p>When steading the latchet crossbow against a stand, ground, wall or something similar roll damage twice, taking the highest result.</p>'
             },
