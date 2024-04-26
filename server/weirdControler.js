@@ -37,11 +37,15 @@ const weirdTables = {
         ],
     },
     originTable: {
-        max: 6,
+        max: 8,
         rows: [
             {
                 weight: 1,
                 rudiment: 'Aura'
+            },
+            {
+                weight: 1,
+                rudiment: 'Zone'
             },
             {
                 weight: 1,
@@ -50,6 +54,10 @@ const weirdTables = {
             {
                 weight: 1,
                 rudiment: 'Burst'
+            },
+            {
+                weight: 1,
+                rudiment: 'Shield'
             },
             {
                 weight: 2,

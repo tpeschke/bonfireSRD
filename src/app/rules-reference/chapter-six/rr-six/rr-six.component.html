@@ -411,7 +411,7 @@
         <app-bm-chapter-icon [id]="'ForeveryBoonVYKKWwdYsz'"></app-bm-chapter-icon>
         <p>For every Boon you get, lower the Order of the spell by 1 for just yourself. Bringing the Order to 0 or less
           means your character isn’t affected by the spell at all. For every 2 Complications, increase the Order by 1
-          against your character.</p>
+          against your character. If the spell is beneficial, reverse this; lower the Order by every 2 Complications, raise it for every Boon.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThecharacteriOknUMUpna' class='anchorTag'></div>
@@ -640,7 +640,7 @@
         <app-bm-chapter-icon [id]="'TheSalvoistykwPSLxJAb'"></app-bm-chapter-icon>
         <p>The Salvo is the spell chucked up to 3 * its Range from a point within the spell’s Origin. It
           requires a ranged
-          attack or Mathematics Check
+          attack or Mathematics Check (which is treated as an Attack Check, not a Skill Check)
           to
           hit (though both types ignore non-shield Cover) a single viable target. Anyone that is hit, suffers
           the
@@ -821,6 +821,23 @@
           them, moving as they move.</p>
       </div>
       <div class="anchor">
+        <div id="Zoneheader" class="anchorTag"></div>
+        <h2>Zone</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='zonesjiojiew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'zonesjiojiew'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Drain</strong> 3</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thismakieoskioes' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thismakieoskioes'"></app-bm-chapter-icon>
+        <p>This makes it so the Origin starts at the weird-adept (and any equipment he carries) and then extends out
+          from
+          them, but stays where they initially shaped the spell.</p>
+      </div>
+      <div class="anchor">
         <div id="Touchheader" class="anchorTag"></div>
         <h2>Touch</h2>
         <div class="underline-sub"></div>
@@ -848,7 +865,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThisdoesntrgbjORdoqvd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisdoesntrgbjORdoqvd'"></app-bm-chapter-icon>
-        <p>This doesn’t replace the normal way to resist the Effect, however, the person touched by the Weird-Adapt
+        <p>This doesn’t replace the normal way to resist the Effect, however, the person touched by the Weird-Adept
           using
           this Origin who does resist makes their Check on 1 dice smaller (usually a d12!) for the entire length of the
           spell.</p>
@@ -867,7 +884,23 @@
         <div id='ThismakesthefygpxFhjQW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThismakesthefygpxFhjQW'"></app-bm-chapter-icon>
         <p>This makes the Origin of the spell from 0 ft up to the Base Range of the spell, although it never affects the
-          shaper.</p>
+          shaper and stays where the Weird-Adept initially shaped the spell.</p>
+      </div>
+      <div class="anchor">
+        <div id="shieldheader" class="anchorTag"></div>
+        <h2>Shield</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='burstsdraing' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'burstsdraing'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Drain</strong> 5</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thwsiojcieowji' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thwsiojcieowji'"></app-bm-chapter-icon>
+        <p>This makes the Origin of the spell from 0 ft up to the Base Range of the spell, although it never affects the
+          shaper and stays with the Weird-Adept, moving as they move.</p>
       </div>
       <div class="anchor">
         <div id="Nearheader" class="anchorTag"></div>
@@ -4802,7 +4835,7 @@
         <p><strong class='orangeHeader'>Effect</strong> By a powerful divination, everyone in the Shape of the spell can
           gain insight into a person, place, or thing within the Shape of the spell. If it is a place, the weird-adept
           must be there; if a thing, it must be held; and if a person, an organic portion of that person must be held
-          (skin, hair, teeth, or so on). A Weird-Adapt can only shape this for a person, place, or thing once; 
+          (skin, hair, teeth, or so on). A Weird-Adept can only shape this for a person, place, or thing once; 
           further shapings of Lore Mysterium result in nothing happening.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -5280,7 +5313,7 @@
         <app-bm-chapter-icon [id]="'FFECTAllbadqaZXfWyQGS'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> All bad effects from failed rolls within the Shape of the spell
           add
-          an additional +3. So, you take 3 more damage, gain 3 more points of Failure on a Skill Check, or your opponent
+          an additional +3. So, you take 3 more damage, gain 3 more Complications on a Skill Check, or your opponent
           gains 3 more points on a failed Appeal. The person does have to fail a roll first to take this penalty.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
