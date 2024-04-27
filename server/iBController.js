@@ -16,8 +16,8 @@ let ibTables = {
         {
             weight: 5,
             ib: 'Allergy, Food',
-            bonus: 15,
-            severity: 4,
+            bonus: 5,
+            severity: 2,
             cap: 10,
             jump: 'AllergyFoodheaderFNDbwfuMWn',
             subtable: [
@@ -58,8 +58,8 @@ let ibTables = {
         {
             weight: 5,
             ib: 'Allergy, Misc',
-            bonus: 15,
-            severity: 4,
+            bonus: 5,
+            severity: 2,
             cap: 10,
             jump: 'AllergyMischeaderPWgmApUIzR',
             subtable: [
@@ -84,111 +84,111 @@ let ibTables = {
         {
             weight: 7,
             ib: 'Bastard',
-            bonus: 25,
-            severity: 7,
+            bonus: 8,
+            severity: 4,
             cap: 5,
             jump: 'BastardheaderifVeGdkeSu'
         },
         {
             weight: 7,
             ib: 'Debtor',
-            bonus: 10,
-            severity: 5,
+            bonus: 3,
+            severity: 3,
             cap: 5,
             jump: 'DebtorheaderJElCNbPgHi'
         },
         {
             weight: 2,
             ib: 'Deranged',
-            bonus: 50,
-            severity: 12,
+            bonus: 16,
+            severity: 8,
             cap: 10,
             jump: 'DerangedheaderRidffUYgEQ'
         },
         {
             weight: 7,
             ib: 'Excommunicated',
-            bonus: 15,
-            severity: 5,
+            bonus: 5,
+            severity: 3,
             cap: 12,
             jump: 'ExcommunicatedheaderSAHScjZyzT'
         },
         {
             weight: 9,
             ib: 'Fated',
-            bonus: 35,
-            severity: 8,
+            bonus: 11,
+            severity: 5,
             cap: 20,
             jump: 'FatedheaderugesVAJvHm'
         },
         {
             weight: 4,
             ib: 'Feral',
-            bonus: 20,
-            severity: 6,
+            bonus: 6,
+            severity: 4,
             cap: 5,
             jump: 'FeralheaderYbTzzFWdEL'
         },
         {
             weight: 12,
             ib: 'Half-Life',
-            bonus: 75,
-            severity: 12,
+            bonus: 25,
+            severity: 4,
             cap: 4,
             jump: 'HalflifeheaderxXKZSCXvpm'
         },
         {
             weight: 9,
             ib: 'Haunted',
-            bonus: 30,
-            severity: 10,
+            bonus: 10,
+            severity: 6,
             cap: 5,
             jump: 'HauntedheaderWIDVEGhzyD'
         },
         {
             weight: 5,
             ib: 'Idiot Savant',
-            bonus: 30,
-            severity: 12,
+            bonus: 10,
+            severity: 4,
             cap: 5,
             jump: 'IdiotSavantheaderCIOoOIjoNI'
         },
         {
             weight: 3,
             ib: 'Inbred',
-            bonus: 10,
-            severity: 2,
+            bonus: 3,
+            severity: 1,
             cap: 10,
             jump: 'InbredheaderCLxfbrofoK'
         },
         {
             weight: 7,
             ib: 'Mule',
-            bonus: 15,
-            severity: 5,
+            bonus: 5,
+            severity: 3,
             cap: 24,
             jump: 'MuleheaderTOMugOYXOS'
         },
         {
             weight: 3,
             ib: 'Orphan',
-            bonus: 15,
-            severity: 8,
+            bonus: 5,
+            severity: 5,
             cap: 20,
             jump: 'OrphanheaderVdWAdEZcQr'
         },
         {
             weight: 4,
             ib: 'Poor',
-            bonus: 15,
-            severity: 5,
+            bonus: 5,
+            severity: 3,
             cap: 10,
             jump: 'PoorheaderErbkkhCjwR'
         },
         {
             weight: 2,
             ib: 'Refugee',
-            bonus: 25,
+            bonus: 8,
             severity: 0,
             cap: 1,
             jump: 'RefugeeheaderAkSpgtlWeb'
@@ -196,32 +196,32 @@ let ibTables = {
         {
             weight: 4,
             ib: 'Thrall',
-            bonus: 25,
-            severity: 8,
+            bonus: 8,
+            severity: 5,
             cap: 10,
             jump: 'ThrallheaderBZnUOEIBsw'
         },
         {
             weight: 3,
             ib: 'Vow of Poverty',
-            bonus: 35,
-            severity: 5,
+            bonus: 11,
+            severity: 3,
             cap: 19,
             jump: 'VowOfPovertyheaderShVWpymbpH'
         }, 
         {
             weight: 1,
             ib: 'Weird Resistant',
-            bonus: 15,
-            severity: 2,
+            bonus: 5,
+            severity: 1,
             cap: 12,
             jump: 'weirdresjiojtioew'
         },
         {
             weight: 1,
             ib: 'Weird Vulnerable',
-            bonus: 15,
-            severity: 2,
+            bonus: 5,
+            severity: 1,
             cap: 15,
             jump: 'werjiojdiovejwio'
         }
@@ -509,8 +509,8 @@ let ibTables = {
         {
             weight: 5,
             ib: 'Ageusia',
-            bonus: 10,
-            severity: 4,
+            bonus: 3,
+            severity: 1,
             cap: 10,
             jump: 'AgeusiaheaderTAnuTNHiNf'
         },
@@ -518,16 +518,16 @@ let ibTables = {
         {
             weight: 4,
             ib: 'Asthmatic',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 10,
             jump: 'AsthmaticheaderLWuGlnQCuN'
         },
         {
             weight: 3,
             ib: 'Blind',
-            bonus: 25,
-            severity: 16,
+            bonus: 8,
+            severity: 5,
             cap: 6,
             jump: 'BlindheaderejFzjQYqhm'
         },
@@ -542,26 +542,26 @@ let ibTables = {
                 {
                     weight: 1,
                     specific: 'Head',
-                    bonus: 15,
-                    severity: 10,
+                    bonus: 5,
+                    severity: 3,
                     cap: 5,
                 }, {
                     weight: 1,
                     specific: 'Body',
-                    bonus: 25,
-                    severity: 16,
+                    bonus: 8,
+                    severity: 5,
                     cap: 10
                 }, {
                     weight: 1,
                     specific: 'Arms & Hands',
-                    bonus: 15,
-                    severity: 16,
+                    bonus: 5,
+                    severity: 3,
                     cap: 10
                 }, {
                     weight: 1,
                     specific: 'Legs',
-                    bonus: 25,
-                    severity: 16,
+                    bonus: 8,
+                    severity: 5,
                     cap: 5
                 }
             ]
@@ -569,176 +569,176 @@ let ibTables = {
         {
             weight: 4,
             ib: 'Deaf',
-            bonus: 15,
-            severity: 16,
+            bonus: 5,
+            severity: 5,
             cap: 6,
             jump: 'DeafheaderQjLmdfFCwk'
         },
         {
             weight: 6,
             ib: 'Epileptic',
-            bonus: 20,
-            severity: 1,
+            bonus: 6,
+            severity: 3,
             cap: 10,
             jump: 'EpilepticheaderSkNaTOGvZe'
         },
         {
             weight: 4,
             ib: 'Hemophilic',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 5,
             jump: 'HemophilicheaderibLCRovJZE'
         },
         {
             weight: 3,
             ib: 'Hyperopia',
-            bonus: 25,
-            severity: 20,
+            bonus: 8,
+            severity: 6,
             cap: 6,
             jump: 'HyperopiaheadervltxPyYqjG'
         },
         {
             weight: 6,
             ib: 'Infirm',
-            bonus: 10,
-            severity: 10,
+            bonus: 3,
+            severity: 3,
             cap: 10,
             jump: 'InfirmheaderbevIgDJeBP'
         },
         {
             weight: 3,
             ib: 'Insomniac',
-            bonus: 30,
-            severity: 16,
+            bonus: 10,
+            severity: 5,
             cap: 10,
             jump: 'InsomniacheaderIBVWLnZXkc'
         },
         {
             weight: 6,
             ib: 'Labyrinthitis',
-            bonus: 15,
-            severity: 4,
+            bonus: 5,
+            severity: 1,
             cap: 10,
             jump: 'LabyrinthitisheaderfWjrwFnmrQ'
         },
         {
             weight: 3,
             ib: 'Limp',
-            bonus: 20,
-            severity: 20,
+            bonus: 6,
+            severity: 6,
             cap: 4,
             jump: 'LimpheaderaYmDjKsaBX'
         },
         {
             weight: 2,
             ib: 'Missing Arm',
-            bonus: 55,
-            severity: 60,
+            bonus: 18,
+            severity: 20,
             cap: 2,
             jump: 'MissingArmheaderJfhIRtVhkL'
         },
         {
             weight: 4,
             ib: 'Missing Digit',
-            bonus: 10,
-            severity: 10,
+            bonus: 3,
+            severity: 3,
             cap: 10,
             jump: 'MissingDigitheaderIpfwrRQDCk'
         },
         {
             weight: 4,
             ib: 'Missing Ear',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 10,
             jump: 'MissingEarheaderiEeAvwgBRu'
         },
         {
             weight: 2,
             ib: 'Missing Eye',
-            bonus: 50,
-            severity: 50,
+            bonus: 16,
+            severity: 16,
             cap: 2,
             jump: 'MissingEyeheaderhLRHlECmrB'
         },
         {
             weight: 2,
             ib: 'Missing Hand',
-            bonus: 50,
-            severity: 40,
+            bonus: 16,
+            severity: 13,
             cap: 2,
             jump: 'MissingHandheaderWbmnYxxVvK'
         },
         {
             weight: 2,
             ib: 'Missing Leg',
-            bonus: 50,
-            severity: 40,
+            bonus: 16,
+            severity: 13,
             cap: 2,
             jump: 'MissingLegheaderZUSKsYDxbp'
         },
         {
             weight: 5,
             ib: 'Missing Teeth',
-            bonus: 15,
-            severity: 12,
+            bonus: 5,
+            severity: 4,
             cap: 4,
             jump: 'MissingTeethheaderiauDXpJazw'
         },
         {
             weight: 4,
             ib: 'Mute',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 6,
             jump: 'MuteheadernvyjQWspKK'
         },
         {
             weight: 4,
             ib: 'Myopia',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 6,
             jump: 'MyopiaheaderdmimYbkqOx'
         },
         {
             weight: 4,
             ib: 'No Depth Perception',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 6,
             jump: 'NoDepthPerceheaderaJIstRgCCR'
         },
         {
             weight: 5,
             ib: 'Shaky Hands',
-            bonus: 15,
-            severity: 10,
+            bonus: 5,
+            severity: 3,
             cap: 10,
             jump: 'ShakyHandsheadergZnORfJQKB'
         },
         {
             weight: 3,
             ib: 'Stutter',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 6,
             jump: 'StutterheadergeuOgVIFdt'
         },
         {
             weight: 5,
             ib: 'Trick Knee',
-            bonus: 15,
-            severity: 10,
+            bonus: 5,
+            severity: 3,
             cap: 10,
             jump: 'TrickKneeheaderBXNWdwjymP'
         },
         {
             weight: 2,
             ib: 'Weak',
-            bonus: 20,
-            severity: 16,
+            bonus: 6,
+            severity: 5,
             cap: 4,
             jump: 'WeakheaderzFoQvxiCsX'
         },
