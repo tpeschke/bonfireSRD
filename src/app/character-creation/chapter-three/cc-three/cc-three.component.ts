@@ -12,7 +12,7 @@ export class CcThreeComponent implements OnInit {
     private chapterService: ChapterService,
   ) { }
 
-  side = [{linkid: 'h', body: 'Introduction', jump: 'Introductionheader'}, {linkid: 'h', body: 'Leveling Terminology', jump: 'levelingterminog'}, {linkid: 'h', body: 'Archetypes', jump: 'GeneralistArcmajorheader'}, {linkid: 'hg', body: 'Expert', jump: 'EXPERTheader'}, {linkid: 'hg', body: 'Fighter', jump: 'FIGHTERheader'}, {linkid: 'hg', body: 'Servant', jump: 'SERVANTheader'}, {linkid: 'hg', body: 'Socialite', jump: 'SOCIALITEheader'}, {linkid: 'hg', body: 'Weird-Adept', jump: 'WeirdAdeptheader'}]
+  side = [{linkid: 'h', body: 'Introduction', jump: 'Introductionheader'}, {linkid: 'h', body: 'Leveling Terminology', jump: 'levelingterminog'}, {linkid: 'h', body: 'Classes', jump: 'GeneralistArcmajorheader'}, {linkid: 'hg', body: 'Expert', jump: 'EXPERTheader'}, {linkid: 'hg', body: 'Fighter', jump: 'FIGHTERheader'}, {linkid: 'hg', body: 'Servant', jump: 'SERVANTheader'}, {linkid: 'hg', body: 'Socialite', jump: 'SOCIALITEheader'}, {linkid: 'hg', body: 'Weird-Adept', jump: 'WeirdAdeptheader'}]
   weirdTables = {}
 
   ngOnInit() {

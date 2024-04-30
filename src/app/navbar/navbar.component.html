@@ -33,7 +33,7 @@
             (mouseout)="resetChapter()" (click)="setChapter(8)">2.1</a>
         <a [ngClass]="{'active': reset === 'Ancestries'}" routerLink="character-creation/2" (mouseover)="viewChapter('Ancestries')"
             (mouseout)="resetChapter()" (click)="setChapter(9)">2.2</a>
-        <a [ngClass]="{'active': reset === 'Archetypes'}" routerLink="character-creation/3" (mouseover)="viewChapter('Archetypes')"
+        <a [ngClass]="{'active': reset === 'Classes'}" routerLink="character-creation/3" (mouseover)="viewChapter('Classes')"
             (mouseout)="resetChapter()" (click)="setChapter(10)">2.3</a>
         <a [ngClass]="{'active': reset === 'Burdens & Injuries'}" routerLink="character-creation/4" (mouseover)="viewChapter('Burdens & Injuries')"
             (mouseout)="resetChapter()" (click)="setChapter(11)">2.4</a>
@@ -94,8 +94,8 @@
             (mouseout)="resetChapter()" (click)="setChapter(8)">2.1 Step-by-Step Overview</a>
         <a [ngClass]="{'active': reset === 'Ancestries'}" routerLink="character-creation/2"
             (mouseout)="resetChapter()" (click)="setChapter(9)">2.2 Ancestries</a>
-        <a [ngClass]="{'active': reset === 'Archetypes'}" routerLink="character-creation/3"
-            (mouseout)="resetChapter()" (click)="setChapter(10)">2.3 Archetypes</a>
+        <a [ngClass]="{'active': reset === 'Classes'}" routerLink="character-creation/3"
+            (mouseout)="resetChapter()" (click)="setChapter(10)">2.3 Classes</a>
         <a [ngClass]="{'active': reset === 'Burdens & Injuries'}" routerLink="character-creation/4"
             (mouseout)="resetChapter()" (click)="setChapter(11)">2.4 Burdens & Injuries</a>
         <a [ngClass]="{'active': reset === 'Skills'}" routerLink="character-creation/5"
