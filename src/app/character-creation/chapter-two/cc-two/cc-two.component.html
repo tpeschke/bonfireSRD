@@ -17,6 +17,27 @@
           flavor.</p>
       </div>
       <div class='anchor'>
+        <div id='persjiojicoejw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'persjiojicoejw'"></app-bm-chapter-icon>
+        <h2>Personality</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='eachioejsiojcioew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'eachioejsiojcioew'"></app-bm-chapter-icon>
+        <p>Each Ancestry has its only unique personality that might appeal to you. You can read about each's in their Personality 
+          section and see a bullet-point summary beyond that in "Characteristics", which will become important later in 
+          Character Creation.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='notehiosjtiojes' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'notehiosjtiojes'"></app-bm-chapter-icon>
+        <p>Note that these are default Characteristics that assume that there is only one culture per ancestry and that these 
+          cultures are very similar to the stereotypes of that ancestry in popular fiction but your GM might have a separate list 
+          from which to pull from so check with them. If you’re using the official campaign setting, you’ll find that information 
+          under the Nations folder in the World Codex found <a href="https://www.worldanvil.com/w/the-welgyrf-sagas-peschke" target="_blank">here</a>.</p>
+      </div>
+      <div class='anchor'>
         <div id='3kOpuEvckQq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3kOpuEvckQq'"></app-bm-chapter-icon>
         <h2>Stat Score Modifiers</h2>
@@ -136,16 +157,6 @@
             </tbody>
           </table>
         </div>
-        <div class='anchor'>
-          <div id='3MmaZUBRPGW' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3MmaZUBRPGW'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='elvfitemprate' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'elvfitemprate'"></app-bm-chapter-icon>
-          <p>Patient</p>
-        </div>
 
         <div class='anchor'>
           <div id='elfeiraiocie' class='anchorTag'></div>
@@ -257,6 +268,34 @@
         <app-bm-chapter-icon [id]="'3p31'"></app-bm-chapter-icon>
         <p> However, once set on a course, it is hard to dissuade an elf, for they do nothing lightly.</p>
       </div>
+      
+      <div *ngIf="characterisitics.elf" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="elfcharacterisiojioce" class="anchorTag"></div>
+          <h5>Elven Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.elf.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.elf.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.elf.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.elf.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.elf.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="3h2" class="anchorTag"></div>
         <h1>Humans</h1>
@@ -309,16 +348,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3yeKAKxlQaZ' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3yeKAKxlQaZ'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='humanreacialtempiar' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'humanreacialtempiar'"></app-bm-chapter-icon>
-          <p>None </p>
         </div>
 
         <div class='anchor'>
@@ -409,6 +438,33 @@
           nothing I write in this little blurb is going to convince you otherwise.</p>
       </div>
 
+      <div *ngIf="characterisitics.human" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="humancharacterisiojioce" class="anchorTag"></div>
+          <h5>Human Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.human.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.human.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.human.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.human.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.human.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="orcheadertag" class="anchorTag"></div>
         <h1>Orcs</h1>
@@ -483,16 +539,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3lCygNUAsrN' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3lCygNUAsrN'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='orcviality' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'orcviality'"></app-bm-chapter-icon>
-          <p>Aggressive</p>
         </div>
         <div class='anchor'>
           <div id='orcsraiocew' class='anchorTag'></div>
@@ -596,6 +642,33 @@
           worthy foe. This is often seen in their deities across orcish cultures, which are almost exclusively
           pantheons of their greatest foes. It is taken for granted that you are only as good as your enemies.
         </p>
+      </div>
+
+      <div *ngIf="characterisitics.orc" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="orccharacterisiojioce" class="anchorTag"></div>
+          <h5>Orcish Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.orc.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.orc.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.orc.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.orc.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.orc.devotions">- {{devotion}}</p>
+          </div>
+        </div>
       </div>
 
     </div>

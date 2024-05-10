@@ -70,6 +70,8 @@ app.get('/getRandomSpells/:numberOfItems', weirdCtrl.getRandomSpells)
 
 app.use(fakeAuth)
 
+app.get('/getCharacteristics', ctrl.getAncestryCharacteristics)
+
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
     successRedirect: redirect

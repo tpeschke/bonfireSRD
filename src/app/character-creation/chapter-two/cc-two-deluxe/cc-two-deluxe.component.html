@@ -17,6 +17,27 @@
           flavor.</p>
       </div>
       <div class='anchor'>
+        <div id='persjiojicoejw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'persjiojicoejw'"></app-bm-chapter-icon>
+        <h2>Personality</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='eachioejsiojcioew' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'eachioejsiojcioew'"></app-bm-chapter-icon>
+        <p>Each Ancestry has its only unique personality that might appeal to you. You can read about each's in their Personality 
+          section and see a bullet-point summary beyond that in "Characteristics", which will become important later in 
+          Character Creation.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='notehiosjtiojes' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'notehiosjtiojes'"></app-bm-chapter-icon>
+        <p>Note that these are default Characteristics that assume that there is only one culture per ancestry and that these 
+          cultures are very similar to the stereotypes of that ancestry in popular fiction but your GM might have a separate list 
+          from which to pull from so check with them. If you’re using the official campaign setting, you’ll find that information 
+          under the Nations folder in the World Codex found <a href="https://www.worldanvil.com/w/the-welgyrf-sagas-peschke" target="_blank">here</a>.</p>
+      </div>
+      <div class='anchor'>
         <div id='3kOpuEvckQq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3kOpuEvckQq'"></app-bm-chapter-icon>
         <h2>Stat Score Modifiers</h2>
@@ -138,16 +159,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3LjZfeRxlZz' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3LjZfeRxlZz'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='dwarfvtemperaopt' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'dwarfvtemperaopt'"></app-bm-chapter-icon>
-          <p>Stubborn</p>
         </div>
         <div class='anchor'>
           <div id='dwarvewjiojivoew' class='anchorTag'></div>
@@ -284,6 +295,33 @@
         </p>
       </div>
 
+      <div *ngIf="characterisitics.dwarf" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="dwarfcharacterisiojioce" class="anchorTag"></div>
+          <h5>Dwarven Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.dwarf.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.dwarf.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.dwarf.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.dwarf.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.dwarf.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="3h1" class="anchorTag"></div>
         <h1>Elves</h1>
@@ -358,16 +396,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3MmaZUBRPGW' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3MmaZUBRPGW'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='elvfitemprate' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'elvfitemprate'"></app-bm-chapter-icon>
-          <p>Patient</p>
         </div>
         <div class='anchor'>
           <div id='elfeiraiocie' class='anchorTag'></div>
@@ -482,6 +510,34 @@
         <app-bm-chapter-icon [id]="'3p31'"></app-bm-chapter-icon>
         <p> However, once set on a course, it is hard to dissuade an elf, for they do nothing lightly.</p>
       </div>
+
+      <div *ngIf="characterisitics.elf" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="elfcharacterisiojioce" class="anchorTag"></div>
+          <h5>Elven Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.elf.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.elf.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.elf.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.elf.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.elf.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="3PKCfRsEDGt" class="anchorTag"></div>
         <h1>Gaunts</h1>
@@ -554,16 +610,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3SurWfUzWXD' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3SurWfUzWXD'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='guanttemperate' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'guanttemperate'"></app-bm-chapter-icon>
-          <p>Choose one: Salvation Secured or Damnation Secured</p>
         </div>
         <div class='anchor'>
           <div id='rguaduntio' class='anchorTag'></div>
@@ -671,6 +717,37 @@
           begins.
         </p>
       </div>
+
+      <div *ngIf="characterisitics.gaunt" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="gauntcharacterisiojioce" class="anchorTag"></div>
+          <h5>Gauntish Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p class="italic">- As Per Home Culture</p>
+            <p *ngFor="let description of characterisitics.gaunt.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p class="italic">- As Per Home Culture</p>
+            <p *ngFor="let conviction of characterisitics.gaunt.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom italic'>{{characterisitics.gaunt.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.gaunt.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p class="italic">- As Per Home Culture</p>
+            <p *ngFor="let devotion of characterisitics.gaunt.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="3h2" class="anchorTag"></div>
         <h1>Humans</h1>
@@ -723,16 +800,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3yeKAKxlQaZ' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3yeKAKxlQaZ'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='humanreacialtempiar' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'humanreacialtempiar'"></app-bm-chapter-icon>
-          <p>None</p>
         </div>
         <div class='anchor'>
           <div id='huamnracjioaw' class='anchorTag'></div>
@@ -822,6 +889,32 @@
           nothing I write in this little blurb is going to convince you otherwise.</p>
       </div>
 
+      <div *ngIf="characterisitics.human" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="humancharacterisiojioce" class="anchorTag"></div>
+          <h5>Human Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.human.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.human.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.human.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.human.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.human.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
 
       <div class="anchor">
         <div id="orcheadertag" class="anchorTag"></div>
@@ -897,16 +990,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3lCygNUAsrN' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3lCygNUAsrN'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='orcviality' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'orcviality'"></app-bm-chapter-icon>
-          <p>Aggressive</p>
         </div>
         <div class='anchor'>
           <div id='orcsraiocew' class='anchorTag'></div>
@@ -1013,6 +1096,33 @@
         </p>
       </div>
 
+      <div *ngIf="characterisitics.orc" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="orccharacterisiojioce" class="anchorTag"></div>
+          <h5>Orcish Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.orc.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.orc.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.orc.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.orc.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.orc.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
+
       <div class="anchor">
         <div id="3UfgSXJpBLh" class="anchorTag"></div>
         <h1>Pechs</h1>
@@ -1082,16 +1192,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3FqONNqLMeO' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3FqONNqLMeO'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='pechtempoer' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'pechtempoer'"></app-bm-chapter-icon>
-          <p>Clannish</p>
         </div>
         <div class='anchor'>
           <div id='changelinwarhioja' class='anchorTag'></div>
@@ -1182,6 +1282,33 @@
           be apart something greater than keeps them reaching out to the outside world.
         </p>
       </div>
+      
+      <div *ngIf="characterisitics.pech" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="pechcharacterisiojioce" class="anchorTag"></div>
+          <h5>Pechish Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.pech.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.pech.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.pech.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.pech.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.pech.devotions">- {{devotion}}</p>
+          </div>
+        </div>
+      </div>
 
       <div class="anchor">
         <div id="3syCSgYXdjZ" class="anchorTag"></div>
@@ -1256,16 +1383,6 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class='anchor'>
-          <div id='3cOZrdpQZUT' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3cOZrdpQZUT'"></app-bm-chapter-icon>
-          <h2>Ancestral Temperament</h2>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='ratfokfkitempera' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ratfokfkitempera'"></app-bm-chapter-icon>
-          <p>Helpful</p>
         </div>
         <div class='anchor'>
           <div id='ratoflkracioe' class='anchorTag'></div>
@@ -1356,6 +1473,34 @@
         <p> In fact, ratfolk can be quite ruthless to those they deem outside their pack, which has earned
           them some reputation as having a herd mentality. For ratfolk the only war is total war.
         </p>
+      </div>
+
+      
+      <div *ngIf="characterisitics.ratfolk" class='sidebarShell marginBottom'>
+        <div class="anchor">
+          <div id="ratfolkcharacterisiojioce" class="anchorTag"></div>
+          <h5>ratfolk Characteristics</h5>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p *ngFor="let description of characterisitics.ratfolk.descriptions">- {{description}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.ratfolk.convictions">- {{conviction}}</p>
+          </div>
+          <div>
+            <h6>Cultural Strength</h6>
+            <p class='marginBottom'>{{characterisitics.ratfolk.strength}}</p>
+
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.ratfolk.temperament}}</p>
+
+            <h6>Devotions</h6>
+            <p *ngFor="let devotion of characterisitics.ratfolk.devotions">- {{devotion}}</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="sideShell">

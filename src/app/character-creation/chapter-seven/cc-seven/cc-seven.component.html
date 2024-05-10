@@ -400,12 +400,12 @@
       <div class='paragraphShell anchor'>
         <div id='Thecostis7MscYKrYxYi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Thecostis7MscYKrYxYi'"></app-bm-chapter-icon>
-        <p><strong>Devotions </strong>The cost is to increase a Devotion by 1 Rank is 7 + (Current Rank * 3). A new Conviction costs 7 + (Number of Devotions * 3) CrP and starts at Rank 1.</p>
+        <p><strong>Devotions </strong>The cost is to increase a Devotion by 1 Rank is 7 + (Current Rank * 3). A new Devotion costs 7 + (Number of Devotions * 3) CrP and starts at Rank 1.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='Thecostis7MscYKrYxYi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Thecostis7MscYKrYxYi'"></app-bm-chapter-icon>
-        <p><strong>Descriptions </strong>The cost is to increase a Devotion by 1 Rank is (the number of your character’s Descriptions * 3) + (Current Rank * 2). A new Description costs the number of your character’s Descriptions * 3 CrP and starts at Rank 1.</p>
+        <p><strong>Descriptions </strong>The cost is to increase a Description by 1 Rank is (the number of your character’s Descriptions * 3) + (Current Rank * 2). A new Description costs the number of your character’s Descriptions * 3 CrP and starts at Rank 1.</p>
       </div>
 
       <div class="anchor">
@@ -593,7 +593,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThefirststeppqeBVhyRSg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThefirststeppqeBVhyRSg'"></app-bm-chapter-icon>
-        <p>The first step is to be taught the basic of the Rudiment. This is an Weirdcraft Skill Check with the penalty
+        <p>The first step is to be taught the basic of the Rudiment. This is an Weirdcraft Skill Check with the Difficulty
           being
           set by which type of magic is doing the teaching and learning.</p>
       </div>
@@ -624,7 +624,8 @@
         <app-bm-chapter-icon [id]="'AfailureindixMAUaQeaoQ'"></app-bm-chapter-icon>
         <p>A failure indicates that more time and study must be taken, increasing the days of study by 1 dice size (d6!
           days
-          of study for the second try, d10! for the fourth attempt and so on).</p>
+          of study for the second try, d10! for the fourth attempt and so on). If you've trying to learn from a scroll, 
+        failure indicates that the scroll has been destroyed in the process and you cannot try again (unless you have another on hand).</p>
       </div>
       <div class="table-overflow">
         <table class="all-centered table-center">
@@ -652,39 +653,39 @@
             </tr>
             <tr>
               <td>Adamic</td>
-              <td>-d10!</td>
+              <td>+d10!</td>
               <td>X</td>
-              <td>-d20!</td>
+              <td>+d20!</td>
               <td>X</td>
-              <td>-2d20!</td>
-              <td>-d10!-d20!</td>
+              <td>+2d20!</td>
+              <td>+d10!+d20!</td>
               <td>X</td>
             </tr>
             <tr>
               <td>Blood</td>
               <td>X</td>
-              <td>-d20!</td>
-              <td>-d20!</td>
-              <td>-2d20!</td>
+              <td>+d20!</td>
+              <td>+d20!</td>
+              <td>+2d20!</td>
               <td>X</td>
-              <td>-d10!-d20!</td>
-              <td>-2d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+2d20!</td>
             </tr>
             <tr>
               <td>Folk</td>
-              <td>-d10!-d20!</td>
-              <td>-d10!-d20!</td>
-              <td>-d20!</td>
-              <td>-d10!-d20!</td>
-              <td>-d10!-d20!</td>
-              <td>-d10!-d20!</td>
-              <td>-d10!-d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d10!+d20!</td>
             </tr>
             <tr>
               <td>Sourcerous</td>
               <td>X</td>
-              <td>-2d20!</td>
-              <td>-d20!</td>
+              <td>+2d20!</td>
+              <td>+d20!</td>
               <td>X</td>
               <td>X</td>
               <td>X</td>
@@ -692,43 +693,43 @@
             </tr>
             <tr>
               <td>Stellatum</td>
-              <td>-2d20!</td>
+              <td>+2d20!</td>
               <td>X</td>
-              <td>-d20!</td>
+              <td>+d20!</td>
               <td>X</td>
               <td>X</td>
-              <td>-2d20!</td>
-              <td>-d10!-d20!</td>
+              <td>+2d20!</td>
+              <td>+d10!+d20!</td>
             </tr>
             <tr>
               <td>Vancian</td>
-              <td>-d10!-d20!</td>
-              <td>-d10!-d20!</td>
-              <td>-d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+d20!</td>
               <td>X</td>
-              <td>-2d20!</td>
-              <td>-2d20!</td>
+              <td>+2d20!</td>
+              <td>+2d20!</td>
               <td>X</td>
             </tr>
             <tr>
               <td>Wild</td>
               <td>X</td>
-              <td>-2d20!</td>
-              <td>-d20!</td>
-              <td>-d10!-d20!</td>
+              <td>+2d20!</td>
+              <td>+d20!</td>
+              <td>+d10!+d20!</td>
               <td>X</td>
               <td>X</td>
-              <td>-d20!</td>
+              <td>+d20!</td>
             </tr>
             <tr>
               <td>Scroll</td>
-              <td>-d10!-d20!</td>
-              <td>-2d20!</td>
-              <td>-d10!-d20!</td>
+              <td>+d10!+d20!</td>
+              <td>+2d20!</td>
+              <td>+d10!+d20!</td>
               <td>x</td>
-              <td>-2d20!</td>
-              <td>-1d20!</td>
-              <td>-2d20!</td>
+              <td>+2d20!</td>
+              <td>+d20!</td>
+              <td>+2d20!</td>
             </tr>
           </tbody>
         </table>

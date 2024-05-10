@@ -168,6 +168,13 @@ export class ChapterService {
     )
   }
 
+  getCharacteristics(): Observable<Search[]> {
+    return this.http.get<Search[]>(local.endpointBase + '/getCharacteristics')
+      .pipe(
+        catchError(this.handleError('get characteristics', []))
+      )
+  }
+
   getName(id: number): string {
     switch (id) {
       case 1:

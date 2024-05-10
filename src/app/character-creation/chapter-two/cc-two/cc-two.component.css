@@ -10,6 +10,20 @@ img {
     display: none;
 }
 
+.characterisiticsShell {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.characterisiticsShell div {
+    max-width: 33%;
+}
+
+.characterisiticsShell p {
+    text-indent: unset;
+}
+
 @media (max-width: 770px) {  
     img {
         display: none;
