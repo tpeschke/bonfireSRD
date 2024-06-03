@@ -748,7 +748,9 @@
         <div id='ifyouioactjioakio' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyouioactjioakio'"></app-bm-chapter-icon>
         <p>If you take an action that aligns with your Characteristics that is a bad idea but wouldn't be a Check (like deciding to go 
-          down the blood-soaked tunnel that you can hear screaming echoing from), you can heal 1d4! Stress.</p>
+          down the blood-soaked tunnel that you can hear screaming echoing from), you can heal 1d4! Stress. You can heal Stress 
+        multiple times from the same action if it results in multiple penalties (like getting attacking in the blood-soaked tunnel 
+        and realizing your out of rations because you got trapped by a portcullis that slammed down behind you).</p>
       </div>
       <div class="anchor">
         <div id="CreatureComfoheader" class="anchorTag"></div>
@@ -1003,17 +1005,32 @@
         <h1>Taking a Breather</h1>
         <div class="underline"></div>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='PausingandreIYNfHcSeNT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'PausingandreIYNfHcSeNT'"></app-bm-chapter-icon>
-        <p>Pausing and resting for 30 minutes heals you half the damage and Stress (rounded down) that you've take since
-          the last
-          time you've Taken a Breather.</p>
+        <p>Pausing and resting for 30 minutes heals half your damage and Stress (rounded down), however, you 
+          can't go the below your lowest Nerve/Vitality Category + 1 for the number of Breathers you've previously taken.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='sothiesrjiojieow' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sothiesrjiojieow'"></app-bm-chapter-icon>
+        <p class="italic">So, the first time you Take a Breather, if you have 40 Vitality, you couldn't go below 0, since 
+          that would take you out of Hurt (Unhurt + 0 previous Breathers). The third time you Took a Breather, you couldn't go below 30, since that would 
+          take you out of Wounded (Unhurt + 3 previous Breathers).
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='youcaniosioej' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'youcaniosioej'"></app-bm-chapter-icon>
+        <p>If you manage to go below a Nerve/Vitality Category due to other types of healing/relaxation, that Category is 'unlocked'.
+          So, if your minimum was Shaken, by healing enough Stress to drop you down to Unsure, that becomes your new minimum (effectively 
+          reducing the number of previous Breathers by 2)
+        </p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IftherestiswoKAaLujOC' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftherestiswoKAaLujOC'"></app-bm-chapter-icon>
-        <p>If the rest is broken for any reason, you lose all benefit from it.</p>
+        <p>If the rest is broken for any reason, you lose all benefit from it and it also does count against you.</p>
       </div>
       <div class="anchor">
         <div id="Honorheader" class="anchorTag"></div>
