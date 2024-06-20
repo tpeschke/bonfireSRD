@@ -387,96 +387,68 @@
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>6</td>
-          </tr>
-          <tr>
             <td>3</td>
-            <td>8</td>
+            <td>4</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>10</td>
+            <td>5</td>
           </tr>
           <tr>
             <td>5</td>
-            <td>11</td>
+            <td>6</td>
           </tr>
           <tr>
             <td>6</td>
-            <td>12</td>
+            <td>7</td>
           </tr>
           <tr>
             <td>7</td>
-            <td>12</td>
+            <td>7</td>
           </tr>
           <tr>
             <td>8</td>
-            <td>13</td>
+            <td>8</td>
           </tr>
           <tr>
             <td>9</td>
-            <td>13</td>
+            <td>8</td>
           </tr>
           <tr>
             <td>10</td>
-            <td>13</td>
+            <td>8</td>
           </tr>
           <tr>
             <td>11</td>
-            <td>13</td>
+            <td>8</td>
           </tr>
           <tr>
             <td>12</td>
-            <td>13</td>
+            <td>8</td>
           </tr>
           <tr>
             <td>13</td>
-            <td>14</td>
+            <td>9</td>
           </tr>
           <tr>
             <td>14</td>
-            <td>14</td>
+            <td>9</td>
           </tr>
           <tr>
             <td>15</td>
-            <td>14</td>
+            <td>9</td>
           </tr>
           <tr>
             <td>16</td>
-            <td>15</td>
+            <td>10</td>
           </tr>
           <tr>
             <td>17</td>
-            <td>16</td>
+            <td>11</td>
           </tr>
           <tr>
             <td>18</td>
-            <td>18</td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>21</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <td>22</td>
-            <td>23</td>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>24</td>
+            <td>13</td>
           </tr>
         </tbody>
       </table>
@@ -1099,9 +1071,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyouhaveaCbvoAUjnZW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyouhaveaCbvoAUjnZW'"></app-bm-chapter-icon>
-        <p>If you have a positive Devotion to a deity, one of their cults, or one of their Covenants, you can choose to
+        <p>If you have a positive Relationship to a deity, one of their cults, or one of their Covenants, you can choose to
           begin the game as an anointed to that deity. Otherwise, you can become Anointed during gameplay once you have
-          that Devotion.</p>
+          that Relationship.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='YoucanonlybMOiUdCoDLh' class='anchorTag'></div>
@@ -1207,7 +1179,7 @@
         <app-bm-chapter-icon [id]="'BecauseImprVALfdUDOon'"></app-bm-chapter-icon>
         <p class="italic">Because I’m pretty squishy, having a small bank of Favor wouldn’t be a terrible thing to have
           in
-          my back pocket but it does cost me a Devotion that fleshes out my relationship to my faith.</p>
+          my back pocket but it does cost me a Relationship that fleshes out my relationship to my faith.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='IthinkitswlXssSyrEOo' class='anchorTag'></div>
@@ -1462,7 +1434,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThesequestionpCoEGbHgCo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThesequestionpCoEGbHgCo'"></app-bm-chapter-icon>
-        <p>These questions are answered using Goals, Convictions, Devotions, Descriptions, Ancestral Temperament, and Reputation, which
+        <p>These questions are answered using Goals, Convictions, Relationships, Descriptions, Ancestral Temperament, and Reputation, which
           we’ll fill out now.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -1570,7 +1542,7 @@
         <div class='paragraphShell anchor'>
           <div id='ifuoufioiowe' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'ifuoufioiowe'"></app-bm-chapter-icon>
-          <p class="italic">So, if you’re an elf, you can change “Pines for another world” Devotion to “Looks for a way to get to another plane” - thematically the same but with the second being more active.</p>
+          <p class="italic">So, if you’re an elf, you can change “Pines for another world” Relationship to “Looks for a way to get to another plane” - thematically the same but with the second being more active.</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='orjioewjicoejiwojefw' class='anchorTag'></div>
@@ -1767,7 +1739,7 @@
           </div>
           <div class="resultHolder">
             <h2>{{devotion | titlecase}}</h2>
-            <button class="generateButton" (click)="getDevotion()">Generate Devotion!</button>
+            <button class="generateButton" (click)="getDevotion()">Generate Relationship!</button>
           </div>
           <div class="resultHolder">
             <h2>{{flaw | titlecase}}</h2>
@@ -1790,7 +1762,7 @@
         <div class='paragraphShell anchor'>
           <div id='iojiowjiofjewi' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'iojiowjiofjewi'"></app-bm-chapter-icon>
-          <p>I would actually recommend you start with a conflicting Conviction (or Devotion). It adds a bit of depth
+          <p>I would actually recommend you start with a conflicting Conviction (or Relationship). It adds a bit of depth
             and
             interest to your character, points a struggle that you would be interested in roleplaying out to your GM so
             that they can weave that into the adventure or campaign, and gives you a place to grow. Let yourself be
@@ -1858,7 +1830,7 @@
 
       <div class="anchor">
         <div id="DevotionsheaderIDspydqCXk" class="anchorTag"></div>
-        <h2>Devotions</h2>
+        <h2>Relationships</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
@@ -1873,19 +1845,19 @@
         <app-bm-chapter-icon [id]="'RelationshipskwLAYTbFYf'"></app-bm-chapter-icon>
         <p>Relationships between individuals don’t need to be reciprocal or even contemporary. A young fighter may be
           inspired by a girl who doesn't love him back or by a long dead king he greatly admires. These are still viable
-          candidates for his Devotion.</p>
+          candidates for his Relationship.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='EveryonereceiZvKDOizAAl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EveryonereceiZvKDOizAAl'"></app-bm-chapter-icon>
-        <p>Everyone receives two free Devotions: one to their character’s clan/family and another of their choice. Each
-          Devotion comes with a "relationship verb" and the thing itself. So, his clan Devotion could be "Hate Clan" or
+        <p>Everyone receives two free Relationships: one to their character’s clan/family and another of their choice. Each
+          Relationship comes with a "relationship verb" and the thing itself. So, his clan Relationship could be "Hate Clan" or
           "Have mixed feelings about Clan" or "Loyal to Clan"</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheseDevotionbijhqrAZtw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheseDevotionbijhqrAZtw'"></app-bm-chapter-icon>
-        <p>One Devotion starts at Rank 6 and the other starts at 2.</p>
+        <p>One Relationship starts at Rank 6 and the other starts at 2.</p>
       </div>
 
       <div class="anchor">
@@ -1895,7 +1867,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='SoIgettwoJEGKXHBIrz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoIgettwoJEGKXHBIrz'"></app-bm-chapter-icon>
-        <p class="italic">So, I get two Devotions one of which has to do with my character's faith
+        <p class="italic">So, I get two Relationships one of which has to do with my character's faith
           since
           they’re part of a cult so let’s take care of that first.</p>
       </div>
@@ -1924,7 +1896,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='SothefullDeHHcAKqMCzH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SothefullDeHHcAKqMCzH'"></app-bm-chapter-icon>
-        <p class="italic">So the full Devotion is “Admires the Divine of Thievery”.</p>
+        <p class="italic">So the full Relationship is “Admires the Divine of Thievery”.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ForthesecondyjgXmHZxde' class='anchorTag'></div>
