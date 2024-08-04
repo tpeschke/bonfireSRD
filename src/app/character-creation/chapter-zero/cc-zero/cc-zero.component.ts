@@ -12,7 +12,7 @@ export class CcZeroComponent implements OnInit {
     private chapterService: ChapterService,
   ) { }
 
-  side = [{linkid: 'h', body: 'Introduction', jump: 'Introductionheader'}, {linkid: 'h', body: 'Leveling Terminology', jump: 'levelingterminog'}, {linkid: 'h', body: 'Classes', jump: 'GeneralistArcmajorheader'}, {linkid: 'hg', body: 'Expert', jump: 'EXPERTheader'}, {linkid: 'hg', body: 'Fighter', jump: 'FIGHTERheader'}, {linkid: 'hg', body: 'Servant', jump: 'SERVANTheader'}, {linkid: 'hg', body: 'Socialite', jump: 'SOCIALITEheader'}, {linkid: 'hg', body: 'Weird-Adept', jump: 'WeirdAdeptheader'}]
+  side = [{linkid: 'h', body: 'You Want To Play', jump: 'YouWanttoPlheader'}, {linkid: 'h', body: 'That The Gm Gets Excited About', jump: 'ThattheGMGeheader'}, {linkid: 'h', body: 'That The Other Players Can Interact With', jump: 'ThattheOtherheader'}, {linkid: 'h', body: 'Final Thoughts', jump: 'FinalThoughtsheader'}]
 
   ngOnInit() {
     
