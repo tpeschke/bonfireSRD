@@ -25,7 +25,7 @@ import { BookmarkingModule } from './bookmarking/bookmarking.module';
     PrivacyPolicyComponent,
     LogonComponent,
     FormatSearchPipe,
-      AboutComponent
+    AboutComponent
    ],
   imports: [
     HttpClientModule,

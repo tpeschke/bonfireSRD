@@ -113,18 +113,20 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       case 7:
         return 'Misc. Rules';
       case 8:
-        return 'Step-by-Step Overview';
+        return 'Making a Good Character';
       case 9:
-        return 'Ancestries';
+        return 'Step-by-Step Overview';
       case 10:
-        return 'Classes';
+        return 'Ancestries';
       case 11:
-        return 'Burdens & Injuries';
+        return 'Classes';
       case 12:
-        return 'Skills';
+        return 'Burdens & Injuries';
       case 13:
-        return 'Equipment';
+        return 'Skills';
       case 14:
+        return 'Equipment';
+      case 15:
         return 'Character Progression';
       default:
         return 'Home';
@@ -163,7 +165,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   returnRoute(chapter) {
-    if (chapter > 0 && chapter < 15) {
+    if (chapter > 0 && chapter < 16) {
       return '/chapter/' + chapter
     } else {
       return '/'
