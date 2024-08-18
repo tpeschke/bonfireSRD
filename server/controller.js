@@ -443,7 +443,7 @@ module.exports = {
         const basicAncestries = {
             elf: {
                 strength: 'Creation',
-                temperament: 'Patient',
+                temperament: 'Cautious',
                 descriptions: [
                     'Beautiful',
                     'Graceful',
