@@ -405,7 +405,7 @@ module.exports = {
             },
             ratfolk: {
                 strength: 'Utility',
-                temperament: 'Helpful',
+                temperament: 'Co-Dependent',
                 descriptions: [
                     'Friendly',
                     'Accommodating',
