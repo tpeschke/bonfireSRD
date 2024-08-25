@@ -25,17 +25,22 @@
       <div class='paragraphShell anchor'>
         <div id='eachioejsiojcioew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'eachioejsiojcioew'"></app-bm-chapter-icon>
-        <p>Each Ancestry has its only unique personality that might appeal to you. You can read about each's in their Personality 
-          section and see a bullet-point summary beyond that in "Characteristics", which will become important later in 
+        <p>Each Ancestry has its only unique personality that might appeal to you. You can read about each's in their
+          Personality
+          section and see a bullet-point summary beyond that in "Characteristics", which will become important later in
           Character Creation.</p>
       </div>
       <div class='marginBottom paragraphShell anchor'>
         <div id='notehiosjtiojes' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'notehiosjtiojes'"></app-bm-chapter-icon>
-        <p>Note that these are default Characteristics that assume that there is only one culture per ancestry and that these 
-          cultures are very similar to the stereotypes of that ancestry in popular fiction but your GM might have a separate list 
-          from which to pull from so check with them. If you’re using the official campaign setting, you’ll find that information 
-          under the Nations folder in the World Codex found <a href="https://www.worldanvil.com/w/the-welgyrf-sagas-peschke" target="_blank">here</a>.</p>
+        <p>Note that these are default Characteristics that assume that there is only one culture per ancestry and that
+          these
+          cultures are very similar to the stereotypes of that ancestry in popular fiction but your GM might have a
+          separate list
+          from which to pull from so check with them. If you’re using the official campaign setting, you’ll find that
+          information
+          under the Nations folder in the World Codex found <a
+            href="https://www.worldanvil.com/w/the-welgyrf-sagas-peschke" target="_blank">here</a>.</p>
       </div>
       <div class='anchor'>
         <div id='3kOpuEvckQq' class='anchorTag'></div>
@@ -65,7 +70,7 @@
       <div class='marginBottom paragraphShell anchor'>
         <div id='3zrqShuDWpY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3zrqShuDWpY'"></app-bm-chapter-icon>
-        <p> Each Ancestry is meant to encourage a certain type of play. For instance, orcs are highly destructive, 
+        <p> Each Ancestry is meant to encourage a certain type of play. For instance, orcs are highly destructive,
           so they reward players who are aggressive, while elves get
           rewarded for being careful with how they engage with others. These are noted under the Ancestry
           Temperament and Abilities sections in their summary. </p>
@@ -79,7 +84,8 @@
       <div class=' paragraphShell anchor marginBottom'>
         <div id='3zHPAsQZMCS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3zHPAsQZMCS'"></app-bm-chapter-icon>
-        <p>Some Ancestries have cultural practices that look down or favor certain Classes. This is reflected in the Class Costs.</p>
+        <p>Some Ancestries have cultural practices that look down or favor certain Classes. This is reflected in the
+          Class Costs.</p>
       </div>
 
       <div class="anchor">
@@ -166,7 +172,36 @@
         <div class='marginBottom paragraphShell anchor'>
           <div id='startouchejiocew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'startouchejiocew'"></app-bm-chapter-icon>
-          <p>Star Shield: when resisting a spell’s Effect, any Boons that you get on your Check can be given to your allies if they’re affected by the same spell and it requires Mental resistance or if the spell requires Physical resistance and you’re within 5 ft.</p>
+          <p>Star Shield: when resisting a spell’s Effect, any Boons that you get on your Check can be given to your
+            allies if they’re affected by the same spell and it requires Mental resistance or if the spell requires
+            Physical resistance and you’re within 5 ft.</p>
+        </div>
+        <div class='anchor'>
+          <div id='elfcharjaiocj' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'elfcharjaiocj'"></app-bm-chapter-icon>
+          <h2>Characteristics</h2>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p>{{characterisitics.elf.descriptions[0]}}, {{characterisitics.elf.descriptions[1]}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.elf.convictions">{{conviction}}</p>
+          </div>
+          <div>
+            <h6>Relationships</h6>
+            <p *ngFor="let devotion of characterisitics.elf.devotions">{{devotion}}</p>
+          </div>
+          <div>
+            <h6>Strength</h6>
+            <p class='marginBottom'>{{characterisitics.elf.strength}}</p>
+          </div>
+          <div>
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.elf.temperament}}</p>
+          </div>
         </div>
         <div class='anchor'>
           <div id='3hg5' class='anchorTag'></div>
@@ -187,7 +222,7 @@
       </div>
 
       <img src="../../../../assets/images/elf.png" />
-      
+
       <div class='marginBottom paragraphShell anchor'>
         <div id='wewhoweretarpacie' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'wewhoweretarpacie'"></app-bm-chapter-icon>
@@ -234,7 +269,8 @@
           vegetables do have
           magic in them, an Elf would have to consume 100s of pounds of lettuce each day to not die of
           starvation. The
-          only realistic way of getting enough magic to survive is through the consumption of meat, making them omnivores in theory but carnivores in practice.
+          only realistic way of getting enough magic to survive is through the consumption of meat, making them
+          omnivores in theory but carnivores in practice.
         </p>
       </div>
       <div class='anchor'>
@@ -267,33 +303,6 @@
         <div id='3p31' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3p31'"></app-bm-chapter-icon>
         <p> However, once set on a course, it is hard to dissuade an elf, for they do nothing lightly.</p>
-      </div>
-      
-      <div *ngIf="characterisitics.elf" class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="elfcharacterisiojioce" class="anchorTag"></div>
-          <h5>Elven Characteristics</h5>
-        </div>
-        <div class="characterisiticsShell">
-          <div>
-            <h6>Descriptions</h6>
-            <p *ngFor="let description of characterisitics.elf.descriptions">- {{description}}</p>
-          </div>
-          <div>
-            <h6>Convictions</h6>
-            <p *ngFor="let conviction of characterisitics.elf.convictions">- {{conviction}}</p>
-          </div>
-          <div>
-            <h6>Cultural Strength</h6>
-            <p class='marginBottom'>{{characterisitics.elf.strength}}</p>
-
-            <h6>Temperament</h6>
-            <p class='marginBottom'>{{characterisitics.elf.temperament}}</p>
-
-            <h6>Relationships</h6>
-            <p *ngFor="let devotion of characterisitics.elf.devotions">- {{devotion}}</p>
-          </div>
-        </div>
       </div>
 
       <div class="anchor">
@@ -366,6 +375,33 @@
           <p>Naturally Adept: At first level, gain the Martial, Skill, or Personality Adept Ability.</p>
         </div>
         <div class='anchor'>
+          <div id='huamncioiopopjioe' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'huamncioiopopjioe'"></app-bm-chapter-icon>
+          <h2>Characteristics</h2>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p>{{characterisitics.human.descriptions[0]}}, {{characterisitics.human.descriptions[1]}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.human.convictions">{{conviction}}</p>
+          </div>
+          <div>
+            <h6>Relationships</h6>
+            <p *ngFor="let devotion of characterisitics.human.devotions">{{devotion}}</p>
+          </div>
+          <div>
+            <h6>Strength</h6>
+            <p class='marginBottom'>{{characterisitics.human.strength}}</p>
+          </div>
+          <div>
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.human.temperament}}</p>
+          </div>
+        </div>
+        <div class='anchor'>
           <div id='3hg9' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'3hg9'"></app-bm-chapter-icon>
           <h2>Class Costs</h2>
@@ -436,33 +472,6 @@
         <p> Truthfully, you probably have your own opinion about how humans behave and why they behave the
           way they do and
           nothing I write in this little blurb is going to convince you otherwise.</p>
-      </div>
-
-      <div *ngIf="characterisitics.human" class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="humancharacterisiojioce" class="anchorTag"></div>
-          <h5>Human Characteristics</h5>
-        </div>
-        <div class="characterisiticsShell">
-          <div>
-            <h6>Descriptions</h6>
-            <p *ngFor="let description of characterisitics.human.descriptions">- {{description}}</p>
-          </div>
-          <div>
-            <h6>Convictions</h6>
-            <p *ngFor="let conviction of characterisitics.human.convictions">- {{conviction}}</p>
-          </div>
-          <div>
-            <h6>Cultural Strength</h6>
-            <p class='marginBottom'>{{characterisitics.human.strength}}</p>
-
-            <h6>Temperament</h6>
-            <p class='marginBottom'>{{characterisitics.human.temperament}}</p>
-
-            <h6>Relationships</h6>
-            <p *ngFor="let devotion of characterisitics.human.devotions">- {{devotion}}</p>
-          </div>
-        </div>
       </div>
 
       <div class="anchor">
@@ -548,12 +557,40 @@
         <div class='paragraphShell anchor'>
           <div id='destrrucitove' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'destrrucitove'"></app-bm-chapter-icon>
-          <p>Destructive: When using equipment to gain a bonus, orcs may gain an extra +d4! to their Check in exchange for an additional 1 Wear on the item.</p>
+          <p>Destructive: When using equipment to gain a bonus, orcs may gain an extra +d4! to their Check in exchange
+            for an additional 1 Wear on the item.</p>
         </div>
         <div class='marginBottom paragraphShell anchor'>
           <div id='intigstaorc' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'intigstaorc'"></app-bm-chapter-icon>
           <p>Instigator: Orcs gain 1 Grit Die when they start a Combat, Challenge, or Confrontation.</p>
+        </div>
+        <div class='anchor'>
+          <div id='orcjifoewjiofewk' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'orcjifoewjiofewk'"></app-bm-chapter-icon>
+          <h2>Characteristics</h2>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p>{{characterisitics.orc.descriptions[0]}}, {{characterisitics.orc.descriptions[1]}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.orc.convictions">{{conviction}}</p>
+          </div>
+          <div>
+            <h6>Relationships</h6>
+            <p *ngFor="let devotion of characterisitics.orc.devotions">{{devotion}}</p>
+          </div>
+          <div>
+            <h6>Strength</h6>
+            <p class='marginBottom'>{{characterisitics.orc.strength}}</p>
+          </div>
+          <div>
+            <h6>Temperament</h6>
+            <p class='marginBottom'>{{characterisitics.orc.temperament}}</p>
+          </div>
         </div>
         <div class='anchor'>
           <div id='3hg13' class='anchorTag'></div>
@@ -642,33 +679,6 @@
           worthy foe. This is often seen in their deities across orcish cultures, which are almost exclusively
           pantheons of their greatest foes. It is taken for granted that you are only as good as your enemies.
         </p>
-      </div>
-
-      <div *ngIf="characterisitics.orc" class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="orccharacterisiojioce" class="anchorTag"></div>
-          <h5>Orcish Characteristics</h5>
-        </div>
-        <div class="characterisiticsShell">
-          <div>
-            <h6>Descriptions</h6>
-            <p *ngFor="let description of characterisitics.orc.descriptions">- {{description}}</p>
-          </div>
-          <div>
-            <h6>Convictions</h6>
-            <p *ngFor="let conviction of characterisitics.orc.convictions">- {{conviction}}</p>
-          </div>
-          <div>
-            <h6>Cultural Strength</h6>
-            <p class='marginBottom'>{{characterisitics.orc.strength}}</p>
-
-            <h6>Temperament</h6>
-            <p class='marginBottom'>{{characterisitics.orc.temperament}}</p>
-
-            <h6>Relationships</h6>
-            <p *ngFor="let devotion of characterisitics.orc.devotions">- {{devotion}}</p>
-          </div>
-        </div>
       </div>
 
     </div>

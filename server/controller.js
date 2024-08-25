@@ -314,34 +314,13 @@ module.exports = {
                 temperament: 'Stubborn',
                 descriptions: [
                     'Rough',
-                    'Strong',
-                    'Brash',
-                    'Honest',
-                    'Opinionated',
-                    'Down-to-Earth',
-                    'Stubborn',
-                    'Focused',
-                    'Defiant',
-                    'Greedy'
+                    'Honest'
                 ],
                 convictions: [
-                    'Do it right the first time',
-                    'Investments always pay off',
-                    'Honor and Glory are greater than life',
-                    'Push boundaries for that is where you find the gems',
-                    'The measure of a man is whether they fight',
-                    'Be confident in yourself',
-                    'I’m stronger than stone and iron',
-                    'What does not kill you makes you stronger',
-                    'The forge makes the steel stronger',
-                    'What we are is what we pass on'
+                    'Honor and Glory are greater than life'
                 ],
                 devotions: [
-                    'Strike the earth!',
-                    'Hew the might',
-                    'Fight for strength and honor',
-                    'Increase the glory of the hold',
-                    'Reject the fear of death'
+                    'Strike the earth!'
                 ]
             },
             gaunt: {
@@ -349,58 +328,27 @@ module.exports = {
                 temperament: 'Choose one: Salvation Secured or Damnation Secured',
                 descriptions: [
                     'Free',
-                    'Enabling',
-                    'Loyal',
-                    'Iconoclastic',
-                    'Individual'
+                    'Iconoclastic'
                 ],
                 convictions: [
-                    'Enjoy the world while you still can',
-                    'Eat, drink, and be merry for tomorrow we die',
-                    'Fear is the mother of morality',
-                    'What is old should be discarded',
-                    'I’ve already made the ultimate sacrifice'
+                    'Eat, drink, and be merry for tomorrow we die'
                 ],
                 devotions: [
-                    'Indulge in all good things',
-                    'Make my sacrifice worth it',
-                    'Raise others',
-                    'Reject what others try to saddle you with'
+                    'Indulge in all good things'
                 ]
             },
             pech: {
                 strength: 'Guile',
                 temperament: 'Clannish',
                 descriptions: [
-                    'Humble',
-                    'Reserved',
-                    'Resolute',
                     'Optimistic',
-                    'Concentrated',
-                    'Crafty',
-                    'Content',
-                    'Hedonistic',
-                    'Careful',
-                    'Trustworthy'
+                    'Content'
                 ],
                 convictions: [
-                    'Hubris will get you every time',
-                    'The work of your hands is the best work',
-                    '‘Now’ is the only moment we have',
-                    'A person is only as good as their word',
-                    'What is rare must be treasured',
-                    'People underestimate the small',
-                    'Simple is the way to go',
-                    'One foot in front of the another',
-                    'To live is to experience joy',
-                    'The unexamined life is worth living'
+                    'Simple is the way to go'
                 ],
                 devotions: [
-                    'Cultivate the good',
-                    'Protect your home',
-                    'Defy evil',
-                    'Be clever',
-                    'Look on the bright side of life'
+                    'Cultivate the good'
                 ]
             },
             ratfolk: {
@@ -408,34 +356,13 @@ module.exports = {
                 temperament: 'Co-Dependent',
                 descriptions: [
                     'Friendly',
-                    'Accommodating',
-                    'Tolerant',
-                    'Accepting',
-                    'Conviving',
-                    'Watchful',
-                    'Community-Focused',
-                    'Extroverted',
-                    'Earnest',
-                    'Quick'
+                    'Watchful'
                 ],
                 convictions: [
-                    'Stronger together',
-                    'There is wisdom in the mob',
-                    'Be cunning as serpents yet innocent as doves',
-                    'Watch, listen, and learn',
-                    'It’s harder to hit me when I’m in a crowd',
-                    'You remove enemies by making them friends ',
-                    'It is better to be kind than to be right',
-                    'Shouting won’t force people to listen',
-                    'Be quick or be dead',
-                    'Give away 10, receive 11'
+                    'Be cunning as serpents yet innocent as doves'
                 ],
                 devotions: [
-                    'Die for your companions',
-                    'Try to understand all',
-                    'Be useful',
-                    'Forgive first',
-                    'See what others won’t'
+                    'Be useful'
                 ]
             }
         }
@@ -446,34 +373,13 @@ module.exports = {
                 temperament: 'Cautious',
                 descriptions: [
                     'Beautiful',
-                    'Graceful',
-                    'Thin',
-                    'Imperial',
-                    'Stoic',
-                    'Otherworldly',
-                    'Self-righteous',
-                    'Confident',
-                    'Unattached',
-                    'Determined'
+                    'Unattached'
                 ],
                 convictions: [
-                    'The world is precious',
-                    'Magic is in everything',
-                    'Patience is always rewarded',
-                    'Follow the path of least resistance',
-                    'Evil must be opposed',
-                    'This conflict is just a shadow of past wars',
-                    'Everything that is not eternal is eternally out of date',
-                    'Beauty is the highest virtue',
-                    'To create is to live',
                     'The best days are behind us'
                 ],
                 devotions: [
-                    'Unattached the world',
-                    'Admires far thinking',
-                    'Driven to create',
-                    'In harmony with magic',
-                    'Pines for another world'             
+                    'Driven to create'            
                 ]
             },
             human: {
@@ -481,69 +387,27 @@ module.exports = {
                 temperament: 'Curious',
                 descriptions: [
                     'Forgiving',
-                    'Ambitious',
-                    'Selfish',
-                    'Impulsive',
-                    'Faithful',
-                    'Empathetic',
-                    'Adaptable',
-                    'Confident',
-                    'Watchful',
-                    'Clannish'
+                    'Ambitious'
                 ],
                 convictions: [
-                    'What is beyond the horizon?',
-                    'If you do not grow, you die',
-                    'Humanity has the stars in its future',
-                    'Work in progress',
-                    'Leadership is about humility',
-                    'What is a heaven for?',
-                    'There is power in one person',
-                    'What is good must be defended',
-                    'Learn when you fail',
-                    'Failing doesn’t make you a failure'
+                    'There is power in one person'
                 ],
                 devotions: [
-                    'Has the right to develop themselves',
-                    'Desires freedom',
-                    'Bound to their family',
-                    'Craves discovery',
-                    'Thinks deeply on things'
+                    'Craves discovery'
                 ]
             },
             orc: {
                 strength: 'Conquest',
                 temperament: 'Aggressive',
                 descriptions: [
-                    'Fierce',
                     'Passionate',
-                    'Strong',
-                    'Savage',
-                    'Honorable',
-                    'Commanding',
-                    'Fiery',
-                    'Wild',
-                    'Brass-faced',
-                    'Extreme'
+                    'Brass-faced'
                 ],
                 convictions: [
-                    'Who wants to live forever?',
-                    'Fall down 6 times, stand up 7',
-                    'To fight is to win',
-                    'Half measures are for half men',
-                    'Refuse to be moved and the world will move for you',
-                    'Life is meant to be experienced, wounds and all',
-                    'Battle is the ultimate test of character',
-                    'Today is a good day to die',
-                    'Four thousand throats may be cut in one night by a running man',
-                    'Without eyes to see, a blade is useless'
+                    'Today is a good day to die'
                 ],
                 devotions: [
-                    'Driven to conquest',
-                    'Unburdened by convention',
-                    'Heir to warrior legends',
-                    'Pities the warrior who has killed all his foes',
-                    'Keeps score'
+                    'Pities the warrior who has killed all his foes'
                 ]
             }
         }
