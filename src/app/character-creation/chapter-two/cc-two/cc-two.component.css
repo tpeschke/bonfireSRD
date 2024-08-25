@@ -13,11 +13,20 @@ img {
 .characterisiticsShell {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .characterisiticsShell div {
-    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.characterisiticsShell div p {
+    margin: 0 !important;
+}
+
+.characterisiticsShell div p:last-child {
+    text-align: right;
 }
 
 .characterisiticsShell p {
