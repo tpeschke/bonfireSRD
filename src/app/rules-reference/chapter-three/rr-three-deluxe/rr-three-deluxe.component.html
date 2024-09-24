@@ -2875,9 +2875,9 @@
       <div class='paragraphShell anchor'>
         <div id='TheattackercWQBisRLFlq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheattackercWQBisRLFlq'"></app-bm-chapter-icon>
-        <p><strong>Attacker Bonuses </strong>The attacker can choose to do an automatic d4! + their damage modifier damage (no DR) instead of another
+        <p><strong>Attacker Bonuses </strong>The attacker can choose to do an automatic d8! + their damage modifier damage and Stress (no DR) instead of another
           unarmed
-          maneuver using their normal unarmed Recovery.</p>
+          maneuver using their normal unarmed Recovery. Half this damage is healed when released, although the Stress stays. If the target is unconscious, they stay unconscious for 24 - Con hours.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='AgainstnormalBsFMNsEYsB' class='anchorTag'></div>
@@ -3427,32 +3427,53 @@
         <div id='AtthebeginniqkBqLCHPkb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtthebeginniqkBqLCHPkb'"></app-bm-chapter-icon>
         <p>At the beginning of combat, if at least one side has a captain, a Confrontation is also started with the two
-          opposing sides are the two opposing forces (the players vs the goblins, for example).</p>
+          opposing sides are the two opposing forces (the players vs the goblins, for example). This runs like a normal Confrontation except the
+          company captains are in charge and get to dictate pretty much everything. So as the battle progresses, the captains are going to run the Confrontation in parallel with it, trying to
+          swing the battlefield to their advantage.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThisrunslikeatvZadJTND' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThisrunslikeatvZadJTND'"></app-bm-chapter-icon>
-        <p>This runs like a normal Confrontation except the
-          company captains are in charge and get to dictate pretty much everything. </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='SoasthebattQJNMVCLCxu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SoasthebattQJNMVCLCxu'"></app-bm-chapter-icon>
-        <p>So as the battle progresses, the captains are going to run the Confrontation in parallel with it, trying to
-          swing the battlefield to their advantage.</p>
+        <p>But, there is a difference: you can only make a single Check per second.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='UnlikearegulPiCpHBYxHq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'UnlikearegulPiCpHBYxHq'"></app-bm-chapter-icon>
-        <p>Unlike a regular Confrontation, however, it is not about gaining points but about who wins or loses that
-          round.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
         <div id='IfyouwintheNTNEdsTgUU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyouwintheNTNEdsTgUU'"></app-bm-chapter-icon>
-        <p>If you win the Confrontation round, the target behaves the way you want. This represents either them being
-          too panicked or not having enough information to make a good decision, or effective leadership and a clear
-          grasp of what’s going on.</p>
+        <p>These Checks result in two types of actions: momentary actions and sustained actions. Momentary actions happen and then are done (I 
+          decide not to attack the thief this time but can target them the next time I can attack) and sustained actions are true 
+          for the rest of the combat (I'll never attack the thief for the rest of the combat). 
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='UnlikearegulPiCpHBYxHq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'UnlikearegulPiCpHBYxHq'"></app-bm-chapter-icon>
+        <p>Momentary actions are the result of a single, successful Check and sustained actions are the result of actually winning a Confrontation 
+          (getting to Rank 6 - their current Stress Category). You can, of course, get a sustained action from a single Check, if you're good enough, 
+          but you're most likely going to get them by inflicting Emotional States via momentary actions.
+        </p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='sotheijgainot' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'sotheijgainot'"></app-bm-chapter-icon>
+        <p class="italic">So, the giant is trying to grab me but I manage to hit him with my weapon as he closes in. I trigger a Confrontation Check so that 
+          his attack is momentary delayed by inflicting the "Cautious" Emotional State. I win, inflicting it at Rank 2 and delaying his attack by 2d4! Stress (one 
+          for each Rank inflicted). Later on, I deal a powerful blow to him 
+          so I trigger another Confrontation, increasing his Cautious Emotion to Rank 6. That means that I can now cash that Cautious Emotional State:
+          His Cautious drops to Rank 3 but he doesn't try to grab me for the rest of the combat.
+        </p>
+      </div>
+      <div class="anchor">
+        <div id="combatconssesionheading" class="anchorTag"></div>
+        <h3>Concessions</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='thisassunmiesothioatj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'thisassunmiesothioatj'"></app-bm-chapter-icon>
+        <p>This assumes that you make a Check for every action but, if your enemy already has an Emotional State, you can get a 
+          momentary action by reducing that Emotional State by 1 Rank, which is just a normal concession in different context. So, 
+          if you have the "Brave" Emotion at Rank 3, you can drop it to Rank 2 to swap to a more aggressive Tactic when you attack 
+          a goblin.
+        </p>
       </div>
       <div class="anchor">
         <div id="WithaCaptainheader" class="anchorTag"></div>
