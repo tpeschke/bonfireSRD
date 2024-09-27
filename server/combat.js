@@ -863,12 +863,12 @@ module.exports = {
             {
                 name: 'Bellybow',
                 size: 'L',
-                dam: '1d12!+1d4!',
+                dam: '2d20!',
                 rec: 36,
                 type: 'P',
                 minrec: 5,
-                bonus: 'Always 2-handed reload & used 2-handed. Steading weapon roll damage twice, take the highest.',
-                bonusLong: '<p>The Bellybow must be loaded two-handed regardless of size.</p><br><p>When steading the Bellybow against a stand, ground, wall or something similar roll damage twice, taking the highest result.</p>'
+                bonus: 'Always 2-handed reload & used 2-handed. Steading weapon gives +1d10! dam.',
+                bonusLong: '<p>The Bellybow must be loaded two-handed regardless of size.</p><br><p>When steading the bellybow against a stand, ground, wall or something similar gain +1d10! to damage.</p>'
             },
             {
                 name: 'Composite Bow',
@@ -883,12 +883,12 @@ module.exports = {
             {
                 name: 'Crossbow',
                 size: 'L',
-                dam: '1d10!+1d3!',
+                dam: '1d20!',
                 rec: 26,
                 type: 'P',
                 minrec: 5,
-                bonus: 'Always 2-handed reload & used 2-handed. Steading weapon roll damage twice, take the highest.',
-                bonusLong: '<p>The Crossbow must be loaded two-handed regardless of size.</p><br><p>When steading the crossbow against a stand, ground, wall or something similar roll damage twice, taking the highest result.</p>'
+                bonus: 'Always 2-handed reload & used 2-handed. Steading weapon gives +1d10! dam.',
+                bonusLong: '<p>The Crossbow must be loaded two-handed regardless of size.</p><br><p>When steading the crossbow against a stand, ground, wall or something similar gain +1d10! to damage.</p>'
             },
             {
                 name: 'Latchet Crossbow',
@@ -897,8 +897,8 @@ module.exports = {
                 rec: 14,
                 type: 'P',
                 minrec: 5,
-                bonus: 'Always 2-handed reload. Steading weapon roll damage twice, take the highest.',
-                bonusLong: '<p>The Latchet Crossbow may be used from horseback.</p><br><p>The Latchet Crossbow must be loaded two-handed regardless of size.</p><br><p>When steading the latchet crossbow against a stand, ground, wall or something similar roll damage twice, taking the highest result.</p>'
+                bonus: 'Always 2-handed reload. Steading weapon gives +1d6! dam',
+                bonusLong: '<p>The Latchet Crossbow may be used from horseback.</p><br><p>The Latchet Crossbow must be loaded two-handed regardless of size.</p><br><p>When steading the latchet crossbow against a stand, ground, wall or something similar gain +1d6! to damage.</p>'
             },
             {
                 name: 'Longbow',
@@ -922,7 +922,7 @@ module.exports = {
             {
                 name: 'Warbow',
                 size: 'H',
-                dam: '1d12!+d10!',
+                dam: '2d12!',
                 rec: 15,
                 type: 'P',
                 minrec: 5,
