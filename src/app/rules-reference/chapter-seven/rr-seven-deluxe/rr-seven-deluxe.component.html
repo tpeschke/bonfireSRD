@@ -134,6 +134,39 @@
         <h1>Falling</h1>
         <div class="underline"></div>
       </div>
+      <table class="float">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Falling Modifiers</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Distance (ft)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>-5</td>
+            <td>Expecting the Fall</td>
+          </tr>
+          <tr>
+            <td>-1 Height</td>
+            <td>Lowering Yourself First</td>
+          </tr>
+          <tr>
+            <td>-5</td>
+            <td>Soft Landing</td>
+          </tr>
+          <tr>
+            <td>-15</td>
+            <td>Water Landing</td>
+          </tr>
+          <tr>
+            <td>See Skill</td>
+            <td>Tumbling Check</td>
+          </tr>
+        </tbody>
+      </table>
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenyourcharcJTfefFlng' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenyourcharcJTfefFlng'"></app-bm-chapter-icon>
@@ -141,67 +174,22 @@
           they
           can do somethings to help their decent.</p>
       </div>
-      <div class="falling-damage-shell marginBottom">
-        <table class="all-centered">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="2">Falling Damage</th>
-            </tr>
-            <tr class="notSticky">
-              <th>Distance (ft)</th>
-              <th>Damage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                &#60;5</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>+5 ft</td>
-              <td>d6!</td>
-            </tr>
-            <tr>
-              <td>+10 ft</td>
-              <td>+d12!</td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="">
-          <thead>
-            <tr class="notSticky">
-              <th colspan="2">Falling Modifiers</th>
-            </tr>
-            <tr class="notSticky">
-              <th>Distance (ft)</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>-5</td>
-              <td>Expecting the Fall</td>
-            </tr>
-            <tr>
-              <td>-1 Height</td>
-              <td>Lowering Yourself First</td>
-            </tr>
-            <tr>
-              <td>-5</td>
-              <td>Soft Landing</td>
-            </tr>
-            <tr>
-              <td>-15</td>
-              <td>Water Landing</td>
-            </tr>
-            <tr>
-              <td>See Skill</td>
-              <td>Tumbling Check</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class='paragraphShell anchor'>
+        <div id='afteryoufinifodjs' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'afteryoufinifodjs'"></app-bm-chapter-icon>
+        <p>After you find the effective distance you're falling, roll 1d4!. If below 40 ft and you roll equal to or under the 10s digit on the height you fell, you sustain an injury and take that many Wound Categories worth of damage, spread over 1d12! Wounds. 
+          The injury has a 50% chance of lowering your Movement Category by 1 step per Wound Category of damage you took or lowering all arm-related Checks by 1 dice size per Wound Category. This penalty is 
+          healed as the damage is healed.
+        </p>
       </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ifabovejiotjiofe' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ifabovejiotjiofe'"></app-bm-chapter-icon>
+        <p>If above 40 ft, any result causes an injury as noted above and you take Wound Categories according to what you roll but, also, if you roll equal to or under the 10s digit - 3 on the height you fell, your 
+          character dies. In cases where the Wound Category damage is enough to bring you beyond Critical but you don't roll for auto-death, you're just knocked you out and start to bleed out as normal.
+        </p>
+      </div>
+
       <div class="anchor">
         <div id="Illuminationheader" class="anchorTag"></div>
         <h1>Illumination</h1>
@@ -522,7 +510,7 @@
         <p>Most of the time this refers to area, but you can also determine size by weight, if it's applicable. A Ghost
           could be considered both Medium or Tiny by the metric - go with whatever applies best in that situation.</p>
       </div>
-      
+
       <div class="anchor">
         <div id="chanigngzisize" class="anchorTag"></div>
         <h2>Changing Size</h2>
@@ -531,8 +519,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='sinceithiojaio' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'sinceithiojaio'"></app-bm-chapter-icon>
-        <p>Since it can happen, what with all this Weird running around, the benefits for increasing size are as follows: 
-          +1 to Measure, -3 to Defense, +5 to Vitality & Knock-Back Threshold. The modifiers are reversed for shrinking 
+        <p>Since it can happen, what with all this Weird running around, the benefits for increasing size are as
+          follows:
+          +1 to Measure, -3 to Defense, +5 to Vitality & Knock-Back Threshold. The modifiers are reversed for shrinking
           sizes, although you can't lower your Vitality by more than half its base.
         </p>
       </div>
@@ -570,7 +559,8 @@
         <app-bm-chapter-icon [id]="'IftheamountQaoIUSlgLl'"></app-bm-chapter-icon>
         <p>If the amount drained is more than the score, the person becomes appropriately incapacitated, but not dead,
           until
-          the Stat Score damage is healed. To remove 1 -1, you need to rest a number of days equal to the current penalty but all 
+          the Stat Score damage is healed. To remove 1 -1, you need to rest a number of days equal to the current
+          penalty but all
           stats heal concurrently.</p>
       </div>
       <div class="anchor">
@@ -653,7 +643,7 @@
             </tr>
             <tr>
               <td>Take 1 damage, 0 if wearing no armor, / hour</td>
-              <td>+1 damage / hour up the absolute value of your Adj Skill Penalty. 
+              <td>+1 damage / hour up the absolute value of your Adj Skill Penalty.
                 Those not wearing armor get 8 DR vs this heat.</td>
             </tr>
             <tr>
@@ -740,7 +730,8 @@
               <td>+3 extra seconds</td>
             </tr>
             <tr>
-              <td>Every hour in the rain reduces the attack die of bows and crossbows by 1 dice until their strings are replaced</td>
+              <td>Every hour in the rain reduces the attack die of bows and crossbows by 1 dice until their strings are
+                replaced</td>
               <td>Reduce time by 15 minutes</td>
             </tr>
             <tr>
@@ -786,7 +777,7 @@
             </tr>
           </tbody>
         </table>
-        
+
         <table class="first-left">
           <thead>
             <tr class="notSticky">
@@ -894,19 +885,22 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='SoifitsColUeaKeBYBU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SoifitsColUeaKeBYBU'"></app-bm-chapter-icon>
-        <p class="italic">So, if it’s Cold 1 outside, wearing a fur coat would eliminate any of the cold penalties but so would wearing
+        <p class="italic">So, if it’s Cold 1 outside, wearing a fur coat would eliminate any of the cold penalties but
+          so would wearing
           a
           wool hat, wool gloves, and a second shirt.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='youjiovjewiojvew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'youjiovjewiojvew'"></app-bm-chapter-icon>
-        <p>You can also reduce the penalty via Superior Equipment. Each Rank a Description has acts as another item of that same size.</p>
+        <p>You can also reduce the penalty via Superior Equipment. Each Rank a Description has acts as another item of
+          that same size.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='sohiaohjivojew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'sohiaohjivojew'"></app-bm-chapter-icon>
-        <p class="italic">So, having a Breathable (2) hat would count as 3 Small items - one for the hat itself and two for the Breathable Description.</p>
+        <p class="italic">So, having a Breathable (2) hat would count as 3 Small items - one for the hat itself and two
+          for the Breathable Description.</p>
       </div>
     </div>
     <div class="sideShell">

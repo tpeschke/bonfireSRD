@@ -863,8 +863,8 @@ module.exports = {
             {
                 name: 'Bellybow',
                 size: 'L',
-                dam: '2d20!',
-                rec: 36,
+                dam: '2d20!+1d10!',
+                rec: 35,
                 type: 'P',
                 minrec: 5,
                 bonus: 'Always 2-handed reload & used 2-handed. Steading weapon gives +1d10! dam.',
@@ -883,8 +883,8 @@ module.exports = {
             {
                 name: 'Crossbow',
                 size: 'L',
-                dam: '1d20!',
-                rec: 26,
+                dam: '1d20!+1d10!',
+                rec: 25,
                 type: 'P',
                 minrec: 5,
                 bonus: 'Always 2-handed reload & used 2-handed. Steading weapon gives +1d10! dam.',
@@ -893,8 +893,8 @@ module.exports = {
             {
                 name: 'Latchet Crossbow',
                 size: 'M',
-                dam: '1d6!+1d3!',
-                rec: 14,
+                dam: '1d8!+1d6!',
+                rec: 11,
                 type: 'P',
                 minrec: 5,
                 bonus: 'Always 2-handed reload. Steading weapon gives +1d6! dam',
@@ -913,8 +913,8 @@ module.exports = {
             {
                 name: 'Sling',
                 size: 'S',
-                dam: '1d8!',
-                rec: 11,
+                dam: '1d10!',
+                rec: 8,
                 type: 'C',
                 minrec: 3,
                 bonus: false,
@@ -922,7 +922,7 @@ module.exports = {
             {
                 name: 'Warbow',
                 size: 'H',
-                dam: '2d12!',
+                dam: '3d10!',
                 rec: 15,
                 type: 'P',
                 minrec: 5,
@@ -975,7 +975,7 @@ module.exports = {
         ranges: [
             {
                 name: 'Bellybow',
-                range: 125
+                range: 100
             },
             {
                 name: 'Composite Bow',
@@ -983,7 +983,7 @@ module.exports = {
             },
             {
                 name: 'Crossbow',
-                range: 100
+                range: 80
             },
             {
                 name: 'Fire Lance',
