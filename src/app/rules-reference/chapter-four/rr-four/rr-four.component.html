@@ -135,28 +135,28 @@
       </div>
       <div class="anchor">
         <div id="Difficultyheader" class="anchorTag"></div>
-        <h2>Difficulty</h2>
+        <h2>Risk</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='DifficultyisGPcdpmFaDL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'DifficultyisGPcdpmFaDL'"></app-bm-chapter-icon>
-        <p>Difficulty is a dice that is added to the Skill Check based on things that might be going on at the time to
-          either help or hinder your success. This difficulty is noted just as a single dice (+d6!, for example) with
+        <p>Risk is a dice that is added to the Skill Check based on things that might be going on at the time to
+          either help or hinder your success. This Risk is noted just as a single dice (+d6!, for example) with
           you’ll add to the d20!.</p>
       </div>
       <div class="anchor">
         <div id="yesnotmajiojfe" class="anchorTag"></div>
-        <h3>What is the Starting Difficulty?</h3>
+        <h3>What is the Starting Risk?</h3>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>Setting the difficulty is a bit of a challenge in-and-of itself so below is a table that gives you the ranges
-          of dice and static modifiers. Note that Difficulty isn't determined by the person attempting the Check (a
+        <p>Setting the Risk is a bit of a challenge in-and-of itself so below is a table that gives you the ranges
+          of dice and static modifiers. Note that Risk isn't determined by the person attempting the Check (a
           lock doesn't suddenly become harder to pick because a Master is doing it) - this way of doing things allows
           you
-          to describe a challenge using naturalistic language and then get a mechanical difficulty. "Finding this
+          to describe a challenge using naturalistic language and then get a mechanical Risk. "Finding this
           information
           would be a Challenge for an expert librarian" = +2d20. </p>
       </div>
@@ -165,21 +165,21 @@
         <table class="all-centered">
           <thead>
             <tr>
-              <th colspan="7">Difficulty by Description & Rank</th>
+              <th colspan="7">Risk by Description & Rank</th>
             </tr>
             <tr>
               <th></th>
               <th></th>
-              <th colspan="5">Difficulty Modifier</th>
+              <th colspan="5">Risk Modifier</th>
             </tr>
             <tr>
               <th>Description</th>
               <th>Rank</th>
-              <th>Routine</th>
-              <th>Easy</th>
-              <th>Ave</th>
-              <th>Hard</th>
-              <th>Challeng.</th>
+              <th>Very Low</th>
+              <th>Low</th>
+              <th>Medium</th>
+              <th>High</th>
+              <th>Very High</th>
             </tr>
           </thead>
           <tbody>
@@ -261,20 +261,20 @@
       <div class='paragraphShell anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>Keep this in mind: this is the difficulty at its worst, if the players do nothing to even their odds.</p>
+        <p>Keep this in mind: this is the Risk at its worst, if the players do nothing to even their odds.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>So, if determining the difficulty of climbing a wall, assume that the players are doing it freehanded with no
+        <p>So, if determining the Risk of climbing a wall, assume that the players are doing it freehanded with no
           help.</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='platjeilwirejire' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'platjeilwirejire'"></app-bm-chapter-icon>
-        <p>This is because those things that would change the difficulty are already considered via the Tactics below so
+        <p>This is because those things that would change the Risk are already considered via the Tactics below so
           you don't have to consently
-          change, consider, or modify the difficulty based on the players actions, except in one case, which is talked
+          change, consider, or modify the Risk based on the players actions, except in one case, which is talked
           about in the next section.</p>
       </div>
       <div class="anchor">
@@ -337,12 +337,36 @@
           Check
           doesn’t result in the guards catching you. In Bonfire, there are Complications and hard failures.</p>
       </div>
+      <table class="float">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="2">Obstacle Ease Example</th>
+          </tr>
+          <tr class="notSticky">
+            <th>Ease</th>
+            <th># of Complications</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hard</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Easy</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
       <div class='paragraphShell anchor'>
         <div id='EveryObstacleMNVCuWnsBP' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EveryObstacleMNVCuWnsBP'"></app-bm-chapter-icon>
         <p>Every Obstacle will have a number of Complications it can gain before it hard fails. This is called its
-          Failure
-          Threshold. You gain Complications by failing Skill Checks: every 5 points below what you needed to get gives
+          Ease. Easier Obstacles will have a higher Ease. You gain Complications by failing Skill Checks: every 5 points below what you needed to get gives
           the
           Obstacle 1 Complication, rounded up (so a failure by 1 - 5 is still considered a Complication).</p>
       </div>
@@ -358,7 +382,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='WhenanObstachOkYEhBeUK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenanObstachOkYEhBeUK'"></app-bm-chapter-icon>
-        <p>When an Obstacle gets more Complications than its Failure Threshold, it hard fails. Hard failures are when
+        <p>When an Obstacle gets more Complications than its Ease, it hard fails. Hard failures are when
           something majorly bad actually happens. This can either be something that prevents you from getting what you
           want entirely
           forcing you to try a different tact (you're discovered by the guards),
@@ -389,7 +413,7 @@
           <app-bm-chapter-icon [id]="'ForaquickexIyPswfmaFg'"></app-bm-chapter-icon>
           <p>For a quick example, let’s say that there’s an adventurer, we’ll call him New York Smith, York for short,
             who
-            is attempting to jump a chasm, which has a Failure Threshold of 1.</p>
+            is attempting to jump a chasm, which has an Ease of 1.</p>
         </div>
         <div class='paragraphShell anchor'>
           <div id='HerollshisCJpDYxXhDWi' class='anchorTag'></div>
@@ -435,9 +459,9 @@
       <div class='paragraphShell anchor'>
         <div id='theifishiothijfoe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'theifishiothijfoe'"></app-bm-chapter-icon>
-        <p class="italic">The first is if the cliff isn't a major part of story: she wants to represent the difficulty
+        <p class="italic">The first is if the cliff isn't a major part of story: she wants to represent the Risk
           of climbing the cliff but doesn't want to spend a lot of time on it.
-          In this case, she'll just have a single Obstacle, "The Cliff", that she assigns a Difficulty to and has the
+          In this case, she'll just have a single Obstacle, "The Cliff", that she assigns a Risk to and has the
           players make Checks against.
         </p>
       </div>
@@ -454,7 +478,7 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='shcanthience' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'shcanthience'"></app-bm-chapter-icon>
-        <p class="italic">She can then, from there, figure out difficulty and maybe some unique Complications and Fail
+        <p class="italic">She can then, from there, figure out Risk and maybe some unique Complications and Fail
           states based on the Skills and equipment the players use as well as things about that
           particular Obstacle. For instance, Complications and Failure on the long stretch might result in damage from
           fatigue or scares, resulting in Stress rather than falling, while failing on the

@@ -402,7 +402,7 @@ export default [
         cash: "1d4! sc",
         items: [
             {
-                name: 'Heater Shield',
+                name: '1 M Shield',
                 size: 'M',
                 sellback: '60 sc'
             },
