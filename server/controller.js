@@ -311,7 +311,7 @@ module.exports = {
         const deluxeAncestries = {
             dwarf: {
                 strength: 'Resilience',
-                temperament: 'Stubborn',
+                flaw: 'Stubborn',
                 descriptions: [
                     'Rough',
                     'Honest'
@@ -325,7 +325,7 @@ module.exports = {
             },
             gaunt: {
                 strength: 'Per Home Culture',
-                temperament: 'Choose one: Salvation Secured or Damnation Secured',
+                flaw: 'Choose one: Salvation Secured or Damnation Secured',
                 descriptions: [
                     'Free',
                     'Iconoclastic'
@@ -339,7 +339,7 @@ module.exports = {
             },
             pech: {
                 strength: 'Guile',
-                temperament: 'Clannish',
+                flaw: 'Clannish',
                 descriptions: [
                     'Optimistic',
                     'Content'
@@ -353,7 +353,7 @@ module.exports = {
             },
             ratfolk: {
                 strength: 'Utility',
-                temperament: 'Co-Dependent',
+                flaw: 'Co-Dependent',
                 descriptions: [
                     'Friendly',
                     'Watchful'
@@ -370,7 +370,7 @@ module.exports = {
         const basicAncestries = {
             elf: {
                 strength: 'Creation',
-                temperament: 'Cautious',
+                flaw: 'Cautious',
                 descriptions: [
                     'Beautiful',
                     'Unattached'
@@ -384,7 +384,7 @@ module.exports = {
             },
             human: {
                 strength: 'Loyalty',
-                temperament: 'Curious',
+                flaw: 'Curious',
                 descriptions: [
                     'Forgiving',
                     'Ambitious'
@@ -398,7 +398,7 @@ module.exports = {
             },
             orc: {
                 strength: 'Conquest',
-                temperament: 'Aggressive',
+                flaw: 'Aggressive',
                 descriptions: [
                     'Passionate',
                     'Brass-faced'
