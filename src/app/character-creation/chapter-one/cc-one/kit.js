@@ -25,12 +25,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -55,17 +55,17 @@ export default [
                 sellback: '0.3 sc'
             },
             {
-                name: 'Fabric, Canvas, Soft (Sq. Yard)',
+                name: 'Fabric, Cotton (sq.yard)',
                 size: 'S',
-                sellback: '2.6 sc'
+                sellback: '4 sc'
             },
             {
-                name: 'Rope, Hemp, 1/2" (250#), 50 ft x2',
+                name: 'Rope, Cotton, 1/2" (150#), 50 Ft x2',
                 size: '2M',
                 sellback: '26 sc'
             },
             {
-                name: 'Auger, Wood Handle, Steel Head',
+                name: 'Auger',
                 size: 'M',
                 sellback: '15 sc'
             },
@@ -85,7 +85,7 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Spike, Iron, 12"',
+                name: 'Spike, 12"',
                 size: 'S',
                 sellback: '1.2 sc'
             },
@@ -117,12 +117,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -184,12 +184,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -199,14 +199,14 @@ export default [
                 sellback: '10 sc'
             },
             {
-                name: 'Coat, Buckskin*',
+                name: 'Coat, Leather*',
                 size: 'S',
-                sellback: '50 sc'
+                sellback: '45 sc'
             },
             {
-                name: 'Hat, Very Large, Rabbit Fur*',
+                name: 'Hat*',
                 size: 'n/a',
-                sellback: '.2 sc'
+                sellback: '4 sc'
             },
             {
                 name: 'Rations, Person, Day x3',
@@ -236,12 +236,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -333,12 +333,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -360,7 +360,7 @@ export default [
         cash: "1d4! sc",
         items: [
             {
-                name: 'Leather*',
+                name: 'Leather Armor*',
                 size: 'S',
                 sellback: '190 sc'
             },
@@ -380,12 +380,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -427,12 +427,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },
@@ -494,12 +494,12 @@ export default [
                 sellback: '1 sc'
             },
             {
-                name: 'Breeches, Linen*',
+                name: 'Breeches*',
                 size: 'n/a',
                 sellback: '12 sc'
             },
             {
-                name: 'Shirt, Wool*',
+                name: 'Shirt*',
                 size: 'n/a',
                 sellback: '13 sc'
             },

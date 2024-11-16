@@ -322,7 +322,7 @@
       <div class='paragraphShell anchor'>
         <div id='recoveiorjioajiofje' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'recoveiorjioajiofje'"></app-bm-chapter-icon>
-        <p><strong>Recovery (Rec) [Melee & Bows]</strong>: Weapon Recovery + Armor Rec Mod + Str Mod * weapon size (1
+        <p><strong>Recovery (Rec) [Melee & Bows]</strong>: Weapon Recovery + Armor Rec Mod - Str Mod * weapon size (1
           for S, 2 for M, 3 for L, 4 for H), rounded down</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
@@ -361,7 +361,7 @@
               <td>-6</td>
               <td>-6</td>
               <td>-5</td>
-              <td>1.5</td>
+              <td>-1.5</td>
             </tr>
             <tr>
               <td>2</td>
@@ -370,7 +370,7 @@
               <td>-5</td>
               <td>-5</td>
               <td>-4</td>
-              <td>1</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>3</td>
@@ -379,7 +379,7 @@
               <td>-4</td>
               <td>-4</td>
               <td>-3</td>
-              <td>1</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>4</td>
@@ -388,7 +388,7 @@
               <td>-3</td>
               <td>-3</td>
               <td>-2</td>
-              <td>1</td>
+              <td>-1</td>
             </tr>
             <tr>
               <td>5</td>
@@ -397,7 +397,7 @@
               <td>-2</td>
               <td>-2</td>
               <td>-2</td>
-              <td>.5</td>
+              <td>-0.5</td>
             </tr>
             <tr>
               <td>6</td>
@@ -406,7 +406,7 @@
               <td>-1</td>
               <td>-1</td>
               <td>-2</td>
-              <td>.5</td>
+              <td>-0.5</td>
             </tr>
             <tr>
               <td>7</td>
@@ -415,7 +415,7 @@
               <td>0</td>
               <td>0</td>
               <td>-2</td>
-              <td>.5</td>
+              <td>-0.5</td>
             </tr>
             <tr>
               <td>8</td>
@@ -460,7 +460,7 @@
               <td>1</td>
               <td>1</td>
               <td>1</td>
-              <td>-.5</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>13</td>
@@ -469,7 +469,7 @@
               <td>2</td>
               <td>1</td>
               <td>2</td>
-              <td>-.5</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>14</td>
@@ -478,7 +478,7 @@
               <td>2</td>
               <td>2</td>
               <td>2</td>
-              <td>-.5</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>15</td>
@@ -487,7 +487,7 @@
               <td>2</td>
               <td>2</td>
               <td>2</td>
-              <td>-.5</td>
+              <td>0.5</td>
             </tr>
             <tr>
               <td>16</td>
@@ -496,7 +496,7 @@
               <td>3</td>
               <td>3</td>
               <td>3</td>
-              <td>-1</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>17</td>
@@ -505,7 +505,7 @@
               <td>3</td>
               <td>3</td>
               <td>3</td>
-              <td>-1</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>18</td>
@@ -514,7 +514,7 @@
               <td>4</td>
               <td>4</td>
               <td>3</td>
-              <td>-1</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>19</td>
@@ -523,7 +523,7 @@
               <td>4</td>
               <td>4</td>
               <td>4</td>
-              <td>-1</td>
+              <td>1</td>
             </tr>
             <tr>
               <td>20</td>
@@ -532,7 +532,7 @@
               <td>4</td>
               <td>5</td>
               <td>4</td>
-              <td>-1.5</td>
+              <td>1.5</td>
             </tr>
             <tr>
               <td>21</td>
@@ -541,7 +541,7 @@
               <td>5</td>
               <td>5</td>
               <td>4</td>
-              <td>-1.5</td>
+              <td>1.5</td>
             </tr>
             <tr>
               <td>22</td>
@@ -550,7 +550,7 @@
               <td>5</td>
               <td>5</td>
               <td>4</td>
-              <td>-1.5</td>
+              <td>1.5</td>
             </tr>
             <tr>
               <td>23</td>
@@ -559,7 +559,7 @@
               <td>6</td>
               <td>5</td>
               <td>5</td>
-              <td>-2</td>
+              <td>2</td>
             </tr>
           </tbody>
         </table>
@@ -3602,10 +3602,9 @@
         <p>This doesn't, and will never, allow someone to shape the full version of a spell but it can give them a boost
           or
           an edge. The specific details should be left up to the GM and player, but they should always be appropriate to
-          the Tradition and never be more powerful than a spell that does the same thing. Most commonly this will mean
-          it
-          will get used as a Skill while Lending Your Knowledge or a Repurposed Skill. Regardless, it always takes 60
-          seconds - the Skill Rank to shape these effects.</p>
+          the Tradition and never be more powerful than a spell that does the same thing. Most commonly this will mean it will get 
+          used as a Skill while Lending Your Knowledge, in which case the cantrip takes as long as the action you're taking, 
+          or as a Repurposed Skill. If that's the case, or if the cantrip is just on its own, it always takes at least 60 seconds to shape.</p>
       </div>
       <div class="anchor">
         <div id="ALLADVANCEDWheader" class="anchorTag"></div>
