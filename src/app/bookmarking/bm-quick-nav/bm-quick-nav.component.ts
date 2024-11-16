@@ -27,7 +27,7 @@ export class BmQuickNavComponent implements OnInit {
     if (section === 1) {
       this.router.navigate([`/rules-reference/${chapter}`], { queryParams: { search: route } })
     } else {
-      this.router.navigate([`/character-creation/${chapter}`], { queryParams: { search: route } })
+      this.router.navigate([`/character-creation/${chapter + 1}`], { queryParams: { search: route } })
 
     }
   }

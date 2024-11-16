@@ -3,6 +3,7 @@ import { NotReduxService } from '../not-redux.service';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router'
 import { ChapterService } from '../chapter.service'
 import local from '../local'
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-navbar',
@@ -15,7 +16,8 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   constructor(
     private notRedux: NotReduxService,
     private router: Router,
-    private chapterService: ChapterService
+    private chapterService: ChapterService,
+    private toastr: ToastrService
   ) { }
 
   public chapter = '';
@@ -89,7 +91,11 @@ export class NavbarComponent implements OnInit, AfterViewInit {
 
   scrollToElement(element): void {
     let el = document.getElementById(element.replace(/ |-|:|&|'|([()])|\//ig, ''))
-    el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+    } else {
+      this.toastr.error('', `Couldn't find bookmark`)
+    }
   }
 
   viewChapter(name: string): void {
