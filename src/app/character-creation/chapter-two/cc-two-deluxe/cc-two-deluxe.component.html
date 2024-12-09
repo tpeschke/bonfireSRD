@@ -1504,34 +1504,6 @@
           them some reputation as having a herd mentality. For ratfolk the only war is total war.
         </p>
       </div>
-
-
-      <div *ngIf="characterisitics.ratfolk" class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="ratfolkcharacterisiojioce" class="anchorTag"></div>
-          <h5>ratfolk Characteristics</h5>
-        </div>
-        <div class="characterisiticsShell">
-          <div>
-            <h6>Descriptions</h6>
-            <p *ngFor="let description of characterisitics.ratfolk.descriptions">- {{description}}</p>
-          </div>
-          <div>
-            <h6>Convictions</h6>
-            <p *ngFor="let conviction of characterisitics.ratfolk.convictions">- {{conviction}}</p>
-          </div>
-          <div>
-            <h6>Cultural Strength</h6>
-            <p class='marginBottom'>{{characterisitics.ratfolk.strength}}</p>
-
-            <h6>Flaw</h6>
-            <p class='marginBottom'>{{characterisitics.ratfolk.flaw}}</p>
-
-            <h6>Relationships</h6>
-            <p *ngFor="let devotion of characterisitics.ratfolk.devotions">- {{devotion}}</p>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="sideShell">
       <app-quick-nav [side]='side'></app-quick-nav>
