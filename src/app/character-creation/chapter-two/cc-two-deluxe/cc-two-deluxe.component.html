@@ -411,9 +411,10 @@
         <div class='marginBottom paragraphShell anchor'>
           <div id='startouchejiocew' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'startouchejiocew'"></app-bm-chapter-icon>
-          <p>Star Shield: when resisting a spell’s Effect, any Boons that you get on your Check can be given to your
-            allies if they’re affected by the same spell and it requires Mental resistance or if the spell requires
-            Physical resistance and you’re within 5 ft.</p>
+          <p>Star Shield: when resisting a spell, you, and any ally within 5 ft, gain an automatic -1 to the Order. When
+            Shaping
+            a spell on yourself, or ally within 5 ft, gain an automatic +1 to the Order. Half Stress from Weirdcraft
+            Skills.</p>
         </div>
         <div class='anchor'>
           <div id='elfcharjaiocj' class='anchorTag'></div>
@@ -542,213 +543,6 @@
         <div id='3p31' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3p31'"></app-bm-chapter-icon>
         <p> However, once set on a course, it is hard to dissuade an elf, for they do nothing lightly.</p>
-      </div>
-
-      <div class="anchor">
-        <div id="3PKCfRsEDGt" class="anchorTag"></div>
-        <h1>Gaunts</h1>
-        <div class="underline"></div>
-      </div>
-      <div class='sidebarShell marginBottom float sidebar-width'>
-        <img src="../../../../assets/images/gaunt.png" />
-        <h5 class='sidebarTitle'>Gaunt Summary</h5>
-        <div class='anchor'>
-          <div id='3gcczxqSxOm' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3gcczxqSxOm'"></app-bm-chapter-icon>
-          <h2>Modifiers</h2>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='gaunttr' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'gaunttr'"></app-bm-chapter-icon>
-          <p> -2 Str</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='gauntDex' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'gauntDex'"></app-bm-chapter-icon>
-          <p> +2 Dex</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='gauntwis' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'gauntwis'"></app-bm-chapter-icon>
-          <p> +2 Will</p>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='gauntcha' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'gauntcha'"></app-bm-chapter-icon>
-          <p> +3 Pre</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='guantsize' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'guantsize'"></app-bm-chapter-icon>
-          <p>Medium Sized</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='giantvailtiy' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'giantvailtiy'"></app-bm-chapter-icon>
-          <p>Vitality Size Modifier is 10</p>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='guantiojsutress' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'guantiojsutress'"></app-bm-chapter-icon>
-          <p>Nerve Modifier is 10</p>
-        </div>
-        <div class="table-overflow">
-          <table class="all-centered">
-            <thead>
-              <tr class="notSticky">
-                <th colspan="5">Movement (ft / sec)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Crawl</td>
-                <td>Walk</td>
-                <td>Jog</td>
-                <td>Run</td>
-                <td>Sprint</td>
-              </tr>
-              <tr>
-                <td>2.5</td>
-                <td>5</td>
-                <td>10</td>
-                <td>15</td>
-                <td>20</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class='anchor'>
-          <div id='rguaduntio' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'rguaduntio'"></app-bm-chapter-icon>
-          <h2>Ancestral Abilities</h2>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='preciousabioity' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'preciousabioity'"></app-bm-chapter-icon>
-          <p>Precious: Gain a Relationship at Rank 24 that represents what they became a Gaunt for</p>
-        </div>
-        <div class='marginBottom paragraphShell anchor'>
-          <div id='furthieorscaeijo' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'furthieorscaeijo'"></app-bm-chapter-icon>
-          <p>Further Sacrifice: Lower your max Vitality by 1: gain 1 Favor. This can take you above your Max Favor.</p>
-        </div>
-        <div class='anchor'>
-          <div id='guantsjiocieo' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'guantsjiocieo'"></app-bm-chapter-icon>
-          <h2>Characteristics</h2>
-        </div>
-        <div class="characterisiticsShell">
-          <div>
-            <h6>Descriptions</h6>
-            <p>{{characterisitics.gaunt.descriptions[0]}} or {{characterisitics.gaunt.descriptions[1]}}</p>
-          </div>
-          <div>
-            <h6>Convictions</h6>
-            <p *ngFor="let conviction of characterisitics.gaunt.convictions">{{conviction}}</p>
-          </div>
-          <div>
-            <h6>Relationships</h6>
-            <p *ngFor="let devotion of characterisitics.gaunt.devotions">{{devotion}}</p>
-          </div>
-          <div>
-            <h6>Strength</h6>
-            <p class='marginBottom'>{{characterisitics.gaunt.strength}}</p>
-          </div>
-          <div>
-            <h6>Flaw</h6>
-            <p class='marginBottom'>{{characterisitics.gaunt.flaw}}</p>
-          </div>
-        </div>
-        <div class='anchor'>
-          <div id='3qZAWCNXVVe' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'3qZAWCNXVVe'"></app-bm-chapter-icon>
-          <h2>Class Costs</h2>
-        </div>
-        <div class="chartShell">
-          <div>Expert: 0</div>
-          <div>Fighter: 0</div>
-        </div>
-        <div class="chartShell">
-          <div>Servant: 13</div>
-          <div>Socialite: 0</div>
-        </div>
-        <div class="chartShell">
-          <div>Weird-Adept: 5</div>
-        </div>
-      </div>
-
-      <img src="../../../../assets/images/gaunt.png" />
-
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='forwhatshaieiltpf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'forwhatshaieiltpf'"></app-bm-chapter-icon>
-        <p class="italic">For what shall it profit a man, if he shall gain the whole world, and lose his own
-          soul? It is not enough for a man to ask what he would die for, but he must ask himself, what would
-          he live for?</p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='3GUcKOpbhKi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3GUcKOpbhKi'"></app-bm-chapter-icon>
-        <p> Gaunts are said to be depraved creatures stuck between life and death. They love filthy lucre more
-          than what made them human. They're those that, for whatever reason, have sold part of their souls
-          for either money or at a chance at eternal life in the world to come.
-        </p>
-      </div>
-      <div class='anchor'>
-        <div id='3BPgXXpymOI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3BPgXXpymOI'"></app-bm-chapter-icon>
-        <h2>Appearance</h2>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='3EwbmMzliCu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3EwbmMzliCu'"></app-bm-chapter-icon>
-        <div class="underline-sub"></div>
-        <p> Gaunts of all Ancestries look generally the same as the soul shiving process drains them of their
-          vitality.
-          Their skin turns ghost white, their hair a weak grey, and their eyes become milky as if they're
-          blind.
-          Their bodies becoming desiccated, thin and reedy.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='3fsClQFcqAh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3fsClQFcqAh'"></app-bm-chapter-icon>
-        <p> They still need to eat, drink, and do other bodily functions - they are, even after all that,
-          living.
-        </p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='3gddkSGdBOc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3gddkSGdBOc'"></app-bm-chapter-icon>
-        <p> Gaunts tend to dress in flamboyantclothing that is a mix and match of whatever they kind find.
-          Most say this is because they loot the clothing off of those they kill but it's more likely because
-          they just wear what they can find or because they wish to make up for their dull color palette
-        </p>
-      </div>
-      <div class='anchor'>
-        <div id='3NKGRUtkfZe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3NKGRUtkfZe'"></app-bm-chapter-icon>
-        <h2>Personality</h2>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='3gfdpjyliVm' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3gfdpjyliVm'"></app-bm-chapter-icon>
-        <div class="underline-sub"></div>
-        <p> As stated, gaunts get a bad rep for being whollywithout morals but that's not always the case.
-          Some have undergone the process because they need to feed their families or out of a powerful
-          sense of devotion or religious zeal so actually gaunts run the spectrum of Personality types:
-          they're
-          just saddled with their reputation because of an admittedly not small section of them.
-        </p>
-      </div>
-      <div class='marginBottom paragraphShell anchor'>
-        <div id='3yVYCUPFSim' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'3yVYCUPFSim'"></app-bm-chapter-icon>
-        <p> What makes up the gaunt's Personality is why he made the sacrifice to do what he did.
-          Why was so precious to him that he would make such a huge sacrifice for? That's a complicated
-          question and not easy to answer by the gaunt player should have their answer before play
-          begins.
-        </p>
       </div>
 
       <div class="anchor">
@@ -1497,12 +1291,401 @@
           social contract, but their animal nature makes them ruthless as some points.
         </p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='3zQUKaikBNc' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'3zQUKaikBNc'"></app-bm-chapter-icon>
         <p> In fact, ratfolk can be quite ruthless to those they deem outside their pack, which has earned
           them some reputation as having a herd mentality. For ratfolk the only war is total war.
         </p>
+      </div>
+
+      <div class="anchor">
+        <div id="Mulesheader" class="anchorTag"></div>
+        <h1>Mules</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='MulesistheCBCOtQmNdu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'MulesistheCBCOtQmNdu'"></app-bm-chapter-icon>
+        <p>“Mules” is the term for those that share more than one Ancestry. Common examples are half-elf, half-humans
+          and
+          half-humans, half-orcs. The term ‘mule’ caught on as a catch-all due to these hybrids being sterile, like
+          actual
+          mules.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhencreatingfzOqbpTUDx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhencreatingfzOqbpTUDx'"></app-bm-chapter-icon>
+        <p>When creating a mule, you select two compatible Ancestries. The table below outlines which Ancestries can
+          produce
+          viable offspring but your GM might have altered it for their particular setting.</p>
+      </div>
+
+      <table class="all-centered table-center marginBottom">
+        <thead>
+          <tr class="notSticky">
+            <th colspan="7">Valid Mule Combinations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th> </th>
+            <th>Dwarf</th>
+            <th>Elf</th>
+            <th>Human</th>
+            <th>Orc</th>
+            <th>Pech</th>
+          </tr>
+          <tr>
+            <th>Elf</th>
+            <td>No</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>Human</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>Orc</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>Pech</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>Ratfolk</th>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='paragraphShell anchor'>
+        <div id='AfterselectinEVaclwVvNA' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AfterselectinEVaclwVvNA'"></app-bm-chapter-icon>
+        <p>After selecting two Ancestries, you need to pick which is dominant. A dominant Ancestry could be because of
+          upbringing (I'm half-human, half-dwarf but I was raised by dwarfs so that's my dominant ancestry) or it could
+          be
+          genetic (I take after my human mother so that's my dominant ancestry).</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='YoutakeyournBdgBPPVQm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoutakeyournBdgBPPVQm'"></app-bm-chapter-icon>
+        <p>You take your dominant Ancestry's Size, Vitality and Nerve Modifiers, movement rates, and Class Costs. You
+          also
+          only get one of their Ancestral Abilities.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='ForstatmodifuUbvutBMmb' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ForstatmodifuUbvutBMmb'"></app-bm-chapter-icon>
+        <p>For stat modifiers, add both Ancestries’ stat modifiers together.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='YoucanchooseKfkarTqrKr' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'YoucanchooseKfkarTqrKr'"></app-bm-chapter-icon>
+        <p>You can choose from eithers’ Characteristics.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AllmulesreceIHizdotfCf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AllmulesreceIHizdotfCf'"></app-bm-chapter-icon>
+        <p>All mules receive the Sterile (Major) Injury but gain no bonuses from it.</p>
+      </div>
+      <div class="anchor">
+        <div id="NonDominantHheaderuKMxfezbmw" class="anchorTag"></div>
+        <h2>Non-dominant Humans</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='MulesthatarecvPFrnmohN' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'MulesthatarecvPFrnmohN'"></app-bm-chapter-icon>
+        <p>Mules that are half-human, but don't have it as their dominant Ancestry, get the human's Natural Adept
+          Ancestral
+          Ability as well.</p>
+      </div>
+      <div class="anchor">
+        <div id="AncestralModiheader" class="anchorTag"></div>
+        <h1>Ancestral Modifiers</h1>
+        <div class="underline"></div>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='AncestralmodipeSuWYfrNg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AncestralmodipeSuWYfrNg'"></app-bm-chapter-icon>
+        <p>Ancestral modifiers are things that you add on top of your current Ancestry.</p>
+      </div>
+      <div class="anchor">
+        <div id="3PKCfRsEDGt" class="anchorTag"></div>
+        <h2>Gaunt</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='sidebarShell marginBottom float sidebar-width'>
+        <img src="../../../../assets/images/gaunt.png" />
+        <h5 class='sidebarTitle'>Gaunt Summary</h5>
+        <div class='anchor'>
+          <div id='3gcczxqSxOm' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'3gcczxqSxOm'"></app-bm-chapter-icon>
+          <h2>Modifiers</h2>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='gaunttr' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'gaunttr'"></app-bm-chapter-icon>
+          <p> -2 Str</p>
+        </div>
+        <div class='paragraphShell anchor marginBottom'>
+          <div id='gauntDex' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'gauntDex'"></app-bm-chapter-icon>
+          <p> -4 Con</p>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='giantvailtiy' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'giantvailtiy'"></app-bm-chapter-icon>
+          <p>Vitality Size Modifier is -5</p>
+        </div>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='guantiojsutress' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'guantiojsutress'"></app-bm-chapter-icon>
+          <p>Nerve Modifier is -5</p>
+        </div>
+        <div class='anchor'>
+          <div id='rguaduntio' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'rguaduntio'"></app-bm-chapter-icon>
+          <h2>Additional Abilities</h2>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='preciousabioity' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'preciousabioity'"></app-bm-chapter-icon>
+          <p>Precious: Gain a Relationship at Rank 24 that represents what they became a Gaunt for</p>
+        </div>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='furthieorscaeijo' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'furthieorscaeijo'"></app-bm-chapter-icon>
+          <p>Further Sacrifice: Lower your max Vitality by 1: gain 1 Favor. This can take you above your Max Favor.</p>
+        </div>
+        <div class='anchor'>
+          <div id='guantsjiocieo' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'guantsjiocieo'"></app-bm-chapter-icon>
+          <h2>Characteristics</h2>
+        </div>
+        <div class="characterisiticsShell">
+          <div>
+            <h6>Descriptions</h6>
+            <p>{{characterisitics.gaunt.descriptions[0]}} or {{characterisitics.gaunt.descriptions[1]}}</p>
+          </div>
+          <div>
+            <h6>Convictions</h6>
+            <p *ngFor="let conviction of characterisitics.gaunt.convictions">{{conviction}}</p>
+          </div>
+          <div>
+            <h6>Relationships</h6>
+            <p *ngFor="let devotion of characterisitics.gaunt.devotions">{{devotion}}</p>
+          </div>
+          <div>
+            <h6>Strength</h6>
+            <p class='marginBottom'>{{characterisitics.gaunt.strength}}</p>
+          </div>
+          <div>
+            <h6>Flaw</h6>
+            <p class='marginBottom'>{{characterisitics.gaunt.flaw}}</p>
+          </div>
+        </div>
+        <div class='anchor'>
+          <div id='3qZAWCNXVVe' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'3qZAWCNXVVe'"></app-bm-chapter-icon>
+          <h2>Class Costs</h2>
+        </div>
+        <div class="chartShell">
+          <div>Expert: +0</div>
+          <div>Fighter: +5</div>
+        </div>
+        <div class="chartShell">
+          <div>Servant: +15</div>
+          <div>Socialite: -5</div>
+        </div>
+        <div class="chartShell">
+          <div>Weird-Adept: -5</div>
+        </div>
+      </div>
+
+      <img src="../../../../assets/images/gaunt.png" />
+
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='forwhatshaieiltpf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'forwhatshaieiltpf'"></app-bm-chapter-icon>
+        <p class="italic">For what shall it profit a man, if he shall gain the whole world, and lose his own
+          soul? It is not enough for a man to ask what he would die for, but he must ask himself, what would
+          he live for?</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='3GUcKOpbhKi' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'3GUcKOpbhKi'"></app-bm-chapter-icon>
+        <p> Gaunts are said to be depraved creatures stuck between life and death. They love filthy lucre more
+          than what made them human. They're those that, for whatever reason, have sold part of their souls
+          for either money or at a chance at eternal life in the world to come.
+        </p>
+      </div>
+      <div class="anchor">
+        <div id="3BPgXXpymOI" class="anchorTag"></div>
+        <h3>Appearance</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='3EwbmMzliCu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'3EwbmMzliCu'"></app-bm-chapter-icon>
+        <div class="underline-sub"></div>
+        <p> Gaunts of all Ancestries look generally the same as the soul shiving process drains them of their
+          vitality.
+          Their skin turns ghost white, their hair a weak grey, and their eyes become milky as if they're
+          blind.
+          Their bodies becoming desiccated, thin and reedy.
+        </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='3fsClQFcqAh' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'3fsClQFcqAh'"></app-bm-chapter-icon>
+        <p> They still need to eat, drink, and do other bodily functions - they are, even after all that,
+          living.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='3gddkSGdBOc' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'3gddkSGdBOc'"></app-bm-chapter-icon>
+        <p> Gaunts tend to dress in flamboyantclothing that is a mix and match of whatever they kind find.
+          Most say this is because they loot the clothing off of those they kill but it's more likely because
+          they just wear what they can find or because they wish to make up for their dull color palette
+        </p>
+      </div>
+      <div class="anchor">
+        <div id="3NKGRUtkfZe" class="anchorTag"></div>
+        <h3>Personality</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='3gfdpjyliVm' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'3gfdpjyliVm'"></app-bm-chapter-icon>
+        <div class="underline-sub"></div>
+        <p> As stated, gaunts get a bad rep for being whollywithout morals but that's not always the case.
+          Some have undergone the process because they need to feed their families or out of a powerful
+          sense of devotion or religious zeal so actually gaunts run the spectrum of Personality types:
+          they're
+          just saddled with their reputation because of an admittedly not small section of them.
+        </p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='3yVYCUPFSim' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'3yVYCUPFSim'"></app-bm-chapter-icon>
+        <p> What makes up the gaunt's Personality is why he made the sacrifice to do what he did.
+          Why was so precious to him that he would make such a huge sacrifice for? That's a complicated
+          question and not easy to answer by the gaunt player should have their answer before play
+          begins.
+        </p>
+      </div>
+      
+      <div class="anchor">
+        <div id="starcrusejiojse" class="anchorTag"></div>
+        <h2>Star-Cursed</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='sidebarShell marginBottom float sidebar-width'>
+        <img src="../../../../assets/images/gaunt.png" />
+        <h5 class='sidebarTitle'>Gaunt Summary</h5>
+        <div class='anchor'>
+          <div id='starcurcmoidj' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'starcurcmoidj'"></app-bm-chapter-icon>
+          <h2>Modifiers</h2>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='starcurhinon' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'starcurhinon'"></app-bm-chapter-icon>
+          <p> None</p>
+        </div>
+        <div class='anchor'>
+          <div id='starchioaddtion' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'starchioaddtion'"></app-bm-chapter-icon>
+          <h2>Additional Abilities</h2>
+        </div>
+        <div class='paragraphShell anchor'>
+          <div id='starcurdeviest' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'starcurdeviest'"></app-bm-chapter-icon>
+          <p>Divested: You lose all other Ancestral Abilities except Born Under an Evil Star</p>
+        </div>
+        <div class='marginBottom paragraphShell anchor'>
+          <div id='starcursborn' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'starcursborn'"></app-bm-chapter-icon>
+          <p>Born Under an Evil Star: You never roll any die. Instead, you assume that you rolled a 1 on any dice you would have rolled</p>
+        </div>
+        <div class='anchor'>
+          <div id='starcursclass' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'starcursclass'"></app-bm-chapter-icon>
+          <h2>Class Costs</h2>
+        </div>
+        <div class="chartShell">
+          <div>Expert: +0</div>
+          <div>Fighter: +5</div>
+        </div>
+        <div class="chartShell">
+          <div>Servant: -15</div>
+          <div>Socialite: +0</div>
+        </div>
+        <div class="chartShell">
+          <div>Weird-Adept: -15</div>
+        </div>
+      </div>
+
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='starcforitsise' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'starcforitsise'"></app-bm-chapter-icon>
+        <p class="italic">It is a cruel fate, being born under an evil star; Your doom pronounced from the moment of your birth. You cannot escape it so you must overcome it.</p>
+      </div>
+      <div class='marginBottom paragraphShell anchor'>
+        <div id='beingstarjiojre' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'beingstarjiojre'"></app-bm-chapter-icon>
+        <p>Being star-cursed is to be born with dismal luck. This usually manifests around the time the person reaches adulthood but the condition is foretold from birth via augurs that are performed around the child’s first ritual (naming, baptism, etc). This life isn’t for the faint of heart: it is a battle for every breath and moment of life. A silent, heroic struggle against unbeatable odds.</p>
+      </div>
+      <div class="anchor">
+        <div id="starcrusappear" class="anchorTag"></div>
+        <h3>Appearance</h3>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='statrcurlookks' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'statrcurlookks'"></app-bm-chapter-icon>
+        <div class="underline-sub"></div>
+        <p>Star-cursed look like normal members of their Ancestry in most cases, although often they’re marked in some way: tattoos, shaven heads, etc to set them apart.</p>
+      </div>
+      <div class="anchor">
+        <div id="starpersonah" class="anchorTag"></div>
+        <h3>Personality</h3>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='whefaceiojd' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'whefaceiojd'"></app-bm-chapter-icon>
+        <div class="underline-sub"></div>
+        <p>When faced with a life of untold suffering, some star-cursed give their lives to a faith, rationalizing their curse as some judgement from a past life or themselves as a scapegoat where suffering falls on them instead of some other innocent. Some simply give up, living a life of quiet begging, slowly starving to death on the streets. Some spend their life researching and studying, looking for any angle to overcome their poor luck: relying on skill to get by.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='agogodpoor' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'agogodpoor'"></app-bm-chapter-icon>
+        <p>A good portion take up the life of an adventurer. Sometimes this is to seek out a cure for their condition: sometimes this is to seek out treasure and riches to live a good life with whatever time they have left. Most die quickly and ignominiously.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='someboeceom' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'someboeceom'"></app-bm-chapter-icon>
+        <p>Some become legends.</p>
       </div>
     </div>
     <div class="sideShell">

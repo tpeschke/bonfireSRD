@@ -29,40 +29,13 @@
       
       <div class="anchor">
         <div id="flawcrpbouns" class="anchorTag"></div>
-        <h2>Integrity Bonus</h2>
+        <h2>Character Creation Bonus</h2>
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='alljfiowjiofew' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'alljfiowjiofew'"></app-bm-chapter-icon>
-        <p>All Burdens & Injuries give you Integrity that you can turn around and use to make your character stronger in other ways. The total bonus is Base Integrity + (Rank * Per Rank). If you 
-          increase its Ranks later in character creation, you gain the difference. So, taking the Fated Burden at Rank 3 gives you 26 Integrity ( 11 + (5 * 3) ). Increasing it up to 5 later gives you an additional 25 Integrity.
-          This, however, can't bring you above your maximum Integrity.
-        </p>
-      </div>
-      <div class="anchor">
-        <div id="flarwranksevejioret" class="anchorTag"></div>
-        <h2>Rank</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='fewjciewojcioejwiocjew' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'fewjciewojcioejwiocjew'"></app-bm-chapter-icon>
-        <p>Burdens & Injuries can sometimes be applied to a Check, sometimes as a bonus and sometimes as a penatly. Either way,
-          you'll need
-          to know what its Rank is, which is added or removed from a Check.</p>
-      </div>
-      <div class='sidebarShell marginBottom'>
-        <div class="anchor">
-          <div id="unsureofhiotjiofew" class="anchorTag"></div>
-          <h5>Unsure of the Rank?</h5>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='youiofwjiojveiowew' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'youiofwjiojveiowew'"></app-bm-chapter-icon>
-          <p>If you're not sure what your Burden or Injury's Rank should be, you can just roll a d3 and use that for your
-            Rank. That will work in most cases, except for Missing Eye.</p>
-        </div>
+        <p>At character creation, Burdens & Injuries give you a bonus either to your Max Favor or as a discount to any Weirdcraft Advanced Skills. This bonus is on top of any other bonus (such as being Anointed or having a Skill Adept). You only get to choose one or the other and it cannot be changed after this step.</p>
       </div>
       <div class="anchor">
         <div id="StartingFlawsheader" class="anchorTag"></div>
@@ -72,11 +45,47 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TherearetwoovJrcYfAnn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TherearetwoovJrcYfAnn'"></app-bm-chapter-icon>
-        <p>There are two ways to select Burdens & Injuries: Rolling and Cherry Picking. Rolling gives you more Integrity per Burden or Injury but
-          Cherry
-          Picking gives you more control. You must commit to one: you cannot start by rolling and then Cherry Pick.
-        You cannot choose to do both and choose the one you like more, either - once you start down the path, you're on it.</p>
+        <p>There are two ways to select Burdens & Injuries: Rolling and Cherry Picking. Rolling gives you bigger bonuses but Cherry Picking gives you more control. You must commit to one: you cannot start by rolling and then Cherry Pick. You cannot choose to do both and choose the one you like more, either - once you start down the path, you're on it.</p>
       </div>
+      <table class="all-center first-left marginBottom">
+        <thead>
+          <tr class="notSticky">
+            <th></th>
+            <th colspan="2">Max Favor</th>
+            <th colspan="2">Weirdcraft Discount</th>
+          </tr>
+          <tr>
+            <th> </th>
+            <th>Rolling</th>
+            <th>Cherry Picking</th>
+            <th>Rolling</th>
+            <th>Cherry Picking</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Per Minor Burden/Injury</td>
+            <td>+1</td>
+            <td>+0.5</td>
+            <td>-1</td>
+            <td>-0.5</td>
+          </tr>
+          <tr>
+            <td>Per Major Burden/Injury</td>
+            <td>+3</td>
+            <td>+1.5</td>
+            <td>-3</td>
+            <td>-1.5</td>
+          </tr>
+          <tr>
+            <td>Max</td>
+            <td>+6</td>
+            <td>+3</td>
+            <td>-6</td>
+            <td>-3</td>
+          </tr>
+        </tbody>
+      </table>
       <div class="anchor">
         <div id="RollingFlawsheadertFXqMObzjo" class="anchorTag"></div>
         <h2>Rolling</h2>
@@ -110,16 +119,12 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='EachFlawafteuWofOCbjvJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'EachFlawafteuWofOCbjvJ'"></app-bm-chapter-icon>
-        <p>Each Burden & Injuries after the first loses 3 Integrity of its value per previous Burden and Injury to a minimum of 0 Integrity received. So, the
-          3rd
-          Burden or Injury you roll will be at a -9 Integrity.</p>
+        <p>When you get your Burden or Injury, you may choose to take it at its Minor or Major Severity. If you roll one you already have, if it’s Minor, it gets automatically upgraded to Major; if it's already Major, you get a free reroll on that same table.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='IfyourollthbjhIbGgwFV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IfyourollthbjhIbGgwFV'"></app-bm-chapter-icon>
-        <p>If you roll the same Burden or Injury twice, you have to increase its Rank by at least 1. You may choose to further
-          increase its Rank at this time as normal. If you’ve already reached its cap, you reroll for
-          free.</p>
+        <p>If you roll an Injury or Burden you don’t want to take (or increase), you don’t have to take it but you have to immediately stop rolling and move onto the next character creation step.</p>
       </div>
       
       <div *ngIf="ibTables" class="multiple-tables-shell">
@@ -168,18 +173,12 @@
         <h2>Cherry Picking</h2>
         <div class="underline-sub"></div>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='FortheroleplYiyDISFCYu' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FortheroleplYiyDISFCYu'"></app-bm-chapter-icon>
-        <p>For the roleplayers among us with a specific character idea in mind, you may Cherry Pick your Burdens and Injuries.</p>
+        <p>For the roleplayers among us with a specific character idea in mind, you may Cherry Pick your Burdens and Injuries, which means you just select whichever you want, at whatever Severity you want.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='EachFlawafteElQjHxXDWO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'EachFlawafteElQjHxXDWO'"></app-bm-chapter-icon>
-        <p>Each Burden and Injuries after the first loses 6 Integrity of its value to a minimum of 0 Integrity received. So, the 3rd Burden or Injury
-          you
-          pick will be at a -18 Integrity.</p>
-      </div>
+      
       <div class="anchor">
         <div id="FlawDescriptiheader" class="anchorTag"></div>
         <h1>Effects</h1>
@@ -194,28 +193,12 @@
       <div class='paragraphShell anchor'>
         <div id='10IhcSKGTzCG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10IhcSKGTzCG'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='5hdxHbZWLPv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'5hdxHbZWLPv'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor '>
-        <div id='10tWEvqkRHmt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10tWEvqkRHmt'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThismeansthaJgxsxLaWIU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismeansthaJgxsxLaWIU'"></app-bm-chapter-icon>
-        <p>This means that the character is lacking the ability to taste.</p>
+        <p><strong>Minor </strong>The character has a hard time tasting things. Subtract 3 from Relaxation you get from food (minimum 0) or from Checks to detect poisons and toxins via taste.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='WhilefairlymFYqmUCKmdP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhilefairlymFYqmUCKmdP'"></app-bm-chapter-icon>
-        <p>While fairly minor, it means that this character won’t heal Stress from food the same way that others will:
-          subtract this Injury's Rank from the Relaxation you would get from a meal to a minimum of 0.</p>
+        <div id='5hdxHbZWLPv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'5hdxHbZWLPv'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>The character is completely unable to taste things.Subtract 10 from Relaxation you get from food (minimum 0) or from Checks to detect poisons and toxins via taste.</p>
       </div>
       <div class="anchor">
         <div id="AllergyFoodheaderFNDbwfuMWn" class="anchorTag"></div>
@@ -268,56 +251,29 @@
         </tbody>
       </table>
       <div class='paragraphShell anchor'>
-        <div id='15QNmrkOwRTL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15QNmrkOwRTL'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='5nhdnEanmjH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'5nhdnEanmjH'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naMnpvLqcquQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naMnpvLqcquQ'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='ThischaracterVPgzlIfHqW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterVPgzlIfHqW'"></app-bm-chapter-icon>
-        <p>This character’s immune system is wired a little differently and will trigger at things that are normally
-          safe,
-          ironically, making them actually dangerous to ingest.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenacharactkZoQqXRQAt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenacharactkZoQqXRQAt'"></app-bm-chapter-icon>
         <p>When a character eats a food they’re allergic to, they’re treated as if they’ve just ingested a poison.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='WhenacharactkZoQqXRQAt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'WhenacharactkZoQqXRQAt'"></app-bm-chapter-icon>
+        <p>This Burden can be taken multiple times for different allergens, each counted as their own separate Burden with its own severity. You can choose whatever allergy you feel fits your character, but we’ve provided a table you can use to generate one for you.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='ItstreatedaDhuTxzzkrd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ItstreatedaDhuTxzzkrd'"></app-bm-chapter-icon>
-        <p>It’s treated as 3d3!/1 Min/Con. Add an additional 1d3! per Rank to the Lethality .</p>
+        <p>Players who don’t call out that they’re looking for their allergen when eating new or strange food have a 5% chance of eating it before they realize it’s there, thus triggering this Burden.</p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='15QNmrkOwRTL' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15QNmrkOwRTL'"></app-bm-chapter-icon>
+        <p><strong>Minor </strong>The food is treated as 3d3!/1 Min/Con</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='PlayerswhodoyrajyPdaqJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'PlayerswhodoyrajyPdaqJ'"></app-bm-chapter-icon>
-        <p>Players who don’t call out that they’re looking for their allergen when eating new or strange food have a 5%
-          chance of eating it before they realize it’s there, thus triggering this Burden.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisFlawcankqjLTFTqdh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisFlawcankqjLTFTqdh'"></app-bm-chapter-icon>
-        <p>This Burden can be taken multiple times for different allergens, each counted as their own separate Burden with
-          its
-          own Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='YoucanofcoegHZFodUkd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'YoucanofcoegHZFodUkd'"></app-bm-chapter-icon>
-        <p>You can, of course, choose whatever allergy you feel fits your character, but we’ve provided a table you can
-          use
-          to generate one for you.</p>
+        <div id='5nhdnEanmjH' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'5nhdnEanmjH'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>The food is treated as 10d3!/1 Min/Con.</p>
       </div>
       <div class="anchor">
         <div id="AllergyMischeaderPWgmApUIzR" class="anchorTag"></div>
@@ -354,57 +310,24 @@
         </tbody>
       </table>
       <div class='paragraphShell anchor'>
-        <div id='15AXrrawbzVI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15AXrrawbzVI'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='5goGNAKQPsT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'5goGNAKQPsT'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='nakYUeTVucMT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nakYUeTVucMT'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='ThischaracterrynoHmHMWW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterrynoHmHMWW'"></app-bm-chapter-icon>
-        <p>This character’s immune system is wired a little differently and will trigger at things that are normally
-          safe,
-          ironically, making them actually dangerous to smell.</p>
+        <p>When a character breathes in something they’re allergic to, they’re treated as if they just ingested a poison.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='WhenacharactLfmKpNmHdK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'WhenacharactLfmKpNmHdK'"></app-bm-chapter-icon>
-        <p>When a character breathes in something they’re allergic to, they’re treated as if they just ingested a
-          poison.
-        </p>
+        <p>This Burden can be taken multiple times for different allergens, each counted as their own separate Burden with its own severity. You can choose whatever allergy you feel fits your character, but we’ve provided a table you can use to generate one for you.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='ForairborneaIVYDRNlxcH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ForairborneaIVYDRNlxcH'"></app-bm-chapter-icon>
-        <p>For airborne allergen , it’s 3d12!/1 Hour/1 Stress. It deals an additional Stress per Rank.</p>
+        <div id='15AXrrawbzVI' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15AXrrawbzVI'"></app-bm-chapter-icon>
+        <p><strong>Minor </strong>The allergen is treated as 3d12!/1 Min/Con. If the allergen causes a Mental Break, it starts dealing damage instead.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='IftheallergexAHnPCKInX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheallergexAHnPCKInX'"></app-bm-chapter-icon>
-        <p>If the allergen causes a Mental Break, it starts dealing damage instead.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisFlawcanTUzxDdbEZA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisFlawcanTUzxDdbEZA'"></app-bm-chapter-icon>
-        <p>This Burden can be taken multiple times for different allergens, each counted as their own separate Burden with
-          its
-          own Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='YoucanofcoveaNUAIGdG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'YoucanofcoveaNUAIGdG'"></app-bm-chapter-icon>
-        <p>You can, of course, choose whatever allergy you feel fits your character, but we’ve provided a table you can
-          use
-          to generate one for you.</p>
+        <div id='5goGNAKQPsT' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'5goGNAKQPsT'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>The allergen is treated as 10d12!/1 Min/Con. If the allergen causes a Mental Break, it starts dealing damage instead.</p>
       </div>
       <div class="anchor">
         <div id="AsthmaticheaderLWuGlnQCuN" class="anchorTag"></div>
@@ -414,35 +337,14 @@
       <div class='paragraphShell anchor'>
         <div id='20WUUwXkXZed' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20WUUwXkXZed'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15eDpVhOOVXt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15eDpVhOOVXt'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naHxDzgntLsk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naHxDzgntLsk'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterKjJXBHRlKw' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterKjJXBHRlKw'"></app-bm-chapter-icon>
-        <p>This character has a condition that causes their lungs and breathing ways to constrict if put under too much
-          pressure, sometimes, resulting in death.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AnytimeyoutaXusnYHuSUp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AnytimeyoutaXusnYHuSUp'"></app-bm-chapter-icon>
-        <p>Anytime you would take damage or Stress from fatigue (for example, from an Athletics Check or from running or
-          sprinting), you take an additional amount of damage equal to your Rank.</p>
+        <p><strong>Minor </strong>Anytime you would take damage or Stress from fatigue (for example, from an Athletics Check or from running or sprinting), you take an additional 1 damage, which cannot be reduced. If you just take Stress, you still take this damage.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='IfyoujusttobJtblQIMha' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfyoujusttobJtblQIMha'"></app-bm-chapter-icon>
-        <p>If you just took Stress, you still take this damage.</p>
+        <div id='15eDpVhOOVXt' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15eDpVhOOVXt'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>Anytime you would take damage or Stress from fatigue (for example, from an Athletics Check or from running or sprinting), you take an additional 5 damage, which cannot be reduced. If you just take Stress, you still take this damage.</p>
       </div>
+
       <div class="anchor">
         <div id="BastardheaderifVeGdkeSu" class="anchorTag"></div>
         <h2>Bastard</h2>
@@ -451,39 +353,12 @@
       <div class='paragraphShell anchor'>
         <div id='25YCQPssjxmM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25YCQPssjxmM'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>8</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15rRHggsXGfY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15rRHggsXGfY'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='5yMCTiltCJd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'5yMCTiltCJd'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='BeingabastarALWbOWXkms' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'BeingabastarALWbOWXkms'"></app-bm-chapter-icon>
-        <p>Being a bastard means you're illegitimate but not abandoned by one or more of your parents. While that may
-          seem
-          minor nowadays, being a bastard in a pre-industrial society was a big deal and would come with stigma that
-          would
-          follow the character through their life.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AttheendofgsAsFVYoqn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AttheendofgsAsFVYoqn'"></app-bm-chapter-icon>
-        <p>At the end of each session, the bastard reduces the amount of Integrity gained by 1 for every point of
-          Rank.
-        </p>
+        <p><strong>Minor </strong>You’re recognized by your parents, even if you weren’t formally adopted. You don’t gain an heirloom during Step 11 and drop your starting Convictions by 1 Rank, minimum 0.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallydFSgwNrzfs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallydFSgwNrzfs'"></app-bm-chapter-icon>
-        <p>Additionally, they often get less than their full siblings: when selecting kits, remove 30 sc of starting
-          equipment and/or starting cash per point of Rank, rounded down.</p>
+        <div id='15rRHggsXGfY' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15rRHggsXGfY'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>You’re recognized by one of your parents. You don’t gain an heirloom during Step 11. Gain 3rd Flaw during Character Creation and drop your starting Convictions by 2 Ranks, minimum 0.</p>
       </div>
       <div class="anchor">
         <div id="BlindheaderejFzjQYqhm" class="anchorTag"></div>
@@ -493,37 +368,14 @@
       <div class='paragraphShell anchor'>
         <div id='25CdNZIGvuMz' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25CdNZIGvuMz'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>8</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15HNQkbriqtX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15HNQkbriqtX'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='6BoehwMvJss' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6BoehwMvJss'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterviXaVnclGi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterviXaVnclGi'"></app-bm-chapter-icon>
-        <p>This character has lost some or all of their sight, ranging from things being blurred colors to being
-          completely
-          black or white.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='InmeleecombacugRbfYkAg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'InmeleecombacugRbfYkAg'"></app-bm-chapter-icon>
-        <p>In melee combat or when making Checks that involve sight, they roll a dice shrunk a number of sizes equal to
-          their Rank.</p>
+        <p><strong>Minor </strong>This character is only partially blind. When using sight, all Checks are on 1 die size smaller. Double this for anything done at range.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='AndrangedcomLElHsWhyLf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AndrangedcomLElHsWhyLf'"></app-bm-chapter-icon>
-        <p>And ranged combat is right out, however, if you insist, you’ll be attacking and defending with dice shrunk a
-          number of sizes equal to twice their Rank, so enjoy your fumbles, you stubborn bastard.</p>
+        <div id='15HNQkbriqtX' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'15HNQkbriqtX'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>This character is blind. When using sight, all Checks are on 3 die sizes smaller. Double this for anything done at range.</p>
       </div>
+      
       <div class="anchor">
         <div id="BurnScarsheaderURPQmidRJb" class="anchorTag"></div>
         <h2>Burn Scars</h2>
@@ -560,36 +412,14 @@
         </tbody>
       </table>
       <div class='paragraphShell anchor'>
-        <div id='BnwtDPQWhA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'BnwtDPQWhA'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>*</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='fPKxeyzmWU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'fPKxeyzmWU'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>*</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='naUUKDBrkyRW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naUUKDBrkyRW'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>*</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='ThischaracterOHYuniKYjs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterOHYuniKYjs'"></app-bm-chapter-icon>
-        <p>This character’s body is covered with burn scars from some horrible accident in the past.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheexactlocaDdVsopaALq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheexactlocaDdVsopaALq'"></app-bm-chapter-icon>
-        <p>The exact location, penalty, and therefore, Integrity Base, is dependent on the location.</p>
+        <p>The exact penalty is dependent on the location.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisFlawcanwmEmttMqGL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisFlawcanwmEmttMqGL'"></app-bm-chapter-icon>
-        <p>This Injury can be taken multiple times with each location counting as a new Injury. If you already have a burn
-          in a
-          location, you may increase its Rank as per usual.</p>
+        <div id='TheexactlocaDdVsopaALq' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheexactlocaDdVsopaALq'"></app-bm-chapter-icon>
+        <p>This Injury can be taken multiple times with each location counting as a new Injury. If you already have a burn in a location, you may increase its severity as per usual.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -603,24 +433,12 @@
         <div class='paragraphShell anchor'>
           <div id='15oPRNNZohfN' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15oPRNNZohfN'"></app-bm-chapter-icon>
-          <p><strong>Integrity Base </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='10gAJzZkhscE' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'10gAJzZkhscE'"></app-bm-chapter-icon>
-          <p><strong>Per Rank </strong>3</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='headscjioewjioe' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'headscjioewjioe'"></app-bm-chapter-icon>
-          <p><strong>Rank Cap </strong>5</p>
+          <p><strong>Minor </strong>When needing to make a Language Check, reduce the Check die by 1 size.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
-          <div id='ThislocationblfrcLnmHk' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ThislocationblfrcLnmHk'"></app-bm-chapter-icon>
-          <p>This location makes the person hard to look at but can also create issues with communication. When needing
-            to
-            make a Language Check, this character receives a penalty equal to this Injury Rank.</p>
+          <div id='10gAJzZkhscE' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'10gAJzZkhscE'"></app-bm-chapter-icon>
+          <p><strong>Major </strong>When needing to make a Language Check, reduce the Check die by 3 sizes.</p>
         </div>
         <div class="anchor">
           <div id="BodyheadervqZCQhLUES" class="anchorTag"></div>
@@ -629,37 +447,12 @@
         <div class='paragraphShell anchor'>
           <div id='20ThsQXOYkfC' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'20ThsQXOYkfC'"></app-bm-chapter-icon>
-          <p><strong>Integrity Base </strong>8</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='15vpqzsnWnJT' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'15vpqzsnWnJT'"></app-bm-chapter-icon>
-          <p><strong>Per Rank </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='bodjfjeiojiewf' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'bodjfjeiojiewf'"></app-bm-chapter-icon>
-          <p><strong>Rank Cap </strong>10</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='BurnsonthebygVOIUIHok' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'BurnsonthebygVOIUIHok'"></app-bm-chapter-icon>
-          <p>Burns on the body might seem minor but actually, depending on the Rank, they can inhibit sweat
-            production
-            which means that the character is unable to regulate their body temperature effectively.</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='WhenRunningoWkvmmognrZ' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'WhenRunningoWkvmmognrZ'"></app-bm-chapter-icon>
-          <p>When Running or Sprinting, lower the time between taking damage by 1 for each point of Rank to a
-            minimum
-            of 1.</p>
+          <p><strong>Minor </strong>When Running or Sprinting, lower the time between taking damage by 1, minimum 1. The character is also considered to be +1 Hot if the weather is Hot, or +1 Cold if cold.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
-          <div id='ThecharacterUbgkovWPJU' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ThecharacterUbgkovWPJU'"></app-bm-chapter-icon>
-          <p>The character is also considered 5 degrees warmer or colder for each point of Rank in harsh weather.
-          </p>
+          <div id='15vpqzsnWnJT' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'15vpqzsnWnJT'"></app-bm-chapter-icon>
+          <p><strong>Major </strong>When Running or Sprinting, lower the time between taking damage by 3, minimum 1. The character is also considered to be +2 Hot if the weather is Hot, or +2 Cold if cold.</p>
         </div>
         <div class="anchor">
           <div id="ArmsHandsheadersYPHVhLifX" class="anchorTag"></div>
@@ -668,33 +461,12 @@
         <div class='paragraphShell anchor'>
           <div id='15PqCiccaytt' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15PqCiccaytt'"></app-bm-chapter-icon>
-          <p><strong>Integrity Base </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='15sOIccaRCcE' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'15sOIccaRCcE'"></app-bm-chapter-icon>
-          <p><strong>Per Rank </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='armhandscewjiojew' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'armhandscewjiojew'"></app-bm-chapter-icon>
-          <p><strong>Rank Cap </strong>10</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='ThearmsandhHBMnVjoezK' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ThearmsandhHBMnVjoezK'"></app-bm-chapter-icon>
-          <p>The arms and hands can create issues for maneuverability and fine dexterity.</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='ThecharacterMmFiRGGlAM' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ThecharacterMmFiRGGlAM'"></app-bm-chapter-icon>
-          <p>The character increases their Recovery with all weapons by 1 for every 3 points of Rank.</p>
+          <p><strong>Minor </strong>The character increases their Recovery with all weapons by 1. When trying to perform Checks that require manual dexterity, they reduce the Check die by 1 size.</p>
         </div>
         <div class='paragraphShell anchor marginBottom'>
-          <div id='OntopofthatrhkUGEcHsO' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'OntopofthatrhkUGEcHsO'"></app-bm-chapter-icon>
-          <p>On top of that, when trying to perform Checks that require manual dexterity, they gain a penalty equal to
-            their Rank.</p>
+          <div id='15sOIccaRCcE' class='anchorTag'></div>
+          <app-bm-chapter-icon [id]="'15sOIccaRCcE'"></app-bm-chapter-icon>
+          <p><strong>Major </strong>The character increases their Recovery with all weapons by 3. When trying to perform Checks that require manual dexterity, they reduce the Check die by 3 sizes.</p>
         </div>
         <div class="anchor">
           <div id="LegsheaderdVForazIdo" class="anchorTag"></div>
@@ -703,27 +475,12 @@
         <div class='paragraphShell anchor'>
           <div id='20nWxyRbZINw' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'20nWxyRbZINw'"></app-bm-chapter-icon>
-          <p><strong>Integrity Base </strong>8</p>
+          <p><strong>Minor </strong>This character takes 1 extra second to move up or down a Movement Category.</p>
         </div>
-        <div class='paragraphShell anchor'>
+        <div class='paragraphShell anchor marginBottom'>
           <div id='15eyFGRNQXab' class='anchorTag'></div>
           <app-bm-chapter-icon [id]="'15eyFGRNQXab'"></app-bm-chapter-icon>
-          <p><strong>Per Rank </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor marginBottom'>
-          <div id='lefewjiovjeiwo' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'lefewjiovjeiwo'"></app-bm-chapter-icon>
-          <p><strong>Rank Cap </strong>5</p>
-        </div>
-        <div class='paragraphShell anchor'>
-          <div id='ThislocationPDlTWEcIvF' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ThislocationPDlTWEcIvF'"></app-bm-chapter-icon>
-          <p>This location, like the arms, can create issues with mobility.</p>
-        </div>
-        <div class='paragraphShell anchor marginBottom'>
-          <div id='ThischaracterhXzCxDOTmc' class='anchorTag'></div>
-          <app-bm-chapter-icon [id]="'ThischaracterhXzCxDOTmc'"></app-bm-chapter-icon>
-          <p>This character takes 1 extra second per point of Rank to move up or down a Movement Category.</p>
+          <p><strong>Major </strong>This character takes 3 extra seconds to move up or down a Movement Category.</p>
         </div>
       </div>
       
@@ -735,36 +492,12 @@
       <div class='paragraphShell anchor'>
         <div id='15RfBVuXPKEy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15RfBVuXPKEy'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>For Checks involving sound, they shrink their dice 1 size. If they can’t see a threat, they increase their Initiative Dice by 1 sizes.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15hxEBeazNse' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15hxEBeazNse'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='6PlqsVulEjN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6PlqsVulEjN'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterdRxUEeiQAT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterdRxUEeiQAT'"></app-bm-chapter-icon>
-        <p>This character has lost some or all of their ability to hear, either having sounds come in jumbled or quiet
-          or
-          simply not being able to hear at all.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThismeansthavYVqyMClRE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismeansthavYVqyMClRE'"></app-bm-chapter-icon>
-        <p>This means that, for Checks involving sound, they shrink their dice 1 size for every point of Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyJxzpYIAIkz' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyJxzpYIAIkz'"></app-bm-chapter-icon>
-        <p>Additionally, they’re much slower to react: if they can’t see a threat, they increase their Initiative Dice
-          by 1
-          for every point of Rank.</p>
+        <p><strong>Major </strong>For Checks involving sound, they shrink their dice 3 sizes. If they can’t see a threat, they increase their Initiative Dice by 3 sizes.</p>
       </div>
       <div class="anchor">
         <div id="DebtorheaderJElCNbPgHi" class="anchorTag"></div>
@@ -772,38 +505,24 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='10jgpYjBveCj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10jgpYjBveCj'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10OAWjugLPOx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10OAWjugLPOx'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='nafkRhFLHgYS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nafkRhFLHgYS'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='ThischaracterAbNfVYHeHT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThischaracterAbNfVYHeHT'"></app-bm-chapter-icon>
-        <p>This character has gotten into trouble financially. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheystartwitPnsEgzWjyK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheystartwitPnsEgzWjyK'"></app-bm-chapter-icon>
-        <p>They start with 100 sc of debt for every point of Rank. He can sell off as much of their initial
-          equipment as
-          they’d like to help pay this off but they're also no longer allowed to cash Integrity in for sc at Step 11.</p>
+        <p>You can sell off as much of your initial equipment as they’d like to help pay off this debt but they're also no longer allowed to cash Integrity in for sc at Step 11.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='IftheydontlSGyTixtci' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheydontlSGyTixtci'"></app-bm-chapter-icon>
-        <p>If they don’t make payments on it, they may find themselves on the bad end of the law or the loan shark they
-          borrowed from but, at the very least, it’s a black mark against them and so they lose Integrity equal to their
-          Rank at the end of every session unless they paid off some of the debt.</p>
+        <div id='TheystartwitPnsEgzWjyK' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'TheystartwitPnsEgzWjyK'"></app-bm-chapter-icon>
+        <p>If they don’t make payments on it, they may find themselves on the bad end of the law or the loan shark they borrowed from but, at the very least, it’s a black mark against them. </p>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='10jgpYjBveCj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10jgpYjBveCj'"></app-bm-chapter-icon>
+        <p><strong>Minor </strong>You start with 100 sc of debt. You lose 1 Integrity at the end of every month unless they paid off some of the debt.</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='10OAWjugLPOx' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'10OAWjugLPOx'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>You start with 500 sc of debt. You lose 5 Integrity at the end of every month unless they paid off some of the debt.</p>
       </div>
       <div class="anchor">
         <div id="DerangedheaderRidffUYgEQ" class="anchorTag"></div>
@@ -813,38 +532,12 @@
       <div class='paragraphShell anchor'>
         <div id='50CEHwrxoWWL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50CEHwrxoWWL'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>16</p>
+        <p><strong>Minor </strong>When your Stress matches double your Willpower score, you have an episode: double your Stress.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='25oIRnscxYAa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25oIRnscxYAa'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>8</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10sgrfvOxJsf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10sgrfvOxJsf'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThereareholecPvFSndeXO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThereareholecPvFSndeXO'"></app-bm-chapter-icon>
-        <p>There are holes in this character’s brain and he’s starting to slip into madness. The nature of this neurosis
-          is
-          up to the character.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThecharacterxiwjasUywE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThecharacterxiwjasUywE'"></app-bm-chapter-icon>
-        <p>The character doesn’t suffer the effects of Stress until it matches his Willpower score, at that point, he
-          has an
-          episode: he doubles his total Stress. </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='OncehesrecoEXonJbkWAr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'OncehesrecoEXonJbkWAr'"></app-bm-chapter-icon>
-        <p>Once he’s recovered (dropped his Stress back down below his Willpower), he suffers a permanent reduction to
-          his
-          Willpower equal to this Injury's Rank.</p>
+        <p><strong>Major </strong>When your Stress matches your Willpower score, you have an episode: double your Stress. When your Stress drops below your Willpower, you permanently reduce your Willpower by 1.</p>
       </div>
       <div class="anchor">
         <div id="EpilepticheaderSkNaTOGvZe" class="anchorTag"></div>
@@ -854,33 +547,12 @@
       <div class='paragraphShell anchor'>
         <div id='20fJeDHhvoNs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20fJeDHhvoNs'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>When something triggers a Trauma check for the character, roll a d20!; if the result is above your character’s Con stat, they have a seizure, during which they’re completely helpless for the next 1d3 minutes.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10tgYqUcQeRD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10tgYqUcQeRD'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10XiMmonVCmH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10XiMmonVCmH'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='SomethingisnAOsDXOSNLm' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SomethingisnAOsDXOSNLm'"></app-bm-chapter-icon>
-        <p>Something is not wired up just right in this character’s brain and that causes them to have little
-          short-outs.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhensomethingDYepakSqVR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhensomethingDYepakSqVR'"></app-bm-chapter-icon>
-        <p>When something triggers a Trauma check for the character, or their Stress reaches above their Int score, roll
-          a
-          d20 + this Injury's Rank; if the result is above your character’s Con stat, they have a seizure, during
-          which
-          they’re completely helpless for the next 1d3 minutes.</p>
+        <p><strong>Major </strong>When something triggers a Trauma check for the character, or if the Stress you take from a single roll is greater than your Int score, roll a d20!+1d10!; if the result is above your character’s Con stat, they have a seizure, during which they’re completely helpless for the next 1d6! minutes.</p>
       </div>
       <div class="anchor">
         <div id="ExcommunicatedheaderSAHScjZyzT" class="anchorTag"></div>
@@ -890,36 +562,12 @@
       <div class='paragraphShell anchor'>
         <div id='15WDDBvwldbT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15WDDBvwldbT'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When Favor Dice are spent on them for a beneficial reason, the result is at a -1.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10WoGzUahWzY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10WoGzUahWzY'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='12kGceSxudlj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'12kGceSxudlj'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>12</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterbWMkpRezKu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterbWMkpRezKu'"></app-bm-chapter-icon>
-        <p>This character has invoked the wrath of an angry god, calling down divine judgment on his head. This is more
-          commonly a member of the faithful who's fallen away or lost his way or willfully defies the cult’s teachings,
-          but less commonly, it’s an outsider who's been declared an enemy of the faith.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenspendingxxQMROFyPP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenspendingxxQMROFyPP'"></app-bm-chapter-icon>
-        <p>When spending Favor Dice or having Favor Dice spent on them for a beneficial reason relating to a single
-          Covenant, they reduce each dice roll by this Burden's Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='IfFavorisbeGNjjmPAaoF' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfFavorisbeGNjjmPAaoF'"></app-bm-chapter-icon>
-        <p>If Favor is being spent on them in a baleful way, the result is instead increased by this Burden's Rank.
-        </p>
+        <p><strong>Major </strong>When Favor Dice are spent on them for a beneficial reason, the result is at a -3. When Favor Dice are spent on them for baleful reasons, the result is at +3.</p>
       </div>
       <div class="anchor">
         <div id="FatedheaderugesVAJvHm" class="anchorTag"></div>
@@ -929,45 +577,12 @@
       <div class='paragraphShell anchor'>
         <div id='35IxDnPivwEd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'35IxDnPivwEd'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>11</p>
+        <p><strong>Minor </strong>The GM rolls 1d8!. After that number of sessions, whenever they take damage and/or Stress, they gain an additional damage and/or Stress equal to how many sessions have passed since the deadline.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15BqASDdlZkM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15BqASDdlZkM'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='8fhrUyMglsK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'8fhrUyMglsK'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>8</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='CertaincharacFnAFcaPQTB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'CertaincharacFnAFcaPQTB'"></app-bm-chapter-icon>
-        <p>Certain character’s bear a strange sign on them that marks them for doom. The cruel strings of fate weave
-          together to form a noose for them.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AtcreationtaHbITtgSqK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtcreationtaHbITtgSqK'"></app-bm-chapter-icon>
-        <p>At creation, the GM rolls 1d8! - the Burden's Rank. This is the number of sessions the character has before
-          Fate begins to sharpen her shears. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AfterthatpoiVNMotvVQpP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AfterthatpoiVNMotvVQpP'"></app-bm-chapter-icon>
-        <p>After that point, whenever the character takes damage and/or Stress, they gain an additional damage and/or
-          Stress equal to how many sessions have passed since
-          the
-          deadline.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='IftheresultXhhPJNRCpx' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheresultXhhPJNRCpx'"></app-bm-chapter-icon>
-        <p>If the result of the roll was negative, that represents the number of ‘sessions’ that have already passed for
-          that
-          character.
-        </p>
+        <p><strong>Major </strong>Whenever they take damage and/or Stress, they gain an additional damage and/or Stress equal to how many sessions have passed.</p>
       </div>
       <div class="anchor">
         <div id="FeralheaderYbTzzFWdEL" class="anchorTag"></div>
@@ -977,31 +592,12 @@
       <div class='paragraphShell anchor'>
         <div id='20LbCcLQAebK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20LbCcLQAebK'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>Feral characters still receive any free skills from their Class but increase the cost of all non-Athletics, Survival, and Combat Skill Suites by 10 and all non-Athletics, Survival, Combat Advanced Skills by 1.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10ZcURVawaiv' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10ZcURVawaiv'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='naofqlKumDIV' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naofqlKumDIV'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThewildanduBOszvULYDl' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThewildanduBOszvULYDl'"></app-bm-chapter-icon>
-        <p>The wild and untamed lands are home to frontier men and families. Occasionally, children escape and are
-          raised
-          only by the wild, occasionally wolves.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='FeralcharacteyAYBRduaNo' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'FeralcharacteyAYBRduaNo'"></app-bm-chapter-icon>
-        <p>Feral characters still receive any free skills from their Class but increase the cost of all
-          non-Athletics, Survival, and Combat Skill Suites by this Burden's Rank * 10 and all non-Athletics, Survival, Combat Advanced Skills by
-          this Burden's Rank.</p>
+        <p><strong>Major </strong>Feral characters still receive any free skills from their Class but increase the cost of all non-Athletics, Survival, and Combat Skill Suites by 50 and all non-Athletics, Survival, Combat Advanced Skills by 5.</p>
       </div>
       <div class="anchor">
         <div id="HalflifeheaderxXKZSCXvpm" class="anchorTag"></div>
@@ -1011,36 +607,12 @@
       <div class='paragraphShell anchor'>
         <div id='75SZvimtSyoh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'75SZvimtSyoh'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>25</p>
+        <p><strong>Minor </strong>This character is affected by the Force Bind Spirit spell, though the Duration is set to 1d4! + 1 years and a day, with all the benefits and drawbacks.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='20JEpWVbyKhD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20JEpWVbyKhD'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>8</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='4hOCVaEtnGI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4hOCVaEtnGI'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterNAxDXtUUdC' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterNAxDXtUUdC'"></app-bm-chapter-icon>
-        <p>This character has died and been forced back to life, maybe against his will. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterZaFIgEgMzQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterZaFIgEgMzQ'"></app-bm-chapter-icon>
-        <p>This character is affected by the Force Bind Spirit spell, though the Duration is set to 1d4! - Rank
-          (minimum
-          1) years and a day, with all the benefits and drawbacks.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhyhecamebaNpRkcMAjtd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhyhecamebaNpRkcMAjtd'"></app-bm-chapter-icon>
-        <p>Why he came back is up to you. Perhaps he had some unfinished business or perhaps he was targeted accidently.
-          In
-          any case, now he lives a half-life.</p>
+        <p><strong>Major </strong>This character is affected by the Force Bind Spirit spell, though the Duration is set to 1 year and a day, with all the benefits and drawbacks.</p>
       </div>
       <div class="anchor">
         <div id="HauntedheaderWIDVEGhzyD" class="anchorTag"></div>
@@ -1048,55 +620,29 @@
         <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='30forrRUUGgj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'30forrRUUGgj'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='20dLSpkTTMkv' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20dLSpkTTMkv'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='nawEjDDOGquK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nawEjDDOGquK'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='MostcommonlyDCyBttcjpG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'MostcommonlyDCyBttcjpG'"></app-bm-chapter-icon>
-        <p>Most commonly, this character has done something to dishonor his clan and has since been haunted by one of
-          their
-          ancestors, displeased by their actions.</p>
+        <p>Most commonly, this character has done something to dishonor his clan and has since been haunted by one of their ancestors, displeased by their actions.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ThespirittaktuSUiSTwiw' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThespirittaktuSUiSTwiw'"></app-bm-chapter-icon>
-        <p>The spirit takes the corporeal form of a rotting corpse wearing its death mask, bothering the possessed at
-          all
-          hours to restore his family’s honor and stop being such a failure. The ancestor will do nothing to protect
-          their
-          descendant and often make life harder for them when they can.</p>
+        <p>The spirit takes the corporeal form of a rotting corpse wearing its death mask, bothering the possessed at all hours to restore his family’s honor and stop being such a failure. The ancestor will do nothing to protect their descendant and often make life harder for them when they can.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='UnfortunatelyOCghnkHXMg' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'UnfortunatelyOCghnkHXMg'"></app-bm-chapter-icon>
-        <p>Unfortunately, decades, if not centuries, in the grave have made the ancestor more than a bit senile. Even if
-          the
-          character is able to obtain Full of Integrity, the ancestor doesn’t care; what it really wants is for the
-          character to
-          sacrifice themselves in a heroic way or perform suicide.</p>
+        <p>Unfortunately, decades, if not centuries, in the grave have made the ancestor more than a bit senile. Even if the character is able to obtain Full of Integrity, the ancestor doesn’t care; what it really wants is for the character to sacrifice themselves in a heroic way or perform suicide.</p>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='ThischaractercExPoDVCQa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaractercExPoDVCQa'"></app-bm-chapter-icon>
-        <p>This character reduces the amount of Stress healed Taking a Breather by this Burden's Rank and reduces the
-          Relaxation that others would by its Rank, both to a minimum of 0.</p>
+        <div id='30forrRUUGgj' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'30forrRUUGgj'"></app-bm-chapter-icon>
+        <p><strong>Minor </strong>This character reduces the amount of Stress healed Taking a Breather by 3 and reduces the Relaxation that others would by 1, both to a minimum of 0.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='FinallytheyLCtDFihpxa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'FinallytheyLCtDFihpxa'"></app-bm-chapter-icon>
-        <p>Finally, they lose 1 Integrity at the end of every session.</p>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='20dLSpkTTMkv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'20dLSpkTTMkv'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>This character reduces the amount of Stress healed Taking a Breather by 15 and reduces the Relaxation that others would by 3, both to a minimum of 0. They lose 1 Integrity at the end of every session.</p>
       </div>
       <div class='sidebarShell marginBottom'>
         <div class="anchor">
@@ -1134,29 +680,12 @@
       <div class='paragraphShell anchor'>
         <div id='20shFGuPBNMk' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20shFGuPBNMk'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>They take 1 additional damage every time they’re wounded although this doesn’t count towards Trauma or Knock-Backs.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15HEfdlryUiI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15HEfdlryUiI'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='nauHYGpTBRYs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nauHYGpTBRYs'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheseguyslovwHuirwvkyt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheseguyslovwHuirwvkyt'"></app-bm-chapter-icon>
-        <p>These guys love to bleed. Well, they may not love it but they certainly do it a lot more than the rest of us.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='TheytakeaddiSMWTnPDQXS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheytakeaddiSMWTnPDQXS'"></app-bm-chapter-icon>
-        <p>They take additional damage equal to their Rank every time they’re wounded although this doesn’t count
-          towards Trauma or Knock-Backs.</p>
+        <p><strong>Major </strong>They take 3 additional damage every time they’re wounded although this doesn’t count towards Trauma or Knock-Backs.</p>
       </div>
       <div class="anchor">
         <div id="HyperopiaheadervltxPyYqjG" class="anchorTag"></div>
@@ -1166,77 +695,48 @@
       <div class='paragraphShell anchor'>
         <div id='25ihPGCgJuAb' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25ihPGCgJuAb'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>8</p>
+        <p><strong>Minor </strong>When making Checks that involve seeing things close to the character (ie melee), they reduce their Check Die by 1 size.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='20OUqOjrspcF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20OUqOjrspcF'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>6</p>
+        <p><strong>Major </strong>When making Checks that involve seeing things close to the character (ie melee), they reduce their Check Die by 3 sizes.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='6BBJxcEHwoI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6BBJxcEHwoI'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisisthefaIXHMoMCJym' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisisthefaIXHMoMCJym'"></app-bm-chapter-icon>
-        <p>This is the fancy term for “Far-Sighted”: the character can see things that are far away clearly but has
-          trouble
-          with things up close.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='InmeleecombaGRmHmCzSZP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'InmeleecombaGRmHmCzSZP'"></app-bm-chapter-icon>
-        <p>In melee combat or when making Checks that involve seeing things close to the character, they roll a dice
-          shrunk
-          a number of sizes equal to their Rank.</p>
-      </div>
-      
       <div class="anchor">
         <div id="IdiotSavantheaderCIOoOIjoNI" class="anchorTag"></div>
         <h2>Idiot Savant</h2>
         <div class="underline-sub"></div>
       </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThischaracterIxmFjcSviu' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThischaracterIxmFjcSviu'"></app-bm-chapter-icon>
+        <p>This character picks a Skill Suite:</p>
+      </div>
       <div class='paragraphShell anchor'>
         <div id='20FxDpUYVoCy' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20FxDpUYVoCy'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>All other Skill Suites have their cost increased by 20 and all Advanced Skills’ costs increased by 3.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10QvsNwGAKfj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10QvsNwGAKfj'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>2</p>
+        <p><strong>Major </strong>All other Skill Suites have their cost increased by 50 and all Advanced Skills’ costs increased by 10. If they would receive a Skill Suite or Advanced Skill for free, they must spend 2 free purchases on it.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='naVvqydnMrKB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naVvqydnMrKB'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterIxmFjcSviu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterIxmFjcSviu'"></app-bm-chapter-icon>
-        <p>This character was born gifted. Or in other words, they were born with the ability to understand something
-          but
-          nothing else. </p>
+      <div class="anchor">
+        <div id="impulsiveheaderjioje" class="anchorTag"></div>
+        <h2>Impulsive</h2>
+        <div class="underline-sub"></div>
       </div>
       <div class='paragraphShell anchor'>
-        <div id='ThischaracterkdjGNNckPa' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterkdjGNNckPa'"></app-bm-chapter-icon>
-        <p>This character picks a Skill Suite; all other Skill Suites have their cost increased by the Burden's Rank *
-          20
-          and all Advanced Skills’ costs increased by the Burden's Rank + 3. So, if you have Idiot Savant (3), 
-          your non-chosen Skill Suites cost looks like Base Cost - Int + (Current Rank * 60), while the 
-        Advanced Skill cost looks like Base Cost + (Current Rank * 6)</p>
+        <div id='jiojiogjv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'jiojiogjv'"></app-bm-chapter-icon>
+        <p><strong>Minor </strong>The first Concession this character makes doesn’t lower their Emotional State.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyFAUKiMoUkL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyFAUKiMoUkL'"></app-bm-chapter-icon>
-        <p>Additionally, if they would receive a Skill Suite or Advanced Skill for free, they must spend 2 free
-          purchases on
-          it.</p>
+        <div id='zzzcjiocf' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'zzzcjiocf'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>Every other Concession this character makes doesn’t lower their Emotional State</p>
       </div>
-      
       <div class="anchor">
         <div id="InbredheaderCLxfbrofoK" class="anchorTag"></div>
         <h2>Inbred</h2>
@@ -1245,31 +745,12 @@
       <div class='paragraphShell anchor'>
         <div id='10YmZXDHvXWe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10YmZXDHvXWe'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>3</p>
+        <p><strong>Minor </strong>You cannot increase your character’s Intellect.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='5HcuorTMMwI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5HcuorTMMwI'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10xTFmpQnchZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10xTFmpQnchZ'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='OftenacurseFeJWvleLDT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'OftenacurseFeJWvleLDT'"></app-bm-chapter-icon>
-        <p>Often a curse of the nobility that gets too close to their cousins, inbreeding can stunt the mental capacity
-          of
-          their offspring. </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='TypicallythivhSkPjPiia' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TypicallythivhSkPjPiia'"></app-bm-chapter-icon>
-        <p>Typically, this is pretty mild for the most part, but it means that, when you increase this
-          character’s
-          Intellect, Presence, or Willpower, you’re going to add the Burden's Rank to the cost.</p>
+        <p><strong>Major </strong>You cannot increase your character’s Intellect, Willpower, or Presence.</p>
       </div>
       <div class="anchor">
         <div id="InfirmheaderbevIgDJeBP" class="anchorTag"></div>
@@ -1279,27 +760,12 @@
       <div class='paragraphShell anchor'>
         <div id='10eMtIavseYI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10eMtIavseYI'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>3</p>
+        <p><strong>Minor </strong>When making a Check vs either sickness or poison, reduce your Check Die size by 1.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10vBCOttwwGH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10vBCOttwwGH'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10tNqyelPTpp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10tNqyelPTpp'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracteriKKcYeiaTk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracteriKKcYeiaTk'"></app-bm-chapter-icon>
-        <p>This character’s immune system isn’t up to snuff and so can be easily ravaged by plague or poison.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhenmakingaxTaApAhCDe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenmakingaxTaApAhCDe'"></app-bm-chapter-icon>
-        <p>When making a Check vs either, reduce your roll by the Injury's Rank.</p>
+        <p><strong>Major </strong>When making a Check vs either sickness or poison, reduce your Check Die size by 3.</p>
       </div>
       <div class="anchor">
         <div id="InsomniacheaderIBVWLnZXkc" class="anchorTag"></div>
@@ -1309,32 +775,12 @@
       <div class='paragraphShell anchor'>
         <div id='30plyjNHpmIM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30plyjNHpmIM'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>10</p>
+        <p><strong>Minor </strong>This character requires an extra 2 hours of sleep each day. Without, they’re considered to be Rationing sleep.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15uZBdMHfeaf' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15uZBdMHfeaf'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='naevorVrGUlS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naevorVrGUlS'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaractermiKnSHNhqd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaractermiKnSHNhqd'"></app-bm-chapter-icon>
-        <p>This character is unable to sleep or just needs more than most.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ApersonrequiFELddYESav' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ApersonrequiFELddYESav'"></app-bm-chapter-icon>
-        <p>A person requires an additional number of hours of sleep each day equal to this Injury's Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='IftheydontJBzewjfDam' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheydontJBzewjfDam'"></app-bm-chapter-icon>
-        <p>If they don’t reach this number, they’re considered to be Rationing their sleep.</p>
+        <p><strong>Major </strong>This character requires an extra 4 hours of sleep each day. Without, they’re considered to be Rationing sleep.</p>
       </div>
       <div class="anchor">
         <div id="LabyrinthitisheaderfWjrwFnmrQ" class="anchorTag"></div>
@@ -1344,37 +790,13 @@
       <div class='paragraphShell anchor'>
         <div id='15KdRSMKNltp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15KdRSMKNltp'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When making any Checks that involve balancing, they reduce their Check Die by 1 size. When making these Checks when unable to see, they double this penalty.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='5VSzYcgeTwD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'5VSzYcgeTwD'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='nafJBopGzjwh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nafJBopGzjwh'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheressomethSNyOjKxtUY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheressomethSNyOjKxtUY'"></app-bm-chapter-icon>
-        <p>There’s something wrong with this character’s sense of balance, probably as a result of something wrong with
-          their inner ear.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenmakinganzDoTbswGcR' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenmakinganzDoTbswGcR'"></app-bm-chapter-icon>
-        <p>When making any Checks that involve balancing, they receive a penalty equal to their Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyoXkgQKBoYg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyoXkgQKBoYg'"></app-bm-chapter-icon>
-        <p>Additionally, should they be forced to make the Check while unable to see for any reason, they also reduce
-          the
-          Check’s dice by 1 size.</p>
-      </div>
-      
+        <p><strong>Major </strong>When making any Checks that involve balancing, they reduce their Check Die by 3 sizes. When making these Checks when unable to see, they double this penalty.</p>
+      </div>      
       <div class="anchor">
         <div id="LimpheaderaYmDjKsaBX" class="anchorTag"></div>
         <h2>Limp</h2>
@@ -1384,29 +806,34 @@
         <table class="float all-center first-left">
           <thead>
             <tr class="notSticky">
-              <th colspan="2">Limp</th>
+              <th colspan="3">Limp</th>
             </tr>
             <tr class="notSticky">
               <th>Movement</th>
-              <th>Reduction (ft)</th>
+              <th>Minor</th>
+              <th>Major</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Walking</td>
-              <td>Rank</td>
+              <td>-1</td>
+              <td>-2</td>
             </tr>
             <tr>
               <td>Jogging</td>
-              <td>Rank * 2</td>
+              <td>-2</td>
+              <td>-4</td>
             </tr>
             <tr>
               <td>Running</td>
-              <td>Rank * 3</td>
+              <td>-3</td>
+              <td>-6</td>
             </tr>
             <tr>
               <td>Sprinting</td>
-              <td>Rank * 4</td>
+              <td>-4</td>
+              <td>-8</td>
             </tr>
           </tbody>
         </table>
@@ -1437,37 +864,11 @@
           </tbody>
         </table>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='20xUxXFxyvQt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20xUxXFxyvQt'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='20hheADnaBWb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20hheADnaBWb'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>6</p>
-      </div>
+
       <div class='paragraphShell anchor marginBottom'>
-        <div id='4KCoxXvZtcJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4KCoxXvZtcJ'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor'>
         <div id='SomethingisnZsvDYpMdep' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'SomethingisnZsvDYpMdep'"></app-bm-chapter-icon>
-        <p>Something isn’t working just right, whether from a birth defect or a war wound, causing this character to
-          hobble
-          along at a slower pace.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='CharacterswitvLenNIagzS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'CharacterswitvLenNIagzS'"></app-bm-chapter-icon>
-        <p>Characters with a limp remove the following from their movement.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThispenaltyiMRjZBkvPYH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThispenaltyiMRjZBkvPYH'"></app-bm-chapter-icon>
-        <p>This penalty is then multiplied by the character’s size.</p>
+        <p>This penalty is in ft / sec and is multiplied by the character’s size.</p>
       </div>
       <div class="anchor">
         <div id="MissingArmheaderJfhIRtVhkL" class="anchorTag"></div>
@@ -1477,38 +878,12 @@
       <div class='paragraphShell anchor'>
         <div id='45ipKCnTTSss' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'45ipKCnTTSss'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>18</p>
+        <p><strong>Minor </strong>The character is unable to wield two-handed weapons, employ bows or crossbows, or anything else that needs two hands so they can only use the 1-Handed Weapon with Free Hand or 2 Hands Free Weapon Styles.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='55UdUNVrJZtT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'55UdUNVrJZtT'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>20</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='2FtHQsviDTN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2FtHQsviDTN'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='MostlikelythsfwEUFdBeU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'MostlikelythsfwEUFdBeU'"></app-bm-chapter-icon>
-        <p>Most likely this is the result of some terrible accident or horrific war wound, though some people are born
-          with
-          an arm missing. Either way, this Injury represents the arm being gone above the elbow.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThefirstlevewbGbiTZMlf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThefirstlevewbGbiTZMlf'"></app-bm-chapter-icon>
-        <p>The first level of Rank means that the character is unable to wield two-handed weapons, employ bows or
-          crossbows, or anything else that needs two hands so they can only use the 1-Handed Weapon with Free Hand or 2
-          Hands Free Weapon Styles.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThenextlevelrqPegWVVMu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThenextlevelrqPegWVVMu'"></app-bm-chapter-icon>
-        <p>The next level of Rank prevents the character from using any weapons, and makes them unable to cast
-          spells
-          with Somatic components</p>
+        <p><strong>Major </strong>The character has no arms.</p>
       </div>
       <div class="anchor">
         <div id="MissingDigitheaderIpfwrRQDCk" class="anchorTag"></div>
@@ -1518,48 +893,12 @@
       <div class='paragraphShell anchor'>
         <div id='10UsUrZJOFXj' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10UsUrZJOFXj'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>3</p>
+        <p><strong>Minor </strong>When performing Checks that require fine manual dexterity (sowing, tying rope, lock picking), the Check Die is reduced by 1.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10LIjToLHNvh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10LIjToLHNvh'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10FPxXGcPzot' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10FPxXGcPzot'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='EachRankNjiwmUJyms' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'EachRankNjiwmUJyms'"></app-bm-chapter-icon>
-        <p>Each Rank of this Injury represents another finger missing from one or both hands of the character (roll
-          randomly to determine which fingers).</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenperforminviDvqBXROP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenperforminviDvqBXROP'"></app-bm-chapter-icon>
-        <p>When performing Checks that require fine manual dexterity (sowing, tying rope, lock picking), the Check takes
-          a
-          penalty equal to this Injury's Rank.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IfallthefinlfvlYVAtqS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfallthefinlfvlYVAtqS'"></app-bm-chapter-icon>
-        <p>If all the fingers are missing from one hand, the character is unable to wield two-handed weapons except
-          crossbows and firearms, although they reduce their attack dice by 1 size unless steading them (on top of the
-          normal penalties).</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AdditionallygTYkDlJLkk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallygTYkDlJLkk'"></app-bm-chapter-icon>
-        <p>Additionally, Checks requiring fine manual dexterity also have this penalty.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='IfallthefinfIgzzgKaRr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IfallthefinfIgzzgKaRr'"></app-bm-chapter-icon>
-        <p>If all the fingers on both hands are missing, they’re unable to use any weapons or perform any Check that
-          requires fingers.</p>
+        <p><strong>Major </strong>When performing Checks that require fine manual dexterity (sowing, tying rope, lock picking), the Check Die is reduced by 3. The character is unable to wield two-handed weapons except crossbows and firearms, although they reduce their Attack Die by 1 size unless steading them (on top of the normal penalties).</p>
       </div>
       <div class="anchor">
         <div id="MissingEarheaderiEeAvwgBRu" class="anchorTag"></div>
@@ -1569,35 +908,12 @@
       <div class='paragraphShell anchor'>
         <div id='20xgdbhwLQgI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20xgdbhwLQgI'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>For Checks involving sound, any Check Die are reduced by 1 size. If they can’t see a threat, they increase their Initiative by 1 for every point of Rank.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15SyTJhVOUyR' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15SyTJhVOUyR'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10nRJcejHYPj' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10nRJcejHYPj'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhileitwontoguQrLNkFA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhileitwontoguQrLNkFA'"></app-bm-chapter-icon>
-        <p>While it won’t limit your ability to hear entirely, the shape of the ear does make it easier to hear things.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThismeansthabTNIDCkfJW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismeansthabTNIDCkfJW'"></app-bm-chapter-icon>
-        <p>This means that, for Checks involving sound, they take a penalty equal to this Injury’s Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyuAeFKMcbIN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyuAeFKMcbIN'"></app-bm-chapter-icon>
-        <p>Additionally, they’re much slower to react: if they can’t see a threat, they increase their Initiative by 1
-          for
-          every point of Rank. </p>
+        <p><strong>Major </strong>For Checks involving sound, any Check Die are reduced by 3 sizes. If they can’t see a threat, they increase their Initiative Die by 3.</p>
       </div>
       <div class="anchor">
         <div id="MissingEyeheaderhLRHlECmrB" class="anchorTag"></div>
@@ -1607,51 +923,12 @@
       <div class='paragraphShell anchor'>
         <div id='30COWsyofyOK' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30COWsyofyOK'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>16</p>
+        <p><strong>Minor </strong>The character always automatically attacks second when engaging in melee. Everything is counted as two range categories further for ranged weaponry. They roll a d0 base for Checks involving estimating distances.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='50pLMKXbAtQT' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50pLMKXbAtQT'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>16</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='2smIeUDpEPh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2smIeUDpEPh'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='YoucanimaginNjcketowgS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'YoucanimaginNjcketowgS'"></app-bm-chapter-icon>
-        <p>You can imagine that a character with one eye gone would have an issue with his depth perception. You’d be
-          correct.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThefirstSeveBfrhNGRQfy' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThefirstSeveBfrhNGRQfy'"></app-bm-chapter-icon>
-        <p>The first Rank means that the character automatically attacks second when engaging in melee, even if his
-          weapon has the greater reach and everything is counted as two range categories further for ranged weaponry.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AdditionallyAixfiGWvXp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyAixfiGWvXp'"></app-bm-chapter-icon>
-        <p>Additionally, they roll a d0 base for Checks involving estimating distances.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThesecondSevKTaqiWuJEP' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThesecondSevKTaqiWuJEP'"></app-bm-chapter-icon>
-        <p>The second Rank means that the character has lost both eyes.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='InmeleecombaDQMEqoUrcd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'InmeleecombaDQMEqoUrcd'"></app-bm-chapter-icon>
-        <p>In melee combat or when making Checks that involve sight, they roll a d0 base.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AndrangedcomtTXKNsmTng' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AndrangedcomtTXKNsmTng'"></app-bm-chapter-icon>
-        <p>And ranged combat is right out, however, if you insist, you’ll be attacking and defending with a -d20! base.
-        </p>
+        <p><strong>Major </strong>As Blind (Major).</p>
       </div>
       <div class="anchor">
         <div id="MissingHandheaderWbmnYxxVvK" class="anchorTag"></div>
@@ -1661,41 +938,12 @@
       <div class='paragraphShell anchor'>
         <div id='30NMbBGXrRPY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30NMbBGXrRPY'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>16</p>
+        <p><strong>Minor </strong>The character is unable to wield two-handed weapons, employ bows or crossbows, or anything else that needs two hands so they can only use the 1-Handed Weapon with Free Hand or 2 Hands Free Weapon Styles.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='50nUqTfrorzH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50nUqTfrorzH'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>13</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='2dzdpSPbHnS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2dzdpSPbHnS'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisFlawmeanrwEBaxHFNM' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisFlawmeanrwEBaxHFNM'"></app-bm-chapter-icon>
-        <p>This Injury means that the character has lost part of one or both of their arms below the elbow and so they
-          have
-          some level of articulation.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThefirstSevegdUIBRSpau' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThefirstSevegdUIBRSpau'"></app-bm-chapter-icon>
-        <p>The first Rank means that the character is unable to wield two-handed weapons except crossbows and
-          firearms,
-          although they reduce their attack dice by 1 size unless steading them (on top of the normal penalties).</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AdditionallyjNUHmJscjf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyjNUHmJscjf'"></app-bm-chapter-icon>
-        <p>Additionally, Checks requiring fine manual dexterity also have this penalty.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AtthesecondiPqEicEDBZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtthesecondiPqEicEDBZ'"></app-bm-chapter-icon>
-        <p>At the second Rank, they’re unable to use any weapons or perform any Check that requires fingers.</p>
+        <p><strong>Major </strong>The character has no hands.</p>
       </div>
       <div class="anchor">
         <div id="MissingLegheaderZUSKsYDxbp" class="anchorTag"></div>
@@ -1705,46 +953,12 @@
       <div class='paragraphShell anchor'>
         <div id='40ZwWaqxcelV' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'40ZwWaqxcelV'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>16</p>
+        <p><strong>Minor </strong>Without some kind of peg leg, you're limited to Crawling or Walking but you take damage as if you're Sprinting. With a peg leg, you’re able to Crawl, Walk, and Jog as normal but are unable to Run and Sprint.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='50RQOZrUjiRQ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'50RQOZrUjiRQ'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>13</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='2CzHghfQAEE' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'2CzHghfQAEE'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>2</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='MissingaleggvZsRWFpZK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'MissingaleggvZsRWFpZK'"></app-bm-chapter-icon>
-        <p>Missing a leg is not a great place to be.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AtthefirstSMiSefmdNeJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtthefirstSMiSefmdNeJ'"></app-bm-chapter-icon>
-        <p>At the first Rank, without some kind of peg leg, you're limited to Crawling or Walking but you
-          take
-          damage as if you're Sprinting.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WithapeglegGoFmvYOqOp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WithapeglegGoFmvYOqOp'"></app-bm-chapter-icon>
-        <p>With a peg leg, you’re able to Crawl, Walk, and Jog as normal but are unable to Run and Sprint.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AtthesecondaAAWGRYCmr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtthesecondaAAWGRYCmr'"></app-bm-chapter-icon>
-        <p>At the second Rank, even with some sort of rolling platform to seat yourself on, you're only able to move
-          up
-          to a Jog but you take damage when doing so as if you're Running. </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='SometerraincxEGJTohjxX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SometerraincxEGJTohjxX'"></app-bm-chapter-icon>
-        <p>Some terrain can further limit that.</p>
+        <p><strong>Major </strong>Even with some sort of rolling platform to seat yourself on, you're only able to move up to a Jog but you take damage when doing so as if you're Running but some terrain can further limit that.</p>
       </div>
       <div class="anchor">
         <div id="MissingTeethheaderiauDXpJazw" class="anchorTag"></div>
@@ -1754,85 +968,12 @@
       <div class='paragraphShell anchor'>
         <div id='15pdMFimaJzG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15pdMFimaJzG'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>You have to be careful to eat softer foods, resulting in meals being more expensive; increase the price of food per day by 1 sc. This includes rations. If they’re Scavenging: they need an additional Boon on each Check to specifically find food they can chew. When needing to make a Language Check, reduce the Check Die by 1 size.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10UsgAzWFeJl' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10UsgAzWFeJl'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='4SZoEAGMZrD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'4SZoEAGMZrD'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AfewteethmiYgQbAzBjRW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AfewteethmiYgQbAzBjRW'"></app-bm-chapter-icon>
-        <p>A few teeth missing ain’t so bad but the more you lose, the harder things can get.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AttheveryleugtzJHenEb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AttheveryleugtzJHenEb'"></app-bm-chapter-icon>
-        <p>At the very least, you have to be careful to eat softer foods, resulting in meals being more expensive;
-          increase
-          the price of food per day by 1 sc for each point of Rank. This includes rations.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IftheyreScakBgruigBXu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheyreScakBgruigBXu'"></app-bm-chapter-icon>
-        <p>If they’re Scavenging, they have to spend extra time searching for soft food: they need an additional Boon on
-          each Check to specifically find food they can chew.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='IftheyreunaMzfRnzNHWO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'IftheyreunaMzfRnzNHWO'"></app-bm-chapter-icon>
-        <p>If they’re unable to find suitable food, for any reason, they take 1 damage per meal.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='MissingteethEZOuxKjEvA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'MissingteethEZOuxKjEvA'"></app-bm-chapter-icon>
-        <p>Missing teeth can also make some words harder to say. When needing to make a Language Check, this character
-          receives a penalty equal to this Injury's Rank.</p>
-      </div>
-      <div class="anchor">
-        <div id="MuleheaderTOMugOYXOS" class="anchorTag"></div>
-        <h2>Mule</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='15HjAUxYeYKc' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'15HjAUxYeYKc'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='10clCgyVDbSu' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10clCgyVDbSu'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='naCNwbkJPUGQ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naCNwbkJPUGQ'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>24</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhiletheymayyYBkMyXwIf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhiletheymayyYBkMyXwIf'"></app-bm-chapter-icon>
-        <p>While they may not show it, this character is the result of mixed ancestry and something about their
-          unnatural
-          genesis makes them sterile, unable to promulgate. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ReducetheHonHqkbNynIEb' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ReducetheHonHqkbNynIEb'"></app-bm-chapter-icon>
-        <p>Reduce the Integrity cap of this character by 1 for every point of Rank and they also don’t receive the
-          free
-          Grit Die for hitting their max Integrity. </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ButtheymaytmfJWddvmTK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ButtheymaytmfJWddvmTK'"></app-bm-chapter-icon>
-        <p>But they may take a second Ancestral Characteristic relating to their other ancestry.</p>
+        <p><strong>Major </strong>You practically have no teeth. increase the price of food per day by 5 sc. This includes rations. If they’re Scavenging: they need an additional 2 Boons on each Check to specifically find food they can chew. When needing to make a Language Check, reduce the Check Die by 3 sizes.</p>
       </div>
       <div class="anchor">
         <div id="MuteheadernvyjQWspKK" class="anchorTag"></div>
@@ -1842,41 +983,12 @@
       <div class='paragraphShell anchor'>
         <div id='20QxDVJEaefA' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20QxDVJEaefA'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>When making Checks that involve making verbal sound, reduce that Check Die by 1 size.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15UGjxrEUyoU' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15UGjxrEUyoU'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='6EzQpxjEcLJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6EzQpxjEcLJ'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThiscouldbeZRmNqDWdst' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThiscouldbeZRmNqDWdst'"></app-bm-chapter-icon>
-        <p>This could be a natural birth defect or the result of someone cutting out the character’s tongue: either way,
-          at
-          lower Rank, the character has trouble articulating sounds and, at higher Rank, making vocal sounds at all.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenmakingChfZMpdthasU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenmakingChfZMpdthasU'"></app-bm-chapter-icon>
-        <p>When making Checks that involve making verbal sound, reduce that Check dice by 1 for every point of Rank.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AtmaxSeveritUuOygLjKFB' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtmaxSeveritUuOygLjKFB'"></app-bm-chapter-icon>
-        <p>At max Rank, the character is unable to make any sound at all.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='CharacterswitmskmpMuUAH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'CharacterswitmskmpMuUAH'"></app-bm-chapter-icon>
-        <p>Characters with this Injury cannot be Weird-Adept Classes that require speech of any kind.</p>
+        <p><strong>Major </strong>You’re unable to make any but the most quiet vocalizations.</p>
       </div>
       <div class="anchor">
         <div id="MyopiaheaderdmimYbkqOx" class="anchorTag"></div>
@@ -1886,33 +998,13 @@
       <div class='paragraphShell anchor'>
         <div id='20iCPtLiiiWa' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20iCPtLiiiWa'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>When making Checks that involve seeing things far away from the character (ie ranged attacks), their Check Die is reduced by 1 size</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15QJKXJTjAwd' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15QJKXJTjAwd'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='6nGkeinhgyi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6nGkeinhgyi'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThisisthefapreucbGfpn' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisisthefapreucbGfpn'"></app-bm-chapter-icon>
-        <p>This is the fancy term for “Near-Sighted”: the character can see things that are nearby clearly but has
-          trouble
-          with things far away.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='InrangedcombCqrtPweOuG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'InrangedcombCqrtPweOuG'"></app-bm-chapter-icon>
-        <p>In ranged combat or when making Checks that involve seeing things far away from the character, they roll a
-          dice
-          shrunk a number of sizes equal to their Rank.</p>
-      </div>
-      
+        <p><strong>Major </strong>When making Checks that involve seeing things far away from the character (ie ranged attacks), their Check Die is reduced by 3 sizes.</p>
+      </div>      
       <div class="anchor">
         <div id="NoDepthPerceheaderaJIstRgCCR" class="anchorTag"></div>
         <h2>No Depth Perception</h2>
@@ -1921,35 +1013,12 @@
       <div class='paragraphShell anchor'>
         <div id='20PaVBgyHLbD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20PaVBgyHLbD'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>This character’s Measure is treated as 1 ft shorter. Everything is counted as 1 range category further for ranged weaponry. When estimating distances, reduce Check Die by 1 size.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15EzpHFQhkNN' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15EzpHFQhkNN'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='6wmYOyzIjES' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6wmYOyzIjES'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterMDJyBIkweL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterMDJyBIkweL'"></app-bm-chapter-icon>
-        <p>This character has a hard, if not impossible, time judging distances of all kinds.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterBHRTKjjUSS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterBHRTKjjUSS'"></app-bm-chapter-icon>
-        <p>This character’s Measure is treated as 1 ft shorter for every point of Rank and everything is counted as
-          1
-          range category further for ranged weaponry for every point of Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyWPPTTLXbtJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyWPPTTLXbtJ'"></app-bm-chapter-icon>
-        <p>Additionally, they shrink their dice size by 1 for every point of Rank for Checks involving estimating
-          distances.</p>
+        <p><strong>Major </strong>The character always automatically attacks second when engaging in melee. Everything is counted as two range categories further for ranged weaponry. They roll a d0 base for Checks involving estimating distances.</p>
       </div>
       <div class="anchor">
         <div id="OrphanheaderVdWAdEZcQr" class="anchorTag"></div>
@@ -1959,46 +1028,13 @@
       <div class='paragraphShell anchor'>
         <div id='15cnSuXPKBsi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15cnSuXPKBsi'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When selecting their starting equipment, they remove 3 items. If selecting the “Blank Slate Kit” they lose 90 sc instead. They don’t gain a Grit Die when hitting max Integrity.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15bZvfFIKMle' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15bZvfFIKMle'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
+        <p><strong>Major </strong>When selecting their starting equipment, they remove 9 items. You cannot select the “Blank Slate Kit”. They don’t gain a Grit Die when hitting max Integrity.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='20zNuTrduprA' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'20zNuTrduprA'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>20</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='OrphansarethjNEDJwiCVi' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'OrphansarethjNEDJwiCVi'"></app-bm-chapter-icon>
-        <p>Orphans are those whose parents have abandoned them and have had to learn to survive on their own in a
-          society
-          that doesn’t know what to do with them.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ReducetheHonOVoBCeoxFW' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ReducetheHonOVoBCeoxFW'"></app-bm-chapter-icon>
-        <p>Reduce the Integrity cap of this character by 1 for every point of Rank but gain a discount to either the
-          Streetwise or Trades Skill Suites.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheSkillSuitKYzkIrwugf' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheSkillSuitKYzkIrwugf'"></app-bm-chapter-icon>
-        <p>The Skill Suite of your choice’s cost is reduced by 5 and all of its Advanced Skills’ costs are reduced by 1.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyFIheLFtNTT' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyFIheLFtNTT'"></app-bm-chapter-icon>
-        <p>Additionally, orphans often don’t have the resources of others and, when selecting their starting equipment,
-          they
-          remove 1 item per 3 points of Rank, rounded up. If selecting the “Blank Slate Kit” they lose 30 sc per
-          Rank instead.</p>
-      </div>
-      
       <div class="anchor">
         <div id="PoorheaderErbkkhCjwR" class="anchorTag"></div>
         <h2>Poor</h2>
@@ -2007,27 +1043,12 @@
       <div class='paragraphShell anchor'>
         <div id='15egxLGjETHG' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15egxLGjETHG'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When selecting equipment, remove 45 sc worth of equipment and/or starting cash.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10xUJgBTbDDH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10xUJgBTbDDH'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='10yGhCnFlPeU' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'10yGhCnFlPeU'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='SomecharacterfiGPsnKsvZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SomecharacterfiGPsnKsvZ'"></app-bm-chapter-icon>
-        <p>Some characters don’t have the financial leg up that others have.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhenselectingqOaXiFAUqN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenselectingqOaXiFAUqN'"></app-bm-chapter-icon>
-        <p>When selecting equipment, remove 45 sc worth of equipment and/or starting cash per Rank instead.</p>
+        <p><strong>Major </strong>When selecting equipment, remove 90 sc worth of equipment and/or starting cash. Whenever you spend money, you take 1 Stress per 50 sc spent.</p>
       </div>
       <div class="anchor">
         <div id="RefugeeheaderAkSpgtlWeb" class="anchorTag"></div>
@@ -2037,40 +1058,13 @@
       <div class='paragraphShell anchor'>
         <div id='30BIPZiVsdwr' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'30BIPZiVsdwr'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>8</p>
+        <p><strong>Minor </strong>Half starting cash and remove any items that go over their Carry.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='0mrQLQvioXL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'0mrQLQvioXL'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>0</p>
+        <p><strong>Major </strong>Half starting cash and remove any containers and then any items that go over their Carry.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='1fmXdqXdyMI' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'1fmXdqXdyMI'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='FleeingfromtjJLSEhwqLr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'FleeingfromtjJLSEhwqLr'"></app-bm-chapter-icon>
-        <p>Fleeing from their homeland for either economic, religious, or conflict reasons, this character finds
-          themselves
-          in a foreign land. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheirflighthtDycgGXXHC' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheirflighthtDycgGXXHC'"></app-bm-chapter-icon>
-        <p>Their flight has forced them to leave much of their belongings behind, halving their starting cash and
-          removing
-          any items that go over their carry.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='TheirnativelKGzhgsNBZp' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheirnativelKGzhgsNBZp'"></app-bm-chapter-icon>
-        <p>Their native language is not the main one for this area and the Language and Law of the country they’re
-          fleeing
-          to costs double as they had to learn it under stressful circumstances.</p>
-      </div>
-            
       <div class="anchor">
         <div id="ShakyHandsheadergZnORfJQKB" class="anchorTag"></div>
         <h2>Shaky Hands</h2>
@@ -2079,42 +1073,28 @@
       <div class='paragraphShell anchor'>
         <div id='20iiCJvGImau' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20iiCJvGImau'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When firing ranged weapons, they increase their Recovery by 2. When doing anything that requires fine movement with their hands and fingers reduce your Check Die by 1 size.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15bUqqPudRkS' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15bUqqPudRkS'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
+        <p><strong>Major </strong>When firing ranged weapons, they increase their Recovery by 6. When doing anything that requires fine movement with their hands and fingers reduce your Check Die by 3 sizes.</p>
+      </div>
+      <div class="anchor">
+        <div id="sterilehifojewiojew" class="anchorTag"></div>
+        <h2>Sterile</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='plokpokvoprk' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'plokpokvoprk'"></app-bm-chapter-icon>
+        <p><strong>Minor </strong>Your Integrity maxes out at 20, although you still get a Grit Die for hitting that max.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='naRwNXpnKrxC' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naRwNXpnKrxC'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
+        <div id='nklmkoirv' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'nklmkoirv'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>Your Integrity maxes out at 15, although you still get a Grit Die for hitting that max.</p>
       </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracterOlMpecMGOt' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracterOlMpecMGOt'"></app-bm-chapter-icon>
-        <p>This character has a tremor in their hands that can be a huge pain to deal with.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenfiringraDwkDjtdBTO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenfiringraDwkDjtdBTO'"></app-bm-chapter-icon>
-        <p>When firing ranged weapons, they increase their Recovery by the Rank of this Injury.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AdditionallylOrvHwIiPY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallylOrvHwIiPY'"></app-bm-chapter-icon>
-        <p>Additionally, when doing anything that requires fine movement with their hands and fingers they can either
-          increase the time equal to their Rank or take a penalty equal to their Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThespecificsSppPsjXXfS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThespecificsSppPsjXXfS'"></app-bm-chapter-icon>
-        <p>The specifics of the time increase are determined by how long the task usually takes and are left up to the
-          GM.
-        </p>
-      </div>
-      
       <div class="anchor">
         <div id="StutterheadergeuOgVIFdt" class="anchorTag"></div>
         <h2>Stutter</h2>
@@ -2123,44 +1103,13 @@
       <div class='paragraphShell anchor'>
         <div id='20kXGLgjnCVM' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20kXGLgjnCVM'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>When using an Asset that you need to talk to, you double their Organization. Anytime you need to make a Language Check to be understood while speaking, reduce the Check Die by 1 size.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15IYDdmGUQKY' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15IYDdmGUQKY'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
+        <p><strong>Major </strong>When using an Asset that you need to talk to, you triple their Organization. Anytime you need to make a Language Check to be understood while speaking, reduce the Check Die by 3 sizes.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='6EmOEjGsoqh' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'6EmOEjGsoqh'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>6</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaracteryFffOYILuN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaracteryFffOYILuN'"></app-bm-chapter-icon>
-        <p>This character has trouble communicating, either finding the right words or pronouncing them and that can
-          make
-          talking a bit of a challenge.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='CommunicatingWgktDUXaTL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'CommunicatingWgktDUXaTL'"></app-bm-chapter-icon>
-        <p>Communicating an idea will take longer than it normally would: as an Asset, you double their Organization.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AdditionallyLAeLimdKFN' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyLAeLimdKFN'"></app-bm-chapter-icon>
-        <p>Additionally, anytime you need to make a Language Check to be understood while speaking, reduce the Check die
-          by
-          1 size per point of Rank.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='CharacterswitPbVcTjFEYG' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'CharacterswitPbVcTjFEYG'"></app-bm-chapter-icon>
-        <p>Characters with this Injury cannot be Weird-Adept Classes that require speech of any kind.</p>
-      </div>
-
       <div class="anchor">
         <div id="ThrallheaderBZnUOEIBsw" class="anchorTag"></div>
         <h2>Thrall</h2>
@@ -2169,38 +1118,12 @@
       <div class='paragraphShell anchor'>
         <div id='25ZIUqzxKgCh' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'25ZIUqzxKgCh'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>8</p>
+        <p><strong>Minor </strong>When selecting equipment, thralls remove 30 sc of the character’s choice and start with no extra starting cash. If selecting the “Blank Slate Kit” they lose 60 sc per Rank instead. Gain the Relationship “Afraid of/Respects/Is Subservient to (pick one at first level) those in a Higher Social Caste” at Rank 3.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15LYmyVzLqAo' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15LYmyVzLqAo'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='naPQNXXRCriH' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'naPQNXXRCriH'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThrallsarethMSClTaJZrs' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThrallsarethMSClTaJZrs'"></app-bm-chapter-icon>
-        <p>Thralls are those taken in raids or the children of slaves. Technically, they’re ‘free’ but they have a
-          social
-          stigma that follows them. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='WhenselectingIxCAMxrQuO' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenselectingIxCAMxrQuO'"></app-bm-chapter-icon>
-        <p>When selecting equipment, thralls remove 10 sc per point of Rank of the character’s choice and start with
-          no
-          extra starting cash. If selecting the “Blank Slate Kit” they lose 30 sc per Rank instead.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='AdditionallyYGghcaecQJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AdditionallyYGghcaecQJ'"></app-bm-chapter-icon>
-        <p>Additionally, they have to overcome their cultivated respect/fear for those of a higher social caste: they
-          gain
-          the Relationship “Afraid of/Respects/Is Subservient to (pick one at first level) those in a High Social Caste” equal to their Rank.</p>
+        <p><strong>Major </strong>When selecting equipment, thralls remove 60 sc of the character’s choice and start with no extra starting cash. If selecting the “Blank Slate Kit” they lose 120 sc per Rank instead. Gain the Relationship “Afraid of/Respects/Is Subservient to (pick one at first level) those in a Higher Social Caste” at Rank 9.</p>
       </div>
       <div class="anchor">
         <div id="TrickKneeheaderBXNWdwjymP" class="anchorTag"></div>
@@ -2210,33 +1133,13 @@
       <div class='paragraphShell anchor'>
         <div id='15yXuWtypych' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15yXuWtypych'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When Running or Sprinting, if the character gets above a 4 on their unmodified damage roll their knee gives out, forcing them to limp at Crawling speed for 5 seconds before they can resume normal movement.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10emaIPOpCqJ' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10emaIPOpCqJ'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
+        <p><strong>Major </strong>When Running or Sprinting, if the character gets above a 4 on their unmodified damage roll their knee gives out, forcing them to limp at Crawling speed for 15 seconds before they can resume normal movement.</p>
       </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='nawGhtveAOGe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'nawGhtveAOGe'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>10</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='SomethingabousSTMfTfxuS' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'SomethingabousSTMfTfxuS'"></app-bm-chapter-icon>
-        <p>Something about the character’s knee isn’t aligned right.</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='WhenRunningoeWUdAdRuKL' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'WhenRunningoeWUdAdRuKL'"></app-bm-chapter-icon>
-        <p>When Running or Sprinting, if the character gets above a 4 on their unmodified damage roll their knee gives
-          out,
-          forcing them to limp at Crawling speed for a number of seconds equal to this Injury's Rank before they
-          can
-          resume normal movement.</p>
-      </div>
-      
       <div class="anchor">
         <div id="VowOfPovertyheaderShVWpymbpH" class="anchorTag"></div>
         <h2>Vow Of Poverty</h2>
@@ -2245,40 +1148,12 @@
       <div class='paragraphShell anchor'>
         <div id='35YuaPREguCI' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'35YuaPREguCI'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>11</p>
+        <p><strong>Minor </strong>At any time, they can only keep a max of 300 sc worth of cash, goods, or equipment on them for their use. All other wealth is donated to any local cults or the needy (which doesn’t include fellow adventurers).</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='10CebyQBShNn' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'10CebyQBShNn'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>3</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='19cLLQeJFKoJ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'19cLLQeJFKoJ'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>19</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='TheMiddleReaIqsrYUgyrX' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'TheMiddleReaIqsrYUgyrX'"></app-bm-chapter-icon>
-        <p>The Middle Realm corrupts and those that wish to come closer to the Gods’ Realm sometimes eschew worldly
-          possessions. </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AtanytimetvPDiQjbaoe' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AtanytimetvPDiQjbaoe'"></app-bm-chapter-icon>
-        <p>At any time, they can only keep a max of 200 sc - 10 sc per Rank worth of cash, goods, or equipment on
-          them
-          for their use.</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AllotherwealogpWjoTDTd' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AllotherwealogpWjoTDTd'"></app-bm-chapter-icon>
-        <p>All other wealth is donated to any local cults or the needy (which doesn’t include fellow adventurers). </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThisvowisrewzCbEwHdxq' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThisvowisrewzCbEwHdxq'"></app-bm-chapter-icon>
-        <p>This vow is rewarded though: their Max Favor is increased by 1, regardless of Rank.</p>
+        <p><strong>Major </strong>At any time, they can only keep a max of 100 sc worth of cash, goods, or equipment on them for their use. All other wealth is donated to any local cults or the needy (which doesn’t include fellow adventurers).</p>
       </div>
       <div class="anchor">
         <div id="WeakheaderzFoQvxiCsX" class="anchorTag"></div>
@@ -2288,96 +1163,52 @@
       <div class='paragraphShell anchor'>
         <div id='20KiFdvssfiL' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'20KiFdvssfiL'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>6</p>
+        <p><strong>Minor </strong>Lower the character’s starting Fatigue Threshold by 1 step.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='15MzOIDpxbwq' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'15MzOIDpxbwq'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='19kFpWUsgnDK' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'19kFpWUsgnDK'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>4</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='ThischaractersukoVxIcOZ' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThischaractersukoVxIcOZ'"></app-bm-chapter-icon>
-        <p>This character runs out of steam faster than others, even if their capacity for work is just the same as
-          others.
-        </p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ForeverypoinbbqgJWYFkY' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ForeverypoinbbqgJWYFkY'"></app-bm-chapter-icon>
-        <p>For every point of Rank, lower the character’s starting Fatigue Threshold by 1 step.</p>
+        <p><strong>Major </strong>Lower the character’s starting Fatigue Threshold by 3 steps.</p>
       </div>
       <div class="anchor">
         <div id="weirdresjiojtioew" class="anchorTag"></div>
         <h2>Weird Resistant</h2>
         <div class="underline-sub"></div>
       </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='forwahiotheiover' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'forwahiotheiover'"></app-bm-chapter-icon>
+        <p>You cannot take this Burden if you're a Weird-Adept of any kind or if you already have the Weird Vulnerable Burden.</p>
+      </div>
       <div class='paragraphShell anchor'>
         <div id='werresjioejciow' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'werresjioejciow'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='weridresrsever' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weridresrsever'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>1</p>
+        <p><strong>Minor </strong>When within the Shape of a spell, this character gains a +d10! to their Check to resist it, however they must always resist with at least a d10! base Check Die, even if the spell would be beneficial to them.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
-        <div id='weridseverjiot' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weridseverjiot'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>12</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='forwahiotheiover' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'forwahiotheiover'"></app-bm-chapter-icon>
-        <p>For whatever reason, the Weird seems to bonus off this character. When within the shape of a spell, this character 
-          gains this Burden's Rank to their Check to resist it, however must always resist with a dice equal to their Rank, rounded to the nearest dice size, even if the 
-          spell would be beneficial to them. So, if you have Rank 5, you have to resist with at least a d6!.
-        </p>
-      </div>
-      <div class='paragraphShell marginBottom anchor'>
-        <div id='youcannothtakoeiijos' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'youcannothtakoeiijos'"></app-bm-chapter-icon>
-        <p>You cannot take this Burden if you're a Weird-Adept of any kind or if you already have the Weird Vulnerable Burden.
-        </p>
+        <div id='weridresrsever' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'weridresrsever'"></app-bm-chapter-icon>
+        <p><strong>Major </strong>When within the Shape of a spell, this character gains a +d20! to their Check to resist it, however they must always resist with all their energy, even if the spell would be beneficial to them.</p>
       </div>
       <div class="anchor">
         <div id="werjiojdiovejwio" class="anchorTag"></div>
         <h2>Weird Vulnerable</h2>
         <div class="underline-sub"></div>
       </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='weridseticksthijg' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'weridseticksthijg'"></app-bm-chapter-icon>
+        <p>You cannot take this Burden if you already have the Weird Resistant Burden.</p>
+      </div>
       <div class='paragraphShell anchor'>
         <div id='werjioejwiovrcrp' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'werjioejwiovrcrp'"></app-bm-chapter-icon>
-        <p><strong>Integrity Base </strong>5</p>
+        <p><strong>Minor </strong>When resisting a spell, their Check Die is reduced by 1 size.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='wiredvulnerable' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'wiredvulnerable'"></app-bm-chapter-icon>
-        <p><strong>Per Rank </strong>1</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='werijdvulnesever' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'werijdvulnesever'"></app-bm-chapter-icon>
-        <p><strong>Rank Cap </strong>15</p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='weridseticksthijg' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'weridseticksthijg'"></app-bm-chapter-icon>
-        <p>For whatever reason, the Weird seems to stick to this character. When resisting a spell, this character 
-          gains this Burden's Rank as a penalty to their Check.
-        </p>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='youviaoniotr' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'youviaoniotr'"></app-bm-chapter-icon>
-        <p>You cannot take this Burden if you already have the Weird Resistant Burden.
-        </p>
+        <p><strong>Major </strong>When resisting a spell, their Check Die is reduced by 3 sizes.</p>
       </div>
     </div>
     <div class="sideShell">
