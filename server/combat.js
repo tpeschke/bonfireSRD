@@ -201,7 +201,7 @@ module.exports = {
             flanks: 3,
             fatigue: -3,
             bonus: 'Nat 20 or Strike, delay target\'s atk by 5 sec. Readies in 2 secs.',
-            bonusLong: '<p>With the Round Shield, on a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next attack by 5 seconds.</p><br><p>They also delay the enemy an additional 5 seconds if used to perform a strike in unarmed combat.</p><br><p>The Round shield is readied in 2 seconds.</p>',
+            bonusLong: '<p>With the Round Shield, on a natural roll of 20 on Defense or an Unarmed Strike, you delay your opponent’s next attack by 5 seconds.</p><br><p>The Round shield is readied in 2 seconds.</p>',
             size: 'M'
         },
         {

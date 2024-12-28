@@ -479,7 +479,7 @@ export default [
                 sellback: '15 sc'
             },
             {
-                name: 'Quiver, 12 Cap**',
+                name: 'Quiver, 12 Cap*',
                 size: 'n/a',
                 sellback: '1 sc'
             },
