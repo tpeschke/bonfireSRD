@@ -740,6 +740,14 @@
           with 5 random Rudiments. They gain a new one every 3 levels after that.</p>
       </div>
       <div class='paragraphShell anchor'>
+        <div id='accjiojiocewjioejw' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'accjiojiocewjioejw'"></app-bm-chapter-icon>
+        <p>A Weird-Adept can also choose to specialize in a spell instead of gaining a new Rudiment. Doing so lowers the Drain 
+          of an Effect they already know by 1. If this would bring the Drain below 1, it is instead increases the Order by 1, automatically, 
+          for free, whenever they shape that Effect from then on. This is also accompanied by the spell changing somehow to show this 
+        specialization. This can only be done once / Effect / level.</p>
+      </div>
+      <div class='paragraphShell anchor'>
         <div id='AtfirstlevelSvQobOpmqD' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'AtfirstlevelSvQobOpmqD'"></app-bm-chapter-icon>
         <p><strong class="optional">*</strong><strong>Skill Focus (Weirdcraft Skill Suite) </strong>At every odd level,
@@ -868,6 +876,8 @@
             [weirdTable]="weirdTables.effectsTables.Charm"></lib-weirdTable>
           <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Glamour Effects'"
             [weirdTable]="weirdTables.effectsTables.Glamour"></lib-weirdTable>
+            <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Hexing Effects'"
+              [weirdTable]="weirdTables.effectsTables.Hexing"></lib-weirdTable>
           <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Investiture Effects'"
             [weirdTable]="weirdTables.effectsTables.Investiture"></lib-weirdTable>
           <lib-weirdTable *ngIf="weirdTables.effectsTables" [label]="'Occultism Effects'"

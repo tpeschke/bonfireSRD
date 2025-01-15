@@ -70,7 +70,7 @@ const weirdTables = {
         ]
     },
     traditionTable: {
-        max: 8,
+        max: 10,
         rows: [
             {
                 weight: 1,
@@ -90,6 +90,10 @@ const weirdTables = {
             },
             {
                 weight: 1,
+                rudiment: 'Hexing'
+            },
+            {
+                weight: 1,
                 rudiment: 'Investiture'
             },
             {
@@ -101,14 +105,14 @@ const weirdTables = {
                 rudiment: 'Sortilege'
             },
             {
-                weight: 1,
+                weight: 2,
                 rudiment: 'Reroll'
             },
         ]
     },
     effectsTables: {
         Animism: {
-            max: 12,
+            max: 20,
             rows: [
                 {
                     weight: 1,
@@ -116,6 +120,10 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
+                    rudiment: 'Battle Frenzy'
+                },
+                {
+                    weight: 2,
                     rudiment: 'Bestial Sight'
                 },
                 {
@@ -131,7 +139,7 @@ const weirdTables = {
                     rudiment: 'Haste'
                 },
                 {
-                    weight: 1,
+                    weight: 2,
                     rudiment: 'High Jump'
                 },
                 {
@@ -140,11 +148,23 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
+                    rudiment: 'Imbue with Confidence'
+                },
+                {
+                    weight: 1,
                     rudiment: 'Leadfeet'
                 },
                 {
                     weight: 1,
                     rudiment: 'Outcry'
+                },
+                {
+                    weight: 3,
+                    rudiment: 'Primal Power'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Pulse Calm'
                 },
                 {
                     weight: 1,
@@ -161,7 +181,7 @@ const weirdTables = {
             ]
         },
         Calling: {
-            max: 12,
+            max: 20,
             rows: [
                 {
                     weight: 1,
@@ -176,6 +196,10 @@ const weirdTables = {
                     rudiment: 'Break Summoning'
                 },
                 {
+                    weight: 2,
+                    rudiment: 'Comprehension'
+                },
+                {
                     weight: 1,
                     rudiment: 'Corpse Tongue'
                 },
@@ -184,7 +208,11 @@ const weirdTables = {
                     rudiment: 'Dominate'
                 },
                 {
-                    weight: 1,
+                    weight: 2,
+                    rudiment: 'Dream Stride'
+                },
+                {
+                    weight: 2,
                     rudiment: 'Essence Link'
                 },
                 {
@@ -192,7 +220,15 @@ const weirdTables = {
                     rudiment: 'Force Bind Spirit'
                 },
                 {
+                    weight:1,
+                    rudiment: 'Fortify Connection'
+                },
+                {
                     weight: 1,
+                    rudiment: 'Gestalt Minds'
+                },
+                {
+                    weight: 2,
                     rudiment: 'Hookgate'
                 },
                 {
@@ -217,12 +253,20 @@ const weirdTables = {
             max: 20,
             rows: [
                 {
-                    weight: 2,
+                    weight: 1,
+                    rudiment: 'Bar Portal'
+                },
+                {
+                    weight: 1,
                     rudiment: 'Detraction'
                 },
                 {
-                    weight: 2,
+                    weight: 1,
                     rudiment: 'Dispel Enchantment'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Dragonhide'
                 },
                 {
                     weight: 1,
@@ -250,6 +294,10 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
+                    rudiment: 'Power Shield'
+                },
+                {
+                    weight: 1,
                     rudiment: 'Shock'
                 },
                 {
@@ -257,7 +305,7 @@ const weirdTables = {
                     rudiment: 'Silence'
                 },
                 {
-                    weight: 2,
+                    weight: 1,
                     rudiment: 'Smokescreen'
                 },
                 {
@@ -269,6 +317,10 @@ const weirdTables = {
         Glamour: {
             max: 20,
             rows: [
+                {
+                    weight: 1,
+                    rudiment: 'Alarm'
+                },
                 {
                     weight: 1,
                     rudiment: 'Alto Scream'
@@ -283,19 +335,15 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Discombobulate'
-                },
-                {
-                    weight: 1,
                     rudiment: 'Doppelganger'
                 },
                 {
                     weight: 1,
-                    rudiment: 'Inflict Doubt'
+                    rudiment: 'Mask of Zal'
                 },
                 {
                     weight: 1,
-                    rudiment: 'Mask of Zal'
+                    rudiment: 'Message'
                 },
                 {
                     weight: 2,
@@ -303,7 +351,7 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Myopic Curse'
+                    rudiment: 'Mystic Mark'
                 },
                 {
                     weight: 1,
@@ -323,7 +371,7 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Twist Tongue'
+                    rudiment: 'Terror'
                 },
                 {
                     weight: 1,
@@ -335,13 +383,78 @@ const weirdTables = {
                 },
             ]
         },
-        Investiture: {
+        Hexing: {
             max: 20,
             rows: [
                 {
-                    weight: 1,
-                    rudiment: 'Bar Portal'
+                    weight: 2,
+                    rudiment: 'Backlash'
                 },
+                {
+                    weight: 2,
+                    rudiment: 'Binding Oath'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Discombobulate'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Dread Ward'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Indecision Spike'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Inflict Doubt'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Maenad\'s Kiss'
+                },
+                {
+                    weight: 2,
+                    rudiment: 'Mind Wipe'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Myopic Curse'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Open Mind'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Snag Ward'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Staying Hand'
+                },
+                {
+                    weight: 2,
+                    rudiment: 'Suggestion'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Unlock Heart'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Wilding Reaction'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Twist Tongue'
+                },
+            ]
+        },
+        Investiture: {
+            max: 20,
+            rows: [
                 {
                     weight: 1,
                     rudiment: 'Binding Glyph'
@@ -356,7 +469,15 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Ironhide'
+                    rudiment: 'Divine Object'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Fleeting Enchantment'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Impression Fleam'
                 },
                 {
                     weight: 1,
@@ -365,10 +486,6 @@ const weirdTables = {
                 {
                     weight: 2,
                     rudiment: 'Marionette'
-                },
-                {
-                    weight: 1,
-                    rudiment: 'Mystic Mark'
                 },
                 {
                     weight: 1,
@@ -404,16 +521,25 @@ const weirdTables = {
             max: 20,
             rows: [
                 {
-                    weight: 1,
-                    rudiment: 'Alarm'
-                },
-                {
                     weight: 2,
                     rudiment: 'Ancestral Lore'
                 },
                 {
                     weight: 1,
+                    rudiment: 'Arcane Reading'
+                },
+                {
+                    weight: 1,
                     rudiment: 'Augur Secret'
+                },
+                
+                {
+                    weight: 1,
+                    rudiment: 'Banding'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Deep Thought Inspiration'
                 },
                 {
                     weight: 2,
@@ -421,18 +547,14 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Divine Object'
-                },
-                {
-                    weight: 2,
-                    rudiment: 'Dream Stride'
+                    rudiment: 'Divination'
                 },
                 {
                     weight: 1,
                     rudiment: 'Hindsight'
                 },
                 {
-                    weight: 2,
+                    weight: 1,
                     rudiment: 'Invoke Belligerence'
                 },
                 {
@@ -440,16 +562,28 @@ const weirdTables = {
                     rudiment: 'Lore Mysterium'
                 },
                 {
-                    weight: 2,
-                    rudiment: 'Message'
+                    weight: 1,
+                    rudiment: 'Mook Boost'
                 },
                 {
-                    weight: 2,
-                    rudiment: 'Mind Wipe'
+                    weight: 1,
+                    rudiment: 'Skill Mob'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Sourcerous Tutor'
                 },
                 {
                     weight: 1,
                     rudiment: 'Strengthen Ymir'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Syncretism'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Synergize'
                 },
                 {
                     weight: 1,
@@ -458,19 +592,31 @@ const weirdTables = {
             ]
         },
         Sortilege: {
-            max: 12,
+            max: 20,
             rows: [
                 {
                     weight: 1,
                     rudiment: 'Arcane Vortex'
                 },
                 {
-                    weight: 1,
+                    weight: 2,
                     rudiment: 'Bind to the Average'
+                },
+                {
+                    weight: 3,
+                    rudiment: 'Evil Eye'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Fair Luck'
                 },
                 {
                     weight: 2,
                     rudiment: 'Fate Well'
+                },
+                {
+                    weight: 1,
+                    rudiment: 'Foil Fates'
                 },
                 {
                     weight: 1,
@@ -482,11 +628,11 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Hex'
+                    rudiment: 'Improbable Stair'
                 },
                 {
                     weight: 1,
-                    rudiment: 'Improbable Stair'
+                    rudiment: 'Increase Margin'
                 },
                 {
                     weight: 1,
@@ -497,11 +643,11 @@ const weirdTables = {
                     rudiment: 'Mislay'
                 },
                 {
-                    weight: 1,
+                    weight: 2,
                     rudiment: 'Rebalance'
                 },
                 {
-                    weight: 1,
+                    weight: 2,
                     rudiment: 'Ricochet'
                 },
             ]
