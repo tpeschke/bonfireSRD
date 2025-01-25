@@ -602,25 +602,6 @@
           concentration from the Weird-Adept.</p>
       </div>
       <div class="anchor">
-        <div id="Personalheader" class="anchorTag"></div>
-        <h2>Personal</h2>
-        <div class="underline-sub"></div>
-      </div>
-      <div class='paragraphShell anchor'>
-        <div id='AsEffectRudixsFaAyoalk' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'AsEffectRudixsFaAyoalk'"></app-bm-chapter-icon>
-        <p><strong class='orangeHeader'>Resistance</strong> As Effect Rudiment</p>
-      </div>
-      <div class='paragraphShell anchor marginBottom'>
-        <div id='ThismakesthepjNHnjJJCD' class='anchorTag'></div>
-        <app-bm-chapter-icon [id]="'ThismakesthepjNHnjJJCD'"></app-bm-chapter-icon>
-        <p>This makes the Shape of a spell just a single individual. Starting at a point within the Origin, it affects
-          the first viable
-          target (determined by the Effect Rudiment) and then stops. If there are multiple viable targets that could all
-          be first, roll randomly to determine which is affected. The spell continues to affect that person after
-          that point, wherever they move.</p>
-      </div>
-      <div class="anchor">
         <div id="Salvoheader" class="anchorTag"></div>
         <h2>Salvo</h2>
         <div class="underline-sub"></div>
@@ -681,6 +662,25 @@
             This is Advanced Skill works just like any other.
           </p>
         </div>
+      </div>
+      <div class="anchor">
+        <div id="Personalheader" class="anchorTag"></div>
+        <h2>Singular</h2>
+        <div class="underline-sub"></div>
+      </div>
+      <div class='paragraphShell anchor'>
+        <div id='AsEffectRudixsFaAyoalk' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'AsEffectRudixsFaAyoalk'"></app-bm-chapter-icon>
+        <p><strong class='orangeHeader'>Resistance</strong> As Effect Rudiment</p>
+      </div>
+      <div class='paragraphShell anchor marginBottom'>
+        <div id='ThismakesthepjNHnjJJCD' class='anchorTag'></div>
+        <app-bm-chapter-icon [id]="'ThismakesthepjNHnjJJCD'"></app-bm-chapter-icon>
+        <p>This makes the Shape of a spell just a single individual. Starting at a point within the Origin, it affects
+          the first viable
+          target (determined by the Effect Rudiment) and then stops. If there are multiple viable targets that could all
+          be first, roll randomly to determine which is affected. The spell continues to affect that person after
+          that point, wherever they move.</p>
       </div>
       <div class="anchor">
         <div id="Sphereheader" class="anchorTag"></div>
@@ -2399,7 +2399,7 @@
         <app-bm-chapter-icon [id]="'fochianiogew'"></app-bm-chapter-icon>
         <p>For Chained Hookgates, this means that the spell could be anywhere that the Chain hit. Any viable target, in
           this case, it any where within the Shape of the spell
-          on the horizontal plane (inlcuding over a cliff side). To find where the Chain hits, for each place it lands,
+          on the horizontal plane (including over a cliff side). To find where the Chain hits, for each place it lands,
           roll a d8: 1 is in front of the location, 4 is behind, and a d500 (a d6, 1s count as 0, and 2d10s)
           for how far it goes.
         </p>
@@ -2407,7 +2407,7 @@
       <div class='paragraphShell anchor'>
         <div id='foreponsierons' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'foreponsierons'"></app-bm-chapter-icon>
-        <p>For Personal Hookgates, this means that you're teleported to the nearest unoccupied space to the person. If
+        <p>For Singular Hookgates, this means that you're teleported to the nearest unoccupied space to the person. If
           there is more than one option, roll randomly.</p>
       </div>
       <div class='paragraphShell anchor'>
@@ -3045,7 +3045,7 @@
       <div class='paragraphShell anchor'>
         <div id='ifthisojvioewjiow' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifthisojvioewjiow'"></app-bm-chapter-icon>
-        <p>If this spell is Personal shape, it only effects one person, causing them to glow. Any actions they take and
+        <p>If this spell is Singular shape, it only effects one person, causing them to glow. Any actions they take and
           any actions
           that hit them (such as an enemy attacking them) are done as if they were at Normal Illuminate, regardless of
           what the natural light
@@ -6475,7 +6475,9 @@
         <div id='FFECTAnyrolldjKpWqNvbO' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'FFECTAnyrolldjKpWqNvbO'"></app-bm-chapter-icon>
         <p><strong class='orangeHeader'>Effect</strong> Any roll within the Shape of the spell moves 1 point towards the
-          average. If at the average, they gain a + or - 1 depending on the whims of the weird-adept.</p>
+          average. If at the average, they gain a + or - 1 depending on the whims of the weird-adept. If the modified 
+        roll goes from below the competing roll to above it, all negative effects that would happen, don't (automatic free attacks, Wear, fumbles, etc). 
+       Likewise, if the modified roll goes from above to below, all positive effects are also negated (perfect attacks, defenses, explosions, etc).</p>
       </div>
       <div class='paragraphShell marginBottom anchor'>
         <div id='TACKEitherthlgnrxCcCMN' class='anchorTag'></div>

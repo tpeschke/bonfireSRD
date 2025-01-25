@@ -16,11 +16,11 @@ const weirdTables = {
             },
             {
                 weight: 1,
-                rudiment: 'Personal'
+                rudiment: 'Salvo'
             },
             {
                 weight: 1,
-                rudiment: 'Salvo'
+                rudiment: 'Singular'
             },
             {
                 weight: 1,
