@@ -360,7 +360,7 @@ export default [
         cash: "1d4! sc",
         items: [
             {
-                name: 'Leather Armor*',
+                name: 'Laminar Armor*',
                 size: 'S',
                 sellback: '190 sc'
             },

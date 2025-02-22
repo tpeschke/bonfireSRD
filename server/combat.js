@@ -31,7 +31,7 @@ module.exports = {
             skill: -2
         },
         {
-            name: 'Coat of Plates',
+            name: 'Breastplate',
             size: 'M',
             dr: '2/d',
             def: -4,
@@ -63,6 +63,16 @@ module.exports = {
         {
             name: 'Laminar (Banded Mail)',
             size: 'M',
+            dr: '1/d+3',
+            def: -2,
+            init: 0,
+            rec: 2,
+            fatigue: -2,
+            skill: -4
+        },
+        {
+            name: 'Chainmail',
+            size: 'M',
             dr: '3/d',
             def: 0,
             init: 5,
@@ -71,7 +81,7 @@ module.exports = {
             skill: -4
         },
         {
-            name: 'Chainmail',
+            name: 'Coat of Plates',
             size: 'M',
             dr: '3/d',
             def: -3,
