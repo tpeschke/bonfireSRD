@@ -279,6 +279,12 @@
           [routerLink]='["/character-creation/6"]'>Chapter 2.6 Skills</a> while spending on Characteristics is 
           addressed below.</p>
       </div>
+
+      <div class="anchor">
+        <div id="spentscriokop" class="anchorTag"></div>
+        <h2>Spent CrP to Level</h2>
+        <div class="underline-sub"></div>
+      </div>
       <div class='paragraphShell anchor'>
         <div id='IftheamountUalJtNGlVW' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'IftheamountUalJtNGlVW'"></app-bm-chapter-icon>
@@ -386,17 +392,17 @@
       <div class='paragraphShell anchor'>
         <div id='Thecostis7MscYKrYxYi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Thecostis7MscYKrYxYi'"></app-bm-chapter-icon>
-        <p><strong>Convictions </strong>The cost is to increase a Conviction by 1 Rank is 7 + (Current Rank * 3). A new Conviction is only 7 CrP and starts at Rank 0.</p>
+        <p><strong>Convictions </strong>The cost is to increase a Conviction by 1 Rank is (the number of your character’s Convictions * 3) + (Current Rank * 3). A new Conviction is the number of your character’s Convictions * 3 CrP and starts at Rank 1.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='Thecostis7MscYKrYxYi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Thecostis7MscYKrYxYi'"></app-bm-chapter-icon>
         <p><strong>Relationships </strong>The cost is to increase a Relationship by 1 Rank is 7 + (Current Rank * 3). A new Relationship costs 7 + (Number of Relationships * 3) CrP and starts at Rank 1.</p>
       </div>
-      <div class='paragraphShell anchor'>
+      <div class='paragraphShell anchor marginBottom'>
         <div id='Thecostis7MscYKrYxYi' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'Thecostis7MscYKrYxYi'"></app-bm-chapter-icon>
-        <p><strong>Descriptions </strong>The cost is to increase a Description by 1 Rank is (the number of your character’s Descriptions * 3) + (Current Rank * 2). A new Description costs the number of your character’s Descriptions * 3 CrP and starts at Rank 1.</p>
+        <p><strong>Descriptions </strong>The cost is to increase a Description by 1 Rank is 7 + (Current Rank * 2). A new Description costs 7 CrP and starts at Rank 0.</p>
       </div>
 
       <div class="anchor">
@@ -567,7 +573,7 @@
         <div id='ifyouaiojvioejwe' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ifyouaiojvioejwe'"></app-bm-chapter-icon>
         <p>If you have a mentor and you were able to train with them for a number of days equal to your level sometime 
-          during the last level, you receive that bonus now.
+          during the last level, you receive that bonus now. Example mentors are found in the GMG.
         </p>
       </div>
       <div class="anchor">
@@ -586,12 +592,13 @@
         <app-bm-chapter-icon [id]="'ThefirststeppqeBVhyRSg'"></app-bm-chapter-icon>
         <p>The first step is to be taught the basic of the Rudiment. This is a Skill Check, using Advanced Skill corresponding to the spell's Tradition, with the Risk
           being
-          set by which type of magic is doing the teaching and learning.</p>
+          set by which type of magic is doing the teaching and learning. The table also includes different ways of shaping: other than Folkweird, these 
+        are found in the Example Mentor section in the GMG.</p>
       </div>
       <div class='paragraphShell anchor marginBottom'>
         <div id='ForinstanceqWLHJflIsH' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ForinstanceqWLHJflIsH'"></app-bm-chapter-icon>
-        <p>For instance, a Sourcerer’s understanding of magic is innate, making it hard to articulate how they’re able
+        <p class="italic">For instance, a Sourcerer’s understanding of magic is innate, making it hard to articulate how they’re able
           to do
           something to someone who understands that same thing through study. In the same way, Wizards and Mages shape
           magic completely differently than Speakers who shape spells using the Divine Language.</p>
@@ -1025,7 +1032,9 @@
         <p>Players who go out of their way to roleplay their character learning a new ability can get that ability
           irrespective of leveling, Class combination, and/or CrP spending, but only if they’ve taken some penalty
           for
-          doing so (suffered for it) and only at the discretion of the GM.</p>
+          doing so (suffered for it) and only at the discretion of the GM. You can use the abilities of other classes 
+        found here, in the SRD, use the abilities of the example Mentors found in the GMG, or brainstorm completely 
+      new abilities with your GM.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ExamplethefSYSKFStBVl' class='anchorTag'></div>
@@ -1199,7 +1208,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='ThesecomeinSvLvUlIert' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'ThesecomeinSvLvUlIert'"></app-bm-chapter-icon>
-        <p>These come in three varieties:</p>
+        <p>These come in three varieties, which with a varying level of loyalty represented by a Relationship Rank, which can 
+          be raised and/or lowered via the normal rules during the course of play.
+        </p>
       </div>
       <div class="anchor">
         <div id="GROUPIESheader" class="anchorTag"></div>
@@ -1217,7 +1228,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheyrealsotCZOwPuwpzF' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheyrealsotCZOwPuwpzF'"></app-bm-chapter-icon>
-        <p>They’re also the least loyal and they’ll never put their lives on the line for the party.</p>
+        <p>They’re also the least loyal and they’ll never put their lives on the line for the party. They have a 1d4! Rank Relationship that 
+          relates to what they're getting out of the relationship with the character but it can't be loyalty to the character directly.
+        </p>
       </div>
       <div class="anchor">
         <div id="HIRELINGSheader" class="anchorTag"></div>
@@ -1238,7 +1251,8 @@
         <p>Hirelings won’t break contracts unless the captain of the party falls into Little Integrity and will be more
           loyal
           than
-          groupies, however, they’ll only risk their lives if it’s in their contract to do so.</p>
+          groupies, however, they’ll only risk their lives if it’s in their contract to do so. They start with a 1d4!+2 Relationship that followers 
+        the same rules at a Groupie.</p>
       </div>
       <div class="anchor">
         <div id="RETAINERSheader" class="anchorTag"></div>
@@ -1255,7 +1269,9 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='TheseareessxPYxRMlcEs' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'TheseareessxPYxRMlcEs'"></app-bm-chapter-icon>
-        <p>These are, essentially, lower-level characters that you can run. You can roll them up but the GM has the final stay.</p>
+        <p>These are, essentially, lower-level characters that you can run. You can roll them up but the GM has the final stay. They start with a 1d4!+4 Relationship 
+          that is directly applicable to the character.
+        </p>
       </div>
       <div class="anchor">
         <div id="SIDEKICKSheader" class="anchorTag"></div>
@@ -1274,7 +1290,7 @@
         <app-bm-chapter-icon [id]="'SidekicksareODJxftQGJU'"></app-bm-chapter-icon>
         <p>Sidekicks are childhood friends, people who deify the character, or other such unquestionably loyal followers
           so
-          you only get 1 in their entire life.</p>
+          you only get 1 in their entire life. They start with 1d4!+8 Relationship that is directly applicable to the character.</p>
       </div>
       <div class='paragraphShell anchor'>
         <div id='ASidekicksisbYjfABXboD' class='anchorTag'></div>
@@ -1300,8 +1316,8 @@
       <div class='paragraphShell anchor marginBottom'>
         <div id='OnlysevereablUXtCMrYed' class='anchorTag'></div>
         <app-bm-chapter-icon [id]="'OnlysevereablUXtCMrYed'"></app-bm-chapter-icon>
-        <p>Only severe abuse can break the bond between the hero and his Sidekick, but should this happen, the Sidekick
-          becomes an enemy of equivalent zeal.</p>
+        <p>Only severe abuse can break the bond between the hero and his Sidekick (reaching 0 in the original Relationship), but should this happen, the Sidekick
+          becomes an enemy of equivalent zeal (a negative Relationship equal to the original starting Rank).</p>
       </div>
       <div class="anchor">
         <div id="AttractingFolheader" class="anchorTag"></div>

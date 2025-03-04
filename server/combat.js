@@ -1,6 +1,16 @@
 module.exports = {
     armor: [
         {
+            name: 'Banded Mail',
+            size: 'M',
+            dr: '2/d',
+            def: -3,
+            init: 1,
+            rec: 2,
+            fatigue: -1,
+            skill: -4
+        },
+        {
             name: 'Buff Coat',
             size: 'S',
             dr: '2',
@@ -9,6 +19,56 @@ module.exports = {
             rec: 2,
             fatigue: -1,
             skill: 0,
+        },
+        {
+            name: 'Breastplate',
+            size: 'M',
+            dr: '2/d',
+            def: -4,
+            init: 1,
+            rec: 5,
+            fatigue: -3,
+            skill: -2
+        },
+        {
+            name: 'Brigandine',
+            size: 'M',
+            dr: '2/d+3',
+            def: -5,
+            init: 4,
+            rec: 5,
+            fatigue: -3,
+            skill: -4
+        },
+        {
+            name: 'Chainmail',
+            size: 'M',
+            dr: '3/d',
+            def: 0,
+            init: 2,
+            rec: 2,
+            fatigue: -3,
+            skill: -4
+        },
+        {
+            name: 'Coat of Plates',
+            size: 'M',
+            dr: '1/d+3',
+            def: -3,
+            init: 2,
+            rec: 3,
+            fatigue: -2,
+            skill: -4
+        },
+        {
+            name: 'Full Plate',
+            size: 'L',
+            dr: '6/d + 7',
+            def: -10,
+            init: 10,
+            rec: 9,
+            fatigue: -8,
+            skill: -8
         },
         {
             name: 'Gambeson',
@@ -21,6 +81,16 @@ module.exports = {
             skill: -2
         },
         {
+            name: 'Lamellar',
+            size: 'M',
+            dr: '3/d',
+            def: -5,
+            init: 2,
+            rec: 0,
+            fatigue: -1,
+            skill: -4
+        },
+        {
             name: 'Leather',
             size: 'S',
             dr: '6',
@@ -29,66 +99,6 @@ module.exports = {
             rec: 2,
             fatigue: -1,
             skill: -2
-        },
-        {
-            name: 'Breastplate',
-            size: 'M',
-            dr: '2/d',
-            def: -4,
-            init: 0,
-            rec: 5,
-            fatigue: -2,
-            skill: -2
-        },
-        {
-            name: 'Lamellar',
-            size: 'M',
-            dr: '3/d',
-            def: -4,
-            init: 5,
-            rec: 0,
-            fatigue: -3,
-            skill: -4
-        },
-        {
-            name: 'Brigandine',
-            size: 'M',
-            dr: '3/d',
-            def: -5,
-            init: 5,
-            rec: 3,
-            fatigue: -1,
-            skill: -4
-        },
-        {
-            name: 'Laminar (Banded Mail)',
-            size: 'M',
-            dr: '1/d+3',
-            def: -2,
-            init: 0,
-            rec: 2,
-            fatigue: -2,
-            skill: -4
-        },
-        {
-            name: 'Chainmail',
-            size: 'M',
-            dr: '3/d',
-            def: 0,
-            init: 5,
-            rec: 4,
-            fatigue: -3,
-            skill: -4
-        },
-        {
-            name: 'Coat of Plates',
-            size: 'M',
-            dr: '3/d',
-            def: -3,
-            init: 3,
-            rec: 3,
-            fatigue: -3,
-            skill: -4
         },
         {
             name: 'Plated Mail',
@@ -101,6 +111,16 @@ module.exports = {
             skill: -6
         },
         {
+            name: 'Ringmail',
+            size: 'M',
+            dr: '3/d',
+            def: -3,
+            init: 0,
+            rec: 5,
+            fatigue: -2,
+            skill: -4
+        },
+        {
             name: 'Scale',
             size: 'L',
             dr: '4/d + 2',
@@ -111,15 +131,15 @@ module.exports = {
             skill: -8
         },
         {
-            name: 'Full Plate',
-            size: 'L',
-            dr: '6/d + 7',
-            def: -10,
-            init: 10,
-            rec: 9,
-            fatigue: -8,
-            skill: -8
-        }
+            name: 'Splintmail',
+            size: 'M',
+            dr: '3/d',
+            def: -3,
+            init: 3,
+            rec: 3,
+            fatigue: 0,
+            skill: -4
+        },
     ],
     shields: [
         {

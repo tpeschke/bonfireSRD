@@ -216,18 +216,20 @@ export default {
             { name: 'Bowstring', complex: 3, size: 'S', price: 0.5 }
         ],
         'armor': [
-            { name: 'Brigandine', complex: 5, size: 'M', price: 400 },
+            { name: 'Banded Mail', complex: 4, size: 'M', price: 335 },
+            { name: 'Brigandine', complex: 5, size: 'M', price: 650 },
             { name: 'Buff Coat', complex: 3, size: 'S', price: 130 },
             { name: 'Breastplate', complex: 4, size: 'M', price: 200 },
             { name: 'Chainmail', complex: 4, size: 'M', price: 390 },
-            { name: 'Coat of Plates', complex: 4, size: 'M', price: 410 },
+            { name: 'Coat of Plates', complex: 4, size: 'M', price: 190 },
             { name: 'Gambeson', complex: 3, size: 'S', price: 90 },
             { name: 'Lamellar', complex: 5, size: 'M', price: 370 },
-            { name: 'Laminar (Banded Mail)', complex: 4, size: 'M', price: 190 },
             { name: 'Leather', complex: 3, size: 'S', price: 190 },
-            { name: 'Full Plate', complex: 6, size: 'L', price: 1040 },
-            { name: 'Plated Mail', complex: 6, size: 'L', price: 760 },
-            { name: 'Scale', complex: 6, size: 'L', price: 740 }
+            { name: 'Full Plate', complex: 6, size: 'L', price: 2125 },
+            { name: 'Plated Mail', complex: 6, size: 'L', price: 1140 },
+            { name: 'Ringmail', complex: 4, size: 'M', price: 350 },
+            { name: 'Scale', complex: 6, size: 'L', price: 1075 },
+            { name: 'Splintmail', complex: 4, size: 'M', price: 275 },
 
 
         ],
