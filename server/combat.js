@@ -968,8 +968,8 @@ module.exports = {
                 rec: 15,
                 type: 'C',
                 minrec: 5,
-                bonus: 'Causing Flinching. Gains 1 Wear on Atk.',
-                bonusLong: '<p>The Fire Lance causes flinching equal to the highest damage dice rolled within it\'s range. See the Flinching Sidebar for more info.</p><br><p>The Fire Lance always gains 1 Wear on use.</p>'
+                bonus: 'Causes Flinching. Gains 1 Wear on Atk.',
+                bonusLong: '<p>The Fire Lance causes flinching equal to 5 times the highest damage dice rolled within it\'s range. See the Flinching Sidebar for more info.</p><br><p>The Fire Lance always gains 1 Wear on use.</p>'
             },
             {
                 name: 'Hakenbuchse',
@@ -978,8 +978,8 @@ module.exports = {
                 rec: 31,
                 type: 'C',
                 minrec: 5,
-                bonus: 'Causing Flinching. Backfires.',
-                bonusLong: '<p>If you steady the Hakenbuchse against the ground or a stand, you may double your Attack bonus from Skills with this weapon.</p><br><p>The Hakenbuchse causes flinching equal to the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p><br><p>The Hakenbuchse causes flinching equal to the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p>'
+                bonus: 'Causes Flinching. Backfires.',
+                bonusLong: '<p>If you steady the Hakenbuchse against the ground or a stand, you may double your Attack bonus from Skills with this weapon.</p><br><p>The Hakenbuchse causes flinching equal to thrice the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p>'
             },
             {
                 name: 'Handgonne',
@@ -988,8 +988,8 @@ module.exports = {
                 rec: 19,
                 type: 'C',
                 minrec: 4,
-                bonus: 'Causing Flinching. Backfires.',
-                bonusLong: '<p>Handgonne causes flinching equal to the d4! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p><br><p>The Handgonne Backfires.</p>'
+                bonus: 'Causes Flinching. Backfires.',
+                bonusLong: '<p>Handgonne causes flinching equal to thrice the d8! damage dice within its first 2 range categories. See the Flinching Sidebar for more info.</p><br><p>The Handgonne Backfires.</p>'
             },
             {
                 name: 'Molotov Cocktail',

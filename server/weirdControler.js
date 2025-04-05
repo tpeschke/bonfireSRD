@@ -477,7 +477,7 @@ const weirdTables = {
                 },
                 {
                     weight: 1,
-                    rudiment: 'Impression Fleam'
+                    rudiment: 'Impression Gleam'
                 },
                 {
                     weight: 1,
