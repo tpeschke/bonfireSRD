@@ -554,7 +554,7 @@ module.exports = {
             {
                 name: 'Katzbalger',
                 size: 'S',
-                dam: '1d3+2d4!',
+                dam: '1d3!+2d4!',
                 rec: 11,
                 type: 'S',
                 parry: 0,
